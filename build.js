@@ -14,6 +14,7 @@ const smith = (clean = true) => {
         .source('src')
         .destination('docs')
         .clean(clean)
+        .use(rootPath())
         .use(collections({
             'om_tjenestene': {
                 pattern: 'om_tjenestene/**/*',
@@ -29,7 +30,6 @@ const smith = (clean = true) => {
             }
         }))
         .use(markdown({}))
-        .use(rootPath())
         .use(permalinks({
             pattern: ':title'
         }))
@@ -37,7 +37,8 @@ const smith = (clean = true) => {
             default: 'layout.hbs',
             engine: 'handlebars',
             pattern: '**/*.html'
-        }));
+        }))
+      ;
 };
 
 smith(true)

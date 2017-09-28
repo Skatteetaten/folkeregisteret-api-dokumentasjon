@@ -115,6 +115,7 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
+    padding: 1em 2em;
 }
 .sideblokk-seksjon a {
     color: #fff;
