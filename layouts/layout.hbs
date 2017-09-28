@@ -34,18 +34,18 @@
     <div class="meta">
       <div class="sideblokk-seksjon navig">
         <div>Om tjenestene</div>
-        <a href="/">Hjem</a>
+        <a href="{{rootPath}}">Hjem</a>
         {{#each collections.om_tjenestene}}
-          <a href="/{{this.path}}">{{this.title}}</a>
+          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
         {{/each}}
         <div>Produsenttjenester</div>
         {{#each collections.produsenttjenester}}
-          <a href="/{{this.path}}">{{this.title}}</a>
+          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
         {{/each}}
 
         <div>Konsumenttjenester</div>
         {{#each collections.konsumenttjenester}}
-          <a href="/{{this.path}}">{{this.title}}</a>
+          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
         {{/each}}
       </div>
     </div>
