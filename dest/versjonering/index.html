@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Versjonering</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Versjonering</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div>Om tjenestene</div>
+        <a href="/">Hjem</a>
+          <a href="/sikkerhet">Sikkerhet</a>
+          <a href="/versjonering">Versjonering</a>
+        <div>Produsenttjenester</div>
+          <a href="/tilbakemelding">Tilbakemelding</a>
+
+        <div>Konsumenttjenester</div>
+          <a href="/hendelsesliste">Hendelsesliste</a>
+          <a href="/oppslag">Oppslag</a>
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p>Folkeregisteret har som mål at API&#39;er skal være stabile, dvs at oppførsel/data ikke skal endre seg så lenge man spør med samme parametre og mot en bestemt versjon av API’et. Skatteetatens datatjenester er designet for å kunne støtte flere versjoner samtidig. Tjenestene er versjonert gjennom angitt versjon i URL.</p>
+<h1 id="bakoverkompatible-endringer">Bakoverkompatible endringer</h1>
+<p>Nye feltverdier, nye felt i svar og nye valgfrie felt i input vil normalt ikke føre til at det etableres en ny versjon. Det er opp til hver datakonsument å sikre at integrasjonene håndterer slike endringer.</p>
+<p>Vi oppfordrer derfor datakonsumenter til å bygge tolerant kode som tåler slike endringer.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

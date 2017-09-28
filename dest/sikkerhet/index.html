@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Sikkerhet</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Sikkerhet</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div>Om tjenestene</div>
+        <a href="/">Hjem</a>
+          <a href="/sikkerhet">Sikkerhet</a>
+          <a href="/versjonering">Versjonering</a>
+        <div>Produsenttjenester</div>
+          <a href="/tilbakemelding">Tilbakemelding</a>
+
+        <div>Konsumenttjenester</div>
+          <a href="/hendelsesliste">Hendelsesliste</a>
+          <a href="/oppslag">Oppslag</a>
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p><strong>Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.</strong></p>
+<h1 id="sikkerhet-og-autentisering">Sikkerhet og autentisering</h1>
+<p>For å benytte Skatteetatens API trenger man et <a href="https://en.wikipedia.org/wiki/X.509">X.509</a> virksomhetssertifikat for kryptering/autentisering. Offentlig godkjente utstedere at virksomhetsertifikater er <a href="https://www.buypass.no">Buypass</a> og <a href="https://www.commfides.com/">Commfides</a>. Man må også ha tilgang til <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Private key</a> som hører til sertifikatet.</p>
+<p><strong>VIKTIG: Private key skal aldri deles med noen, heller ikke Skatteetaten.</strong></p>
+<p>Det finnes virksomhetssertifikater for forskjellige formål. Skatteetaten krever et sertifikat utstedt for kryptering/autentisering. Virksomhetsertifikat utstedt for signering vil ikke virke. <em>Sjekk at &#39;Key Usage&#39; er &#39;critical&#39;. Hvis verdien for &#39;Key Usage&#39; er non-repudiation er det feil type sertifikat</em></p>
+<p>Et virksomhetssertifikat inneholder virtksomheten sitt organisasjonsnummer. Virksomhetssertifikatet setter Skatteetaten i stand til å autentisere og autorisere organisasjonen som bruker sertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Bruk derfor et virksomhetssertifikat for samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.</p>
+<p>Det kreves at man utfører standard klientsertifikat autententisering. De fleste vanlige HTTP verktøy har støtte for dette. Et eksempel på verktøy man kan bruke er <a href="https://ec.haxx.se/usingcurl-tls.html">curl</a>q</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

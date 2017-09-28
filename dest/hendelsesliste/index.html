@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Hendelsesliste</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Hendelsesliste</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div>Om tjenestene</div>
+        <a href="/">Hjem</a>
+          <a href="/sikkerhet">Sikkerhet</a>
+          <a href="/versjonering">Versjonering</a>
+        <div>Produsenttjenester</div>
+          <a href="/tilbakemelding">Tilbakemelding</a>
+
+        <div>Konsumenttjenester</div>
+          <a href="/hendelsesliste">Hendelsesliste</a>
+          <a href="/oppslag">Oppslag</a>
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
+<p>Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentene. Det eneste konsumentene MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.</p>
+<p>I tillegg til å lese selve feeden kan man også lese innhold i en enkelt hendelse.</p>
+<table>
+<thead>
+<tr>
+<th>Ressurs</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hendelsesliste - feed</td>
+<td><code>https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/feed/{startSekvensnummer}</code></td>
+</tr>
+<tr>
+<td>Hendelse - innholdet i en hendelse som ble publisert på hendelseslisten</td>
+<td><code>https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/{hendelsesidentifikator}</code></td>
+</tr>
+</tbody>
+</table>
+<p>Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.</p>
+<p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
+Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
+<p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
+<p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/&quot;</code></p>
+<h2 id="headere">Headere</h2>
+<p><strong>Accept</strong></p>
+<p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
+<p><strong>If-None-Match</strong></p>
+<p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
+<h2 id="eksempel-p-respons-fra-tjenesten">Eksempel på respons fra tjenesten</h2>
+<p>Under finnes eksempler på respons fra tjenesten.</p>
+<h3 id="statuskode-200">Statuskode 200</h3>
+<p>Eksempel på feed:</p>
+<pre><code class="lang-json">[
+  {
+    &quot;sekvensnummer&quot;: 1,
+    &quot;skjemaversjon&quot;: &quot;1.0&quot;,
+    &quot;hendelse&quot;: {
+      &quot;folkeregisteridentifikator&quot;: &quot;36925814725&quot;,
+      &quot;registeroppdatering&quot;: &quot;personErOpprettet&quot;,
+      &quot;hendelsesdokument&quot;: &quot;c0134f24-44b1-4ed4-9d21-1c3d796b767e&quot;,
+      &quot;persondokument&quot;: &quot;c29d9303-dfe8-4093-93f6-224662083214&quot;,
+      &quot;ajourholdstidspunkt&quot;: &quot;2017-04-10T15:06:59.244+02:00&quot;
+    }
+  },
+  {
+    &quot;sekvensnummer&quot;: 2,
+    &quot;skjemaversjon&quot;: &quot;1.0&quot;,
+    &quot;hendelse&quot;: {
+      &quot;folkeregisteridentifikator&quot;: &quot;14725836925&quot;,
+      &quot;registeroppdatering&quot;: &quot;personErOpprettet&quot;,
+      &quot;hendelsesdokument&quot;: &quot;52c8697d-c4c5-4bf3-9396-cebe899ed780&quot;,
+      &quot;persondokument&quot;: &quot;92388b93-cf31-45ee-a048-28acb8a02880&quot;,
+      &quot;ajourholdstidspunkt&quot;: &quot;2017-04-10T15:06:59.248+02:00&quot;
+    }
+  }
+]
+</code></pre>
+<p>Eksempel på en hendelse for registrering av ny informasjon:</p>
+<pre><code class="lang-json">{
+  &quot;dokumentidentifikator&quot;: &quot;1120bea688fb14a292c244592a1aed76&quot;,
+  &quot;skjemaversjon&quot;: &quot;1.0&quot;,
+  &quot;hendelse&quot;: {
+    &quot;folkeregisteridentifikator&quot;: &quot;16117548867&quot;,
+    &quot;hendelsestype&quot;: &quot;endringIAnnenIdentifikasjon&quot;,
+    &quot;ajourholdstidspunkt&quot;: &quot;2014-01-02T00:00:00Z&quot;,
+    &quot;egenskapshendelse&quot;: [
+      {
+        &quot;annenIdentifikasjon&quot;: {
+          &quot;gyldighetstidspunkt&quot;: &quot;2017-04-18T10:32:18.312+02:00&quot;,
+          &quot;kilde&quot;: &quot;kilde&quot;,
+          &quot;aarsak&quot;: &quot;kontroll&quot;,
+          &quot;identifikasjonsnummer&quot;: &quot;1234567890&quot;,
+          &quot;identifikasjonsnummertype&quot;: &quot;utenlandskIdentifikasjonsnummer&quot;,
+          &quot;utstederland&quot;: &quot;SWE&quot;
+        },
+        &quot;entitet&quot;: &quot;annenIdentifikasjon&quot;,
+        &quot;entitetsendring&quot;: &quot;registrereNy&quot;
+      }
+    ]
+  }
+}
+</code></pre>
+<p>Eksempel på en hendelse for korrigering av informasjon:</p>
+<pre><code class="lang-json">{
+  &quot;dokumentidentifikator&quot;: &quot;eb73af9403b0f5702e802ad4f9b8ca4e&quot;,
+  &quot;skjemaversjon&quot;: &quot;1.0&quot;,
+  &quot;hendelse&quot;: {
+    &quot;folkeregisteridentifikator&quot;: &quot;16117548867&quot;,
+    &quot;hendelsestype&quot;: &quot;endringIIdentitetsgrunnlag&quot;,
+    &quot;ajourholdstidspunkt&quot;: &quot;2014-01-04T00:00:00Z&quot;,
+    &quot;egenskapshendelse&quot;: [
+      {
+        &quot;identitetsgrunnlag&quot;: {
+          &quot;gyldighetstidspunkt&quot;: &quot;2017-04-19T10:32:18.294+02:00&quot;,
+          &quot;kilde&quot;: &quot;korrigert-gjeldende-kilde&quot;,
+          &quot;identitetsgrunnlagstatus&quot;: &quot;kontrollert&quot;,
+          &quot;dokumentgrunnlag&quot;: []
+        },
+        &quot;entitet&quot;: &quot;identitetsgrunnlag&quot;,
+        &quot;entitetsendring&quot;: &quot;korrigere&quot;
+      }
+    ]
+  }
+}
+</code></pre>
+<p>Eksempel på en hendelse for annullering av informasjon:</p>
+<pre><code class="lang-json">{
+  &quot;dokumentidentifikator&quot;: &quot;c0e054f025e56d63b14f91fbb5abcb95&quot;,
+  &quot;skjemaversjon&quot;: &quot;1.0&quot;,
+  &quot;hendelse&quot;: {
+    &quot;folkeregisteridentifikator&quot;: &quot;16117548867&quot;,
+    &quot;hendelsestype&quot;: &quot;endringIAnnenIdentifikasjon&quot;,
+    &quot;ajourholdstidspunkt&quot;: &quot;2014-01-05T00:00:00Z&quot;,
+    &quot;egenskapshendelse&quot;: [
+      {
+        &quot;entitet&quot;: &quot;annenIdentifikasjon&quot;,
+        &quot;entitetsendring&quot;: &quot;annullere&quot;
+      }
+    ]
+  }
+}
+</code></pre>
+<p>Eksempel på hendelse for korrigering av historisk informasjon</p>
+<pre><code class="lang-json">{
+  &quot;dokumentidentifikator&quot;: &quot;d1428661e6f2c5c158bf954facdd3ba2&quot;,
+  &quot;skjemaversjon&quot;: &quot;1.0&quot;,
+  &quot;hendelse&quot;: {
+    &quot;folkeregisteridentifikator&quot;: &quot;16117548867&quot;,
+    &quot;hendelsestype&quot;: &quot;endringIIdentitetsgrunnlag&quot;,
+    &quot;ajourholdstidspunkt&quot;: &quot;2014-01-04T00:00:00Z&quot;,
+    &quot;egenskapshendelse&quot;: [
+      {
+        &quot;entitet&quot;: &quot;identitetsgrunnlag&quot;,
+        &quot;entitetsendring&quot;: &quot;korrigereHistorisk&quot;
+      }
+    ]
+  }
+}
+</code></pre>
+<h3 id="statuskode-304">Statuskode 304</h3>
+<p>Statuskode 304 (<em>not modified</em>) returneres hvis kallet til tjenesten inkluderte headeren <strong>If-None-Match</strong> og denne er lik den aktuelle ETag for etterspurte ressurs. Det betyr at det ikke er kommet noen nye innslag på feeden siden forrige kall.</p>
+<h3 id="feilkoder">Feilkoder</h3>
+<p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
+<pre><code class="lang-json">{
+  &quot;kode&quot;: &quot;FREG-001&quot;,
+  &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>HTTP Statuskode</th>
+<th>Forklaring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>Autentiseringsinformasjon mangler</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Feil uri brukt.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Oppgitt Accept-header inneholder ikke &#39;application/atom+xml&#39;, &#39;application/xml&#39; eller &#39;application/json&#39;</td>
+</tr>
+<tr>
+<td>429</td>
+<td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="milj-er">Miljøer</h2>
+<table>
+<thead>
+<tr>
+<th>Miljø</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test</td>
+<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
+</tr>
+<tr>
+<td>Produksjon</td>
+<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

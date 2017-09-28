@@ -1,0 +1,21 @@
+{
+  "name": "api-docs",
+  "version": "1.0.0",
+  "main": "build.js",
+  "license": "MIT",
+  "dependencies": {
+    "glob-watcher": "^4.0.0",
+    "handlebars": "^4.0.10",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-livereload": "^0.1.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "node-static": "^0.7.10"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "build": "node build.js"
+  }
+}

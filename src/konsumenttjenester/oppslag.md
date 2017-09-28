@@ -1,0 +1,79 @@
+---
+title: Oppslag
+---
+
+# Grensesnittbeskrivelse
+Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to forskjellige oppslag
+
+| Ressurs | URL |
+|-------------------|-----------|
+| Siste versjon av person |`https://{miljø}/offentlig-med-hjemmel/api/{versjon}/personer/{folkeregisteridentifikator}`|
+| Arkivert versjon av person |`https://{miljø}/offentlig-med-hjemmel/api/{versjon}/personer/arkiv/{persondokument}` |
+
+Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
+
+`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed"`
+
+## Headere
+
+**Accept**
+
+Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml
+
+## Eksempel på respons fra tjenesten
+
+### Statuskode 200
+Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:
+```json
+{
+  "identifikasjonsnummer": [
+    {
+      "ajourholdstidspunkt": "2017-09-26T11:08:20.744+02:00",
+      "erGjeldende": true,
+      "kilde": "SKATTEETATEN",
+      "gyldighetstidspunkt": "2017-09-26T11:08:20.744+02:00",
+      "status": "iBruk",
+      "foedselsEllerDNummer": "69080275560",
+      "identifikatortype": "dNummer"
+    }
+  ],
+  "annenIdentifikasjon": [],
+  "identitetsgrunnlag": [
+    {
+      "ajourholdstidspunkt": "2017-09-26T11:08:24.528+02:00",
+      "erGjeldende": true,
+      "kilde": "skatteetaten",
+      "aarsak": "besluttetTildelingAvDNummer",
+      "gyldighetstidspunkt": "2017-09-26T11:08:22.918+02:00",
+      "identitetsgrunnlagstatus": "ikkeKontrollert",
+      "dokumentgrunnlag": []
+    }
+  ]
+}
+```
+
+### Feilkoder
+Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
+
+```json
+{
+  "kode": "FREG-001",
+  "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."
+}
+```
+
+| HTTP Statuskode |  Forklaring |
+|----------|-------|
+| 401 | Autentiseringsinformasjon mangler |
+| 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten |
+| 404 | Feil uri brukt. |
+| 406 | Oppgitt Accept-header inneholder ikke 'application/xml' eller 'application/json' |
+| 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
+| 500 | Feil i tjenesten. Vennligst prøv igjen seinere. |
+
+## Miljøer
+
+| Miljø | URL | 
+|-------|-----|
+| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
+| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
