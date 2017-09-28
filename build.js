@@ -2,6 +2,7 @@ const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const permalinks = require('metalsmith-permalinks');
+const rootPath = require('metalsmith-rootpath');
 const collections = require('metalsmith-collections');
 
 const metadata = require('./metadata');
@@ -28,6 +29,7 @@ const smith = (clean = true) => {
             }
         }))
         .use(markdown({}))
+        .use(rootPath())
         .use(permalinks({
             pattern: ':title'
         }))
