@@ -11,7 +11,7 @@ const smith = (clean = true) => {
     return Metalsmith(__dirname)
         .metadata(metadata)
         .source('src')
-        .destination('dest')
+        .destination('docs')
         .clean(clean)
         .use(collections({
             'om_tjenestene': {

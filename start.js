@@ -17,7 +17,7 @@ const build = (clean = false) => (done) => {
         });
 };
 
-const serve = new nodeStatic.Server(__dirname + '/dest');
+const serve = new nodeStatic.Server(__dirname + '/docs');
 require('http').createServer((req, res) => {
     req.addListener('end', () => serve.serve(req, res));
     req.resume();

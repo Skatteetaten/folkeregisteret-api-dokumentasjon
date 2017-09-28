@@ -4,7 +4,7 @@
   <meta charset="utf-8"  />
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
-  <title>Hjem</title>
+  <title>Versjonering</title>
 </head>
 <body>
 <div>
@@ -25,7 +25,7 @@
 
     <div class="header-sidetittel">
       <h1>
-        <span class="header-undertittel">Hjem</span>
+        <span class="header-undertittel">Versjonering</span>
       </h1>
     </div>
   </header>
@@ -49,14 +49,15 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <p><strong>Obs! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.</strong></p>
-<p>Folkeregisteret tilbyr en rekke api-er som kan benyttes av produsenter og konsumenter av folkeregisterdata. Dokumentasjon av API-ene er samlet på denne nettsiden.</p>
-<p>Tjenestene er delt inn i produsenttjenester og konsumenttjenester. Produsenttjenester er tjenester som benyttes av de som er produsenter av data for Folkeregisteret. Konsumenttjenester er tjenester for å hente data fra registeret.</p>
+          <p>Folkeregisteret har som mål at API&#39;er skal være stabile, dvs at oppførsel/data ikke skal endre seg så lenge man spør med samme parametre og mot en bestemt versjon av API’et. Skatteetatens datatjenester er designet for å kunne støtte flere versjoner samtidig. Tjenestene er versjonert gjennom angitt versjon i URL.</p>
+<h1 id="bakoverkompatible-endringer">Bakoverkompatible endringer</h1>
+<p>Nye feltverdier, nye felt i svar og nye valgfrie felt i input vil normalt ikke føre til at det etableres en ny versjon. Det er opp til hver datakonsument å sikre at integrasjonene håndterer slike endringer.</p>
+<p>Vi oppfordrer derfor datakonsumenter til å bygge tolerant kode som tåler slike endringer.</p>
 
         </div>
       </div>
     </div>
   </div>
 </div>
-</body>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script></body>
 </html>
