@@ -1,5 +1,5 @@
 ---
-title: Hjem
+title: Om tjenestene
 permalink: false
 layout: layout_index.hbs
 ---
