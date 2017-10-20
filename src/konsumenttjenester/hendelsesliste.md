@@ -7,7 +7,7 @@ Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed
 
 I tillegg til å lese selve feeden kan man også lese innhold i en enkelt hendelse.
 
-|Ressurs|URL
+|Ressurs|URL|
 |-------------------|---|
 |Hendelsesliste - feed |`https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/feed/{startSekvensnummer}` |
 |Hendelse - innholdet i en hendelse som ble publisert på hendelseslisten| `https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/{hendelsesidentifikator}` |

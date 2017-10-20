@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Mottak</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Mottak</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../">Om tjenestene</a></div>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../versjonering">Versjonering</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
+<p>Innsending av informasjon til Folkeregisteret gjøres gjennom denne REST-tjenesten. Hvert dokument som kan sendes inn er representert som en egen ressurs. For å sende inn et dokument brukes kommandoen POST mot riktig URL med dokumentet som body i innsendingen.</p>
+<p>Tjenestenes endepunkt:</p>
+<p><code>POST {miljø}/folkregisteret/tilbakemelding/api/{ressurs}</code></p>
+<h2 id="ressurser">Ressurser</h2>
+<table>
+<thead>
+<tr>
+<th>ressurs</th>
+<th>kontrakt</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rekvisisjon_av_dnummer</td>
+<td><a href="../kontrakter/RekvisisjonAvDNummer_1.0.xsd">xsd</a></td>
+<td>produksjon</td>
+</tr>
+<tr>
+<td>rekvisisjon_av_dnummer_v3</td>
+<td><a href="../kontrakter/RekvisisjonAvDNummer_3.0.xsd">xsd</a></td>
+<td>produksjon</td>
+</tr>
+<tr>
+<td>rekvisisjon_av_dnummmer_v4</td>
+<td><a href="../kontrakter/RekvisisjonAvDNummer_4.0.xsd">xsd</a></td>
+<td>produksjon</td>
+</tr>
+<tr>
+<td>rekvisisjon_av_dnummer_v4_vedlegg</td>
+<td><a href="../kontrakter/RekvisisjonAvDNummer_4.0.xsd">xsd</a></td>
+<td>produksjon</td>
+</tr>
+<tr>
+<td>doedsfall_v1</td>
+<td><a href="../kontrakter/MeldingOmDoedsfall_v1.0.xsd">xsd</a></td>
+<td>test</td>
+</tr>
+<tr>
+<td>endring_av_dnummerperson_v2</td>
+<td><a href="../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd">xsd</a></td>
+<td>test</td>
+</tr>
+<tr>
+<td>foedsel_v1</td>
+<td><a href="../kontrakter/Foedselsmelding_1.0.xsd">xsd</a></td>
+<td>test</td>
+</tr>
+<tr>
+<td>kontaktopplysninger_doedsbo_v1</td>
+<td><a href="../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd">xsd</a></td>
+<td>test</td>
+</tr>
+</tbody>
+</table>
+<p>Her finner du egen  <a href="../kontrakter/DigitalSignatur.xsd">xsd for kryptografisk signatur</a> av meldingene.</p>
+<h2 id="eksempler">Eksempler</h2>
+<p>Curl-kommando som kan benyttes for å teste tjenesten:</p>
+<p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v4&quot;</code></p>
+<h3 id="statuskode-202">Statuskode 202</h3>
+<p>Sammen med statuskode 202 kommer en datastruktur som ser slik ut:</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;meldingMottatt&gt;
+  &lt;folkeregisterReferanse&gt;47956f5b-fa1e-447d-a62d-b6714bc1f120&lt;/folkeregisterReferanse&gt;
+  &lt;avsendersMeldingsidentifikator&gt;unik-3efaf50b2a19&lt;/avsendersMeldingsidentifikator&gt;
+&lt;/meldingMottatt&gt;
+</code></pre>
+<h3 id="feilkoder">Feilkoder</h3>
+<p>Hvis statuskode ikke 202men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;folkeregisterFeilmelding&gt;
+  &lt;httpStatus&gt;403&lt;/httpStatus&gt;
+  &lt;alvorlighetsgrad&gt;WARNING&lt;/alvorlighetsgrad&gt;
+  &lt;feilkode&gt;ske.folkeregister.mottak.infrastructure.exceptions.KonsumentManglerTilgangException&lt;/feilkode&gt;
+  &lt;feilmelding&gt;Produsent har ikke tilgang til å sende inn D_NUMMER_REKVISISJON_V4&lt;/feilmelding&gt;
+  &lt;tilleggsinformasjon&gt;
+  &lt;/tilleggsinformasjon&gt;
+&lt;/folkeregisterFeilmelding&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>HTTP Statuskode</th>
+<th>Forklaring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>Innsendt melding er ikke gyldig XML, validerer ikke iht. XSD eller informasjon sendt i Authorization-header er ugyldig.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Autentiseringsinformasjon mangler.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Feil uri brukt.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Oppgitt Accept-header inneholder ikke &#39;application/xml&#39;.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="milj-er">Miljøer</h2>
+<table>
+<thead>
+<tr>
+<th>Miljø</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test</td>
+<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
+</tr>
+<tr>
+<td>Produksjon</td>
+<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script></body>
+</html>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8"  />
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Versjonering</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Konsumenttjenester</title>
 </head>
 <body>
 <div>
@@ -25,7 +25,7 @@
 
     <div class="header-sidetittel">
       <h1>
-        <span class="header-undertittel">Versjonering</span>
+        <span class="header-undertittel">Konsumenttjenester</span>
       </h1>
     </div>
   </header>
@@ -33,7 +33,7 @@
   <div class="content">
     <div class="meta">
       <div class="sideblokk-seksjon navig">
-        <div><a class="index" href="../">Om tjenestene</a></div>
+        <div><a class="index" href="">Om tjenestene</a></div>
           <a href="../sikkerhet">Sikkerhet</a>
           <a href="../versjonering">Versjonering</a>
         <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
@@ -48,10 +48,13 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <p>Folkeregisteret har som mål at API&#39;er skal være stabile, dvs at oppførsel/data ikke skal endre seg så lenge man spør med samme parametre og mot en bestemt versjon av API’et. Skatteetatens datatjenester er designet for å kunne støtte flere versjoner samtidig. Tjenestene er versjonert gjennom angitt versjon i URL.</p>
-<h1 id="bakoverkompatible-endringer">Bakoverkompatible endringer</h1>
-<p>Nye feltverdier, nye felt i svar og nye valgfrie felt i input vil normalt ikke føre til at det etableres en ny versjon. Det er opp til hver datakonsument å sikre at integrasjonene håndterer slike endringer.</p>
-<p>Vi oppfordrer derfor datakonsumenter til å bygge tolerant kode som tåler slike endringer.</p>
+          <p>Følgende konsumenttjenestene som er tilgjengelig for maskin-maskin-integrasjon.</p>
+<ul>
+<li><a href="../hendelsesliste">Hendelsesliste</a> tilbyr en feed med informasjon om når noe har endret seg på en person i registeret og hva som har endret seg.</li>
+<li><a href="../oppslag">Oppslag</a> tilbyr registerinformasjon om en person.</li>
+</ul>
+<p>Tjenestene tilbys som REST-tjenester og iformasjon kan hentes i formatene JSON og XML.</p>
+<p>For å kunne koble seg opp til tjenestene ovenfor må sikkerhetskrav være ivaretatt i henhold til beskrivelse under <a href="../sikkerhet">Sikkerhet</a>.</p>
 
         </div>
       </div>

@@ -7,7 +7,7 @@ Folkeregister tilbakemelding tilbyr en hendelsesfeed med informasjon om status p
 
 Tjenestenes endepunkt:
 
-`GET https://<env>:<port>/folkregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&direction={nyere/eldre}&pageSize=100`
+`GET {miljø}/folkregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&direction={nyere/eldre}&pageSize=100`
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
@@ -179,11 +179,11 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 
 | HTTP Statuskode |  Forklaring |
 |----------|-------|
-| 401 | Autentiseringsinformasjon mangler |
-| 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten |
+| 401 | Autentiseringsinformasjon mangler. |
+| 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten. |
 | 404 | Feil uri brukt. |
-| 406 | Oppgitt Accept-header inneholder ikke 'application/atom+xml', 'application/xml' eller 'application/json' |
-| 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
+| 406 | Oppgitt Accept-header inneholder ikke 'application/atom+xml', 'application/xml' eller 'application/json'. |
+| 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres. |
 | 500 | Feil i tjenesten. Vennligst prøv igjen seinere. |
 
 ## Miljøer

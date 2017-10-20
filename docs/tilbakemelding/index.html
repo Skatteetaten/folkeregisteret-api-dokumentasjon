@@ -33,13 +33,13 @@
   <div class="content">
     <div class="meta">
       <div class="sideblokk-seksjon navig">
-        <div><a id="index-page" href="../">Om tjenestene</a></div>
+        <div><a class="index" href="../">Om tjenestene</a></div>
           <a href="../sikkerhet">Sikkerhet</a>
           <a href="../versjonering">Versjonering</a>
-        <div>Produsenttjenester</div>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
           <a href="../tilbakemelding">Tilbakemelding</a>
-
-        <div>Konsumenttjenester</div>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
           <a href="../hendelsesliste">Hendelsesliste</a>
           <a href="../oppslag">Oppslag</a>
       </div>
@@ -51,7 +51,7 @@
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
 <p>Folkeregister tilbakemelding tilbyr en hendelsesfeed med informasjon om status på innsendinger. Den kan navigeres gjennom sekvensnummer. </p>
 <p>Tjenestenes endepunkt:</p>
-<p><code>GET https://&lt;env&gt;:&lt;port&gt;/folkregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&amp;direction={nyere/eldre}&amp;pageSize=100</code></p>
+<p><code>GET {miljø}/folkregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&amp;direction={nyere/eldre}&amp;pageSize=100</code></p>
 <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
 <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/tilbakemelding/api/v2/hendelser/&quot;</code></p>
 <h2 id="headere">Headere</h2>
@@ -215,11 +215,11 @@
 <tbody>
 <tr>
 <td>401</td>
-<td>Autentiseringsinformasjon mangler</td>
+<td>Autentiseringsinformasjon mangler.</td>
 </tr>
 <tr>
 <td>403</td>
-<td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten</td>
+<td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten.</td>
 </tr>
 <tr>
 <td>404</td>
@@ -227,11 +227,11 @@
 </tr>
 <tr>
 <td>406</td>
-<td>Oppgitt Accept-header inneholder ikke &#39;application/atom+xml&#39;, &#39;application/xml&#39; eller &#39;application/json&#39;</td>
+<td>Oppgitt Accept-header inneholder ikke &#39;application/atom+xml&#39;, &#39;application/xml&#39; eller &#39;application/json&#39;.</td>
 </tr>
 <tr>
 <td>429</td>
-<td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres</td>
+<td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres.</td>
 </tr>
 <tr>
 <td>500</td>
