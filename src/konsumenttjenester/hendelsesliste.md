@@ -18,14 +18,14 @@ For å nå tjenestene bygges URL opp slik:
 ## Ressurser
 |Ressurs|Beskrivelse|
 |-------|-----------|
-|/hendelser/feed/{startsekvensnummer}| Liste over hendelser fra angitt startpunkt |
-|/hendelser/{hendelsesidentifikator}| Datainnhold i en angitt hendelse |
+|hendelser/feed/{startsekvensnummer}| Liste over hendelser fra angitt startpunkt |
+|hendelser/{hendelsesidentifikator}| Datainnhold i en angitt hendelse |
 
 ## Rettighetspakker
 
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
-|/offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.
+|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.
 
 ## Miljøer
 
