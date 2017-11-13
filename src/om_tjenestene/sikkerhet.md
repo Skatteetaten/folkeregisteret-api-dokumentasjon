@@ -5,7 +5,7 @@ title: Sikkerhet
 **Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
 # Sikkerhet og autentisering
-For å benytte Skatteetatens API trenger man et [X.509]( https://en.wikipedia.org/wiki/X.509) virksomhetssertifikat for kryptering/autentisering. Offentlig godkjente utstedere at virksomhetsertifikater er [Buypass](https://www.buypass.no) og [Commfides](https://www.commfides.com/). Man må også ha tilgang til [Private key](https://en.wikipedia.org/wiki/Public-key_cryptography) som hører til sertifikatet.
+For å benytte Skatteetatens API trenger man et kvalifisert [X.509]( https://en.wikipedia.org/wiki/X.509) virksomhetssertifikat for kryptering/autentisering. Nkom har [oversikt over godkjente tilbydere av kvalifiserte sertifikater](https://www.nkom.no/teknisk/elektronisk-signatur/kvalifisert-sertifikat/registrerte-tilbydere-av-kvalifiserte-sertifikater). Du trenger tilgang til [Private key](https://en.wikipedia.org/wiki/Public-key_cryptography) som hører til sertifikatet.
 
 **VIKTIG: Private key skal aldri deles med noen, heller ikke Skatteetaten.**
 
