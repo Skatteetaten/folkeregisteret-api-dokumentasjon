@@ -57,37 +57,86 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 ## Eksempel på respons fra tjenesten
 Under finnes eksempler på respons fra tjenesten.
 
-### Statuskode 200
-Eksempel på feed:
+### Hendelsesliste - format JSON
+
 ```json
 [
   {
     "sekvensnummer": 1,
-    "skjemaversjon": "1.0",
     "hendelse": {
-      "folkeregisteridentifikator": "36925814725",
-      "registeroppdatering": "personErOpprettet",
-      "hendelsesdokument": "c0134f24-44b1-4ed4-9d21-1c3d796b767e",
-      "persondokument": "c29d9303-dfe8-4093-93f6-224662083214",
-      "ajourholdstidspunkt": "2017-04-10T15:06:59.244+02:00"
+      "folkeregisteridentifikator": "69028400470",
+      "hendelsetype": "endringIIdentitetsgrunnlag",
+      "hendelsesdokument": "55591b51b20518f4f22bf1edd6aa9f25",
+      "persondokument": "8f475708c3d855defca884f4af6e49ae",
+      "ajourholdstidspunkt": "2017-06-20T09:26:03.689+02:00"
     }
   },
   {
     "sekvensnummer": 2,
-    "skjemaversjon": "1.0",
     "hendelse": {
-      "folkeregisteridentifikator": "14725836925",
-      "registeroppdatering": "personErOpprettet",
-      "hendelsesdokument": "52c8697d-c4c5-4bf3-9396-cebe899ed780",
-      "persondokument": "92388b93-cf31-45ee-a048-28acb8a02880",
-      "ajourholdstidspunkt": "2017-04-10T15:06:59.248+02:00"
+      "folkeregisteridentifikator": "69028400470",
+      "hendelsetype": "endringIAnnenIdentifikasjon",
+      "hendelsesdokument": "1120bea688fb14a292c244592a1aed76",
+      "persondokument": "5c3afb4f5afd2fcfbe2f90a6560903a0",
+      "ajourholdstidspunkt": "2017-06-20T09:26:03.689+02:00"
     }
   }
 ]
 
 ```
+### Hendelsesliste - format ATOM/XML
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed</id>
+  <title>Offentlig hendelsesliste</title>
+  <author>
+    <name>Skatteetaten</name>
+  </author>
+  <link rel='self' type='application/atom+xml' href='http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1'/>
+  <link rel='first' type='application/atom+xml' href='http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=0'/>
+  <link rel='next' type='application/atom+xml' href='http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1001'/>
+  <updated>2017-11-13T13:40:08.485Z</updated>
+  <entry xmlns:ns2="folkeregisteret:tilgjengeliggjoering:hendelse:v1">
+        <title>Hendelse</title>
+        <id>tag:skatteetaten.no,2017-10-10:folkeregisteret:tilgjengeliggjoering:hendelse:v1:1</id>
+        <updated>2017-10-10T14:06:57.59Z</updated>
+        <content>
+              <ns2:lagretHendelse>
+                    <ns2:sekvensnummer>1</ns2:sekvensnummer>
+                    <ns2:hendelse>
+                          <ns2:folkeregisteridentifikator>69028400470</ns2:folkeregisteridentifikator>
+                          <ns2:hendelsetype>endringIIdentitetsgrunnlag</ns2:hendelsetype>
+                          <ns2:hendelsesdokument>55591b51b20518f4f22bf1edd6aa9f25</ns2:hendelsesdokument>
+                          <ns2:persondokument>8f475708c3d855defca884f4af6e49ae</ns2:persondokument>
+                          <ns2:ajourholdstidspunkt>2017-06-20T09:26:03.689+02:00</ns2:ajourholdstidspunkt>
+                    </ns2:hendelse>
+              </ns2:lagretHendelse>
+        </content>
+  </entry>
+  
+  <entry xmlns:ns2="folkeregisteret:tilgjengeliggjoering:hendelse:v1">
+        <title>Hendelse</title>
+        <id>tag:skatteetaten.no,2017-10-10:folkeregisteret:tilgjengeliggjoering:hendelse:v1:2</id>
+        <updated>2017-10-10T14:06:57.612Z</updated>
+        <content>
+              <ns2:lagretHendelse>
+                    <ns2:sekvensnummer>2</ns2:sekvensnummer>
+                    <ns2:hendelse>
+                          <ns2:folkeregisteridentifikator>69028400470</ns2:folkeregisteridentifikator>
+                          <ns2:hendelsetype>endringIAnnenIdentifikasjon</ns2:hendelsetype>
+                          <ns2:hendelsesdokument>1120bea688fb14a292c244592a1aed76</ns2:hendelsesdokument>
+                          <ns2:persondokument>5c3afb4f5afd2fcfbe2f90a6560903a0</ns2:persondokument>
+                          <ns2:ajourholdstidspunkt>2017-06-20T09:26:03.689+02:00</ns2:ajourholdstidspunkt>
+                    </ns2:hendelse>
+              </ns2:lagretHendelse>
+        </content>
+  </entry>
+</feed>
 
-Eksempel på en hendelse for registrering av ny informasjon:
+```
+
+### Hendelsesdokument for en endring - format JSON
 ```json
 {
   "dokumentidentifikator": "1120bea688fb14a292c244592a1aed76",
@@ -114,7 +163,7 @@ Eksempel på en hendelse for registrering av ny informasjon:
 }
 ```
 
-Eksempel på en hendelse for korrigering av informasjon:
+### Hendelsesdokument for en korrigering - format JSON
 ```json
 {
   "dokumentidentifikator": "eb73af9403b0f5702e802ad4f9b8ca4e",
@@ -139,7 +188,7 @@ Eksempel på en hendelse for korrigering av informasjon:
 }
 ```
 
-Eksempel på en hendelse for annullering av informasjon:
+### Hendelsesdokument for en annullering - format JSON
 ```json
 {
   "dokumentidentifikator": "c0e054f025e56d63b14f91fbb5abcb95",
@@ -158,7 +207,7 @@ Eksempel på en hendelse for annullering av informasjon:
 }
 ```
 
-Eksempel på hendelse for korrigering av historisk informasjon
+### Hendelsesdokument for en korrigering av historisk informasjon - format JSON
 ```json
 {
   "dokumentidentifikator": "d1428661e6f2c5c158bf954facdd3ba2",

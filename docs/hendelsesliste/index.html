@@ -123,34 +123,80 @@ Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
 <p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
 <h2 id="eksempel-p-respons-fra-tjenesten">Eksempel på respons fra tjenesten</h2>
 <p>Under finnes eksempler på respons fra tjenesten.</p>
-<h3 id="statuskode-200">Statuskode 200</h3>
-<p>Eksempel på feed:</p>
+<h3 id="hendelsesliste-format-json">Hendelsesliste - format JSON</h3>
 <pre><code class="lang-json">[
   {
     &quot;sekvensnummer&quot;: 1,
-    &quot;skjemaversjon&quot;: &quot;1.0&quot;,
     &quot;hendelse&quot;: {
-      &quot;folkeregisteridentifikator&quot;: &quot;36925814725&quot;,
-      &quot;registeroppdatering&quot;: &quot;personErOpprettet&quot;,
-      &quot;hendelsesdokument&quot;: &quot;c0134f24-44b1-4ed4-9d21-1c3d796b767e&quot;,
-      &quot;persondokument&quot;: &quot;c29d9303-dfe8-4093-93f6-224662083214&quot;,
-      &quot;ajourholdstidspunkt&quot;: &quot;2017-04-10T15:06:59.244+02:00&quot;
+      &quot;folkeregisteridentifikator&quot;: &quot;69028400470&quot;,
+      &quot;hendelsetype&quot;: &quot;endringIIdentitetsgrunnlag&quot;,
+      &quot;hendelsesdokument&quot;: &quot;55591b51b20518f4f22bf1edd6aa9f25&quot;,
+      &quot;persondokument&quot;: &quot;8f475708c3d855defca884f4af6e49ae&quot;,
+      &quot;ajourholdstidspunkt&quot;: &quot;2017-06-20T09:26:03.689+02:00&quot;
     }
   },
   {
     &quot;sekvensnummer&quot;: 2,
-    &quot;skjemaversjon&quot;: &quot;1.0&quot;,
     &quot;hendelse&quot;: {
-      &quot;folkeregisteridentifikator&quot;: &quot;14725836925&quot;,
-      &quot;registeroppdatering&quot;: &quot;personErOpprettet&quot;,
-      &quot;hendelsesdokument&quot;: &quot;52c8697d-c4c5-4bf3-9396-cebe899ed780&quot;,
-      &quot;persondokument&quot;: &quot;92388b93-cf31-45ee-a048-28acb8a02880&quot;,
-      &quot;ajourholdstidspunkt&quot;: &quot;2017-04-10T15:06:59.248+02:00&quot;
+      &quot;folkeregisteridentifikator&quot;: &quot;69028400470&quot;,
+      &quot;hendelsetype&quot;: &quot;endringIAnnenIdentifikasjon&quot;,
+      &quot;hendelsesdokument&quot;: &quot;1120bea688fb14a292c244592a1aed76&quot;,
+      &quot;persondokument&quot;: &quot;5c3afb4f5afd2fcfbe2f90a6560903a0&quot;,
+      &quot;ajourholdstidspunkt&quot;: &quot;2017-06-20T09:26:03.689+02:00&quot;
     }
   }
 ]
 </code></pre>
-<p>Eksempel på en hendelse for registrering av ny informasjon:</p>
+<h3 id="hendelsesliste-format-atom-xml">Hendelsesliste - format ATOM/XML</h3>
+<pre><code class="lang-xml">&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
+&lt;feed xmlns=&quot;http://www.w3.org/2005/Atom&quot;&gt;
+  &lt;id&gt;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed&lt;/id&gt;
+  &lt;title&gt;Offentlig hendelsesliste&lt;/title&gt;
+  &lt;author&gt;
+    &lt;name&gt;Skatteetaten&lt;/name&gt;
+  &lt;/author&gt;
+  &lt;link rel=&#39;self&#39; type=&#39;application/atom+xml&#39; href=&#39;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1&#39;/&gt;
+  &lt;link rel=&#39;first&#39; type=&#39;application/atom+xml&#39; href=&#39;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=0&#39;/&gt;
+  &lt;link rel=&#39;next&#39; type=&#39;application/atom+xml&#39; href=&#39;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1001&#39;/&gt;
+  &lt;updated&gt;2017-11-13T13:40:08.485Z&lt;/updated&gt;
+  &lt;entry xmlns:ns2=&quot;folkeregisteret:tilgjengeliggjoering:hendelse:v1&quot;&gt;
+        &lt;title&gt;Hendelse&lt;/title&gt;
+        &lt;id&gt;tag:skatteetaten.no,2017-10-10:folkeregisteret:tilgjengeliggjoering:hendelse:v1:1&lt;/id&gt;
+        &lt;updated&gt;2017-10-10T14:06:57.59Z&lt;/updated&gt;
+        &lt;content&gt;
+              &lt;ns2:lagretHendelse&gt;
+                    &lt;ns2:sekvensnummer&gt;1&lt;/ns2:sekvensnummer&gt;
+                    &lt;ns2:hendelse&gt;
+                          &lt;ns2:folkeregisteridentifikator&gt;69028400470&lt;/ns2:folkeregisteridentifikator&gt;
+                          &lt;ns2:hendelsetype&gt;endringIIdentitetsgrunnlag&lt;/ns2:hendelsetype&gt;
+                          &lt;ns2:hendelsesdokument&gt;55591b51b20518f4f22bf1edd6aa9f25&lt;/ns2:hendelsesdokument&gt;
+                          &lt;ns2:persondokument&gt;8f475708c3d855defca884f4af6e49ae&lt;/ns2:persondokument&gt;
+                          &lt;ns2:ajourholdstidspunkt&gt;2017-06-20T09:26:03.689+02:00&lt;/ns2:ajourholdstidspunkt&gt;
+                    &lt;/ns2:hendelse&gt;
+              &lt;/ns2:lagretHendelse&gt;
+        &lt;/content&gt;
+  &lt;/entry&gt;
+
+  &lt;entry xmlns:ns2=&quot;folkeregisteret:tilgjengeliggjoering:hendelse:v1&quot;&gt;
+        &lt;title&gt;Hendelse&lt;/title&gt;
+        &lt;id&gt;tag:skatteetaten.no,2017-10-10:folkeregisteret:tilgjengeliggjoering:hendelse:v1:2&lt;/id&gt;
+        &lt;updated&gt;2017-10-10T14:06:57.612Z&lt;/updated&gt;
+        &lt;content&gt;
+              &lt;ns2:lagretHendelse&gt;
+                    &lt;ns2:sekvensnummer&gt;2&lt;/ns2:sekvensnummer&gt;
+                    &lt;ns2:hendelse&gt;
+                          &lt;ns2:folkeregisteridentifikator&gt;69028400470&lt;/ns2:folkeregisteridentifikator&gt;
+                          &lt;ns2:hendelsetype&gt;endringIAnnenIdentifikasjon&lt;/ns2:hendelsetype&gt;
+                          &lt;ns2:hendelsesdokument&gt;1120bea688fb14a292c244592a1aed76&lt;/ns2:hendelsesdokument&gt;
+                          &lt;ns2:persondokument&gt;5c3afb4f5afd2fcfbe2f90a6560903a0&lt;/ns2:persondokument&gt;
+                          &lt;ns2:ajourholdstidspunkt&gt;2017-06-20T09:26:03.689+02:00&lt;/ns2:ajourholdstidspunkt&gt;
+                    &lt;/ns2:hendelse&gt;
+              &lt;/ns2:lagretHendelse&gt;
+        &lt;/content&gt;
+  &lt;/entry&gt;
+&lt;/feed&gt;
+</code></pre>
+<h3 id="hendelsesdokument-for-en-endring-format-json">Hendelsesdokument for en endring - format JSON</h3>
 <pre><code class="lang-json">{
   &quot;dokumentidentifikator&quot;: &quot;1120bea688fb14a292c244592a1aed76&quot;,
   &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -175,7 +221,7 @@ Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
   }
 }
 </code></pre>
-<p>Eksempel på en hendelse for korrigering av informasjon:</p>
+<h3 id="hendelsesdokument-for-en-korrigering-format-json">Hendelsesdokument for en korrigering - format JSON</h3>
 <pre><code class="lang-json">{
   &quot;dokumentidentifikator&quot;: &quot;eb73af9403b0f5702e802ad4f9b8ca4e&quot;,
   &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -198,7 +244,7 @@ Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
   }
 }
 </code></pre>
-<p>Eksempel på en hendelse for annullering av informasjon:</p>
+<h3 id="hendelsesdokument-for-en-annullering-format-json">Hendelsesdokument for en annullering - format JSON</h3>
 <pre><code class="lang-json">{
   &quot;dokumentidentifikator&quot;: &quot;c0e054f025e56d63b14f91fbb5abcb95&quot;,
   &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -215,7 +261,7 @@ Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
   }
 }
 </code></pre>
-<p>Eksempel på hendelse for korrigering av historisk informasjon</p>
+<h3 id="hendelsesdokument-for-en-korrigering-av-historisk-informasjon-format-json">Hendelsesdokument for en korrigering av historisk informasjon - format JSON</h3>
 <pre><code class="lang-json">{
   &quot;dokumentidentifikator&quot;: &quot;d1428661e6f2c5c158bf954facdd3ba2&quot;,
   &quot;skjemaversjon&quot;: &quot;1.0&quot;,
