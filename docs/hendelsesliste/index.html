@@ -51,29 +51,71 @@
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
 <p>Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentene. Det eneste konsumentene MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.</p>
 <p>I tillegg til å lese selve feeden kan man også lese innhold i en enkelt hendelse.</p>
+<p>Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.</p>
+<p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
+Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
+<p>For å nå tjenestene bygges URL opp slik:
+{miljø}{rettighetspakke}{ressurs}</p>
+<h2 id="ressurser">Ressurser</h2>
 <table>
 <thead>
 <tr>
 <th>Ressurs</th>
+<th>Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/hendelser/feed/{startsekvensnummer}</td>
+<td>Liste over hendelser fra angitt startpunkt</td>
+</tr>
+<tr>
+<td>/hendelser/{hendelsesidentifikator}</td>
+<td>Datainnhold i en angitt hendelse</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rettighetspakker">Rettighetspakker</h2>
+<table>
+<thead>
+<tr>
+<th>Rettighetspakke</th>
+<th>Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/offentlig-med-hjemmel/api/</td>
+<td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="milj-er">Miljøer</h2>
+<table>
+<thead>
+<tr>
+<th>Miljø</th>
 <th>URL</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Hendelsesliste - feed</td>
-<td><code>https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/feed/{startSekvensnummer}</code></td>
+<td>Test</td>
+<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
 </tr>
 <tr>
-<td>Hendelse - innholdet i en hendelse som ble publisert på hendelseslisten</td>
-<td><code>https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/{hendelsesidentifikator}</code></td>
+<td>Produksjon</td>
+<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
 </tr>
 </tbody>
 </table>
-<p>Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.</p>
-<p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
-Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
-<p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
-<p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/&quot;</code></p>
+<h2 id="eksempler">Eksempler</h2>
+<p>Oppslag i hendelsesliste: <br>
+<code>https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/1/hendelser/feed/1</code></p>
+<p>Oppslag på en hendelse: <br>
+<code>https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f</code></p>
+<p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
+<code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/&quot;</code></p>
 <h2 id="headere">Headere</h2>
 <p><strong>Accept</strong></p>
 <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
@@ -230,25 +272,6 @@ Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
 <tr>
 <td>500</td>
 <td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="milj-er">Miljøer</h2>
-<table>
-<thead>
-<tr>
-<th>Miljø</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Test</td>
-<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
-</tr>
-<tr>
-<td>Produksjon</td>
-<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
 </tr>
 </tbody>
 </table>

@@ -7,18 +7,41 @@ Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed
 
 I tillegg til å lese selve feeden kan man også lese innhold i en enkelt hendelse.
 
-|Ressurs|URL|
-|-------------------|---|
-|Hendelsesliste - feed |`https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/feed/{startSekvensnummer}` |
-|Hendelse - innholdet i en hendelse som ble publisert på hendelseslisten| `https://{miljø}/offentlig-med-hjemmel/api/{versjon}/hendelser/{hendelsesidentifikator}` |
-
 Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.
 
 Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
 Man kan også slå opp personen basert på fødsels- eller d-nummer.
 
-Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
+For å nå tjenestene bygges URL opp slik:
+{miljø}{rettighetspakke}{ressurs}
 
+## Ressurser
+|Ressurs|Beskrivelse|
+|-------|-----------|
+|/hendelser/feed/{startsekvensnummer}| Liste over hendelser fra angitt startpunkt |
+|/hendelser/{hendelsesidentifikator}| Datainnhold i en angitt hendelse |
+
+## Rettighetspakker
+
+| Rettighetspakke|Beskrivelse|
+|----------------|-----------|
+|/offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.
+
+## Miljøer
+
+|Miljø|URL| 
+|-----|---|
+| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
+| Produksjon | https://folkeregisteret.api.skatteetaten.no/ | 
+
+## Eksempler 
+Oppslag i hendelsesliste: <br>
+`https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/1/hendelser/feed/1`
+
+Oppslag på en hendelse: <br>
+`https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f`
+
+Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`
 
 ## Headere
@@ -175,11 +198,4 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 | 404 | Feil uri brukt. |
 | 406 | Oppgitt Accept-header inneholder ikke 'application/atom+xml', 'application/xml' eller 'application/json' |
 | 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
-| 500 | Feil i tjenesten. Vennligst prøv igjen seinere. |
-
-## Miljøer
-
-| Miljø | URL | 
-|-------|-----|
-| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
-| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
+| 500 | Feil i tjenesten. Vennligst prøv igjen seinere. | 
