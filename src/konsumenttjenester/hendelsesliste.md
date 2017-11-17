@@ -16,10 +16,10 @@ For å nå tjenestene bygges URL opp slik:
 {miljø}{rettighetspakke}{ressurs}
 
 ## Ressurser
-|Ressurs|Beskrivelse|
-|-------|-----------|
-|hendelser/feed/{startsekvensnummer}| Liste over hendelser fra angitt startpunkt |
-|hendelser/{hendelsesidentifikator}| Datainnhold i en angitt hendelse |
+|Ressurs|Beskrivelse|Kontrakt
+|-------|-----------|--------|
+|hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt.|I henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). [Xsd for innhold i content](../kontrakter/Folkeregisterhendelse_v1.xsd)|
+|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse|
 
 ## Rettighetspakker
 
