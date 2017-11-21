@@ -65,7 +65,7 @@ Under finnes eksempler på respons fra tjenesten.
     "sekvensnummer": 1,
     "hendelse": {
       "folkeregisteridentifikator": "69028400470",
-      "hendelsetype": "endringIIdentitetsgrunnlag",
+      "hendelsestype": "endringIIdentitetsgrunnlag",
       "hendelsesdokument": "55591b51b20518f4f22bf1edd6aa9f25",
       "persondokument": "8f475708c3d855defca884f4af6e49ae",
       "ajourholdstidspunkt": "2017-06-20T09:26:03.689+02:00"
@@ -75,7 +75,7 @@ Under finnes eksempler på respons fra tjenesten.
     "sekvensnummer": 2,
     "hendelse": {
       "folkeregisteridentifikator": "69028400470",
-      "hendelsetype": "endringIAnnenIdentifikasjon",
+      "hendelsestype": "endringIAnnenIdentifikasjon",
       "hendelsesdokument": "1120bea688fb14a292c244592a1aed76",
       "persondokument": "5c3afb4f5afd2fcfbe2f90a6560903a0",
       "ajourholdstidspunkt": "2017-06-20T09:26:03.689+02:00"
@@ -106,7 +106,7 @@ Under finnes eksempler på respons fra tjenesten.
                     <ns2:sekvensnummer>1</ns2:sekvensnummer>
                     <ns2:hendelse>
                           <ns2:folkeregisteridentifikator>69028400470</ns2:folkeregisteridentifikator>
-                          <ns2:hendelsetype>endringIIdentitetsgrunnlag</ns2:hendelsetype>
+                          <ns2:hendelsestype>endringIIdentitetsgrunnlag</ns2:hendelsetype>
                           <ns2:hendelsesdokument>55591b51b20518f4f22bf1edd6aa9f25</ns2:hendelsesdokument>
                           <ns2:persondokument>8f475708c3d855defca884f4af6e49ae</ns2:persondokument>
                           <ns2:ajourholdstidspunkt>2017-06-20T09:26:03.689+02:00</ns2:ajourholdstidspunkt>
@@ -124,7 +124,7 @@ Under finnes eksempler på respons fra tjenesten.
                     <ns2:sekvensnummer>2</ns2:sekvensnummer>
                     <ns2:hendelse>
                           <ns2:folkeregisteridentifikator>69028400470</ns2:folkeregisteridentifikator>
-                          <ns2:hendelsetype>endringIAnnenIdentifikasjon</ns2:hendelsetype>
+                          <ns2:hendelsestype>endringIAnnenIdentifikasjon</ns2:hendelsetype>
                           <ns2:hendelsesdokument>1120bea688fb14a292c244592a1aed76</ns2:hendelsesdokument>
                           <ns2:persondokument>5c3afb4f5afd2fcfbe2f90a6560903a0</ns2:persondokument>
                           <ns2:ajourholdstidspunkt>2017-06-20T09:26:03.689+02:00</ns2:ajourholdstidspunkt>
