@@ -5,7 +5,7 @@ title: Sikkerhet
 **Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
 # Sikkerhet og autentisering
-For å benytte Skatteetatens API trenger man et kvalifisert [X.509]( https://en.wikipedia.org/wiki/X.509) virksomhetssertifikat for kryptering/autentisering. Nkom har [oversikt over godkjente tilbydere av kvalifiserte sertifikater](https://www.nkom.no/teknisk/elektronisk-signatur/kvalifisert-sertifikat/registrerte-tilbydere-av-kvalifiserte-sertifikater). I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. 
+For å benytte Skatteetatens API trenger man et kvalifisert [X.509]( https://en.wikipedia.org/wiki/X.509) virksomhetssertifikat for kryptering/autentisering. Nasjonal kommunikasjonsmyndighet har [oversikt over godkjente tilbydere av kvalifiserte sertifikater](https://www.nkom.no/teknisk/elektronisk-signatur/kvalifisert-sertifikat/registrerte-tilbydere-av-kvalifiserte-sertifikater). I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. 
 
 Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virtksomhetens *organisasjonsnummer*. Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.
 
