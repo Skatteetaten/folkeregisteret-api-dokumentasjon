@@ -3,11 +3,10 @@ title: Mottak
 ---
 
 # Grensesnittbeskrivelse
-Innsending av informasjon til Folkeregisteret gjøres gjennom denne REST-tjenesten. Hvert dokument som kan sendes inn er representert som en egen ressurs. For å sende inn et dokument brukes kommandoen POST mot riktig URL med dokumentet som body i innsendingen.
+REST-tjeneste for innsending av informasjon til Folkeregisteret. Dokument som kan sendes inn er representert i listen over ressurser under. For å sende inn et dokument brukes kommandoen POST mot riktig URL med dokumentet som body i innsendingen.
 
-Tjenestenes endepunkt:
-
-`POST {miljø}/folkregisteret/tilbakemelding/api/{ressurs}`
+Tjenestenes endepunkt: <br>
+`POST {miljø}/folkregisteret/mottak/api/{ressurs}`
 
 ## Ressurser
 | ressurs | kontrakt | status |
