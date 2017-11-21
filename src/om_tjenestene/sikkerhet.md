@@ -13,4 +13,4 @@ Det finnes virksomhetssertifikater for forskjellige formål. Skatteetaten krever
 
 Et virksomhetssertifikat inneholder virtksomheten sitt organisasjonsnummer. Virksomhetssertifikatet setter Skatteetaten i stand til å autentisere og autorisere organisasjonen som bruker sertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Bruk derfor et virksomhetssertifikat for samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.
 
-Det kreves at man utfører standard klientsertifikat autententisering. De fleste vanlige HTTP verktøy har støtte for dette. Et eksempel på verktøy man kan bruke er [curl](https://ec.haxx.se/usingcurl-tls.html)q
+Det kreves at man utfører standard klientsertifikat autententisering. De fleste vanlige HTTP verktøy har støtte for dette. Et eksempel på verktøy man kan bruke er [curl](https://ec.haxx.se/usingcurl-tls.html).
