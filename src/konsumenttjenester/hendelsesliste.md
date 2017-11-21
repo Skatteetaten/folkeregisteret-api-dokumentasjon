@@ -88,14 +88,17 @@ Under finnes eksempler på respons fra tjenesten.
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed</id>
+  <id>http://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed</id>
   <title>Offentlig hendelsesliste</title>
   <author>
     <name>Skatteetaten</name>
   </author>
-  <link rel='self' type='application/atom+xml' href='http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1'/>
-  <link rel='first' type='application/atom+xml' href='http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=0'/>
-  <link rel='next' type='application/atom+xml' href='http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1001'/>
+  <link rel='self' type='application/atom+xml' 
+     href='https://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1'/>
+  <link rel='first' type='application/atom+xml' 
+     href='http://https://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=0'/>
+  <link rel='next' type='application/atom+xml' 
+     href='https://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1001'/>
   <updated>2017-11-13T13:40:08.485Z</updated>
   <entry xmlns:ns2="folkeregisteret:tilgjengeliggjoering:hendelse:v1">
         <title>Hendelse</title>

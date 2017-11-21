@@ -152,14 +152,17 @@ Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
 <h3 id="hendelsesliste-format-atom-xml">Hendelsesliste - format ATOM/XML</h3>
 <pre><code class="lang-xml">&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
 &lt;feed xmlns=&quot;http://www.w3.org/2005/Atom&quot;&gt;
-  &lt;id&gt;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed&lt;/id&gt;
+  &lt;id&gt;http://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed&lt;/id&gt;
   &lt;title&gt;Offentlig hendelsesliste&lt;/title&gt;
   &lt;author&gt;
     &lt;name&gt;Skatteetaten&lt;/name&gt;
   &lt;/author&gt;
-  &lt;link rel=&#39;self&#39; type=&#39;application/atom+xml&#39; href=&#39;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1&#39;/&gt;
-  &lt;link rel=&#39;first&#39; type=&#39;application/atom+xml&#39; href=&#39;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=0&#39;/&gt;
-  &lt;link rel=&#39;next&#39; type=&#39;application/atom+xml&#39; href=&#39;http://rp-off-med-hjemmel-folk-test.utv.paas.skead.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1001&#39;/&gt;
+  &lt;link rel=&#39;self&#39; type=&#39;application/atom+xml&#39; 
+     href=&#39;https://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1&#39;/&gt;
+  &lt;link rel=&#39;first&#39; type=&#39;application/atom+xml&#39; 
+     href=&#39;http://https://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=0&#39;/&gt;
+  &lt;link rel=&#39;next&#39; type=&#39;application/atom+xml&#39; 
+     href=&#39;https://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed?seq=1001&#39;/&gt;
   &lt;updated&gt;2017-11-13T13:40:08.485Z&lt;/updated&gt;
   &lt;entry xmlns:ns2=&quot;folkeregisteret:tilgjengeliggjoering:hendelse:v1&quot;&gt;
         &lt;title&gt;Hendelse&lt;/title&gt;
