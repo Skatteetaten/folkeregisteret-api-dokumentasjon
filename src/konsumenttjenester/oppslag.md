@@ -11,8 +11,8 @@ For å nå tjenestene bygges URL opp slik:
 ## Ressurser
 | Ressurs | Beskrivelse | Kontrakt |
 |---------|-------------|----------|
-|personer/{folkeregisteridentifikator}| Siste versjon av en person |  |
-|personer/arkiv/{persondokumentidentifikator} | Arkivert versjon av en person |  |
+|personer/{folkeregisteridentifikator}| Siste versjon av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
+|personer/arkiv/{persondokumentidentifikator} | Arkivert versjon av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
 
 ## Rettighetspakker
 

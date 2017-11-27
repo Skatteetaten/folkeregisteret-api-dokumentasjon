@@ -19,7 +19,7 @@ For å nå tjenestene bygges URL opp slik:
 |Ressurs|Beskrivelse|Kontrakt
 |-------|-----------|--------|
 |hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt.|I henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). [Xsd for innhold i content](../kontrakter/Folkeregisterhendelse_v1.xsd)|
-|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse|
+|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse| [Hendelsesdokument_v1.0.xsd](../kontrakter/Hendelsedokument_v1.0.xsd)|
 
 ## Rettighetspakker
 
