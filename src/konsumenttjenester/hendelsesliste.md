@@ -54,8 +54,7 @@ Verdien i denne headeren angir ønsket dataformat. Det er støtte for applicatio
 
 Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. Se [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) for mer informasjon om bruk av ETag.
 
-## Eksempel på respons fra tjenesten
-Under finnes eksempler på respons fra tjenesten.
+## Eksempler på respons fra tjenesten
 
 ### Hendelsesliste - format JSON
 

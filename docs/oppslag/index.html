@@ -50,21 +50,60 @@
         <div class="innhold-blokk-innhold">
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
 <p>Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to forskjellige oppslag</p>
+<p>For å nå tjenestene bygges URL opp slik:
+{miljø}{rettighetspakke}{ressurs}</p>
+<h2 id="ressurser">Ressurser</h2>
 <table>
 <thead>
 <tr>
 <th>Ressurs</th>
+<th>Beskrivelse</th>
+<th>Kontrakt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>personer/{folkeregisteridentifikator}</td>
+<td>Siste versjon av en person</td>
+<td></td>
+</tr>
+<tr>
+<td>personer/arkiv/{persondokumentidentifikator}</td>
+<td>Arkivert versjon av en person</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rettighetspakker">Rettighetspakker</h2>
+<table>
+<thead>
+<tr>
+<th>Rettighetspakke</th>
+<th>Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offentlig-med-hjemmel/api/</td>
+<td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="milj-er">Miljøer</h2>
+<table>
+<thead>
+<tr>
+<th>Miljø</th>
 <th>URL</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Siste versjon av person</td>
-<td><code>https://{miljø}/offentlig-med-hjemmel/api/{versjon}/personer/{folkeregisteridentifikator}</code></td>
+<td>Test</td>
+<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
 </tr>
 <tr>
-<td>Arkivert versjon av person</td>
-<td><code>https://{miljø}/offentlig-med-hjemmel/api/{versjon}/personer/arkiv/{persondokument}</code></td>
+<td>Produksjon</td>
+<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +112,7 @@
 <h2 id="headere">Headere</h2>
 <p><strong>Accept</strong></p>
 <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
-<h2 id="eksempel-p-respons-fra-tjenesten">Eksempel på respons fra tjenesten</h2>
+<h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
 <h3 id="statuskode-200">Statuskode 200</h3>
 <p>Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:</p>
 <pre><code class="lang-json">{
@@ -140,25 +179,6 @@
 <tr>
 <td>500</td>
 <td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="milj-er">Miljøer</h2>
-<table>
-<thead>
-<tr>
-<th>Miljø</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Test</td>
-<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
-</tr>
-<tr>
-<td>Produksjon</td>
-<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
 </tr>
 </tbody>
 </table>

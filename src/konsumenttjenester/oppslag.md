@@ -5,10 +5,27 @@ title: Oppslag
 # Grensesnittbeskrivelse
 Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to forskjellige oppslag
 
-| Ressurs | URL |
-|-------------------|-----------|
-| Siste versjon av person |`https://{miljø}/offentlig-med-hjemmel/api/{versjon}/personer/{folkeregisteridentifikator}`|
-| Arkivert versjon av person |`https://{miljø}/offentlig-med-hjemmel/api/{versjon}/personer/arkiv/{persondokument}` |
+For å nå tjenestene bygges URL opp slik:
+{miljø}{rettighetspakke}{ressurs}
+
+## Ressurser
+| Ressurs | Beskrivelse | Kontrakt |
+|---------|-------------|----------|
+|personer/{folkeregisteridentifikator}| Siste versjon av en person |  |
+|personer/arkiv/{persondokumentidentifikator} | Arkivert versjon av en person |  |
+
+## Rettighetspakker
+
+| Rettighetspakke|Beskrivelse|
+|----------------|-----------|
+|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.
+
+## Miljøer
+
+| Miljø | URL | 
+|-------|-----|
+| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
+| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
@@ -20,7 +37,7 @@ Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
 Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml
 
-## Eksempel på respons fra tjenesten
+## Eksempler på respons fra tjenesten
 
 ### Statuskode 200
 Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:
@@ -70,10 +87,3 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 | 406 | Oppgitt Accept-header inneholder ikke 'application/xml' eller 'application/json' |
 | 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
 | 500 | Feil i tjenesten. Vennligst prøv igjen seinere. |
-
-## Miljøer
-
-| Miljø | URL | 
-|-------|-----|
-| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
-| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
