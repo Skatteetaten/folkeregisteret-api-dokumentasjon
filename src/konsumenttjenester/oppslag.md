@@ -2,8 +2,10 @@
 title: Oppslag
 ---
 
-# Grensesnittbeskrivelse
-Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to forskjellige oppslag
+  # Grensesnittbeskrivelse
+  Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. 
+   * Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregeisteret. 
+   * En versjonert utgave av en person som har vært eller er gyldig. 
 
 For å nå tjenestene bygges URL opp slik:
 {miljø}{rettighetspakke}{ressurs}
