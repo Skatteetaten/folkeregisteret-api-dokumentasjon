@@ -4,7 +4,7 @@ title: Oppslag
 
   # Grensesnittbeskrivelse
   Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. 
-   * Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregeisteret. 
+   * Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. 
    * En versjonert utgave av en person som har vært eller er gyldig. 
 
 For å nå tjenestene bygges URL opp slik:
@@ -14,7 +14,7 @@ For å nå tjenestene bygges URL opp slik:
 | Ressurs | Beskrivelse | Kontrakt |
 |---------|-------------|----------|
 |personer/{folkeregisteridentifikator}| Siste versjon av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
-|personer/arkiv/{persondokumentidentifikator} | Arkivert versjon av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
+|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
 
 ## Rettighetspakker
 
