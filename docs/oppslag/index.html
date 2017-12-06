@@ -55,7 +55,8 @@
 <li>En versjonert utgave av en person som har vært eller er gyldig. </li>
 </ul>
 <p>For å nå tjenestene bygges URL opp slik:
-{miljø}{rettighetspakke}{ressurs}</p>
+{miljø}{rettighetspakke}{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
+<p>Parameteret &quot;part&quot; kan brukes til å spesifisere hvilken informasjon om en person man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i [Persondokument_v1.0.xsd]. For de entitetene som kan ha historikk kan man hente ut historikken ved å postfixe parameteret med <em>-historikk</em>.</p>
 <h2 id="ressurser">Ressurser</h2>
 <table>
 <thead>
@@ -113,7 +114,9 @@
 </tbody>
 </table>
 <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
-<p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed&quot;</code></p>
+<p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
+<p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
+<p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
 <h2 id="headere">Headere</h2>
 <p><strong>Accept</strong></p>
 <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>

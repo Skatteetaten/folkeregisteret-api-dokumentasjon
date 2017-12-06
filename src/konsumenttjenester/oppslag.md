@@ -8,7 +8,9 @@ title: Oppslag
    * En versjonert utgave av en person som har vært eller er gyldig. 
 
 For å nå tjenestene bygges URL opp slik:
-{miljø}{rettighetspakke}{ressurs}
+{miljø}{rettighetspakke}{ressurs}(? part = {entitet} & part = {entitet} ...)
+
+Parameteret "part" kan brukes til å spesifisere hvilken informasjon om en person man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i [Persondokument_v1.0.xsd]. For de entitetene som kan ha historikk kan man hente ut historikken ved å postfixe parameteret med *-historikk*.
 
 ## Ressurser
 | Ressurs | Beskrivelse | Kontrakt |
@@ -31,7 +33,11 @@ For å nå tjenestene bygges URL opp slik:
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
-`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed"`
+`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer"`
+
+Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: 
+
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&part=Identitetsgrunnlag"`
 
 ## Headere
 
