@@ -4,7 +4,7 @@ const layouts = require('metalsmith-layouts');
 const permalinks = require('metalsmith-permalinks');
 const rootPath = require('metalsmith-rootpath');
 const collections = require('metalsmith-collections');
-
+const redirect = require('metalsmith-redirect');
 const metadata = require('./metadata');
 
 const smith = (clean = true) => {
@@ -16,8 +16,8 @@ const smith = (clean = true) => {
         .clean(clean)
         .use(rootPath())
         .use(collections({
-            'om_tjenestene': {
-                pattern: 'om_tjenestene/**/*',
+            'om-tjenestene': {
+                pattern: 'om-tjenestene/**/*',
                 sortBy: 'title'
             },
             'produsenttjenester': {
@@ -27,11 +27,18 @@ const smith = (clean = true) => {
             'konsumenttjenester': {
                 pattern: 'konsumenttjenester/**/*',
                 sortBy: 'title'
-            }
+            },
+            'driftsstatus-og-nyheter': {
+            pattern: 'driftsstatus-og-nyheter/**/*',
+            sortBy: 'title'
+          }
         }))
         .use(markdown({}))
         .use(permalinks({
             pattern: ':title'
+        }))
+        .use(redirect({
+        '/': '/om-tjenestene'
         }))
         .use(layouts({
             default: 'layout.hbs',

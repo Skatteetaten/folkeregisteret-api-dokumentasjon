@@ -33,8 +33,8 @@
   <div class="content">
     <div class="meta">
       <div class="sideblokk-seksjon navig">
-        <div><a class="index" href="{{rootPath}}">Om tjenestene</a></div>
-        {{#each collections.om_tjenestene}}
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+        {{#each collections.om-tjenestene}}
           <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
         {{/each}}
         <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
@@ -43,6 +43,10 @@
         {{/each}}
         <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
         {{#each collections.konsumenttjenester}}
+          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
+        {{/each}}
+        <div><a class="index" href="../driftsstatus-og-nyheter">Driftsstatus og nyheter</a></div>
+        {{#each collections.driftsstatus-og-nyheter}}
           <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
         {{/each}}
       </div>

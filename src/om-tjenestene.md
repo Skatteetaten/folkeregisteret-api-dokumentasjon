@@ -1,7 +1,5 @@
 ---
 title: Om tjenestene
-permalink: false
-layout: layout_index.hbs
 ---
 **Obs! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
