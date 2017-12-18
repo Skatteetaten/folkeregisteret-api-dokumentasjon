@@ -1,5 +1,5 @@
 {
-  "driftsstatus-og-nyheter.md": 1513599101873,
+  "driftsstatus-og-nyheter.md": 1513603156252,
   "konsumenttjenester.md": 1511262116367,
   "om-tjenestene.md": 1513599101873,
   "produsenttjenester.md": 1508337203548,
@@ -8,6 +8,10 @@
   "driftsstatus-og-nyheter/driftsstatus.md": 1513599101873,
   "konsumenttjenester/hendelsesliste.md": 1512990102322,
   "konsumenttjenester/oppslag.md": 1512573073277,
+  "om-tjenestene/informasjonsfelter-og-statuskoder.md": 1513599101873,
+  "om-tjenestene/sikkerhet.md": 1513599101873,
+  "om-tjenestene/taushetsbelagte-opplysninger.md": 1513599605306,
+  "om-tjenestene/versjonering.md": 1513599101873,
   "kontrakter/DigitalSignatur.xsd": 1508504539102,
   "kontrakter/Foedselsmelding_1.0.xsd": 1508504692461,
   "kontrakter/Folkeregisterhendelse_v1.xsd": 1510907811327,
@@ -19,10 +23,6 @@
   "kontrakter/RekvisisjonAvDNummer_1.0.xsd": 1508395010584,
   "kontrakter/RekvisisjonAvDNummer_3.0.xsd": 1508395010592,
   "kontrakter/RekvisisjonAvDNummer_4.0.xsd": 1508395010596,
-  "om-tjenestene/informasjonsfelter-og-statuskoder.md": 1513599101873,
-  "om-tjenestene/sikkerhet.md": 1513599101873,
-  "om-tjenestene/taushetsbelagte-opplysninger.md": 1513599605306,
-  "om-tjenestene/versjonering.md": 1513599101873,
   "produsenttjenester/mottak.md": 1511258648010,
   "produsenttjenester/tilbakemelding.md": 1508338881188
 }

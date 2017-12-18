@@ -5,7 +5,7 @@ const watch = require('glob-watcher');
 const smith = require('./build');
 
 const build = (clean = false) => (done) => {
-    smith(clean, true)
+    smith(clean, false)
         .use(livereload({
             //debug: true,
             script: '<script src="http://localhost:35729/livereload.js?snipver=1"></script>'
