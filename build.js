@@ -5,15 +5,17 @@ const permalinks = require('metalsmith-permalinks');
 const rootPath = require('metalsmith-rootpath');
 const collections = require('metalsmith-collections');
 const redirect = require('metalsmith-redirect');
+const changed = require('metalsmith-changed');
 const metadata = require('./metadata');
 
-const smith = (clean = true) => {
+const smith = (clean = false) => {
 
     return Metalsmith(__dirname)
         .metadata(metadata)
         .source('src')
         .destination('docs')
         .clean(clean)
+        .use(changed())
         .use(rootPath())
         .use(collections({
             'om-tjenestene': {
