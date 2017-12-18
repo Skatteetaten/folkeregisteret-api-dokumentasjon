@@ -5,7 +5,7 @@ title: Hendelsesliste
 # Grensesnittbeskrivelse
 Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentene. Det eneste konsumentene MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.
 
-I tillegg til å lese selve feeden kan man også lese innhold i en enkelt hendelse.
+I tillegg til å lese feeden kan man også lese innhold i en enkelt hendelse.
 
 Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.
 
