@@ -16,9 +16,11 @@ Tjenestenes endepunkt: <br>
 | rekvisisjon_av_dnummmer_v4 | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd) | produksjon |
 | rekvisisjon_av_dnummer_v4_vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd) | produksjon |
 | doedsfall_v1 | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd) | test |
+| annullering_av_doedsfall_v1 | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd) | test |
 | endring_av_dnummerperson_v2 | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd) | test |
 | foedsel_v1 | [xsd](../kontrakter/Foedselsmelding_1.0.xsd) | test |
 | kontaktopplysninger_doedsbo_v1 | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | test |
+
 
 Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignatur.xsd) av meldingene.
 
