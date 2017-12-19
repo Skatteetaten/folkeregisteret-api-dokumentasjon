@@ -41,7 +41,7 @@ const smith = (clean = false) => {
             pattern: ':title'
         }))
         .use(redirect({
-        '/': '/folkeregisteret-api-dokumentasjon/om-tjenestene'
+        '/': 'om-tjenestene'
         }))
         .use(feed({
           collection: 'driftsstatus-og-nyheter',
