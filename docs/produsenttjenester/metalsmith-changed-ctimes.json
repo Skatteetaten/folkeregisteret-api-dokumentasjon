@@ -16,12 +16,12 @@
   "kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd": 1513679172216,
   "kontrakter/Persondokument_v1.0.xsd": 1513679172216,
   "kontrakter/RekvisisjonAvDNummer_1.0.xsd": 1513679172216,
-  "kontrakter/RekvisisjonAvDNummer_3.0.xsd": 1513679172216,
   "kontrakter/RekvisisjonAvDNummer_4.0.xsd": 1513679172216,
-  "produsenttjenester/mottak.md": 1513679172217,
-  "produsenttjenester/tilbakemelding.md": 1513679172217,
+  "kontrakter/RekvisisjonAvDNummer_3.0.xsd": 1513679172216,
   "om-tjenestene/informasjonsfelter-og-statuskoder.md": 1513679172217,
   "om-tjenestene/sikkerhet.md": 1513679172217,
   "om-tjenestene/taushetsbelagte-opplysninger.md": 1513679172217,
-  "om-tjenestene/versjonering.md": 1513679172217
+  "om-tjenestene/versjonering.md": 1513679172217,
+  "produsenttjenester/mottak.md": 1513679172217,
+  "produsenttjenester/tilbakemelding.md": 1513679172217
 }
