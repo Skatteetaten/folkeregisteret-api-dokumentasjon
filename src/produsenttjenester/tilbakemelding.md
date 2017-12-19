@@ -3,7 +3,7 @@ title: Tilbakemelding
 ---
 
 # Grensesnittbeskrivelse
-Folkeregister tilbakemelding tilbyr en hendelsesfeed med informasjon om status på innsendinger. Den kan navigeres gjennom sekvensnummer. 
+Folkeregisterets tilbakemeldingstjeneste tilbyr en hendelsesfeed med informasjon om status på innsendinger. Den kan navigeres gjennom sekvensnummer. 
 
 Tjenestenes endepunkt:
 

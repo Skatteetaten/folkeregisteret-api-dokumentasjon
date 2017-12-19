@@ -6,6 +6,7 @@ const rootPath = require('metalsmith-rootpath');
 const collections = require('metalsmith-collections');
 const redirect = require('metalsmith-redirect');
 const changed = require('metalsmith-changed');
+const feed = require('metalsmith-feed');
 const metadata = require('./metadata');
 
 const smith = (clean = false) => {
@@ -30,7 +31,7 @@ const smith = (clean = false) => {
                 pattern: 'konsumenttjenester/**/*',
                 sortBy: 'title'
             },
-            'driftsstatus-og-nyheter': {
+          'driftsstatus-og-nyheter': {
             pattern: 'driftsstatus-og-nyheter/**/*',
             sortBy: 'title'
           }
@@ -41,6 +42,9 @@ const smith = (clean = false) => {
         }))
         .use(redirect({
         '/': '/om-tjenestene'
+        }))
+        .use(feed({
+          collection: 'driftsstatus-og-nyheter',
         }))
         .use(layouts({
             default: 'layout.hbs',

@@ -2,6 +2,10 @@
 title: Informasjonsfelter og statuskoder
 ---
 
+Nytt folkeregister betyr løpende elektronisk innsending, automatisert saksbehandling og oppdatering av opplysninger på minutter og sekunder. Sanntidsoppdateringer til alle brukere, flere tilgjengelige opplysninger, enklere tilgang og nye, standardiserte tjenester.
+
+Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye regelverket gir utvidet tilgang på opplysninger. Det innføres også et nytt regime for tilgangsstyring for alle som bruker folkeregisteropplysninger, i form av rettighetspakker. Nedenfor lister vi opp alle nye informasjonselementer i det nye folkeregisteret, og – lenger ned – alle endringer i informasjonselementer i det nye registeret.
+
 # Ny informasjon og endringer fra DSF til nytt folkeregister
 
 * **Kjerneinformasjon**
@@ -88,7 +92,7 @@ Personer som skal ha personstatus "Bosatt":
 Personstatusen "Utflyttet" benyttes om personer med fødselsnummer som ikke er bosatt i Norge.
 
 Personer som skal ha personstatus "Utflyttet":
-* Personer som melder flytting, og får innvilget utflytting fra Norge av folkeregisteret
+* Personer som melder flytting, og får innvilget utflytting fra Norge av Folkeregisteret
 * Personer som ikke har hatt opphold i Norge i over 6 måneder 
 * Personer som ikke får innvilget eller fornyet oppholdstillatelse
 * Personer som har ukjent oppholdssted i 2 år, og det blir truffet vedtak om utflytting
@@ -97,12 +101,12 @@ Personer som skal ha personstatus "Utflyttet":
 Personstatusen "Forsvunnet" benyttes om personer som er blitt borte i forbindelse med ulykker, naturkatastrofer, forbrytelser eller er savnet på sjøen, i fjellet eller liknende.
 
 Personer som vil få personstatus "Forsvunnet":
-* Personer med fødsels- eller d-nummer som meldes til folkeregisteret som forsvunnet av politi eller påtalemyndighet.
+* Personer med fødsels- eller d-nummer som meldes til Folkeregisteret som forsvunnet av politi eller påtalemyndighet.
   
 ## Personstatus - Død
-Personstatusen "Død" benyttes om personer med enten fødsels- eller d-nummer som er registrert døde i folkeregisteret.
+Personstatusen "Død" benyttes om personer med enten fødsels- eller d-nummer som er registrert som døde i Folkeregisteret.
 
-Personstatusen "Død" kan beskrives som en "sluttstatus", som innebærer at det ikke vil gjøres nye oppdateringer på personen i folkeregisteret 
+Personstatusen "Død" kan beskrives som en "sluttstatus", som innebærer at det ikke vil gjøres nye oppdateringer på personen i Folkeregisteret 
 * Personer som vil få personstatus "Død":
 * Personer med fødsels- eller d-nummer som dør i Norge, meldt av lege
 * Personer med fødsels- eller d-nummer som erklæres døde ved dødskjennelse fra Tingretten
@@ -110,8 +114,8 @@ Personstatusen "Død" kan beskrives som en "sluttstatus", som innebærer at det 
 * Personer som dør i utlandet, som meldes døde av pårørende og andre til folkeregisteret
   
 ## Personstatus - Opphørt
-Personstatusen "Opphørt" benyttes om personer som er tildelt personidentifikator i folkeregisteret, hvor identifikatoren ikke lenger er gyldig for identiteten. Dette vil være tilfelle for personer hvor man i etterkant finner ut at tildeling av personidentifikator ikke skulle vært gjennomført.
-Personstatusen "Opphørt" signaliserer at identiteten i folkeregisteret ikke lenger representerer en person med en tilknytning til samfunnet, og er å anse som en "sluttstatus" på lik linje med "Død".
+Personstatusen "Opphørt" benyttes om personer som er tildelt personidentifikator i Folkeregisteret, hvor identifikatoren ikke lenger er gyldig for identiteten. Dette vil være tilfelle for personer hvor man i etterkant finner ut at tildeling av personidentifikator ikke skulle vært gjennomført.
+Personstatusen "Opphørt" signaliserer at identiteten i Folkeregisteret ikke lenger representerer en person med en tilknytning til samfunnet, og er å anse som en "sluttstatus" på lik linje med "Død".
 
 Personer som vil få personstatus "Opphørt":
 * Falsk identitet
@@ -124,7 +128,7 @@ Personer som vil få personstatus "Opphørt":
 ## Personstatus - Fødselsregistrert
 Personstatusen "Fødselsregistrert" benyttes om personer som er født i Norge, og oppfyller kravet til tildeling av fødselsnummer, men som ikke skal bostedsregistreres.
 
-Denne statuskoden bygger på at folkeregisteret er det offisielle fødselsregister i Norge og derfor kan utstede fødselsattester med sikker notoritet for denne gruppen
+Denne statuskoden bygger på at Folkeregisteret er det offisielle fødselsregister i Norge og derfor kan utstede fødselsattester med sikker notoritet for denne gruppen
 
 Personer som vil få personstatus "Fødselsregistrert":
 * Personer født på norsk sykehus som ikke skal registreres som bosatt
@@ -140,7 +144,7 @@ Personer som vil få personstatus "Midlertidig":
 Personstatusen "Ikke bosatt" benyttes for norske statsborgere som har behov for fødselsnummer, men som ikke er bosatt i Norge.
 
 Person som vil få personstatus "Ikke bosatt":
-* Norsk borger født i Norge og utflyttet før 011064 eller norsk borger født i utlandet og aldri vært bosatt i Norge
+* Norsk borger født i Norge og utflyttet før 011064 eller norsk borger født i utlandet og som aldri har vært bosatt i Norge
 
 ## Personstatus – Inaktiv
 Innhold i koden inaktiv er under avklaring. Dokumentet vil bli oppdatert med dette i neste versjon.
@@ -149,7 +153,7 @@ Innhold i koden inaktiv er under avklaring. Dokumentet vil bli oppdatert med det
 Identifikatorstatus "I bruk" benyttes for alle tildelte personidentifikatorer som ikke er "Opphørt". 
 
 ## Identifikatorstatus – Opphørt
-Identifikatorstatus "Opphørt" benyttes for personidentifikatorer i folkeregisteret som ikke lenger er i bruk.
+Identifikatorstatus "Opphørt" benyttes for personidentifikatorer i Folkeregisteret som ikke lenger er i bruk.
 
 Dersom en person ikke har en  personidentifikator som er "I bruk" i tillegg til personidentifikator med statusen "Opphørt", så vil også personstatusen for personen være "Opphørt".
 
