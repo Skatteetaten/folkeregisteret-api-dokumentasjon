@@ -53,7 +53,7 @@
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
 <p>Folkeregisterets tilbakemeldingstjeneste tilbyr en hendelsesfeed med informasjon om status på innsendinger. Den kan navigeres gjennom sekvensnummer. </p>
 <p>Tjenestenes endepunkt:</p>
-<p><code>GET {miljø}/folkregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&amp;direction={nyere/eldre}&amp;pageSize=100</code></p>
+<p><code>GET {miljø}/folkeregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&amp;direction={nyere/eldre}&amp;pageSize=100</code></p>
 <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
 <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/tilbakemelding/api/v2/hendelser/&quot;</code></p>
 <h2 id="headere">Headere</h2>
@@ -266,5 +266,5 @@
     </div>
   </div>
 </div>
-</body>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script></body>
 </html>

@@ -7,7 +7,7 @@ Folkeregisterets tilbakemeldingstjeneste tilbyr en hendelsesfeed med informasjon
 
 Tjenestenes endepunkt:
 
-`GET {miljø}/folkregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&direction={nyere/eldre}&pageSize=100`
+`GET {miljø}/folkeregisteret/tilbakemelding/api/{versjon}/hendelser?seq={startsekvensnummer}&direction={nyere/eldre}&pageSize=100`
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
