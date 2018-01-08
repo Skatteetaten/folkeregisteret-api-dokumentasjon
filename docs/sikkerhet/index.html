@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Sikkerhet</title>
+</head><body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Sikkerhet</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+          <a href="../versjonering">Versjonering</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p><strong>NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.</strong></p>
+<h1 id="sikkerhet-og-autentisering">Sikkerhet og autentisering</h1>
+<p>For å benytte Skatteetatens API trenger du et kvalifisert <a href="https://en.wikipedia.org/wiki/X.509">X.509</a> virksomhetssertifikat for kryptering/autentisering. Nasjonal kommunikasjonsmyndighet har <a href="https://www.nkom.no/teknisk/elektronisk-signatur/kvalifisert-sertifikat/registrerte-tilbydere-av-kvalifiserte-sertifikater">oversikt over godkjente tilbydere av kvalifiserte sertifikater</a>. I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. </p>
+<p>Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virksomhetens <em>organisasjonsnummer</em>. <strong>Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.</strong></p>
+<p>Det finnes virksomhetssertifikater for forskjellige formål. Skatteetaten krever et sertifikat utstedt for kryptering/autentisering. Virksomhetsertifikat utstedt for signering vil ikke virke. <em>Sjekk at &#39;Key Usage&#39; er &#39;critical&#39;. Hvis verdien for &#39;Key Usage&#39; er non-repudiation er det feil type sertifikat</em></p>
+<p>Du trenger tilgang til <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Private key</a> som hører til sertifikatet. <br>
+<strong>VIKTIG: Private key skal aldri deles med noen, heller ikke Skatteetaten.</strong></p>
+<p>Det kreves at man utfører standard klientsertifikatautentisering. De fleste vanlige http-verktøy har støtte for dette. Et eksempel på verktøy man kan bruke er <a href="https://ec.haxx.se/usingcurl-tls.html">curl</a>.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script></body>
+</html>
