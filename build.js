@@ -31,10 +31,18 @@ const smith = (clean = false) => {
                 pattern: 'konsumenttjenester/**/*',
                 sortBy: 'title'
             },
-          'driftsstatus-og-nyheter': {
-            pattern: 'driftsstatus-og-nyheter/**/*',
-            sortBy: 'title'
-          }
+            'driftsstatus-og-nyheter': {
+                pattern: 'driftsstatus-og-nyheter/**/*',
+                sortBy: 'title'
+            },
+            'nyheter': {
+              pattern: 'driftsstatus-og-nyheter/nyheter/*',
+              sortBy: 'title'
+            },
+            'driftsstatus': {
+              pattern: 'driftsstatus-og-nyheter/driftsstatus/*',
+              sortBy: 'title'
+            }
         }))
         .use(markdown({}))
         .use(permalinks({
@@ -49,7 +57,10 @@ const smith = (clean = false) => {
         .use(layouts({
             default: 'layout.hbs',
             engine: 'handlebars',
+            partials: 'partials',
+            partialExtension: ".hbs",
             pattern: '**/*.html'
+
         }))
       ;
 };
