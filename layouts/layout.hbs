@@ -6,22 +6,7 @@
   {{> header }}
 
   <div class="content">
-    <div class="meta">
-      <div class="sideblokk-seksjon navig">
-        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
-        {{#each collections.om-tjenestene}}
-          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
-        {{/each}}
-        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
-        {{#each collections.produsenttjenester}}
-          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
-        {{/each}}
-        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
-        {{#each collections.konsumenttjenester}}
-          <a href="{{rootPath}}{{this.path}}">{{this.title}}</a>
-        {{/each}}
-      </div>
-    </div>
+    {{> navigasjon_sideblokk }}
 
     <div class="data">
       <div class="innhold-blokk">
