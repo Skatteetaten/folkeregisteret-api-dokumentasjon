@@ -36,12 +36,12 @@ const smith = (clean = false) => {
                 sortBy: 'title'
             },
             'nyheter': {
-              pattern: 'driftsstatus-og-nyheter/nyheter/*',
-              sortBy: 'title'
+                pattern: 'driftsstatus-og-nyheter/nyheter/*',
+                sortBy: 'title'
             },
             'driftsstatus': {
-              pattern: 'driftsstatus-og-nyheter/driftsstatus/*',
-              sortBy: 'title'
+                pattern: 'driftsstatus-og-nyheter/driftsstatus/*',
+                sortBy: 'title'
             }
         }))
         .use(markdown({}))
@@ -49,10 +49,10 @@ const smith = (clean = false) => {
             pattern: ':title'
         }))
         .use(redirect({
-        '/': 'folkeregisteret-api-dokumentasjon/om-tjenestene'
+            '/': 'folkeregisteret-api-dokumentasjon/om-tjenestene'
         }))
         .use(feed({
-          collection: 'driftsstatus-og-nyheter',
+            collection: 'driftsstatus-og-nyheter',
         }))
         .use(layouts({
             default: 'layout.hbs',
@@ -62,11 +62,11 @@ const smith = (clean = false) => {
             pattern: '**/*.html'
 
         }))
-      ;
+        ;
 };
 
 smith(true)
-    .build(function(err) {
+    .build(function (err) {
         if (err) throw err;
     });
 
