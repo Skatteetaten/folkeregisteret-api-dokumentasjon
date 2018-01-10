@@ -10,6 +10,7 @@ body {
 /* Blocks */
 .content {
     display: flex;
+    flex-wrap: wrap-reverse;
     padding: 1em 0;
 }
 
@@ -25,11 +26,14 @@ body {
     margin: 0 20px;
 }
 
-/* Medium screens */
-@media only screen and (max-width: 1024px) {
-    .content { flex-wrap: wrap-reverse }
-    .meta {flex: 1}
-    .data {flex: 1}
+@media all and (max-device-width: 800px) {
+    .meta {
+        flex: 1
+    }
+
+    .data {
+        flex: 1
+    }
 }
 
 /* Header */
