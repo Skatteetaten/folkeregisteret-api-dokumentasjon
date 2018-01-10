@@ -873,9 +873,103 @@ livereload@^0.6.2:
     opts ">= 1.2.0"
     ws "^1.1.1"
 
+lodash._arrayeach@^3.0.0:
+  version "3.0.0"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._arrayeach/-/lodash._arrayeach-3.0.0.tgz#bab156b2a90d3f1bbd5c653403349e5e5933ef9e"
+
+lodash._basecallback@^3.0.0:
+  version "3.3.1"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._basecallback/-/lodash._basecallback-3.3.1.tgz#b7b2bb43dc2160424a21ccf26c57e443772a8e27"
+  dependencies:
+    lodash._baseisequal "^3.0.0"
+    lodash._bindcallback "^3.0.0"
+    lodash.isarray "^3.0.0"
+    lodash.pairs "^3.0.0"
+
+lodash._basecreate@^3.0.0:
+  version "3.0.3"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._basecreate/-/lodash._basecreate-3.0.3.tgz#1bc661614daa7fc311b7d03bf16806a0213cf821"
+
+lodash._basefor@^3.0.0:
+  version "3.0.3"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._basefor/-/lodash._basefor-3.0.3.tgz#7550b4e9218ef09fad24343b612021c79b4c20c2"
+
+lodash._baseisequal@^3.0.0:
+  version "3.0.7"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._baseisequal/-/lodash._baseisequal-3.0.7.tgz#d8025f76339d29342767dcc887ce5cb95a5b51f1"
+  dependencies:
+    lodash.isarray "^3.0.0"
+    lodash.istypedarray "^3.0.0"
+    lodash.keys "^3.0.0"
+
+lodash._bindcallback@^3.0.0:
+  version "3.0.1"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+
+lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+
+lodash.isarguments@^3.0.0:
+  version "3.1.0"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+
+lodash.isarray@^3.0.0, lodash.isarray@^3.0.3:
+  version "3.0.4"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+
+lodash.isempty@^3.0.4:
+  version "3.0.4"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.isempty/-/lodash.isempty-3.0.4.tgz#3bc55bf811d6d232d5e3354ce2c86447a20f1ad5"
+  dependencies:
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
+    lodash.isfunction "^3.0.0"
+    lodash.isstring "^3.0.0"
+    lodash.keys "^3.0.0"
+
+lodash.isfunction@^3.0.0:
+  version "3.0.8"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.isfunction/-/lodash.isfunction-3.0.8.tgz#4db709fc81bc4a8fd7127a458a5346c5cdce2c6b"
+
+lodash.isstring@^3.0.0, lodash.isstring@^3.0.1:
+  version "3.0.1"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.isstring/-/lodash.isstring-3.0.1.tgz#41638944ea042ef67ad67c293aa541d3f3d6e53c"
+
+lodash.istypedarray@^3.0.0:
+  version "3.0.6"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.istypedarray/-/lodash.istypedarray-3.0.6.tgz#c9a477498607501d8e8494d283b87c39281cef62"
+
+lodash.keys@^3.0.0:
+  version "3.1.2"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.keys/-/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
+  dependencies:
+    lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
+
 lodash.omit@^4.0.2:
   version "4.5.0"
   resolved "http://aurora/npm/repository/npm-all/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+
+lodash.pairs@^3.0.0:
+  version "3.0.1"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.pairs/-/lodash.pairs-3.0.1.tgz#bbe08d5786eeeaa09a15c91ebf0dcb7d2be326a9"
+  dependencies:
+    lodash.keys "^3.0.0"
+
+lodash.transform@^3.0.3:
+  version "3.0.4"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/lodash.transform/-/lodash.transform-3.0.4.tgz#8ebe53fbae15857ade36eca67fc559b78bb3ebe9"
+  dependencies:
+    lodash._arrayeach "^3.0.0"
+    lodash._basecallback "^3.0.0"
+    lodash._basecreate "^3.0.0"
+    lodash._basefor "^3.0.0"
+    lodash.isarray "^3.0.0"
+    lodash.isfunction "^3.0.0"
+    lodash.istypedarray "^3.0.0"
+    lodash.keys "^3.0.0"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -901,6 +995,16 @@ metalsmith-collections@^0.9.0:
     multimatch "^2.1.0"
     read-metadata "^1.0.0"
     uniq "^1.0.1"
+
+metalsmith-date-formatter@^1.0.2:
+  version "1.0.2"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/metalsmith-date-formatter/-/metalsmith-date-formatter-1.0.2.tgz#bd687046e12f9cf98ea31eaebdcb834026eee617"
+  dependencies:
+    lodash.isarray "^3.0.3"
+    lodash.isempty "^3.0.4"
+    lodash.isstring "^3.0.1"
+    lodash.transform "^3.0.3"
+    moment "^2.10.3"
 
 metalsmith-feed-atom@^1.0.0:
   version "1.0.0"
@@ -1052,6 +1156,10 @@ minimist@~0.0.1:
   resolved "http://aurora/npm/repository/npm-all/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@^2.10.3:
+  version "2.20.1"
+  resolved "https://nexus-npm.aurora.skead.no/npm/repository/npm-all/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
 moment@^2.5.1:
   version "2.18.1"
