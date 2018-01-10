@@ -170,6 +170,8 @@ input[type=checkbox]:checked+.toggle {
 table {
     color:#666;
     text-shadow: 1px 1px 0px #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
     background:#eaebec;
     border:#ccc 1px solid;
 
