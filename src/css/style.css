@@ -15,25 +15,15 @@ body {
 }
 
 .meta {
-    flex: 0 1 320px;
-    min-width: 300px;
+    flex: 1 ;
+    min-width: 320px;
     margin: 0 20px;
 }
 
 .data {
-    flex: 0 1 780px;
-    min-width: 600px;
+    flex: 4;
+    min-width: 300px;
     margin: 0 20px;
-}
-
-@media all and (max-device-width: 800px) {
-    .meta {
-        flex: 1
-    }
-
-    .data {
-        flex: 1
-    }
 }
 
 /* Header */
