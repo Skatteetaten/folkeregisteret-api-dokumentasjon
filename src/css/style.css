@@ -23,6 +23,13 @@ body {
     margin: 0 20px;
 }
 
+/* Medium screens */
+@media all and (max-device-width: 800px) {
+    .content { flex-wrap: wrap-reverse }
+    .meta {flex: 1}
+    .data {flex: 1}
+}
+
 /* Header */
 .header {
     background: #ece6e8;
