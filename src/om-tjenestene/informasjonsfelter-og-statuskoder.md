@@ -54,7 +54,7 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
 
 ## Personstatuser og identifikatorstatuser
 
-| Gamle koder: <br> F-nummer statuskoder | Nye koder: <br> personstatus | Nye koder: <br> identifikatorstatus
+| Gamle koder: <br> F-nummer statuskoder | Nye koder: <br> Personstatus | Nye koder: <br> Identifikatorstatus
 | --- | ---| --- |
 | 1 - Bosatt | Bosatt | I bruk |
 | 3 - Utvandret | Utflyttet | I bruk |
@@ -76,6 +76,7 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
 | --- | --- | --- |
 | 2 - I bruk | - | I bruk |
 | 5 - Utgått, Link til f-nummer | - | Opphørt |
+| --- | --- | --- |
 | 6 - Utgått, dublett | - | Opphørt |
 | 7 - Utgått, avgang | - | Opphørt |
 | 9 - Utgått, korrigert til nytt d-nummer | - | Opphørt | 
@@ -165,4 +166,3 @@ Dersom en person ikke har en  personidentifikator som er "I bruk" i tillegg til 
 
 
 
-  
