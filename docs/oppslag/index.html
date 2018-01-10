@@ -45,153 +45,152 @@
           <a href="../oppslag">Oppslag</a>
       </div>
     </div>
-
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
-<p>  Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. </p>
-<ul>
-<li>Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. </li>
-<li>En versjonert utgave av en person som har vært eller er gyldig. </li>
-</ul>
-<p>For å nå tjenestene bygges URL opp slik:
-{miljø}{rettighetspakke}{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
-<p>Parameteret &quot;part&quot; kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i <a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a>. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med <em>-historikk</em>.</p>
-<h2 id="ressurser">Ressurser</h2>
-<table>
-<thead>
-<tr>
-<th>Ressurs</th>
-<th>Beskrivelse</th>
-<th>Kontrakt</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>personer/{folkeregisteridentifikator}</td>
-<td>Siste versjon av en person</td>
-<td><a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a></td>
-</tr>
-<tr>
-<td>personer/arkiv/{persondokumentidentifikator}</td>
-<td>Versjonert utgave av en person</td>
-<td><a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="rettighetspakker">Rettighetspakker</h2>
-<table>
-<thead>
-<tr>
-<th>Rettighetspakke</th>
-<th>Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>offentlig-med-hjemmel/api/</td>
-<td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="milj-er">Miljøer</h2>
-<table>
-<thead>
-<tr>
-<th>Miljø</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Test</td>
-<td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
-</tr>
-<tr>
-<td>Produksjon</td>
-<td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
-</tr>
-</tbody>
-</table>
-<p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
-<p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
-<p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
-<p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
-<h2 id="headere">Headere</h2>
-<p><strong>Accept</strong></p>
-<p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
-<h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
-<h3 id="statuskode-200">Statuskode 200</h3>
-<p>Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:</p>
-<pre><code class="lang-json">{
-  &quot;identifikasjonsnummer&quot;: [
-    {
-      &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
-      &quot;erGjeldende&quot;: true,
-      &quot;kilde&quot;: &quot;SKATTEETATEN&quot;,
-      &quot;gyldighetstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
-      &quot;status&quot;: &quot;iBruk&quot;,
-      &quot;foedselsEllerDNummer&quot;: &quot;69080275560&quot;,
-      &quot;identifikatortype&quot;: &quot;dNummer&quot;
+    <p>  Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. </p>
+    <ul>
+    <li>Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. </li>
+    <li>En versjonert utgave av en person som har vært eller er gyldig. </li>
+    </ul>
+    <p>For å nå tjenestene bygges URL opp slik:
+    {miljø}{rettighetspakke}{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
+    <p>Parameteret &quot;part&quot; kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i <a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a>. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med <em>-historikk</em>.</p>
+    <h2 id="ressurser">Ressurser</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Ressurs</th>
+    <th>Beskrivelse</th>
+    <th>Kontrakt</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>personer/{folkeregisteridentifikator}</td>
+    <td>Siste versjon av en person</td>
+    <td><a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a></td>
+    </tr>
+    <tr>
+    <td>personer/arkiv/{persondokumentidentifikator}</td>
+    <td>Versjonert utgave av en person</td>
+    <td><a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a></td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="rettighetspakker">Rettighetspakker</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Rettighetspakke</th>
+    <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>offentlig-med-hjemmel/api/</td>
+    <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="milj-er">Miljøer</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Miljø</th>
+    <th>URL</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Test</td>
+    <td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
+    </tr>
+    <tr>
+    <td>Produksjon</td>
+    <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
+    <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
+    <p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
+    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
+    <h2 id="headere">Headere</h2>
+    <p><strong>Accept</strong></p>
+    <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
+    <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
+    <h3 id="statuskode-200">Statuskode 200</h3>
+    <p>Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:</p>
+    <pre><code class="lang-json">{
+      &quot;identifikasjonsnummer&quot;: [
+        {
+          &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
+          &quot;erGjeldende&quot;: true,
+          &quot;kilde&quot;: &quot;SKATTEETATEN&quot;,
+          &quot;gyldighetstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
+          &quot;status&quot;: &quot;iBruk&quot;,
+          &quot;foedselsEllerDNummer&quot;: &quot;69080275560&quot;,
+          &quot;identifikatortype&quot;: &quot;dNummer&quot;
+        }
+      ],
+      &quot;annenIdentifikasjon&quot;: [],
+      &quot;identitetsgrunnlag&quot;: [
+        {
+          &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:24.528+02:00&quot;,
+          &quot;erGjeldende&quot;: true,
+          &quot;kilde&quot;: &quot;skatteetaten&quot;,
+          &quot;aarsak&quot;: &quot;besluttetTildelingAvDNummer&quot;,
+          &quot;gyldighetstidspunkt&quot;: &quot;2017-09-26T11:08:22.918+02:00&quot;,
+          &quot;identitetsgrunnlagstatus&quot;: &quot;ikkeKontrollert&quot;,
+          &quot;dokumentgrunnlag&quot;: []
+        }
+      ]
     }
-  ],
-  &quot;annenIdentifikasjon&quot;: [],
-  &quot;identitetsgrunnlag&quot;: [
-    {
-      &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:24.528+02:00&quot;,
-      &quot;erGjeldende&quot;: true,
-      &quot;kilde&quot;: &quot;skatteetaten&quot;,
-      &quot;aarsak&quot;: &quot;besluttetTildelingAvDNummer&quot;,
-      &quot;gyldighetstidspunkt&quot;: &quot;2017-09-26T11:08:22.918+02:00&quot;,
-      &quot;identitetsgrunnlagstatus&quot;: &quot;ikkeKontrollert&quot;,
-      &quot;dokumentgrunnlag&quot;: []
+    </code></pre>
+    <h3 id="feilkoder">Feilkoder</h3>
+    <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
+    <pre><code class="lang-json">{
+      &quot;kode&quot;: &quot;FREG-001&quot;,
+      &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
     }
-  ]
-}
-</code></pre>
-<h3 id="feilkoder">Feilkoder</h3>
-<p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-<pre><code class="lang-json">{
-  &quot;kode&quot;: &quot;FREG-001&quot;,
-  &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
-}
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>HTTP Statuskode</th>
-<th>Forklaring</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>401</td>
-<td>Autentiseringsinformasjon mangler</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Feil uri brukt.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Oppgitt Accept-header inneholder ikke &#39;application/xml&#39; eller &#39;application/json&#39;</td>
-</tr>
-<tr>
-<td>429</td>
-<td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
-</tr>
-</tbody>
-</table>
-
+    </code></pre>
+    <table>
+    <thead>
+    <tr>
+    <th>HTTP Statuskode</th>
+    <th>Forklaring</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>401</td>
+    <td>Autentiseringsinformasjon mangler</td>
+    </tr>
+    <tr>
+    <td>403</td>
+    <td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten</td>
+    </tr>
+    <tr>
+    <td>404</td>
+    <td>Feil uri brukt.</td>
+    </tr>
+    <tr>
+    <td>406</td>
+    <td>Oppgitt Accept-header inneholder ikke &#39;application/xml&#39; eller &#39;application/json&#39;</td>
+    </tr>
+    <tr>
+    <td>429</td>
+    <td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres</td>
+    </tr>
+    <tr>
+    <td>500</td>
+    <td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
+    </tr>
+    </tbody>
+    </table>
+    
         </div>
       </div>
     </div>
