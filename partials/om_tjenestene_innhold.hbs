@@ -2,6 +2,23 @@
   <div class="innhold-blokk">
     <div class="innhold-blokk-innhold">
       {{{contents}}}
+
+      <h2>Nyheter</h2>
+      {{#each nyheter}}
+        <h3>{{{this.date}}} - {{this.title}}  </h3>
+        {{{this.contents}}}
+
+      {{/each}}
+
+      <h2>Driftsvarsler</h2>
+      <table>
+        {{#each driftsstatus}}
+          <tr>
+            <td>{{this.datetime}}</td>
+            <td>{{{this.contents}}}</td>
+          </tr>
+        {{/each}}
+      </table>
     </div>
   </div>
 </div>

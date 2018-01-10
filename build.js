@@ -7,6 +7,7 @@ const collections = require('metalsmith-collections');
 const redirect = require('metalsmith-redirect');
 const changed = require('metalsmith-changed');
 const feed = require('metalsmith-feed');
+const dateFormatter = require('metalsmith-date-formatter');
 const metadata = require('./metadata');
 
 const smith = (clean = false) => {
@@ -17,6 +18,18 @@ const smith = (clean = false) => {
         .destination('docs')
         .clean(clean)
         .use(changed())
+        .use(dateFormatter({
+            dates: [
+                {
+                    key: 'date',
+                    format: 'YYYY-MM-DD'
+                },
+                {
+                    key: 'datetime',
+                    format: 'YYYY-MM-DDThh:mm:ss'
+                }
+            ]
+        }))
         .use(rootPath())
         .use(collections({
             'om-tjenestene': {
@@ -37,11 +50,13 @@ const smith = (clean = false) => {
             },
             'nyheter': {
                 pattern: 'driftsstatus-og-nyheter/nyheter/*',
-                sortBy: 'title'
+                sortBy: 'date',
+                reverse: true
             },
             'driftsstatus': {
                 pattern: 'driftsstatus-og-nyheter/driftsstatus/*',
-                sortBy: 'title'
+                sortBy: 'datetime',
+                reverse: true
             }
         }))
         .use(markdown({}))

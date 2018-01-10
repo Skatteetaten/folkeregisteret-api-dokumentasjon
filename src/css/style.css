@@ -14,12 +14,12 @@ body {
 }
 
 .meta {
-    flex: 0 0 360px;
+    flex: 0 1 320px;
     margin: 0 20px;
 }
 
 .data {
-    flex: 0 0 780px;
+    flex: 0 1 780px;
     margin: 0 20px;
 }
 
