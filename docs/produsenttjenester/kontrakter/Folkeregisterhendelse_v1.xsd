@@ -5,7 +5,7 @@
 	<xsd:complexType name="Hendelse">
 		<xsd:sequence>
 			<xsd:element name="folkeregisteridentifikator" type="Foedselsnummer"/>
-			<xsd:element name="hendelsestype" type="Hendelsestype"/>
+			<xsd:element name="hendelsetype" type="Hendelsetype"/>
 			<xsd:element name="hendelsesdokument" type="Identifikator"/>
 			<xsd:element name="persondokument" type="Identifikator"/>
 			<xsd:element name="ajourholdstidspunkt" type="DatoKlokkeslett"/>
@@ -18,7 +18,7 @@
 			<xsd:element name="hendelse" type="Hendelse"/>
 		</xsd:sequence>
 	</xsd:complexType>
-	<xsd:simpleType name="Hendelsestype">
+	<xsd:simpleType name="Hendelsetype">
 		<xsd:restriction base="xsd:string"/>
 	</xsd:simpleType>
 	<xsd:simpleType name="Identifikator">
