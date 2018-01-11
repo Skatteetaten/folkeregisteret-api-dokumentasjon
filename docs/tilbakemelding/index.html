@@ -58,7 +58,14 @@
     <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/tilbakemelding/api/v2/hendelser/&quot;</code></p>
     <h2 id="headere">Headere</h2>
     <p><strong>Accept</strong></p>
-    <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json og application/xml</p>
+    <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json og application/xml.</p>
+    <p>Dersom man velger application/xml brukes følgende kontrakter i svaret fra tjenesten:</p>
+    <p>Feeden er i henhold til <a href="http://www.ietf.org/rfc/rfc4287.txt">Atom spesifikasjonen</a>. Gyldige elementer (angitt i content-delen av feeden) er </p>
+    <ul>
+    <li><a href="../kontrakter/HendelserISakOmFolkeregistrering_1.0.xsd">HendelserISakOmFolkeregistrering_v1</a></li>
+    <li><a href="../kontrakter/HendelserISakOmDNummerRekvisisjon_3.0.xsd">HendelserISakOmDNummerRekvisisjon_v3</a></li>
+    <li><a href="../kontrakter/HendelserISakOmEndringAvDNummerPerson_1.0.xsd">HendelserISakOmEndringAvDNummerPerson_v1</a></li>
+    </ul>
     <p><strong>If-None-Match</strong></p>
     <p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
     <h2 id="eksempel-p-respons-fra-tjenesten">Eksempel på respons fra tjenesten</h2>

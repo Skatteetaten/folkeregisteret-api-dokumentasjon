@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2017 rel. 3 sp1 (x64) (http://www.altova.com) by ﻿Skatteetaten (Skatteetaten) -->
-<xsd:schema xmlns="folkeregisteret:tilgjengeliggjoering:folkeregisterhendelse:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="folkeregisteret:tilgjengeliggjoering:folkeregisterhendelse:v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns="folkeregisteret:tilgjengeliggjoering:hendelse:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="folkeregisteret:tilgjengeliggjoering:hendelse:v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xsd:element name="lagretHendelse" type="LagretHendelse"/>
 	<xsd:complexType name="Hendelse">
 		<xsd:sequence>
