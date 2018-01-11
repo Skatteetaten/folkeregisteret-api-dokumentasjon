@@ -17,7 +17,14 @@ Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
 **Accept**
 
-Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json og application/xml
+Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json og application/xml.
+
+Dersom man velger application/xml brukes følgende kontrakter i svaret fra tjenesten:
+
+Feeden er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Gyldige elementer (angitt i content-delen av feeden) er 
+* [HendelserISakOmFolkeregistrering_v1](../kontrakter/HendelserISakOmFolkeregistrering_1.0.xsd)
+* [HendelserISakOmDNummerRekvisisjon_v3](../kontrakter/HendelserISakOmDNummerRekvisisjon_3.0.xsd)
+* [HendelserISakOmEndringAvDNummerPerson_v1](../kontrakter/HendelserISakOmEndringAvDNummerPerson_1.0.xsd)
 
 **If-None-Match**
 
