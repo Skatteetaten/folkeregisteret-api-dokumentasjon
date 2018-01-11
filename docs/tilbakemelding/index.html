@@ -73,7 +73,8 @@
     <h3 id="statuskode-200">Statuskode 200</h3>
     <p>Ved statuskode 200 inneholder <em>body</em> i svaret en liste med tilbakemeldinger gitt at det finnes noen å hente som samsvarer med spørringen i URL.</p>
     <p>Eksempel på en slik liste med tilbakemeldinger gitt at application/json er angitt header <em>Accept</em>.</p>
-    <pre><code class="lang-json">[
+    <pre><code class="lang-json">
+    [
       {
         &quot;title&quot;: &quot;Hendelse i sak&quot;,
         &quot;id&quot;: &quot;5&quot;,
@@ -146,7 +147,8 @@
     <p>Statuskode 304 (<em>not modified</em>) returneres hvis kallet til tjenesten inkluderte headeren <strong>If-None-Match</strong> og denne er lik den aktuelle ETag for etterspurte ressurs. Det betyr at det ikke er kommet noen nye innslag på feeden siden forrige kall.</p>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;kode&quot;: &quot;FREG-001&quot;,
       &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
     }

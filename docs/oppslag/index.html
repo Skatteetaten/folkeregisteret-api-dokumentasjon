@@ -51,7 +51,7 @@
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
-    <p>  Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. </p>
+    <p>Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. </p>
     <ul>
     <li>Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. </li>
     <li>En versjonert utgave av en person som har vært eller er gyldig. </li>
@@ -125,7 +125,8 @@
     <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
     <h3 id="statuskode-200">Statuskode 200</h3>
     <p>Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;identifikasjonsnummer&quot;: [
         {
           &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
@@ -153,7 +154,8 @@
     </code></pre>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;kode&quot;: &quot;FREG-001&quot;,
       &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
     }

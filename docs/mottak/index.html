@@ -117,7 +117,8 @@
     <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v4&quot;</code></p>
     <h3 id="statuskode-202">Statuskode 202</h3>
     <p>Sammen med statuskode 202 kommer en datastruktur som ser slik ut:</p>
-    <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+    <pre><code class="lang-xml">
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
     &lt;meldingMottatt&gt;
       &lt;folkeregisterReferanse&gt;47956f5b-fa1e-447d-a62d-b6714bc1f120&lt;/folkeregisterReferanse&gt;
       &lt;avsendersMeldingsidentifikator&gt;unik-3efaf50b2a19&lt;/avsendersMeldingsidentifikator&gt;
@@ -125,7 +126,8 @@
     </code></pre>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+    <pre><code class="lang-xml">
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
     &lt;folkeregisterFeilmelding&gt;
       &lt;httpStatus&gt;403&lt;/httpStatus&gt;
       &lt;alvorlighetsgrad&gt;WARNING&lt;/alvorlighetsgrad&gt;

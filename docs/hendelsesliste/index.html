@@ -128,7 +128,8 @@
     <p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
     <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
     <h3 id="hendelsesliste-format-json">Hendelsesliste - format JSON</h3>
-    <pre><code class="lang-json">[
+    <pre><code class="lang-json">
+    [
       {
         &quot;sekvensnummer&quot;: 1,
         &quot;hendelse&quot;: {
@@ -152,7 +153,8 @@
     ]
     </code></pre>
     <h3 id="hendelsesliste-format-atom-xml">Hendelsesliste - format ATOM/XML</h3>
-    <pre><code class="lang-xml">&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
+    <pre><code class="lang-xml">
+    &lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
     &lt;feed xmlns=&quot;http://www.w3.org/2005/Atom&quot;&gt;
       &lt;id&gt;http://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed&lt;/id&gt;
       &lt;title&gt;Offentlig hendelsesliste&lt;/title&gt;
@@ -204,7 +206,8 @@
     &lt;/feed&gt;
     </code></pre>
     <h3 id="hendelsesdokument-for-en-endring-format-json">Hendelsesdokument for en endring - format JSON</h3>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;dokumentidentifikator&quot;: &quot;1120bea688fb14a292c244592a1aed76&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
       &quot;hendelse&quot;: {
@@ -229,7 +232,8 @@
     }
     </code></pre>
     <h3 id="hendelsesdokument-for-en-korrigering-format-json">Hendelsesdokument for en korrigering - format JSON</h3>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;dokumentidentifikator&quot;: &quot;eb73af9403b0f5702e802ad4f9b8ca4e&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
       &quot;hendelse&quot;: {
@@ -252,7 +256,8 @@
     }
     </code></pre>
     <h3 id="hendelsesdokument-for-en-annullering-format-json">Hendelsesdokument for en annullering - format JSON</h3>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;dokumentidentifikator&quot;: &quot;c0e054f025e56d63b14f91fbb5abcb95&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
       &quot;hendelse&quot;: {
@@ -269,7 +274,8 @@
     }
     </code></pre>
     <h3 id="hendelsesdokument-for-en-korrigering-av-historisk-informasjon-format-json">Hendelsesdokument for en korrigering av historisk informasjon - format JSON</h3>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;dokumentidentifikator&quot;: &quot;d1428661e6f2c5c158bf954facdd3ba2&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
       &quot;hendelse&quot;: {
@@ -289,7 +295,8 @@
     <p>Statuskode 304 (<em>not modified</em>) returneres hvis kallet til tjenesten inkluderte headeren <strong>If-None-Match</strong> og denne er lik den aktuelle ETag for etterspurte ressurs. Det betyr at det ikke er kommet noen nye innslag på feeden siden forrige kall.</p>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">
+    {
       &quot;kode&quot;: &quot;FREG-001&quot;,
       &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
     }
