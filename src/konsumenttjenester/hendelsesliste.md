@@ -59,6 +59,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 ### Hendelsesliste - format JSON
 
 ```json
+
 [
   {
     "sekvensnummer": 1,
@@ -85,6 +86,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 ```
 ### Hendelsesliste - format ATOM/XML
 ```xml
+
 <?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed</id>
@@ -140,6 +142,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 
 ### Hendelsesdokument for en endring - format JSON
 ```json
+
 {
   "dokumentidentifikator": "1120bea688fb14a292c244592a1aed76",
   "skjemaversjon": "1.0",
@@ -167,6 +170,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 
 ### Hendelsesdokument for en korrigering - format JSON
 ```json
+
 {
   "dokumentidentifikator": "eb73af9403b0f5702e802ad4f9b8ca4e",
   "skjemaversjon": "1.0",
@@ -192,6 +196,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 
 ### Hendelsesdokument for en annullering - format JSON
 ```json
+
 {
   "dokumentidentifikator": "c0e054f025e56d63b14f91fbb5abcb95",
   "skjemaversjon": "1.0",
@@ -211,6 +216,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 
 ### Hendelsesdokument for en korrigering av historisk informasjon - format JSON
 ```json
+
 {
   "dokumentidentifikator": "d1428661e6f2c5c158bf954facdd3ba2",
   "skjemaversjon": "1.0",
@@ -236,6 +242,7 @@ Statuskode 304 (_not modified_) returneres hvis kallet til tjenesten inkluderte 
 Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
 
 ```json
+
 {
   "kode": "FREG-001",
   "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."

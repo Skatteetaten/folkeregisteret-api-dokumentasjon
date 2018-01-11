@@ -34,6 +34,7 @@ Curl-kommando som kan benyttes for å teste tjenesten:
 Sammen med statuskode 202 kommer en datastruktur som ser slik ut:
 
 ```xml
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <meldingMottatt>
   <folkeregisterReferanse>47956f5b-fa1e-447d-a62d-b6714bc1f120</folkeregisterReferanse>
@@ -44,6 +45,7 @@ Sammen med statuskode 202 kommer en datastruktur som ser slik ut:
 Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
 
 ```xml
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <folkeregisterFeilmelding>
   <httpStatus>403</httpStatus>

@@ -2,8 +2,8 @@
 title: Oppslag
 ---
 
-  # Grensesnittbeskrivelse
-  Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. 
+# Grensesnittbeskrivelse
+Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. 
    * Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. 
    * En versjonert utgave av en person som har vært eller er gyldig. 
 
@@ -50,6 +50,7 @@ Verdien i denne headeren angir ønsket dataformat. Det er støtte for applicatio
 ### Statuskode 200
 Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:
 ```json
+
 {
   "identifikasjonsnummer": [
     {
@@ -81,6 +82,7 @@ Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en pers
 Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
 
 ```json
+
 {
   "kode": "FREG-001",
   "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."

@@ -38,6 +38,7 @@ Ved statuskode 200 inneholder *body* i svaret en liste med tilbakemeldinger gitt
 
 Eksempel på en slik liste med tilbakemeldinger gitt at application/json er angitt header *Accept*.
 ```json
+
 [
   {
     "title": "Hendelse i sak",
@@ -115,6 +116,7 @@ Statuskode 304 (_not modified_) returneres hvis kallet til tjenesten inkluderte 
 Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
 
 ```json
+
 {
   "kode": "FREG-001",
   "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."
