@@ -52,34 +52,108 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
 
 # Kodespeil og beskrivelser
 
+
+
+
 ## Personstatuser og identifikatorstatuser
 
-| Gamle koder: <br> F-nummer statuskoder | Nye koder: <br> Personstatus | Nye koder: <br> Identifikatorstatus
-| --- | ---| --- |
-| 1 - Bosatt | Bosatt | I bruk |
-| 3 - Utvandret | Utflyttet | I bruk |
-| 4 - Forsvunnet | - | I bruk |
-| 5 - Død | Død | I bruk |
-| 6 - Utgått Fødselsnummer | Opphørt | Opphørt
-| 7 - Fødselsregistrert | Fødselsregistrert | I bruk |
-| 8 - Annulert tilgang | Opphørt | Opphørt |
-| 9 - Uregistrert person | Ikke bosatt | I bruk |
-
-| Gamle koder: <br> D-nummer registreringsstatus DSF | Nye koder: <br> Personstatus | Nye koder: <br> Identifikatorstatus |
-| --- | --- | --- |
-| 1 - Aktiv | Midlertidig | - |
-| 2 - Død | Død | - |
-| 3 - Inaktiv | Inaktiv | - |
-
-
-| Gamle koder: <br> D-nummerstatus DSF | Nye koder: <br> Personstatus | Nye koder: <br> Identifikatorstatus |
-| --- | --- | --- |
-| 2 - I bruk | - | I bruk |
-| 5 - Utgått, Link til f-nummer | - | Opphørt |
-| --- | --- | --- |
-| 6 - Utgått, dublett | - | Opphørt |
-| 7 - Utgått, avgang | - | Opphørt |
-| 9 - Utgått, korrigert til nytt d-nummer | - | Opphørt | 
+<table>
+    <tr>
+        <th> Gamle koder: <br> F-nummer statuskoder</th>
+        <th> Nye koder: <br> Personstatus</th>
+        <th> Nye koder: <br> Identifikatorstatus</th>
+    </tr>
+    <tr>
+        <td> 1 - Bosatt</td>
+        <td> Bosatt</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <td> 3 - Utvandret</td>
+        <td> Utflyttet</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <td> 4 - Forsvunnet</td>
+        <td> -</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <td> 5 - Død</td>
+        <td> Død</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <td> 6 - Utgått Fødselsnummer</td>
+        <td> Opphørt</td>
+        <td> Opphørt</td>
+    </tr>
+    <tr>
+        <td> 7 - Fødselsregistrert</td>
+        <td> Fødselsregistrert</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <td> 8 - Annulert tilgang</td>
+        <td> Opphørt</td>
+        <td> Opphørt</td>
+    </tr>
+    <tr>
+        <td> 9 - Uregistrert person</td>
+        <td> Ikke bosatt</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <th> Gamle koder: <br> D-nummer registreringsstatus DSF</th>
+        <th> Nye koder: <br> Personstatus</th>
+        <th> Nye koder: <br> Identifikatorstatus</th>
+    </tr>
+    <tr>
+        <td> 1 - Aktiv</td>
+        <td> Midlertidig</td>
+        <td> -</td>
+    </tr>
+    <tr>
+        <td> 2 - Død</td>
+        <td> Død</td>
+        <td> -</td>
+    </tr>
+    <tr>
+        <td> 3 - Inaktiv</td>
+        <td> Inaktiv</td>
+        <td> -</td>
+    </tr>
+    <tr>
+        <th> Gamle koder: <br> D-nummerstatus DSF</th>
+        <th> Nye koder: <br> Personstatus</th>
+        <th> Nye koder: <br> Identifikatorstatus</th>
+    </tr>
+    <tr>
+        <td> 2 - I bruk</td>
+        <td> -</td>
+        <td> I bruk</td>
+    </tr>
+    <tr>
+        <td> 5 - Utgått, Link til f-nummer</td>
+        <td> -</td>
+        <td> Opphørt</td>
+    </tr>
+    <tr>
+        <td> 6 - Utgått, dublett</td>
+        <td> -</td>
+        <td> Opphørt</td>
+    </tr>
+    <tr>
+        <td> 7 - Utgått, avgang</td>
+        <td> -</td>
+        <td> Opphørt</td>
+    </tr>
+    <tr>
+        <td> 9 - Utgått, korrigert til nytt d-nummer</td>
+        <td> -</td>
+        <td> Opphørt</td>
+    </tr>
+</table>
 
 ## Personstatus - Bosatt
 
