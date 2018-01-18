@@ -67,7 +67,7 @@
     <p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
     Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
     <p>For å nå tjenestene bygges URL opp slik:
-    {miljø}{rettighetspakke}{ressurs}</p>
+    {miljø}/folkeregisteret/{rettighetspakke}/{versjon}{ressurs}</p>
     <h2 id="ressurser">Ressurser</h2>
     <table>
     <thead>
@@ -126,9 +126,9 @@
     </table>
     <h2 id="eksempler">Eksempler</h2>
     <p>Oppslag i hendelsesliste: <br>
-    <code>https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/v1/hendelser/feed/?seq=1</code></p>
+    <code>https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/?seq=1</code></p>
     <p>Oppslag på en hendelse: <br>
-    <code>https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/v1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f</code></p>
+    <code>https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f</code></p>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
     <code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/&quot;</code></p>
     <h2 id="headere">Headere</h2>
