@@ -13,7 +13,7 @@ Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I 
 Man kan også slå opp personen basert på fødsels- eller d-nummer.
 
 For å nå tjenestene bygges URL opp slik:
-{miljø}{rettighetspakke}{ressurs}
+{miljø}/folkeregisteret/{rettighetspakke}/{versjon}{ressurs}
 
 ## Ressurser
 |Ressurs|Beskrivelse|Kontrakt
@@ -36,10 +36,10 @@ For å nå tjenestene bygges URL opp slik:
 
 ## Eksempler 
 Oppslag i hendelsesliste: <br>
-`https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/v1/hendelser/feed/?seq=1`
+`https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/?seq=1`
 
 Oppslag på en hendelse: <br>
-`https://folkeregisteret-api-ekstern.sits.no/offentlig-med-hjemmel/api/v1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f`
+`https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f`
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`

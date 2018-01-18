@@ -8,7 +8,7 @@ Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former 
    * En versjonert utgave av en person som har vært eller er gyldig. 
 
 For å nå tjenestene bygges URL opp slik:
-{miljø}{rettighetspakke}{ressurs}(? part = {entitet} & part = {entitet} ...)
+{miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} & part = {entitet} ...)
 
 Parameteret "part" kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd). For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med *-historikk*.
 
