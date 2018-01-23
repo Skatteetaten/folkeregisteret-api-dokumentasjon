@@ -34,8 +34,6 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 * [Folkeregisterperson med fødsel](../modeller/18_2_5a00172_1461333199284_975812_33312.jpg)
 * [Folkeregisterperson med innflytting](../modeller/18_2_5a00172_1461334707302_959492_36953.jpg)
 * [Folkeregisterperson med kjerneinformasjon](../modeller/18_2_5a00172_1461335462454_846413_38979.jpg)
-* [Melding om dødsfall](../modeller/18_2_5a00172_1478705212213_605344_40147.jpg)
-* [Melding om kontaktopplysninger for dødsbo](../modeller/18_2_5a00172_1485934541192_972218_55110.jpg)
 * [Folkeregisterperson med sivilstand](../modeller/18_2_5a00172_1486742267042_67085_60133.jpg)
 * [Folkeregisterperson med kontaktopplysninger for dødsbo](../modeller/18_2_5a00172_1486990410781_123538_62281.jpg)
 * [Folkeregisterperson med identitet](../modeller/18_2_5a00172_1486995006560_52445_64049.jpg)
@@ -47,6 +45,8 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 
 Konstruksjonsmodellene er basert på Strukturmodellen, men er veldig plattform- og teknologiavhengige og må derfor ta hensyn til styrker og svakheter ved sitt operative miljø.
 
+* [Melding om kontaktopplysninger for dødsbo](../modeller/18_2_5a00172_1485934541192_972218_55110.jpg)
+* [Melding om dødsfall](../modeller/18_2_5a00172_1478705212213_605344_40147.jpg)
 * [Melding om rekvisisjon av dnummer](../modeller/18_5_5a00172_1499854129681_964831_36130.jpg)
 * [Melding om annullering av dødsfall](../modeller/18_5_5a00172_1510835122836_980002_57088.jpg)
 
