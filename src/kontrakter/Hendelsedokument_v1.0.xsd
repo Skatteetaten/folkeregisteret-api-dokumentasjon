@@ -166,7 +166,7 @@
   <xsd:complexType name="Registermetadata">
     <xsd:sequence>
       <xsd:element name="ajourholdstidspunkt" type="DatoKlokkeslett" minOccurs="0" />
-      <xsd:element name="erGjeldende" type="Boolsk" />
+      <xsd:element name="erGjeldende" type="Boolsk" minOccurs="0"/>
       <xsd:element name="kilde" type="Tekst" minOccurs="0" />
       <xsd:element name="aarsak" type="Tekst" minOccurs="0" />
     </xsd:sequence>
@@ -189,6 +189,7 @@
       <xsd:enumeration value="utlendingsmyndighetenesIdentifikasjonsnummer" />
       <xsd:enumeration value="utenlandskIdentifikasjonsdokument" />
       <xsd:enumeration value="utenlandskPersonidentifikasjon" />
+      <xsd:enumeration value="legitimasjonsdokument" />
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:complexType name="IdentifiserendeInformasjon">
