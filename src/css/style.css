@@ -246,3 +246,23 @@ table tr:last-child td:last-child {
     -webkit-border-bottom-right-radius:3px;
     border-bottom-right-radius:3px;
 }
+
+.nyhetscontainer {
+    width:auto;
+    display:inline;
+}
+
+.nyhet {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.nyhet h3 {
+    margin-bottom: 0px;
+}
+
+.nyhet p {
+    margin-top: 2px;
+}

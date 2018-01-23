@@ -4,11 +4,14 @@
       {{{contents}}}
 
       <h2>Nyheter</h2>
+      <div class="nyhetscontainer">
       {{#each nyheter}}
+        <div class="nyhet">
         <h3>{{{this.date}}} - {{this.title}}  </h3>
         {{{this.contents}}}
-
+        </div>
       {{/each}}
+      </div>
 
       <h2>Driftsvarsler</h2>
       <table>
