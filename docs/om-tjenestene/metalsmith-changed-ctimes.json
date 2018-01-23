@@ -2,8 +2,8 @@
   "konsumenttjenester.md": 1516021610877,
   "om-tjenestene.md": 1516266130541,
   "produsenttjenester.md": 1516021610879,
-  "css/normalize.css": 1516021610877,
   "css/style.css": 1516021610877,
+  "css/normalize.css": 1516021610877,
   "konsumenttjenester/hendelsesliste.md": 1516282930484,
   "konsumenttjenester/oppslag.md": 1516282930485,
   "kontrakter/DigitalSignatur.xsd": 1516021610878,
@@ -52,8 +52,8 @@
   "om-tjenestene/sikkerhet.md": 1516021610879,
   "om-tjenestene/taushetsbelagte-opplysninger.md": 1516021610879,
   "om-tjenestene/versjonering.md": 1516021610879,
-  "produsenttjenester/mottak.md": 1516021610879,
   "produsenttjenester/tilbakemelding.md": 1516021610879,
+  "produsenttjenester/mottak.md": 1516021610879,
   "driftsstatus-og-nyheter/driftsstatus/2018-01-10-baseline.md": 1516021610877,
   "driftsstatus-og-nyheter/nyheter/2018-01-10-abonnement.md": 1516021610877
 }
