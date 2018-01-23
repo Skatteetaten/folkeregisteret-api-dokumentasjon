@@ -47,7 +47,7 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 
 Konstruksjonsmodellene er basert på Strukturmodellen, men er veldig plattform- og teknologiavhengige og må derfor ta hensyn til styrker og svakheter ved sitt operative miljø.
 
-* [Melding om rekvisisjon av Dnummer](../modeller/_18_5_5a00172_1499854129681_964831_36130.jpg)
+* [Melding om rekvisisjon av dnummer](../modeller/_18_5_5a00172_1499854129681_964831_36130.jpg)
 * [Melding om annullering av dødsfall](../modeller/_18_5_5a00172_1510835122836_980002_57088.jpg)
 
 # Endringslogg
