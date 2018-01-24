@@ -11,8 +11,8 @@ Her beskrives versjon 4 av modellen.
 Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med hverandre uttrykt ved setninger som uttrykker kunnskap med enkel semantikk. Dette gir et meget godt utgangspunkt for å lage Strukturmodeller som er sammensatt av entiteter og egenskaper på en logisk måte hvor entiteter og egenskaper er basert på begrepene i Begrepsmodellen.
 
 * [Folkeregisterperson med navn](../modeller/18_0_1_5a00172_1452005068403_177360_23285.jpg)
-* [Folkeregisterperson med fødsel](../modeller/18_0_1_5a00172_1452005068403_177360_23285.jpg)
-* [Folkeregisterperson med adresse](../modeller/18_0_1_5a00172_1452005068403_177360_23285.jpg)
+* [Folkeregisterperson med fødsel](../modeller/18_0_1_5a00172_1452005271983_379926_23533.jpg)
+* [Folkeregisterperson med adresse](../modeller/18_0_1_5a00172_1452068906762_660500_24410.jpg)
 * [Folkeregisterperson med enkel kjerneinformasjon](../modeller/18_0_1_5a00172_1453283686526_815825_39946.jpg)
 * [Folkeregisterperson med sivilstand](../modeller/18_0_1_5a00172_1454058654104_983220_43419.jpg)
 * [Folkeregisterperson med relasjon](../modeller/18_0_1_5a00172_1454059027092_723196_43915.jpg)
