@@ -10,7 +10,7 @@ Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former 
 For å nå tjenestene bygges URL opp slik:
 {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} & part = {entitet} ...)
 
-Parameteret "part" kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i modellen for persondokument. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med *-historikk*.
+Parameteret *part* kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i modellen for persondokument. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med *-historikk*. En spesialversjon, *part=basis* henter all ikke-taushetsbelagt informasjon uten historikk.
 
 ## Ressurser
 | Ressurs | Beskrivelse | Kontrakt |
