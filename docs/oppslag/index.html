@@ -69,7 +69,7 @@
     </ul>
     <p>For å nå tjenestene bygges URL opp slik:
     {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
-    <p>Parameteret &quot;part&quot; kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i <a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a>. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med <em>-historikk</em>.</p>
+    <p>Parameteret &quot;part&quot; kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i modellen for persondokument. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med <em>-historikk</em>.</p>
     <h2 id="ressurser">Ressurser</h2>
     <table>
     <thead>
@@ -83,12 +83,12 @@
     <tr>
     <td>personer/{folkeregisteridentifikator}</td>
     <td>Siste versjon av en person</td>
-    <td><a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a></td>
+    <td>Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /hendelser/xsd</td>
     </tr>
     <tr>
     <td>personer/arkiv/{persondokumentidentifikator}</td>
     <td>Versjonert utgave av en person</td>
-    <td><a href="../kontrakter/Persondokument_v1.0.xsd">Persondokument_v1.0.xsd</a></td>
+    <td>Samme som ovenfor</td>
     </tr>
     </tbody>
     </table>
@@ -128,6 +128,8 @@
     </table>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
     <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
+    <p>Oppslag på xsd:</p>
+    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd&quot;</code></p>
     <p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
     <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
     <h2 id="headere">Headere</h2>
