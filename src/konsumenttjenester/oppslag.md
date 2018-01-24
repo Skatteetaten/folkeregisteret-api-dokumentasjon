@@ -15,7 +15,7 @@ Parameteret "part" kan brukes til å spesifisere hvilken informasjon, om en pers
 ## Ressurser
 | Ressurs | Beskrivelse | Kontrakt |
 |---------|-------------|----------|
-|personer/{folkeregisteridentifikator}| Siste versjon av en person | Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /hendelser/xsd |
+|personer/{folkeregisteridentifikator}| Siste versjon av en person | Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /personer/xsd |
 |personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person | Samme som ovenfor |
 
 ## Rettighetspakker
