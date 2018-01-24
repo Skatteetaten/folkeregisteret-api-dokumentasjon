@@ -19,7 +19,7 @@ For å nå tjenestene bygges URL opp slik:
 |Ressurs|Beskrivelse|Kontrakt
 |-------|-----------|--------|
 |hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt.|I henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). [Xsd for innhold i content](../kontrakter/Folkeregisterhendelse_v1.xsd)|
-|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse| [Hendelsesdokument_v1.0.xsd](../kontrakter/Hendelsedokument_v1.0.xsd)|
+|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse| Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /hendelser/xsd|
 
 ## Rettighetspakker
 
@@ -40,6 +40,9 @@ Oppslag i hendelsesliste: <br>
 
 Oppslag på en hendelse: <br>
 `https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/7d9c19b1-4125-4968-b4dc-09cbaf3ac11f`
+
+Oppslag på xsd: <br>
+`https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/xsd`
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`

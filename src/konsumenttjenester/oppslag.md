@@ -10,13 +10,13 @@ Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former 
 For å nå tjenestene bygges URL opp slik:
 {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} & part = {entitet} ...)
 
-Parameteret "part" kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd). For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med *-historikk*.
+Parameteret "part" kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i modellen for persondokument. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med *-historikk*.
 
 ## Ressurser
 | Ressurs | Beskrivelse | Kontrakt |
 |---------|-------------|----------|
-|personer/{folkeregisteridentifikator}| Siste versjon av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
-|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person | [Persondokument_v1.0.xsd](../kontrakter/Persondokument_v1.0.xsd) |
+|personer/{folkeregisteridentifikator}| Siste versjon av en person | Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /hendelser/xsd |
+|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person | Samme som ovenfor |
 
 ## Rettighetspakker
 
@@ -34,6 +34,10 @@ Parameteret "part" kan brukes til å spesifisere hvilken informasjon, om en pers
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer"`
+
+Oppslag på xsd:
+
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd"`
 
 Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: 
 
