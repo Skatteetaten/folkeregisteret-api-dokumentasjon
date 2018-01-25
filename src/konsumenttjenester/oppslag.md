@@ -13,10 +13,11 @@ For å nå tjenestene bygges URL opp slik:
 Parameteret *part* kan brukes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet på toppnivå i modellen for persondokument. For de entitetene som kan ha historikk, kan man hente ut historikken ved å postfixe parameteret med *-historikk*. En spesialversjon, *part=basis* henter all ikke-taushetsbelagt informasjon uten historikk.
 
 ## Ressurser
-| Ressurs | Beskrivelse | Kontrakt |
-|---------|-------------|----------|
-|personer/{folkeregisteridentifikator}| Siste versjon av en person | Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /personer/xsd |
-|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person | Samme som ovenfor |
+| Ressurs | Beskrivelse | 
+|---------|-------------|
+|personer/{folkeregisteridentifikator}| Siste versjon av en person | 
+|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person |
+|personer/xsd| Xsd (kontrakt) for person |
 
 ## Rettighetspakker
 

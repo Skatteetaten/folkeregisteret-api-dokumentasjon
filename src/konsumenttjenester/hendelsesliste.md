@@ -16,10 +16,13 @@ For å nå tjenestene bygges URL opp slik:
 {miljø}/folkeregisteret/{rettighetspakke}/{versjon}{ressurs}
 
 ## Ressurser
-|Ressurs|Beskrivelse|Kontrakt
-|-------|-----------|--------|
-|hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt.|I henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). [Xsd for innhold i content](../kontrakter/Folkeregisterhendelse_v1.xsd)|
-|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse| Xsd finnes ved å slå opp ressurs på tjenestens endepunkt - /hendelser/xsd|
+|Ressurs|Beskrivelse|
+|-------|-----------|
+|hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt|
+|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse| 
+|hendelser/xsd| Xsd (kontrakt) for hendelse|
+
+Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Her er [Xsd for innhold i content](../kontrakter/Folkeregisterhendelse_v1.xsd).
 
 ## Rettighetspakker
 
