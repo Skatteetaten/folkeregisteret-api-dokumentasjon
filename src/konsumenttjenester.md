@@ -13,7 +13,7 @@ Med tjenesten hendelsesliste får virksomheter varsel hver gang noe endres i Fol
 	Oppslag i Folkeregisteret vil kunne gjøres fra et fagsystem, ved maskin-til-maskin tilkobling, eller ved å benytte Folkeregisterets hjemmeside/portal (menneske-til-maskin). 
 
 
-Hendelsesliste og oppslag er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsumenter etter avtale med prosjekt MF. For å kunne koble seg opp til tjenestene ovenfor, må integrasjon gjøres i henhold til [beskrivelsen under Sikkerhet](../sikkerhet)..
+Hendelsesliste og oppslag er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsumenter etter avtale med prosjekt MF. For å kunne koble seg opp til tjenestene ovenfor, må integrasjon gjøres i henhold til [beskrivelsen under Sikkerhet](../sikkerhet).
 
 Folkeregisteret vil også tilby Uttrekk og øvrige ajourholdstjenester.
 
