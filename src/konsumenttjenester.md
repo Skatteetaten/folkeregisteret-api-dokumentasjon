@@ -2,15 +2,26 @@
 title: Konsumenttjenester
 ---
 
-Følgende konsumenttjenester er tilgjengelig for maskin-maskin-integrasjon.
-
-* [Hendelsesliste](../hendelsesliste) tilbyr en feed med informasjon om når noe har endret seg på en person i registeret og hva som har endret seg.
-* [Oppslag](../oppslag) tilbyr registerinformasjon om en person.
-
-Tjenestene tilbys som REST-tjenester. Konsument angir ønsket format i header-felt *Accept*. Formatene JSON og XML er støttet.
+Denne siden beskriver tjenestene i det nye Folkeregisteret. 
+Rettighetspakker og teknisk beskrivelse av tjenestene finnes på siden for hver enkelt tjeneste. Tjenestene som er beskrevet på denne siden er under utvikling, og det kan komme endringer i tjenestetilbudet, nye tjenester og endring i tjenesteinnholdet.
 
 
-For å kunne koble seg opp til tjenestene ovenfor, må sikkerhetskrav være ivaretatt i henhold til beskrivelse under [Sikkerhet](../sikkerhet).
+* [Hendelsesliste](../hendelsesliste) er løpende varsling om endringer i Folkeregisteret. Hendelsesliste gir virksomheter mulighet til å oppdatere opplysninger om personer i sitt kunderegister eller sin sakspopulasjon fortløpende. Det vil også være mulig å lage automatisert saksbehandling som initieres av hendelser fra Folkeregisteret, for eksempel avslutning av kundeforhold eller tjeneste ved hendelsen "melding om dødsfall". 
+Med tjenesten hendelsesliste får virksomheter varsel hver gang noe endres i Folkeregisteret, hvem det gjelder og hva endringen består i.  Virksomheten får tilgang til informasjon de har hjemmel til, må selv avgjøre om hendelsen er relevant for dem, og gjøre oppslag for å hente mer informasjon om endringen. Tjenesten leveres ved maskin-til-maskin tilkobling. 
+
+* [Oppslag](../oppslag) er søk på en enkeltperson for å se personens folkeregisteropplysninger. Oppslag gir virksomheter muligheten til å hente ut personopplysninger som for eksempel navn, adresse, relasjoner og historikk. Hvilke opplysninger man har tilgang til er avhengig av hvilke rettigheter virksomheten har. Tjenesten kan brukes til å hente oppdaterte opplysninger om en person, eller til å starte en forretningsprosess, som å opprette en ny kunde, fakturere eller starte annen saksbehandling. 
+	Oppslag i Folkeregisteret vil kunne gjøres fra et fagsystem, ved maskin-til-maskin tilkobling, eller ved å benytte Folkeregisterets hjemmeside/portal (menneske-til-maskin). 
+
+
+Hendelsesliste og oppslag er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsumenter etter avtale med prosjekt MF. For å kunne koble seg opp til tjenestene ovenfor, må sikkerhetskrav være ivaretatt i henhold til beskrivelse under Sikkerhet.
+Tjenestene tilbys som REST-tjenester. Konsument angir ønsket format i header-felt Accept. Formatene JSON og XML er støttet.
+Folkeregisteret vil også tilby Uttrekk og øvrige ajourholdstjenester.
+
+*	Uttrekk gir virksomheter muligheten til å hente ut opplysninger om et utvalg personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først. Uttrekk er basert på selvbetjening, der virksomheten selv setter opp kriteriene den ønsker for sitt uttrekk på Folkeregisterets portal, og får en rapport med de opplysningene som passer disse kriteriene tilbake. 
+Uttrekk kan brukes til å opprette eller supplere et kunderegister eller en sakspopulasjon, for eksempel alle 6-åringer i en kommune, eller alle beboere i en gate. Tjenesten kan kun benyttes av virksomheter som ikke har krav om entydig identifisering. 
+
+* Folkeregisteret vil tilby ajourholdstjenester som for eksempel vask. Vask er oppdatering av folkeregisteropplysninger for en liste med personer en virksomhet allerede har identifisert. På denne måten kan virksomheter oppdatere opplysninger i sitt kunderegister/sakspopulasjon for alle samtidig. 
+Prosjektet vurderer også andre ajourholdstjenester.
 
 
  
