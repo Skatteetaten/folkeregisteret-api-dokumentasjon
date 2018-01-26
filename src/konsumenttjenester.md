@@ -15,6 +15,7 @@ Med tjenesten hendelsesliste får virksomheter varsel hver gang noe endres i Fol
 
 Hendelsesliste og oppslag er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsumenter etter avtale med prosjekt MF. For å kunne koble seg opp til tjenestene ovenfor, må sikkerhetskrav være ivaretatt i henhold til beskrivelse under Sikkerhet.
 Tjenestene tilbys som REST-tjenester. Konsument angir ønsket format i header-felt Accept. Formatene JSON og XML er støttet.
+
 Folkeregisteret vil også tilby Uttrekk og øvrige ajourholdstjenester.
 
 *	Uttrekk gir virksomheter muligheten til å hente ut opplysninger om et utvalg personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først. Uttrekk er basert på selvbetjening, der virksomheten selv setter opp kriteriene den ønsker for sitt uttrekk på Folkeregisterets portal, og får en rapport med de opplysningene som passer disse kriteriene tilbake. 
