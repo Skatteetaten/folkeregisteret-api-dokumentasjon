@@ -45,16 +45,16 @@ const smith = (clean = false) => {
                 sortBy: 'title'
             },
             'driftsstatus-og-nyheter': {
-                pattern: 'driftsstatus-og-nyheter/**/*',
+                pattern: '{nyheter/*,driftsstatus/*}',
                 sortBy: 'title'
             },
             'nyheter': {
-                pattern: 'driftsstatus-og-nyheter/nyheter/*',
+                pattern: 'nyheter/*',
                 sortBy: 'date',
                 reverse: true
             },
             'driftsstatus': {
-                pattern: 'driftsstatus-og-nyheter/driftsstatus/*',
+                pattern: 'driftsstatus/*',
                 sortBy: 'datetime',
                 reverse: true
             }
