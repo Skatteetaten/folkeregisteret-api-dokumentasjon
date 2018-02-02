@@ -15,20 +15,30 @@ Skal du være redaktør på siden og leser dette har du allerede ordnet med nød
 7. Det neste som skjer er at endringen plukkes opp av en jobb som kjører hvert 2. minutt, sidene bygges på nytt dersom det finnes endringer. Kontroller at endringen din ble riktig!
 
 ### Legge til en nyhet
-1. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src/driftsstatus-og-nyheter/nyheter].
+1. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src/nyheter].
 2. Logg inn (om du ikke allerede er logget inn). 
 3. Klikk på en eksisterende nyhet.
 4. Klikk på knappen "Raw".
 5. Kopier innholdet i filen.
-6. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src/driftsstatus-og-nyheter/nyheter]
+6. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src/nyheter]
 7. Trykk på knappen "Create new file". 
-8. Editer title, date og tekst.
+8. Editer *title*, *date* og *tekst*.
 9. Skriv et filnavn der det står "Name your file...". Filnavnet må være på formen år-måned-dag, mer presist yyyy-mm-dd.
 10. Klikk på "Commit changes". Endringen din vil da bli lagret. 
 11. Det neste som skjer er at endringen plukkes opp av en jobb som kjører hvert 2. minutt, sidene bygges på nytt dersom det finnes endringer. Kontroller at endringen din ble riktig!
 
 ### Legge til et driftsvarsel
-Informasjon kommer...
+1. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src/driftsstatus].
+2. Logg inn (om du ikke allerede er logget inn). 
+3. Klikk på en eksisterende nyhet.
+4. Klikk på knappen "Raw".
+5. Kopier innholdet i filen.
+6. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src/driftsstatus]
+7. Trykk på knappen "Create new file". 
+8. Editer *title*, *datetime* og *tekst*.
+9. Skriv et filnavn der det står "Name your file...". Filnavnet må være på formen år-måned-dag, mer presist yyyy-mm-dd.
+10. Klikk på "Commit changes". Endringen din vil da bli lagret. 
+11. Det neste som skjer er at endringen plukkes opp av en jobb som kjører hvert 2. minutt, sidene bygges på nytt dersom det finnes endringer. Kontroller at endringen din ble riktig!
 
 ## Utviklere
 
