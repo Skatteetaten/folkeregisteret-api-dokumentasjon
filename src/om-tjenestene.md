@@ -10,7 +10,7 @@ Tjenestene er delt inn i produsenttjenester og konsumenttjenester. Produsenttjen
 
 # Nyheter og driftsvarsel
 
-Vi vil gi beskjed om viktige endringer som kommer i Folkeregisteret og driftsstatus for våre tjenester her. Du kan følge med på det som skjer på gjennom en RSS-leser. Installer din favoritt RSS-leser. Vi publiserer [nyheter og driftsvarsler her](../rss.xml). 
+Vi vil gi beskjed om viktige endringer som kommer i Folkeregisteret og driftsstatus for våre tjenester her. Du kan følge med på det som skjer på gjennom en RSS-leser. Bruk RRS-funksjonen i Outlook, eller din favoritt RSS-leser. Vi publiserer [nyheter og driftsvarsler her](../rss.xml). 
 
 Obs! Varsling via RSS feed er under utprøving og ansees som eksperimentell. For deg som er i pilot med oss allerede vil vanlige varslingsrutiner fungere som tidligere og vi vil informere deg via vanlige kanaler om endringer på dette.
 
