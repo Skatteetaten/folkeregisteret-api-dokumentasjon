@@ -23,5 +23,3 @@ Uttrekk kan brukes til å opprette eller supplere et kunderegister eller en saks
 * Folkeregisteret vil tilby ajourholdstjenester som for eksempel vask. Vask er oppdatering av folkeregisteropplysninger for en liste med personer en virksomhet allerede har identifisert. På denne måten kan virksomheter oppdatere opplysninger i sitt kunderegister/sakspopulasjon for alle samtidig. 
 Prosjektet vurderer også andre ajourholdstjenester.
 
-
- 
