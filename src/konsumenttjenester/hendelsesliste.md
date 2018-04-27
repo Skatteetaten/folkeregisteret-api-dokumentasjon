@@ -48,7 +48,7 @@ Oppslag på xsd: <br>
 `https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/xsd`
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
-`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`
+`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`
 
 ## Headere
 
