@@ -1,4 +1,4 @@
-const nodeStatic = require('node-static');
+const express = require('express');
 const livereload = require('metalsmith-livereload');
 const watch = require('glob-watcher');
 
@@ -17,11 +17,10 @@ const build = (clean = false) => (done) => {
         });
 };
 
-const serve = new nodeStatic.Server(__dirname + '/docs');
-require('http').createServer((req, res) => {
-    req.addListener('end', () => serve.serve(req, res));
-    req.resume();
-}).listen(4567);
+const app = express();
+app.use('/folkeregisteret-api-dokumentasjon', express.static(__dirname + '/docs'));
+app.get('/', (req, res) => res.redirect('/folkeregisteret-api-dokumentasjon'));
+app.listen(4567);
 
 console.log('Server started on http://localhost:4567');
 
