@@ -40,16 +40,6 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 * [Folkeregisterperson med utflytting](../modeller/18_2_5a00172_1487338698879_978644_54505.jpg)
 * [Folkeregisterperson med navn](../modeller/18_2_5a00172_1487778967501_54251_59224.jpg)
 
-
-## Konstruksjonsmodeller
-
-Konstruksjonsmodellene er basert på Strukturmodellen, men er veldig plattform- og teknologiavhengige og må derfor ta hensyn til styrker og svakheter ved sitt operative miljø.
-
-* [Melding om kontaktopplysninger for dødsbo](../modeller/18_2_5a00172_1485934541192_972218_55110.jpg)
-* [Melding om dødsfall](../modeller/18_2_5a00172_1478705212213_605344_40147.jpg)
-* [Melding om rekvisisjon av dnummer](../modeller/18_5_5a00172_1499854129681_964831_36130.jpg)
-* [Melding om annullering av dødsfall](../modeller/18_5_5a00172_1510835122836_980002_57088.jpg)
-
 # Endringslogg
 
 ## Beskrivelse av endringer i informasjonsmodellen mellom versjon 3.0 og 4.0
