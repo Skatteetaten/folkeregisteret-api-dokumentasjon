@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width">
-  <title>Sikkerhet</title>
+  <title>Funksjonell beskrivelse</title>
 </head>
 <body>
 <div>
@@ -36,7 +36,7 @@
   
     <div class="header-sidetittel">
       <h1>
-        <span class="header-undertittel">Sikkerhet</span>
+        <span class="header-undertittel">Funksjonell beskrivelse</span>
       </h1>
     </div>
   </header>
@@ -63,14 +63,33 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <p><strong>NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.</strong></p>
-    <h1 id="sikkerhet-og-autentisering">Sikkerhet og autentisering</h1>
-    <p>For å benytte Skatteetatens API trenger du et kvalifisert <a href="https://en.wikipedia.org/wiki/X.509">X.509</a> virksomhetssertifikat for kryptering/autentisering. Nasjonal kommunikasjonsmyndighet har <a href="https://www.nkom.no/teknisk/elektronisk-signatur/kvalifisert-sertifikat/registrerte-tilbydere-av-kvalifiserte-sertifikater">oversikt over godkjente tilbydere av kvalifiserte sertifikater</a>. I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. </p>
-    <p>Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virksomhetens <em>organisasjonsnummer</em>. <strong>Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.</strong></p>
-    <p>Det finnes virksomhetssertifikater for forskjellige formål. Skatteetaten krever et sertifikat utstedt for kryptering/autentisering. Virksomhetsertifikat utstedt for signering vil ikke virke. <em>Sjekk at &#39;Key Usage&#39; er &#39;critical&#39;. Hvis verdien for &#39;Key Usage&#39; er non-repudiation er det feil type sertifikat</em></p>
-    <p>Du trenger tilgang til <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Private key</a> som hører til sertifikatet. <br>
-    <strong>VIKTIG: Private key skal aldri deles med noen, heller ikke Skatteetaten.</strong></p>
-    <p>Det kreves at man utfører standard klientsertifikatautentisering. De fleste vanlige http-verktøy har støtte for dette. Et eksempel på verktøy man kan bruke er <a href="https://ec.haxx.se/usingcurl-tls.html">curl</a>.</p>
+          <h1 id="funksjonell-beskrivelse">Funksjonell beskrivelse</h1>
+    <h2 id="persondokument-i-beta-versjon">Persondokument i BETA versjon</h2>
+    <p>Denne dokumentasjonen gir  en totaloversikt over personopplysningene som skal bli tilgjengelige via Folkeregisterets konsumenttjenester. Noen av opplysningene er allerede tilgjengelige for prioriterte konsumenter, mens andre kommer til å bli tilgjengeliggjort som del av moderniseringen av Folkeregisteret. Dokumentasjonen på disse sidene oppdateres løpende etter hvert som ny informasjon blir tilgjengelig i tjenestene. Oppdateringer varsles som nyhetssaker her på github.</p>
+    <p>Merk også at denne dokumentasjonen beskriver fremtidsbildet for de av dere som har hjemmel til å se all registerinformasjonen, også den som er taushetsbelagt. Hvilken rettighetspakke virksomheten tilhører vil avgjøre hvilke dataelementer som blir tilgjengelige for den enkelte.</p>
+    <p>I siste halvdel av 2019 vil alle opplysningene være tilgjengelig i tjenester fra det moderniserte Folkeregisteret.</p>
+    <table>
+    <thead>
+    <tr>
+    <th>dokument</th>
+    <th>beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="../dokumenter/Spesifikasjon_av_tilgjengeliggjoering_av_opplysninger_fra_Folkeregisteret_v1.0_20180430.pdf">Spesifikasjon av tilgjengeliggjøring av opplysninger fra Folkeregisteret v1.0 2018-04-30</a></td>
+    <td>Beskrivelse av personopplysningene på feltnivå, og beskrivelse av tjenestene hendelsesliste og oppslag.</td>
+    </tr>
+    <tr>
+    <td><a href="../kontrakter/PersondokumentMedHistorikk_v1BETA1.xsd">PersondokumentMedHistorikk_v1BETA1.xsd</a></td>
+    <td>Persondokumentet i BETA</td>
+    </tr>
+    <tr>
+    <td><a href="../modeller/PersondokumentMedHistorikk_v1BETA1.jpg">PersondokumentMedHistorikk_v1BETA1.jpg</a></td>
+    <td>Illustrasjon av persondokumentet</td>
+    </tr>
+    </tbody>
+    </table>
     
         </div>
       </div>
