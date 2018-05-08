@@ -95,8 +95,8 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
     </tr>
     <tr>
         <td> 8 - Annulert tilgang</td>
-        <td> Opphørt</td>
-        <td> Opphørt</td>
+        <td> Ikke bosatt</td>
+        <td> I bruk</td>
     </tr>
     <tr>
         <td> 9 - Uregistrert person</td>
@@ -196,7 +196,6 @@ Personer som vil få personstatus "Opphørt":
 * Falsk identitet
 * Annullert fødsel
 * Annullert tildeling av d-nummer
-* Annullert innflytting
 * Annullert tildeling av fødselsnummer
 * Hemmelig adopsjon
   
@@ -219,6 +218,7 @@ Personer som vil få personstatus "Midlertidig":
 Personstatusen "Ikke bosatt" benyttes for norske statsborgere som har behov for fødselsnummer, men som ikke er bosatt i Norge.
 
 Person som vil få personstatus "Ikke bosatt":
+* Annullert innflytting
 * Norsk borger født i Norge og utflyttet før 011064 eller norsk borger født i utlandet og som aldri har vært bosatt i Norge
 
 ## Personstatus – Inaktiv
