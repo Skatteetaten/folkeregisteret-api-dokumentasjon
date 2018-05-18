@@ -4,7 +4,7 @@ title: Sikkerhet
 
 **NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
-#Transportsikting
+# Transportsikting
 Kommunikasjonen mellom konsumenten/produsenten og Skatteetaten skal foregå på kryptert kanal over internett, dvs. bruk av 2-veis SSL. Det er ikke ønskelig at det etableres fast/leid-linje for kommunikasjonen. Transporten sikres gjennom bruk av virksomhetssertifikater og asymmetrisk kryptering før felles symmetrisk nøkkel avtales for 2-veis SSL.
 
 # Autentisering og autorisering
