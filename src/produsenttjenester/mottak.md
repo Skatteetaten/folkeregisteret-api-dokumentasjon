@@ -11,8 +11,8 @@ Tjenestenes endepunkt: <br>
 ## Ressurser
 | ressurs | kontrakt | modell | status |
 |---------|----------|--------|--------|
-| rekvisisjon_av_dnummer            | [xsd](../kontrakter/RekvisisjonAvDNummer_1.0.xsd)                    | | utgått |
-| rekvisisjon_av_dnummer_v3         | [xsd](../kontrakter/RekvisisjonAvDNummer_3.0.xsd)                    | | utgått |
+| rekvisisjon_av_dnummer            | [xsd](../kontrakter/RekvisisjonAvDNummer_1.0.xsd)                    | | utgått                                                       |
+| rekvisisjon_av_dnummer_v3         | [xsd](../kontrakter/RekvisisjonAvDNummer_3.0.xsd)                    | | utgått                                                   |
 | rekvisisjon_av_dnummmer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon |
 | rekvisisjon_av_dnummer_v4_vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon |
 | rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/18_5_5a00172_1499854129681_964831_36130.jpg) | produksjon |
