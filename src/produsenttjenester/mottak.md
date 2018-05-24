@@ -18,7 +18,7 @@ Tjenestenes endepunkt: <br>
 | rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/18_5_5a00172_1499854129681_964831_36130.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v3 |
 | doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [jpg](../modeller/18_2_5a00172_1478705212213_605344_40147.jpg) | produksjon | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/18_5_5a00172_1510835122836_980002_57088.jpg) | test | HendelserISakOmFolkeregistrering_v1 |
-| endring_av_dnummerperson_v2       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd)     | | produksjon | HendelserISakOmEndringAvDNummerPerson_v1<br>Manuell: HendelserISakOmFolkeregistrering_v1 |
+| endring_av_dnummerperson_v2       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd)     | | produksjon | HendelserISakOmEndringAvDNummerPerson_v1<br><b>Manuell</b>: HendelserISakOmFolkeregistrering_v1 |
 | foedsel_v1                        | [xsd](../kontrakter/Foedselsmelding_1.0.xsd)                         | | test | HendelserISakOmFolkeregistrering_v1 |
 | kontaktopplysninger_doedsbo_v1    | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | [jpg](../modeller/18_2_5a00172_1485934541192_972218_55110.jpg) | test | HendelserISakOmFolkeregistrering_v1 |
 | separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
