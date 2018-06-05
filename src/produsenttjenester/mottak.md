@@ -9,22 +9,21 @@ Tjenestenes endepunkt: <br>
 `POST {miljø}/folkregisteret/mottak/api/{ressurs}`
 
 ## Ressurser
-| ressurs | kontrakt | modell | status |
-|---------|----------|--------|--------|
-| rekvisisjon_av_dnummer            | [xsd](../kontrakter/RekvisisjonAvDNummer_1.0.xsd)                    | | utgått |
-| rekvisisjon_av_dnummer_v3         | [xsd](../kontrakter/RekvisisjonAvDNummer_3.0.xsd)                    | | utgått |
-| rekvisisjon_av_dnummmer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | [jpg](../modeller/1499854129.jpg) | produksjon |
-| rekvisisjon_av_dnummer_v4_vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon |
-| rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [png](../modeller/1511792480.png) | produksjon |
-| doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [png](../modeller/1478705212.png) | produksjon |
-| annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/1510835122.jpg) | test |
-| endring_av_dnummerperson_v2       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd)     | | produksjon |
-| foedsel_v1                        | [xsd](../kontrakter/Foedselsmelding_1.0.xsd)                         | | test |
-| kontaktopplysninger_doedsbo_v1    | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | [png](../modeller/1485934541.png) | test |
-| separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test |
-| skilsmisse_v1                     | [xsd](../kontrakter/MeldingOmSkilsmisse_v1.0.xsd)                    | | test |
-| innflytting_v1                    | [xsd](../kontrakter/MeldingOmInnflytting_v1.0.xsd)                   | | test |
-
+| ressurs | kontrakt | modell | status | tilbakemeldingshendelse |
+|---------|----------|--------|--------|-------------------------|
+| rekvisisjon_av_dnummer            | [xsd](../kontrakter/RekvisisjonAvDNummer_1.0.xsd)                    | | utgått     | N/A |
+| rekvisisjon_av_dnummer_v3         | [xsd](../kontrakter/RekvisisjonAvDNummer_3.0.xsd)                    | | utgått     | N/A |
+| rekvisisjon_av_dnummmer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | [jpg](../modeller/1499854129.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v3 |
+| rekvisisjon_av_dnummer_v4_vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon | HendelserISakOmDNummerRekvisisjon_v3 |
+| rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [png](../modeller/1511792480.png) | produksjon | HendelserISakOmDNummerRekvisisjon_v3 |
+| doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [png](../modeller/1478705212.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
+| annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/1510835122.jpg) | test | HendelserISakOmFolkeregistrering_v1 |
+| endring_av_dnummerperson_v2       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd)     | | produksjon | HendelserISakOmEndringAvDNummerPerson_v1<br><b>Manuell</b>: HendelserISakOmFolkeregistrering_v1 |
+| foedsel_v1                        | [xsd](../kontrakter/Foedselsmelding_1.0.xsd)                         | | test | HendelserISakOmFolkeregistrering_v1 |
+| kontaktopplysninger_doedsbo_v1    | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | [png](../modeller/1485934541.png) | test | HendelserISakOmFolkeregistrering_v1 |
+| separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
+| skilsmisse_v1                     | [xsd](../kontrakter/MeldingOmSkilsmisse_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
+| innflytting_v1                    | [xsd](../kontrakter/MeldingOmInnflytting_v1.0.xsd)                   | | test | HendelserISakOmFolkeregistrering_v1 |
 
 Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignatur.xsd) av meldingene.
 
