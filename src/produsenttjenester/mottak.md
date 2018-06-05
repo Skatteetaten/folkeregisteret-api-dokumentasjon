@@ -13,14 +13,14 @@ Tjenestenes endepunkt: <br>
 |---------|----------|--------|--------|
 | rekvisisjon_av_dnummer            | [xsd](../kontrakter/RekvisisjonAvDNummer_1.0.xsd)                    | | utgått |
 | rekvisisjon_av_dnummer_v3         | [xsd](../kontrakter/RekvisisjonAvDNummer_3.0.xsd)                    | | utgått |
-| rekvisisjon_av_dnummmer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon |
+| rekvisisjon_av_dnummmer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | [jpg](../modeller/1499854129.jpg) | produksjon |
 | rekvisisjon_av_dnummer_v4_vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon |
-| rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/18_5_5a00172_1499854129681_964831_36130.jpg) | produksjon |
-| doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [jpg](../modeller/18_2_5a00172_1478705212213_605344_40147.jpg) | produksjon |
-| annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/18_5_5a00172_1510835122836_980002_57088.jpg) | test |
+| rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [png](../modeller/1511792480.png) | produksjon |
+| doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [png](../modeller/1478705212.png) | produksjon |
+| annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/1510835122.jpg) | test |
 | endring_av_dnummerperson_v2       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd)     | | produksjon |
 | foedsel_v1                        | [xsd](../kontrakter/Foedselsmelding_1.0.xsd)                         | | test |
-| kontaktopplysninger_doedsbo_v1    | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | [jpg](../modeller/18_2_5a00172_1485934541192_972218_55110.jpg) | test |
+| kontaktopplysninger_doedsbo_v1    | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | [png](../modeller/1485934541.png) | test |
 | separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test |
 | skilsmisse_v1                     | [xsd](../kontrakter/MeldingOmSkilsmisse_v1.0.xsd)                    | | test |
 | innflytting_v1                    | [xsd](../kontrakter/MeldingOmInnflytting_v1.0.xsd)                   | | test |

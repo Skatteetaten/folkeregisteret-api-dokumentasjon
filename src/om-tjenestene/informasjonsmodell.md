@@ -4,23 +4,23 @@ title: Informasjonsmodell
 
 # Modeller
 
-Her beskrives versjon 4 av modellen.
+Her beskrives versjon 5 av modellen.
 
 ## Begrepsmodeller
 
 Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med hverandre uttrykt ved setninger som uttrykker kunnskap med enkel semantikk. Dette gir et meget godt utgangspunkt for å lage Strukturmodeller som er sammensatt av entiteter og egenskaper på en logisk måte hvor entiteter og egenskaper er basert på begrepene i Begrepsmodellen.
 
-* [Folkeregisterperson med navn](../modeller/18_0_1_5a00172_1452005068403_177360_23285.jpg)
-* [Folkeregisterperson med fødsel](../modeller/18_0_1_5a00172_1452005271983_379926_23533.jpg)
-* [Folkeregisterperson med adresse](../modeller/18_0_1_5a00172_1452068906762_660500_24410.jpg)
-* [Folkeregisterperson med enkel kjerneinformasjon](../modeller/18_0_1_5a00172_1453283686526_815825_39946.jpg)
-* [Folkeregisterperson med sivilstand](../modeller/18_0_1_5a00172_1454058654104_983220_43419.jpg)
-* [Folkeregisterperson med relasjon](../modeller/18_0_1_5a00172_1454059027092_723196_43915.jpg)
-* [Folkeregisterperson med utflytting](../modeller/18_0_1_5a00172_1454070052173_136631_44390.jpg)
-* [Folkeregisterperson med dødsfall](../modeller/18_0_1_5a00172_1454314019208_581317_45564.jpg)
-* [Folkeregisterperson med innflytting](../modeller/18_0_1_5a00172_1455623625804_592903_30993.jpg)
-* [Folkeregisterperson med identitetsgrunnlag](../modeller/18_0_1_5a00172_1455629020847_45096_33261.jpg)
-* [Folkeregisterperson med folkeregisteridentifikator](../modeller/18_0_1_5a00172_1455631901173_22467_34203.jpg)
+* [Folkeregisterperson med navn](../modeller/1452005068.png)
+* [Folkeregisterperson med fødsel](../modeller/1452005271.png)
+* [Folkeregisterperson med adresse](../modeller/1452068906.png)
+* [Folkeregisterperson med enkel kjerneinformasjon](../modeller/1453283686.png)
+* [Folkeregisterperson med sivilstand](../modeller/1454058654.png)
+* [Folkeregisterperson med relasjon](../modeller/1454059027.png)
+* [Folkeregisterperson med utflytting](../modeller/1454070052.png)
+* [Folkeregisterperson med dødsfall](../modeller/1454314019.png)
+* [Folkeregisterperson med innflytting](../modeller/1455623625.png)
+* [Folkeregisterperson med identitetsgrunnlag](../modeller/1455629020.png)
+* [Folkeregisterperson med folkeregisteridentifikator](../modeller/1455631901.png)
 
 
 
@@ -28,19 +28,123 @@ Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med
 
 Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodeller og har derfor ofte mer generaliserte entiteter enn konstruksjonsmodellene.
 
-* [Folkeregisterperson med adresse](../modeller/18_0_1_5a00172_1450278727172_230353_14959.jpg)
-* [Folkeregisterperson med personrelasjon](../modeller/18_0_1_5a00172_1457707670494_409007_31677.jpg)
-* [Folkeregisterperson med dødsfall](../modeller/18_0_1_5b00175_1434703879388_270554_17720.jpg)
-* [Folkeregisterperson med fødsel](../modeller/18_2_5a00172_1461333199284_975812_33312.jpg)
-* [Folkeregisterperson med innflytting](../modeller/18_2_5a00172_1461334707302_959492_36953.jpg)
-* [Folkeregisterperson med kjerneinformasjon](../modeller/18_2_5a00172_1461335462454_846413_38979.jpg)
-* [Folkeregisterperson med sivilstand](../modeller/18_2_5a00172_1486742267042_67085_60133.jpg)
-* [Folkeregisterperson med kontaktopplysninger for dødsbo](../modeller/18_2_5a00172_1486990410781_123538_62281.jpg)
-* [Folkeregisterperson med identitet](../modeller/18_2_5a00172_1486995006560_52445_64049.jpg)
-* [Folkeregisterperson med utflytting](../modeller/18_2_5a00172_1487338698879_978644_54505.jpg)
-* [Folkeregisterperson med navn](../modeller/18_2_5a00172_1487778967501_54251_59224.jpg)
+* [Folkeregisterperson med adresse](../modeller/1450278727.png)
+* [Adressetyper](../modeller/1515074003.png)
+* [Folkeregisterperson med personrelasjon](../modeller/1457707670.png)
+* [Folkeregisterperson med dødsfall](../modeller/1434703879.png)
+* [Folkeregisterperson med fødsel](../modeller/1461333199.png)
+* [Folkeregisterperson med innflytting](../modeller/1461334707.png)
+* [Folkeregisterperson med kjerneinformasjon](../modeller/1461335462.png)
+* [Folkeregisterperson med sivilstand](../modeller/1486742267.png)
+* [Folkeregisterperson med kontaktopplysninger for dødsbo](../modeller/1486990410.png)
+* [Folkeregisterperson med identitet](../modeller/1486995006.png)
+* [Folkeregisterperson med utflytting](../modeller/1487338698.png)
+* [Folkeregisterperson med navn](../modeller/1487778967.png)
 
 # Endringslogg
+
+## Beskrivelse av endringer i informasjonsmodellen mellom versjon 4.0 og 5.0
+
+### Generelle registerelementer
+
+**_Registermetadata_**
+
+Egenskapen gyldighetstidspunkt er blitt valgfri siden migrert informasjon fra DSF ikke alltid gir informasjon om dette.
+
+**_Registerendring_**
+
+Kodelisten har fått nytt element, _opphøre_.
+
+### Adresse
+
+**_Bostedsadresse_**
+
+_Bostedsadresse_ har fått en ny valgegenskap, _ukjentBosted_ med entitetstype _UkjentBosted_, hvor _UkjentBosted_ har valgfri egenskap _bostedskommune_.
+
+Egenskapen _adresseIdFraMatrikkelen_ har endret navn til _adresseIdentifikatorFraMatrikkelen_.
+
+Kretser vil likevel bli lagret på bostedsadressen siden distribusjonsmodellens arkitektur hindrer oppslag i matrikkelen ved behov. Kretsene er: _grunnkrets_, _stemmekrets_, _skolekrets_ og _kirkekrets_.
+
+**_Oppholdsadresse_**
+
+Egenskapen _oppholdsadresse_ for _Folkeregisterperson_ var feilaktig en valgegenskap med multiplisitet 1. Egenskapen er nå ikke en valgegenskap og multiplisiteten er 0..*.
+
+**_Matrikkeladresse_**
+
+Egenskapen _matrikkeladressenavn_ er byttet med _adressetilleggsnavn_ og egenskapen _poststed_ er lagt til i entiteten _Matrikkeadresse_.
+
+**_Kontaktadresse_**
+
+Kontaktadresse har nå ingen valgegenskaper, men to valgfrie og en påkrevet.
+
+Kontaktadresse har egenskapen vegadresse som før, men denne er av entitetstype _VegadresseForPost_ som er en forenklet versjon av _Vegadresse_ og er valgfri.
+
+Kontaktadresse har en ny påkrevet egenskap, _postadresseIFrittFormat_, som måtte opprettes pga. migrasjon av ustrukturerte postadresser fra DSF. Egenskapen _postadresseIFrittFormat_ vil bli oppdatert på grunnlag av endringer i de valgfrie strukturerte entitetene _VegadresseForPost_ eller _Postboksadresse_ slik at denne alltid vil finnes i personmodellen.
+
+Kontaktadresse har ikke lenger _matrikkeladresse_ som egenskap.
+
+**_KontaktadresseIUtlandet_**
+
+KontaktadresseIUtlandet har fått en ny egenskap, _internasjonalAdresseIFrittFormat_, pga. migrasjon av ustrukturerte postadresser i utlandet fra DSF. Egenskapen _internasjonalAdresseIFrittFormat_ vil bli oppdatert på grunnlag av endringer i den valgfrie strukturerte entiteten InternasjonalAdresse slik at denne alltid vil finnes i personmodellen.
+
+**_Adressenummer_**
+
+Datatypen er endret ved at egenskapene _nummer_ og _bokstav_ har får navnene hhv. _husnummer_ og _husbokstav_.
+
+**_Adressetype_**
+
+Koden _kontaktadresse_ er endret til _postadresse_ og Koden _kontaktadresseIUtlandet_ er endret til _postadresseIUtlandet_.
+
+**_Adressegradering_**
+
+Kodelisten _Adressegradering_ har endret kodeverdien _sperretAdresseFortrolig_ til _fortrolig_ og _sperretAdresseStrengtFortrolig_ til _strengtFortrolig_.
+
+**_GraderingAvAdresse_**
+
+Egenskapen _adressebeskyttelse_ er innført for å beskrive beskyttelsesnivået for en person uavhengig av adressetype. Egenskapen _graderingsnivå_ kan således kun ha verdiene _ugradert_, _fortrolig_, _strengtFortrolig_.
+
+### Dødsfall
+
+Egenskapen _dødsdato_ i entiteten _Dødsfall_ har fått multiplisitet 0..1 siden dødsdato ikke alltid er registert i DSF.
+
+### Fødsel
+
+Informasjon om alle fødsler i inn- og utland er samlet i entiteten _Fødsel_. Egenskapen _fødekommuneINorge_ er lagt inn i _entiteten Fødsel_.
+
+Egenskapen _fødselINorge_ med entitet _FødselINorge_ er ikke lenger et tillegg til _Fødsel_, men en egen egenskap for Folkeregisterperson. _FødselINorge_ er for spesiell informasjon fra norske fødsler. Her er den gamle kodelisten for rekkefølgenummer erstattet med _rekkefølgenummer_ av typen _Heltall_ hvor man benytter den gamle verdisettene (12=første tvilling osv.). Videre er _fødekommune_ lagt inn i _Fødsel_ som _fødekommuneINorge_. Egenskapen _antallBarnIFlerfødsel_ er fjernet da verdien ligger i _rekkefølgenummer_.
+
+### Identitet
+
+**_Statsborgerskap_**
+
+Entiteten _Statsborgerskap_ har fått ny egenskap, _ervervsdato_.
+
+På grunn av dette så har selve egenskapen statsborgerskap for _Folkeregisterperson_ fått endret multiplisitet fra 1 til 0..* og egenskapen _statsborgerskap_ i entiteten _Statsborgerskap_ fått multiplisitet 1. Dette for å ivareta flere gjeldende statsborgerskap.
+
+**_Personidentifikasjon_**
+
+Folkeregisterperson sin egenskap _annenIdentifikasjon_ er blitt byttet ut med egenskapene _utenlandskPersonidentifikasjon_ og _utlendingsmyndighetenesIdentifikasjonsnummer_.
+
+### Innflytting
+
+**_InnflyttingTilNorge_**
+
+Egenskapen _fraflyttingssted_ har endret navn til _fraflyttingsstedIUtlandet_.
+
+### Kontaktopplysninger for dødsbo
+
+**_KontaktadresseForDødsbo_**
+
+Egenskapen _poststed_ er fjernet og egenskapene _poststedsnavn_ og _postnummer_ er kommet inn.
+
+### Navn
+
+Navnet til egenskapen _opprinneligNavn_ er byttet til _originaltNavn_ siden sistnevntes betydning er riktigere for det navnet som ble presenter ved ankomst til Norge.
+
+### Personrelasjon
+
+Personrelasjonsmodellen er fullstendig endret og spesialisert til fire områder: Foreldreansvar, Familierelasjon, Verge - inkludert representant for mindreårig asylsøker og Stadfestet fremtidsfullmakt. De to sistnevnte er fortsatt under stor endring.
+
 
 ## Beskrivelse av endringer i informasjonsmodellen mellom versjon 3.0 og 4.0
 
