@@ -1,0 +1,14 @@
+<div class="data">
+  <div class="innhold-blokk">
+    <div class="innhold-blokk-innhold">
+      {{{contents}}}
+
+      {{#each qa}}
+      <details>
+        <summary>{{this.title}}</summary>
+        <p>{{{this.contents}}}</p>
+      </details>
+      {{/each}}
+    </div>
+  </div>
+</div>
