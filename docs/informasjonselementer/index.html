@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Informasjonselementer</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Informasjonselementer</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+          <a href="../test">Test</a>
+          <a href="../versjonering">Versjonering</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+        <div><a class="index" href="../sp-rsm-l-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p><strong>Når er personinformasjon klart i de nye tjenestene?</strong></p>
+    <p>Allerede i dag kan man hente ut alle personer og alle endringer i person, samt informasjon om hvorvidt personen er
+    &quot;Kontrollert&quot; eller &quot;Ikke kontrollert&quot;. I tillegg er informasjon om falsk identitet, utenlandske identifikatorer og
+    utenlandske legitimasjonsdokumenter tilgjengelige. Prosjektet ønsker fortløpende å berike tilbudet med flere personopplysninger.
+    Migreringen fra DSF er i gang, men det er usikkert hvor raskt vi vil tilgjengeliggjøre informasjonen etter at den er migrert.</p>
+    <p><strong>Hva blir nytt eller endret i det nye Folkeregisteret?</strong></p>
+    <p>Vi har publisert en oversikt over endringene fra eksisterende til nytt folkeregister på prosjektets sider på github.
+    Du finner den her: <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsfelter-og-statuskoder/">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsfelter-og-statuskoder/</a></p>
+    <p><strong>Finnes en alternativ identifikator eller har alle personer i Folkeregisteret enten et fødselsnummer eller et d-nummer?</strong></p>
+    <p>Alle personer som er fullt ut registrert i Folkeregisteret har enten fødselsnummer eller d-nummer. Vi har bestemt at det
+    ikke vil finnes en egen stabil identifikator for en person uavhengig av Folkeregisteridentifikatoren. Vi registrerer kun
+    identifiserende informasjon om personer, som ikke har en Folkeregisteridentifikator, men som har en personrelasjon til
+    registrerte personer. Vi registrerer i tillegg utenlandske identifikasjonsnumre og utlendingsmyndighetenes
+    identifikasjonsnummer (DUF-nummer) på registrerte personer.</p>
+    <p><strong>Hvordan ser informasjonen ut hos FREG når det er kobling mellom folkeregisteridentifikatorer (dublett)?</strong></p>
+    <p>Personen som er videreført vil inneholde lenkede koblinger som historiske identfikasjonsnummere. Alle søk på gjeldende,
+    eller historisk fødsels-/d-nummer vil treffe denne personen.</p>
+    <p><strong>Hvem &quot;eier&quot; informasjonen i Folkeregisteret, med ansvar for å oppdatere hva?</strong></p>
+    <p>Generelt er det slik at meldinger fra ansvarlig myndighet registreres etter en formell kontroll. For eksempel godtar vi
+    melding om statsborgerskap når det sendes inn av Utlendingsmyndigheten.  Meldinger fra tredjepart om adresseendring må
+    saksbehandles av Folkeregisteret, fordi det er Folkeregisteret som er vedtaksmyndighet for bostedssaker. Så dersom noen
+    sender inn et tips om at en person har flyttet, så vil vi undersøke det.</p>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Spesreg</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Spesreg</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+          <a href="../test">Test</a>
+          <a href="../versjonering">Versjonering</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+        <div><a class="index" href="../sp-rsm-l-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p><strong>Anser Folkeregisteret det for sensitiv opplysning at en person har hemmelig/gradert adresse?</strong></p>
+    <p>Ja, vi markerer selve adressen med &quot;klient&quot; eller &quot;fortrolig&quot;. Vi benytter ikke begrepe &quot;hemmelig adresse&quot; siden hemmelig
+    er en gradering iht. Sikkerhetsloven, mens graderingen av adresser er iht. Beskyttelsesinstruksen. Adresser til personer
+    med adressebeskyttelse med graderingen &quot;strengt fortrolig&quot; finnes ikke i Folkeregisteret. Personer som er koblet til en
+    &quot;fortrolig&quot; eller &quot;strengt fortrolig&quot; adresse, vil ha en egenskap ved navn adressebekyttelse:GraderingAvAdresse[0..*].
+    Egenskapen vil være graderingsnivå:Adressegradering[1] der kodelistens (Adressegradering) mulige valg er &quot;fortrolig&quot;
+    eller &quot;strengtFortrolig&quot;. Trolig blir også selve adressebeskyttelsen (fortrolig/strengt fortrolig) taushetsbelagt
+    informasjon, i tillegg til adressene.</p>
+    <p><strong>Er det slik at vi fremover ikke vil motta de hemmelige adressene?</strong></p>
+    <p>Det stemmer.  Vi benytter ikke begrepe &quot;hemmelig adresse&quot; siden hemmelig er en gradering iht.
+    Sikkerhetsloven, mens graderingen av adresser i Folkeregisteret er iht. Beskyttelsesinstruksen.
+    Brukere av Folkeregisteret vil ikke motta &quot;strengt fortrolige&quot; adresser. Disse er heller ikke registrert i Folkeregisteret.
+    Folkeregisteret utleverer ingen &quot;strengt fortrolige&quot; adresser, mens &quot;fortrolige&quot; adresser vil tilgjengeliggjøres til
+    konsumenter med hjemmel.</p>
+    <p><strong>Vil vi motta Kripos-adressen eller barneverns-/Hammerfest- adressen? Og er det ønskelig at vi formidle disse adressene
+    eksternt?</strong></p>
+    <p>Alle aktører vil motta en «åpen» postadresse på for personer med &quot;strengt fortrolig&quot; adresse. Ekstern formilding må avklares.</p>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

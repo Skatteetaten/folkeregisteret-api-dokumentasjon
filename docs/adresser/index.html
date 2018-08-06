@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Adresser</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Adresser</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+          <a href="../test">Test</a>
+          <a href="../versjonering">Versjonering</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+        <div><a class="index" href="../sp-rsm-l-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p><strong>Vil vi alltid motta matrikkeladresse på personer, og både motta vegadresse og matrikkeladresse der en person har en vegadresse?</strong></p>
+    <p>Nei. I strukturmodellen benytter vi <code>&lt;&lt;valgEgenskap&gt;&gt;</code>. Her velges én, i en serie med flere alternative valg.
+    Eksempelvis inneholder Bostedsadresse  tre valg av adressetyper:</p>
+    <ol>
+    <li><code>vegadresse:Vegadresse</code></li>
+    <li><code>matrikkeladresse:Matrikkeladresse</code></li>
+    <li><code>ukjentBosted:UkjentBosted</code></li>
+    </ol>
+    <p>Kun én av typene benyttes. Hvilken avhenger av hva slags adresse personen melder flytting på:</p>
+    <ol>
+    <li>&quot;Gate/vegadresse&quot; medfører typevalg Vegadresse.</li>
+    <li>&quot;Stedsadresse (med gårds-/bruksnummer)&quot; gir Matrikkeladresse.</li>
+    <li>UkjentBosted benyttes i de tilfeller hvor personen melder at vedkommende har ukjent bosted med mulig kjent kommunetilhørighet.</li>
+    </ol>
+    <p><strong>Hva er Matrikkeladressenavn?</strong></p>
+    <p>Matrikkeladressenavn er eksisterende benevnelse på et &quot;nedarvet bruksnavn eller navn på en institusjon eller bygning,
+    brukt som del av den offisielle adressen&quot;. Matrikkeladressenavn vil  hete &quot;adressetilleggsnavn&quot; i vårt nye folkeregister.</p>
+    <p><strong>Må &quot;Adressenummer&quot; alltid må være en del av vegadressen?</strong></p>
+    <p>Ja, adressenummer må være en del av vegadressen. Adressenummer består av egenskapene husnummer (obligatorisk) og husbokstav (valgfri)</p>
+    <p><strong>Hvordan håndteres adresser som ikke har husnummer?</strong></p>
+    <p>En adresse med &quot;adressenavn&quot;, men uten husnummer, vil bli godkjent dersom den samsvarer med en adresse i matrikkelen hos Kartverket.</p>
+    <p><strong>Hvordan er forholdet mellom oppholdsadresse og bostedsadresse?</strong></p>
+    <p>I strukturmodellen viser vi at man kan ha flere historiske adresser,
+    men man kan kun ha én eller ingen gjeldende adresse for hver av adressetypene;
+    bostedsadresse, deltBosted, oppholdsadresse, postadresse og postadresseIUtlandet.
+    Det er et krav om å ha minst 1, totalt sett. I tilfeller der man ikke vet hvor personen bor, vil UkjentBosted benyttes.</p>
+    <p><strong>Hvis personer ikke ligger registrert med fast bopel så ligger de i DSF uten adresse. Vil det bli noen endring på det?</strong></p>
+    <p>Personer med fødselsnummer vil bli oppført med bostedsadresse av typen ukjentBosted med eller uten kommunenummer.</p>
+    <p><strong>Henter Skatteetaten adresser på utenlandske personer via batch ajourhold fra Enhetsregisteret når de ikke har det selv? Og skal dere fortsette å gjøre det?</strong></p>
+    <p>Ja</p>
+    <p><strong>Kan en person ha kontaktadresse i tillegg til bostedsadresse og oppholdsadresse?</strong></p>
+    <p>Ja</p>
+    <p><strong>Når man som konsument får informasjon om person som har sperret adresse, strengt fortrolig (betegnet som kode 6 i DSF),
+    hvilken adresse kommer da?</strong></p>
+    <p>Det kommer en postadresse som administreres av Kripos-adresse eller Skatt Nord.
+    Dette er åpen informasjon. Kripos og Skatt Nord videredistribuerer post til personen.
+    Altså er personen kontaktbar, men bostedet vil ikke finnes i FREG.</p>
+    <p><strong>Hva er definisjonen av &quot;postbokseier&quot;?</strong></p>
+    <p>Begrepet er ikke definert ennå, men det vi ønsker å beskrive er eieren (eller enda mer presist; en leier fra Posten)
+    som disponerer postboksen. Dette feltet kom opp som nødvendig utvidelse ved bl.a. rekvirering av d-nummer.
+    Her var det ønskelig å skille mellom den som skulle motta postforsendelsen i postboksen og den som faktisk disponerer postboksen
+    (som oppføres under c/o).</p>
+    <p><strong>Er adressegraderinger koblet mot person eller til hvert adresseelement?</strong></p>
+    <p>Adressegraderinger er både koblet mot person og adresseelementer.
+    Hver adressetype vil ha hver sin adressegradering som eget informasjonselement.
+    Hver type adresse vil likevel ha forskjellige lovlige verdier.
+    Dette vil bli dokumentert. Den graderingen som er knyttet til personen kalles &quot;adressebeskyttelse&quot; og vil beskrive personens
+    beskyttelsesbehov og vil ha lovlige verdier &quot;fortrolig&quot; og &quot;strengtFortrolig&quot;.</p>
+    <p><strong>Er det personen som har gradering på adresse, som fører til forskjellig håndtering av adressene?</strong></p>
+    <p>Når personen har adressebeskyttelse &quot;fortrolig&quot; adresse, vil hver av adressene som denne har verdier for,
+    også være påført med adressegradering &quot;fortrolig&quot;. Der en av adressene har graderingen &quot;klientadresse&quot;,
+    gjelder graderingen kun denne adressen fordi adressen selv kan avsløre at personens flyktningsstatus ol.</p>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

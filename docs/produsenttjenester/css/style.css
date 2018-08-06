@@ -247,6 +247,49 @@ table tr:last-child td:last-child {
     border-bottom-right-radius:3px;
 }
 
+details {
+    cursor: pointer;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    padding: 1%;
+    outline: none;
+    max-width: 800px
+}
+summary {
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: -0.9%;
+    padding: 8px 0;
+    position: relative;
+    max-width: 800px
+}
+summary:hover, details[open] summary {
+    background: #E1E1E1;
+}
+summary::-webkit-details-marker {
+    display: none
+}
+summary:before{
+    border-radius: 5px;
+    content: "+";
+    color: #363636;
+    display: block;
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px 10px 0 10px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+}
+details[open] summary:before {
+    content: "-";
+}
+
 .nyhetscontainer {
     width:auto;
     display:inline;

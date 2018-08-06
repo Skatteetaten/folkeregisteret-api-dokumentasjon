@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Spørsmål og svar</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Spørsmål og svar</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+          <a href="../test">Test</a>
+          <a href="../versjonering">Versjonering</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+        <div><a class="index" href="../sp-rsm-l-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p>Spørsmål og svar er kategorisert etter område</p>
+    
+    
+          <details>
+            <summary>Adresser</summary>
+            <p><p><strong>Vil vi alltid motta matrikkeladresse på personer, og både motta vegadresse og matrikkeladresse der en person har en vegadresse?</strong></p>
+    <p>Nei. I strukturmodellen benytter vi <code>&lt;&lt;valgEgenskap&gt;&gt;</code>. Her velges én, i en serie med flere alternative valg.
+    Eksempelvis inneholder Bostedsadresse  tre valg av adressetyper:</p>
+    <ol>
+    <li><code>vegadresse:Vegadresse</code></li>
+    <li><code>matrikkeladresse:Matrikkeladresse</code></li>
+    <li><code>ukjentBosted:UkjentBosted</code></li>
+    </ol>
+    <p>Kun én av typene benyttes. Hvilken avhenger av hva slags adresse personen melder flytting på:</p>
+    <ol>
+    <li>&quot;Gate/vegadresse&quot; medfører typevalg Vegadresse.</li>
+    <li>&quot;Stedsadresse (med gårds-/bruksnummer)&quot; gir Matrikkeladresse.</li>
+    <li>UkjentBosted benyttes i de tilfeller hvor personen melder at vedkommende har ukjent bosted med mulig kjent kommunetilhørighet.</li>
+    </ol>
+    <p><strong>Hva er Matrikkeladressenavn?</strong></p>
+    <p>Matrikkeladressenavn er eksisterende benevnelse på et &quot;nedarvet bruksnavn eller navn på en institusjon eller bygning,
+    brukt som del av den offisielle adressen&quot;. Matrikkeladressenavn vil  hete &quot;adressetilleggsnavn&quot; i vårt nye folkeregister.</p>
+    <p><strong>Må &quot;Adressenummer&quot; alltid må være en del av vegadressen?</strong></p>
+    <p>Ja, adressenummer må være en del av vegadressen. Adressenummer består av egenskapene husnummer (obligatorisk) og husbokstav (valgfri)</p>
+    <p><strong>Hvordan håndteres adresser som ikke har husnummer?</strong></p>
+    <p>En adresse med &quot;adressenavn&quot;, men uten husnummer, vil bli godkjent dersom den samsvarer med en adresse i matrikkelen hos Kartverket.</p>
+    <p><strong>Hvordan er forholdet mellom oppholdsadresse og bostedsadresse?</strong></p>
+    <p>I strukturmodellen viser vi at man kan ha flere historiske adresser,
+    men man kan kun ha én eller ingen gjeldende adresse for hver av adressetypene;
+    bostedsadresse, deltBosted, oppholdsadresse, postadresse og postadresseIUtlandet.
+    Det er et krav om å ha minst 1, totalt sett. I tilfeller der man ikke vet hvor personen bor, vil UkjentBosted benyttes.</p>
+    <p><strong>Hvis personer ikke ligger registrert med fast bopel så ligger de i DSF uten adresse. Vil det bli noen endring på det?</strong></p>
+    <p>Personer med fødselsnummer vil bli oppført med bostedsadresse av typen ukjentBosted med eller uten kommunenummer.</p>
+    <p><strong>Henter Skatteetaten adresser på utenlandske personer via batch ajourhold fra Enhetsregisteret når de ikke har det selv? Og skal dere fortsette å gjøre det?</strong></p>
+    <p>Ja</p>
+    <p><strong>Kan en person ha kontaktadresse i tillegg til bostedsadresse og oppholdsadresse?</strong></p>
+    <p>Ja</p>
+    <p><strong>Når man som konsument får informasjon om person som har sperret adresse, strengt fortrolig (betegnet som kode 6 i DSF),
+    hvilken adresse kommer da?</strong></p>
+    <p>Det kommer en postadresse som administreres av Kripos-adresse eller Skatt Nord.
+    Dette er åpen informasjon. Kripos og Skatt Nord videredistribuerer post til personen.
+    Altså er personen kontaktbar, men bostedet vil ikke finnes i FREG.</p>
+    <p><strong>Hva er definisjonen av &quot;postbokseier&quot;?</strong></p>
+    <p>Begrepet er ikke definert ennå, men det vi ønsker å beskrive er eieren (eller enda mer presist; en leier fra Posten)
+    som disponerer postboksen. Dette feltet kom opp som nødvendig utvidelse ved bl.a. rekvirering av d-nummer.
+    Her var det ønskelig å skille mellom den som skulle motta postforsendelsen i postboksen og den som faktisk disponerer postboksen
+    (som oppføres under c/o).</p>
+    <p><strong>Er adressegraderinger koblet mot person eller til hvert adresseelement?</strong></p>
+    <p>Adressegraderinger er både koblet mot person og adresseelementer.
+    Hver adressetype vil ha hver sin adressegradering som eget informasjonselement.
+    Hver type adresse vil likevel ha forskjellige lovlige verdier.
+    Dette vil bli dokumentert. Den graderingen som er knyttet til personen kalles &quot;adressebeskyttelse&quot; og vil beskrive personens
+    beskyttelsesbehov og vil ha lovlige verdier &quot;fortrolig&quot; og &quot;strengtFortrolig&quot;.</p>
+    <p><strong>Er det personen som har gradering på adresse, som fører til forskjellig håndtering av adressene?</strong></p>
+    <p>Når personen har adressebeskyttelse &quot;fortrolig&quot; adresse, vil hver av adressene som denne har verdier for,
+    også være påført med adressegradering &quot;fortrolig&quot;. Der en av adressene har graderingen &quot;klientadresse&quot;,
+    gjelder graderingen kun denne adressen fordi adressen selv kan avsløre at personens flyktningsstatus ol.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Hendelser</summary>
+            <p><p><strong>Hvordan blir beskrivelsen på statushendelser?</strong></p>
+    <p>Prosjektet kommer med funksjonell beskrivelse av statushendelser.
+    I samtlige statushendelser vil det fremgå om hendelsen er en korrigering, annullering eller endring.</p>
+    <p><strong>Hvordan vil prosjektet sørge for en gradvis overgang fra gamle transaksjoner til nye hendelser, så man får testet at
+    man klarer å kombinere DSF og FREG som kilder?</strong></p>
+    <p>Dette er en problemstilling for de som mottar transaksjonsfil direkte fra DSF.
+    Informasjon om dette ivaretas gjennom direkte dialog med de konsumenter det gjelder.</p>
+    <p><strong>Hva er årsaken til at man har prinsippet om at en hendelse kun gjelder en person?</strong></p>
+    <p>Brukerne av folkeregisteropplysninger skal gjennom dette prinsippet slippe å tolke hvilke personer som påvirkes av hendelsen.
+    Ut fra hendelsene kan konsumentene ved behov tolke seg frem til en sammensatt hendelse.</p>
+    <p><strong>Hvilken informasjon vil distribueres på hendelseslister?</strong></p>
+    <p>Når prosjektet er ferdig, vil alle endringer (hendelser) i personopplysninger distribueres på hendelseslister.</p>
+    <p><strong>Forutsettes det at mottaker av hendelseslister med folkeregisteropplysninger har en egen kopi av registeret som
+    vedlikeholdes, eller kan en hendelse bare være et varsel eller en &quot;trigger&quot; for noe?</strong></p>
+    <p>Nei, det forutsettes ikke at man har en egen kopi. All informasjon kan hentes fra Freg gjennom tjenestene vi tilbyr.
+    Det skal både være mulig å holde et eget kunderegister synkronisert ved hjelp av hendelser og å la en hendelse utløse
+    (”trigge”) en ny sak i eget fagsystem. Det er opp til den enkelte konsument å benytte disse to alternativene basert på
+    rettigheter og eget behov.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Historikk og annulleringer</summary>
+            <p><p><strong>Hvilke historiske opplysninger tilbyr Folkeregisteret der historiske opplysninger viser seg å ha vært feilregistreringer,
+    som siden er korrigert eller annullert?</strong></p>
+    <p>Folkeregisteret lagrer historiske opplysninger slik de var registrert på historisk tidspunkt, samt informasjon om endringer
+    og annulleringer som er gjort siden, og kan bekrefte, og utlevere slik informasjon i spesielle tilfeller, for eksempel ved
+    en rettsak. Opplysningen som synliggjøres i historiske oppslag fra tjenester for konsumentene, er de korrigerte opplysningene,
+    altså det som Folkeregisteret nå anser var riktig på det tidspunktet i historikken man søker opplysninger om.</p>
+    <p><strong>Hvilke informasjonselementer har historikk?</strong></p>
+    <p>Følgende informasjonselementer har historikk: Adresser, status, navn, sivilstand, identitetsgrunnlag, kjønn,
+    familierelasjoner, vergemål og fremtidsfullmakt. Blant disse er det kun bostedsadresse og navn som ikke er taushetsbelagt
+    og krever hjemmel.</p>
+    <p><strong>Hvordan vil historiske opplysninger fra eksisterende folkeregister og modernisert folkeregister være tilgjengelig etter
+    overgangsperioden?</strong></p>
+    <p>Etter overgangsperioden til nytt register vil all historisk informasjon som i dag er tilgjengelig for brukere av
+    Det Sentrale Folkeregister (DSF), og som skal være tilgjengelig etter ny lov, gjøres tilgjengelig via det nye Folkeregisteret.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Informasjonselementer</summary>
+            <p><p><strong>Når er personinformasjon klart i de nye tjenestene?</strong></p>
+    <p>Allerede i dag kan man hente ut alle personer og alle endringer i person, samt informasjon om hvorvidt personen er
+    &quot;Kontrollert&quot; eller &quot;Ikke kontrollert&quot;. I tillegg er informasjon om falsk identitet, utenlandske identifikatorer og
+    utenlandske legitimasjonsdokumenter tilgjengelige. Prosjektet ønsker fortløpende å berike tilbudet med flere personopplysninger.
+    Migreringen fra DSF er i gang, men det er usikkert hvor raskt vi vil tilgjengeliggjøre informasjonen etter at den er migrert.</p>
+    <p><strong>Hva blir nytt eller endret i det nye Folkeregisteret?</strong></p>
+    <p>Vi har publisert en oversikt over endringene fra eksisterende til nytt folkeregister på prosjektets sider på github.
+    Du finner den her: <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsfelter-og-statuskoder/">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsfelter-og-statuskoder/</a></p>
+    <p><strong>Finnes en alternativ identifikator eller har alle personer i Folkeregisteret enten et fødselsnummer eller et d-nummer?</strong></p>
+    <p>Alle personer som er fullt ut registrert i Folkeregisteret har enten fødselsnummer eller d-nummer. Vi har bestemt at det
+    ikke vil finnes en egen stabil identifikator for en person uavhengig av Folkeregisteridentifikatoren. Vi registrerer kun
+    identifiserende informasjon om personer, som ikke har en Folkeregisteridentifikator, men som har en personrelasjon til
+    registrerte personer. Vi registrerer i tillegg utenlandske identifikasjonsnumre og utlendingsmyndighetenes
+    identifikasjonsnummer (DUF-nummer) på registrerte personer.</p>
+    <p><strong>Hvordan ser informasjonen ut hos FREG når det er kobling mellom folkeregisteridentifikatorer (dublett)?</strong></p>
+    <p>Personen som er videreført vil inneholde lenkede koblinger som historiske identfikasjonsnummere. Alle søk på gjeldende,
+    eller historisk fødsels-/d-nummer vil treffe denne personen.</p>
+    <p><strong>Hvem &quot;eier&quot; informasjonen i Folkeregisteret, med ansvar for å oppdatere hva?</strong></p>
+    <p>Generelt er det slik at meldinger fra ansvarlig myndighet registreres etter en formell kontroll. For eksempel godtar vi
+    melding om statsborgerskap når det sendes inn av Utlendingsmyndigheten.  Meldinger fra tredjepart om adresseendring må
+    saksbehandles av Folkeregisteret, fordi det er Folkeregisteret som er vedtaksmyndighet for bostedssaker. Så dersom noen
+    sender inn et tips om at en person har flyttet, så vil vi undersøke det.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Konvertering og tilgangsstyring</summary>
+            <p><p><strong>Hvis en ansatt har to stillinger, og for eksempel jobber halvtid i politiet og halv tid i barnevernet, og gjennom disse
+    har hjemmel til ulik informasjon i Folkeregisteret, hvordan skille de to tilgangene?</strong></p>
+    <p>Politiet har én tilgang og Buf en annen, så her vil det være et tydelig skille. Det vil også være mulig å kombinere
+    tilganger i tilfeller der man har to hjemler og stillinger i samme org.nummer, men vi har ikke tatt endelig stilling til
+    hvordan dette vil bli løst.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Logging</summary>
+            <p><p><strong>Hvordan løser man Audit-logging av oppslag i FREG?</strong></p>
+    <p>FREG vil logge alle maskinelle oppslag og hva vi leverer ut. Folkeregisterloven § 10-1 (3) om rett til innsyn i oppslag
+    på egen person, gir innbyggere rett til å få innsyn i hvilken informasjon om dem som andre borgere har slått opp i,
+    samt enkeltoppslag fra private som ikke har hjemmel i lov til å hente inn taushetsbelagte opplysninger. Innsynsretten
+    gjelder imidlertid ikke søk foretatt av offentlige myndigheter og private virksomheter som har slik hjemmel.
+    Innsynsretten gjelder heller ikke søk foretatt av pressen, eller søk gjennom vask av lister eller oppdatering av
+    eksisterende register.</p>
+    <p>Planen er at borger skal kunne logge inn å se hva som er slått opp på seg av andre borgere, slik som med skatteopplysninger.
+    Etter personvernforordningen artikkel 15 kan de i tillegg be hver enkelt offentlig etat om å få se hvilke opplysninger
+    som er lagret om dem, og hvem som eventuelt er mottaker av disse opplysningene dersom de er, eller vil bli, utlevert.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Spesreg</summary>
+            <p><p><strong>Anser Folkeregisteret det for sensitiv opplysning at en person har hemmelig/gradert adresse?</strong></p>
+    <p>Ja, vi markerer selve adressen med &quot;klient&quot; eller &quot;fortrolig&quot;. Vi benytter ikke begrepe &quot;hemmelig adresse&quot; siden hemmelig
+    er en gradering iht. Sikkerhetsloven, mens graderingen av adresser er iht. Beskyttelsesinstruksen. Adresser til personer
+    med adressebeskyttelse med graderingen &quot;strengt fortrolig&quot; finnes ikke i Folkeregisteret. Personer som er koblet til en
+    &quot;fortrolig&quot; eller &quot;strengt fortrolig&quot; adresse, vil ha en egenskap ved navn adressebekyttelse:GraderingAvAdresse[0..*].
+    Egenskapen vil være graderingsnivå:Adressegradering[1] der kodelistens (Adressegradering) mulige valg er &quot;fortrolig&quot;
+    eller &quot;strengtFortrolig&quot;. Trolig blir også selve adressebeskyttelsen (fortrolig/strengt fortrolig) taushetsbelagt
+    informasjon, i tillegg til adressene.</p>
+    <p><strong>Er det slik at vi fremover ikke vil motta de hemmelige adressene?</strong></p>
+    <p>Det stemmer.  Vi benytter ikke begrepe &quot;hemmelig adresse&quot; siden hemmelig er en gradering iht.
+    Sikkerhetsloven, mens graderingen av adresser i Folkeregisteret er iht. Beskyttelsesinstruksen.
+    Brukere av Folkeregisteret vil ikke motta &quot;strengt fortrolige&quot; adresser. Disse er heller ikke registrert i Folkeregisteret.
+    Folkeregisteret utleverer ingen &quot;strengt fortrolige&quot; adresser, mens &quot;fortrolige&quot; adresser vil tilgjengeliggjøres til
+    konsumenter med hjemmel.</p>
+    <p><strong>Vil vi motta Kripos-adressen eller barneverns-/Hammerfest- adressen? Og er det ønskelig at vi formidle disse adressene
+    eksternt?</strong></p>
+    <p>Alle aktører vil motta en «åpen» postadresse på for personer med &quot;strengt fortrolig&quot; adresse. Ekstern formilding må avklares.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Statuskoder</summary>
+            <p><p><strong>Stemmer det at status &quot;Midlertidig&quot; kommer som en ny kode i juni?</strong></p>
+    <p>Det stemmer at personstatuskoden &quot;Aktiv&quot; for d-nummer endres til &quot;Midlertidig&quot; i det nye Folkeregisteret. Med det ønsker
+    vi å signalisere at d-nummer opprettes med fem års gyldighet, og dermed er midlertidige. Endringen i benevnelsen kommer
+    ikke i DSF, men i nye FREG, så konsumentene trenger ikke å ta i bruk den nye statuskoden med en gang. Dersom dere fortsatt
+    bruker DSF er koden &quot;Aktiv&quot; som før.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Test og testdata</summary>
+            <p><p><strong>Konsumentene får først vite om endringer i tjenestene når ting er produksjonssatt. Kan prosjektet tilgjengeliggjøre
+    endringer i testmiljøet før man prodsetter, slik at konsumentene kan verifisere endringene?</strong></p>
+    <p>Prosjektet jobber smidig og produksjonssetter fortløpende. Ferdig funksjonalitet legges i produsenttestmiljøet før
+    produksjonssetting for å verifisere at løsningen fungerer som ventet. Det er ikke på generelt basis lagt opp til en
+    løsning med testperiode også i konsumenttestmiljøet før produksjonssetting. Dette vil kreve mye, både av prosjektet og
+    av konsumentene som tester.</p>
+    <p><strong>Vil prosjektet tilby direktemottakere testmiljø og testdata som kan gjenspeile at de i en periode vil lese
+    personoppdateringer fra både DSF og FREG?</strong></p>
+    <p>Dette er etablert i produsenttestmiljøet, og vil kunne opprettholdes og brukes av direktemottakerne så sant det ikke
+    besluttes at testdata ikke kan spres fra dette miljøet. Det kan det være behov for, da testdataene unntaksvis kan
+    inneholde skarpe data.</p>
+    </p>
+          </details>
+          <details>
+            <summary>Tjenester</summary>
+            <p><p><strong>Det er behov for en måte å hente all data for nye konsumenter. Når vil dette være tilgjengelig?</strong></p>
+    <p>Prosjektet er klar over behovet, og vil lage en slik løsning, men det er usikkert når i prosjektløpet dette vil bli klart.</p>
+    <p><strong>Hvordan skal konsumenter som er både direktemottaker og EVRY-konsument forholde seg til ny informasjon?</strong></p>
+    <p>Tjenestene som allerede tilbys, skal fungere som før inntil de forsvinner ved utgangen av 2021.
+    Det er dermed tid til å tilpasse seg og gå over til nye tjenester når det passer den enkelte konsument.</p>
+    <p><strong>Hvordan vil prosjektet versjonere tjenestene?</strong></p>
+    <p>Prosjektet vil forsøke å holde seg til V1 av dokumentet og legge til informasjon i denne.
+    Hvis man skal basere seg på XSDen må man hente ut ny XSD hver gang for å validere.
+    Prosjektet vil varsle om ny informasjon noen dager i forveien.
+    Når prosjektet er avsluttet vil det normalt være gjennom lovendring at man endrer XSD.</p>
+    <p><strong>Når kan vi som konsument koble oss opp til det moderniserte Folkeregisteret?</strong></p>
+    <p>Tjenestene er fremdeles ikke komplette, men Folkeregisteret begynner nå å gi tilgang til utvalgte konsumenter som skal
+    hjelpe oss å teste ut at tjenestene fungerer. De som nå får tilgang, er offentlige aktører vi allerede har tett samarbeid med,
+    og som i mange tilfeller også er produsenter av informasjon til Folkeregisteret. Øvrige konsumenter skal iht planen få tilgang fra sommeren 2019.</p>
+    <p><strong>Hvordan melder vi feil i tjenestene til Folkeregisteret?</strong></p>
+    <p>Ved varsling om problemer med teknisk drift og forvaltning kan MF Produksjonsenter kontaktes på freg.produksjon@skatteetaten.no
+    eller på telefon 40 80 93 72 mellom klokken 08:00 - 15:00 på sommertid (15/5 til 15/9), og frem til 15:45 resten av året.</p>
+    <p>Borgere, eksterne saksbehandlere og konsumenter med spørsmål om saksbehandling kan kontakte
+    Skatteopplysningen på tlf 800 80 000 Tastevalg 3 eller på e-kontaktskjema.</p>
+    <p>Husk å sjekke driftsvarsler på <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/om-tjenestene/">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/om-tjenestene/</a> før varsling.</p>
+    <p><strong>Håndteres fonetiske søk av FREG?</strong></p>
+    <p>Det er foreløpig ikke avklart om nytt folkeregister vil håndtere fonetiske søk. Det vil være aktuelt i oppslagstjenester med treffliste.</p>
+    <p><strong>Hvilke oppetidskrav, eller tilgjengelighet og responstider kan man forvente av et nytt folkeregister?</strong></p>
+    <p>Modernisert folkeregister vil være tilgjengelig 24/7, med en oppetid på 99,8 prosent. Brukerstøtte vil være tilgjengelig i normal åpningstid. Planen er at endelig forvaltnings- og driftsplattformsregime, med rutiner og bemanning, er på plass senest fra og med 2020. I prosjektperioden, hvor dagens og ny løsning  kjøres i parallell, er tilgjengeligheten på 99,5 prosent.</p>
+    </p>
+          </details>
+        </div>
+      </div>
+    </div>  </div>
+</div>
+</body>
+</html>
