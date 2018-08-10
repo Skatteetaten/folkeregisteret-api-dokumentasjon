@@ -6,14 +6,14 @@ title: Mottak
 REST-tjeneste for innsending av informasjon til Folkeregisteret. Dokument som kan sendes inn er representert i listen over ressurser under. For å sende inn et dokument brukes kommandoen POST mot riktig URL med dokumentet som body i innsendingen.
 
 Tjenestenes endepunkt: <br>
-`POST {miljø}/folkregisteret/mottak/api/{ressurs}`
+`POST {miljø}/folkeregisteret/mottak/api/{ressurs}`
 
 ## Ressurser
 | ressurs | kontrakt | modell | status | tilbakemeldingshendelse |
 |---------|----------|--------|--------|-------------------------|
 | rekvisisjon_av_dnummer            | [xsd](../kontrakter/RekvisisjonAvDNummer_1.0.xsd)                    | | utgått     | N/A |
 | rekvisisjon_av_dnummer_v3         | [xsd](../kontrakter/RekvisisjonAvDNummer_3.0.xsd)                    | | utgått     | N/A |
-| rekvisisjon_av_dnummmer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | [jpg](../modeller/1499854129.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v4 |
+| rekvisisjon_av_dnummer_v4        | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | [jpg](../modeller/1499854129.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v4 |
 | rekvisisjon_av_dnummer_v4_vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_4.0.xsd)                    | | produksjon | HendelserISakOmDNummerRekvisisjon_v4 |
 | rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/1511792480.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v5 |
 | doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [png](../modeller/1478705212.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
