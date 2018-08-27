@@ -8,6 +8,8 @@ Folkeregisteret tilbyr en rekke api-er som kan benyttes av av virksomheter som p
 
 Tjenestene er delt inn i produsenttjenester og konsumenttjenester. Produsenttjenester er tjenester som benyttes av de som er produsenter av data for Folkeregisteret. Konsumenttjenester er tjenester for å hente data fra registeret, rettet mot alle brukerne av folkeregisterdata.
 
+**Generelle henvendelser til prosjektet kan rettes til Prosjekt.mf@skatteetaten.no**
+
 # Nyheter og driftsvarsel
 
 Vi vil gi beskjed om viktige endringer som kommer i Folkeregisteret og driftsstatus for våre tjenester her. Du kan følge med på det som skjer gjennom en RSS-leser. Du kan abonnere på hva som skjer gjennom for eksempel RSS-funksjonen i Outlook, eller din favoritt RSS-leser. 
