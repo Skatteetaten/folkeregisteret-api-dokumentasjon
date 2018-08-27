@@ -9,7 +9,7 @@ Skattedirektoratet har etablert en standardavtale som er lik for alle konsumente
 Avtalen regulerer blant annet partenes plikter og ansvar, behandlingsansvar, sanksjoner og teknisk support og drift. 
 Frem til 31.12.2019 er det Prosjekt Modernisering av Folkeregisteret som drifter og forvalter Freg. 
 
-Tekniske henvendelser om forvaltning og drift kan rettes til: 
+## Tekniske henvendelser om forvaltning og drift kan rettes til: 
 
 Skatteetaten, Prosjekt Modernisering av Folkeregisteret 
 Support, drifts og avviksmeldinger.:	e-post ved normale hendelser freg.produksjon@skatteetaten.no
