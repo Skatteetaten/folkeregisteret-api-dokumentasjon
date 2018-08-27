@@ -2,6 +2,8 @@
 title: Avtaler
 ---
 
+# Avtaler
+
 For å få tilgang til folkeregisterets test- og produksjonsmiljø må det inngås avtale om utlevering av folkeregisteropplysninger. 
 Skattedirektoratet har etablert en standardavtale som er lik for alle konsumenter. 
 Avtalen regulerer blant annet partenes plikter og ansvar, behandlingsansvar, sanksjoner og teknisk support og drift. 
