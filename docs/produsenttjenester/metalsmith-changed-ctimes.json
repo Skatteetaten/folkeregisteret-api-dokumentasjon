@@ -23,6 +23,7 @@
   "driftsstatus/2018-08-23-Ustabilitet-FREG": 1536873191711,
   "driftsstatus/2018-08-23-normal-drift": 1536873191711,
   "driftsstatus/2018-08-25-Varsling-vedlikehold": 1536873191711,
+  "driftsstatus/2018-09-25-VedlikeholdDSF": 1537906092448,
   "konsumenttjenester/avtaler.md": 1536873191711,
   "konsumenttjenester/funksjonell-beskrivelse.md": 1536873191711,
   "konsumenttjenester/hendelsesliste.md": 1536873191711,
@@ -81,6 +82,12 @@
   "nyheter/2018-05-03-persondokumentBETA1.md": 1536873191770,
   "nyheter/2018-06-06-modeller.md": 1536873191770,
   "nyheter/2018-06-22-Prosjektet utvider med nye hendelser på hendelseslisten.md": 1536873191770,
+  "om-tjenestene/informasjonsfelter-og-statuskoder.md": 1536873191770,
+  "om-tjenestene/informasjonsmodell.md": 1536873191770,
+  "om-tjenestene/sikkerhet.md": 1537444931712,
+  "om-tjenestene/taushetsbelagte-opplysninger.md": 1536873191770,
+  "om-tjenestene/test.md": 1536873191770,
+  "om-tjenestene/versjonering.md": 1536873191770,
   "produsenttjenester/mottak.md": 1537444931722,
   "produsenttjenester/tilbakemelding.md": 1536873191771,
   "spm-og-svar/sos-adresser.md": 1536873191771,
@@ -92,11 +99,5 @@
   "spm-og-svar/sos-statuskoder.md": 1536873191771,
   "spm-og-svar/sos-test.md": 1536873191771,
   "spm-og-svar/sos-tilgangsstyring.md": 1536873191772,
-  "spm-og-svar/sos-tjenester.md": 1536873191772,
-  "om-tjenestene/informasjonsfelter-og-statuskoder.md": 1536873191770,
-  "om-tjenestene/informasjonsmodell.md": 1536873191770,
-  "om-tjenestene/taushetsbelagte-opplysninger.md": 1536873191770,
-  "om-tjenestene/test.md": 1536873191770,
-  "om-tjenestene/versjonering.md": 1536873191770,
-  "om-tjenestene/sikkerhet.md": 1537444931712
+  "spm-og-svar/sos-tjenester.md": 1536873191772
 }
