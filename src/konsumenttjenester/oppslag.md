@@ -29,8 +29,9 @@ Parameteret *part* kan brukes til å spesifisere hvilken informasjon, om en pers
 
 | Miljø | URL | 
 |-------|-----|
-| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
-| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
+| Produsenttest| https://folkeregisteret-api-ekstern.sits.no/ |
+| Konsumenttest | https://folkeregisteret-api-konsument.sits.no/ |
+| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
