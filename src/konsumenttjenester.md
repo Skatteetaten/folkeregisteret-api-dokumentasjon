@@ -1,5 +1,5 @@
 ---
-title: Konsumenttjenester
+title: Standardtjenester
 ---
 
 Denne siden beskriver tjenestene i det nye Folkeregisteret. 
