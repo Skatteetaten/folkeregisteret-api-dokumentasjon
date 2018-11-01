@@ -222,7 +222,23 @@ Person som vil få personstatus "Ikke bosatt":
 * Norsk borger født i Norge og utflyttet før 011064 eller norsk borger født i utlandet og som aldri har vært bosatt i Norge
 
 ## Personstatus – Inaktiv
-Innhold i koden inaktiv er under avklaring. Dokumentet vil bli oppdatert med dette i neste versjon.
+Personstatusen "inaktiv" benyttes for personer som er tildelt d-nummer. Et tildelt d-nummer har en gyldighetsperiode på 5 år. 
+
+Personer som vil få personstatus "Inaktiv": 
+*	Personer med d-nummer som er eldre enn 5 år. Alle d-nummer som er tildelt etter 16. januar 2017 settes til inaktivt 5 år etter tildelingsdato. Et d-nummer som er tildelt før denne datoen blir satt til inaktivt 5 år fra denne datoen, den 16. januar 2022.
+* Asylsøkere med d-nummer som fra mai 2018 
+** har mottatt endelig, negativt vedtak
+**	er uttransportert
+** eller har forsvunnet fra mottak og fått saken sin henlagt
+
+I januar 2017 ble ca 1 million personer med d-nummer som ikke hadde vært i bruk de siste tre årene, satt til inaktiv. Kriteriene for registreringen var at 
+* personen var eldre enn 20 år, og 
+*	det ikke var registrert aktivitet på d-nummeret i System for likning, Sentralt eiendomsregister eller Enhetsregisteret de siste tre årene. 
+
+Et d-nummer med statuskoden "inaktiv" kan reaktiveres av:
+*	Kun UDI dersom UDI er kilden til inaktiveringen.  
+*	Alle andre inaktive d-numre kan reaktiveres av aktører som kan rekvirere d-nummer
+
 
 ## Identifikatorstatus – I bruk
 Identifikatorstatus "I bruk" benyttes for alle tildelte personidentifikatorer som ikke er "Opphørt". 
