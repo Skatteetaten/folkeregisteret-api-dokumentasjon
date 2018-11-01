@@ -226,10 +226,7 @@ Personstatusen "inaktiv" benyttes for personer som er tildelt d-nummer. Et tilde
 
 Personer som vil få personstatus "Inaktiv": 
 *	Personer med d-nummer som er eldre enn 5 år. Alle d-nummer som er tildelt etter 16. januar 2017 settes til inaktivt 5 år etter tildelingsdato. Et d-nummer som er tildelt før denne datoen blir satt til inaktivt 5 år fra denne datoen, den 16. januar 2022.
-* Asylsøkere med d-nummer som fra mai 2018 
-⋅⋅⋅- har mottatt endelig, negativt vedtak
-⋅⋅⋅-	er uttransportert
-⋅⋅⋅- eller har forsvunnet fra mottak og fått saken sin henlagt
+* Asylsøkere med d-nummer som fra mai 2018 har mottatt endelig, negativt vedtak, er uttransportert eller har forsvunnet fra mottak og fått saken sin henlagt
 
 I januar 2017 ble ca 1 million personer med d-nummer som ikke hadde vært i bruk de siste tre årene, satt til inaktiv. Kriteriene for registreringen var at 
 * personen var eldre enn 20 år, og 
