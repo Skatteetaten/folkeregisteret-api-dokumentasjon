@@ -3,19 +3,29 @@ title: Test
 ---
 
 # Test i modernisert Folkeregister
-
-**Test av prosjektets tjenester åpner høsten 2019.**
-
-I parallell med at Folkeregisteret moderniseres, jobber prosjektet med å etablere et representativt test-folkeregister med syntetiske testpersoner – for testing i eksterne testmiljø. 
-
-Testbefolkningen skal lages basert på et representativt utvalg av Norges befolkning, og vil bestå av konstruerte data som ikke har rot i virkeligheten. Testdataene vil bestå av fiktive testpersoner fra det moderniserte Folkeregisteret. Testpersonene navngis ikke med ekte navn, men med adjektiv og substantiv – f.eks «Vakker blomst». Vi ser for oss at testpersonene bor på ekte gateadresser, og med reelle postnummer og  kommunenummer da det er logikk knyttet til disse. Planen er å gjøre denne syntetiske testbefolkningen tilgjengelig fra august 2019.
-
-Vi har to testmiljø:
-* Produsent-test: Fullskala testmiljø for aktører som produserer opplysninger inn til Folkeregisteret. Produsentene sender inn meldinger og verifiserer tilbakemelding.
-* Konsument-test: Syntetisk testbefolkning og simulering av hendelser på testbefolkningen. De offisielle testdataene fra modernisert folkeregister, og det etablerte testmiljøet for brukere av Folkeregisterets opplysninger. 
-
-Folkeregisteret vil tilby offentlig hendelsesliste fra begge testmiljøene.
-
-Konsumenter og produsenter som skal teste mot det moderniserte Folkeregisteret, må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø, må etablere dette.
-
-Dette arbeidet med å etablere en representativ, syntetisk testbefolkning, inngår i et pågående tverretatlig samarbeid om test og testdata i offentlig sektor. De deltakende sektorene har samlet seg bak en løsning for testdata på tvers av offentlig sektor, og på tvers av offentlige felleskomponenter. Testdata fra det moderniserte Folkeregisteret er det første steget på vei mot den foreslåtte løsningen for tverretatlige testdata. 
+ 
+Eksterne som skal sende inn opplysninger til folkeregisteret (produsenter), og hente data fra Folkeregisteret skal gjennomføre test før oppstart i produksjon.
+ 
+Det er etablert to testmiljø for test av integrasjon mot modernisert folkeregister:
+ 
+*Produsenttest: Testmiljø for aktører som produserer opplysninger inn til Folkeregisteret. Produsentene sender inn meldinger og verifiserer tilbakemelding.
+*Konsumenttest: Testmiljø for de som skal hente data fra Folkeregisteret.
+ 
+Testmiljøene skal kun benyttes etter avtale med prosjektet
+Frem til sommeren 2020 vil prosjektet fokusere på de som er produsenter, samt et utvalg av prioriterte konsumenter. 
+ 
+# Testplanlegging
+Prosjektet har egne oppstartsmøter der man enig om felles plan. Etter oppstartsmøtet har man egne møter med fokus på testplanlegging, der tema bl.a. er plan for testgjennomføringen, hvilke scenarier som bør testes og testdata. Hva som skal testes vil variere ut i fra funksjonelt område.  
+I planleggingsmøtene må man også få opp en plan for hva som kan testes når, og man bør se på om det er områder med høy risiko, og som man bør ha ekstra fokus på.
+ 
+# Krav til testmiljø
+Eksterne som skal teste mot modernisert folkeregister må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø må etablere dette.
+De som er både produsenter og konsumenter anbefales å teste produsentrollen og konsumentrollen fra separate testmiljø.
+ 
+# Oppkobling
+Oppkobling mot testmiljøet krever virksomhetssertifikat. Les mer om sikkerhet og virksomhetssertifikater her: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/
+Vi anbefaler etablere grensesnitt mot testmiljø og produksjonsmiljø tidlig. Erfaringer tilsier at dette ofte kan ta noe kalendertid å få på plass. 
+Pass på at på at du har et gyldig testsertifikat, da testsertifikatene som regel har en dato for hvor lenge de er gyldige.
+ 
+ 
+Les mer om test for konsumenter og produsenter på undersidene.
