@@ -8,8 +8,8 @@ Eksterne som skal sende inn opplysninger til folkeregisteret (produsenter), og h
  
 Det er etablert to testmiljø for test av integrasjon mot modernisert folkeregister:
  
-*Produsenttest: Testmiljø for aktører som produserer opplysninger inn til Folkeregisteret. Produsentene sender inn meldinger og verifiserer tilbakemelding.
-*Konsumenttest: Testmiljø for de som skal hente data fra Folkeregisteret.
+* Produsenttest: Testmiljø for aktører som produserer opplysninger inn til Folkeregisteret. Produsentene sender inn meldinger og verifiserer tilbakemelding.
+* Konsumenttest: Testmiljø for de som skal hente data fra Folkeregisteret.
  
 Testmiljøene skal kun benyttes etter avtale med prosjektet
 Frem til sommeren 2020 vil prosjektet fokusere på de som er produsenter, samt et utvalg av prioriterte konsumenter. 
