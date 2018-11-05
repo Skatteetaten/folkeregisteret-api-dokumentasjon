@@ -2,7 +2,7 @@
 title: Test - produsenter
 ---
 
-# Test - produsenter:
+# Test - produsenter
 Aktører som produserer opplysninger inn til Folkeregisteret (produsenter) skal i forkant av oppstart i produksjon teste innsending av aktuelle opplysninger mot et eget testmiljø.
 Målet med testen er å sikre at man sender korrekte og komplette opplysninger til folkeregisteret.
  
