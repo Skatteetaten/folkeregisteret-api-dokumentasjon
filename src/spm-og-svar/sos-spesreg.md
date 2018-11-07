@@ -23,6 +23,6 @@ konsumenter med hjemmel.
 **Vil vi motta Kripos-adressen eller barneverns-/Hammerfest- adressen? Og er det ønskelig at vi formidle disse adressene
 eksternt?**
 
-Alle aktører vil motta en «åpen» postadresse på for personer med "strengt fortrolig" adresse. Ekstern formilding må avklares.
+Alle aktører vil motta en «åpen» postadresse på for personer med "strengt fortrolig" adresse. Ekstern formidling må avklares.
 
 
