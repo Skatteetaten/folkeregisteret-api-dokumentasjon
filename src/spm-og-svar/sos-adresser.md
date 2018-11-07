@@ -78,3 +78,7 @@ Når personen har adressebeskyttelse "fortrolig" adresse, vil hver av adressene 
 også være påført med adressegradering "fortrolig". Der en av adressene har graderingen "klientadresse",
 gjelder graderingen kun denne adressen fordi adressen selv kan avsløre at personens flyktningsstatus ol.
 
+**Kan en person ha forskjellig gradering på de forskjellige adressene?**
+
+Ja, dvs "klientadresse" eller "ugradert".
+
