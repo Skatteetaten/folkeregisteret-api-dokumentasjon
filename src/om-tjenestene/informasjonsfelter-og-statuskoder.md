@@ -29,8 +29,7 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
   
 * **Relasjon**
   * Fullmektig ved stadfestet fremtidsfullmakt
-  * Felles foreldreansvar
-
+  
 * **Dødsfall**
   * Kontaktopplysninger for dødsbo
   
