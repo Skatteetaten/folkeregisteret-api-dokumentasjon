@@ -22,6 +22,10 @@ identifiserende informasjon om personer, som ikke har en Folkeregisteridentifika
 registrerte personer. Vi registrerer i tillegg utenlandske identifikasjonsnumre og utlendingsmyndighetenes
 identifikasjonsnummer (DUF-nummer) på registrerte personer.
 
+**Hva er kravet for å få fødselsnummer?**
+
+Man kan få fødselsnummer i mange ulike innrulleringsprosesser (bosetting, fødselsregistrering, hemmelig adopsjon, korrigert kjønn/f.dato, falsk id, ikke bosatt) - hvor det er ulik saksbehandling som ligger til grunn. 
+
 **Hvordan ser informasjonen ut hos FREG når det er kobling mellom folkeregisteridentifikatorer (dublett)?**
 
 Personen som er videreført vil inneholde lenkede koblinger som historiske identfikasjonsnummere. Alle søk på gjeldende,
