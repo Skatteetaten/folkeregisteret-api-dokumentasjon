@@ -2,7 +2,7 @@
 title: Statuskoder
 ---
 
-**Stemmer det at status "Midlertidig" kommer som en ny kode i juni?**
+**Stemmer det at status "Midlertidig" kommer som en ny kode i juni 2018?**
 
 Det stemmer at personstatuskoden "Aktiv" for d-nummer endres til "Midlertidig" i det nye Folkeregisteret. Med det ønsker
 vi å signalisere at d-nummer opprettes med fem års gyldighet, og dermed er midlertidige. Endringen i benevnelsen kommer
