@@ -33,3 +33,11 @@ Generelt er det slik at meldinger fra ansvarlig myndighet registreres etter en f
 melding om statsborgerskap når det sendes inn av Utlendingsmyndigheten.  Meldinger fra tredjepart om adresseendring må
 saksbehandles av Folkeregisteret, fordi det er Folkeregisteret som er vedtaksmyndighet for bostedssaker. Så dersom noen
 sender inn et tips om at en person har flyttet, så vil vi undersøke det.
+
+**Vil man i det moderniserte Folkeregisteret ha  maksimale lengder for navnefelt utover 50 tegn?**
+
+I det moderniserte Folkeregisteret blir navnelengden maks 200 tegn. Delnavn med flere tegn enn 200 vil bli avvist.
+
+**Har dere regler for at hvis si et navn flyter over grensen så benyttes andre felt?**
+
+Ingen navn vil «flyte» over i et annet felt.
