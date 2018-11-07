@@ -13,6 +13,4 @@ av konsumentene som tester.
 **Vil prosjektet tilby direktemottakere testmiljø og testdata som kan gjenspeile at de i en periode vil lese
 personoppdateringer fra både DSF og FREG?**
 
-Dette er etablert i produsenttestmiljøet, og vil kunne opprettholdes og brukes av direktemottakerne så sant det ikke
-besluttes at testdata ikke kan spres fra dette miljøet. Det kan det være behov for, da testdataene unntaksvis kan
-inneholde skarpe data.
+Dette er etablert i produsenttestmiljøet, og vil kunne opprettholdes og brukes av direktemottakerne. Men det er viktig at testdata fra produsenttestmiljøet ikke spres fra dette miljøet. Testdata i miljøet styret av innsendinger fra produsentene, og prosjektet kan ikke garantere for kvaliteten på testdataene. Det kan unntaksvis være innslag av skarpe data.
