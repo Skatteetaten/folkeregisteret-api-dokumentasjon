@@ -4,7 +4,7 @@ title: Tjenester
 
 **Det er behov for en måte å hente all data for nye konsumenter. Når vil dette være tilgjengelig?**
 
-Prosjektet er klar over behovet, og vil lage en slik løsning, men det er usikkert når i prosjektløpet dette vil bli klart.
+Løsning for å hente ut data om alle personene i folkeregisteret vil bli tilgjengelig i løpet av november eller desember i 2018.
 
 **Hvordan skal konsumenter som er både direktemottaker og EVRY-konsument forholde seg til ny informasjon?**
 
