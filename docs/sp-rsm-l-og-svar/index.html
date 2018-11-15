@@ -89,37 +89,30 @@
     <p><strong>Hva er Matrikkeladressenavn?</strong></p>
     <p>Matrikkeladressenavn er eksisterende benevnelse på et &quot;nedarvet bruksnavn eller navn på en institusjon eller bygning,
     brukt som del av den offisielle adressen&quot;. Matrikkeladressenavn vil  hete &quot;adressetilleggsnavn&quot; i vårt nye folkeregister.</p>
-    <p><strong>Må &quot;Adressenummer&quot; alltid må være en del av vegadressen?</strong></p>
+    <p><strong>Må &quot;Adressenummer&quot; alltid være en del av vegadressen?</strong></p>
     <p>Ja, adressenummer må være en del av vegadressen. Adressenummer består av egenskapene husnummer (obligatorisk) og husbokstav (valgfri)</p>
     <p><strong>Hvordan håndteres adresser som ikke har husnummer?</strong></p>
     <p>En adresse med &quot;adressenavn&quot;, men uten husnummer, vil bli godkjent dersom den samsvarer med en adresse i matrikkelen hos Kartverket.</p>
     <p><strong>Hvordan er forholdet mellom oppholdsadresse og bostedsadresse?</strong></p>
-    <p>I strukturmodellen viser vi at man kan ha flere historiske adresser,
-    men man kan kun ha én eller ingen gjeldende adresse for hver av adressetypene;
-    bostedsadresse, deltBosted, oppholdsadresse, postadresse og postadresseIUtlandet.
-    Det er et krav om å ha minst 1, totalt sett. I tilfeller der man ikke vet hvor personen bor, vil UkjentBosted benyttes.</p>
+    <p>I strukturmodellen viser vi at man kan ha flere historiske adresser, men man kan kun ha én eller ingen gjeldende adresse for hver av adressetypene; bostedsadresse, oppholdsadresse, postadresse og postadresseIUtlandet. Det er et krav om å ha minst 1, totalt sett. I tilfeller der man ikke vet hvor personen bor, vil UkjentBosted benyttes.</p>
+    <p>Personer med fødselsnummer skal ha en bostedsadresse og den skal i det minste være UkjentBosted. Disse kan ha en oppholdadresse i tillegg hvis de har &quot;opphold annet sted&quot; av typen &quot;militær&quot;, &quot;utenriks&quot;, &quot;pendler&quot; eller &quot;påSvalbard&quot;. Oppholdsadressen kan være utenlands.
+    Personer med d-nummer vil ikke ha bostedsadresse fordi de ikke er &quot;bosatt&quot; i Norge. De skal helst ha en oppholdadresse slik at samfunnet vet hvor de bor, men dette er ikke påkrevet.</p>
     <p><strong>Hvis personer ikke ligger registrert med fast bopel så ligger de i DSF uten adresse. Vil det bli noen endring på det?</strong></p>
     <p>Personer med fødselsnummer vil bli oppført med bostedsadresse av typen ukjentBosted med eller uten kommunenummer.</p>
     <p><strong>Henter Skatteetaten adresser på utenlandske personer via batch ajourhold fra Enhetsregisteret når de ikke har det selv? Og skal dere fortsette å gjøre det?</strong></p>
     <p>Ja</p>
     <p><strong>Kan en person ha kontaktadresse i tillegg til bostedsadresse og oppholdsadresse?</strong></p>
-    <p>Ja</p>
+    <p>Ja, de kan både ha postadresse og postadresseIUtlandet i tillegg.</p>
     <p><strong>Når man som konsument får informasjon om person som har sperret adresse, strengt fortrolig (betegnet som kode 6 i DSF),
     hvilken adresse kommer da?</strong></p>
-    <p>Det kommer en postadresse som administreres av Kripos-adresse eller Skatt Nord.
-    Dette er åpen informasjon. Kripos og Skatt Nord videredistribuerer post til personen.
-    Altså er personen kontaktbar, men bostedet vil ikke finnes i FREG.</p>
+    <p>Det kommer en postadresse som administreres av Kripos eller Skatt Nord. Dette er åpen informasjon. Kripos og Skatt Nord distribuerer posten videre til personen. Altså er personen kontaktbar per post, men bostedet vil ikke finnes i det nye Folkeregisteret.</p>
     <p><strong>Hva er definisjonen av &quot;postbokseier&quot;?</strong></p>
     <p>Begrepet er ikke definert ennå, men det vi ønsker å beskrive er eieren (eller enda mer presist; en leier fra Posten)
     som disponerer postboksen. Dette feltet kom opp som nødvendig utvidelse ved bl.a. rekvirering av d-nummer.
     Her var det ønskelig å skille mellom den som skulle motta postforsendelsen i postboksen og den som faktisk disponerer postboksen
     (som oppføres under c/o).</p>
     <p><strong>Er adressegraderinger koblet mot person eller til hvert adresseelement?</strong></p>
-    <p>Adressegraderinger er både koblet mot person og adresseelementer.
-    Hver adressetype vil ha hver sin adressegradering som eget informasjonselement.
-    Hver type adresse vil likevel ha forskjellige lovlige verdier.
-    Dette vil bli dokumentert. Den graderingen som er knyttet til personen kalles &quot;adressebeskyttelse&quot; og vil beskrive personens
-    beskyttelsesbehov og vil ha lovlige verdier &quot;fortrolig&quot; og &quot;strengtFortrolig&quot;.</p>
+    <p>Adressegraderinger er både koblet mot person og adresseelementer. Hver adressetype vil ha hver sin adressegradering som eget informasjonselement. Hver type adresse (bostedsadresse, oppholdsadresse og postadresse) vil likevel ha forskjellige lovlige verdier. Dette vil bli dokumentert. Den graderingen som er knyttet til personen kalles &quot;adressebeskyttelse&quot; og vil beskrive personens beskyttelsesbehov og vil ha lovlige verdier &quot;fortrolig&quot; og &quot;strengtFortrolig&quot;. Verdien &quot;klientadresse&quot; vil bli benyttet på adresser som kan avsløre hvilken institusjonstype adressen tilhører og derved avsløre personens flyktningstatus, helsestatus osv.</p>
     <p><strong>Er det personen som har gradering på adresse, som fører til forskjellig håndtering av adressene?</strong></p>
     <p>Når personen har adressebeskyttelse &quot;fortrolig&quot; adresse, vil hver av adressene som denne har verdier for,
     også være påført med adressegradering &quot;fortrolig&quot;. Der en av adressene har graderingen &quot;klientadresse&quot;,
