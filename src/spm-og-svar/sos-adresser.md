@@ -22,7 +22,7 @@ Kun én av typene benyttes. Hvilken avhenger av hva slags adresse personen melde
 Matrikkeladressenavn er eksisterende benevnelse på et "nedarvet bruksnavn eller navn på en institusjon eller bygning,
 brukt som del av den offisielle adressen". Matrikkeladressenavn vil  hete "adressetilleggsnavn" i vårt nye folkeregister.
 
-**Må "Adressenummer" alltid må være en del av vegadressen?**
+**Må "Adressenummer" alltid være en del av vegadressen?**
 
 Ja, adressenummer må være en del av vegadressen. Adressenummer består av egenskapene husnummer (obligatorisk) og husbokstav (valgfri)
 
@@ -32,10 +32,11 @@ En adresse med "adressenavn", men uten husnummer, vil bli godkjent dersom den sa
 
 **Hvordan er forholdet mellom oppholdsadresse og bostedsadresse?**
 
-I strukturmodellen viser vi at man kan ha flere historiske adresser,
-men man kan kun ha én eller ingen gjeldende adresse for hver av adressetypene;
-bostedsadresse, deltBosted, oppholdsadresse, postadresse og postadresseIUtlandet.
-Det er et krav om å ha minst 1, totalt sett. I tilfeller der man ikke vet hvor personen bor, vil UkjentBosted benyttes.
+I strukturmodellen viser vi at man kan ha flere historiske adresser, men man kan kun ha én eller ingen gjeldende adresse for hver av adressetypene; bostedsadresse, oppholdsadresse, postadresse og postadresseIUtlandet. Det er et krav om å ha minst 1, totalt sett. I tilfeller der man ikke vet hvor personen bor, vil UkjentBosted benyttes.
+
+Personer med fødselsnummer skal ha en bostedsadresse og den skal i det minste være UkjentBosted. Disse kan ha en oppholdadresse i tillegg hvis de har "opphold annet sted" av typen "militær", "utenriks", "pendler" eller "påSvalbard". Oppholdsadressen kan være utenlands.
+Personer med d-nummer vil ikke ha bostedsadresse fordi de ikke er "bosatt" i Norge. De skal helst ha en oppholdadresse slik at samfunnet vet hvor de bor, men dette er ikke påkrevet.
+
 
 
 **Hvis personer ikke ligger registrert med fast bopel så ligger de i DSF uten adresse. Vil det bli noen endring på det?**
