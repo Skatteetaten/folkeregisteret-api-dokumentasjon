@@ -4,10 +4,7 @@ title: Informasjonselementer
 
 **Når er personinformasjon klart i de nye tjenestene?**
 
-Allerede i dag kan man hente ut alle personer og alle endringer i person, samt informasjon om hvorvidt personen er
-"Kontrollert" eller "Ikke kontrollert". I tillegg er informasjon om falsk identitet, utenlandske identifikatorer og
-utenlandske legitimasjonsdokumenter tilgjengelige. Prosjektet ønsker fortløpende å berike tilbudet med flere personopplysninger.
-Migreringen fra DSF er i gang, men det er usikkert hvor raskt vi vil tilgjengeliggjøre informasjonen etter at den er migrert.
+Allerede i dag kan man hente ut alle personer og alle endringer i person for identifikasjonsnummer (fødselsnummer og d-nummer),  annen identifikasjon, identitetsgrunnlag, falsk identitet, status, samt informasjon om hvorvidt personen er "Kontrollert" eller "Ikke kontrollert" (identitetsgrunnlag). I tillegg er informasjon om falsk identitet, utenlandske identifikatorer og utenlandske legitimasjonsdokumenter tilgjengelige. Prosjektet ønsker fortløpende å berike tilbudet med flere personopplysninger. Migreringen fra DSF er i gang, men det er usikkert hvor raskt vi vil tilgjengeliggjøre informasjonen etter at den er migrert.
 
 **Hva blir nytt eller endret i det nye Folkeregisteret?**
 
@@ -28,20 +25,16 @@ Man kan få fødselsnummer i mange ulike innrulleringsprosesser (bosetting, fød
 
 **Hvordan ser informasjonen ut hos FREG når det er kobling mellom folkeregisteridentifikatorer (dublett)?**
 
-Personen som er videreført vil inneholde lenkede koblinger som historiske identfikasjonsnummere. Alle søk på gjeldende,
-eller historisk fødsels-/d-nummer vil treffe denne personen.
+PFolkeregisterpersonen som er videreført (overtagende) vil inneholde lenket kobling fra folkeregisterpersonen som ikke er videreført (overdragende) via sistnevntes historiske identifikasjonsnumre. Sistnevntes identifikasjonsnummer vil også være et historisk identifikasjonsnummer for den overtagende folkeregisterpersonen. Alle søk på gjeldende, eller historisk fødsels-/d-nummer, vil derfor treffe den videreførte (overtagende) folkeregisterpersonen.
 
 **Hvem "eier" informasjonen i Folkeregisteret, med ansvar for å oppdatere hva?**
 
-Generelt er det slik at meldinger fra ansvarlig myndighet registreres etter en formell kontroll. For eksempel godtar vi
-melding om statsborgerskap når det sendes inn av Utlendingsmyndigheten.  Meldinger fra tredjepart om adresseendring må
-saksbehandles av Folkeregisteret, fordi det er Folkeregisteret som er vedtaksmyndighet for bostedssaker. Så dersom noen
-sender inn et tips om at en person har flyttet, så vil vi undersøke det.
+Generelt er det slik at meldinger/informasjon fra ansvarlig myndighet registreres etter en formell kontroll. For eksempel godtar vi melding om statsborgerskap når det sendes inn av Utlendingsmyndigheten. Meldinger fra tredjepart om adresseendring må saksbehandles av Folkeregisteret, fordi det er Folkeregisteret som er vedtaksmyndighet for bostedssaker. Så dersom noen sender inn et tips om at en person har flyttet, så vil vi undersøke det. Det finnes spesielle regler for særskilt informasjon om personer med d-nummer som begrenser endringsretten til rekvirenten av d-nummeret.
 
 **Vil man i det moderniserte Folkeregisteret ha  maksimale lengder for navnefelt utover 50 tegn?**
 
-I det moderniserte Folkeregisteret blir navnelengden maks 200 tegn. Delnavn med flere tegn enn 200 vil bli avvist.
+I det moderniserte Folkeregisteret blir navnelengden maks 200 tegn. Delnavn med flere tegn enn 200 vil bli avvist. Det forkortede navnet vil være på maksimum 40 tegn.
 
-**Har dere regler for at hvis si et navn flyter over grensen så benyttes andre felt?**
+**Har dere regler for at hvis, si et navn, flyter over grensen så benyttes andre felt?**
 
-Ingen navn vil «flyte» over i et annet felt.
+Ingen navn eller andre informasjonsfelt i vil «flyte» over i et annet felt.
