@@ -49,14 +49,12 @@ Ja
 
 **Kan en person ha kontaktadresse i tillegg til bostedsadresse og oppholdsadresse?**
 
-Ja
+Ja, de kan både ha postadresse og postadresseIUtlandet i tillegg.
 
 **Når man som konsument får informasjon om person som har sperret adresse, strengt fortrolig (betegnet som kode 6 i DSF),
 hvilken adresse kommer da?**
 
-Det kommer en postadresse som administreres av Kripos-adresse eller Skatt Nord.
-Dette er åpen informasjon. Kripos og Skatt Nord videredistribuerer post til personen.
-Altså er personen kontaktbar, men bostedet vil ikke finnes i FREG.
+Det kommer en postadresse som administreres av Kripos eller Skatt Nord. Dette er åpen informasjon. Kripos og Skatt Nord distribuerer posten videre til personen. Altså er personen kontaktbar per post, men bostedet vil ikke finnes i det nye Folkeregisteret.
 
 **Hva er definisjonen av "postbokseier"?**
 
@@ -67,11 +65,7 @@ Her var det ønskelig å skille mellom den som skulle motta postforsendelsen i p
 
 **Er adressegraderinger koblet mot person eller til hvert adresseelement?**
 
-Adressegraderinger er både koblet mot person og adresseelementer.
-Hver adressetype vil ha hver sin adressegradering som eget informasjonselement.
-Hver type adresse vil likevel ha forskjellige lovlige verdier.
-Dette vil bli dokumentert. Den graderingen som er knyttet til personen kalles "adressebeskyttelse" og vil beskrive personens
-beskyttelsesbehov og vil ha lovlige verdier "fortrolig" og "strengtFortrolig".
+Adressegraderinger er både koblet mot person og adresseelementer. Hver adressetype vil ha hver sin adressegradering som eget informasjonselement. Hver type adresse (bostedsadresse, oppholdsadresse og postadresse) vil likevel ha forskjellige lovlige verdier. Dette vil bli dokumentert. Den graderingen som er knyttet til personen kalles "adressebeskyttelse" og vil beskrive personens beskyttelsesbehov og vil ha lovlige verdier "fortrolig" og "strengtFortrolig". Verdien "klientadresse" vil bli benyttet på adresser som kan avsløre hvilken institusjonstype adressen tilhører og derved avsløre personens flyktningstatus, helsestatus osv.
 
 **Er det personen som har gradering på adresse, som fører til forskjellig håndtering av adressene?**
 
