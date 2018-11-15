@@ -13,9 +13,7 @@ altså det som Folkeregisteret nå anser var riktig på det tidspunktet i histor
 
 **Hvilke informasjonselementer har historikk?**
 
-Følgende informasjonselementer har historikk: Adresser, status, navn, sivilstand, identitetsgrunnlag, kjønn,
-familierelasjoner, vergemål og fremtidsfullmakt. Blant disse er det kun bostedsadresse og navn som ikke er taushetsbelagt
-og krever hjemmel.
+Følgende informasjonselementer har historikk: Identifikasjonsnummer, alle adresser, status, navn, sivilstand, identitetsgrunnlag, kjønn, familierelasjoner, vergemål og fremtidsfullmakt, kontaktinformasjon for dødsbo, innflytting, utflytting, foreldreansvar, forhold til sametingets valgmanntall og statsborgerskap. Blant disse er det kun bostedsadresse og navn som ikke er taushetsbelagt og krever hjemmel.
 
 **Hvordan vil historiske opplysninger fra eksisterende folkeregister og modernisert folkeregister være tilgjengelig etter
 overgangsperioden?**
