@@ -22,7 +22,7 @@ Når prosjektet er avsluttet vil det normalt være gjennom lovendring at man end
 
 Folkeregisteret begynner nå å gi tilgang til utvalgte konsumenter som skal hjelpe oss å teste ut at tjenestene fungerer. Tjenestene er ikke enda komplette. De som nå får tilgang er offentlige aktører vi allerede har tett samarbeid med, og som i mange tilfeller også er produsenter av folkeregisterdata.
 
-Planen er at øvrige konsumenter skal få tilgang fra og med Q4 2019.
+Planen er at øvrige konsumenter skal få tilgang fra 2020.
 
 **Hvordan melder vi feil i tjenestene til Folkeregisteret?**
 
