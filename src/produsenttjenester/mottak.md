@@ -79,7 +79,7 @@ Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en 
 | Test| https://folkeregisteret-api-ekstern.sits.no/ | 
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
 
-## Mutlipart
+## Multipart
 Innsending av Dnr-rekvisisjon med vedlegg på endepunktene ".vedlegg" må gjøres som en multipart-request.
 I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:
 1) "Name" i Content-disposition for xml og vedlegg må være 'rekvisisjon' og 'vedlegg'.
