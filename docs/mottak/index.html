@@ -274,43 +274,41 @@
     </tbody>
     </table>
     <h2 id="mutlipart">Mutlipart</h2>
-    <p>Innsending av Dnr-rekvisisjon med vedlegg på endepunktene &quot;.vedlegg&quot; må gjøres som en multipart-request.\
-    I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:\
-    1) &quot;Name&quot; i Content-disposition for xml og vedlegg må være &#39;rekvisisjon&#39; og &#39;vedlegg&#39;.\
-    2) &quot;Filename&quot; i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet &#39;multipartnavn&#39; for identifikasjonsdokumentet.\</p>
+    <p>Innsending av Dnr-rekvisisjon med vedlegg på endepunktene &quot;.vedlegg&quot; må gjøres som en multipart-request.
+    I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:
+    1) &quot;Name&quot; i Content-disposition for xml og vedlegg må være &#39;rekvisisjon&#39; og &#39;vedlegg&#39;.
+    2) &quot;Filename&quot; i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet &#39;multipartnavn&#39; for identifikasjonsdokumentet.</p>
     <p>Eks:
     POST <a href="http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg">http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg</a> HTTP/1.1\
     Content-Type: multipart/form-data; boundary=ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
     Host: folkeregisteret-api-ekstern.sits.no\
     Expect: 100-continue\
     Accept-Encoding: gzip, deflate\
-    Proxy-Connection: Keep-Alive\
-    \
-    --ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
+    Proxy-Connection: Keep-Alive\</p>
+    <p>--ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
     Content-Disposition: form-data; name=&quot;rekvisisjon&quot;; filename=&quot;et-eller-annet-dnr_rekv.xml&quot;\
     Content-Type: application/xml; charset=ISO-8859-1\
-    Content-Transfer-Encoding: binary\
-    \
-    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;\</p>
-    <rekvisisjonAvDNummer xmlns="folkeregisteret:melding:nyfolkeregisterperson:rekvisisjonavdnummer:v5">\
-    <innsending>\
-    <avsendersMeldingsidentifikator>5a92c247afd2a3f24939.js?5a92c247afd2a3f24939</avsendersMeldingsidentifikator>\
-    <avsendersInnsendingstidspunkt>2018-09-01T15:04:47.719</avsendersInnsendingstidspunkt>\
-    <kildesystem>Skatteplikt</kildesystem></innsending>\
-    <forespoersel>\
-    <kandidat>\
-    <navn>\
-    <fornavn>irriterende</fornavn>\
-    <mellomnavn>treg</mellomnavn>\
-    <etternavn>fotgjenger</etternavn></navn>\
-    ...\
-    ...\
-    <identifikasjon>\
-    <personidentifikasjon>\
-    <identifikasjonsnummer>01019023939</identifikasjonsnummer>\
-    <identifikasjonsnummertype>utenlandskIdentifikasjonsnummer</identifikasjonsnummertype>\
-    <utstederland>SWE</utstederland>\
-    </personidentifikasjon>\
+    Content-Transfer-Encoding: binary\</p>
+    <p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;\</p>
+    <rekvisisjonAvDNummer xmlns="folkeregisteret:melding:nyfolkeregisterperson:rekvisisjonavdnummer:v5">
+    <innsending>
+    <avsendersMeldingsidentifikator>5a92c247afd2a3f24939.js?5a92c247afd2a3f24939</avsendersMeldingsidentifikator>
+    <avsendersInnsendingstidspunkt>2018-09-01T15:04:47.719</avsendersInnsendingstidspunkt>
+    <kildesystem>Skatteplikt</kildesystem></innsending>
+    <forespoersel>
+    <kandidat>
+    <navn>
+    <fornavn>irriterende</fornavn>
+    <mellomnavn>treg</mellomnavn>
+    <etternavn>fotgjenger</etternavn></navn>
+    ...
+    ...
+    <identifikasjon>
+    <personidentifikasjon>
+    <identifikasjonsnummer>01019023939</identifikasjonsnummer>
+    <identifikasjonsnummertype>utenlandskIdentifikasjonsnummer</identifikasjonsnummertype>
+    <utstederland>SWE</utstederland>
+    </personidentifikasjon>
     <dokumentgrunnlag>
     <identifikasjonsdokumentnummer>11503415812</identifikasjonsdokumentnummer>
     <identifikasjonsdokumenttype>diplomatpass</identifikasjonsdokumenttype>
