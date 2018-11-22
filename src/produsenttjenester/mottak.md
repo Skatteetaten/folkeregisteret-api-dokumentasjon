@@ -80,43 +80,43 @@ Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en 
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
 
 ## Mutlipart
-Innsending av Dnr-rekvisisjon med vedlegg på endepunktene ".vedlegg" må gjøres som en multipart-request.
-I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:
-1) "Name" i Content-disposition for xml og vedlegg må være 'rekvisisjon' og 'vedlegg'.
-2) "Filename" i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet 'multipartnavn' for identifikasjonsdokumentet.
+Innsending av Dnr-rekvisisjon med vedlegg på endepunktene ".vedlegg" må gjøres som en multipart-request.\
+I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:\
+1) "Name" i Content-disposition for xml og vedlegg må være 'rekvisisjon' og 'vedlegg'.\
+2) "Filename" i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet 'multipartnavn' for identifikasjonsdokumentet.\
 
 Eks:
-POST http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg HTTP/1.1
-Content-Type: multipart/form-data; boundary=ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur
-Host: folkeregisteret-api-ekstern.sits.no
-Expect: 100-continue
-Accept-Encoding: gzip, deflate
-Proxy-Connection: Keep-Alive
-
---ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur
-Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"
-Content-Type: application/xml; charset=ISO-8859-1
-Content-Transfer-Encoding: binary
-
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<rekvisisjonAvDNummer xmlns="folkeregisteret:melding:nyfolkeregisterperson:rekvisisjonavdnummer:v5">
-<innsending>
-<avsendersMeldingsidentifikator>5a92c247afd2a3f24939.js?5a92c247afd2a3f24939</avsendersMeldingsidentifikator>
-<avsendersInnsendingstidspunkt>2018-09-01T15:04:47.719</avsendersInnsendingstidspunkt>
-<kildesystem>Skatteplikt</kildesystem></innsending>
-<forespoersel>
-<kandidat>
-<navn>
-<fornavn>irriterende</fornavn>
-<mellomnavn>treg</mellomnavn>
-<etternavn>fotgjenger</etternavn></navn>
-...
-...
-<identifikasjon>
-<personidentifikasjon>
-<identifikasjonsnummer>01019023939</identifikasjonsnummer>
-<identifikasjonsnummertype>utenlandskIdentifikasjonsnummer</identifikasjonsnummertype>
-<utstederland>SWE</utstederland>
+POST http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg HTTP/1.1\
+Content-Type: multipart/form-data; boundary=ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
+Host: folkeregisteret-api-ekstern.sits.no\
+Expect: 100-continue\
+Accept-Encoding: gzip, deflate\
+Proxy-Connection: Keep-Alive\
+\
+--ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
+Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"\
+Content-Type: application/xml; charset=ISO-8859-1\
+Content-Transfer-Encoding: binary\
+\
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<rekvisisjonAvDNummer xmlns="folkeregisteret:melding:nyfolkeregisterperson:rekvisisjonavdnummer:v5">\
+<innsending>\
+<avsendersMeldingsidentifikator>5a92c247afd2a3f24939.js?5a92c247afd2a3f24939</avsendersMeldingsidentifikator>\
+<avsendersInnsendingstidspunkt>2018-09-01T15:04:47.719</avsendersInnsendingstidspunkt>\
+<kildesystem>Skatteplikt</kildesystem></innsending>\
+<forespoersel>\
+<kandidat>\
+<navn>\
+<fornavn>irriterende</fornavn>\
+<mellomnavn>treg</mellomnavn>\
+<etternavn>fotgjenger</etternavn></navn>\
+...\
+...\
+<identifikasjon>\
+<personidentifikasjon>\
+<identifikasjonsnummer>01019023939</identifikasjonsnummer>\
+<identifikasjonsnummertype>utenlandskIdentifikasjonsnummer</identifikasjonsnummertype>\
+<utstederland>SWE</utstederland>\
 </personidentifikasjon>
 <dokumentgrunnlag>
 <identifikasjonsdokumentnummer>11503415812</identifikasjonsdokumentnummer>
