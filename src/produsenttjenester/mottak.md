@@ -81,17 +81,17 @@ Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en 
 
 ## Multipart
 Innsending av Dnr-rekvisisjon med vedlegg på endepunktene ".vedlegg" må gjøres som en multipart-request.
-I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:
-1) "Name" i Content-disposition for xml og vedlegg må være 'rekvisisjon' og 'vedlegg'.
-2) "Filename" i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet 'multipartnavn' for identifikasjonsdokumentet.
+I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine deler av requesten men det er to krav:<br/>
+1) "Name" i Content-disposition for xml og vedlegg må være 'rekvisisjon' og 'vedlegg'.<br/>
+2) "Filename" i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet 'multipartnavn' for identifikasjonsdokumentet.<br/>
 
 Eks:
-POST http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg HTTP/1.1\
-Content-Type: multipart/form-data; boundary=ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
-Host: folkeregisteret-api-ekstern.sits.no\
-Expect: 100-continue\
-Accept-Encoding: gzip, deflate\
-Proxy-Connection: Keep-Alive\
+POST http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg HTTP/1.1<br/>
+Content-Type: multipart/form-data; boundary=ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
+Host: folkeregisteret-api-ekstern.sits.no<br/>
+Expect: 100-continue<br/>
+Accept-Encoding: gzip, deflate<br/>
+Proxy-Connection: Keep-Alive<br/>
 
 --ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
 Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"\
