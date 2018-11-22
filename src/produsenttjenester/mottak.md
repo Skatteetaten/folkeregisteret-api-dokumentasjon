@@ -92,13 +92,13 @@ Host: folkeregisteret-api-ekstern.sits.no<br/>
 Expect: 100-continue<br/>
 Accept-Encoding: gzip, deflate<br/>
 Proxy-Connection: Keep-Alive<br/>
-
---ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur\
-Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"\
-Content-Type: application/xml; charset=ISO-8859-1\
-Content-Transfer-Encoding: binary\
-
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<br/>
+--ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
+Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"<br/>
+Content-Type: application/xml; charset=ISO-8859-1<br/>
+Content-Transfer-Encoding: binary<br/>
+<br/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><br/>
 <rekvisisjonAvDNummer xmlns="folkeregisteret:melding:nyfolkeregisterperson:rekvisisjonavdnummer:v5">
 <innsending>
 <avsendersMeldingsidentifikator>5a92c247afd2a3f24939.js?5a92c247afd2a3f24939</avsendersMeldingsidentifikator>
@@ -129,11 +129,11 @@ Content-Transfer-Encoding: binary\
 </identifikasjon>
 ...
 </rekvisisjonAvDNummer>
-
---ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur
-Content-Disposition: form-data; name="vedlegg1"; filename="pass2.pdf"
-Content-Type: text/plain; charset=ISO-8859-1
-Content-Transfer-Encoding: binary
-
-%PDF-1.4
+<br/>
+--ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
+Content-Disposition: form-data; name="vedlegg1"; filename="pass2.pdf"<br/>
+Content-Type: text/plain; charset=ISO-8859-1<br/>
+Content-Transfer-Encoding: binary<br/>
+<br/>
+%PDF-1.4<br/>
  
