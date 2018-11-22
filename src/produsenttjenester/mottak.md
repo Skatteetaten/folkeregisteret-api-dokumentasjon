@@ -117,7 +117,7 @@ Content-Transfer-Encoding: binary\
 <identifikasjonsnummer>01019023939</identifikasjonsnummer>\
 <identifikasjonsnummertype>utenlandskIdentifikasjonsnummer</identifikasjonsnummertype>\
 <utstederland>SWE</utstederland>\
-</personidentifikasjon>
+</personidentifikasjon>\
 <dokumentgrunnlag>
 <identifikasjonsdokumentnummer>11503415812</identifikasjonsdokumentnummer>
 <identifikasjonsdokumenttype>diplomatpass</identifikasjonsdokumenttype>
