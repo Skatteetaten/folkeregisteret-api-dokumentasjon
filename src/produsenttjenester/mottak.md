@@ -99,34 +99,8 @@ Content-Type: application/xml; charset=ISO-8859-1<br/>
 Content-Transfer-Encoding: binary<br/>
 <br/>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><br/>
-<rekvisisjonAvDNummer xmlns="folkeregisteret:melding:nyfolkeregisterperson:rekvisisjonavdnummer:v5">
-<innsending>
-<avsendersMeldingsidentifikator>5a92c247afd2a3f24939.js?5a92c247afd2a3f24939</avsendersMeldingsidentifikator>
-<avsendersInnsendingstidspunkt>2018-09-01T15:04:47.719</avsendersInnsendingstidspunkt>
-<kildesystem>Skatteplikt</kildesystem></innsending>
-<forespoersel>
-<kandidat>
-<navn>
-<fornavn>irriterende</fornavn>
-<mellomnavn>treg</mellomnavn>
-<etternavn>fotgjenger</etternavn></navn>
+osv. her kommer XML-meldingen
 ...
-...
-<identifikasjon>
-<personidentifikasjon>
-<identifikasjonsnummer>01019023939</identifikasjonsnummer>
-<identifikasjonsnummertype>utenlandskIdentifikasjonsnummer</identifikasjonsnummertype>
-<utstederland>SWE</utstederland>
-</personidentifikasjon>
-<dokumentgrunnlag>
-<identifikasjonsdokumentnummer>11503415812</identifikasjonsdokumentnummer>
-<identifikasjonsdokumenttype>diplomatpass</identifikasjonsdokumenttype>
-<utstedernavn>Militz</utstedernavn>
-<utstederland>RWA</utstederland>
-<gyldigFra>2017-05-01</gyldigFra>
-<dokumentkopi><multipartnavn>pass2.pdf</multipartnavn></dokumentkopi>  
-</dokumentgrunnlag>
-</identifikasjon>
 ...
 </rekvisisjonAvDNummer>
 <br/>
@@ -135,5 +109,5 @@ Content-Disposition: form-data; name="vedlegg1"; filename="pass2.pdf"<br/>
 Content-Type: text/plain; charset=ISO-8859-1<br/>
 Content-Transfer-Encoding: binary<br/>
 <br/>
-%PDF-1.4<br/>
+her kommer pdf'en<br/>
  
