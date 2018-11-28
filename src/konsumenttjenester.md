@@ -15,11 +15,8 @@ Med tjenesten hendelsesliste får virksomheter varsel hver gang noe endres i Fol
 
 Hendelsesliste og oppslag er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsumenter etter avtale med prosjekt MF. For å kunne koble seg opp til tjenestene ovenfor, må integrasjon gjøres i henhold til [beskrivelsen under Sikkerhet](../sikkerhet).
 
-Folkeregisteret vil også tilby Uttrekk og øvrige ajourholdstjenester.
+Folkeregisteret vil også tilby uttrekk.
 
 *	Uttrekk gir virksomheter muligheten til å hente ut opplysninger om et utvalg personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først. Uttrekk er basert på selvbetjening, der virksomheten selv setter opp kriteriene den ønsker for sitt uttrekk på Folkeregisterets portal, og får en rapport med de opplysningene som passer disse kriteriene tilbake. 
-Uttrekk kan brukes til å opprette eller supplere et kunderegister eller en sakspopulasjon, for eksempel alle 6-åringer i en kommune, eller alle beboere i en gate. Tjenesten kan kun benyttes av virksomheter som ikke har krav om entydig identifisering. 
-
-* Folkeregisteret vil tilby ajourholdstjenester som for eksempel vask. Vask er oppdatering av folkeregisteropplysninger for en liste med personer en virksomhet allerede har identifisert. På denne måten kan virksomheter oppdatere opplysninger i sitt kunderegister/sakspopulasjon for alle samtidig. 
-Prosjektet vurderer også andre ajourholdstjenester.
+Uttrekk kan brukes til å opprette eller supplere et kunderegister eller en sakspopulasjon, for eksempel alle 6-åringer i en kommune, eller alle beboere i en gate. Tjenesten kan kun benyttes av virksomheter som ikke har krav om entydig identifisering.
 

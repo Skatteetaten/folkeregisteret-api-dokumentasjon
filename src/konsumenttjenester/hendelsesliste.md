@@ -5,7 +5,7 @@ title: Hendelsesliste
 # Grensesnittbeskrivelse
 Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Det eneste konsumentene selv MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.
 
-I tillegg til å lese feeden, kan man også lese innhold i en enkelt hendelse.
+I rettighetspakken "offentlig med hjemmel" kan man i tillegg til å lese feeden, også lese innhold i en enkelt hendelse.
 
 Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.
 
@@ -19,7 +19,8 @@ For å nå tjenestene bygges URL opp slik:
 |Ressurs|Beskrivelse|
 |-------|-----------|
 |hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt|
-|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse| 
+|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse|
+|hendelser/bulk/hendelser|Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)|
 |hendelser/xsd| Xsd (kontrakt) for hendelse|
 
 Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Her er [Xsd for innhold i content](../kontrakter/Folkeregisterhendelse_v1.xsd).
@@ -28,7 +29,8 @@ Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt
 
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
-|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.
+|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.|
+|offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
 
 ## Miljøer
 
@@ -51,11 +53,18 @@ Oppslag på xsd: <br>
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`
 
+Eksempel på bulkoppslag på hendelsesdokumenter:
+`$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d '{"dokumentidentifikator": ["f5446d4445738d5a3dad02276daf8a1f","f5446d4445738d5a3dad02276daf8a1f"]}' -H "Content-Type: application/json" "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/bulkoppslag/"`
+
 ## Headere
 
 **Accept**
 
 Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml
+
+**Content-Type
+
+For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).
 
 **If-None-Match**
 
@@ -258,6 +267,7 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 
 | HTTP Statuskode |  Forklaring |
 |----------|-------|
+| 400 | Feil i mottatte data - spesifiseres i retur. |
 | 401 | Autentiseringsinformasjon mangler |
 | 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten |
 | 404 | Feil uri brukt. |

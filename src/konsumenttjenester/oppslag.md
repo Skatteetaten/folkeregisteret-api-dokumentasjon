@@ -17,13 +17,16 @@ Parameteret *part* kan brukes til å spesifisere hvilken informasjon, om en pers
 |---------|-------------|
 |personer/{folkeregisteridentifikator}| Siste versjon av en person | 
 |personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person |
+|personer/bulkoppslag/| Siste versjon av et sett med personer (gjelder kun rettighetspakke offentlig-med-hjemmel)|
+|personer/bulkoppslag/arkiv/| Et sett med versjonerte utgaver av en person (gjelder kun rettighetspakke offentlig-med-hjemmel)|
 |personer/xsd| Xsd (kontrakt) for person |
 
 ## Rettighetspakker
 
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
-|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.
+|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
+|offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov. (Har ikke bulkoppslag)|
 
 ## Miljøer
 
@@ -35,21 +38,33 @@ Parameteret *part* kan brukes til å spesifisere hvilken informasjon, om en pers
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
-`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer"`
+`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer"`
 
 Oppslag på xsd:
 
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd"`
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd"`
 
 Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: 
 
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&part=Identitetsgrunnlag"`
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&part=Identitetsgrunnlag"`
+
+Eksempel på bulkoppslag på gitte folkeregisteridentifikatorer:
+
+`$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d '{"foedselsEllerDNummer": ["{folkeregiseridentifikator}","{folkeregiseridentifikator}"]}' -H "Content-Type: application/json" "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/"`
+
+Eksempel på bulkoppslag på gitte versjoner av persondokumenter:
+
+`$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d '{"dokumentidentifikator": ["8446cf3bb867bfdb6de9cc9c17f6adf2","8446cf3bb867bfdb6de9cc9c17f6adf2"]}' -H "Content-Type: application/json" "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/arkiv/"`
 
 ## Headere
 
 **Accept**
 
-Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml
+Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml.
+
+**Content-Type
+
+For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).
 
 ## Eksempler på respons fra tjenesten
 
