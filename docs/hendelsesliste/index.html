@@ -68,7 +68,7 @@
         <div class="innhold-blokk-innhold">
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
     <p>Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Det eneste konsumentene selv MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.</p>
-    <p>I tillegg til å lese feeden, kan man også lese innhold i en enkelt hendelse.</p>
+    <p>I rettighetspakken &quot;offentlig med hjemmel&quot; kan man i tillegg til å lese feeden, også lese innhold i en enkelt hendelse.</p>
     <p>Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.</p>
     <p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
     Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
@@ -92,6 +92,10 @@
     <td>Datainnhold i en angitt hendelse</td>
     </tr>
     <tr>
+    <td>hendelser/bulk/hendelser</td>
+    <td>Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)</td>
+    </tr>
+    <tr>
     <td>hendelser/xsd</td>
     <td>Xsd (kontrakt) for hendelse</td>
     </tr>
@@ -110,6 +114,10 @@
     <tr>
     <td>offentlig-med-hjemmel/api/</td>
     <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
+    </tr>
+    <tr>
+    <td>offentlig-uten-hjemmel/api/</td>
+    <td>Rettighetspakke for offentlige aktører uten hjemmel i egen lov.</td>
     </tr>
     </tbody>
     </table>
@@ -146,9 +154,13 @@
     <code>https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/xsd</code></p>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
     <code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/&quot;</code></p>
+    <p>Eksempel på bulkoppslag på hendelsesdokumenter:
+    <code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;f5446d4445738d5a3dad02276daf8a1f&quot;,&quot;f5446d4445738d5a3dad02276daf8a1f&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/bulkoppslag/&quot;</code></p>
     <h2 id="headere">Headere</h2>
     <p><strong>Accept</strong></p>
     <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
+    <p>**Content-Type</p>
+    <p>For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).</p>
     <p><strong>If-None-Match</strong></p>
     <p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
     <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
@@ -334,6 +346,10 @@
     </tr>
     </thead>
     <tbody>
+    <tr>
+    <td>400</td>
+    <td>Feil i mottatte data - spesifiseres i retur.</td>
+    </tr>
     <tr>
     <td>401</td>
     <td>Autentiseringsinformasjon mangler</td>

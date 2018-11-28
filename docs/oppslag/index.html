@@ -93,6 +93,14 @@
     <td>Versjonert utgave av en person</td>
     </tr>
     <tr>
+    <td>personer/bulkoppslag/</td>
+    <td>Siste versjon av et sett med personer (gjelder kun rettighetspakke offentlig-med-hjemmel)</td>
+    </tr>
+    <tr>
+    <td>personer/bulkoppslag/arkiv/</td>
+    <td>Et sett med versjonerte utgaver av en person (gjelder kun rettighetspakke offentlig-med-hjemmel)</td>
+    </tr>
+    <tr>
     <td>personer/xsd</td>
     <td>Xsd (kontrakt) for person</td>
     </tr>
@@ -110,6 +118,10 @@
     <tr>
     <td>offentlig-med-hjemmel/api/</td>
     <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
+    </tr>
+    <tr>
+    <td>offentlig-uten-hjemmel/api/</td>
+    <td>Rettighetspakke for offentlige aktører uten hjemmel i egen lov. (Har ikke bulkoppslag)</td>
     </tr>
     </tbody>
     </table>
@@ -137,14 +149,20 @@
     </tbody>
     </table>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
-    <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
+    <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
     <p>Oppslag på xsd:</p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd&quot;</code></p>
+    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd&quot;</code></p>
     <p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
+    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
+    <p>Eksempel på bulkoppslag på gitte folkeregisteridentifikatorer:</p>
+    <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;foedselsEllerDNummer&quot;: [&quot;{folkeregiseridentifikator}&quot;,&quot;{folkeregiseridentifikator}&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/&quot;</code></p>
+    <p>Eksempel på bulkoppslag på gitte versjoner av persondokumenter:</p>
+    <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;,&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/arkiv/&quot;</code></p>
     <h2 id="headere">Headere</h2>
     <p><strong>Accept</strong></p>
-    <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>
+    <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml.</p>
+    <p>**Content-Type</p>
+    <p>For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).</p>
     <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
     <h3 id="statuskode-200">Statuskode 200</h3>
     <p>Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:</p>
