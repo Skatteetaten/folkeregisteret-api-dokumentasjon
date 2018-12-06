@@ -1,5 +1,5 @@
 ---
-title: Avtaler og kontaktinformasjon
+title: Avtaler
 ---
 
 # Avtaler 
