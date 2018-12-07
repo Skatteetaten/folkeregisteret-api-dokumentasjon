@@ -3,7 +3,7 @@ title: Mottak
 ---
 
 # Grensesnittbeskrivelse
-REST-tjeneste for innsending av informasjon til Folkeregisteret. Dokument som kan sendes inn er representert i listen over ressurser under. For å sende inn et dokument brukes kommandoen POST mot riktig URL med dokumentet som body i innsendingen.
+REST-tjeneste for innsending av informasjon til Folkeregisteret. Dokument som kan sendes inn er representert i listen over ressurser under. For å sende inn et dokument brukes kommandoen POST mot riktig URL med dokumentet som body i innsendingen. Formatet på meldingen skal være UTF-8.
 
 Tjenestenes endepunkt: <br>
 `POST {miljø}/folkeregisteret/mottak/api/{ressurs}`
@@ -97,17 +97,13 @@ Proxy-Connection: Keep-Alive<br/>
 Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"<br/>
 Content-Type: application/xml; charset=ISO-8859-1<br/>
 Content-Transfer-Encoding: binary<br/>
-<br/>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><br/>
 osv. her kommer XML-meldingen
-...
-...
-</rekvisisjonAvDNummer>
+
 <br/>
 --ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
 Content-Disposition: form-data; name="vedlegg1"; filename="pass2.pdf"<br/>
 Content-Type: text/plain; charset=ISO-8859-1<br/>
 Content-Transfer-Encoding: binary<br/>
-<br/>
 her kommer pdf'en<br/>
  
