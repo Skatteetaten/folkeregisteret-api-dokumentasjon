@@ -12,7 +12,7 @@ For å benytte Skatteetatens API trenger du et kvalifisert [X.509]( https://en.w
 
 Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virksomhetens *organisasjonsnummer*. **Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.**
 
-Det finnes virksomhetssertifikater for forskjellige formål. Skatteetaten krever et sertifikat utstedt for autentisering. VirksomhetssertifkakVirksomhetsertifikat utstedt for signering vil ikke virke. *Sjekk at 'Key Usage' er 'critical'. Hvis verdien for 'Key Usage' er non-repudiation er det feil type sertifikat*
+Det finnes virksomhetssertifikater for forskjellige formål. Skatteetaten krever et sertifikat utstedt for autentisering. Virksomhetsertifikat utstedt for signering vil ikke virke. *Sjekk at 'Key Usage' er 'critical'. Hvis verdien for 'Key Usage' er non-repudiation er det feil type sertifikat*
 
 Du trenger tilgang til [Private key](https://en.wikipedia.org/wiki/Public-key_cryptography) som hører til sertifikatet. <br>
 **VIKTIG: Private key skal aldri deles med noen, heller ikke Skatteetaten.**
