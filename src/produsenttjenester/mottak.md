@@ -26,6 +26,7 @@ Tjenestenes endepunkt: <br>
 | separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
 | skilsmisse_v1                     | [xsd](../kontrakter/MeldingOmSkilsmisse_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
 | innflytting_v1                    | [xsd](../kontrakter/MeldingOmInnflytting_v1.0.xsd)                   | | test | HendelserISakOmFolkeregistrering_v1 |
+| flyttemelding_fra_posten_v1       | [xsd](../kontrakter/MeldingOmFlyttingFraPosten_v1.0.xsd)              | | test | <N/A>                               |                                
 
 Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignatur.xsd) av meldingene.
 
