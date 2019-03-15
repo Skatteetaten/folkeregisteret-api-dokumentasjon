@@ -13,7 +13,7 @@ I siste halvdel av 2019 vil alle opplysningene være tilgjengelig i tjenester fr
 
 | dokument | beskrivelse |
 |----------|-------------|
-| [Spesifikasjon av tilgjengeliggjøring av opplysninger fra Folkeregisteret - v1.3 2018-11-27](../dokumenter/Spesifikasjon_av_tilgjengeliggjøring_av_opplysninger_fra_Folkeregisteret_v1_3_2018_11_27.pdf) | Beskrivelse av personopplysningene på feltnivå, og beskrivelse av tjenestene hendelsesliste og oppslag. |
+| [Spesifikasjon av tilgjengeliggjøring av opplysninger fra Folkeregisteret - v1.4 2019-03-13](../dokumenter/Spesifikasjon_av_tilgjengeliggjøring_av_opplysninger_fra_Folkeregisteret_v1_4_2019_03_13.pdf) | Beskrivelse av personopplysningene på feltnivå, og beskrivelse av tjenestene hendelsesliste og oppslag. |
 | [Hendelser fra Folkeregisteret - v1.0 2018-11-27](../dokumenter/Hendelser_fra_Folkeregisteret_v1_0_2018_11_27.pdf)                                                      | Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret |
 | [PersondokumentMedHistorikk_v1BETA1.xsd](../kontrakter/PersondokumentMedHistorikk_v1BETA1.xsd)                                                      | Persondokumentet i BETA, sist oppdatert i juni 2018 |
 | [PersondokumentMedHistorikk_v1BETA1.jpg](../modeller/PersondokumentMedHistorikk_v1BETA1.jpg)                                                        | Illustrasjon av persondokumentet, sist oppdatert i juni 2018 |
