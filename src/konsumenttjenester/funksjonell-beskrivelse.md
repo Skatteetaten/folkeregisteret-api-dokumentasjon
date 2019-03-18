@@ -13,7 +13,9 @@ I siste halvdel av 2019 vil alle opplysningene være tilgjengelig i tjenester fr
 
 | dokument | beskrivelse |
 |----------|-------------|
-| [Spesifikasjon av tilgjengeliggjøring av opplysninger fra Folkeregisteret - v1.4 2019-03-13](../dokumenter/Spesifikasjon_av_tilgjengeliggjøring_av_opplysninger_fra_Folkeregisteret_v1_4_2019_03_13.pdf) | Beskrivelse av personopplysningene på feltnivå, og beskrivelse av tjenestene hendelsesliste og oppslag. |
+| [Spesifikasjon av tilgjengeliggjøring av opplysninger fra Folkeregisteret - v1.4 2019-03-13](../dokumenter/Spesifikasjon_av_tilgjengeliggjøring_av_opplysninger_fra_Folkeregisteret_v1_4_2019_03_13.pdf) | Beskrivelse av personopplysningene på feltnivå, og beskrivelse av tjenestene hendelsesliste og oppslag. Kap 4.2  hvilke personopplysninger som kan finnes på en person i Freg idag.
+Folkeregisteret. Kap 4.3 beskriver personopplysninger som kommer til å bli tilgjengeliggjort som del av
+moderniseringen av Folkeregisteret. Kap 4.3 er ikke komplett på alle områder.   |
 | [Hendelser fra Folkeregisteret - v1.0 2018-11-27](../dokumenter/Hendelser_fra_Folkeregisteret_v1_0_2018_11_27.pdf)                                                      | Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret |
-| [PersondokumentMedHistorikk_v1BETA2.xsd](../kontrakter/PersondokumentMedHistorikk_v1BETA2.xsd)                                                      | Persondokumentet i BETA, sist oppdatert i juni 2018 |
-| [PersondokumentMedHistorikk_v1BETA2.jpg](../modeller/PersondokumentMedHistorikk_v1BETA2.jpg)                                                        | Illustrasjon av persondokumentet, sist oppdatert i juni 2018 |
+| [PersondokumentMedHistorikk_v1BETA2.xsd](../kontrakter/PersondokumentMedHistorikk_v1BETA2.xsd)                                                      | Persondokumentet i BETA, inneholder fremtidig målbilde for persondokumentet. Sist oppdatert i mars 2019. |
+| [PersondokumentMedHistorikk_v1BETA2.jpg](../modeller/PersondokumentMedHistorikk_v1BETA2.jpg)                                                        | Illustrasjon av persondokumentet, sist oppdatert i mars 2019. |
