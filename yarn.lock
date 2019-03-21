@@ -501,6 +501,11 @@ debug@^4.1.1:
   dependencies:
     ms "^2.1.1"
 
+debug@~0.7.4:
+  version "0.7.4"
+  resolved "http://aurora/npm/repository/npm-all/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
+  integrity sha1-BuHqgILCyxTjmAbiLi9vdX+Srzk=
+
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "http://aurora/npm/repository/npm-all/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
@@ -1512,10 +1517,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-marked@^0.6.1:
-  version "0.6.1"
-  resolved "http://aurora/npm/repository/npm-all/marked/-/marked-0.6.1.tgz#a63addde477bca9613028de4b2bc3629e53a0562"
-  integrity sha512-+H0L3ibcWhAZE02SKMqmvYsErLo4EAVJxu5h3bHBBDvvjeWXtl92rGUSBYHL2++5Y+RSNgl8dYOAXcYe7lp1fA==
+marked@~0.3.9:
+  version "0.3.19"
+  resolved "http://aurora/npm/repository/npm-all/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
+  integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -1586,13 +1591,13 @@ metalsmith-livereload@^0.1.0:
   dependencies:
     livereload "^0.6.2"
 
-metalsmith-markdown@^1.2.0:
-  version "1.2.0"
-  resolved "http://aurora/npm/repository/npm-all/metalsmith-markdown/-/metalsmith-markdown-1.2.0.tgz#47429e687a582bdfd93ca8048dd5fc1141badb94"
-  integrity sha512-YAZZ1G4Y+AfnlJEoba6sr8zGBxg2xiAetf2xvGCTOpUR5CKV6G+X3Oq0BcS1aKBLYf86rWmm6Nu0Wq/5O2CEMQ==
+metalsmith-markdown@^0.2.1:
+  version "0.2.2"
+  resolved "http://aurora/npm/repository/npm-all/metalsmith-markdown/-/metalsmith-markdown-0.2.2.tgz#f863b7c9c0b2cd5bf034ee0899b0e5a8cde1ebd3"
+  integrity sha512-2WMtfd2xhBagmoyRZXg04EHd/jmWnK21aGOvEZG5/eDEBTn9zGtkeptZrl+fQV+CNwhWtoggn1s9d+yi0+JLqQ==
   dependencies:
-    debug "^4.1.1"
-    marked "^0.6.1"
+    debug "~0.7.4"
+    marked "~0.3.9"
 
 metalsmith-permalinks@^2.2.0:
   version "2.2.0"
