@@ -100,7 +100,7 @@
     <li><a href="../modeller/1487778967.png">Folkeregisterperson med navn</a></li>
     </ul>
     <h1 id="endringslogg">Endringslogg</h1>
-    <h2 id="beskrivelse-av-endringer-i-informasjonsmodellen-mellom-versjon-4-0-og-5-0">Beskrivelse av endringer i informasjonsmodellen mellom versjon 4.0 og 5.0</h2>
+    <h2 id="beskrivelse-av-endringer-i-informasjonsmodellen-mellom-versjon-40-og-50">Beskrivelse av endringer i informasjonsmodellen mellom versjon 4.0 og 5.0</h2>
     <h3 id="generelle-registerelementer">Generelle registerelementer</h3>
     <p><strong><em>Registermetadata</em></strong></p>
     <p>Egenskapen gyldighetstidspunkt er blitt valgfri siden migrert informasjon fra DSF ikke alltid gir informasjon om dette.</p>
@@ -130,9 +130,9 @@
     <p>Kodelisten <em>Adressegradering</em> har endret kodeverdien <em>sperretAdresseFortrolig</em> til <em>fortrolig</em> og <em>sperretAdresseStrengtFortrolig</em> til <em>strengtFortrolig</em>.</p>
     <p><strong><em>GraderingAvAdresse</em></strong></p>
     <p>Egenskapen <em>adressebeskyttelse</em> er innført for å beskrive beskyttelsesnivået for en person uavhengig av adressetype. Egenskapen <em>graderingsnivå</em> kan således kun ha verdiene <em>ugradert</em>, <em>fortrolig</em>, <em>strengtFortrolig</em>.</p>
-    <h3 id="d-dsfall">Dødsfall</h3>
+    <h3 id="dødsfall">Dødsfall</h3>
     <p>Egenskapen <em>dødsdato</em> i entiteten <em>Dødsfall</em> har fått multiplisitet 0..1 siden dødsdato ikke alltid er registert i DSF.</p>
-    <h3 id="f-dsel">Fødsel</h3>
+    <h3 id="fødsel">Fødsel</h3>
     <p>Informasjon om alle fødsler i inn- og utland er samlet i entiteten <em>Fødsel</em>. Egenskapen <em>fødekommuneINorge</em> er lagt inn i <em>entiteten Fødsel</em>.</p>
     <p>Egenskapen <em>fødselINorge</em> med entitet <em>FødselINorge</em> er ikke lenger et tillegg til <em>Fødsel</em>, men en egen egenskap for Folkeregisterperson. <em>FødselINorge</em> er for spesiell informasjon fra norske fødsler. Her er den gamle kodelisten for rekkefølgenummer erstattet med <em>rekkefølgenummer</em> av typen <em>Heltall</em> hvor man benytter den gamle verdisettene (12=første tvilling osv.). Videre er <em>fødekommune</em> lagt inn i <em>Fødsel</em> som <em>fødekommuneINorge</em>. Egenskapen <em>antallBarnIFlerfødsel</em> er fjernet da verdien ligger i <em>rekkefølgenummer</em>.</p>
     <h3 id="identitet">Identitet</h3>
@@ -144,31 +144,31 @@
     <h3 id="innflytting">Innflytting</h3>
     <p><strong><em>InnflyttingTilNorge</em></strong></p>
     <p>Egenskapen <em>fraflyttingssted</em> har endret navn til <em>fraflyttingsstedIUtlandet</em>.</p>
-    <h3 id="kontaktopplysninger-for-d-dsbo">Kontaktopplysninger for dødsbo</h3>
+    <h3 id="kontaktopplysninger-for-dødsbo">Kontaktopplysninger for dødsbo</h3>
     <p><strong><em>KontaktadresseForDødsbo</em></strong></p>
     <p>Egenskapen <em>poststed</em> er fjernet og egenskapene <em>poststedsnavn</em> og <em>postnummer</em> er kommet inn.</p>
     <h3 id="navn">Navn</h3>
     <p>Navnet til egenskapen <em>opprinneligNavn</em> er byttet til <em>originaltNavn</em> siden sistnevntes betydning er riktigere for det navnet som ble presenter ved ankomst til Norge.</p>
     <h3 id="personrelasjon">Personrelasjon</h3>
     <p>Personrelasjonsmodellen er fullstendig endret og spesialisert til fire områder: Foreldreansvar, Familierelasjon, Verge - inkludert representant for mindreårig asylsøker og Stadfestet fremtidsfullmakt. De to sistnevnte er fortsatt under stor endring.</p>
-    <h2 id="beskrivelse-av-endringer-i-informasjonsmodellen-mellom-versjon-3-0-og-4-0">Beskrivelse av endringer i informasjonsmodellen mellom versjon 3.0 og 4.0</h2>
+    <h2 id="beskrivelse-av-endringer-i-informasjonsmodellen-mellom-versjon-30-og-40">Beskrivelse av endringer i informasjonsmodellen mellom versjon 3.0 og 4.0</h2>
     <p>Endringer i begrepsmodellen beskrives ikke.</p>
-    <h3 id="adresse">Adresse</h3>
+    <h3 id="adresse-1">Adresse</h3>
     <p>Entiteten Folkeregisteradresse er fjernet og alle typer adresser er direkte koblet til Folkeregisterperson.</p>
     <p>Entiteten KontaktadresseIUtlandet er innført for å unngå misforståelse mht. valgbarhet mot norske adressetyper for egenskapen postadresseIUtlandet.</p>
     <p>Entiteten Adressevalg er innført for å holde kontroll på en persons prefererte kontaktadresse (egenskap preferertKontaktadresse) som er et valg mellom de fire faktiske adressetypene i Registeret.</p>
-    <h3 id="f-dsel">Fødsel</h3>
+    <h3 id="fødsel-1">Fødsel</h3>
     <p>Informasjon om alle fødsler i inn- og utland er samlet i entiteten Fødsel. Egenskapen fødselINorge med entitet FødselINorge er et tillegg til Fødsel for spesiell informasjon fra norske fødsler. Her er den gamle kodelisten for rekkefølgenummer erstattet med to egenskaper: antallBarnIFlerfødselen og rekkefølgenummer – begge av typen Heltall.</p>
-    <h3 id="identitet">Identitet</h3>
+    <h3 id="identitet-1">Identitet</h3>
     <p>Entiteten Identifikasjonsdokument har fått egenskapen dokumentkontroll som er av datatypen TekniskDokumentkontroll. TekniskDokumentkontroll inneholder egenskapen dokumentkontrollstatus som er en kodeliste med verdiene kontrollertIdentifikasjonsdokument og ikkeKontrollertIdentifikasjonsdokument som ligger til grunn for identitetsgrunnlagsstatusen for en person.
     Navnet til entiteten Kjønn er endret til Personkjønn (teknisk begrensning).</p>
     <h3 id="kjerneinformasjon">Kjerneinformasjon</h3>
     <p>Entiteten Samemantall har fått endret navnet til SametingetsValgmanntall for å spesialisere betydningen enda mer. Likeledes er navnene til egenskapene og kodelistene justert tilsvarende.</p>
-    <h3 id="kontaktopplysninger-for-d-dsbo">Kontaktopplysninger for dødsbo</h3>
+    <h3 id="kontaktopplysninger-for-dødsbo-1">Kontaktopplysninger for dødsbo</h3>
     <p>Egenskapen adressenErTilAdvokatkontor er fjernet og entiteten AdvokatSomKontakt er opprettet som egen valgegenskap som rolle fra entiteten KontaktinformasjonForDødsbo.</p>
     <h3 id="oversikt">Oversikt</h3>
     <p>Modellen for fusjon av personer vha. en relasjonsentitet er fjernet siden prosjektet valgte en annen teknisk måte å håndtere dette i Registeret. Registeret har ingen vedvarende intern personidentifikator for en Folkeregisterperson, men oppretter en ny Folkeregisterperson-entitet for hvert skifte av gyldig Folkeregisteridentifikator. Diagrammet er derfor fjernet.</p>
-    <h3 id="personrelasjon">Personrelasjon</h3>
+    <h3 id="personrelasjon-1">Personrelasjon</h3>
     <p>Egenskapen tidsrom manglet egenskapstype Periode som nå er lagt inn.</p>
     
         </div>

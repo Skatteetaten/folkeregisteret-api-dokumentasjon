@@ -82,8 +82,7 @@
     <th>Beskrivelse</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
+    <tbody><tr>
     <td>hendelser/feed/{startsekvensnummer}</td>
     <td>Liste med hendelser fra angitt startpunkt</td>
     </tr>
@@ -99,8 +98,7 @@
     <td>hendelser/xsd</td>
     <td>Xsd (kontrakt) for hendelse</td>
     </tr>
-    </tbody>
-    </table>
+    </tbody></table>
     <p>Feed er i henhold til <a href="http://www.ietf.org/rfc/rfc4287.txt">Atom spesifikasjonen</a>. Her er <a href="../kontrakter/Folkeregisterhendelse_v1.xsd">Xsd for innhold i content</a>.</p>
     <h2 id="rettighetspakker">Rettighetspakker</h2>
     <table>
@@ -110,8 +108,7 @@
     <th>Beskrivelse</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
+    <tbody><tr>
     <td>offentlig-med-hjemmel/api/</td>
     <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
     </tr>
@@ -119,9 +116,8 @@
     <td>offentlig-uten-hjemmel/api/</td>
     <td>Rettighetspakke for offentlige aktører uten hjemmel i egen lov.</td>
     </tr>
-    </tbody>
-    </table>
-    <h2 id="milj-er">Miljøer</h2>
+    </tbody></table>
+    <h2 id="miljøer">Miljøer</h2>
     <table>
     <thead>
     <tr>
@@ -130,21 +126,22 @@
     <th>Beskrivelse</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
+    <tbody><tr>
     <td>Produsenttest</td>
     <td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
+    <td></td>
     </tr>
     <tr>
     <td>Konsumenttest</td>
     <td><a href="https://folkeregisteret-api-konsument.sits.no/">https://folkeregisteret-api-konsument.sits.no/</a></td>
+    <td></td>
     </tr>
     <tr>
     <td>Produksjon</td>
     <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
+    <td></td>
     </tr>
-    </tbody>
-    </table>
+    </tbody></table>
     <h2 id="eksempler">Eksempler</h2>
     <p>Oppslag i hendelsesliste: <br>
     <code>https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/?seq=1</code></p>
@@ -163,9 +160,9 @@
     <p>For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).</p>
     <p><strong>If-None-Match</strong></p>
     <p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
-    <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
-    <h3 id="hendelsesliste-format-json">Hendelsesliste - format JSON</h3>
-    <pre><code class="lang-json">
+    <h2 id="eksempler-på-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
+    <h3 id="hendelsesliste---format-json">Hendelsesliste - format JSON</h3>
+    <pre><code class="language-json">
     [
       {
         &quot;sekvensnummer&quot;: 1,
@@ -189,8 +186,8 @@
       }
     ]
     </code></pre>
-    <h3 id="hendelsesliste-format-atom-xml">Hendelsesliste - format ATOM/XML</h3>
-    <pre><code class="lang-xml">
+    <h3 id="hendelsesliste---format-atomxml">Hendelsesliste - format ATOM/XML</h3>
+    <pre><code class="language-xml">
     &lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
     &lt;feed xmlns=&quot;http://www.w3.org/2005/Atom&quot;&gt;
       &lt;id&gt;http://folkeregisteret.api.skatteetaten.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed&lt;/id&gt;
@@ -242,8 +239,8 @@
       &lt;/entry&gt;
     &lt;/feed&gt;
     </code></pre>
-    <h3 id="hendelsesdokument-for-en-endring-format-json">Hendelsesdokument for en endring - format JSON</h3>
-    <pre><code class="lang-json">
+    <h3 id="hendelsesdokument-for-en-endring---format-json">Hendelsesdokument for en endring - format JSON</h3>
+    <pre><code class="language-json">
     {
       &quot;dokumentidentifikator&quot;: &quot;1120bea688fb14a292c244592a1aed76&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -266,10 +263,9 @@
           }
         ]
       }
-    }
-    </code></pre>
-    <h3 id="hendelsesdokument-for-en-korrigering-format-json">Hendelsesdokument for en korrigering - format JSON</h3>
-    <pre><code class="lang-json">
+    }</code></pre>
+    <h3 id="hendelsesdokument-for-en-korrigering---format-json">Hendelsesdokument for en korrigering - format JSON</h3>
+    <pre><code class="language-json">
     {
       &quot;dokumentidentifikator&quot;: &quot;eb73af9403b0f5702e802ad4f9b8ca4e&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -290,10 +286,9 @@
           }
         ]
       }
-    }
-    </code></pre>
-    <h3 id="hendelsesdokument-for-en-annullering-format-json">Hendelsesdokument for en annullering - format JSON</h3>
-    <pre><code class="lang-json">
+    }</code></pre>
+    <h3 id="hendelsesdokument-for-en-annullering---format-json">Hendelsesdokument for en annullering - format JSON</h3>
+    <pre><code class="language-json">
     {
       &quot;dokumentidentifikator&quot;: &quot;c0e054f025e56d63b14f91fbb5abcb95&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -308,10 +303,9 @@
           }
         ]
       }
-    }
-    </code></pre>
-    <h3 id="hendelsesdokument-for-en-korrigering-av-historisk-informasjon-format-json">Hendelsesdokument for en korrigering av historisk informasjon - format JSON</h3>
-    <pre><code class="lang-json">
+    }</code></pre>
+    <h3 id="hendelsesdokument-for-en-korrigering-av-historisk-informasjon---format-json">Hendelsesdokument for en korrigering av historisk informasjon - format JSON</h3>
+    <pre><code class="language-json">
     {
       &quot;dokumentidentifikator&quot;: &quot;d1428661e6f2c5c158bf954facdd3ba2&quot;,
       &quot;skjemaversjon&quot;: &quot;1.0&quot;,
@@ -326,18 +320,16 @@
           }
         ]
       }
-    }
-    </code></pre>
+    }</code></pre>
     <h3 id="statuskode-304">Statuskode 304</h3>
     <p>Statuskode 304 (<em>not modified</em>) returneres hvis kallet til tjenesten inkluderte headeren <strong>If-None-Match</strong> og denne er lik den aktuelle ETag for etterspurte ressurs. Det betyr at det ikke er kommet noen nye innslag på feeden siden forrige kall.</p>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">
+    <pre><code class="language-json">
     {
       &quot;kode&quot;: &quot;FREG-001&quot;,
       &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
-    }
-    </code></pre>
+    }</code></pre>
     <table>
     <thead>
     <tr>
@@ -345,8 +337,7 @@
     <th>Forklaring</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
+    <tbody><tr>
     <td>400</td>
     <td>Feil i mottatte data - spesifiseres i retur.</td>
     </tr>
@@ -374,8 +365,7 @@
     <td>500</td>
     <td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
     </tr>
-    </tbody>
-    </table>
+    </tbody></table>
     
         </div>
       </div>

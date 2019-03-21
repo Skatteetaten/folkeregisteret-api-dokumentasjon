@@ -84,12 +84,12 @@
     </ul>
     <p><strong>If-None-Match</strong></p>
     <p>Denne verdien skal settes lik <strong>ETag</strong>-header fra siste respons fra tjenesten. Se <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag">ETag</a> for mer informasjon om bruk av ETag.</p>
-    <h2 id="eksempel-p-respons-fra-tjenesten">Eksempel på respons fra tjenesten</h2>
+    <h2 id="eksempel-på-respons-fra-tjenesten">Eksempel på respons fra tjenesten</h2>
     <p>Under finnes eksempler på respons fra tjenesten.</p>
     <h3 id="statuskode-200">Statuskode 200</h3>
     <p>Ved statuskode 200 inneholder <em>body</em> i svaret en liste med tilbakemeldinger gitt at det finnes noen å hente som samsvarer med spørringen i URL.</p>
     <p>Eksempel på en slik liste med tilbakemeldinger gitt at application/json er angitt header <em>Accept</em>.</p>
-    <pre><code class="lang-json">
+    <pre><code class="language-json">
     [
       {
         &quot;title&quot;: &quot;Hendelse i sak&quot;,
@@ -157,18 +157,16 @@
           }
         }
       }
-    ]
-    </code></pre>
+    ]</code></pre>
     <h3 id="statuskode-304">Statuskode 304</h3>
     <p>Statuskode 304 (<em>not modified</em>) returneres hvis kallet til tjenesten inkluderte headeren <strong>If-None-Match</strong> og denne er lik den aktuelle ETag for etterspurte ressurs. Det betyr at det ikke er kommet noen nye innslag på feeden siden forrige kall.</p>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">
+    <pre><code class="language-json">
     {
       &quot;kode&quot;: &quot;FREG-001&quot;,
       &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
-    }
-    </code></pre>
+    }</code></pre>
     <table>
     <thead>
     <tr>
@@ -176,8 +174,7 @@
     <th>Forklaring</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
+    <tbody><tr>
     <td>401</td>
     <td>Autentiseringsinformasjon mangler.</td>
     </tr>
@@ -201,9 +198,8 @@
     <td>500</td>
     <td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
     </tr>
-    </tbody>
-    </table>
-    <h2 id="milj-er">Miljøer</h2>
+    </tbody></table>
+    <h2 id="miljøer">Miljøer</h2>
     <table>
     <thead>
     <tr>
@@ -211,8 +207,7 @@
     <th>URL</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
+    <tbody><tr>
     <td>Test</td>
     <td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
     </tr>
@@ -220,8 +215,7 @@
     <td>Produksjon</td>
     <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
     </tr>
-    </tbody>
-    </table>
+    </tbody></table>
     
         </div>
       </div>
