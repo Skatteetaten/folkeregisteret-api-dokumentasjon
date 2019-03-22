@@ -74,7 +74,7 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
     </tr>
     <tr>
         <td> 4 - Forsvunnet</td>
-        <td> -</td>
+        <td> Forsvunnet</td>
         <td> I bruk</td>
     </tr>
     <tr>
