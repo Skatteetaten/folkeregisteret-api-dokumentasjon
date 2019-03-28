@@ -28,7 +28,7 @@ Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med
 
 Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodeller og har derfor ofte mer generaliserte entiteter enn konstruksjonsmodellene.
 
-* [Folkeregisterperson med adresse](../modeller/1450278727.png)
+* [Folkeregisterperson med adresse](../modeller/1450278727.jpg)
 * [Adressetyper](../modeller/1515074003.png)
 * [Folkeregisterperson med personrelasjon](../modeller/1457707670.png)
 * [Folkeregisterperson med dødsfall](../modeller/1434703879.png)
