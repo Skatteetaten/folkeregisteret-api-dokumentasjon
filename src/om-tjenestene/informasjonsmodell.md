@@ -40,6 +40,9 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 * [Folkeregisterperson med identitet](../modeller/1486995006.jpg)
 * [Folkeregisterperson med utflytting](../modeller/1487338698.jpg)
 * [Folkeregisterperson med navn](../modeller/1487778967.jpg)
+* [Folkeregisterperson med verge fullmektig og representant](../modeller/1538033146.jpg)
+* [Folkeregisterperson med falsk identitet](../modeller/1543845073.jpg)
+* [Folkeregisterperson med sametingets valgmantall](../modeller/1549296236.jpg)
 
 # Endringslogg
 
