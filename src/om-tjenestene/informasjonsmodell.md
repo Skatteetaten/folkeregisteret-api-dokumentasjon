@@ -34,12 +34,12 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 * [Folkeregisterperson med dødsfall](../modeller/1434703879.jpg)
 * [Folkeregisterperson med fødsel](../modeller/1461333199.jpg)
 * [Folkeregisterperson med innflytting](../modeller/1461334707.jpg)
-* [Folkeregisterperson med kjerneinformasjon](../modeller/1461335462.png)
-* [Folkeregisterperson med sivilstand](../modeller/1486742267.png)
-* [Folkeregisterperson med kontaktopplysninger for dødsbo](../modeller/1486990410.png)
-* [Folkeregisterperson med identitet](../modeller/1486995006.png)
-* [Folkeregisterperson med utflytting](../modeller/1487338698.png)
-* [Folkeregisterperson med navn](../modeller/1487778967.png)
+* [Folkeregisterperson med kjerneinformasjon](../modeller/1461335462.jpg)
+* [Folkeregisterperson med sivilstand](../modeller/1486742267.jpg)
+* [Folkeregisterperson med kontaktopplysninger for dødsbo](../modeller/1486990410.jpg)
+* [Folkeregisterperson med identitet](../modeller/1486995006.jpg)
+* [Folkeregisterperson med utflytting](../modeller/1487338698.jpg)
+* [Folkeregisterperson med navn](../modeller/1487778967.jpg)
 
 # Endringslogg
 
