@@ -39,6 +39,7 @@ Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt
 | Produsenttest| https://folkeregisteret-api-ekstern.sits.no/ |
 | Konsumenttest | https://folkeregisteret-api-konsument.sits.no/ |
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ | 
+| Playground | https://folkeregisteret-api-konsument-playground.sits.no/  | 
 
 ## Eksempler 
 Oppslag i hendelsesliste: <br>
