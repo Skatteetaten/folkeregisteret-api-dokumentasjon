@@ -17,6 +17,6 @@ Hendelsesliste og oppslag er tilgjengelig for maskin-maskin-integrasjon for prio
 
 Folkeregisteret vil også tilby uttrekk.
 
-*	Uttrekk gir konsumenter muligheten til å hente ut opplysninger om et utvalg personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først. Uttrekk er basert på selvbetjening, der konsumenten selv setter opp kriteriene den ønsker for sitt uttrekk på Folkeregisterets portal, og får uttrekk  med de opplysningene som passer disse kriteriene tilbake. 
+*	[Uttrekk](../uttrekk) gir konsumenter muligheten til å hente ut opplysninger om et utvalg personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først. Uttrekk er basert på selvbetjening, der konsumenten selv setter opp kriteriene den ønsker for sitt uttrekk på Folkeregisterets portal, og får uttrekk  med de opplysningene som passer disse kriteriene tilbake.
 Uttrekk kan brukes til å opprette eller supplere et kunderegister eller en sakspopulasjon, for eksempel alle 6-åringer i en kommune, eller alle beboere i en gate. Tjenesten kan kun benyttes av konsumenter som ikke har krav om entydig identifisering.
 

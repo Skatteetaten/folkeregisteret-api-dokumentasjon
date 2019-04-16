@@ -13,11 +13,12 @@ Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I 
 Man kan også slå opp personen basert på fødsels- eller d-nummer.
 
 For å nå tjenestene bygges URL opp slik:
-{miljø}/folkeregisteret/{rettighetspakke}/{versjon}{ressurs}
+{miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}
 
 ## Ressurser
 |Ressurs|Beskrivelse|
 |-------|-----------|
+|hendelser/siste/sekvensnummer|Siste sekvensnummer|
 |hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt|
 |hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse|
 |hendelser/bulk/hendelser|Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)|
@@ -31,6 +32,7 @@ Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt
 |----------------|-----------|
 |offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.|
 |offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
+|finans-og-begrenset/api/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)|
 
 ## Miljøer
 
