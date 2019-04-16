@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Uttrekk</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Uttrekk</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../avtaler">Avtaler</a>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../oppslag">Oppslag</a>
+          <a href="../uttrekk">Uttrekk</a>
+        <div><a class="index" href="../test">Test</a></div>
+          <a href="../test-konsumenter">Test - konsumenter</a>
+          <a href="../test-produsenter">Test - produsenter</a>
+        <div><a class="index" href="../sporsmal-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <p>Merk at uttrekk pt kun er tilgjengelig for rettighetspakke - offentlig med hjemmel.</p>
+    <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
+    <p>Uttrekktjenesten gir tilgang til å hente ut et utvalg med personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først.
+    Tjenesten er delt i 3 deler som utføres i rekkefølge:</p>
+    <ul>
+    <li>Finn tidspunktet uttrekket ønskes fra, representert ved feedsekvensnummer. Eksempelvis siste sekvensnummer på <a href="../hendelsesliste">hendelsesfeeden</a></li>
+    <li>Bestille uttrekk basert på et sett med kriterier, bestillingen returnerer en identifikator som benyttes for å hente resultatet.</li>
+    <li>Batchvis henting av resultatet som består av identifikatorer som igjen peker på persondokumenter</li>
+    <li>Benytte <a href="../oppslag">bulkoppslag</a> for å hente persondokumentene basert på indentifikatorene fra steg 2</li>
+    </ul>
+    <p>Følgende algoritme beskriver flyten for de tre tjenestene:</p>
+    <pre><code>jobbid = bestillUttrekk(sekvensnummer)
+    
+    batchteller = 0
+    batch = hentResultat(jobbid, batchteller)
+    
+    while (batch.resultat &gt; 0) {
+        persondokumenter = hentPersondokumenter(batch)
+        // behandle persondokumenter
+    
+        batch = hentResultat(jobbid, ++batchteller)
+    }
+    </code></pre><p>For å benytte tjenestene bygges URL opp slik:
+       {miljø}/folkeregisteret/offentlig-med-hjemmel/api/{versjon}/{ressurs}</p>
+    <h2 id="ressurser">Ressurser</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Ressurs</th>
+    <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>uttrekk/komplett?feedsekvensnr={feedsekvensnummer}</td>
+    <td>Bestilling av komplett uttrekk av folkeregisteret (0-dags uttrekk)</td>
+    </tr>
+    <tr>
+    <td>uttrekk/{uttrekk-id}/batch/{batch-id}</td>
+    <td>Resultat av uttrekk, inneholder opptill 100000 identifikatorer pr batch.</td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="rettighetspakker">Rettighetspakker</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Rettighetspakke</th>
+    <th>Beskrivelse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>offentlig-med-hjemmel/api/</td>
+    <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="milj-er">Miljøer</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Miljø</th>
+    <th>URL</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Produsenttest</td>
+    <td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
+    </tr>
+    <tr>
+    <td>Konsumenttest</td>
+    <td><a href="https://folkeregisteret-api-konsument.sits.no/">https://folkeregisteret-api-konsument.sits.no/</a></td>
+    </tr>
+    <tr>
+    <td>Produksjon</td>
+    <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="headere">Headere</h2>
+    <p><strong>Accept</strong></p>
+    <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml.</p>
+    <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
+    <h3 id="statuskode-200">Statuskode 200</h3>
+    <p>Eksempel på svar ved bestilling av uttrekk:</p>
+    <pre><code class="lang-json">{
+        &quot;jobbId&quot;: &quot;e9ca4d76-2ed7-43bc-bb50-469304df1e1c&quot;
+    }
+    </code></pre>
+    <p>Eksempel på svar ved henting av en batch:</p>
+    <pre><code class="lang-json">{
+        &quot;dokumentidentifikator&quot;: [
+            &quot;af79a3bea0935c0d6dbd4d3678c4b5cb&quot;,
+            &quot;454024eccbecf7db138c8135e3ef189f&quot;,
+            &quot;efb2b7b365f44ddb0aaab61f66b37898&quot;,
+            &quot;4794503daee1dffb8f5b72cd4b4ef869&quot;,
+            &quot;932e0744daa5f48e6de7d0df9e798cf2&quot;,
+            &quot;d7b856e682508205b18d429e0faaf3dc&quot;
+        ]
+    }
+    </code></pre>
+    <h3 id="feilkoder">Feilkoder</h3>
+    <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
+    <pre><code class="lang-json">{
+      &quot;kode&quot;: &quot;FREG-001&quot;,
+      &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
+    }
+    </code></pre>
+    <table>
+    <thead>
+    <tr>
+    <th>HTTP Statuskode</th>
+    <th>Forklaring</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>401</td>
+    <td>Autentiseringsinformasjon mangler</td>
+    </tr>
+    <tr>
+    <td>403</td>
+    <td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten</td>
+    </tr>
+    <tr>
+    <td>404</td>
+    <td>Feil uri brukt.</td>
+    </tr>
+    <tr>
+    <td>406</td>
+    <td>Oppgitt Accept-header inneholder ikke &#39;application/xml&#39; eller &#39;application/json&#39;</td>
+    </tr>
+    <tr>
+    <td>429</td>
+    <td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres</td>
+    </tr>
+    <tr>
+    <td>500</td>
+    <td>Feil i tjenesten. Vennligst prøv igjen senere.</td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

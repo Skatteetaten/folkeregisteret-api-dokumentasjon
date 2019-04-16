@@ -57,6 +57,7 @@
           <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
           <a href="../hendelsesliste">Hendelsesliste</a>
           <a href="../oppslag">Oppslag</a>
+          <a href="../uttrekk">Uttrekk</a>
         <div><a class="index" href="../test">Test</a></div>
           <a href="../test-konsumenter">Test - konsumenter</a>
           <a href="../test-produsenter">Test - produsenter</a>
@@ -73,7 +74,7 @@
     <p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
     Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
     <p>For å nå tjenestene bygges URL opp slik:
-    {miljø}/folkeregisteret/{rettighetspakke}/{versjon}{ressurs}</p>
+    {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}</p>
     <h2 id="ressurser">Ressurser</h2>
     <table>
     <thead>
@@ -83,6 +84,10 @@
     </tr>
     </thead>
     <tbody>
+    <tr>
+    <td>hendelser/siste/sekvensnummer</td>
+    <td>Siste sekvensnummer</td>
+    </tr>
     <tr>
     <td>hendelser/feed/{startsekvensnummer}</td>
     <td>Liste med hendelser fra angitt startpunkt</td>
@@ -118,6 +123,10 @@
     <tr>
     <td>offentlig-uten-hjemmel/api/</td>
     <td>Rettighetspakke for offentlige aktører uten hjemmel i egen lov.</td>
+    </tr>
+    <tr>
+    <td>finans-og-begrenset/api/</td>
+    <td>Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)</td>
     </tr>
     </tbody>
     </table>
