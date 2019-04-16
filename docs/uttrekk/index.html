@@ -78,17 +78,17 @@
     <li>Benytte <a href="../oppslag">bulkoppslag</a> for å hente persondokumentene basert på indentifikatorene fra steg 2</li>
     </ul>
     <p>Følgende algoritme beskriver flyten for de tre tjenestene:</p>
-    <pre><code>jobbid = bestillUttrekk(sekvensnummer)
+    <pre><code>  jobbid = bestillUttrekk(sekvensnummer)
     
-    batchteller = 0
-    batch = hentResultat(jobbid, batchteller)
+      batchteller = 0
+      batch = hentResultat(jobbid, batchteller)
     
-    while (batch.resultat &gt; 0) {
+      while (batch.resultat &gt; 0) {
         persondokumenter = hentPersondokumenter(batch)
         // behandle persondokumenter
     
         batch = hentResultat(jobbid, ++batchteller)
-    }
+      }
     </code></pre><p>For å benytte tjenestene bygges URL opp slik:
        {miljø}/folkeregisteret/offentlig-med-hjemmel/api/{versjon}/{ressurs}</p>
     <h2 id="ressurser">Ressurser</h2>
@@ -146,6 +146,10 @@
     <td>Produksjon</td>
     <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
     </tr>
+    <tr>
+    <td>Playground</td>
+    <td><a href="https://folkeregisteret-api-konsument-playground.sits.no/">https://folkeregisteret-api-konsument-playground.sits.no/</a></td>
+    </tr>
     </tbody>
     </table>
     <h2 id="headere">Headere</h2>
@@ -154,12 +158,12 @@
     <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
     <h3 id="statuskode-200">Statuskode 200</h3>
     <p>Eksempel på svar ved bestilling av uttrekk:</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">  {
         &quot;jobbId&quot;: &quot;e9ca4d76-2ed7-43bc-bb50-469304df1e1c&quot;
-    }
+      }
     </code></pre>
     <p>Eksempel på svar ved henting av en batch:</p>
-    <pre><code class="lang-json">{
+    <pre><code class="lang-json">  {
         &quot;dokumentidentifikator&quot;: [
             &quot;af79a3bea0935c0d6dbd4d3678c4b5cb&quot;,
             &quot;454024eccbecf7db138c8135e3ef189f&quot;,
@@ -168,14 +172,14 @@
             &quot;932e0744daa5f48e6de7d0df9e798cf2&quot;,
             &quot;d7b856e682508205b18d429e0faaf3dc&quot;
         ]
-    }
+      }
     </code></pre>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">{
-      &quot;kode&quot;: &quot;FREG-001&quot;,
-      &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
-    }
+    <pre><code class="lang-json">  {
+        &quot;kode&quot;: &quot;FREG-001&quot;,
+        &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
+      }
     </code></pre>
     <table>
     <thead>
