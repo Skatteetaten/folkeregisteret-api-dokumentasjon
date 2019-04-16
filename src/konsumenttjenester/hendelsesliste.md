@@ -36,8 +36,8 @@ Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt
 
 ## Miljøer
 
-|Miljø|URL|Beskrivelse|
-|-----|---|-----------|
+|Miljø|URL|
+|-----|---|
 | Produsenttest| https://folkeregisteret-api-ekstern.sits.no/ |
 | Konsumenttest | https://folkeregisteret-api-konsument.sits.no/ |
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ | 

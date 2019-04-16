@@ -14,17 +14,17 @@ Tjenesten er delt i 3 deler som utføres i rekkefølge:
 
 Følgende algoritme beskriver flyten for de tre tjenestene:
 ```
-jobbid = bestillUttrekk(sekvensnummer)
+  jobbid = bestillUttrekk(sekvensnummer)
 
-batchteller = 0
-batch = hentResultat(jobbid, batchteller)
+  batchteller = 0
+  batch = hentResultat(jobbid, batchteller)
 
-while (batch.resultat > 0) {
+  while (batch.resultat > 0) {
     persondokumenter = hentPersondokumenter(batch)
     // behandle persondokumenter
 
     batch = hentResultat(jobbid, ++batchteller)
-}
+  }
 ```
 
 For å benytte tjenestene bygges URL opp slik:
@@ -50,6 +50,7 @@ For å benytte tjenestene bygges URL opp slik:
 | Produsenttest| https://folkeregisteret-api-ekstern.sits.no/ |
 | Konsumenttest | https://folkeregisteret-api-konsument.sits.no/ |
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ |
+| Playground | https://folkeregisteret-api-konsument-playground.sits.no/  |
 
 ## Headere
 
@@ -62,14 +63,14 @@ Verdien i denne headeren angir ønsket dataformat. Det er støtte for applicatio
 ### Statuskode 200
 Eksempel på svar ved bestilling av uttrekk:
 ```json
-{
+  {
     "jobbId": "e9ca4d76-2ed7-43bc-bb50-469304df1e1c"
-}
+  }
 ```
 
 Eksempel på svar ved henting av en batch:
 ```json
-{
+  {
     "dokumentidentifikator": [
         "af79a3bea0935c0d6dbd4d3678c4b5cb",
         "454024eccbecf7db138c8135e3ef189f",
@@ -78,17 +79,17 @@ Eksempel på svar ved henting av en batch:
         "932e0744daa5f48e6de7d0df9e798cf2",
         "d7b856e682508205b18d429e0faaf3dc"
     ]
-}
+  }
 ```
 
 ### Feilkoder
 Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
 
 ```json
-{
-  "kode": "FREG-001",
-  "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."
-}
+  {
+    "kode": "FREG-001",
+    "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."
+  }
 ```
 
 | HTTP Statuskode |  Forklaring |
