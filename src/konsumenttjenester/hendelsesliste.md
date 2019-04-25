@@ -24,7 +24,7 @@ For å nå tjenestene bygges URL opp slik:
 |hendelser/bulk/hendelser|Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)|
 |hendelser/xsd| Xsd (kontrakt) for hendelse|
 
-Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Her er [Xsd for innhold i content](../kontrakter/Hendelsesdokument_v1.2.xsd).
+Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Her er [Xsd for innhold i content](../kontrakter/Hendelsedokument_v1.2.xsd).
 
 ## Rettighetspakker
 
