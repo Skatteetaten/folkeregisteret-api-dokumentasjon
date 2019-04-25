@@ -3,8 +3,7 @@ title: Test - konsumenter
 ---
 
 # Test - Konsumenter
-Vi har etablert et eget testmiljø for test mot våre konsumenttjenester.
-I første omgang ønsker vi å tilby konsumenttestmiljøet til de som er både produsenter og konsumenter av data til og fra folkeregisteret.
+Obs! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte virksomheter som produserer og bruker folkeregisterdata har mulighet til å benytte seg av API-ene frem til pilotperioden er over. Her finner du [informasjon om moderniseringsprosjektet](../http://www.skatteetaten.no/no/Om-skatteetaten/Om-oss/Prosjekter/modernisering-av-folkeregisteret/).
 
  
 ## Testplanlegging
