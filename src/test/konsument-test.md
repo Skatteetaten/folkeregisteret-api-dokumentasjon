@@ -22,7 +22,7 @@ Oppkobling mot testmiljøet krever virksomhetssertifikat, pass på at på at du 
 
  
 ## Syntetiske testpersoner og hendelser
-I parallell med at Folkeregisteret moderniseres, jobber prosjektet med å etablere et testfolkeregister med syntetiske testpersoner. Planen er å gjøre den syntetiske testbefolkningen tilgjengelig fra august 2019.
+I parallell med at Folkeregisteret moderniseres, jobber prosjektet med å etablere et testfolkeregister med syntetiske testpersoner. Planen er å gjøre den syntetiske testbefolkningen tilgjengelig for inviterte pilotvirksomheter fra august 2019. I pilotfasen vil prosjektet i samarbeid med pilotvirksomhetene kvalitetssikre testdataene.
  
 Testbefolkningen skal lages basert på et representativt utvalg av Norges befolkning, og vil bestå av konstruerte data som ikke har rot i virkeligheten. 
 Testpersonene navngis ikke med ekte navn, men med navn som er satt sammen av adjektiv og substantiv – f.eks «Vakker blomst». Testpersonene skal bo på ekte gateadresser og med reelle postnummer og kommunenummer, da det er logikk knyttet til disse. 
