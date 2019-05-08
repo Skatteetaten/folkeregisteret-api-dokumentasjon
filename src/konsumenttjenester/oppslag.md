@@ -26,8 +26,8 @@ Parameteret *part* kan brukes til å spesifisere hvilken informasjon, om en pers
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
 |offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
-|offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov. (Har ikke bulkoppslag)|
-|finans-og-begrenset/api/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)|
+|offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
+|finans-og-begrenset/api/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger.|
 
 ## Miljøer
 
