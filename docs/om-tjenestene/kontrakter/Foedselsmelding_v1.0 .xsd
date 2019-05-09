@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns="folkeregisteret:melding:nyfolkeregisterperson:foedselsmelding:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="folkeregisteret:melding:nyfolkeregisterperson:foedselsmelding:v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns="folkeregisteret:melding:nyfolkeregisterperson:foedselsmelding:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="folkeregisteret:melding:nyfolkeregisterperson:foedselsmelding:v1" elementFormDefault="qualified">
 	<xsd:annotation>
 		<xsd:documentation>
-			<xsd:attribute fixed="2019-01-25T12:52:49.169+0100" name="generertDato"/>
+			<xsd:attribute fixed="2019-04-12T12:52:49.169+0100" name="generertDato"/>
 			<xsd:attribute fixed="1.0" name="versjon"/>
 			<xsd:attribute fixed="" name="beskrivelse"/>
 			<xsd:attribute fixed="Foedsel" name="modellnavn"/>
@@ -24,7 +24,7 @@
 		<xsd:sequence>
 			<xsd:element name="foedselsdato" type="Dato"/>
 			<xsd:element name="erLevendefoedt" type="Boolsk"/>
-			<xsd:element name="rekkefoelgenummerVedFlerfoedsel" type="Heltall" minOccurs="0"/>
+			<xsd:element name="rekkefoelgenummerVedFlerfoedsel" type="Rekkefoelgenummer" minOccurs="0"/>
 			<xsd:element name="kjoenn" type="Kjoenn"/>
 		</xsd:sequence>
 	</xsd:complexType>
@@ -119,6 +119,11 @@
 			<xsd:element name="kommunenavn" type="TekstIAdresse" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
+	<xsd:simpleType name="Rekkefoelgenummer">
+		<xsd:restriction base="Tekst">
+			<xsd:pattern value="2[1-2]|3[1-3]|4[1-4]|5[1-5]|6[1-6]|7[1-7]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 	<xsd:simpleType name="InnsendertypeForFoedselsmelding">
 		<xsd:restriction base="xsd:string">
 			<xsd:enumeration value="helse"/>
@@ -215,7 +220,7 @@
 	</xsd:simpleType>
 	<xsd:simpleType name="TekstIAdresse">
 		<xsd:restriction base="TekstMedInnhold">
-			<xsd:pattern value="[a-zA-ZæøåÆØÅÁÀÂÃÄÇÐÉÈÊËÍÌÎÏÑÓÒÔÕÖÞÚÙÛÜÝŸáàâãäçðéèêëíìîïñóòôõößþúùûüýÿ \-0-9_:'.,()/#&quot;&amp;]+"/>
+			<xsd:pattern value="[a-zA-ZæøåÆØÅÁÀÂÃÄÇÐÉÈÊËÍÌÎÏÑÓÒÔÕÖÞÚÙÛÜÝŸČĐŊŠŦŽáàâãäçðéèêëíìîïñóòôõößþúùûüýÿčđŋšŧž 0-9_:'`´‘’‛′‵.,()-/#&quot;&amp;]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:complexType name="Adressenummer">
@@ -234,7 +239,7 @@
 		<xsd:restriction base="TekstMedInnhold">
 			<xsd:minLength value="1"/>
 			<xsd:maxLength value="200"/>
-			<xsd:pattern value="[a-zA-ZæøåÆØÅÁÀÂÃÄÇÐÉÈÊËÍÌÎÏÑÓÒÔÕÖÞÚÙÛÜÝŸáàâãäçðéèêëíìîïñóòôõößþúùûüýÿ \-']+"/>
+			<xsd:pattern value="[a-zA-ZæøåÆØÅÁÀÂÃÄČÇÐÉÈÊËÍÌÎÏÑŊÓÒÔÕÖŠŦÞÚÙÛÜÝŸŽáàâãäçčðđéèêëíìîïñŋóòôößþšŧúùûüýÿž *\-'`´‘’‛′‵]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:complexType name="NorskIdentifikator">
