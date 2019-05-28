@@ -65,7 +65,7 @@ Eksempel på bulkoppslag på hendelsesdokumenter:
 
 Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml
 
-**Content-Type
+**Content-Type**
 
 For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).
 
