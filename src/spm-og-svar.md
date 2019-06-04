@@ -1,6 +1,6 @@
 ---
 layout: spm_og_svar.hbs
-title: Henvendelser, Spørsmål og svar
+title: Spørsmål og svar
 ---
 
 Prosjekt MF har etablert et veiledningssenter for kundestøtte i modernisert Folkeregister (Freg) for å sikre mer effektiv behandling av henvendelser og kortere svartider. 
