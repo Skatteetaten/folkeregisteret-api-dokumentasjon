@@ -274,6 +274,6 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 | 401 | Autentiseringsinformasjon mangler |
 | 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten |
 | 404 | Feil uri brukt. |
-| 406 | Oppgitt Accept-header inneholder ikke 'application/atom+xml', 'application/xml' eller 'application/json' |
+| 406 | Oppgitt Accept-header inneholder ikke 'application/atom+xml', 'application/xml' eller 'application/json', dersom Content-Type er satt ved bulkoppslag så vil returen være lik Content-Type dersom Accept-headeren er tom. |
 | 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
 | 500 | Feil i tjenesten. Vennligst prøv igjen seinere. | 
