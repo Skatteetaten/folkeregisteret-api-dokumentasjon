@@ -1,6 +1,6 @@
     
 ---
-title: Varsling vedlikehold tirsdag 11.06.2019
+title: Varsling vedlikehold torsdag 23.05.2019
 datetime: 2019-06-11T11:11:00
 ---
 Periode: tirsdag 11.06.2019 kl 20 til onsdag 11.06.2019 kl 09.
