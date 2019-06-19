@@ -91,6 +91,10 @@
     <td>Siste versjon av en person</td>
     </tr>
     <tr>
+    <td>personer/entydigsoek</td>
+    <td>Entydig søk som returnerer siste versjon av en person</td>
+    </tr>
+    <tr>
     <td>personer/arkiv/{persondokumentidentifikator}</td>
     <td>Versjonert utgave av en person</td>
     </tr>
@@ -108,6 +112,21 @@
     </tr>
     </tbody>
     </table>
+    <h3 id="om-entydig-s-k">Om entydig søk</h3>
+    <p>Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL&#39;en:</p>
+    <ul>
+    <li>identifikasjonsnummer</li>
+    <li>utenlandskpersonidentifikasjon</li>
+    <li>legitimasjonsdokument</li>
+    <li>utlendingsmyndighetenesIdentifikasjonsnummer</li>
+    </ul>
+    <p>I tillegg må en av følgende ikke identifiserende være oppgitt:</p>
+    <ul>
+    <li>foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)</li>
+    <li>navn</li>
+    <li>adressenavn</li>
+    <li>husnummer</li>
+    </ul>
     <h2 id="rettighetspakker">Rettighetspakker</h2>
     <table>
     <thead>
