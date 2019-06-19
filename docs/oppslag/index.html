@@ -175,33 +175,194 @@
     <p>For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).</p>
     <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
     <h3 id="statuskode-200">Statuskode 200</h3>
-    <p>Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:</p>
+    <p>Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):</p>
     <pre><code class="lang-json">
     {
-      &quot;identifikasjonsnummer&quot;: [
-        {
-          &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
-          &quot;erGjeldende&quot;: true,
-          &quot;kilde&quot;: &quot;SKATTEETATEN&quot;,
-          &quot;gyldighetstidspunkt&quot;: &quot;2017-09-26T11:08:20.744+02:00&quot;,
-          &quot;status&quot;: &quot;iBruk&quot;,
-          &quot;foedselsEllerDNummer&quot;: &quot;69080275560&quot;,
-          &quot;identifikatortype&quot;: &quot;dNummer&quot;
-        }
-      ],
-      &quot;annenIdentifikasjon&quot;: [],
-      &quot;identitetsgrunnlag&quot;: [
-        {
-          &quot;ajourholdstidspunkt&quot;: &quot;2017-09-26T11:08:24.528+02:00&quot;,
-          &quot;erGjeldende&quot;: true,
-          &quot;kilde&quot;: &quot;skatteetaten&quot;,
-          &quot;aarsak&quot;: &quot;besluttetTildelingAvDNummer&quot;,
-          &quot;gyldighetstidspunkt&quot;: &quot;2017-09-26T11:08:22.918+02:00&quot;,
-          &quot;identitetsgrunnlagstatus&quot;: &quot;ikkeKontrollert&quot;,
-          &quot;dokumentgrunnlag&quot;: []
-        }
+        &quot;identifikasjonsnummer&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;dsf-folkeregister-synkronisering&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
+                &quot;status&quot;: &quot;iBruk&quot;,
+                &quot;foedselsEllerDNummer&quot;: &quot;09052400284&quot;,
+                &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
+            }
+        ],
+        &quot;status&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;status&quot;: &quot;bosatt&quot;
+            }
+        ],
+        &quot;kjoenn&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
+                &quot;kjoenn&quot;: &quot;kvinne&quot;
+            }
+        ],
+        &quot;foedsel&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
+                &quot;foedselsdato&quot;: &quot;1924-05-09&quot;,
+                &quot;foedselsaar&quot;: &quot;1924&quot;,
+                &quot;foedested&quot;: &quot;&quot;,
+                &quot;foedeland&quot;: &quot;CAN&quot;
+            }
+        ],
+        &quot;sivilstand&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
+                &quot;sivilstand&quot;: &quot;gjenlevendePartner&quot;
+            }
+        ],
+        &quot;navn&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
+                &quot;fornavn&quot;: &quot;FORSTÅELSESFULL&quot;,
+                &quot;etternavn&quot;: &quot;RULLETRAPP&quot;
+            }
+        ],
+        &quot;bostedsadresse&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-05-31T00:00:00+02:00&quot;,
+                &quot;matrikkeladresse&quot;: {
+                    &quot;bruksenhetsnummer&quot;: &quot;&quot;,
+                    &quot;matrikkelnummer&quot;: {
+                        &quot;kommunenummer&quot;: &quot;0301&quot;,
+                        &quot;gaardsnummer&quot;: 0,
+                        &quot;bruksnummer&quot;: 27,
+                        &quot;festenummer&quot;: 0
+                    },
+                    &quot;undernummer&quot;: 0,
+                    &quot;poststed&quot;: {
+                        &quot;poststedsnavn&quot;: &quot;OSLO&quot;,
+                        &quot;postnummer&quot;: &quot;1163&quot;
+                    },
+                    &quot;coAdressenavn&quot;: &quot;&quot;
+                },
+                &quot;adressegradering&quot;: &quot;ugradert&quot;,
+                &quot;flyttedato&quot;: &quot;2019-05-31&quot;
+            }
+        ]
+    }
+    </code></pre>
+    <p>Eksempel på dataminimering ved oppslag på en person (GET .../personer/01104200113?part=status):</p>
+    <pre><code class="lang-json">
+    {
+        &quot;identifikasjonsnummer&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;dsf-folkeregister-synkronisering&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-02-07T00:00:00+01:00&quot;,
+                &quot;status&quot;: &quot;iBruk&quot;,
+                &quot;foedselsEllerDNummer&quot;: &quot;01104200113&quot;,
+                &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
+            }
+        ],
+        &quot;status&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Uregistrert person&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
+                &quot;status&quot;: &quot;ikkeBosatt&quot;
+            }
+        ]
+    }
+    </code></pre>
+    <p>Eksempel på bulkoppslag med dataminimering (POST .../personer/bulkoppslag/?part=status):</p>
+    <pre><code class="lang-json">
+    {
+      &quot;foedselsEllerDNummer&quot;: [
+        &quot;29084902258&quot;
       ]
     }
+    </code></pre>
+    <p>Svar:</p>
+    <pre><code class="lang-json">
+    {
+        &quot;oppslag&quot;: [
+            {
+                &quot;foedselsEllerDNummer&quot;: &quot;29084902258&quot;,
+                &quot;folkeregisterperson&quot;: {
+                    &quot;identifikasjonsnummer&quot;: [
+                        {
+                            &quot;ajourholdstidspunkt&quot;: &quot;2019-04-16T14:38:41.098+02:00&quot;,
+                            &quot;erGjeldende&quot;: true,
+                            &quot;kilde&quot;: &quot;KILDE_DSF&quot;,
+                            &quot;status&quot;: &quot;iBruk&quot;,
+                            &quot;foedselsEllerDNummer&quot;: &quot;29084902258&quot;,
+                            &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
+                        }
+                    ],
+                    &quot;status&quot;: [
+                        {
+                            &quot;ajourholdstidspunkt&quot;: &quot;2019-04-16T14:38:41.098+02:00&quot;,
+                            &quot;erGjeldende&quot;: true,
+                            &quot;kilde&quot;: &quot;KILDE_DSF&quot;,
+                            &quot;gyldighetstidspunkt&quot;: &quot;2019-04-16T14:38:41.098+02:00&quot;,
+                            &quot;status&quot;: &quot;bosatt&quot;
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+    </code></pre>
+    <p>Eksempel på entydig søk med dataminimering (GET .../personer/entydigsoek?identifikasjonsnummer=09052400284&amp;navn=RULLETRAPP&amp;part=navn):</p>
+    <pre><code class="lang-json">
+    {
+        &quot;identifikasjonsnummer&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;dsf-folkeregister-synkronisering&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-02-07T00:00:00+01:00&quot;,
+                &quot;status&quot;: &quot;iBruk&quot;,
+                &quot;foedselsEllerDNummer&quot;: &quot;09052400284&quot;,
+                &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
+            }
+        ],
+        &quot;navn&quot;: [
+            {
+                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
+                &quot;erGjeldende&quot;: true,
+                &quot;kilde&quot;: &quot;&quot;,
+                &quot;aarsak&quot;: &quot;Innvandring&quot;,
+                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
+                &quot;fornavn&quot;: &quot;FORSTÅELSESFULL&quot;,
+                &quot;etternavn&quot;: &quot;RULLETRAPP&quot;
+            }
+        ]
+    }
+    
     </code></pre>
     <h3 id="feilkoder">Feilkoder</h3>
     <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
