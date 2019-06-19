@@ -163,7 +163,7 @@
     <p>Oppslag på xsd:</p>
     <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd&quot;</code></p>
     <p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&amp;part=Identitetsgrunnlag&quot;</code></p>
+    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=historikk&amp;part=identitetsgrunnlag&quot;</code></p>
     <p>Eksempel på bulkoppslag på gitte folkeregisteridentifikatorer:</p>
     <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;foedselsEllerDNummer&quot;: [&quot;{folkeregiseridentifikator}&quot;,&quot;{folkeregiseridentifikator}&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/&quot;</code></p>
     <p>Eksempel på bulkoppslag på gitte versjoner av persondokumenter:</p>
