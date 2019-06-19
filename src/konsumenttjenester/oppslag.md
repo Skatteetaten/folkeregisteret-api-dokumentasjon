@@ -49,7 +49,7 @@ Oppslag på xsd:
 
 Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: 
 
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=Folkeregisteridentifikator-historikk&part=Identitetsgrunnlag"`
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=historikk&part=identitetsgrunnlag"`
 
 Eksempel på bulkoppslag på gitte folkeregisteridentifikatorer:
 
