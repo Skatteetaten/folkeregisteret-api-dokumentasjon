@@ -16,10 +16,24 @@ Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dett
 | Ressurs | Beskrivelse | 
 |---------|-------------|
 |personer/{folkeregisteridentifikator}| Siste versjon av en person | 
+|personer/entydigsoek| Entydig søk som returnerer siste versjon av en person |
 |personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person |
 |personer/bulkoppslag/| Siste versjon av et sett med personer (gjelder kun rettighetspakke offentlig-med-hjemmel)|
 |personer/bulkoppslag/arkiv/| Et sett med versjonerte utgaver av en person (gjelder kun rettighetspakke offentlig-med-hjemmel)|
 |personer/xsd| Xsd (kontrakt) for person |
+
+### Om entydig søk
+Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL'en:
+* identifikasjonsnummer
+* utenlandskpersonidentifikasjon
+* legitimasjonsdokument
+* utlendingsmyndighetenesIdentifikasjonsnummer
+
+I tillegg må en av følgende ikke identifiserende være oppgitt:
+* foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)
+* navn
+* adressenavn
+* husnummer
 
 ## Rettighetspakker
 
