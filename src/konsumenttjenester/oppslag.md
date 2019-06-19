@@ -72,34 +72,205 @@ For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-
 ## Eksempler på respons fra tjenesten
 
 ### Statuskode 200
-Eksempel på svar ved oppslag på en arkivert eller oppdatert versjon av en person:
+Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
 ```json
 
 {
-  "identifikasjonsnummer": [
-    {
-      "ajourholdstidspunkt": "2017-09-26T11:08:20.744+02:00",
-      "erGjeldende": true,
-      "kilde": "SKATTEETATEN",
-      "gyldighetstidspunkt": "2017-09-26T11:08:20.744+02:00",
-      "status": "iBruk",
-      "foedselsEllerDNummer": "69080275560",
-      "identifikatortype": "dNummer"
-    }
-  ],
-  "annenIdentifikasjon": [],
-  "identitetsgrunnlag": [
-    {
-      "ajourholdstidspunkt": "2017-09-26T11:08:24.528+02:00",
-      "erGjeldende": true,
-      "kilde": "skatteetaten",
-      "aarsak": "besluttetTildelingAvDNummer",
-      "gyldighetstidspunkt": "2017-09-26T11:08:22.918+02:00",
-      "identitetsgrunnlagstatus": "ikkeKontrollert",
-      "dokumentgrunnlag": []
-    }
+    "identifikasjonsnummer": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "dsf-folkeregister-synkronisering",
+            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
+            "status": "iBruk",
+            "foedselsEllerDNummer": "09052400284",
+            "identifikatortype": "foedselsnummer"
+        }
+    ],
+    "status": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-06-05T09:33:23+02:00",
+            "status": "bosatt"
+        }
+    ],
+    "kjoenn": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
+            "kjoenn": "kvinne"
+        }
+    ],
+    "foedsel": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
+            "foedselsdato": "1924-05-09",
+            "foedselsaar": "1924",
+            "foedested": "",
+            "foedeland": "CAN"
+        }
+    ],
+    "sivilstand": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
+            "sivilstand": "gjenlevendePartner"
+        }
+    ],
+    "navn": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
+            "fornavn": "FORSTÅELSESFULL",
+            "etternavn": "RULLETRAPP"
+        }
+    ],
+    "bostedsadresse": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-05-31T00:00:00+02:00",
+            "matrikkeladresse": {
+                "bruksenhetsnummer": "",
+                "matrikkelnummer": {
+                    "kommunenummer": "0301",
+                    "gaardsnummer": 0,
+                    "bruksnummer": 27,
+                    "festenummer": 0
+                },
+                "undernummer": 0,
+                "poststed": {
+                    "poststedsnavn": "OSLO",
+                    "postnummer": "1163"
+                },
+                "coAdressenavn": ""
+            },
+            "adressegradering": "ugradert",
+            "flyttedato": "2019-05-31"
+        }
+    ]
+}
+```
+
+Eksempel på dataminimering ved oppslag på en person (GET .../personer/01104200113?part=status):
+```json
+
+{
+    "identifikasjonsnummer": [
+        {
+            "ajourholdstidspunkt": "2019-02-07T16:03:19+01:00",
+            "erGjeldende": true,
+            "kilde": "dsf-folkeregister-synkronisering",
+            "gyldighetstidspunkt": "2019-02-07T00:00:00+01:00",
+            "status": "iBruk",
+            "foedselsEllerDNummer": "01104200113",
+            "identifikatortype": "foedselsnummer"
+        }
+    ],
+    "status": [
+        {
+            "ajourholdstidspunkt": "2019-02-07T16:03:19+01:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Uregistrert person",
+            "gyldighetstidspunkt": "2019-02-07T16:03:19+01:00",
+            "status": "ikkeBosatt"
+        }
+    ]
+}
+```
+
+Eksempel på bulkoppslag med dataminimering (POST .../personer/bulkoppslag/?part=status):
+```json
+
+{
+  "foedselsEllerDNummer": [
+    "29084902258"
   ]
 }
+```
+
+Svar:
+
+```json
+
+{
+    "oppslag": [
+        {
+            "foedselsEllerDNummer": "29084902258",
+            "folkeregisterperson": {
+                "identifikasjonsnummer": [
+                    {
+                        "ajourholdstidspunkt": "2019-04-16T14:38:41.098+02:00",
+                        "erGjeldende": true,
+                        "kilde": "KILDE_DSF",
+                        "status": "iBruk",
+                        "foedselsEllerDNummer": "29084902258",
+                        "identifikatortype": "foedselsnummer"
+                    }
+                ],
+                "status": [
+                    {
+                        "ajourholdstidspunkt": "2019-04-16T14:38:41.098+02:00",
+                        "erGjeldende": true,
+                        "kilde": "KILDE_DSF",
+                        "gyldighetstidspunkt": "2019-04-16T14:38:41.098+02:00",
+                        "status": "bosatt"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+Eksempel på entydig søk med dataminimering (GET .../personer/entydigsoek?identifikasjonsnummer=09052400284&navn=RULLETRAPP&part=navn):
+
+```json
+
+{
+    "identifikasjonsnummer": [
+        {
+            "ajourholdstidspunkt": "2019-02-07T16:03:19+01:00",
+            "erGjeldende": true,
+            "kilde": "dsf-folkeregister-synkronisering",
+            "gyldighetstidspunkt": "2019-02-07T00:00:00+01:00",
+            "status": "iBruk",
+            "foedselsEllerDNummer": "09052400284",
+            "identifikatortype": "foedselsnummer"
+        }
+    ],
+    "navn": [
+        {
+            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
+            "erGjeldende": true,
+            "kilde": "",
+            "aarsak": "Innvandring",
+            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
+            "fornavn": "FORSTÅELSESFULL",
+            "etternavn": "RULLETRAPP"
+        }
+    ]
+}
+
 ```
 
 ### Feilkoder
