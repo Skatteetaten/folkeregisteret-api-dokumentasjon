@@ -13,6 +13,8 @@ Henvendelser om feil i produksjon skal fremdeles sendes til freg.produksjon@skat
 
 Henvendelser om DSF-tjenester skal fremdeles rettes til EVRY på onlineservice@evry.com
 
+For generelle henvendelser til folkeregisteret ta kontakt med brukerdialog på telefon 800 80 000, tastevalg 3.
+
 
 ## Spørsmål og svar er kategorisert etter område under:
 
