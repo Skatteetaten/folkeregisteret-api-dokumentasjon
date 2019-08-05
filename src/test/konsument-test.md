@@ -12,7 +12,7 @@ Prosjektet har egne oppstartsmøter med produsenter/konsumenter i forkant av tes
  
 ## Krav til testgjennomføring
 Konsumenten har ansvar for egen testgjennomføring. Test for konsumenter må fokusere på å avdekke at forventede forretningsregler trigges korrekt basert på aktuelle hendelser.
-Prosjektet ved testleder er tilgjengelig via test.mf@skatteetaten.no ved behov for oppfølging underveis. 
+Prosjektet ved testleder er tilgjengelig via test.mf@skatteetaten.no ved behov for oppfølging underveis. For andre henvendelser til prosjektet benytt folkeregister-operasjonssenter@skatteetaten.no. 
 
  
 ## Krav til testmiljø og testdata
