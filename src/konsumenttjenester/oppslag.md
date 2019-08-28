@@ -180,7 +180,39 @@ Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
             "adressegradering": "ugradert",
             "flyttedato": "2019-05-31"
         }
-    ]
+    ],
+      "postadresse": [
+    {
+      "hendelsedataId": "445668dc-8aa5-49c6-ad06-8bd2755df897",
+      "kilde": "KILDE_DSF",
+      "saksreferanse": "SAKSREFERANSE_MIGRERING",
+      "erGjeldende": true,
+      "gyldighetstidspunkt": "2008-08-08T00:00:00+02:00",
+      "postadresseIFrittFormat": {
+        "adresselinje": [
+          "GATE 22255"
+        ],
+        "postnummer": "9170",
+        "poststed": "LONGYEARBYEN"
+      },
+      "adressegradering": "UGRADERT"
+    }
+  ],
+  "preferertKontaktadresse": [
+    {
+      "kilde": "",
+      "saksreferanse": "",
+      "erGjeldende": true,
+      "valg": "POSTADRESSE",
+      "adressegradering": "UGRADERT",
+      "kontaktadresseIFrittFormat": {
+        "adresselinje": [
+          "GATE 22255",
+          "9170 LONGYEARBYEN"
+        ]
+      }
+    }
+  ]    
 }
 ```
 
