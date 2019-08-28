@@ -181,8 +181,8 @@ Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
             "flyttedato": "2019-05-31"
         }
     ],
-      "postadresse": [
-    {
+    "postadresse": [
+      {
       "hendelsedataId": "445668dc-8aa5-49c6-ad06-8bd2755df897",
       "kilde": "KILDE_DSF",
       "saksreferanse": "SAKSREFERANSE_MIGRERING",
@@ -194,11 +194,11 @@ Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
         ],
         "postnummer": "9170",
         "poststed": "LONGYEARBYEN"
-      },
-      "adressegradering": "UGRADERT"
-    }
-  ],
-  "preferertKontaktadresse": [
+       },
+       "adressegradering": "UGRADERT"
+     }
+    ],
+    "preferertKontaktadresse": [
     {
       "kilde": "",
       "saksreferanse": "",
