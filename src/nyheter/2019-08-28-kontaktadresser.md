@@ -1,6 +1,6 @@
 ---
 title: Tilgjengeliggjøring av kontaktadresser 
-date: 2019-06-11 
+date: 2019-08-28 
 ---
 
 Prosjekt modernisering av Folkeregisteret vil onsdag 28. august gjøre tilgjengelig informasjonselementer med informasjon om 
