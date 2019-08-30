@@ -8,7 +8,7 @@ title: Informasjonsmodell
 ## Informasjonsmodell
 Siste versjon av informasjonsmodellen er nå tilgjengelig. Informasjonsmodellen beskriver både eksisterende og fremtidige informasjonselementer. Det kan oppstå behov for å endre modellen da prosjektet ikke ferdigstilles før utgangen av 2020.
 
-* [Informasjonsmodell - Modernisering av Folkeregisteret](../dokumenter/20190830_Informasjonsmodell-Modernisering av Folkeregisteret v1.0.pdf)
+[Informasjonsmodell - Modernisering av Folkeregisteret](../dokumenter/20190830_Informasjonsmodell_Modernisering_av_Folkeregisteret_v1.0.pdf)
 
 
 ## Begrepsmodeller
