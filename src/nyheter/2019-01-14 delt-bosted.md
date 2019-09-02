@@ -7,9 +7,9 @@ I løpet av uke 3 vil alle avtaler om delt bosted som er registrert i DSF overf�
 Fra og med uke 4 vil Folkeregisteret begynne å registrere nye avtaler om delt bosted.
 
 Samtidig med at vi begynner å overføre/registrere  avtalene i freg, så blir de tilgjengelige for konsumentene som er koblet til freg.
-•	Informasjon om delt bosted for barn er ikke taushetsbelagt opplysning i Folkeregisteret. Det innebærer at offentlige virksomheter, samt private som utfører lovpålagte oppgaver (eller oppgaver på vegne av det offentlige), samt finansforetak vil kunne hente ut denne informasjonen fra Folkeregisteret, når de kobler seg på FREG. 
-•	Private virksomheter og aktører kan også få utlevert denne informasjonen, men kun for navngitte identifiserbare personer.
-•	Delt bosted distribueres ikke via DSF.
+* Informasjon om delt bosted for barn er ikke taushetsbelagt opplysning i Folkeregisteret. Det innebærer at offentlige virksomheter, samt private som utfører lovpålagte oppgaver (eller oppgaver på vegne av det offentlige), samt finansforetak vil kunne hente ut denne informasjonen fra Folkeregisteret, når de kobler seg på FREG. 
+* Private virksomheter og aktører kan også få utlevert denne informasjonen, men kun for navngitte identifiserbare personer.
+* Delt bosted distribueres ikke via DSF.
 
 
 Mer informasjon om delt fast bosted:
