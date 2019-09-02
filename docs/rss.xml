@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Sep 2019 07:34:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Sep 2019 07:52:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
 
 Tidligere driftsmelding som nå AVLYSES:
 Fredag 01.02.2019 kl 20:00 til søndag 03.02.2019 kl 22:00 kjøres det en større oppdatering av FREG.
@@ -216,7 +216,12 @@ Ved spørsmål så sendes mail freg.produksjon@skatteetaten.no
 Det medfører at rettighspakken ikke oppdateres i perioden, men er tilgjengelig.
 
 Ved spørsmål så sendes mail freg.produksjon@skatteetaten.no
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-01-23%20Rettighetspakke%20vedlikehold</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-01-23%20Rettighetspakke%20vedlikehold</guid></item><item><title><![CDATA[Varsling vedlikehold onsdag 08.05.2019]]></title><description><![CDATA[Periode: onsdag 08.05.2019 kl 16 til onsdag 08.05.2019 kl 19.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-01-23%20Rettighetspakke%20vedlikehold</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-01-23%20Rettighetspakke%20vedlikehold</guid></item><item><title><![CDATA[Varsling vedlikehold onsdag 04.09.2019]]></title><description><![CDATA[Periode: onsdag 04.09.2019 kl 20:00 til torsdag 05.09.2019 kl 08:00.
+Det må gjøres vedlikehold i perioden. Påvirker produsent tjenester som da ikke får tilbakemelding i perioden. 
+Inn-tjenestene er tilgjengelig, men forsinket kvittering.
+
+Ved spørsmål så sendes mail freg.produksjon@skatteetaten.no
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-09-02-vedlikehold</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-09-02-vedlikehold</guid></item><item><title><![CDATA[Varsling vedlikehold onsdag 08.05.2019]]></title><description><![CDATA[Periode: onsdag 08.05.2019 kl 16 til onsdag 08.05.2019 kl 19.
 
 Database endringer for rettighetspakker. Medfører at data ikke oppdateres i perioden.
 Eksisterende informasjon er tilgjengelig.
