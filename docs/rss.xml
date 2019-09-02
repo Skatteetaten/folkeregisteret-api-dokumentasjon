@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Sep 2019 06:54:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Sep 2019 06:58:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
 
 Tidligere driftsmelding som nå AVLYSES:
 Fredag 01.02.2019 kl 20:00 til søndag 03.02.2019 kl 22:00 kjøres det en større oppdatering av FREG.
@@ -67,7 +67,30 @@ Ved spørsmål så sendes mail til freg.produksjon@skatteetaten.no.
 2018-12-07 FEIL RETTET!
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-12-06-Feil-i-DNR</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-12-06-Feil-i-DNR</guid></item><item><title><![CDATA[Feil i sentral infrastruktur]]></title><description><![CDATA[Pga en feil sentral infrastruktur oppleves det feil i FREG. Vi jobber med feilretting og oppdaterer med status så snart som mulig.
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-08-22-Feil%20i%20FREG</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-08-22-Feil%20i%20FREG</guid></item><item><title><![CDATA[Feil i sentral infrastruktur]]></title><description><![CDATA[Pga en feil sentral infrastruktur oppleves det feil i FREG. Vi jobber med feilretting og oppdaterer med status så snart som mulig.
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-08-23-Ustabilitet-FREG</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-08-23-Ustabilitet-FREG</guid></item><item><title><![CDATA[HØY VIKTIGHET!! Feil i FREG]]></title><description><![CDATA[Det er oppdaget en alvorlig feil i FREG som gjør at produsent-tjenester rammes.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-08-23-Ustabilitet-FREG</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-08-23-Ustabilitet-FREG</guid></item><item><title><![CDATA[Første versjon av testbefolkningen blir tilgjengelig 9. september i konsumenttest]]></title><description><![CDATA[<p>Vi planlegger nå å legge ut første versjon av testbefolkningen.
+Av tekniske årsaker ønsker vi legge ut testbefolkningen i konsumenttestmiljøet ( ikke playground som tidligere kommunisert).
+I forbindelse med utlegg av testbefolkningen trenger vi ta ned testmiljøet en periode.
+Testmiljøet playground vil i perioden beholdes uendret og kan fortsatt benyttes til test.</p>
+<h1 id="hva-m-konsumentene-gj-re-">Hva må konsumentene gjøre?</h1>
+<p>Alle konsumenter må i perioden slette tidligere testpersoner fra konsumenttestmiljøet fra sine respektive testmiljø, og laste inn de nye testpersoner basert på den nye testbefolkningen når den er klar.</p>
+<h1 id="tidsplan-">Tidsplan:</h1>
+<ul>
+<li><ol start="3">
+<li>september: Konsumenttest tas ned kl. 16.</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>– 8. september: Vi legger inn testbefolkningen og verifiserer.</li>
+</ol>
+</li>
+<li><ol start="9">
+<li>september: Konsumenttest åpnes opp igjen for test.</li>
+</ol>
+</li>
+</ul>
+<p>Ta kontakt om foreslåtte tidspunkt er uheldige for dere som konsumenter via <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a></p>
+<p>Vi gir beskjed via ny nyhetssak så snart det er klart til videre bruk av konsumenttestmiljøet.</p>
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/forste-versjon-av-testbefolkningen-blir-tilgjengelig-9.-september-i-konsumenttest</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/forste-versjon-av-testbefolkningen-blir-tilgjengelig-9.-september-i-konsumenttest</guid><pubDate>Mon, 02 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[HØY VIKTIGHET!! Feil i FREG]]></title><description><![CDATA[Det er oppdaget en alvorlig feil i FREG som gjør at produsent-tjenester rammes.
 Det medfører at man kan oppleve å ikke få svar på tjenester for å sende inn meldinger. Meldingene tas i mot, men svar blir forsinket.
 
 Ved spørsmål så sendes mail freg.produksjon@skatteetaten.no
@@ -97,10 +120,10 @@ Hvis det er innvendinger i forhold til tidspunkt for gjennomføring av dette, gi
 Gå til vår <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/funksjonell-beskrivelse/">funksjonelle beskrivelse</a>
 for en totaloversikt over personopplysningene som vil bli tilgjengelige gjennom Folkeregisterets konsumenttjenester.</p>
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/persondokument-i-forste-beta-versjon</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/persondokument-i-forste-beta-versjon</guid><pubDate>Thu, 03 May 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Pga feil i sentral infrastruktur er FREG ustabilt]]></title><description><![CDATA[Pga feil i sentral infrastruktur i Skatteetaten vil produsent og konsument tjenestester oppleve ustabilitet. 
-Det jobbes med saken og man forventer at feilen er rettet innen kl 10:00
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-04-Ustabilitet-freg</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-04-Ustabilitet-freg</guid></item><item><title><![CDATA[Pga feil i sentral infrastruktur er FREG ustabilt]]></title><description><![CDATA[Pga feil i sentral infrastruktur i Skatteetaten vil produsent og konsument tjenestester oppleve ustabilitet. 
 Det jobbes med saken og man forventer at feilen blir rettet så snart som mulig
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-31-Feil-i-FREG</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-31-Feil-i-FREG</guid></item><item><title><![CDATA[Problemer-tilbakemelding-test]]></title><description><![CDATA[Det er for tiden et problem med lesing av tilbakemelding for produsentene. De får en feilmelding om at org.nummer mangler.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-31-Feil-i-FREG</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-31-Feil-i-FREG</guid></item><item><title><![CDATA[Pga feil i sentral infrastruktur er FREG ustabilt]]></title><description><![CDATA[Pga feil i sentral infrastruktur i Skatteetaten vil produsent og konsument tjenestester oppleve ustabilitet. 
+Det jobbes med saken og man forventer at feilen er rettet innen kl 10:00
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-04-Ustabilitet-freg</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-07-04-Ustabilitet-freg</guid></item><item><title><![CDATA[Problemer-tilbakemelding-test]]></title><description><![CDATA[Det er for tiden et problem med lesing av tilbakemelding for produsentene. De får en feilmelding om at org.nummer mangler.
 Vi jobber med saken og legger ut ny informasjon så snart det er løst.]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-11-22-Problemer-tilbakemelding-test</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-11-22-Problemer-tilbakemelding-test</guid></item><item><title><![CDATA[Prosjektet utvider med nye hendelser på hendelseslisten]]></title><description><![CDATA[
 Prosjektet utvider med informasjon om opprettelse av person, informasjon om tildeling av nytt d-nummer
 eller fødselsnummer til personer, og informasjon om endring i forståelse av
