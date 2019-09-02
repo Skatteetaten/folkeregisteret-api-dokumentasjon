@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Sep 2019 07:02:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Sep 2019 07:34:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
 
 Tidligere driftsmelding som nå AVLYSES:
 Fredag 01.02.2019 kl 20:00 til søndag 03.02.2019 kl 22:00 kjøres det en større oppdatering av FREG.
@@ -74,20 +74,11 @@ Testmiljøet playground vil i perioden beholdes uendret og kan fortsatt benyttes
 <h4 id="hva-m-konsumentene-gj-re-">Hva må konsumentene gjøre?</h4>
 <p>Alle konsumenter må i perioden slette tidligere testpersoner fra konsumenttestmiljøet fra sine respektive testmiljø, og laste inn de nye testpersoner basert på den nye testbefolkningen når den er klar.</p>
 <h4 id="tidsplan-">Tidsplan:</h4>
-<ul>
-<li><ol start="3">
+<ol start="3">
 <li>september: Konsumenttest tas ned kl. 16.</li>
-</ol>
-</li>
-<li><ol start="4">
 <li>– 8. september: Vi legger inn testbefolkningen og verifiserer.</li>
-</ol>
-</li>
-<li><ol start="9">
 <li>september: Konsumenttest åpnes opp igjen for test.</li>
 </ol>
-</li>
-</ul>
 <p>Ta kontakt om foreslåtte tidspunkt er uheldige for dere som konsumenter via <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a></p>
 <p>Vi gir beskjed via ny nyhetssak så snart det er klart til videre bruk av konsumenttestmiljøet.</p>
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/forste-versjon-av-testbefolkningen-blir-tilgjengelig-9.-september-i-konsumenttest</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/forste-versjon-av-testbefolkningen-blir-tilgjengelig-9.-september-i-konsumenttest</guid><pubDate>Mon, 02 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[HØY VIKTIGHET!! Feil i FREG]]></title><description><![CDATA[Det er oppdaget en alvorlig feil i FREG som gjør at produsent-tjenester rammes.
