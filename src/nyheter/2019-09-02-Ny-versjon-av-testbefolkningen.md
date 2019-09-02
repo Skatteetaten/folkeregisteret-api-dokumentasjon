@@ -8,10 +8,10 @@ Av tekniske årsaker ønsker vi legge ut testbefolkningen i konsumenttestmiljøe
 I forbindelse med utlegg av testbefolkningen trenger vi ta ned testmiljøet en periode.
 Testmiljøet playground vil i perioden beholdes uendret og kan fortsatt benyttes til test.
  
-# Hva må konsumentene gjøre?
+#### Hva må konsumentene gjøre?
 Alle konsumenter må i perioden slette tidligere testpersoner fra konsumenttestmiljøet fra sine respektive testmiljø, og laste inn de nye testpersoner basert på den nye testbefolkningen når den er klar.
  
-# Tidsplan:
+#### Tidsplan:
 3. september: Konsumenttest tas ned kl. 16.
 4. – 8. september: Vi legger inn testbefolkningen og verifiserer.
 9. september: Konsumenttest åpnes opp igjen for test.
