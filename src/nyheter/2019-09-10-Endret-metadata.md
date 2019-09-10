@@ -9,6 +9,5 @@ kontaktadresse. Dermed vil alle informasjonselementer ha gyldighetsperioder så 
 
 Endringene settes i produksjon torsdag 12. september
 
-Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt.
+Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt [her] (..src/dokumenter/20190910_endringMetadata.JPG) 
 
-[[https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/docs/nyheter/2019-09-10-Endret-metadata]]
