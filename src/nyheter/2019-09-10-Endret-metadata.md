@@ -9,5 +9,5 @@ kontaktadresse. Dermed vil alle informasjonselementer ha gyldighetsperioder så 
 
 Endringene settes i produksjon torsdag 12. september
 
-Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt [her] (..src/dokumenter/20190910_endringMetadata.JPG) 
+Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt [her](..src/dokumenter/20190910_endringMetadata.JPG) 
 
