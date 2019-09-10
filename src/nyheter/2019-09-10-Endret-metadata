@@ -11,15 +11,4 @@ Endringene settes i produksjon torsdag 12. september
 
 Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt.
 
-"oppholdsadresse": [
-    {
-      "ajourholdstidspunkt": "2019-03-25T15:33:25+01:00",
-      "erGjeldende": false,
-      "kilde": "",
-      "aarsak": "Annen avgang",
-      "gyldighetstidspunkt": "2019-03-07T00:00:00+01:00",
-      "opphoerstidspunkt": "2019-03-07T00:00:00+01:00",
-      "adressenErUkjent": true,
-      "adressegradering": "ugradert"
-    }
-  ],
+[[https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/blob/master/docs/nyheter/2019-09-10-Endret-metadata]]
