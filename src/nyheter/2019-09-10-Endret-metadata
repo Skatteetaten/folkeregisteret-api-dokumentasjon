@@ -1,0 +1,25 @@
+---
+title: Gyldighetsperioder for alle informasjonelementer.
+date: 2019-09-10
+---
+
+Opprinnelig var det tiltenkt at ikke alle elementer hadde behov for gyldighetsperioder. Etter innspill fra konsumenter har vi nå 
+lagt til gyldighetsperioder for informasjonselementene falsk identitet, oppholdsadresse, utenlandsk personidentifikator og preferert 
+kontaktadresse. Dermed vil alle informasjonselementer ha gyldighetsperioder så fremt disse er satt i registeret. 
+
+Endringene settes i produksjon torsdag 12. september
+
+Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt.
+
+"oppholdsadresse": [
+    {
+      "ajourholdstidspunkt": "2019-03-25T15:33:25+01:00",
+      "erGjeldende": false,
+      "kilde": "",
+      "aarsak": "Annen avgang",
+      "gyldighetstidspunkt": "2019-03-07T00:00:00+01:00",
+      "opphoerstidspunkt": "2019-03-07T00:00:00+01:00",
+      "adressenErUkjent": true,
+      "adressegradering": "ugradert"
+    }
+  ],
