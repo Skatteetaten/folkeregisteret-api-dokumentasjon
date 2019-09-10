@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 10 Sep 2019 11:18:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 10 Sep 2019 11:22:10 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
 
 Tidligere driftsmelding som nå AVLYSES:
 Fredag 01.02.2019 kl 20:00 til søndag 03.02.2019 kl 22:00 kjøres det en større oppdatering av FREG.
@@ -94,18 +94,7 @@ Endringene settes i produksjon torsdag 12. september
 
 Eksempel på svar med gyldighetstidspunkt og opphørstidspunkt.
 
-"oppholdsadresse": [
-    {
-      "ajourholdstidspunkt": "2019-03-25T15:33:25+01:00",
-      "erGjeldende": false,
-      "kilde": "",
-      "aarsak": "Annen avgang",
-      "gyldighetstidspunkt": "2019-03-07T00:00:00+01:00",
-      "opphoerstidspunkt": "2019-03-07T00:00:00+01:00",
-      "adressenErUkjent": true,
-      "adressegradering": "ugradert"
-    }
-  ],
+[[https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/blob/master/docs/nyheter/2019-09-10-Endret-metadata]]
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/2019-09-10-Endret-metadata</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/2019-09-10-Endret-metadata</guid><pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[HØY VIKTIGHET!! Feil i FREG]]></title><description><![CDATA[Det er oppdaget en alvorlig feil i FREG som gjør at produsent-tjenester rammes.
 Det medfører at man kan oppleve å ikke få svar på tjenester for å sende inn meldinger. Meldingene tas i mot, men svar blir forsinket.
 
