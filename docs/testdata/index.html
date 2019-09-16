@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width">
-  <title>Ny og oppdatert dokumentasjon</title>
+  <title>Testdata</title>
 </head>
 <body>
 <div>
@@ -36,7 +36,7 @@
   
     <div class="header-sidetittel">
       <h1>
-        <span class="header-undertittel">Ny og oppdatert dokumentasjon</span>
+        <span class="header-undertittel">Testdata</span>
       </h1>
     </div>
   </header>
@@ -69,7 +69,14 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <p>Prosjektet har oppdatert dokument for spesifikasjon av tilgjengeliggjøring av opplysninger fra Folkeregisteret og opprettet dokumentet &quot;Hendelser fra Folkeregisteret&quot; som beskriver de ulike hendelsestypene som er og kommer på hendelseslisten. Begge dokumentene finnes på siden <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/funksjonell-beskrivelse/">Funskjonell beskrivelse</a>.</p>
+          <h1 id="syntetiske-testpersoner-og-hendelser">Syntetiske testpersoner og hendelser</h1>
+    <p>I parallell med at Folkeregisteret moderniseres, jobber prosjektet med å etablere et testfolkeregister med syntetiske testpersoner. En syntetiske testbefolkningen er tilgjengelig fra august 2019 for virksomheter som har tilgang til tjenestene. </p>
+    <p>Testbefolkningen lages basert på et representativt utvalg av Norges befolkning, og vil bestå av konstruerte data som ikke har rot i virkeligheten. Testpersonene navngis ikke med ekte navn, men med navn som er satt sammen av adjektiv og substantiv – f.eks «Vakker blomst». Testpersonene skal bo på ekte gateadresser og med reelle postnummer og kommunenummer.</p>
+    <p>I arbeidet med å etablere testbefolkningen jobber vi iterativt, og basert på tilbakemeldinger eller funn fra konsumentene.  Testdataene vil resettes med jevne mellomrom. Dette vil bli varslet i forkant.</p>
+    <h2 id="krav-til-testmilj-">Krav til testmiljø</h2>
+    <p>Eksterne som skal teste mot modernisert folkeregister må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø må etablere dette. De som er både produsenter og konsumenter anbefales å teste produsentrollen og konsumentrollen fra separate testmiljø.</p>
+    <h2 id="tverretatlig-samarbeid-om-test">Tverretatlig samarbeid om test</h2>
+    <p>Arbeidet med å etablere en representativ, syntetisk testbefolkning, inngår i et pågående tverretatlig samarbeid om test og testdata. De deltakende sektorene har samlet seg bak en løsning for testdata på tvers av nasjonale felleskomponenter, og på tvers av offentlig sektor. Testdata fra det moderniserte Folkeregisteret er første steg på veien mot den foreslåtte løsningen for tverretatlige testdata.</p>
     
         </div>
       </div>
