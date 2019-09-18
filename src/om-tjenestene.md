@@ -20,5 +20,5 @@ I "ny RSS-feed" dialogboksen legg til adressen  https://skatteetaten.github.io/f
 
 **Vi publiserer [nyheter og driftsvarsler her](../rss.xml). **
 
-Obs! Varsling via RSS feed er under utprøving og ansees som eksperimentell. For deg som er i pilot med oss allerede vil vanlige varslingsrutiner fungere som tidligere og vi vil informere deg via vanlige kanaler om endringer på dette.
+
 
