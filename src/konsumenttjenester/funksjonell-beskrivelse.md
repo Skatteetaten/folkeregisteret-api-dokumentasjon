@@ -9,7 +9,7 @@ Denne dokumentasjonen gir  en totaloversikt over personopplysningene som skal bl
 
 Merk også at denne dokumentasjonen beskriver fremtidsbildet for de av dere som har hjemmel til å se all registerinformasjonen, også den som er taushetsbelagt. Hvilken rettighetspakke virksomheten tilhører vil avgjøre hvilke dataelementer som blir tilgjengelige for den enkelte.
 
-I siste halvdel av 2019 vil alle opplysningene være tilgjengelig i tjenester fra det moderniserte Folkeregisteret.
+I siste halvdel av 2019 vil alle personopplysningne fra DSF være migrert over til modernisert folkeregeister.   
 
 | dokument | beskrivelse |
 |----------|-------------|
