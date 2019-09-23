@@ -75,10 +75,11 @@
     Tjenesten er delt i 3 deler som utføres i rekkefølge:</p>
     <ul>
     <li>Finn tidspunktet uttrekket ønskes fra, representert ved feedsekvensnummer. Eksempelvis siste sekvensnummer på <a href="../hendelsesliste">hendelsesfeeden</a></li>
-    <li>Bestille uttrekk basert på et sett med kriterier, bestillingen returnerer en identifikator som benyttes for å hente resultatet.</li>
+    <li>Bestille uttrekk basert på et sett med kriterier, bestillingen returnerer en identifikator som benyttes for å hente resultatet. </li>
     <li>Batchvis henting av resultatet som består av identifikatorer som igjen peker på persondokumenter</li>
     <li>Benytte <a href="../oppslag">bulkoppslag</a> for å hente persondokumentene basert på indentifikatorene fra steg 2</li>
     </ul>
+    <p>Identifikator (JobbID) returneres umiddelbart, men batchen er ikke nødvendigvis ferdig umiddelbart. Feilmelding 404 indikerer at jobbID ikke er ferdig. Det anbefales å bygge inn en retry-mekanisme med en delay mellom hvert forsøk.  </p>
     <p>Følgende algoritme beskriver flyten for de tre tjenestene:</p>
     <pre><code>  jobbid = bestillUttrekk(sekvensnummer)
     
@@ -201,11 +202,15 @@
     </tr>
     <tr>
     <td>404</td>
-    <td>Feil uri brukt.</td>
+    <td>Jobb med jobbid er enda ikke ferdig, og batch med batch id finnes ikke</td>
     </tr>
     <tr>
     <td>406</td>
     <td>Oppgitt Accept-header inneholder ikke &#39;application/xml&#39; eller &#39;application/json&#39;</td>
+    </tr>
+    <tr>
+    <td>410</td>
+    <td>Jobb med jobbid eller batch med batch id eksisterer ikke</td>
     </tr>
     <tr>
     <td>429</td>
