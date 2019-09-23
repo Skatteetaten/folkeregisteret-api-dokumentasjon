@@ -8,9 +8,12 @@ Merk at uttrekk pt kun er tilgjengelig for rettighetspakke - offentlig med hjemm
 Uttrekktjenesten gir tilgang til å hente ut et utvalg med personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først.
 Tjenesten er delt i 3 deler som utføres i rekkefølge:
    * Finn tidspunktet uttrekket ønskes fra, representert ved feedsekvensnummer. Eksempelvis siste sekvensnummer på [hendelsesfeeden](../hendelsesliste)
-   * Bestille uttrekk basert på et sett med kriterier, bestillingen returnerer en identifikator som benyttes for å hente resultatet.
+   * Bestille uttrekk basert på et sett med kriterier, bestillingen returnerer en identifikator som benyttes for å hente resultatet. 
    * Batchvis henting av resultatet som består av identifikatorer som igjen peker på persondokumenter
    * Benytte [bulkoppslag](../oppslag) for å hente persondokumentene basert på indentifikatorene fra steg 2
+
+Identifikator (JobbID) returneres umiddelbart, men batchen er ikke nødvendigvis ferdig umiddelbart. Feilmelding 404 indikerer at jobbID ikke er ferdig. Det anbefales å bygge inn en retry-mekanisme med en delay mellom hvert forsøk.  
+
 
 Følgende algoritme beskriver flyten for de tre tjenestene:
 ```
@@ -26,6 +29,8 @@ Følgende algoritme beskriver flyten for de tre tjenestene:
     batch = hentResultat(jobbid, ++batchteller)
   }
 ```
+
+
 
 For å benytte tjenestene bygges URL opp slik:
    {miljø}/folkeregisteret/offentlig-med-hjemmel/api/{versjon}/{ressurs}
@@ -96,7 +101,8 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 |----------|-------|
 | 401 | Autentiseringsinformasjon mangler |
 | 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten |
-| 404 | Feil uri brukt. |
+| 404 | Jobb med jobbid er enda ikke ferdig, og batch med batch id finnes ikke  |
 | 406 | Oppgitt Accept-header inneholder ikke 'application/xml' eller 'application/json' |
+| 410 | Jobb med jobbid eller batch med batch id eksisterer ikke|
 | 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
 | 500 | Feil i tjenesten. Vennligst prøv igjen senere. |
