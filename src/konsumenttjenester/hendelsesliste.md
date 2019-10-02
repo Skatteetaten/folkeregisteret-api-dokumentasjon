@@ -30,9 +30,9 @@ Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt
 
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
-|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.|
-|offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
-|finans-og-begrenset/api/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)|
+|offentlig-med-hjemmel/api/v1/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.|
+|offentlig-uten-hjemmel/api/v1/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
+|finans-og-begrenset/api/v1/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)|
 
 ## Miljøer
 
