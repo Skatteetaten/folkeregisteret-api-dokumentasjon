@@ -2,7 +2,7 @@
 title: Uttrekk
 ---
 
-Merk at uttrekk pt kun er tilgjengelig for rettighetspakke - offentlig med hjemmel.
+Merk at uttrekk pt kun er tilgjengelig for rettighetspakke - offentlig med hjemmel.  
 
 # Grensesnittbeskrivelse
 Uttrekktjenesten gir tilgang til å hente ut et utvalg med personer basert på én eller flere kriterier, som for eksempel fødselsår, gatenavn, og kommune, uten å identifisere personene først.
@@ -46,7 +46,7 @@ For å benytte tjenestene bygges URL opp slik:
 
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
-|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
+|offentlig-med-hjemmel/api/v1/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
 
 ## Miljøer
 
