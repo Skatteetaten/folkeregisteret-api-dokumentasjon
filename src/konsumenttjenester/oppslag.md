@@ -39,9 +39,9 @@ I tillegg må en av følgende ikke identifiserende være oppgitt:
 
 | Rettighetspakke|Beskrivelse|
 |----------------|-----------|
-|offentlig-med-hjemmel/api/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
-|offentlig-uten-hjemmel/api/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
-|finans-og-begrenset/api/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger.|
+|offentlig-med-hjemmel/api/v1/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
+|offentlig-uten-hjemmel/api/v1/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
+|finans-og-begrenset/api/v1/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger.|
 
 ## Miljøer
 
