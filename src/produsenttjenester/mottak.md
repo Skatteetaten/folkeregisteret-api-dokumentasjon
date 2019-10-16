@@ -19,17 +19,18 @@ Tjenestenes endepunkt: <br>
 | rekvisisjon_av_dnummer_v5.vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/1511792480.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v5 |
 | doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [png](../modeller/1478705212.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
 | doedsfall_v1.1                    | [xsd](../kontrakter/MeldingOmDoedsfall_v1.1.xsd)                     | [png](../modeller/Doedsfall.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
+| doedsfall_v1.2                    | [xsd](../kontrakter/MeldingOmDoedsfall_v1.2.xsd)                     | [png](../modeller/Doedsfall.png) | test | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/1510835122.jpg) | produksjon | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.1.xsd)        |  | produksjon | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.2.xsd)        |  | test | HendelserISakOmFolkeregistrering_v1 |
 | endring_av_dnummerperson_v2       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v2.0.xsd)     | | produksjon | HendelserISakOmEndringAvDNummerPerson_v1<br><b>Manuell</b>: HendelserISakOmFolkeregistrering_v1 |
 | endring_av_dnummerperson_v3       | [xsd](../kontrakter/MeldingOmEndringAvPersonMedDNummer_v3.0.xsd)     | | produksjon | HendelserISakOmEndringAvDNummerPerson_v1<br><b>Manuell</b>: HendelserISakOmFolkeregistrering_v1 |
-| foedsel_v1                        | [xsd](../kontrakter/Foedselsmelding_v1.0.xsd)                         | | test | HendelserISakOmFolkeregistrering_v1 |
+| foedsel_v1                        | [xsd](../kontrakter/Foedselsmelding_v1.0.xsd)                        | | test | HendelserISakOmFolkeregistrering_v1 |
 | kontaktopplysninger_doedsbo_v1    | [xsd](../kontrakter/MeldingOmKontaktopplysningerForDoedsbo_v1.0.xsd) | [png](../modeller/1485934541.png) | test | HendelserISakOmFolkeregistrering_v1 |
 | separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
 | skilsmisse_v1                     | [xsd](../kontrakter/MeldingOmSkilsmisse_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
 | innflytting_v1                    | [xsd](../kontrakter/MeldingOmInnflytting_v1.0.xsd)                   | | test | HendelserISakOmFolkeregistrering_v1 |
-| flyttemelding_fra_posten_v1       | [xsd](../kontrakter/MeldingOmFlyttingFraPosten_v1.0.xsd)              | | test | Ingen tilbakemelding               |                                
+| flyttemelding_fra_posten_v1       | [xsd](../kontrakter/MeldingOmFlyttingFraPosten_v1.0.xsd)             | | test | Ingen tilbakemelding               |                                
 
 Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignatur.xsd) av meldingene.
 
