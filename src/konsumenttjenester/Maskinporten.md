@@ -3,7 +3,7 @@ title: Maskinporten
 ---
 
 ## Komme i gang med Maskinporten
-Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Difi har beskrevet overordenet hvordan [API-sikring med maskinporten](https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html) gjøres.
+Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Difi har beskrevet overordenet hvordan [API-sikring med maskinporten](https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html" target="_blank) gjøres.
 Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. 
  
 For å komme i gang med testing må det gjøres noen forberelser hos virksomheten:
