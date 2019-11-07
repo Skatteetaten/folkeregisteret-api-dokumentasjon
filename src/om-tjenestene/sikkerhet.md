@@ -4,6 +4,10 @@ title: Sikkerhet
 
 **NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
+#Nåværende løsning for sikkerhet. 
+Ny løsning ved bruk av maskinporten er angitt her: [Oppkobling ved vruk av maskinportem](../konsumenttjnester/Maskinporten.md) 
+ 
+
 # Transportsikring
 Kommunikasjonen mellom konsumenten/produsenten og Skatteetaten skal foregå på kryptert kanal over internett, dvs. bruk av 2-veis SSL. Det er ikke ønskelig at det etableres fast/leid-linje for kommunikasjonen. Transporten sikres gjennom bruk av virksomhetssertifikater og asymmetrisk kryptering før felles symmetrisk nøkkel avtales for 2-veis SSL.
 
@@ -19,3 +23,4 @@ Du trenger tilgang til [Private key](https://en.wikipedia.org/wiki/Public-key_cr
 
 
 Det kreves at man utfører standard klientsertifikatautentisering. De fleste vanlige http-verktøy har støtte for dette. Et eksempel på verktøy man kan bruke er [curl](https://ec.haxx.se/usingcurl-tls.html).
+
