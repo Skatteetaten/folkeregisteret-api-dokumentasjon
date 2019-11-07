@@ -43,7 +43,7 @@ Når dette er gjort kan man begynne å bruke folkeregister-api'ene.
 Overordnet gjøres følgende:
 
 1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret
-    [se ]se )
+   
 2. Tokenet legges ved kallet til folkeregisteret (i Authoriaztion header)
     se ulike typer kall [her](../hendelsesliste) og  [her](../oppslag)
 
