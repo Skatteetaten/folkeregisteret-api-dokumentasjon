@@ -5,7 +5,7 @@ title: Sikkerhet
 **NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
 #Nåværende løsning for sikkerhet. 
-Ny løsning ved bruk av maskinporten er angitt her: [Oppkobling ved vruk av maskinportem](../konsumenttjnester/Maskinporten.md) 
+Ny løsning ved bruk av maskinporten er angitt her: [Oppkobling ved vruk av maskinportem](../konsumenttjenester/Maskinporten.md) 
  
 
 # Transportsikring
