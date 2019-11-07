@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Maskinporten</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Maskinporten</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../avtaler">Avtaler</a>
+          <a href="../dataminimering">Dataminimering</a>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../maskinporten">Maskinporten</a>
+          <a href="../oppslag">Oppslag</a>
+          <a href="../uttrekk">Uttrekk</a>
+        <div><a class="index" href="../test">Test</a></div>
+          <a href="../test-for-konsumenter">Test for konsumenter</a>
+          <a href="../test-for-produsenter">Test for produsenter</a>
+          <a href="../testdata">Testdata</a>
+        <div><a class="index" href="../sporsmal-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <h2 id="komme-i-gang-med-maskinporten">Komme i gang med Maskinporten</h2>
+    <p>Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Difi har beskrevet overordenet hvordan <a href="https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html">API-sikring med maskinporten</a> gjøres.
+    Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. </p>
+    <p>For å komme i gang med testing må det gjøres noen forberelser hos virksomheten:</p>
+    <p>####1) Sende forespørsel om å bli opprettet som bruker.
+      Inntil videre gjøres dette ved manuell kontakt med interessentoppfølger for folkeregisteret. Prosjektet avklarer hvilken retighetspakke virksomheten skal ha tilgang til. Som oftest er dette basert på hjemmelsgrunnlaget. Les mer om hvilken gruppe virksomheten tilhører: <a href="https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/">https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/</a>.</p>
+    <p>Så snart korrekt rettighetspakke er avklart vil folkeregisteret klargjøre virksomheten i sine systemer.</p>
+    <p>####2) Klargjøring hos Maskinporten</p>
+    <pre><code>NB! All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS
+    Bruk av REST-api&#39;er hos Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetsserifikat 
+    </code></pre><p>Se mer informasjon om dette her: <a href="https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html">https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html</a></p>
+    <h6 id="klargj-ring-fra-folkeregisteret-">Klargjøring fra Folkeregisteret:</h6>
+    <p>Så snart korrekt rettighetspakke for virksomheten er avklart, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og rettighetspakke til DIFI. Rettighetspakken tilsvarer &#39;scope&#39; på maskinporten-språk.
+    Foreløpig er det kun laget ett scope som dekker rettighetspakken &#39;offentlig-med-hjemmel&#39;. Folkeregisteret vil derfor melde inn virksomheten slik:</p>
+    <pre><code>POST /scopes/access/
+    {
+      &quot;scope&quot;: &quot;skatteetaten:medhjemmel&quot;,
+      &quot;consumer_orgno&quot;: &quot;999888999&quot;
+    }
+    </code></pre><p>Dette gir virksomheten (med org.nummer 999888999) tilgang til å få tokens fra maskinporten for scopet &quot;skatteetaten:medhjemmel&quot;</p>
+    <h6 id="klargj-ring-fra-virksomheten-">Klargjøring fra Virksomheten:</h6>
+    <p>Når virksomheten har fått beskjed at tilgangen er opprettet i maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data.
+    Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via <a href="https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html#4-konfigurere-oauth2-klient">ID-porten sitt API for selvbetjening av integrasjoner</a>.
+    Når dette er gjort kan man begynne å bruke folkeregister-api&#39;ene.</p>
+    <p>####3) Bruke folkeregister-api&#39;ene med token fra maskinporten
+    Overordnet gjøres følgende:</p>
+    <ol>
+    <li>Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret</li>
+    <li>Tokenet legges ved kallet til folkeregisteret (i Authoriaztion header)</li>
+    <li>Folkeregisteret verifisere at virksomheten er den de sier de er (autentisering) og at de har rett til den informasjonen de prøver å hente (autorisering).</li>
+    <li>Hvis alt er OK returneres data iht. forespørselen.</li>
+    </ol>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
