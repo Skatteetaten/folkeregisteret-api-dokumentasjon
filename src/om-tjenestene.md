@@ -5,7 +5,7 @@ title: Om tjenestene
 
 Folkeregisteret tilbyr en rekke api-er som kan benyttes av virksomheter som produserer eller bruker folkeregisterdata. Dokumentasjon av API-ene er samlet på denne nettsiden.
 
-Tjenestene er delt inn i produsenttjenester og konsumenttjenester. Produsenttjenester er tjenester som benyttes av de som er produsenter av data for Folkeregisteret. Konsumenttjenester er tjenester for å hente data fra registeret, rettet mot alle brukerne av folkeregisterdata.
+Tjenestene er delt inn i [produsenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/produsenttjenester/) og [konsumenttjenester.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/) Produsenttjenester er tjenester som benyttes av de som er produsenter av data for Folkeregisteret. Konsumenttjenester er tjenester for å hente data fra registeret, rettet mot alle brukerne av folkeregisterdata.
 
 Systemleverandører som skal ha tilgang til Folkeregisteret på vegne av konsumenter kan koble seg opp 2. kvartal 2020. Konsumenter som skal ha tilgang til Folkeregisteret for egen organisasjon kan koble seg opp i 3. kvartal 2020. Informasjon om hvordan man kommer i gang med Folkeregisteret finnes på finnes her. For å få tilgang til tjenestene må man søke tilgang og godta bruksvilkår via Altinn. For å få tilgang til taushetsbelagt informasjon må man ha hjemmel i eget lovverk. 
 
@@ -13,10 +13,13 @@ Oppkobling og delegering av tilgang til systemleverandører gjøres ved hjelp av
 
 **Generelle henvendelser til prosjektet kan rettes til [Veiledningsenteret](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/).**
 
-Mer informasjon om moderniseringen av folkeretisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/person/folkeregister/om/modernisering)
+Mer informasjon om moderniseringen av folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/person/folkeregister/om/modernisering)
 
-
-
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
 
 
 ## Nyheter og driftsvarsel
