@@ -44,9 +44,12 @@ Overordnet gjøres følgende:
 
 1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret
    
-2. Tokenet legges ved kallet til folkeregisteret (i Authorization header)
-    se ulike typer kall [her](../hendelsesliste) og  [her](../oppslag)
+2. Tokenet legges ved kallet til folkeregisteret i Authorization header. Tokenet legges ved slik:
+```
+'Authorization: Bearer <token>'
+```
 
+  For de konkrete api-ressursene, se kall [her](../hendelsesliste) og  [her](../oppslag)
 3. Folkeregisteret verifisere at virksomheten er den de sier de er (autentisering) og at de har rett til den informasjonen de prøver å hente (autorisering).
 
 4. Hvis alt er OK returneres data iht. forespørselen.
