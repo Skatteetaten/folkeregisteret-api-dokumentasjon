@@ -18,8 +18,8 @@ Tjenestenes endepunkt: <br>
 | rekvisisjon_av_dnummer_v5         | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/1511792480.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v5 |
 | rekvisisjon_av_dnummer_v5.vedlegg | [xsd](../kontrakter/RekvisisjonAvDNummer_5.0.xsd)                    | [jpg](../modeller/1511792480.jpg) | produksjon | HendelserISakOmDNummerRekvisisjon_v5 |
 | doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.0.xsd)                     | [png](../modeller/1478705212.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
-| doedsfall_v1.1                    | [xsd](../kontrakter/MeldingOmDoedsfall_v1.1.xsd)                     | [png](../modeller/Doedsfall.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
-| doedsfall_v1.2                    | [xsd](../kontrakter/MeldingOmDoedsfall_v1.2.xsd)                     | [png](../modeller/Doedsfall.png) | test | HendelserISakOmFolkeregistrering_v1 |
+| doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.1.xsd)                     | [png](../modeller/Doedsfall.png) | produksjon | HendelserISakOmFolkeregistrering_v1 |
+| doedsfall_v1                      | [xsd](../kontrakter/MeldingOmDoedsfall_v1.2.xsd)                     | [png](../modeller/Doedsfall.png) | test | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.0.xsd)        | [jpg](../modeller/1510835122.jpg) | produksjon | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.1.xsd)        |  | produksjon | HendelserISakOmFolkeregistrering_v1 |
 | annullering_av_doedsfall_v1       | [xsd](../kontrakter/MeldingOmAnnulleringAvDoedsfall_v1.2.xsd)        |  | test | HendelserISakOmFolkeregistrering_v1 |
