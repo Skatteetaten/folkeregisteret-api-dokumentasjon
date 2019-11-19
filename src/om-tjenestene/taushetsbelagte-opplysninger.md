@@ -18,6 +18,10 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Utenlands identifikasjonsnummer
 * Utlendingsmyndighetenes identifikasjonsnummer
 * Falsk identitet
+* Inn- og Utflytting
+* Bibehold av norsk statsborgerskap
+* 
+* Familierelasjon
 * Registreringsstatus med unntak av statusene "bosatt", "utflyttet", "død", "opphørt" og "inaktiv" - som er untatt fra taushetsplikt i forskrift
 
 
@@ -27,9 +31,10 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Fødselsdato
 * Identitetsgrunnlag
 * Adresser inkludert historikk (gjelder ikke adresser undergitt taushetsplikt eller gradert etter beskyttelsesinstruksen)
-* Fødested
+* Kjønn 
+* Fødsel
 * Statsborgerskap
 * Sivilstand 
 * Vergemål
 * Stadfestet fremtidsfullmakt
-* Dødsdato
+* Dødsdato og dødsfall
