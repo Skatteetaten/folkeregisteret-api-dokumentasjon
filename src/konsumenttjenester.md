@@ -20,7 +20,7 @@ Tjenestene er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsume
 
 ## Konsumenttjenester
 | Tjeneste | Beskrivelse | Tilgjengelig i rettighetspakker | 
-|----------|-----------------------------------------------|--------|
+|----------|--------------------------------------|--------|
 | person/hent <br> bulk/person/hent |Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Tjenesten returnerer siste persondokument for individene som er forespurt. | Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Bank-og-Finans     |
 |person/søk | Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten reurnerer max 10 000 treff. Tjenesten returnerer fødsels- eller D-nummer |Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans |
 |person/entydigSøk|Hensikten med tjenesten er å tillate søk på personer ved hjelp av et entyidge opplysninger som identifikasjonsnummer, utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer. Tjenesten returnerer siste persondokument for en gitt person. |Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private foretak|
