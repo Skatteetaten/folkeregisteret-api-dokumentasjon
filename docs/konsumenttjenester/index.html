@@ -110,8 +110,6 @@
     <tr>
     <td>uttrekk/komplett/bestill <br> uttrekk/komplett/hent</td>
     <td>Innput til tjenetsten er et sekvensnummer og tjenesten returnerer persondokumenter. Ved å hente opp disse dokumentene gjennom bulkoppslag arkvi kan konsumentene hente ut hele eller deler av bestanden i folkeregisteret. Hvis input er siste sekvensnummer vil konsumentene hente de persondokumentene som pt er gjeldene.  Velges et lavere sekvensnummer vil tjenesten hente alle persondokument som var gjeldende på dette tidspunktet og se bort fra alle persondokument som er kommet etterpå. Tjenesten er asynkron og benyttes sammen med bulkoppslag og uttrekk jobbID/Batch</td>
-    </tr>
-    <tr>
     <td>Offentlig med hjemmel</td>
     </tr>
     <tr>
@@ -122,17 +120,17 @@
     <tr>
     <td>hendelse/hendelser</td>
     <td>Hensikten med feed er å varsle om de hendelsene som skjer på de forskjellige personene i registeret . Konsumentene sender inn et sekvensnummer og får returnert alle hendelsene som har skjedd i registeret fra og med innsendte sekvensnummer.</td>
-    <td>Offentlig med hjemmel</td>
+    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private foretak</td>
     </tr>
     <tr>
     <td>hendelse/hentSisteSekvensnummer</td>
     <td>Hensikten med tjenesten er å gjøre det mulig for konsumentene å finne hvor langt hendelsesessekvensen er kommet slik at de kan lytte fra feeden fra en ønsket tidspunkt. Tjenesten benyttes mest sammen med  komplett uttrekk for å identifisere starttidspunkt for henting av samtlige personer i et testmiljø.</td>
-    <td>Offentlig med hjemmel</td>
+    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private foretak</td>
     </tr>
     <tr>
     <td>hendelser/xsd</td>
     <td></td>
-    <td></td>
+    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private foretak</td>
     </tr>
     <tr>
     <td>arkiv/person/dokument <br> bulk/arkiv/person/dokument</td>
