@@ -85,11 +85,63 @@
     <tr>
     <td>person/hent <br> bulk/person/hent</td>
     <td>Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Svaret som returneres er siste gjeldene persondokument for de personer som er forespurt.</td>
-    <td>Offentlig-med-hjemmel, Offentlig-uten-hjemmel, Bank-og-Finans</td>
+    <td>Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Bank-og-Finans</td>
     </tr>
     <tr>
     <td>person/søk</td>
     <td>Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten reurnerer max 10 000 treff</td>
+    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans</td>
+    </tr>
+    <tr>
+    <td>person/entydigSøk</td>
+    <td>Hensikten med tjenesten er å tillate søk på personer ved hjelp av et entyidge opplysninger som identifikasjonsnummer, utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer. Svaret som returneres er siste persondokument for en gitt person.</td>
+    <td>Offentlig med hjemmel</td>
+    </tr>
+    <tr>
+    <td>online/oppslag</td>
+    <td>online webtjeneste som erstatter dagens søk på personer via infotorg.</td>
+    <td>Offentlig med hjemmel</td>
+    </tr>
+    <tr>
+    <td>person/xsd</td>
+    <td></td>
+    <td>Offentlig med hjemmel</td>
+    </tr>
+    <tr>
+    <td>uttrekk/komplett/bestill <br> uttrekk/komplett/hent</td>
+    <td>Innput til tjenetsten er et sekvensnummer og tjenesten returnerer persondokumenter. Ved å hente opp disse dokumentene gjennom bulkoppslag arkvi kan konsumentene hente ut hele eller deler av bestanden i folkeregisteret. Hvis input er siste sekvensnummer vil konsumentene hente de persondokumentene som pt er gjeldene.  Velges et lavere sekvensnummer vil tjenesten hente alle persondokument som var gjeldende på dette tidspunktet og se bort fra alle persondokument som er kommet etterpå. Tjenesten er asynkron og benyttes sammen med bulkoppslag og uttrekk jobbID/Batch</td>
+    </tr>
+    <tr>
+    <td>Offentlig med hjemmel</td>
+    </tr>
+    <tr>
+    <td>uttrekk/tilpasset/bestill <br> uttrekk/tilpasset/hent</td>
+    <td>Hensikten med tjenesten er å tillate søk på grupper av personer. Personstaustyper er eneste obligatoriske felt. Det kan også søler å kommunenummer fødselsår, dødsår, kjønn, statsborgerskap og sivilstandstype.  Tjenesten er asynkromn og benyttes sammen med bulkoppslag og uttrekk jobbID/batch</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>hendelse/hendelser</td>
+    <td>Hensikten med feed er å varsle om de hendelsene som skjer på de forskjellige personene i registeret . Konsumentene sender inn et sekvensnummer og får returnert alle hendelsene som har skjedd i registeret fra og med innsendte sekvensnummer.</td>
+    <td>Offentlig med hjemmel</td>
+    </tr>
+    <tr>
+    <td>hendelse/hentSisteSekvensnummer</td>
+    <td>Hensikten med tjenesten er å gjøre det mulig for konsumentene å finne hvor langt hendelsesessekvensen er kommet slik at de kan lytte fra feeden fra en ønsket tidspunkt. Tjenesten benyttes mest sammen med  komplett uttrekk for å identifisere starttidspunkt for henting av samtlige personer i et testmiljø.</td>
+    <td>Offentlig med hjemmel</td>
+    </tr>
+    <tr>
+    <td>hendelser/xsd</td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>arkiv/person/dokument <br> bulk/arkiv/person/dokument</td>
+    <td>Hensikten med tjenesten er å tillate konsumentene med tilgang til tjenesten søke på en tidligere eller nåværende tilstand for en gitt person. Persondokumentet inneholder komplette opplysninger på personer på et tidspunkt, men dette trenger ikke være det siste persondokumentet vedkommende har. Fra hendelsesfeed returneres persondokumentet og tjenesten gjør det mulig å søke opp persondokumentet som medførte hendelsen.</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>arkiv/hendelse/dokument <br> bulk/arkiv/hendelse/dokument</td>
+    <td>Mens hendelsesfeeden returnerer en tynn beskrivelse av en hendelse returnerer oppslag på den, eller de, spesifikke hendelsen en mer innholdsrik beskrivelse av hendelsen. Tillater søk på en eller flere hendelsesdokument.</td>
     </tr>
     </tbody>
     </table>
