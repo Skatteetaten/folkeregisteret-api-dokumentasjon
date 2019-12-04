@@ -6,6 +6,13 @@ Denne siden beskriver tjenestene i det nye Folkeregisteret.
 Rettighetspakker og teknisk beskrivelse av tjenestene finnes på siden for hver enkelt tjeneste. Tjenestene som er beskrevet på denne siden er under utvikling, og det kan komme endringer i tjenestetilbudet, nye tjenester og endring i tjenesteinnholdet.
 
 
+## Standardtjenester
+| Tjeneste | Beskrivelse | Tilgjengelig i rettighetspakker | 
+|----------|-----------------------------------------------|--------|
+| person/hent <br> bulk/person/hent |Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Svaret som returneres er siste gjeldene persondokument for de personer som er forespurt. | Offentlig-med-hjemmel, Offentlig-uten-hjemmel, Bank-og-Finans     |
+|person/søk | Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten reurnerer max 10 000 treff ||
+
+
 * [Hendelsesliste](../hendelsesliste) er løpende varsling om endringer i Folkeregisteret. Hendelsesliste gir konsumenter mulighet til å oppdatere opplysninger om personer i sitt kunderegister eller sin sakspopulasjon fortløpende. Det vil også være mulig for konsumentene å lage automatisert saksbehandling som initieres av hendelser fra Folkeregisteret, for eksempel avslutning av kundeforhold eller tjeneste ved hendelsen "melding om dødsfall". 
 Med tjenesten hendelsesliste får konsumenter varsel hver gang noe endres i Folkeregisteret, hvem det gjelder og hva endringen består i.  Konsumenten får tilgang til informasjon de har hjemmel til, må selv avgjøre om hendelsen er relevant for dem, og gjøre oppslag for å hente mer informasjon om endringen. Tjenesten leveres ved maskin-til-maskin tilkobling. 
 
