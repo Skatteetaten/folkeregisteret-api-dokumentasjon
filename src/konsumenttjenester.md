@@ -1,7 +1,8 @@
 ---
 title: Konsumenttjenester
 ---
-# Standardtjenester
+
+##Konsumenttjenester
 Denne siden beskriver tjenestene i det nye Folkeregisteret. 
 Rettighetspakker og teknisk beskrivelse av tjenestene finnes på siden for hver enkelt tjeneste. Tjenestene som er beskrevet på denne siden er under utvikling, og det kan komme endringer i tjenestetilbudet, nye tjenester og endring i tjenesteinnholdet.
 
@@ -19,7 +20,7 @@ Tjenestene er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsume
 
 
 
-## Konsumenttjenester
+## Tilgjengelige tjenester
 | Tjeneste | Beskrivelse | Tilgjengelig i rettighetspakker | 
 |------------|------------------------------------------|------------|
 | person/hent <br> bulk/person/hent |Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Tjenesten returnerer siste persondokument for individene som er forespurt. | Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Bank-og-Finans     |
