@@ -18,6 +18,7 @@ Tjenestene er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsume
 
 
 
+
 ## Konsumenttjenester
 | Tjeneste | Beskrivelse | Tilgjengelig i rettighetspakker | 
 |----------|--------------------------------------|--------|
