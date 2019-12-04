@@ -84,18 +84,18 @@
     <tbody>
     <tr>
     <td>person/hent <br> bulk/person/hent</td>
-    <td>Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Svaret som returneres er siste gjeldene persondokument for de personer som er forespurt.</td>
+    <td>Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Tjenesten returnerer siste persondokument for individene som er forespurt.</td>
     <td>Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Bank-og-Finans</td>
     </tr>
     <tr>
     <td>person/søk</td>
-    <td>Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten reurnerer max 10 000 treff</td>
+    <td>Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten reurnerer max 10 000 treff. Tjenesten returnerer fødsels- eller D-nummer</td>
     <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans</td>
     </tr>
     <tr>
     <td>person/entydigSøk</td>
-    <td>Hensikten med tjenesten er å tillate søk på personer ved hjelp av et entyidge opplysninger som identifikasjonsnummer, utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer. Svaret som returneres er siste persondokument for en gitt person.</td>
-    <td>Offentlig med hjemmel</td>
+    <td>Hensikten med tjenesten er å tillate søk på personer ved hjelp av et entyidge opplysninger som identifikasjonsnummer, utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer. Tjenesten returnerer siste persondokument for en gitt person.</td>
+    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private foretak</td>
     </tr>
     <tr>
     <td>online/oppslag</td>
@@ -115,7 +115,7 @@
     <tr>
     <td>uttrekk/tilpasset/bestill <br> uttrekk/tilpasset/hent</td>
     <td>Hensikten med tjenesten er å tillate søk på grupper av personer. Personstaustyper er eneste obligatoriske felt. Det kan også søler å kommunenummer fødselsår, dødsår, kjønn, statsborgerskap og sivilstandstype.  Tjenesten er asynkromn og benyttes sammen med bulkoppslag og uttrekk jobbID/batch</td>
-    <td>Offentlig med hjemmel <br> Offentlig uten hjemmel</td>
+    <td>Offentlig med hjemmel, <br> Offentlig uten hjemmel</td>
     </tr>
     <tr>
     <td>hendelse/hendelser</td>
@@ -135,11 +135,12 @@
     <tr>
     <td>arkiv/person/dokument <br> bulk/arkiv/person/dokument</td>
     <td>Hensikten med tjenesten er å tillate konsumentene med tilgang til tjenesten søke på en tidligere eller nåværende tilstand for en gitt person. Persondokumentet inneholder komplette opplysninger på personer på et tidspunkt, men dette trenger ikke være det siste persondokumentet vedkommende har. Fra hendelsesfeed returneres persondokumentet og tjenesten gjør det mulig å søke opp persondokumentet som medførte hendelsen.</td>
-    <td></td>
+    <td>Offentlig med hjemmel</td>
     </tr>
     <tr>
     <td>arkiv/hendelse/dokument <br> bulk/arkiv/hendelse/dokument</td>
     <td>Mens hendelsesfeeden returnerer en tynn beskrivelse av en hendelse returnerer oppslag på den, eller de, spesifikke hendelsen en mer innholdsrik beskrivelse av hendelsen. Tillater søk på en eller flere hendelsesdokument.</td>
+    <td>Offentlig med hjemmel</td>
     </tr>
     </tbody>
     </table>

@@ -1,5 +1,5 @@
 {
-  "konsumenttjenester.md": 1575457940945,
+  "konsumenttjenester.md": 1575459250662,
   "om-tjenestene.md": 1575457941024,
   "produsenttjenester.md": 1575457941025,
   "spm-og-svar.md": 1575457941025,
@@ -152,8 +152,8 @@
   "modeller/1499854129.jpg": 1575457940969,
   "modeller/1510835122.jpg": 1575457940971,
   "modeller/1511792480.jpg": 1575457940976,
-  "modeller/1538033146.jpg": 1575457940978,
   "modeller/1515074003.jpg": 1575457940977,
+  "modeller/1538033146.jpg": 1575457940978,
   "modeller/1543845073.jpg": 1575457940978,
   "modeller/1549296236.jpg": 1575457940979,
   "modeller/Doedsfall.png": 1575457940980,
@@ -189,6 +189,9 @@
   "om-tjenestene/taushetsbelagte-opplysninger.md": 1575457941025,
   "produsenttjenester/mottak.md": 1575457941025,
   "produsenttjenester/tilbakemelding.md": 1575457941025,
+  "test/Test for konsumenter.md": 1575457941026,
+  "test/Test for prosusenter.md": 1575457941026,
+  "test/Testdata.md": 1575457941026,
   "spm-og-svar/sos-adresser.md": 1575457941025,
   "spm-og-svar/sos-hendelser.md": 1575457941026,
   "spm-og-svar/sos-historikk.md": 1575457941026,
@@ -198,8 +201,5 @@
   "spm-og-svar/sos-statuskoder.md": 1575457941026,
   "spm-og-svar/sos-test.md": 1575457941026,
   "spm-og-svar/sos-tilgangsstyring.md": 1575457941026,
-  "spm-og-svar/sos-tjenester.md": 1575457941026,
-  "test/Test for konsumenter.md": 1575457941026,
-  "test/Test for prosusenter.md": 1575457941026,
-  "test/Testdata.md": 1575457941026
+  "spm-og-svar/sos-tjenester.md": 1575457941026
 }
