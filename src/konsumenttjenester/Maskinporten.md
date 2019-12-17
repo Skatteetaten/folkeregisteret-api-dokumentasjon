@@ -3,11 +3,17 @@ title: Maskinporten
 ---
 
 ## Komme i gang med Maskinporten
-Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Difi har beskrevet overordenet hvordan [API-sikring med maskinporten](https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html") gjøres.
+Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Difi har beskrevet overordenet hvordan [API-sikring med maskinporten](https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html) gjøres.
 Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. 
  
 For å komme i gang med testing må det gjøres noen forberelser hos virksomheten:
-### 1. Sende forespørsel om å bli opprettet som bruker.
+
+
+### 1. Ta kontakt med DIFI for å få tilgang til Maskinporten
+Bestill tilknytning til maskinporten via [DIFIs samarbeidsportal](https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten)
+
+
+### 2. Sende forespørsel om å bli opprettet som bruker.
   Inntil videre gjøres dette ved manuell kontakt med interessentoppfølger for folkeregisteret. Prosjektet avklarer hvilken rettighetspakke virksomheten skal ha tilgang til. Som oftest er dette basert på hjemmelsgrunnlaget. Les mer om hvilken gruppe virksomheten tilhører: https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/.
 	
 Så snart korrekt rettighetspakke er avklart vil folkeregisteret klargjøre virksomheten i sine systemer.
@@ -20,7 +26,7 @@ Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med
 Se mer informasjon om dette her: https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html
 
 
-### 2. Systemmessige klargjøringer
+### 3. Systemmessige klargjøringer
 #### Klargjøring fra Folkeregisteret:
 
 Så snart korrekt rettighetspakke for virksomheten er avklart, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og rettighetspakke til DIFI. Rettighetspakken tilsvarer 'scope' på maskinporten-språk.
@@ -39,7 +45,7 @@ Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye
 All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke folkeregister-api'ene.
 
                   
-### 3. Bruke folkeregister-api'ene med token fra maskinporten
+### 4. Bruke folkeregister-api'ene med token fra maskinporten
 Overordnet gjøres følgende:
 
 1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret
