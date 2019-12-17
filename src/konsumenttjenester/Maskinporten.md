@@ -19,10 +19,10 @@ Bestill tilknytning til maskinporten via [DIFIs samarbeidsportal](https://samarb
 Så snart korrekt rettighetspakke er avklart vil folkeregisteret klargjøre virksomheten i sine systemer.
 
 
-```
-NB! All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS
+
+All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS
 Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetsserifikat 
-```
+
 Se mer informasjon om dette her: https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html
 
 
