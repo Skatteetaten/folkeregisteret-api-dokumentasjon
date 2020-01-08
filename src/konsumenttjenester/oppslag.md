@@ -89,7 +89,7 @@ Eksempel på entydig søk på gitte kriterier:
 
 Eksempel på søk på gitte kriterier:
 
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"'
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"`
 
 
 
