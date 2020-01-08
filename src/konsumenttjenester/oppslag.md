@@ -20,7 +20,7 @@ Ved entydig søk må minst en av følgende parametere med entydig identifiserend
 * legitimasjonsdokument
 * utlendingsmyndighetenesIdentifikasjonsnummer
 
-### 
+ 
 
 I tillegg må en av følgende ikke identifiserende være oppgitt:
 * foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)
