@@ -12,16 +12,6 @@ For å nå tjenestene bygges URL opp slik:
 
 Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om [dataminimering](../dataminimering)
 
-## Ressurser
-| Ressurs | Beskrivelse | 
-|---------|-------------|
-|personer/{folkeregisteridentifikator}| Siste versjon av en person | 
-|personer/entydigsoek| Entydig søk som returnerer siste versjon av en person |
-|personer/soek| Søk på kriterier som returenerer siste versjon av max 10 000 personer|
-|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person |
-|personer/bulkoppslag/| Siste versjon av et sett med personer (gjelder kun rettighetspakke offentlig-med-hjemmel)|
-|personer/bulkoppslag/arkiv/| Et sett med versjonerte utgaver av en person (gjelder kun rettighetspakke offentlig-med-hjemmel)|
-|personer/xsd| Xsd (kontrakt) for person |
 
 ### Entydig søk
 Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL'en:
@@ -40,6 +30,17 @@ I tillegg må en av følgende ikke identifiserende være oppgitt:
 
 Hvis alle ikke identifiserende opplysningene er oppgitt vil dette være tilstrekkelig til at søk kan gjennomføres, forutsatt at dette søket ikke returnerer mer enn et treff. 
 
+
+## Ressurser
+| Ressurs | Beskrivelse | 
+|---------|-------------|
+|personer/{folkeregisteridentifikator}| Siste versjon av en person | 
+|personer/entydigsoek| Entydig søk som returnerer siste versjon av en person |
+|personer/soek| Søk på kriterier som returenerer siste versjon av max 10 000 personer|
+|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person |
+|personer/bulkoppslag/| Siste versjon av et sett med personer (gjelder kun rettighetspakke offentlig-med-hjemmel)|
+|personer/bulkoppslag/arkiv/| Et sett med versjonerte utgaver av en person (gjelder kun rettighetspakke offentlig-med-hjemmel)|
+|personer/xsd| Xsd (kontrakt) for person |
 
 
 ## Rettighetspakker
