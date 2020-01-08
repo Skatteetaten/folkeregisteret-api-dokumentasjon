@@ -30,6 +30,7 @@ I tillegg må en av følgende ikke identifiserende være oppgitt:
 
 Hvis alle ikke identifiserende opplysningene er oppgitt vil dette være tilstrekkelig til at søk kan gjennomføres, forutsatt at dette søket ikke returnerer mer enn et treff. 
 
+Det er bygd støtte for fonetisk søk på navn.
 
 ## Ressurser
 | Ressurs | Beskrivelse | 
