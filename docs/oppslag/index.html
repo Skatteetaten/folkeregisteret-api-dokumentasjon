@@ -78,6 +78,23 @@
     <p>For å nå tjenestene bygges URL opp slik:
     {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
     <p>Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om <a href="../dataminimering">dataminimering</a></p>
+    <h3 id="entydig-s-k">Entydig søk</h3>
+    <p>Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL&#39;en:</p>
+    <ul>
+    <li>identifikasjonsnummer</li>
+    <li>utenlandskpersonidentifikasjon</li>
+    <li>legitimasjonsdokument</li>
+    <li>utlendingsmyndighetenesIdentifikasjonsnummer</li>
+    </ul>
+    <p>### </p>
+    <p>I tillegg må en av følgende ikke identifiserende være oppgitt:</p>
+    <ul>
+    <li>foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)</li>
+    <li>navn</li>
+    <li>adressenavn</li>
+    <li>husnummer</li>
+    </ul>
+    <p>Hvis alle ikke identifiserende opplysningene er oppgitt vil dette være tilstrekkelig til at søk kan gjennomføres, forutsatt at dette søket ikke returnerer mer enn et treff. </p>
     <h2 id="ressurser">Ressurser</h2>
     <table>
     <thead>
@@ -94,6 +111,10 @@
     <tr>
     <td>personer/entydigsoek</td>
     <td>Entydig søk som returnerer siste versjon av en person</td>
+    </tr>
+    <tr>
+    <td>personer/soek</td>
+    <td>Søk på kriterier som returenerer siste versjon av max 10 000 personer</td>
     </tr>
     <tr>
     <td>personer/arkiv/{persondokumentidentifikator}</td>
@@ -113,21 +134,6 @@
     </tr>
     </tbody>
     </table>
-    <h3 id="om-entydig-s-k">Om entydig søk</h3>
-    <p>Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL&#39;en:</p>
-    <ul>
-    <li>identifikasjonsnummer</li>
-    <li>utenlandskpersonidentifikasjon</li>
-    <li>legitimasjonsdokument</li>
-    <li>utlendingsmyndighetenesIdentifikasjonsnummer</li>
-    </ul>
-    <p>I tillegg må en av følgende ikke identifiserende være oppgitt:</p>
-    <ul>
-    <li>foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)</li>
-    <li>navn</li>
-    <li>adressenavn</li>
-    <li>husnummer</li>
-    </ul>
     <h2 id="rettighetspakker">Rettighetspakker</h2>
     <table>
     <thead>
