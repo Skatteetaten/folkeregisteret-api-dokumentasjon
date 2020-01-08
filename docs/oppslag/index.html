@@ -194,6 +194,9 @@
     <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;foedselsEllerDNummer&quot;: [&quot;{folkeregiseridentifikator}&quot;,&quot;{folkeregiseridentifikator}&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/&quot;</code></p>
     <p>Eksempel på bulkoppslag på gitte versjoner av persondokumenter:</p>
     <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;,&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/arkiv/&quot;</code></p>
+    <p>Eksempel på entydig søk på gitte kriterier av personinformasjon: 
+    <code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key 
+    &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</code></p>
     <h2 id="headere">Headere</h2>
     <p><strong>Accept</strong></p>
     <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml.</p>
