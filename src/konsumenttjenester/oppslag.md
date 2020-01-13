@@ -230,13 +230,13 @@ Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
           "GATE 22255",
           "9170 LONGYEARBYEN"}
         ],
-    "vergemaalEllerFremtidsfullmakt": [
+      "vergemaalEllerFremtidsfullmakt": [
     {
-      "ajourholdstidspunkt": "2020-01-09T01:03:09.999+01:00",
+      "ajourholdstidspunkt": "2020-01-13T09:22:47.106+01:00",
       "erGjeldende": false,
       "kilde": "Statens Sivilrettsforvaltning",
-      "gyldighetstidspunkt": "1994-03-03T00:00:00+01:00",
-      "opphoerstidspunkt": "2020-01-08T08:00:20+01:00",
+      "gyldighetstidspunkt": "2001-11-03T00:00:00+01:00",
+      "opphoerstidspunkt": "2007-01-08T08:00:20+01:00",
       "vergemaaltype": "voksen",
       "embete": "fylkesmannenIVestfoldOgTelemark",
       "verge": {
@@ -244,11 +244,12 @@ Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
           "fornavn": "TOM",
           "etternavn": "GREVLING"
         },
-        "foedselsEllerDNummer": "02011998901",
+        "foedselsEllerDNummer": "01010096894",
+        "omfang": "oekonomiskeInteresser",
         "omfangetErInnenPersonligOmraade": false
       }
     }
-  ]     
+  ]
 }
 ```
 
