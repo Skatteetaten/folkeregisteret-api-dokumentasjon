@@ -19,7 +19,7 @@ For å nå tjenestene bygges URL opp slik:
 |Ressurs|Beskrivelse|
 |-------|-----------|
 |hendelser/siste/sekvensnummer|Siste sekvensnummer|
-|hendelser/feed/{startsekvensnummer}|Liste med hendelser fra angitt startpunkt|
+|hendelser/feed?seq={startsekvensnummer}|Liste med hendelser fra angitt startpunkt|
 |hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse|
 |hendelser/bulk/hendelser|Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)|
 |hendelser/xsd| Xsd (kontrakt) for hendelse|
