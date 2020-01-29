@@ -21,14 +21,14 @@ Ved entydig søk må minst en av følgende parametere med entydig identifiserend
 * utlendingsmyndighetenesIdentifikasjonsnummer
 
  
-
 I tillegg må en av følgende ikke identifiserende være oppgitt:
 * foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)
 * navn
 * adressenavn
 * husnummer
 
-Hvis alle ikke identifiserende opplysningene er oppgitt vil dette være tilstrekkelig til at søk kan gjennomføres, forutsatt at dette søket ikke returnerer mer enn et treff. 
+Hvis alle ikke identifiserende opplysningene er oppgitt vil dette være tilstrekkelig til at søk kan gjennomføres. Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. 
+
 
 Det er bygd støtte for fonetisk søk på navn.
 
