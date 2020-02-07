@@ -14,25 +14,27 @@ Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dett
 
 
 ### Entydig søk
-Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL'en:
+
+For å benytte tjenesten må et av disse kriteriene være oppfylt: 
+* Ett identifiserende og ett ikke-identifiserende informasjonselement er oppgitt
+* Alle ikke-identifiserende elementene er oppgitt.  
+
+Identifiserende element:
 * identifikasjonsnummer
 * utenlandskpersonidentifikasjon
 * legitimasjonsdokument
 * utlendingsmyndighetenesIdentifikasjonsnummer
 
  
-I tillegg må en av følgende ikke identifiserende være oppgitt:
+Ikke-identifiserende element:
 * foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)
 * navn
 * adressenavn
 * husnummer
 
-Alternativt kan alle ikke identifiserende opplysningene er oppgitt. Dette vil også være tilstrekkelig til at søk kan gjennomføres. 
-
 Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. 
 
-
-Det er bygd støtte for fonetisk søk på navn.
+Det er støtte for fonetisk søk på navn.
 
 ## Ressurser
 | Ressurs | Beskrivelse | 
