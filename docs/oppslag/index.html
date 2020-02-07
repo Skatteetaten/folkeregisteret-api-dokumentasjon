@@ -79,23 +79,27 @@
     {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
     <p>Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om <a href="../dataminimering">dataminimering</a></p>
     <h3 id="entydig-s-k">Entydig søk</h3>
-    <p>Ved entydig søk må minst en av følgende parametere med entydig identifiserende informasjon være inkludert i URL&#39;en:</p>
+    <p>For å benytte tjenesten må et av disse kriteriene være oppfylt: </p>
+    <ul>
+    <li>Ett identifiserende og ett ikke-identifiserende informasjonselement er oppgitt</li>
+    <li>Alle ikke-identifiserende elementene er oppgitt.  </li>
+    </ul>
+    <p>Identifiserende element:</p>
     <ul>
     <li>identifikasjonsnummer</li>
     <li>utenlandskpersonidentifikasjon</li>
     <li>legitimasjonsdokument</li>
     <li>utlendingsmyndighetenesIdentifikasjonsnummer</li>
     </ul>
-    <p>I tillegg må en av følgende ikke identifiserende være oppgitt:</p>
+    <p>Ikke-identifiserende element:</p>
     <ul>
     <li>foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)</li>
     <li>navn</li>
     <li>adressenavn</li>
     <li>husnummer</li>
     </ul>
-    <p>Alternativt kan alle ikke identifiserende opplysningene er oppgitt. Dette vil også være tilstrekkelig til at søk kan gjennomføres. </p>
     <p>Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. </p>
-    <p>Det er bygd støtte for fonetisk søk på navn.</p>
+    <p>Det er støtte for fonetisk søk på navn.</p>
     <h2 id="ressurser">Ressurser</h2>
     <table>
     <thead>
