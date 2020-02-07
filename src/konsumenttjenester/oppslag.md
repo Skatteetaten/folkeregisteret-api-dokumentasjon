@@ -27,7 +27,9 @@ I tillegg må en av følgende ikke identifiserende være oppgitt:
 * adressenavn
 * husnummer
 
-Hvis alle ikke identifiserende opplysningene er oppgitt vil dette være tilstrekkelig til at søk kan gjennomføres. Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. 
+Alternativt kan alle ikke identifiserende opplysningene er oppgitt. Dette vil også være tilstrekkelig til at søk kan gjennomføres. 
+
+Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. 
 
 
 Det er bygd støtte for fonetisk søk på navn.
