@@ -3,7 +3,12 @@
 Statisk generert API-dokumetansjon for FREG som publiseres under [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon]. 
 
 ## Redaktører
-Skal du være redaktør på siden og leser dette har du allerede ordnet med nødvendige tilganger. Som redaktør er det viktig å vite at det desverre ikke er noe tesmiljø for redaktører som kan vise deg hvordan endringen du gjør vil se ut på sidene i etterkant. Vær derfor varsom og be om hjelp fra en utviklingsressurs (Tobias Lund-Melcher  eller Espen Myklevoll) dersom du skal gjøre endringer som du trenger å få testet før du legger dem ut.
+Skal du være redaktør på siden og leser dette har du allerede ordnet med nødvendige tilganger. 
+
+Som redaktør er det viktig å vite at det desverre ikke er noe tesmiljø for redaktører som kan vise deg hvordan endringen du gjør vil se ut på sidene i etterkant. 
+Det må evt. gjøres som utvikler.
+ 
+Vær derfor varsom og be om hjelp fra en utviklingsressurs (Tobias Lund-Melcher  eller Espen Myklevoll) dersom du skal gjøre endringer som du trenger å få testet før du legger dem ut.
 
 ### Endre på en side
 1. Gå til [https://github.com/Skatteetaten/folkeregisteret-api-dokumentasjon/tree/master/src].
@@ -48,7 +53,7 @@ Skal du være redaktør på siden og leser dette har du allerede ordnet med nød
 
 ### Bygg
 ```bash 
-yarn install  #Installer avhengigheter i package.json``` 
+yarn install  #Installer avhengigheter i package.json
 yarn build    #Kjører byggescript build.js
 ```
 ### Kjør

@@ -1,0 +1,3742 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Offentlig med hjemmel",
+    "version": "2.2.6"
+  },
+  "servers": [
+    {
+      "url": "/folkeregisteret/offentlig-med-hjemmel/api"
+    }
+  ],
+  "paths": {
+    "/v1/hendelser/{hendelsesidentifikator}": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter en hendelse.",
+        "operationId": "hentHendelseDokument",
+        "parameters": [
+          {
+            "name": "hendelsesidentifikator",
+            "in": "path",
+            "description": "Identifikator (uuid) for en hendelse",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer hendelse.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DokumentForHendelse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/DokumentForHendelse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Ukjent dokumentid."
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/hendelser/xsd": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "operationId": "getXsd",
+        "responses": {
+          "default": {
+            "description": "default response",
+            "content": {
+              "application/xml": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/hendelser/bulkoppslag": {
+      "post": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter et sett med hendelser.",
+        "operationId": "hentHendelseDokumenter",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HendelseBulkoppslagRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/HendelseBulkoppslagRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Returnerer hendelse.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DokumentForHendelse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/DokumentForHendelse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig input."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/hendelser/feed": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter lagrede hendelser fra rettighetspakke.",
+        "operationId": "hentFeedSide",
+        "parameters": [
+          {
+            "name": "seq",
+            "in": "query",
+            "description": "Fra hvilket sekvensnummer (inklusivt) man ønsker å hente registerhendelser.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer en liste med lagrede hendelser",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LagretHendelseMedDokumentIdentifikatorer"
+                  }
+                }
+              },
+              "application/atom+xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LagretHendelseMedDokumentIdentifikatorer"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LagretHendelseMedDokumentIdentifikatorer"
+                  }
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Ikke Endret. Innholdet er ikke endret siden ETag versjonen sendt inn i If-None-Match (se https://en.wikipedia.org/wiki/HTTP_ETag#Typical_usage)"
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Ikke funnet.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorMessageForExternalUsers"
+                }
+              },
+              "application/atom+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorMessageForExternalUsers"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorMessageForExternalUsers"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/personer/bulkoppslag/arkiv": {
+      "post": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter en arkivert versjon av persondata for et sett med personer.",
+        "operationId": "hentPersonerDokumenter",
+        "parameters": [
+          {
+            "name": "part",
+            "in": "query",
+            "description": "Hent ut et utsnitt av personen. Spesifiser hvilke entiteter som skal hentes ut. F.eks. identifikasjonsnummer og identitetsgrunnlag.",
+            "schema": {
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArkivDokumentBulkoppslagRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/ArkivDokumentBulkoppslagRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Returnerer persondata.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/personer/arkiv/{dokumentidentifikator}": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter en arkivert versjon av persondata for en person.",
+        "operationId": "hentArkivertePersondata",
+        "parameters": [
+          {
+            "name": "dokumentidentifikator",
+            "in": "path",
+            "description": "Dokumentidentifikator for en arkivert versjon av persondataene til en person",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "part",
+            "in": "query",
+            "description": "Hent ut et utsnitt av personen. Spesifiser hvilke entiteter som skal hentes ut. F.eks. identifikasjonsnummer og identitetsgrunnlag.",
+            "schema": {
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer persondata.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Ukjent dokumentid."
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/personer/bulkoppslag": {
+      "post": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter persondata for et sett med personer.",
+        "operationId": "hentPersoner",
+        "parameters": [
+          {
+            "name": "part",
+            "in": "query",
+            "description": "Hent ut et utsnitt av personen. Spesifiser hvilke entiteter som skal hentes ut. F.eks. identifikasjonsnummer og identitetsgrunnlag.",
+            "schema": {
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonBulkoppslagRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonBulkoppslagRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Returnerer persondata.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/personer/{personidentifikator}": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter oppdaterte data om en person.",
+        "operationId": "hentSisteVersjonAvPerson",
+        "parameters": [
+          {
+            "name": "personidentifikator",
+            "in": "path",
+            "description": "Fødsels- eller D-nummer",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "part",
+            "in": "query",
+            "description": "Hent ut et utsnitt av personen. Spesifiser hvilke entiteter som skal hentes ut. F.eks. identifikasjonsnummer og identitetsgrunnlag.",
+            "schema": {
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer persondata.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Ukjent person."
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/personer/xsd": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "operationId": "getXsd_1",
+        "responses": {
+          "default": {
+            "description": "default response",
+            "content": {
+              "application/xml": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/hendelser/siste/sekvensnummer": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter siste persisterte sekvensnummer i feed",
+        "description": "Brukes i testing og dersom man vil lese fra slutten av feeden.",
+        "operationId": "sisteSekvensnummerIFeed",
+        "responses": {
+          "200": {
+            "description": "Returnerer siste persisterte sekvensnummer",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/personer/entydigsoek": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter oppdaterte data om en person basert på entydig identifiserende opplysninger.",
+        "operationId": "entydigSoek",
+        "parameters": [
+          {
+            "name": "identifikasjonsnummer",
+            "in": "query",
+            "description": "Fødsels- eller d-nummer, 11 siffer.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "utenlandskpersonidentifikasjon",
+            "in": "query",
+            "description": "Utenlandsk personidentifikasjon med landkode(ISO-alfa3)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "legitimasjonsdokument",
+            "in": "query",
+            "description": "Legitimasjonsdokument med landkode(ISO-alfa3)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "utlendingsmyndighetenesIdentifikasjonsnummer",
+            "in": "query",
+            "description": "UDIs DUF-nummer)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "foedselsdato",
+            "in": "query",
+            "description": "Fødselsdato (YYYYMMDD), kan kombineres med entydig søkekriterier utenom identifikasjonsnummer eller med fulle adresseopllysninger.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "navn",
+            "in": "query",
+            "description": "Et eller flere hele ord fra personnavnet, skilt med mellomrom",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "postnummer",
+            "in": "query",
+            "description": "Postnummer",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "adressenavn",
+            "in": "query",
+            "description": "Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer og teller som én uavhengig opplysning til sammen.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "husnummer",
+            "in": "query",
+            "description": "Husnummer, med eller uten evt. bokstav. Kombineres med gatenavn og teller som én uavhengig opplysning til sammen.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "part",
+            "in": "query",
+            "description": "Hvilke opplysninger som skal hentes ut. F.eks. identifikasjonsnummer og identitetsgrunnlag.",
+            "schema": {
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "soekFonetisk",
+            "in": "query",
+            "description": "Fonetisk søk på navn - default false",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer persondata",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter"
+          },
+          "401": {
+            "description": "Autentisering feiler",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Ukjent person, eller ikke entydig treff"
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/personer/soek": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Finner ider til personer som oppfyller søkekriteriene",
+        "operationId": "personsoek",
+        "parameters": [
+          {
+            "name": "navn",
+            "in": "query",
+            "description": "Et eller flere hele ord fra personnavnet, skilt med mellomrom.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "kjoenn",
+            "in": "query",
+            "description": "'mann' eller 'kvinne'",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "foedselsdato",
+            "in": "query",
+            "description": "Fødselsdato (YYYYMMDD)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "foedselsaarFraOgMed",
+            "in": "query",
+            "description": "Laveste fødselsår (4 siffer)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "foedselsaarTilOgMed",
+            "in": "query",
+            "description": "Høyeste fødselsår (4 siffer)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "adressenavn",
+            "in": "query",
+            "description": "Minst 3 tegn fra begynnelsen av gatenavn",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "husnummer",
+            "in": "query",
+            "description": "Husnummer, med eller uten bokstav",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "postnummer",
+            "in": "query",
+            "description": "Filtrerer treff på postnummer (4 siffer)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "kommunenummer",
+            "in": "query",
+            "description": "Filtrerer treff på kommunenummer (4 siffer)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fylkesnummer",
+            "in": "query",
+            "description": "Filtrerer treff på fylkesnummer (4 siffer)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "inkluderOppholdsadresse",
+            "in": "query",
+            "description": "Treffer oppholdsasdresse i tillegg til bostedsadresse. Default: false",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "soekFonetisk",
+            "in": "query",
+            "description": "Søk også på lignende navn. Default: false",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "inkluderDoede",
+            "in": "query",
+            "description": "Treffer også døde personer. Default: false",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "opplysningsgrunnlag",
+            "in": "query",
+            "description": "Styrer håndtering av historikk. En av ('gjeldende', 'historisk', 'begge'). Default: 'gjeldende'. Påvirker kun navn og adresse - for andre opplysninger søkes det alltid kun på gjeldende.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "maksTreff",
+            "in": "query",
+            "description": "Maksimalt antall treff å returnere.  Maks 10.000.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer null eller flere fødsels-eller d-numre",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Folkeregisterperson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter"
+          },
+          "401": {
+            "description": "Autentisering feiler",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/uttrekk/{jobbid}/batch/{batchnr}": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Henter identifikatorer for angitt jobb",
+        "operationId": "hentBatch",
+        "parameters": [
+          {
+            "name": "jobbid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "batchnr",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer liste med forespurte identifikatorer.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkDataResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkDataResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Jobb med jobbid er enda ikke ferdig, og batch med batch id finnes ikke",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkDataResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkDataResponse"
+                }
+              }
+            }
+          },
+          "410": {
+            "description": "Jobb med jobbid eller batch med batch id eksisterer ikke",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkDataResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkDataResponse"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/uttrekk/tilpasset": {
+      "post": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "summary": "Lager en async tilpasset uttrekksjobb",
+        "operationId": "lagJobb",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TilpassetUttrekkJobbRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Returnerer en jobb id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkJobbResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkJobbResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    },
+    "/v1/uttrekk/komplett": {
+      "get": {
+        "tags": [
+          "Rettighetspakke"
+        ],
+        "description": "Lager en async uttrekksjobb",
+        "operationId": "lagJobb_1",
+        "parameters": [
+          {
+            "name": "feedsekvensnr",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returnerer en jobb id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkJobbResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/UttrekkJobbResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ugyldig parameter."
+          },
+          "401": {
+            "description": "Autentisering feiler.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Ugyldig tilgang.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/FolkeregisterFeilmelding"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "For mange kall er gjort på kort tid. Vent i minimum antall ms oppgitt i Retry-After header før neste request utføres."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Adressenummer": {
+        "required": [
+          "husnummer"
+        ],
+        "type": "object",
+        "properties": {
+          "husnummer": {
+            "type": "string"
+          },
+          "husbokstav": {
+            "type": "string"
+          }
+        }
+      },
+      "AdvokatSomKontakt": {
+        "required": [
+          "personnavn"
+        ],
+        "type": "object",
+        "properties": {
+          "personnavn": {
+            "$ref": "#/components/schemas/Personnavn"
+          },
+          "organisasjonsnavn": {
+            "type": "string"
+          },
+          "organisasjonsnummer": {
+            "type": "string"
+          }
+        }
+      },
+      "BibeholdAvNorskStatsborgerskap": {
+        "required": [
+          "bibeholdstatus"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bibeholdstatus": {
+            "type": "string",
+            "enum": [
+              "HAR_BIBEHOLD",
+              "HAR_IKKE_LENGER_BIBEHOLD",
+              "NORSK_STATSBORGER_TRENGER_IKKE_BIBEHOLD"
+            ]
+          },
+          "datoForBibehold": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "Bostedsadresse": {
+        "required": [
+          "adressegradering"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "vegadresse": {
+            "$ref": "#/components/schemas/Vegadresse"
+          },
+          "matrikkeladresse": {
+            "$ref": "#/components/schemas/Matrikkeladresse"
+          },
+          "ukjentBosted": {
+            "$ref": "#/components/schemas/UkjentBosted"
+          },
+          "adresseIdentifikatorFraMatrikkelen": {
+            "type": "string"
+          },
+          "naerAdresseIdentifikatorFraMatrikkelen": {
+            "type": "string"
+          },
+          "adressegradering": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          },
+          "flyttedato": {
+            "type": "string",
+            "format": "date"
+          },
+          "grunnkrets": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "stemmekrets": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "skolekrets": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "kirkekrets": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "DeltBosted": {
+        "required": [
+          "adressegradering",
+          "startdatoForKontrakt"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "vegadresse": {
+            "$ref": "#/components/schemas/Vegadresse"
+          },
+          "matrikkeladresse": {
+            "$ref": "#/components/schemas/Matrikkeladresse"
+          },
+          "ukjentBosted": {
+            "$ref": "#/components/schemas/UkjentBosted"
+          },
+          "startdatoForKontrakt": {
+            "type": "string",
+            "format": "date"
+          },
+          "sluttdatoForKontrakt": {
+            "type": "string",
+            "format": "date"
+          },
+          "adresseIdentifikatorFraMatrikkelen": {
+            "type": "string"
+          },
+          "naerAdresseIdentifikatorFraMatrikkelen": {
+            "type": "string"
+          },
+          "adressegradering": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          }
+        }
+      },
+      "Doedsfall": {
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "doedsdato": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "DokumentForHendelse": {
+        "required": [
+          "dokumentidentifikator",
+          "hendelse",
+          "skjemaversjon"
+        ],
+        "type": "object",
+        "properties": {
+          "dokumentidentifikator": {
+            "type": "string"
+          },
+          "skjemaversjon": {
+            "type": "string"
+          },
+          "hendelse": {
+            "$ref": "#/components/schemas/Hendelse"
+          }
+        }
+      },
+      "FalskIdentitet": {
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "rettIdentitetVedOpplysninger": {
+            "$ref": "#/components/schemas/IdentifiserendeInformasjon"
+          },
+          "rettIdentitetErUkjent": {
+            "type": "boolean"
+          },
+          "rettIdentitetVedIdentifikasjonsnummer": {
+            "type": "string"
+          },
+          "erFalsk": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Familierelasjon": {
+        "required": [
+          "relatertPersonsRolle"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "relatertPerson": {
+            "type": "string"
+          },
+          "relatertPersonUtenFolkeregisteridentifikator": {
+            "$ref": "#/components/schemas/RelatertBiPerson"
+          },
+          "relatertPersonsRolle": {
+            "type": "string",
+            "enum": [
+              "MOR",
+              "FAR",
+              "MEDMOR",
+              "BARN",
+              "SOESKEN",
+              "EKTEFELLE_ELLER_PARTNER",
+              "DOEDFOEDT_BARN"
+            ]
+          },
+          "minRolleForPerson": {
+            "type": "string",
+            "enum": [
+              "MOR",
+              "FAR",
+              "MEDMOR",
+              "BARN",
+              "SOESKEN",
+              "EKTEFELLE_ELLER_PARTNER",
+              "DOEDFOEDT_BARN"
+            ]
+          }
+        }
+      },
+      "Foedsel": {
+        "required": [
+          "foedselsaar"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "foedselsdato": {
+            "type": "string",
+            "format": "date"
+          },
+          "foedselsaar": {
+            "type": "object",
+            "properties": {
+              "leap": {
+                "type": "boolean"
+              },
+              "value": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          },
+          "foedested": {
+            "type": "string"
+          },
+          "foedekommuneINorge": {
+            "type": "string"
+          },
+          "foedeland": {
+            "type": "string"
+          }
+        }
+      },
+      "FoedselINorge": {
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "foedselsinstitusjonsnavn": {
+            "type": "string"
+          },
+          "rekkefoelgenummer": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Folkeregisteridentifikator": {
+        "required": [
+          "foedselsEllerDNummer",
+          "identifikatortype",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "I_BRUK",
+              "OPPHOERT"
+            ]
+          },
+          "foedselsEllerDNummer": {
+            "type": "string"
+          },
+          "identifikatortype": {
+            "type": "string",
+            "enum": [
+              "FOEDSELSNUMMER",
+              "D_NUMMER"
+            ]
+          }
+        }
+      },
+      "Folkeregisterpersonnavn": {
+        "required": [
+          "etternavn",
+          "fornavn"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fornavn": {
+            "type": "string"
+          },
+          "mellomnavn": {
+            "type": "string"
+          },
+          "etternavn": {
+            "type": "string"
+          },
+          "forkortetNavn": {
+            "type": "string"
+          },
+          "originaltNavn": {
+            "$ref": "#/components/schemas/Personnavn"
+          }
+        }
+      },
+      "Folkeregisterpersonstatus": {
+        "required": [
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "BOSATT",
+              "UTFLYTTET",
+              "FORSVUNNET",
+              "DOED",
+              "OPPHOERT",
+              "FOEDSELSREGISTRERT",
+              "MIDLERTIDIG",
+              "INAKTIV",
+              "IKKE_BOSATT",
+              "AKTIV"
+            ]
+          }
+        }
+      },
+      "Foreldreansvar": {
+        "required": [
+          "ansvar"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ansvar": {
+            "type": "string",
+            "enum": [
+              "FELLES",
+              "MOR",
+              "FAR",
+              "MEDMOR",
+              "ANDRE",
+              "UKJENT"
+            ]
+          },
+          "ansvarssubjekt": {
+            "type": "string"
+          },
+          "ansvarlig": {
+            "type": "string"
+          },
+          "ansvarligOrganisasjon": {
+            "type": "string"
+          },
+          "ansvarligUtenIdentifikator": {
+            "$ref": "#/components/schemas/RelatertBiPerson"
+          },
+          "ansvarssubjektUtenIdentifikator": {
+            "$ref": "#/components/schemas/RelatertBiPerson"
+          }
+        }
+      },
+      "GraderingAvAdresse": {
+        "required": [
+          "graderingsnivaa"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "graderingsnivaa": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          }
+        }
+      },
+      "Hendelse": {
+        "required": [
+          "ajourholdstidspunkt",
+          "folkeregisteridentifikator",
+          "hendelsestype"
+        ],
+        "type": "object",
+        "properties": {
+          "folkeregisteridentifikator": {
+            "type": "string"
+          },
+          "hendelsestype": {
+            "type": "string",
+            "enum": [
+              "PERSON_ER_OPPRETTET",
+              "PERSON_ER_REAKTIVERT",
+              "PERSON_ER_OPPHOERT",
+              "PERSON_ER_VIDEREFOERT_SOM_GJELDENDE_VED_SAMMENSLAAING",
+              "PERSON_ER_OPPHOERT_SOM_DUBLETT",
+              "PERSON_ER_ENDRET_VED_SPLITTING",
+              "PERSON_ER_GJENOPPRETTET_VED_SPLITTING",
+              "PERSON_ER_DOED",
+              "PERSON_ER_BOSATT",
+              "PERSON_ER_UTFLYTTET",
+              "ENDRING_I_STATUS",
+              "ENDRING_I_IDENTITETSGRUNNLAG",
+              "ENDRING_I_UTENLANDSK_PERSONIDENTIFIKASJON",
+              "ENDRING_I_UTLENDINGSMYNDIGHETENES_IDENTIFIKASJONSNUMMER",
+              "ENDRING_I_LEGITIMASJONSDOKUMENT",
+              "ENDRING_I_IDENTIFIKASJONSNUMMER",
+              "ENDRING_I_FALSK_IDENTITET",
+              "ENDRING_I_KONTAKTOPPLYSNINGER_FOR_DOEDSBO",
+              "ENDRING_I_DELT_BOSTED",
+              "ENDRING_I_FOEDSEL",
+              "ENDRING_I_FOEDSEL_I_NORGE",
+              "ENDRING_I_KJOENN",
+              "ENDRING_I_FAMILIERELASJON",
+              "ENDRING_I_SIVILSTAND",
+              "ENDRING_I_DOEDSFALL",
+              "ENDRING_I_NAVN",
+              "ENDRING_I_ADRESSEBESKYTTELSE",
+              "ENDRING_I_BOSTEDSADRESSE",
+              "ENDRING_I_BOSTEDSADRESSE_UTEN_FLYTTING",
+              "ENDRING_I_OPPHOLDSADRESSE",
+              "ENDRING_I_INNFLYTTING",
+              "ENDRING_I_UTFLYTTING",
+              "ENDRING_I_BRUK_AV_SAMISK_SPRAAK",
+              "ENDRING_I_KONTAKTINFORMASJON",
+              "ENDRING_I_FORELDREANSVAR",
+              "ENDRING_I_STATSBORGERSKAP",
+              "ENDRING_I_OPPHOLD",
+              "ENDRING_I_VERGEMAAL"
+            ]
+          },
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "egenskapshendelse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Registerdata"
+            }
+          },
+          "hendelsesaarsakIDsf": {
+            "type": "string"
+          }
+        }
+      },
+      "Identifikasjonsdokument": {
+        "required": [
+          "identifikasjonsdokumenttype",
+          "utstederland"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "identifikasjonsdokumentnummer": {
+            "type": "string"
+          },
+          "identifikasjonsdokumenttype": {
+            "type": "string"
+          },
+          "utstederland": {
+            "type": "string"
+          },
+          "utstedernavn": {
+            "type": "string"
+          },
+          "gyldigFra": {
+            "type": "string",
+            "format": "date"
+          },
+          "gyldigTil": {
+            "type": "string",
+            "format": "date"
+          },
+          "dokumentkontroll": {
+            "$ref": "#/components/schemas/TekniskDokumentkontroll"
+          }
+        }
+      },
+      "IdentifiserendeInformasjon": {
+        "required": [
+          "personnavn",
+          "statsborgerskap"
+        ],
+        "type": "object",
+        "properties": {
+          "personnavn": {
+            "$ref": "#/components/schemas/Personnavn"
+          },
+          "foedselsdato": {
+            "type": "string",
+            "format": "date"
+          },
+          "statsborgerskap": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kjoenn": {
+            "type": "string",
+            "enum": [
+              "KVINNE",
+              "MANN"
+            ]
+          }
+        }
+      },
+      "Identitetsgrunnlag": {
+        "required": [
+          "identitetsgrunnlagstatus"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "identitetsgrunnlagstatus": {
+            "type": "string",
+            "enum": [
+              "INGEN_STATUS",
+              "IKKE_KONTROLLERT",
+              "KONTROLLERT"
+            ]
+          }
+        }
+      },
+      "InnflyttingTilNorge": {
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fraflyttingsland": {
+            "type": "string"
+          },
+          "fraflyttingsstedIUtlandet": {
+            "type": "string"
+          }
+        }
+      },
+      "InternasjonalAdresse": {
+        "required": [
+          "landkode"
+        ],
+        "type": "object",
+        "properties": {
+          "coAdressenavn": {
+            "type": "string"
+          },
+          "adressenavn": {
+            "type": "string"
+          },
+          "bygning": {
+            "type": "string"
+          },
+          "etasjenummer": {
+            "type": "string"
+          },
+          "boenhet": {
+            "type": "string"
+          },
+          "postboks": {
+            "type": "string"
+          },
+          "postkode": {
+            "type": "string"
+          },
+          "byEllerStedsnavn": {
+            "type": "string"
+          },
+          "distriktsnavn": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "landkode": {
+            "type": "string"
+          }
+        }
+      },
+      "InternasjonalAdresseIFrittFormat": {
+        "required": [
+          "landkode"
+        ],
+        "type": "object",
+        "properties": {
+          "adresselinje": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "postkode": {
+            "type": "string"
+          },
+          "byEllerStedsnavn": {
+            "type": "string"
+          },
+          "landkode": {
+            "type": "string"
+          }
+        }
+      },
+      "Kontaktadresse": {
+        "required": [
+          "adressegradering"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "adressegradering": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          },
+          "postboksadresse": {
+            "$ref": "#/components/schemas/Postboksadresse"
+          },
+          "vegadresse": {
+            "$ref": "#/components/schemas/VegadresseForPost"
+          },
+          "postadresseIFrittFormat": {
+            "$ref": "#/components/schemas/PostadresseIFrittFormat"
+          },
+          "adresseIdentifikatorFraMatrikkelen": {
+            "type": "string"
+          }
+        }
+      },
+      "KontaktadresseForDoedsbo": {
+        "required": [
+          "adresselinje",
+          "postnummer",
+          "poststedsnavn"
+        ],
+        "type": "object",
+        "properties": {
+          "adresselinje": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "poststedsnavn": {
+            "type": "string"
+          },
+          "postnummer": {
+            "type": "string"
+          },
+          "landkode": {
+            "type": "string"
+          }
+        }
+      },
+      "KontaktadresseIUtlandet": {
+        "required": [
+          "adressegradering"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "adressegradering": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          },
+          "utenlandskAdresse": {
+            "$ref": "#/components/schemas/InternasjonalAdresse"
+          },
+          "utenlandskAdresseIFrittFormat": {
+            "$ref": "#/components/schemas/InternasjonalAdresseIFrittFormat"
+          }
+        }
+      },
+      "KontaktinformasjonForDoedsbo": {
+        "required": [
+          "adresse",
+          "attestutstedelsesdato",
+          "skifteform"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "person": {
+            "$ref": "#/components/schemas/PersonSomKontakt"
+          },
+          "advokat": {
+            "$ref": "#/components/schemas/AdvokatSomKontakt"
+          },
+          "organisasjon": {
+            "$ref": "#/components/schemas/OrganisasjonSomKontakt"
+          },
+          "skifteform": {
+            "type": "string",
+            "enum": [
+              "OFFENTLIG",
+              "ANNET"
+            ]
+          },
+          "attestutstedelsesdato": {
+            "type": "string",
+            "format": "date"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/KontaktadresseForDoedsbo"
+          }
+        }
+      },
+      "Matrikkeladresse": {
+        "required": [
+          "matrikkelnummer"
+        ],
+        "type": "object",
+        "properties": {
+          "bruksenhetsnummer": {
+            "type": "string"
+          },
+          "bruksenhetstype": {
+            "type": "string",
+            "enum": [
+              "BOLIG",
+              "ANNET_ENN_BOLIG",
+              "FRITIDSBOLIG",
+              "IKKE_GODKJENT_BOLIG",
+              "UNUMMERERT_BRUKSENHET"
+            ]
+          },
+          "matrikkelnummer": {
+            "$ref": "#/components/schemas/Matrikkelnummer"
+          },
+          "undernummer": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "adressetilleggsnavn": {
+            "type": "string"
+          },
+          "poststed": {
+            "$ref": "#/components/schemas/Poststed"
+          },
+          "coAdressenavn": {
+            "type": "string"
+          }
+        }
+      },
+      "Matrikkelnummer": {
+        "required": [
+          "kommunenummer"
+        ],
+        "type": "object",
+        "properties": {
+          "kommunenummer": {
+            "type": "string"
+          },
+          "gaardsnummer": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "bruksnummer": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "festenummer": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Opphold": {
+        "required": [
+          "oppholdstillatelse"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "oppholdstillatelse": {
+            "type": "string",
+            "enum": [
+              "MIDLERTIDIG",
+              "PERMANENT",
+              "OPPLYSNING_MANGLER"
+            ]
+          },
+          "oppholdFra": {
+            "type": "string",
+            "format": "date"
+          },
+          "oppholdTil": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "Oppholdsadresse": {
+        "required": [
+          "adressegradering"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "utenlandskAdresse": {
+            "$ref": "#/components/schemas/InternasjonalAdresse"
+          },
+          "adressenErUkjent": {
+            "type": "boolean"
+          },
+          "vegadresse": {
+            "$ref": "#/components/schemas/Vegadresse"
+          },
+          "matrikkeladresse": {
+            "$ref": "#/components/schemas/Matrikkeladresse"
+          },
+          "adresseIdentifikatorFraMatrikkelen": {
+            "type": "string"
+          },
+          "adressegradering": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          },
+          "oppholdsadressedato": {
+            "type": "string",
+            "format": "date"
+          },
+          "oppholdAnnetSted": {
+            "type": "string",
+            "enum": [
+              "MILITAER",
+              "UTENRIKS",
+              "PAA_SVALBARD",
+              "PENDLER"
+            ]
+          }
+        }
+      },
+      "OrganisasjonSomKontakt": {
+        "required": [
+          "organisasjonsnavn"
+        ],
+        "type": "object",
+        "properties": {
+          "organisasjonsnavn": {
+            "type": "string"
+          },
+          "organisasjonsnummer": {
+            "type": "string"
+          },
+          "kontaktpersonnavn": {
+            "$ref": "#/components/schemas/Personnavn"
+          }
+        }
+      },
+      "PersonSomKontakt": {
+        "type": "object",
+        "properties": {
+          "foedselsdato": {
+            "type": "string",
+            "format": "date"
+          },
+          "personnavn": {
+            "$ref": "#/components/schemas/Personnavn"
+          },
+          "foedselsEllerDNummer": {
+            "type": "string"
+          }
+        }
+      },
+      "Personidentifikasjon": {
+        "required": [
+          "identifikasjonsnummer",
+          "identifikasjonsnummertype",
+          "utstederland"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "identifikasjonsnummer": {
+            "type": "string"
+          },
+          "identifikasjonsnummertype": {
+            "type": "string"
+          },
+          "utstederland": {
+            "type": "string"
+          }
+        }
+      },
+      "Personkjoenn": {
+        "required": [
+          "kjoenn"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "kjoenn": {
+            "type": "string",
+            "enum": [
+              "KVINNE",
+              "MANN"
+            ]
+          }
+        }
+      },
+      "Personnavn": {
+        "required": [
+          "etternavn",
+          "fornavn"
+        ],
+        "type": "object",
+        "properties": {
+          "fornavn": {
+            "type": "string"
+          },
+          "mellomnavn": {
+            "type": "string"
+          },
+          "etternavn": {
+            "type": "string"
+          }
+        }
+      },
+      "PostadresseIFrittFormat": {
+        "type": "object",
+        "properties": {
+          "adresselinje": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "poststed": {
+            "$ref": "#/components/schemas/Poststed"
+          }
+        }
+      },
+      "Postboksadresse": {
+        "required": [
+          "postboks"
+        ],
+        "type": "object",
+        "properties": {
+          "postbokseier": {
+            "type": "string"
+          },
+          "postboks": {
+            "type": "string"
+          },
+          "poststed": {
+            "$ref": "#/components/schemas/Poststed"
+          }
+        }
+      },
+      "Poststed": {
+        "type": "object",
+        "properties": {
+          "poststedsnavn": {
+            "type": "string"
+          },
+          "postnummer": {
+            "type": "string"
+          }
+        }
+      },
+      "Registerdata": {
+        "required": [
+          "entitet",
+          "entitetsendring"
+        ],
+        "type": "object",
+        "properties": {
+          "falskIdentitet": {
+            "$ref": "#/components/schemas/FalskIdentitet"
+          },
+          "identifikasjonsnummer": {
+            "$ref": "#/components/schemas/Folkeregisteridentifikator"
+          },
+          "identitetsgrunnlag": {
+            "$ref": "#/components/schemas/Identitetsgrunnlag"
+          },
+          "kontaktinformasjonForDoedsbo": {
+            "$ref": "#/components/schemas/KontaktinformasjonForDoedsbo"
+          },
+          "legitimasjonsdokument": {
+            "$ref": "#/components/schemas/Identifikasjonsdokument"
+          },
+          "utlendingsmyndighetenesIdentifikasjonsnummer": {
+            "$ref": "#/components/schemas/Personidentifikasjon"
+          },
+          "utenlandskPersonidentifikasjon": {
+            "$ref": "#/components/schemas/Personidentifikasjon"
+          },
+          "status": {
+            "$ref": "#/components/schemas/Folkeregisterpersonstatus"
+          },
+          "deltBosted": {
+            "$ref": "#/components/schemas/DeltBosted"
+          },
+          "kjoenn": {
+            "$ref": "#/components/schemas/Personkjoenn"
+          },
+          "foedsel": {
+            "$ref": "#/components/schemas/Foedsel"
+          },
+          "foedselINorge": {
+            "$ref": "#/components/schemas/FoedselINorge"
+          },
+          "familierelasjon": {
+            "$ref": "#/components/schemas/Familierelasjon"
+          },
+          "sivilstand": {
+            "$ref": "#/components/schemas/Sivilstand"
+          },
+          "doedsfall": {
+            "$ref": "#/components/schemas/Doedsfall"
+          },
+          "navn": {
+            "$ref": "#/components/schemas/Folkeregisterpersonnavn"
+          },
+          "adressebeskyttelse": {
+            "$ref": "#/components/schemas/GraderingAvAdresse"
+          },
+          "bostedsadresse": {
+            "$ref": "#/components/schemas/Bostedsadresse"
+          },
+          "oppholdsadresse": {
+            "$ref": "#/components/schemas/Oppholdsadresse"
+          },
+          "innflytting": {
+            "$ref": "#/components/schemas/InnflyttingTilNorge"
+          },
+          "utflytting": {
+            "$ref": "#/components/schemas/UtflyttingFraNorge"
+          },
+          "brukAvSamiskSpraak": {
+            "$ref": "#/components/schemas/SamiskSpraak"
+          },
+          "postadresse": {
+            "$ref": "#/components/schemas/Kontaktadresse"
+          },
+          "postadresseIUtlandet": {
+            "$ref": "#/components/schemas/KontaktadresseIUtlandet"
+          },
+          "foreldreansvar": {
+            "$ref": "#/components/schemas/Foreldreansvar"
+          },
+          "statsborgerskap": {
+            "$ref": "#/components/schemas/Statsborgerskap"
+          },
+          "bibehold": {
+            "$ref": "#/components/schemas/BibeholdAvNorskStatsborgerskap"
+          },
+          "opphold": {
+            "$ref": "#/components/schemas/Opphold"
+          },
+          "vergemaalEllerFremtidsfullmakt": {
+            "$ref": "#/components/schemas/VergemaalRepresentasjonEllerFremtidsfullmakt"
+          },
+          "entitet": {
+            "type": "string",
+            "enum": [
+              "FALSK_IDENTITET",
+              "IDENTIFIKASJONSNUMMER",
+              "IDENTITETSGRUNNLAG",
+              "UTLENDINGSMYNDIGHETENES_IDENTIFIKASJONSNUMMER",
+              "LEGITIMASJONSDOKUMENT",
+              "UTENLANDSK_PERSONIDENTIFIKASJON",
+              "KONTAKTINFORMASJON_FOR_DOEDSBO",
+              "STATUS",
+              "DELT_BOSTED",
+              "KJOENN",
+              "FOEDSEL",
+              "FOEDSEL_I_NORGE",
+              "SIVILSTAND",
+              "FAMILIERELASJON",
+              "DOEDSFALL",
+              "NAVN",
+              "ADRESSEBESKYTTELSE",
+              "BOSTEDSADRESSE",
+              "OPPHOLDSADRESSE",
+              "INNFLYTTING",
+              "UTFLYTTING",
+              "BRUK_AV_SAMISK_SPRAAK",
+              "KONTAKTADRESSE",
+              "KONTAKTADRESSE_I_UTLANDET",
+              "FORELDREANSVAR",
+              "STATSBORGERSKAP",
+              "BIBEHOLD",
+              "OPPHOLD",
+              "VERGEMAAL_ELLER_FREMTIDSFULLMAKT"
+            ]
+          },
+          "entitetsendring": {
+            "type": "string",
+            "enum": [
+              "REGISTRERE_NY",
+              "KORRIGERE",
+              "ANNULLERE",
+              "KORRIGERE_HISTORISK"
+            ]
+          }
+        }
+      },
+      "RelatertBiPerson": {
+        "required": [
+          "navn"
+        ],
+        "type": "object",
+        "properties": {
+          "navn": {
+            "$ref": "#/components/schemas/Personnavn"
+          },
+          "foedselsdato": {
+            "type": "string",
+            "format": "date"
+          },
+          "statsborgerskap": {
+            "type": "string"
+          },
+          "kjoenn": {
+            "type": "string",
+            "enum": [
+              "KVINNE",
+              "MANN"
+            ]
+          }
+        }
+      },
+      "SamiskSpraak": {
+        "required": [
+          "spraak"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "spraak": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "NORDSAMISK",
+                "SOERSAMISK",
+                "LULESAMISK"
+              ]
+            }
+          }
+        }
+      },
+      "Sivilstand": {
+        "required": [
+          "sivilstand"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sivilstand": {
+            "type": "string",
+            "enum": [
+              "UOPPGITT",
+              "UGIFT",
+              "GIFT",
+              "ENKE_ELLER_ENKEMANN",
+              "SKILT",
+              "SEPARERT",
+              "REGISTRERT_PARTNER",
+              "SEPARERT_PARTNER",
+              "SKILT_PARTNER",
+              "GJENLEVENDE_PARTNER"
+            ]
+          },
+          "sivilstandsdato": {
+            "type": "string",
+            "format": "date"
+          },
+          "myndighet": {
+            "type": "string"
+          },
+          "kommune": {
+            "type": "string"
+          },
+          "sted": {
+            "type": "string"
+          },
+          "utland": {
+            "type": "string"
+          },
+          "relatertVedSivilstand": {
+            "type": "string"
+          }
+        }
+      },
+      "Statsborgerskap": {
+        "required": [
+          "statsborgerskap"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "statsborgerskap": {
+            "type": "string"
+          },
+          "ervervsdato": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "TekniskDokumentkontroll": {
+        "required": [
+          "dokumentkontrollstatus"
+        ],
+        "type": "object",
+        "properties": {
+          "dokumentkontrollstatus": {
+            "type": "string"
+          },
+          "dokumentkontrolltidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "UkjentBosted": {
+        "type": "object",
+        "properties": {
+          "bostedskommune": {
+            "type": "string"
+          }
+        }
+      },
+      "UtflyttingFraNorge": {
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tilflyttingsland": {
+            "type": "string"
+          },
+          "tilflyttingsstedIUtlandet": {
+            "type": "string"
+          }
+        }
+      },
+      "Vegadresse": {
+        "required": [
+          "adressenavn",
+          "kommunenummer"
+        ],
+        "type": "object",
+        "properties": {
+          "kommunenummer": {
+            "type": "string"
+          },
+          "bruksenhetsnummer": {
+            "type": "string"
+          },
+          "bruksenhetstype": {
+            "type": "string",
+            "enum": [
+              "BOLIG",
+              "ANNET_ENN_BOLIG",
+              "FRITIDSBOLIG",
+              "IKKE_GODKJENT_BOLIG",
+              "UNUMMERERT_BRUKSENHET"
+            ]
+          },
+          "adressenavn": {
+            "type": "string"
+          },
+          "adressenummer": {
+            "$ref": "#/components/schemas/Adressenummer"
+          },
+          "adressekode": {
+            "type": "string"
+          },
+          "adressetilleggsnavn": {
+            "type": "string"
+          },
+          "poststed": {
+            "$ref": "#/components/schemas/Poststed"
+          },
+          "coAdressenavn": {
+            "type": "string"
+          }
+        }
+      },
+      "VegadresseForPost": {
+        "type": "object",
+        "properties": {
+          "coAdressenavn": {
+            "type": "string"
+          },
+          "adressenavn": {
+            "type": "string"
+          },
+          "adressenummer": {
+            "$ref": "#/components/schemas/Adressenummer"
+          },
+          "poststed": {
+            "$ref": "#/components/schemas/Poststed"
+          },
+          "adressekode": {
+            "type": "string"
+          },
+          "adressetilleggsnavn": {
+            "type": "string"
+          },
+          "bruksenhetsnummer": {
+            "type": "string"
+          }
+        }
+      },
+      "VergeRepresentantEllerFullmektig": {
+        "type": "object",
+        "properties": {
+          "navn": {
+            "$ref": "#/components/schemas/Personnavn"
+          },
+          "foedselsEllerDNummer": {
+            "type": "string"
+          },
+          "omfang": {
+            "type": "string",
+            "enum": [
+              "UTLENDINGSSAKER_PERSONLIGE_OG_OEKONOMISKE_INTERESSER",
+              "PERSONLIGE_OG_OEKONOMISKE_INTERESSER",
+              "OEKONOMISKE_INTERESSER",
+              "PERSONLIGE_INTERESSER"
+            ]
+          },
+          "omfangetErInnenPersonligOmraade": {
+            "type": "boolean"
+          }
+        }
+      },
+      "VergemaalRepresentasjonEllerFremtidsfullmakt": {
+        "required": [
+          "verge"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "vergemaaltype": {
+            "type": "string",
+            "enum": [
+              "ENSLIG_MINDREAARIG_ASYLSOEKER",
+              "ENSLIG_MINDREAARIG_FLYKTNING",
+              "VOKSEN",
+              "MIDLERTIDIG_FOR_VOKSEN",
+              "MINDREAARIG",
+              "MIDLERTIDIG_FOR_MINDREAARIG",
+              "FORVALTNING_UTENFOR_VERGEMAAL",
+              "STADFESTET_FREMTIDSFULLMAKT"
+            ]
+          },
+          "embete": {
+            "type": "string"
+          },
+          "verge": {
+            "$ref": "#/components/schemas/VergeRepresentantEllerFullmektig"
+          }
+        }
+      },
+      "FolkeregisterFeilmelding": {
+        "type": "object",
+        "properties": {
+          "httpStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alvorlighetsgrad": {
+            "type": "string"
+          },
+          "feilkode": {
+            "type": "string"
+          },
+          "feilmelding": {
+            "type": "string"
+          },
+          "tilleggsinformasjon": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "HendelseBulkoppslagRequest": {
+        "type": "object",
+        "properties": {
+          "dokumentidentifikator": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "HendelseMedDokumentIdentifikatorer": {
+        "type": "object",
+        "properties": {
+          "folkeregisteridentifikator": {
+            "type": "string"
+          },
+          "hendelsetype": {
+            "type": "string"
+          },
+          "hendelsesdokument": {
+            "type": "string"
+          },
+          "persondokument": {
+            "type": "string"
+          },
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "LagretHendelseMedDokumentIdentifikatorer": {
+        "type": "object",
+        "properties": {
+          "sekvensnummer": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hendelse": {
+            "$ref": "#/components/schemas/HendelseMedDokumentIdentifikatorer"
+          }
+        }
+      },
+      "ErrorMessageForExternalUsers": {
+        "type": "object",
+        "properties": {
+          "httpStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "feilreferanse": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "error"
+        }
+      },
+      "AdresseIFrittFormat": {
+        "type": "object",
+        "properties": {
+          "adresselinje": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "landkode": {
+            "type": "string"
+          }
+        }
+      },
+      "Folkeregisterperson": {
+        "required": [
+          "identifikasjonsnummer"
+        ],
+        "type": "object",
+        "properties": {
+          "falskIdentitet": {
+            "$ref": "#/components/schemas/FalskIdentitet"
+          },
+          "identifikasjonsnummer": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Folkeregisteridentifikator"
+            }
+          },
+          "identitetsgrunnlag": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Identitetsgrunnlag"
+            }
+          },
+          "kontaktinformasjonForDoedsbo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/KontaktinformasjonForDoedsbo"
+            }
+          },
+          "legitimasjonsdokument": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Identifikasjonsdokument"
+            }
+          },
+          "status": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Folkeregisterpersonstatus"
+            }
+          },
+          "utlendingsmyndighetenesIdentifikasjonsnummer": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Personidentifikasjon"
+            }
+          },
+          "utenlandskPersonidentifikasjon": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Personidentifikasjon"
+            }
+          },
+          "deltBosted": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeltBosted"
+            }
+          },
+          "kjoenn": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Personkjoenn"
+            }
+          },
+          "foedsel": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Foedsel"
+            }
+          },
+          "foedselINorge": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FoedselINorge"
+            }
+          },
+          "familierelasjon": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Familierelasjon"
+            }
+          },
+          "sivilstand": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Sivilstand"
+            }
+          },
+          "doedsfall": {
+            "$ref": "#/components/schemas/Doedsfall"
+          },
+          "navn": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Folkeregisterpersonnavn"
+            }
+          },
+          "adressebeskyttelse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GraderingAvAdresse"
+            }
+          },
+          "bostedsadresse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Bostedsadresse"
+            }
+          },
+          "oppholdsadresse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Oppholdsadresse"
+            }
+          },
+          "innflytting": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InnflyttingTilNorge"
+            }
+          },
+          "utflytting": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UtflyttingFraNorge"
+            }
+          },
+          "brukAvSamiskSpraak": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SamiskSpraak"
+            }
+          },
+          "preferertKontaktadresse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PreferertKontaktadresse"
+            }
+          },
+          "postadresse": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Kontaktadresse"
+            }
+          },
+          "postadresseIUtlandet": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/KontaktadresseIUtlandet"
+            }
+          },
+          "foreldreansvar": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Foreldreansvar"
+            }
+          },
+          "statsborgerskap": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Statsborgerskap"
+            }
+          },
+          "bibehold": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BibeholdAvNorskStatsborgerskap"
+            }
+          },
+          "opphold": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Opphold"
+            }
+          },
+          "vergemaalEllerFremtidsfullmakt": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VergemaalRepresentasjonEllerFremtidsfullmakt"
+            }
+          }
+        }
+      },
+      "PreferertKontaktadresse": {
+        "required": [
+          "valg"
+        ],
+        "type": "object",
+        "properties": {
+          "ajourholdstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "erGjeldende": {
+            "type": "boolean"
+          },
+          "kilde": {
+            "type": "string"
+          },
+          "aarsak": {
+            "type": "string"
+          },
+          "gyldighetstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "opphoerstidspunkt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "valg": {
+            "type": "string",
+            "enum": [
+              "BOSTEDSADRESSE",
+              "OPPHOLDSADRESSE",
+              "POSTADRESSE",
+              "POSTADRESSE_I_UTLANDET"
+            ]
+          },
+          "adressegradering": {
+            "type": "string",
+            "enum": [
+              "UGRADERT",
+              "KLIENTADRESSE",
+              "FORTROLIG",
+              "STRENGT_FORTROLIG"
+            ]
+          },
+          "kontaktadresseIFrittFormat": {
+            "$ref": "#/components/schemas/AdresseIFrittFormat"
+          }
+        }
+      },
+      "ArkivDokumentBulkoppslagRequest": {
+        "type": "object",
+        "properties": {
+          "dokumentidentifikator": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "PersonBulkoppslagRequest": {
+        "type": "object",
+        "properties": {
+          "foedselsEllerDNummer": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "UttrekkDataResponse": {
+        "type": "object",
+        "properties": {
+          "dokumentidentifikator": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "foedselsEllerDNummer": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "feilmelding": {
+            "type": "string"
+          }
+        }
+      },
+      "UttrekkJobbResponse": {
+        "type": "object",
+        "properties": {
+          "jobbId": {
+            "type": "string"
+          },
+          "feilmelding": {
+            "type": "string"
+          }
+        }
+      },
+      "Kommunenummer": {
+        "type": "object",
+        "properties": {
+          "bostedskommunenummer": {
+            "type": "string"
+          },
+          "oppholdskommunenummer": {
+            "type": "string"
+          }
+        }
+      },
+      "TilpassetUttrekkJobbRequest": {
+        "required": [
+          "personstatustyper"
+        ],
+        "type": "object",
+        "properties": {
+          "personstatustyper": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "AKTIV",
+                "BOSATT",
+                "UTFLYTTET",
+                "DOED",
+                "INAKTIV"
+              ]
+            }
+          },
+          "kommunenummer": {
+            "$ref": "#/components/schemas/Kommunenummer"
+          },
+          "doedsaarTilOgMed": {
+            "type": "object",
+            "properties": {
+              "leap": {
+                "type": "boolean"
+              },
+              "value": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          },
+          "kjoenn": {
+            "type": "string",
+            "enum": [
+              "KVINNE",
+              "MANN"
+            ]
+          },
+          "statsborgerskap": {
+            "type": "string"
+          },
+          "sivilstandstype": {
+            "type": "string",
+            "enum": [
+              "UOPPGITT",
+              "UGIFT",
+              "GIFT",
+              "ENKE_ELLER_ENKEMANN",
+              "SKILT",
+              "SEPARERT",
+              "REGISTRERT_PARTNER",
+              "SEPARERT_PARTNER",
+              "SKILT_PARTNER",
+              "GJENLEVENDE_PARTNER"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

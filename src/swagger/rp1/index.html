@@ -1,0 +1,21 @@
+---
+layout: swagger.hbs
+---
+<link rel="stylesheet" type="text/css" href="../swagger-ui.css">
+
+<div id="swagger-ui"></div>
+
+<script src="../swagger-ui-bundle.js"></script>
+<script src="../swagger-ui-standalone-preset.js"></script>
+<script>
+    window.onload = function () {
+        window.ui = SwaggerUIBundle({
+            url: "openapi.json",
+            dom_id: '#swagger-ui',
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ]
+        });
+    }
+</script>

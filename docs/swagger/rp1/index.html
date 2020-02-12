@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>api docs</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <a href ="/folkeregisteret-api-dokumentasjon">
+            <span class="header-applikasjonsnavn">Folkeregisteret</span>
+            <span>Api dokumentasjon</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">api docs</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="data">
+      <link rel="stylesheet" type="text/css" href="../swagger-ui.css">
+    
+    <div id="swagger-ui"></div>
+    
+    <script src="../swagger-ui-bundle.js"></script>
+    <script src="../swagger-ui-standalone-preset.js"></script>
+    <script>
+        window.onload = function () {
+            window.ui = SwaggerUIBundle({
+                url: "openapi.json",
+                dom_id: '#swagger-ui',
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIStandalonePreset
+                ]
+            });
+        }
+    </script>
+    </div>
+  </div>
+</div>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script></body>
+</html>

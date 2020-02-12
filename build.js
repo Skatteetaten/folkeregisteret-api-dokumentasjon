@@ -65,7 +65,7 @@ const smith = (clean = false) => {
                 pattern: 'driftsstatus/*',
                 sortBy: 'datetime',
                 reverse: true
-            }
+            },
         }))
         .use(markdown({}))
         .use(permalinks({
