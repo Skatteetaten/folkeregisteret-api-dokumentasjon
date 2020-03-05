@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 05 Mar 2020 07:04:31 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 05 Mar 2020 07:42:31 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[AVLYST - vedlikehold fredag 01.02.2019 til søndag 03.02.2019]]></title><description><![CDATA[AVLYST - INGEN VEDLIKEHOLD!!!
 
 Tidligere driftsmelding som nå AVLYSES:
 Fredag 01.02.2019 kl 20:00 til søndag 03.02.2019 kl 22:00 kjøres det en større oppdatering av FREG.
@@ -209,13 +209,13 @@ Dersom man har innvendinger mot vedlikehold send mail til avtalt epost adresse i
 Medfører at produsent-tjenester til FREG er utilgjengelig i perioden. Konsument-tjenster blir også berørt.
 
 Dersom man har innvendinger mot vedlikehold send mail til avtalt epost adresse i avtaleverket. 
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-01-Vedlikehold_nettverk</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-01-Vedlikehold_nettverk</guid></item><item><title><![CDATA[Varsling ustabilitet]]></title><description><![CDATA[Lørdag 10.11 kl kl.09:00 – 12:00 kan det oppleves ustabilitet i FREG sine tjenester.
-
-Ved spørsmål så sendes mail til oppgitt epost-adresse i avtaleverket.
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-11-05-Driftsvarsel</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-11-05-Driftsvarsel</guid></item><item><title><![CDATA[Varsling ustabilitet]]></title><description><![CDATA[Det er for tiden ustabilitet i nettverket til skatteetaten. Påvirker produsent- og konsumenttjenester.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-01-Vedlikehold_nettverk</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-01-Vedlikehold_nettverk</guid></item><item><title><![CDATA[Varsling ustabilitet]]></title><description><![CDATA[Det er for tiden ustabilitet i nettverket til skatteetaten. Påvirker produsent- og konsumenttjenester.
 
 Ved spørsmål så sendes mail freg.produksjon@skatteetaten.no
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-11-04-ustabilitet-freg</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-11-04-ustabilitet-freg</guid></item><item><title><![CDATA[Varsling ustabilitet - LØST]]></title><description><![CDATA[LØST.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-11-04-ustabilitet-freg</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2019-11-04-ustabilitet-freg</guid></item><item><title><![CDATA[Varsling ustabilitet]]></title><description><![CDATA[Lørdag 10.11 kl kl.09:00 – 12:00 kan det oppleves ustabilitet i FREG sine tjenester.
+
+Ved spørsmål så sendes mail til oppgitt epost-adresse i avtaleverket.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-11-05-Driftsvarsel</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-11-05-Driftsvarsel</guid></item><item><title><![CDATA[Varsling ustabilitet - LØST]]></title><description><![CDATA[LØST.
 Det er for tiden ustabilitet i nettverket til skatteetaten. Påvirker produsent- og konsumenttjenester.
 
 Ved spørsmål så sendes mail freg.produksjon@skatteetaten.no
@@ -229,7 +229,12 @@ Fra kl 17 fredag 12. oktober vil man oppleve forsinkelser på tjenester på rekv
 Man kan forvente å motta tilbakemelding etter kl 15 søndag 14. oktober.
 
 Ved spørsmål så sendes mail til oppgitt epost-adresse i avtaleverket.
-]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-08-Varsling_vedlikehold</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-08-Varsling_vedlikehold</guid></item><item><title><![CDATA[Varsling vedlikehold ifm kommuneendringer 2020]]></title><description><![CDATA[Periode: Mandag 30.12 kl 15:00 til Torsdag 02.01.2019 kl 08:00.
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-08-Varsling_vedlikehold</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2018-10-08-Varsling_vedlikehold</guid></item><item><title><![CDATA[Varsling vedlikehold fredag 20.03.2020]]></title><description><![CDATA[<p>Fredag 20.03.2020 vil det gjøres en større jobb for å avstemme informasjon mot Kartverket/matrikkel.
+Dette medfører en opprydding av avvik knyttet til kretser (skole-, kirke-).Videre medfører det oppdatering av adresseinfo på anslagvis 500.000 personer i registeret.
+Dvs at det vil da legges ut hendelser og oppdaterte dokumenter.</p>
+<p>Ber om at konsumenter av rettighetspakker vurderer og planlegger om dette vil kreve noe ekstra på egen side.</p>
+<p>Ved spørsmål så sendes mail <a href="mailto:freg.produksjon@skatteetaten.no">freg.produksjon@skatteetaten.no</a></p>
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/varsling-vedlikehold-fredag-20.03.2020</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/varsling-vedlikehold-fredag-20.03.2020</guid></item><item><title><![CDATA[Varsling vedlikehold ifm kommuneendringer 2020]]></title><description><![CDATA[Periode: Mandag 30.12 kl 15:00 til Torsdag 02.01.2019 kl 08:00.
 I perioden gjennomføres endring iht kommuneendringer 2020. I perioden vil dette bruken FREG.
 Det er mulig å sende inn meldinger i perioden, men funksjonell tilbakemelding blir forsinket.
 Påvirker Innlogget tjeneste samt Tilgjengeliggjøring (rettighetspakker) som vil oppleve nedetid og ustabilitet.
