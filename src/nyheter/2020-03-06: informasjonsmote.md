@@ -1,6 +1,6 @@
 ---
 title: Informasjonsmøte for systemleverandører
-date: 2019-10-22
+date: 2020-03-06
 ---
 
 Prosjekt Modernisering av Folkeregisteret ønsker å invitere systemleverandører, med kunder som skal koble seg til FREG, til nytt informasjonsmøte på Skatteetaten torsdag 26. mars kl. 9-12. 
