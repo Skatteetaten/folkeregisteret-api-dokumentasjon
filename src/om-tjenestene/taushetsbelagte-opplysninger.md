@@ -15,12 +15,11 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Tilknytning til Sametingets valgmantall
 * Samisk språk
 * Oppholdsstatus
-* Utenlands identifikasjonsnummer
+* Utenlandsk identifikasjonsnummer
 * Utlendingsmyndighetenes identifikasjonsnummer
 * Falsk identitet
 * Inn- og Utflytting
 * Bibehold av norsk statsborgerskap
-* 
 * Familierelasjon
 * Registreringsstatus med unntak av statusene "bosatt", "utflyttet", "død", "opphørt" og "inaktiv" - som er untatt fra taushetsplikt i forskrift
 
