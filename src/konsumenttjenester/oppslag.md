@@ -31,6 +31,7 @@ Ikke-identifiserende element:
 * navn
 * adressenavn
 * husnummer
+* postnummer
 
 Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. 
 
