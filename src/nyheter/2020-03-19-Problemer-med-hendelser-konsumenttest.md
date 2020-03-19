@@ -3,7 +3,7 @@ title: Problemer med hendelser i konsumenttest
 date: 2020-03-19
 ---
 
-FVi har dessverre problemer med å produsere hendelser i konsumenttestmiljøet.
+Vi har dessverre problemer med å produsere hendelser i konsumenttestmiljøet.
 Beklager ulempene dette medfører for dere!
 
 Vi jobber med å ferdigstille en ny versjon av testbefolkningen, som anslagsvis vil bestå av 1 million testpersoner.
