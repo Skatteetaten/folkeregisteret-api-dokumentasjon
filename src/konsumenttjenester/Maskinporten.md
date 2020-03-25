@@ -3,13 +3,13 @@ title: Maskinporten
 ---
 
 ## Komme i gang med Maskinporten
-Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Difi har beskrevet overordenet hvordan [API-sikring med maskinporten](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html) gjøres.
+Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Digitaliseringsdirektoratet har beskrevet overordenet hvordan [API-sikring med maskinporten](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html) gjøres.
 Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket.
 
 For å komme i gang med testing må det gjøres noen forberelser hos virksomheten:
 
 
-### 1. Ta kontakt med DIFI for å få tilgang til Maskinporten
+### 1. Ta kontakt med Digitaliseringsdirektoratet for å få tilgang til Maskinporten
 Bestill tilknytning til maskinporten via [DIFIs samarbeidsportal](https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten-0)
 
 
@@ -29,7 +29,7 @@ Se mer informasjon om dette her: https://difi.github.io/felleslosninger/oidc_aut
 ### 3. Systemmessige klargjøringer
 #### Klargjøring fra Folkeregisteret:
 
-Så snart korrekt rettighetspakke for virksomheten er avklart, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og rettighetspakke til DIFI. Rettighetspakken tilsvarer 'scope' på maskinporten-språk.
+Så snart korrekt rettighetspakke for virksomheten er avklart, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og rettighetspakke til Digitaliseringsdirektoratet. Rettighetspakken tilsvarer 'scope' på maskinporten-språk.
 Foreløpig er det kun laget ett scope som dekker rettighetspakken 'offentlig-med-hjemmel'. Folkeregisteret vil derfor melde inn virksomheten omtrent slik:
 ```
 POST /scopes/access/
