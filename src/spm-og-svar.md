@@ -15,7 +15,6 @@ Henvendelser om DSF-tjenester skal fremdeles rettes til EVRY på onlineservice@e
 
 For generelle henvendelser til folkeregisteret ta kontakt med brukerdialog på telefon 800 80 000, tastevalg 3.
 
-[Informasjonsvideo om påkobling til FREG](../dokumenter/zoom_3.mp4)
 
 ## Spørsmål og svar er kategorisert etter område under:
 
