@@ -6,11 +6,11 @@ Fra 4. mai vil systemleverandører kunne koble seg opp mot FREGs testmiljøer. D
 ### Påkobling i utvalgte segmenter
 Når det gjelder systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner eller til Bank- og finanssektoren så ber vi om at dere leser informasjon på deres respektive sider før dere starter arbeidet med oppkobling og integrasjon mot modernisert folkeregister(FREG). 
 
-Norsk Helsenett etablerer ny Persontjeneste for oppslag i folkeregisteret, og alle aktører i helse- og omsorgstjenesten skal benytte denne. https://www.nhn.no/persontjenesten/
+* Norsk Helsenett etablerer ny Persontjeneste for oppslag i folkeregisteret, og alle aktører i helse- og omsorgstjenesten skal benytte denne. https://www.nhn.no/persontjenesten/
 
-Bits tar segmentansvaret på vegne av finansnæringen for Modernisert Folkeregister, og Finans Norge Forsikringsdrift og Trafikkforsikringsforeningen etablerer, drifter og forvalter den tekniske fellesløsningen for finansbransjen. Les mer her:  https://www.bits.no/project/modernisert-folkeregister/
+* Bits tar segmentansvaret på vegne av finansnæringen for Modernisert Folkeregister, og Finans Norge Forsikringsdrift og Trafikkforsikringsforeningen etablerer, drifter og forvalter den tekniske fellesløsningen for finansbransjen. Les mer her:  https://www.bits.no/project/modernisert-folkeregister/
 
-KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Ta kontakt med Børge Nese i KS, borge.nese@ks.no
+* KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Ta kontakt med Børge Nese i KS, borge.nese@ks.no
 
 ### Systemleverandører
 Vi vil sende ut en epost til systemleverandører som blant annet inneholder søknadsskjema for oppkobling til FREG test i uke 17. Dersom du ønsker å motta denne eposten kan du sende – en epost med kontaktinformasjon til Folkeregister-Operasjonssenter@skatteetaten.no. Bruk følgende tittel: Vi vil teste mot FREG fra 4 mai. 
