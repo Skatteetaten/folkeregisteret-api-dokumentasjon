@@ -19,10 +19,10 @@ Vi vil sende ut en epost til systemleverandører som blant annet inneholder søk
 Fra Q3 2020 vil vi gi tilgang til alle konsumenter som ønsker å koble seg opp mot FREG for å hente Folkeregisteropplysninger til egne systemer, eller via nye webgrensesnitt (tilsvarende Infotorget).
 Under finner du litt mer informasjon fra Prosjekt for modernisert folkeregister om oppkobling og test.  
 
-[Informasjonsvideo om påkobling til FREG](../dokumenter/01 konsumenter.mp4)
+[Informasjonsvideo om påkobling til FREG](../dokumenter/01 Konsumenter.mp4)
 
 ### Test og testdata
-[Informasjonsvideo om testing og testdata](../dokumenter/04 – Test mot Folkeregisteret.mp4)
+[Informasjonsvideo om testing og testdata](../dokumenter/04 - Test mot Folkeregisteret.mp4)
 
 [Informasjonsvideo om Tenor](../dokumenter/Informasjonsfilm Tenor.mp4)
 
