@@ -4,7 +4,7 @@ title: Påkobling FREG
 Fra 4. mai vil systemleverandører kunne koble seg opp mot FREGs testmiljøer. Dette gjelder i første omgang de leverandørene som på på vegne av konsumentene skal hente ut oppdatert folkeregisteropplysninger direkte fra modernisert løsning(FREG). Det vil bli gitt tilgang til test for alle tilgjengelige [rettighetspakker](https://www.skatteetaten.no/en/person/national-registry/about/modernisering/ny-lov-og-nye-tilganger/#tilganger-etter-ny-lov).         
 
 ### Påkobling i utvalgte segmenter
-Når det gjelder systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner eller til Bank- og finanssektoren så ber vi om at dere leser informasjon på deres respektive sider før dere starter arbeidet med oppkobling og integrasjon mot modernisert folkeregister(FREG). 
+Når det gjelder systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner, eller til Bank- og finanssektoren så ber vi om at dere leser informasjon på segmentenes respektive sider før dere starter arbeidet med oppkobling og integrasjon mot modernisert folkeregister(FREG). 
 
 * Norsk Helsenett etablerer ny Persontjeneste for oppslag i folkeregisteret, og alle aktører i helse- og omsorgstjenesten skal benytte denne. https://www.nhn.no/persontjenesten/
 
