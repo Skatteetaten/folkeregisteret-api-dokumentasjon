@@ -10,7 +10,7 @@ For å komme i gang med testing må det gjøres noen forberelser hos virksomhete
 
 
 ### 1. Ta kontakt med Digitaliseringsdirektoratet for å få tilgang til Maskinporten
-Bestill tilknytning til maskinporten via [DIFIs samarbeidsportal](https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten-0)
+Bestill tilknytning til maskinporten via [DIFIs samarbeidsportal](https://difi.github.io/felleslosninger/maskinporten_overordnet.html)
 
 
 ### 2. Sende forespørsel om å bli opprettet som bruker.
