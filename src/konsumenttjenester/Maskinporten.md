@@ -31,6 +31,14 @@ Se mer informasjon om dette her: https://difi.github.io/felleslosninger/oidc_aut
 
 Så snart korrekt rettighetspakke for virksomheten er avklart, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og rettighetspakke til Digitaliseringsdirektoratet. Rettighetspakken tilsvarer 'scope' på maskinporten-språk.
 Følgende scopes er opprettet for å dekke de rettighetspakkene Folkeregisteret tilbyr nå:
+* folkeregister:deling/offentligmedhjemmel
+* folkeregister:deling/finans
+* folkeregister:deling/offentligutenhjemmel
+* folkeregister:deling/privat
+* folkeregister:deling/offentligmedhjemmelsegmentansvarlig
+* folkeregister:deling/finanssegmentansvarlig
+* folkeregister:deling/offentligutenhjemmelsegmentansvarlig
+* folkeregister:deling/privatsegmentansvarlig
 
 
 Folkeregisteret vil derfor melde inn virksomheten omtrent slik:
