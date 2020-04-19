@@ -20,8 +20,8 @@ Så snart korrekt rettighetspakke er avklart vil folkeregisteret klargjøre virk
 
 
 
-All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS
-Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetsserifikat
+All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS.
+Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat
 
 Se mer informasjon om dette her: https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html
 
@@ -30,25 +30,28 @@ Se mer informasjon om dette her: https://difi.github.io/felleslosninger/oidc_aut
 #### Klargjøring fra Folkeregisteret:
 
 Så snart korrekt rettighetspakke for virksomheten er avklart, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og rettighetspakke til Digitaliseringsdirektoratet. Rettighetspakken tilsvarer 'scope' på maskinporten-språk.
-Foreløpig er det kun laget ett scope som dekker rettighetspakken 'offentlig-med-hjemmel'. Folkeregisteret vil derfor melde inn virksomheten omtrent slik:
+Følgende scopes er opprettet for å dekke de rettighetspakkene Folkeregisteret tilbyr nå:
+
+
+Folkeregisteret vil derfor melde inn virksomheten omtrent slik:
 ```
 POST /scopes/access/
 {
-  "scope": "skatteetaten:medhjemmel",
+  "scope": "folkeregister:deling/offentligmedhjemmel	",
   "consumer_orgno": "999888999"
 }
 ```
-Dette gir virksomheten (med org.nummer 999888999) tilgang til å få tokens fra maskinporten for scopet "skatteetaten:medhjemmel"
+Dette gir virksomheten (med org.nummer 999888999) tilgang til å få tokens fra maskinporten for scopet "folkeregister:deling/offentligmedhjemmel	"
 #### Klargjøring fra Virksomheten:
 Når virksomheten har fått beskjed at tilgangen er opprettet i maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data.
-Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://difi.github.io/felleslosninger/oidc_guide_maskinporten.html#4-konfigurere-oauth2-klient) eller via et brukergrensenitt i samarbeidsportalen.
+Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://difi.github.io/felleslosninger/oidc_api_admin_maskinporten.html) eller via et brukergrensenitt i samarbeidsportalen.
 All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke folkeregister-api'ene.
 
 
 ### 4. Bruke folkeregister-api'ene med token fra maskinporten
 Overordnet gjøres følgende:
 
-1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på (https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html). Resource er valgfri og skal ikke settes for Folkeregisterets API.
+1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på (https://difi.github.io/felleslosninger/oidc_api_admin_maskinporten.html). Resource er valgfri og skal ikke settes for Folkeregisterets API.
 
 2. Tokenet legges ved kallet til folkeregisteret i Authorization header. Tokenet legges ved slik:
 ```
