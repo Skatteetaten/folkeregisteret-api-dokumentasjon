@@ -73,4 +73,5 @@ Overordnet gjøres følgende:
 
 ### 5. Hvordan opptre på vegne av en annen virksomhet
 Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter for å koble seg opp mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har
-en nærmere beskro
+en nærmere beskrevet hos Difi her [Delegere rettigheter via Altinn](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#bruke-delegering-via-altinn-autorisasjon)
+
