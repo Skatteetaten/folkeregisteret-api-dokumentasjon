@@ -59,7 +59,7 @@ All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med b
 ### 4. Bruke folkeregister-api'ene med token fra maskinporten
 Overordnet gjøres følgende:
 
-1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på [Difi sine side for hvordan bruke maskinporten som konsument](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html). Resource er valgfri og skal ikke settes for Folkeregisterets API.
+1. Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på [Difi sine side for hvordan bruke maskinporten som konsument](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html). Merk at "Resource" er valgfri og skal ikke settes for Folkeregisterets API. Dette medfører at audience blir "unspecified" som Folkeregisteret forventer.
 
 2. Tokenet legges ved kallet til folkeregisteret i Authorization header. Tokenet legges ved slik:
 ```
@@ -71,4 +71,6 @@ Overordnet gjøres følgende:
 
 4. Hvis alt er OK returneres data iht. forespørselen.
 
-
+### 5. Hvordan opptre på vegne av en annen virksomhet
+Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter for å koble seg opp mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har
+en nærmere beskro
