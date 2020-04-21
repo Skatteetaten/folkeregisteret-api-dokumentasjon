@@ -72,6 +72,7 @@ Overordnet gjøres følgende:
 4. Hvis alt er OK returneres data iht. forespørselen.
 
 ### 5. Hvordan opptre på vegne av en annen virksomhet
-Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter for å koble seg opp mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har
-en nærmere beskrevet hos Difi her [Delegere rettigheter via Altinn](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#bruke-delegering-via-altinn-autorisasjon)
+Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter ved oppkobling mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har
+en nærmere beskrivelse av hvordan dette gjøres. [Delegere rettigheter via Altinn](https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#bruke-delegering-via-altinn-autorisasjon).
+Selve kallene mot Folkeregisteret vil skje på vanlig måte men tokenet vil inneholde informasjon både om konsument og systemleverandør.
 
