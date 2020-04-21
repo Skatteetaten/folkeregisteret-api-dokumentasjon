@@ -110,7 +110,7 @@
     <h3 id="4-bruke-folkeregister-api-ene-med-token-fra-maskinporten">4. Bruke folkeregister-api&#39;ene med token fra maskinporten</h3>
     <p>Overordnet gjøres følgende:</p>
     <ol>
-    <li><p>Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på <a href="https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html">Difi sine side for hvordan bruke maskinporten som konsument</a>. Resource er valgfri og skal ikke settes for Folkeregisterets API.</p>
+    <li><p>Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på <a href="https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html">Difi sine side for hvordan bruke maskinporten som konsument</a>. Merk at &quot;Resource&quot; er valgfri og skal ikke settes for Folkeregisterets API. Dette medfører at audience blir &quot;unspecified&quot; som Folkeregisteret forventer.</p>
     </li>
     <li><p>Tokenet legges ved kallet til folkeregisteret i Authorization header. Tokenet legges ved slik:</p>
     <pre><code>&#39;Authorization: Bearer &lt;token&gt;&#39;
@@ -121,6 +121,9 @@
     <li><p>Hvis alt er OK returneres data iht. forespørselen.</p>
     </li>
     </ol>
+    <h3 id="5-hvordan-opptre-p-vegne-av-en-annen-virksomhet">5. Hvordan opptre på vegne av en annen virksomhet</h3>
+    <p>Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter for å koble seg opp mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har
+    en nærmere beskro</p>
     
         </div>
       </div>
