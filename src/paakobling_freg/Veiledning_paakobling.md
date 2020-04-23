@@ -54,6 +54,7 @@ Følgende må utføres av systemleverandøren;
 
 Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: 
 https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/
+
 Eventuelle spørsmål til hvordan du etablerer oppkobling til FREGs konsumenttestmiljø og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av FREGs konsumenttestmiljø skal rettes til  Folkeregister-Operasjonssenter@skatteetaten.no. 
 
 ### Andre nyttige lenker;  
