@@ -44,6 +44,10 @@ const smith = (clean = false) => {
                 pattern: 'konsumenttjenester/**/*',
                 sortBy: 'title'
             },
+            'pakobling-til-freg': {
+                pattern: 'pakobling-til-freg/**/*',
+                sortBy: 'title'
+            },
             'test': {
                 pattern: 'test/**/*',
                 sortBy: 'title'
