@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112400982-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112400982-1');
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Veileder for systemleverandører</title>
+</head>
+<body>
+<div>
+  <header class="header" role="banner">
+    <div class="meta header-meta">
+      <div class="header-bakgrunn"></div>
+  
+      <div class="header-meta-innhold">
+        <div class="header-logo">
+        </div>
+  
+        <div class="header-apptittel">
+          <span class="header-applikasjonsnavn">Folkeregisteret</span>
+          Api dokumentasjon
+        </div>
+      </div>
+    </div>
+  
+    <div class="header-sidetittel">
+      <h1>
+        <span class="header-undertittel">Veileder for systemleverandører</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="meta">
+      <div class="sideblokk-seksjon navig">
+        <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
+          <a href="../informasjonsfelter-og-statuskoder">Informasjonsfelter og statuskoder</a>
+          <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../sikkerhet">Sikkerhet</a>
+          <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
+        <div><a class="index" href="../produsenttjenester">Produsenttjenester</a></div>
+          <a href="../mottak">Mottak</a>
+          <a href="../tilbakemelding">Tilbakemelding</a>
+        <div><a class="index" href="../konsumenttjenester">Konsumenttjenester</a></div>
+          <a href="../dataminimering">Dataminimering</a>
+          <a href="../funksjonell-beskrivelse">Funksjonell beskrivelse</a>
+          <a href="../hendelsesliste">Hendelsesliste</a>
+          <a href="../maskinporten">Maskinporten</a>
+          <a href="../oppslag">Oppslag</a>
+          <a href="../pakobling-freg">Påkobling FREG</a>
+          <a href="../uttrekk">Uttrekk</a>
+        <div><a class="index" href="../test">Test</a></div>
+          <a href="../test-for-konsumenter">Test for konsumenter</a>
+          <a href="../test-for-produsenter">Test for produsenter</a>
+          <a href="../testdata">Testdata</a>
+        <div><a class="index" href="../sporsmal-og-svar">Spørsmål og svar</a></div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="innhold-blokk">
+        <div class="innhold-blokk-innhold">
+          <h2 id="veileder-for-systemleverand-rer-som-nsker-komme-i-gang-med-test-av-sine-l-sninger-mot-modernisert-folkeregister-freg-">Veileder for systemleverandører som ønsker å komme i gang med test av sine løsninger mot modernisert folkeregister (FREG)</h2>
+    <p>For systemleverandører av løsninger som har behov for løpende oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr vi i en begrenset periode en raskere vei for oppkobling mot FREGs konsumenttestmiljø. I testperioden vil systemleverandøren få direkte tilgang (uten behov for delegering) til følgende rettighetspakker i FREGs konsumenttestmiljø:</p>
+    <ul>
+    <li>Offentlig med hjemmel</li>
+    <li>Offentlig uten hjemmel</li>
+    <li>Privat</li>
+    </ul>
+    <p>Systemleverandøren vil få tilgang direkte til konsumenttestmiljøet på det organisasjonsnummeret som er oppgitt i søknaden. Tilbudet om tidlig oppkobling til test er tilgjengelig kun i en begrenset periode fra 4. mai til 15. juni.</p>
+    <h3 id="dette-trenger-du-">Dette trenger du:</h3>
+    <ol>
+    <li>E-post fra <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a> med tittel  &quot;Tilgang FREG testmiljø&quot; </li>
+    <li>Godkjent tilgang (Sendes ut via e-post, dersom søknad blir godkjent)      </li>
+    <li>Tilgang til Maskinporten (forutsetter at du har et virksomhetssertifikat for test og produksjon)  </li>
+    <li>Tilgang til FREGs konsumenttestmiljø</li>
+    </ol>
+    <h3 id="slik-g-r-du-fram-">Slik går du fram:</h3>
+    <h4 id="1-e-post-fra-folkeregister-operasjonssenter-skatteetaten-no-med-tittel-tilgang-freg-testmilj-">1. E-post fra <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a> med tittel &quot;Tilgang FREG  testmiljø&quot;</h4>
+    <ul>
+    <li>Hvis din virksomhet  ikke har mottatt e-post  - Dersom din virksomhet ønsker å delta og du  ikke har mottatt e-posten med Tittel; &quot;Tilgang FREG  testmiljø&quot; må det sendes – en e-post med kontaktinformasjon til <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a>.  Bruk følgende tittel: Vi vil teste mot FREG  </li>
+    <li>Hvis din virksomhet har mottatt e-post  fra <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a> må følgende utføres;</li>
+    <li>Lese og akseptere bruksvilkår (kryss av i søknadskjema)</li>
+    <li>Fylle ut og sende inn søknadsskjema      </li>
+    </ul>
+    <p>Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bruksvilkår skal rettes skriftlig via e-post til <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a>. </p>
+    <h4 id="2-godkjent-tilgang">2. Godkjent tilgang</h4>
+    <p>Når søknaden er behandlet og godkjent, vil din virksomhet motta en e-post fra <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a> som beskriver den videre prosessen i arbeidet med å koble din virksomhet til FREGs konsumenttestmiljø. </p>
+    <h4 id="3-tilgang-til-maskinporten-">3. Tilgang til Maskinporten:</h4>
+    <p>Følgende må utføres;</p>
+    <ol>
+    <li>Følge DigDir veiledning for å få tilgang til Maskinporten
+    For å få tilgang til FREG så må inngås en avtale med DigDir om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten <a href="https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor">https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor</a></li>
+    <li>Inngå avtale med DigDir om bruk av Maskinporten (Er vederlagsfritt for systemleverandøren). <a href="https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer">https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer</a>
+    Eventuelle spørsmål til hvordan du får tilgang til Maskinporten skal rettes til <a href="mailto:servicedesk@digdir.no">servicedesk@digdir.no</a></li>
+    <li>Etabler en tilgang til Maskinporten </li>
+    <li>Gjennomfører test av tilgang mot Maskinporten  </li>
+    </ol>
+    <p>Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, <a href="https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen">https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen</a>
+    Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til <a href="mailto:servicedesk@digdir.no">servicedesk@digdir.no</a></p>
+    <h4 id="4-tilgang-til-fregs-konsumenttestmilj-">4. Tilgang til FREGs konsumenttestmiljø:</h4>
+    <p>I testperioden vil du bli gitt direkte tilgang til konsumenttestmiljøet.  </p>
+    <p>Følgende må utføres av systemleverandøren;</p>
+    <ol>
+    <li>Lese og sette seg inn i teknisk dokumentasjon om FREG og oppkobling mot FREG </li>
+    <li>Følge FREGs dokumentasjon for oppkobling og tilgang til FREGs konsumenttestmiljø</li>
+    <li>Utvikle og teste oppkobling og integrasjon </li>
+    </ol>
+    <p>Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: 
+    <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/</a>
+    Eventuelle spørsmål til hvordan du etablerer oppkobling til FREGs konsumenttestmiljø og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av FREGs konsumenttestmiljø skal rettes til  <a href="mailto:Folkeregister-Operasjonssenter@skatteetaten.no">Folkeregister-Operasjonssenter@skatteetaten.no</a>. </p>
+    <h3 id="andre-nyttige-lenker-">Andre nyttige lenker;</h3>
+    <p>Generell informasjon om Maskinporten finner du her: <a href="https://samarbeid.difi.no/felleslosninger/maskinporten">https://samarbeid.difi.no/felleslosninger/maskinporten</a></p>
+    <p>Driftsmeldinger fra Digdir finner du her: <a href="https://samarbeid.difi.no/driftsmeldinger">https://samarbeid.difi.no/driftsmeldinger</a></p>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
