@@ -33,9 +33,9 @@ Når søknaden er behandlet og godkjent, vil din virksomhet motta en e-post fra 
 #### 3. Tilgang til Maskinporten:
 
 Følgende må utføres;
-1. Følge DigDir veiledning for å få tilgang til Maskinporten
-For å få tilgang til FREG så må inngås en avtale med DigDir om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor
-2. Inngå avtale med DigDir om bruk av Maskinporten (Er vederlagsfritt for systemleverandøren). https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer
+1. Følge Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporten
+For å få tilgang til FREG så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor
+2. Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for systemleverandøren). https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer
 Eventuelle spørsmål til hvordan du får tilgang til Maskinporten skal rettes til servicedesk@digdir.no
 3. Etabler en tilgang til Maskinporten 
 4. Gjennomfører test av tilgang mot Maskinporten  
