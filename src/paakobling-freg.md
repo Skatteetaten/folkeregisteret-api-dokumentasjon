@@ -1,5 +1,5 @@
 ---
-title: Påkobling FREG
+title: Påkobling til FREG
 ---
 Fra 4. mai vil systemleverandører kunne koble seg opp mot FREGs testmiljøer. Dette gjelder i første omgang de leverandørene som på på vegne av konsumentene skal hente ut oppdatert folkeregisteropplysninger direkte fra modernisert løsning(FREG). Det vil bli gitt tilgang til test for alle tilgjengelige [rettighetspakker](https://www.skatteetaten.no/en/person/national-registry/about/modernisering/ny-lov-og-nye-tilganger/#tilganger-etter-ny-lov).         
 
