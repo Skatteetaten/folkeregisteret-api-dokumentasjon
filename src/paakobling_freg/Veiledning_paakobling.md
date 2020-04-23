@@ -41,6 +41,7 @@ Eventuelle spørsmål til hvordan du får tilgang til Maskinporten skal rettes t
 4. Gjennomfører test av tilgang mot Maskinporten  
 
 Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen
+
 Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til servicedesk@digdir.no
 
 #### 4. Tilgang til FREGs konsumenttestmiljø:
