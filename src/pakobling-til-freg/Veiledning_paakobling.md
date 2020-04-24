@@ -1,5 +1,5 @@
 ---
-title: Freg veileder for systemleverandører
+title: Veileder for systemleverandører
 ---
 
 ## Veileder for systemleverandører som ønsker å komme i gang med test av sine løsninger mot modernisert folkeregister (FREG)
