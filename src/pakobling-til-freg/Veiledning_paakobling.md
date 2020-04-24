@@ -5,7 +5,8 @@ title: Veileder for systemleverandører
 ## Veileder for systemleverandører som ønsker å komme i gang med test av sine løsninger mot modernisert folkeregister (FREG)
 For systemleverandører av løsninger som har behov for løpende oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr vi i en begrenset periode en raskere vei for oppkobling mot FREGs konsumenttestmiljø. I testperioden vil systemleverandøren få direkte tilgang (uten behov for delegering) til følgende rettighetspakker i FREGs konsumenttestmiljø:
 * Offentlig med hjemmel
-* Offentlig uten hjemmel
+* Finans
+* Offentlig og privat uten hjemmel
 * Privat
 
 Systemleverandøren vil få tilgang direkte til konsumenttestmiljøet på det organisasjonsnummeret som er oppgitt i søknaden. Tilbudet om tidlig oppkobling til test er tilgjengelig kun i en begrenset periode fra 4. mai til 15. juni.
