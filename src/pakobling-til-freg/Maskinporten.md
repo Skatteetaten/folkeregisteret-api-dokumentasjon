@@ -35,10 +35,11 @@ Følgende scopes er opprettet for å dekke de rettighetspakkene Folkeregisteret 
 * folkeregister:deling/finans
 * folkeregister:deling/offentligutenhjemmel
 * folkeregister:deling/privat
-* folkeregister:deling/offentligmedhjemmelsegmentansvarlig
-* folkeregister:deling/finanssegmentansvarlig
-* folkeregister:deling/offentligutenhjemmelsegmentansvarlig
-* folkeregister:deling/privatsegmentansvarlig
+
+Følgende scopes vil bli opprettet og tilgjengleig i fremtiden
+* folkeregister:deling/offentligmedhjemmel.segmentansvarlig
+* folkeregister:deling/finans.segmentansvarlig
+* folkeregister:deling/offentligutenhjemmel.segmentansvarlig
 
 
 Folkeregisteret vil derfor melde inn virksomheten omtrent slik:
