@@ -36,7 +36,7 @@ Følgende scopes er opprettet for å dekke de rettighetspakkene Folkeregisteret 
 * folkeregister:deling/offentligutenhjemmel
 * folkeregister:deling/privat
 
-Følgende scopes vil bli opprettet og tilgjengleig i fremtiden
+Følgende scopes vil bli opprettet og tilgjengelig i fremtiden
 * folkeregister:deling/offentligmedhjemmel.segmentansvarlig
 * folkeregister:deling/finans.segmentansvarlig
 * folkeregister:deling/offentligutenhjemmel.segmentansvarlig
