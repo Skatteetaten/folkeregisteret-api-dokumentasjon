@@ -37,17 +37,6 @@ Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at
 
 Det er støtte for fonetisk søk på navn.
 
-## Ressurser
-| Ressurs | Beskrivelse | 
-|---------|-------------|
-|personer/{folkeregisteridentifikator}| Siste versjon av en person | 
-|personer/entydigsoek| Entydig søk som returnerer siste versjon av en person |
-|personer/soek| Søk på kriterier som returenerer siste versjon av max 10 000 personer|
-|personer/arkiv/{persondokumentidentifikator} | Versjonert utgave av en person |
-|personer/bulkoppslag/| Siste versjon av et sett med personer (gjelder kun rettighetspakke offentlig-med-hjemmel)|
-|personer/bulkoppslag/arkiv/| Et sett med versjonerte utgaver av en person (gjelder kun rettighetspakke offentlig-med-hjemmel)|
-|personer/xsd| Xsd (kontrakt) for person |
-
 
 ## Rettighetspakker
 
