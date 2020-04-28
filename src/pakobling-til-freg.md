@@ -21,6 +21,9 @@ Under finner du litt mer informasjon fra Prosjekt for modernisert folkeregister 
 
 [Informasjonsvideo om påkobling til FREG](../dokumenter/01 Konsumenter.mp4)
 
+### FREG tjenester
+[Presentasjon av FREG tjenestene](../dokumenter/Folkeregisterets tjenester.pptx)
+
 ### Test og testdata
 [Informasjonsvideo om testing og testdata](../dokumenter/04 - Test mot Folkeregisteret.mp4)
 
