@@ -10,7 +10,7 @@ Når det gjelder systemleverandører som leverer tjenester til Helse- og omsorgs
 
 * Bits tar segmentansvaret på vegne av finansnæringen for Modernisert Folkeregister, og Finans Norge Forsikringsdrift og Trafikkforsikringsforeningen etablerer, drifter og forvalter den tekniske fellesløsningen for finansbransjen. Les mer her:  https://www.bits.no/project/modernisert-folkeregister/
 
-* KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Ta kontakt med Børge Nese i KS, borge.nese@ks.no
+* KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Les mer her: https://ks-no.github.io/fiks-plattform/modernisert-folkeregister/
 
 ### Systemleverandører
 Vi vil sende ut en epost til systemleverandører som blant annet inneholder søknadsskjema for oppkobling til FREG test i uke 17. Dersom du ønsker å motta denne eposten kan du sende – en epost med kontaktinformasjon til Folkeregister-Operasjonssenter@skatteetaten.no. Bruk følgende tittel: Vi vil teste mot FREG fra 4 mai. 
