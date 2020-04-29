@@ -20,3 +20,13 @@ For FREG test gjelder følgende tjenestenivå:
 |Testdata|I testmiljøet skal relevante, syntetisk genererte testdata være tilgjengelig. Det er forventet at spesifikke egenskaper som gjelder den enkelte kunde tilrettelegges for test på kundens side.|
 |Komponentversjoner|Versjoner av komponenter i testmiljøet skal normalt være samme versjoner som i produksjonsmiljøet.|
 
+## Oppslag
+| Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
+| -------------- | --- | ---------------- | -------------------- | ------------ |
+| Hent person | v1/personer/{personidentifikator}
+ | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel | < 500 ms| Benyttes for enkeltoppslag, eks direkte fra et fagsystem.|
+| Hent person - bulkoppslag | v1/personer/bulkoppslag | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel | < 10 s| Benyttes dersom en skal slå opp på mer enn en person, eks relasjonene til en tidligere hentet person eller endrede personer på hendelsesliste.
+Merk at responstiden øker sammen med antall oppslag i kallet.|
+| Søk med treffliste | v1/personer/soek | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel | < 2 s | Søk med mer enn et treff. Etterfølges av bulkoppslag på identifikasjonsnummer i treffliste |
+| Entydig søk | v1/personer/entydigsoek | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel, Presse, Privat | < 2 s | Dersom en ikke kjenner fnr/dnr eller ikke har tilgang til tjenesten personer/hent vil entydig søk være alternativet. |
+
