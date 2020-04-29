@@ -45,3 +45,15 @@ For FREG test gjelder følgende tjenestenivå:
 | Siste sekvensnummer| v1/hendelser/siste/sekvensnummer| OffentligMedHjemmel<br> Finans<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel<br> Presse<br> Privat| < 500 ms | Gir siste sekvensnummer (nyeste hendelse) for hendelseslisten.|
 | Hendelser xsd| v1/hendelser/xsd|   | < 500 ms | Gir gjeldende XSD-dokument for hendelse|
 | Hendelser feed xsd| v1/hendelser/feedxsd|   | < 500 ms| Gir gjeldende XSD-dokument for feed|
+
+### Ajourhold
+
+| Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
+| -------------- | --- | ---------------- | -------------------- | ------------ |
+| Hent hendelsesdokument| v1/hendelser/{hendelsesidentifikator}| OffentligMedHjemmel
+| < 500 ms | Gir hendelsesdokument med detaljerte opplysninger om registerendringene som følger av hendelsen. |
+| Hent hendelsesdokument - bulkoppslag | /v1/hendelser/bulkoppslag| OffentligMedHjemmel
+| < 10 s | Tilhørende oppslag på hendelsesdokumenter etter lytting på hendelsesliste|
+| Hent person - arkiv| /v1/personer/arkiv/{dokumentidentifikator}| OffentligMedHjemmel
+| < 500 ms | Gir oppdatert personopplysninger for person med fødsels-, eller d-nummer |
+| Hent person - arkiv - bulkoppslag| /v1/personer/bulkoppslag/arkiv| OffentligMedHjemmel
