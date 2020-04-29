@@ -27,4 +27,6 @@ For FREG test gjelder følgende tjenestenivå:
 | Hent person - bulkoppslag | v1/personer/bulkoppslag | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel | < 10 s| Benyttes dersom en skal slå opp på mer enn en person, eks relasjonene til en tidligere hentet person eller endrede personer på hendelsesliste. <br> Merk at responstiden øker sammen med antall oppslag i kallet.|
 | Søk med treffliste | v1/personer/soek | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel | < 2 s | Søk med mer enn et treff. Etterfølges av bulkoppslag på identifikasjonsnummer i treffliste |
 | Entydig søk | v1/personer/entydigsoek | OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel, Presse, Privat | < 2 s | Dersom en ikke kjenner fnr/dnr eller ikke har tilgang til tjenesten personer/hent vil entydig søk være alternativet. |
+| Online oppslag | www.skatteetaten.no/soekfolkeregisteret| OffentligMedHjemmel, Finans, OffentligUtenHjemmel, PrivatUtenHjemmel, Presse, Privat| ikke spesifisert | Innlogget onlinetjeneste som erstatter dagens søk på personer via Infotorg|
+| Personer xsd | v1/personer/xsd| - | < 500 ms| Gir gjeldende XSD-dokument for personopplysninger.|
 
