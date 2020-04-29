@@ -20,6 +20,8 @@ For FREG test gjelder følgende tjenestenivå:
 |Testdata|I testmiljøet skal relevante, syntetisk genererte testdata være tilgjengelig. Det er forventet at spesifikke egenskaper som gjelder den enkelte kunde tilrettelegges for test på kundens side.|
 |Komponentversjoner|Versjoner av komponenter i testmiljøet skal normalt være samme versjoner som i produksjonsmiljøet.|
 
+## Responstider
+
 ### Oppslag
 | Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
 | -------------- | --- | ---------------- | -------------------- | ------------ |
