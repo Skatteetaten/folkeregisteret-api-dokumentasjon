@@ -53,4 +53,4 @@ For FREG test gjelder følgende tjenestenivå:
 | Hent hendelsesdokument| v1/hendelser/{hendelsesidentifikator}| OffentligMedHjemmel| < 500 ms | Gir hendelsesdokument med detaljerte opplysninger om registerendringene som følger av hendelsen. |
 | Hent hendelsesdokument - bulkoppslag | /v1/hendelser/bulkoppslag| OffentligMedHjemmel| < 10 s | Tilhørende oppslag på hendelsesdokumenter etter lytting på hendelsesliste|
 | Hent person - arkiv| /v1/personer/arkiv/{dokumentidentifikator}| OffentligMedHjemmel| < 500 ms | Gir oppdatert personopplysninger for person med fødsels-, eller d-nummer |
-| Hent person - arkiv - bulkoppslag| /v1/personer/bulkoppslag/arkiv| OffentligMedHjemmel
+| Hent person - arkiv - bulkoppslag| /v1/personer/bulkoppslag/arkiv| OffentligMedHjemmel| < 10 s | Tilhørende oppslag på persondokumenter etter lytting på hendelsesliste |
