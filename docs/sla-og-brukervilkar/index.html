@@ -230,6 +230,48 @@
     </tr>
     </tbody>
     </table>
+    <h3 id="ajourhold">Ajourhold</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>Tjeneste (API)</th>
+    <th>url</th>
+    <th>Rettighetspakker</th>
+    <th>Forventet responstid</th>
+    <th>Bruksmønster</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Hent hendelsesdokument</td>
+    <td>v1/hendelser/{hendelsesidentifikator}</td>
+    <td>OffentligMedHjemmel</td>
+    <td>&lt; 500 ms</td>
+    <td>Gir hendelsesdokument med detaljerte opplysninger om registerendringene som følger av hendelsen.</td>
+    </tr>
+    <tr>
+    <td>Hent hendelsesdokument - bulkoppslag</td>
+    <td>/v1/hendelser/bulkoppslag</td>
+    <td>OffentligMedHjemmel</td>
+    <td>&lt; 10 s</td>
+    <td>Tilhørende oppslag på hendelsesdokumenter etter lytting på hendelsesliste</td>
+    </tr>
+    <tr>
+    <td>Hent person - arkiv</td>
+    <td>/v1/personer/arkiv/{dokumentidentifikator}</td>
+    <td>OffentligMedHjemmel</td>
+    <td>&lt; 500 ms</td>
+    <td>Gir oppdatert personopplysninger for person med fødsels-, eller d-nummer</td>
+    </tr>
+    <tr>
+    <td>Hent person - arkiv - bulkoppslag</td>
+    <td>/v1/personer/bulkoppslag/arkiv</td>
+    <td>OffentligMedHjemmel</td>
+    <td>&lt; 10 s</td>
+    <td>Tilhørende oppslag på persondokumenter etter lytting på hendelsesliste</td>
+    </tr>
+    </tbody>
+    </table>
     
         </div>
       </div>
