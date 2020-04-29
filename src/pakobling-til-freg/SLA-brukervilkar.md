@@ -11,7 +11,7 @@ Prosjektet vil arbeide videre med ytterligere testing av responstider og ytelse 
 PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks ved fullast, skal dette avtales med Freg forvaltning (avtales ved epost til freg.produksjon@skatteetaten.no).
 
 
-| Tjenestenivå(SLA) for FREG test  For FREG test gjelder følgende tjenestenivå:  |
+| **Tjenestenivå(SLA) for FREG test** | For FREG test gjelder følgende tjenestenivå:  |
 | ------------ | ------------- |
 | Normal oppetid for tjenestene | Tjenestene er i testmiljøet normalt tilgjengelig i avtalt tidsrom alle dager i året med unntak av kortere stopp for nødvendig teknisk vedlikehold. |
 | Driftstid (med driftstjenester og overvåkning) | I tidsrommet:                                                                        -fra 08:00 til 15:45 i perioden 15. september til 14. mai.                                                                              -fra 08:00 til 15:00 i perioden fra 15. mai til 14. september. |
