@@ -188,6 +188,48 @@
     </tr>
     </tbody>
     </table>
+    <h3 id="hendelser">Hendelser</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>Tjeneste (API)</th>
+    <th>url</th>
+    <th>Rettighetspakker</th>
+    <th>Forventet responstid</th>
+    <th>Bruksmønster</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Hendelsesliste</td>
+    <td>v1/hendelser/feed</td>
+    <td>OffentligMedHjemmel <br> Finans<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel<br> Presse<br> Privat</td>
+    <td>&lt; 500 ms</td>
+    <td>Lytte på nye hendelser som påfølges av bulkoppslag på Hendelsesdokument og Persondokument. Feks hvert minutt.</td>
+    </tr>
+    <tr>
+    <td>Siste sekvensnummer</td>
+    <td>v1/hendelser/siste/sekvensnummer</td>
+    <td>OffentligMedHjemmel<br> Finans<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel<br> Presse<br> Privat</td>
+    <td>&lt; 500 ms</td>
+    <td>Gir siste sekvensnummer (nyeste hendelse) for hendelseslisten.</td>
+    </tr>
+    <tr>
+    <td>Hendelser xsd</td>
+    <td>v1/hendelser/xsd</td>
+    <td></td>
+    <td>&lt; 500 ms</td>
+    <td>Gir gjeldende XSD-dokument for hendelse</td>
+    </tr>
+    <tr>
+    <td>Hendelser feed xsd</td>
+    <td>v1/hendelser/feedxsd</td>
+    <td></td>
+    <td>&lt; 500 ms</td>
+    <td>Gir gjeldende XSD-dokument for feed</td>
+    </tr>
+    </tbody>
+    </table>
     
         </div>
       </div>
