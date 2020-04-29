@@ -15,9 +15,8 @@ For FREG test gjelder følgende tjenestenivå:
 
 | Tabell | tabell |
 | ------------ | ------------- |
-
-Normal oppetid for tjenestene|Tjenestene er i testmiljøet normalt tilgjengelig i avtalt tidsrom alle dager i året med unntak av kortere stopp for nødvendig teknisk vedlikehold.
-| Driftstid (med driftstjenester og overvåkning)      | I tidsrommet:
+| Normal oppetid for tjenestene | Tjenestene er i testmiljøet normalt tilgjengelig i avtalt tidsrom alle dager i året med unntak av kortere stopp for nødvendig teknisk vedlikehold. |
+| Driftstid (med driftstjenester og overvåkning) | I tidsrommet:
 * fra 08:00 til 15:45 i perioden 15. september til 14. mai.
 * fra 08:00 til 15:00 i perioden fra 15. mai til 14. september. |
 | Testdata | I testmiljøet skal relevante, syntetisk genererte testdata være tilgjengelig.
