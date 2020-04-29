@@ -13,7 +13,7 @@ PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks v
 ## Tjenestenivå(SLA) for FREG test
 For FREG test gjelder følgende tjenestenivå: 
 
-|------------|-------------|
+| ------------ | ------------- |
 
 Normal oppetid for tjenestene|Tjenestene er i testmiljøet normalt tilgjengelig i avtalt tidsrom alle dager i året med unntak av kortere stopp for nødvendig teknisk vedlikehold.
 | Driftstid (med driftstjenester og overvåkning)      | I tidsrommet:
