@@ -154,12 +154,40 @@
     <tr>
     <td>Personer xsd</td>
     <td>v1/personer/xsd</td>
-    <td>-</td>
+    <td></td>
     <td>&lt; 500 ms</td>
     <td>Gir gjeldende XSD-dokument for personopplysninger.</td>
     </tr>
     </tbody>
     </table>
+    <p>###Uttrekk</p>
+    <table>
+    <thead>
+    <tr>
+    <th>Tjeneste (API)</th>
+    <th>url</th>
+    <th>Rettighetspakker</th>
+    <th>Forventet responstid</th>
+    <th>Bruksmønster</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Uttrekk komplett <br>Hent uttrekk</td>
+    <td>v1/uttrekk/komplett <br> 1/uttrekk/{jobbid}/batch/{batchnr}</td>
+    <td>OffentligMedHjemmel</td>
+    <td>Sammensatt: <br></td>
+    </tr>
+    </tbody>
+    </table>
+    <ul>
+    <li>Hent, batch <br></li>
+    <li>Bulkoppslag <br>
+    &lt; 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|</li>
+    </ul>
+    <p>| Bestill tilpasset uttrekk <br> Hent uttrekk <br>
+    | v1/uttrekk/tilpasset <br> v1/uttrekk/{jobbid}/batch/{batchnr}
+    | OffentligMedHjemmel<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel| Sammensatt: <br> <em> Hent, batch <br> </em> Bulkoppslag <br> &lt; 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|</p>
     
         </div>
       </div>
