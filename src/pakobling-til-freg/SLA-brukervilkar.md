@@ -30,15 +30,9 @@ For FREG test gjelder følgende tjenestenivå:
 | Online oppslag | www.skatteetaten.no/soekfolkeregisteret| OffentligMedHjemmel<br> Finans<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel<br> Presse<br> Privat| ikke spesifisert | Innlogget onlinetjeneste som erstatter dagens søk på personer via Infotorg|
 | Personer xsd | v1/personer/xsd|   | < 500 ms| Gir gjeldende XSD-dokument for personopplysninger.|
 
-###Uttrekk
+### Uttrekk
 
 | Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
 | -------------- | --- | ---------------- | -------------------- | ------------ |
-| Uttrekk komplett <br>Hent uttrekk | v1/uttrekk/komplett <br> 1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel | Sammensatt: <br>
-* Hent, batch <br>
-* Bulkoppslag <br>
-< 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|
-
-| Bestill tilpasset uttrekk <br> Hent uttrekk <br>
-| v1/uttrekk/tilpasset <br> v1/uttrekk/{jobbid}/batch/{batchnr}
-| OffentligMedHjemmel<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel| Sammensatt: <br> * Hent, batch <br> * Bulkoppslag <br> < 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|
+| Uttrekk komplett <br>Hent uttrekk | v1/uttrekk/komplett <br> 1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel | Sammensatt: <br> * Hent, batch <br> * Bulkoppslag <br>< 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|
+| Bestill tilpasset uttrekk <br> Hent uttrekk <br> | v1/uttrekk/tilpasset <br> v1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel| Sammensatt: <br> * Hent, batch <br> * Bulkoppslag <br> < 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|
