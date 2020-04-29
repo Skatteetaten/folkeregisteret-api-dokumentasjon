@@ -43,5 +43,5 @@ For FREG test gjelder følgende tjenestenivå:
 | -------------- | --- | ---------------- | -------------------- | ------------ |
 | Hendelsesliste| v1/hendelser/feed| OffentligMedHjemmel <br> Finans<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel<br> Presse<br> Privat| < 500 ms | Lytte på nye hendelser som påfølges av bulkoppslag på Hendelsesdokument og Persondokument. Feks hvert minutt.|
 | Siste sekvensnummer| v1/hendelser/siste/sekvensnummer| OffentligMedHjemmel<br> Finans<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel<br> Presse<br> Privat| < 500 ms | Gir siste sekvensnummer (nyeste hendelse) for hendelseslisten.|
-| Hendelser xsd| v1/hendelser/xsd| - | < 500 ms | Gir gjeldende XSD-dokument for hendelse|
-| Hendelser feed xsd| v1/hendelser/feedxsd| - | < 500 ms| Gir gjeldende XSD-dokument for feed|
+| Hendelser xsd| v1/hendelser/xsd|   | < 500 ms | Gir gjeldende XSD-dokument for hendelse|
+| Hendelser feed xsd| v1/hendelser/feedxsd|   | < 500 ms| Gir gjeldende XSD-dokument for feed|
