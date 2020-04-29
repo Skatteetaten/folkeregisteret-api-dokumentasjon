@@ -2,7 +2,7 @@
 title: SLA og brukervilkår
 ---
 
-## Ytelse og respomstider 
+## Ytelse og responstider 
 **(ref. Bruksvilkår for utlevering av folkeregisteropplysninger fra Freg tabell i pkt. 4.3)**
 
 I tabellen under er det inkludert en oversikt over responstid og ytelse per tjeneste (API). Videre er det dokumentert et sett med anbefalte bruksmønstre per tjeneste. Det er viktig at anbefalte bruksmønstre legges til grunn når det utvikles integrasjoner mot FREG. Dette gjelder blant annet ved bruk av hendelsesliste til ajourhold med etterfølgende behov for bulkoppslag.      
