@@ -73,88 +73,34 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
-    <p>Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. </p>
+          <h2 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h2>
+    <p>Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr flere former for oppslag. </p>
     <ul>
     <li>Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. </li>
-    <li>En versjonert utgave av en person som har vært eller er gyldig. </li>
+    <li>En versjonert utgave av en person som har vært eller er gyldig.</li>
+    <li>Entydig søk </li>
+    <li>Søk med treffliste </li>
     </ul>
-    <p>For å nå tjenestene bygges URL opp slik:
-    {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} &amp; part = {entitet} ...)</p>
+    <p>Endepunkter bygges opp i henhold til beskrivelse <a href="../endepunkter">her.</a> </p>
     <p>Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om <a href="../dataminimering">dataminimering</a></p>
-    <h3 id="entydig-s-k">Entydig søk</h3>
-    <p>For å benytte tjenesten må et av disse kriteriene være oppfylt: </p>
+    <h2 id="entydig-s-k">Entydig søk</h2>
+    <p>Entydig søk tillater konsumenter å søke opp personer med forskjellige opplysninger og motta et mer komplett og oppdatert persondokument. <br></p>
+    <p>Det er en forutsetning at opplysningene det søkes etter er entydig identifiserende. Søk med opplysninger som matcher flere enn en person vil resultere i feilmelding. <br> </p>
+    <p>Tjenesten støtter fonetiske søk og oppslag på historiske navn og adresser.</p>
+    <p><strong>Minimumsinformasjon i søket:</strong></p>
     <ul>
-    <li>Ett identifiserende og ett ikke-identifiserende informasjonselement er oppgitt</li>
-    <li>Alle ikke-identifiserende elementene er oppgitt.  </li>
+    <li>Fødselsdato og navn (fornavn og etternavn)</li>
+    <li>Fødselsdato og navn (fornavn og etternavn) </li>
+    <li>Navn (fornavn og etternavn) og adresse (adressenavn eller postnummer) </li>
     </ul>
-    <p>Identifiserende element:</p>
-    <ul>
-    <li>identifikasjonsnummer</li>
-    <li>utenlandskpersonidentifikasjon</li>
-    <li>legitimasjonsdokument</li>
-    <li>utlendingsmyndighetenesIdentifikasjonsnummer</li>
-    </ul>
-    <p>Ikke-identifiserende element:</p>
-    <ul>
-    <li>foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)</li>
-    <li>navn</li>
-    <li>adressenavn</li>
-    <li>husnummer</li>
-    <li>postnummer</li>
-    </ul>
-    <p>Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. </p>
-    <p>Det er støtte for fonetisk søk på navn.</p>
-    <h2 id="rettighetspakker">Rettighetspakker</h2>
-    <table>
-    <thead>
-    <tr>
-    <th>Rettighetspakke</th>
-    <th>Beskrivelse</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>offentlig-med-hjemmel/api/v1/</td>
-    <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
-    </tr>
-    <tr>
-    <td>offentlig-uten-hjemmel/api/v1/</td>
-    <td>Rettighetspakke for offentlige aktører uten hjemmel i egen lov.</td>
-    </tr>
-    <tr>
-    <td>finans-og-begrenset/api/v1/</td>
-    <td>Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger.</td>
-    </tr>
-    </tbody>
-    </table>
-    <h2 id="milj-er">Miljøer</h2>
-    <table>
-    <thead>
-    <tr>
-    <th>Miljø</th>
-    <th>URL</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>Produsenttest</td>
-    <td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
-    </tr>
-    <tr>
-    <td>Konsumenttest</td>
-    <td><a href="https://folkeregisteret-api-konsument.sits.no/">https://folkeregisteret-api-konsument.sits.no/</a></td>
-    </tr>
-    <tr>
-    <td>Produksjon</td>
-    <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
-    </tr>
-    <tr>
-    <td>Playground</td>
-    <td><a href="https://folkeregisteret-api-konsument-playground.sits.no/">https://folkeregisteret-api-konsument-playground.sits.no/</a></td>
-    </tr>
-    </tbody>
-    </table>
+    <p>Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer i kombinasjon med fornavn og etternavn. </p>
+    <p>Eksempel på entydig søk på gitte kriterier: 
+    $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;<a href="https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;">https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</a></p>
+    <h2 id="s-k-med-treffliste">Søk med treffliste</h2>
+    <p>Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. </p>
+    <p>Eksempel på søk med treffliste på gitte kriterie
+    $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;<a href="https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&amp;kjoenn=kvinne&amp;foedselsaarFraOgMed=1950&amp;adressenavn=Langgata&amp;kommunenummer=0301&amp;inkluderOppholdsadresse=true&amp;inkluderDoede=true&quot;">https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&amp;kjoenn=kvinne&amp;foedselsaarFraOgMed=1950&amp;adressenavn=Langgata&amp;kommunenummer=0301&amp;inkluderOppholdsadresse=true&amp;inkluderDoede=true&quot;</a></p>
+    <h2 id="curl-eksempler-p-de-vrige-tjenestene-">Curl eksempler på de øvrige tjenestene:</h2>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
     <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
     <p>Oppslag på xsd:</p>
@@ -165,297 +111,11 @@
     <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;foedselsEllerDNummer&quot;: [&quot;{folkeregiseridentifikator}&quot;,&quot;{folkeregiseridentifikator}&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/&quot;</code></p>
     <p>Eksempel på bulkoppslag på gitte versjoner av persondokumenter:</p>
     <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;,&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/arkiv/&quot;</code></p>
-    <p>Eksempel på entydig søk på gitte kriterier: </p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</code></p>
-    <p>Eksempel på søk på gitte kriterier:</p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&amp;kjoenn=kvinne&amp;foedselsaarFraOgMed=1950&amp;adressenavn=Langgata&amp;kommunenummer=0301&amp;inkluderOppholdsadresse=true&amp;inkluderDoede=true&quot;</code></p>
-    <h2 id="headere">Headere</h2>
+    <h3 id="headere">Headere</h3>
     <p><strong>Accept</strong></p>
     <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml.</p>
     <p><strong>Content-Type</strong></p>
     <p>For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).</p>
-    <h2 id="eksempler-p-respons-fra-tjenesten">Eksempler på respons fra tjenesten</h2>
-    <h3 id="statuskode-200">Statuskode 200</h3>
-    <p>Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):</p>
-    <pre><code class="lang-json">
-    {
-        &quot;identifikasjonsnummer&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;dsf-folkeregister-synkronisering&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
-                &quot;status&quot;: &quot;iBruk&quot;,
-                &quot;foedselsEllerDNummer&quot;: &quot;09052400284&quot;,
-                &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
-            }
-        ],
-        &quot;status&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;status&quot;: &quot;bosatt&quot;
-            }
-        ],
-        &quot;kjoenn&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
-                &quot;kjoenn&quot;: &quot;kvinne&quot;
-            }
-        ],
-        &quot;foedsel&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
-                &quot;foedselsdato&quot;: &quot;1924-05-09&quot;,
-                &quot;foedselsaar&quot;: &quot;1924&quot;,
-                &quot;foedested&quot;: &quot;&quot;,
-                &quot;foedeland&quot;: &quot;CAN&quot;
-            }
-        ],
-        &quot;sivilstand&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
-                &quot;sivilstand&quot;: &quot;gjenlevendePartner&quot;
-            }
-        ],
-        &quot;navn&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
-                &quot;fornavn&quot;: &quot;FORSTÅELSESFULL&quot;,
-                &quot;etternavn&quot;: &quot;RULLETRAPP&quot;
-            }
-        ],
-        &quot;bostedsadresse&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-05-31T00:00:00+02:00&quot;,
-                &quot;matrikkeladresse&quot;: {
-                    &quot;bruksenhetsnummer&quot;: &quot;&quot;,
-                    &quot;matrikkelnummer&quot;: {
-                        &quot;kommunenummer&quot;: &quot;0301&quot;,
-                        &quot;gaardsnummer&quot;: 0,
-                        &quot;bruksnummer&quot;: 27,
-                        &quot;festenummer&quot;: 0
-                    },
-                    &quot;undernummer&quot;: 0,
-                    &quot;poststed&quot;: {
-                        &quot;poststedsnavn&quot;: &quot;OSLO&quot;,
-                        &quot;postnummer&quot;: &quot;1163&quot;
-                    },
-                    &quot;coAdressenavn&quot;: &quot;&quot;
-                },
-                &quot;adressegradering&quot;: &quot;ugradert&quot;,
-                &quot;flyttedato&quot;: &quot;2019-05-31&quot;
-            }
-        ],
-        &quot;postadresse&quot;: [
-          {
-          &quot;hendelsedataId&quot;: &quot;445668dc-8aa5-49c6-ad06-8bd2755df897&quot;,
-          &quot;kilde&quot;: &quot;KILDE_DSF&quot;,
-          &quot;saksreferanse&quot;: &quot;SAKSREFERANSE_MIGRERING&quot;,
-          &quot;erGjeldende&quot;: true,
-          &quot;gyldighetstidspunkt&quot;: &quot;2008-08-08T00:00:00+02:00&quot;,
-          &quot;postadresseIFrittFormat&quot;: {
-            &quot;adresselinje&quot;: [
-              &quot;GATE 22255&quot;
-            ],
-            &quot;postnummer&quot;: &quot;9170&quot;,
-            &quot;poststed&quot;: &quot;LONGYEARBYEN&quot;
-           },
-           &quot;adressegradering&quot;: &quot;UGRADERT&quot;
-         }
-        ],
-        &quot;preferertKontaktadresse&quot;: [
-        {
-          &quot;kilde&quot;: &quot;&quot;,
-          &quot;saksreferanse&quot;: &quot;&quot;,
-          &quot;erGjeldende&quot;: true,
-          &quot;valg&quot;: &quot;POSTADRESSE&quot;,
-          &quot;adressegradering&quot;: &quot;UGRADERT&quot;,
-          &quot;kontaktadresseIFrittFormat&quot;: {
-            &quot;adresselinje&quot;: [
-              &quot;GATE 22255&quot;,
-              &quot;9170 LONGYEARBYEN&quot;}
-            ],
-          &quot;vergemaalEllerFremtidsfullmakt&quot;: [
-        {
-          &quot;ajourholdstidspunkt&quot;: &quot;2020-01-13T09:22:47.106+01:00&quot;,
-          &quot;erGjeldende&quot;: false,
-          &quot;kilde&quot;: &quot;Statens Sivilrettsforvaltning&quot;,
-          &quot;gyldighetstidspunkt&quot;: &quot;2001-11-03T00:00:00+01:00&quot;,
-          &quot;opphoerstidspunkt&quot;: &quot;2007-01-08T08:00:20+01:00&quot;,
-          &quot;vergemaaltype&quot;: &quot;voksen&quot;,
-          &quot;embete&quot;: &quot;fylkesmannenIVestfoldOgTelemark&quot;,
-          &quot;verge&quot;: {
-            &quot;navn&quot;: {
-              &quot;fornavn&quot;: &quot;TOM&quot;,
-              &quot;etternavn&quot;: &quot;GREVLING&quot;
-            },
-            &quot;foedselsEllerDNummer&quot;: &quot;01010096894&quot;,
-            &quot;omfang&quot;: &quot;oekonomiskeInteresser&quot;,
-            &quot;omfangetErInnenPersonligOmraade&quot;: false
-          }
-        }
-      ]
-    }
-    </code></pre>
-    <p>Eksempel på dataminimering ved oppslag på en person (GET .../personer/01104200113?part=status):</p>
-    <pre><code class="lang-json">
-    {
-        &quot;identifikasjonsnummer&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;dsf-folkeregister-synkronisering&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-02-07T00:00:00+01:00&quot;,
-                &quot;status&quot;: &quot;iBruk&quot;,
-                &quot;foedselsEllerDNummer&quot;: &quot;01104200113&quot;,
-                &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
-            }
-        ],
-        &quot;status&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Uregistrert person&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
-                &quot;status&quot;: &quot;ikkeBosatt&quot;
-            }
-        ]
-    }
-    </code></pre>
-    <p>Eksempel på bulkoppslag med dataminimering (POST .../personer/bulkoppslag/?part=status):</p>
-    <pre><code class="lang-json">
-    {
-      &quot;foedselsEllerDNummer&quot;: [
-        &quot;29084902258&quot;
-      ]
-    }
-    </code></pre>
-    <p>Svar:</p>
-    <pre><code class="lang-json">
-    {
-        &quot;oppslag&quot;: [
-            {
-                &quot;foedselsEllerDNummer&quot;: &quot;29084902258&quot;,
-                &quot;folkeregisterperson&quot;: {
-                    &quot;identifikasjonsnummer&quot;: [
-                        {
-                            &quot;ajourholdstidspunkt&quot;: &quot;2019-04-16T14:38:41.098+02:00&quot;,
-                            &quot;erGjeldende&quot;: true,
-                            &quot;kilde&quot;: &quot;KILDE_DSF&quot;,
-                            &quot;status&quot;: &quot;iBruk&quot;,
-                            &quot;foedselsEllerDNummer&quot;: &quot;29084902258&quot;,
-                            &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
-                        }
-                    ],
-                    &quot;status&quot;: [
-                        {
-                            &quot;ajourholdstidspunkt&quot;: &quot;2019-04-16T14:38:41.098+02:00&quot;,
-                            &quot;erGjeldende&quot;: true,
-                            &quot;kilde&quot;: &quot;KILDE_DSF&quot;,
-                            &quot;gyldighetstidspunkt&quot;: &quot;2019-04-16T14:38:41.098+02:00&quot;,
-                            &quot;status&quot;: &quot;bosatt&quot;
-                        }
-                    ]
-                }
-            }
-        ]
-    }
-    </code></pre>
-    <p>Eksempel på entydig søk med dataminimering (GET .../personer/entydigsoek?identifikasjonsnummer=09052400284&amp;navn=RULLETRAPP&amp;part=navn):</p>
-    <pre><code class="lang-json">
-    {
-        &quot;identifikasjonsnummer&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-02-07T16:03:19+01:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;dsf-folkeregister-synkronisering&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-02-07T00:00:00+01:00&quot;,
-                &quot;status&quot;: &quot;iBruk&quot;,
-                &quot;foedselsEllerDNummer&quot;: &quot;09052400284&quot;,
-                &quot;identifikatortype&quot;: &quot;foedselsnummer&quot;
-            }
-        ],
-        &quot;navn&quot;: [
-            {
-                &quot;ajourholdstidspunkt&quot;: &quot;2019-06-05T09:33:23+02:00&quot;,
-                &quot;erGjeldende&quot;: true,
-                &quot;kilde&quot;: &quot;&quot;,
-                &quot;aarsak&quot;: &quot;Innvandring&quot;,
-                &quot;gyldighetstidspunkt&quot;: &quot;2019-06-05T00:00:00+02:00&quot;,
-                &quot;fornavn&quot;: &quot;FORSTÅELSESFULL&quot;,
-                &quot;etternavn&quot;: &quot;RULLETRAPP&quot;
-            }
-        ]
-    }
-    
-    </code></pre>
-    <h3 id="feilkoder">Feilkoder</h3>
-    <p>Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut</p>
-    <pre><code class="lang-json">
-    {
-      &quot;kode&quot;: &quot;FREG-001&quot;,
-      &quot;melding&quot;: &quot;Feil i tjenesten. Vennligst prøv igjen seinere.&quot;
-    }
-    </code></pre>
-    <table>
-    <thead>
-    <tr>
-    <th>HTTP Statuskode</th>
-    <th>Forklaring</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>401</td>
-    <td>Autentiseringsinformasjon mangler</td>
-    </tr>
-    <tr>
-    <td>403</td>
-    <td>Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten</td>
-    </tr>
-    <tr>
-    <td>404</td>
-    <td>Feil uri brukt.</td>
-    </tr>
-    <tr>
-    <td>406</td>
-    <td>Oppgitt Accept-header inneholder ikke &#39;application/xml&#39; eller &#39;application/json&#39;, dersom Content-Type er satt ved bulkoppslag så vil returen være lik Content-Type dersom Accept-headeren er tom og returkoden vil da bli 200.</td>
-    </tr>
-    <tr>
-    <td>429</td>
-    <td>For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres</td>
-    </tr>
-    <tr>
-    <td>500</td>
-    <td>Feil i tjenesten. Vennligst prøv igjen seinere.</td>
-    </tr>
-    </tbody>
-    </table>
     
         </div>
       </div>
