@@ -23,7 +23,7 @@ Tjenestene er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsume
 
 ## Tilgjengelige tjenester
 | Tjeneste | Beskrivelse | Tilgjengelig i rettighetspakker | 
-|------------|------------------------------------------|------------|
+|------------|-------------------------------------|----------------|
 | personer/{personidentifikator} <br> personer/bulkoppslag |Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. Tjenesten returnerer siste persondokument for individene som er forespurt. | Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Finans, <br> Privat uten hjemmel |
 |personer/soek | Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten returnerer max 10 000 treff. Tjenesten returnerer fødsels- eller D-nummer |Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br> Privat uten hjemmel |
 |personer/entydigsoek|Hensikten med tjenesten er å tillate søk på personer ved hjelp av entydige opplysninger. Tjenesten returnerer siste persondokument for en gitt person. |Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br> Privat uten hjemmel, <br>Privat |
