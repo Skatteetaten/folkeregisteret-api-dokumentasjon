@@ -32,6 +32,8 @@ Følgende algoritme beskriver flyten for de tre tjenestene:
 ## Komplett uttrekk
 Hensikten med tjenesten er å tillate konsumenter å hente ned hele registeret fra et gitt tidspunkt. Tidspunktet er representert med et sekvensnummer. Alle persondokumentene som er gyldig ved sekvensnummeret, samt alle etterfølgende endringer vil returneres. 
 Tjenesten vil aldri benyttes til daglig vedlikehold av et register, men vil være nyttig i forholdelse med innlasting av en initiell befolkning. 
+<br>
+<br>
 
 ## Tilpasset uttrekk
 Hensikten med denne POST-tjenesten er å tillate søk på grupper av personer. 
