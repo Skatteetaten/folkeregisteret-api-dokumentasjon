@@ -31,7 +31,7 @@ Tjenesten støtter fonetiske søk og oppslag på historiske navn og adresser.
 Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer i kombinasjon med fornavn og etternavn. 
 
 Eksempel på entydig søk på gitte kriterier: 
-$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"`
 <br>
 <br>
 
@@ -40,7 +40,7 @@ $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://fo
 Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. 
 
 Eksempel på søk med treffliste på gitte kriterie
-$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"`
 
 <br>
 <br>
