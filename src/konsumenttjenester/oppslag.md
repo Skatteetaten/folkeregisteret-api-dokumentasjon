@@ -2,7 +2,7 @@
 title: Oppslag
 ---
 
-## Grensesnittbeskrivelse
+### Grensesnittbeskrivelse
 Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr flere former for oppslag. 
    * Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. 
    * En versjonert utgave av en person som har vært eller er gyldig.
