@@ -7,6 +7,8 @@ Prinsippet om dataminimering er et grunnleggende personverprinsipp og innebærer
 ## Dataminimering i oppslagstjenestene
 Ved oppslag mot Folkeregisteret skal konsumentene kunne begrense oppslaget til de personopplysninger som er nødvendige i ulike brukstilfeller. Vi ønsker å legge tilrette for at konsumentene kan ta bevisste valg i forhold til databehov og vil derfor begrense opplysningene som utleveres dersom ønskede personopplysninger ikke er oppgitt.
 
+Dersom part ikke oppgis vil retur innholde samme informasjon som finnes i "person-basis".
+
 Parameteret *part* benyttes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet (egenskapsnavn) på toppnivå i modellen for persondokument. I tillegg til å kunne be om eksplisitte entiteter er det lagt opp til samlende resultatsett i henhold til tabellen under:
 
 | <part\> | Beskrivelse | RP Offentlig med hjemmel | RP Finans og begrenset | Offentlig uten hjemmel / Presse / Privat |
@@ -19,4 +21,3 @@ Parameteret *part* benyttes til å spesifisere hvilken informasjon, om en person
 
 Merk at identifikasjonsnummer alltid vil inngå i resultatsettet, uavhengig av hva som spesifiseres (gjelder offentlig med hjemmel, finans og offentlig uten hjemmel).
 
-Dersom part ikke oppgis vil retur innholde samme informasjon som finnes i "person-basis".
