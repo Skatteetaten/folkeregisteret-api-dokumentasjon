@@ -21,7 +21,7 @@ Entydig søk tillater konsumenter å søke opp personer med forskjellige opplysn
 
 Det er en forutsetning at opplysningene det søkes etter er entydig identifiserende. Søk med opplysninger som matcher flere enn en person vil resultere i feilmelding. <br> 
 
-Tjenesten støtter fonetiske søk og oppslag på historiske navn og adresser.
+Tjenesten støtter fonetisk søk og oppslag på historiske navn og adresser.
   
 **Minimumsinformasjon i søket:**
   * Fødselsdato og navn (fornavn og etternavn)
