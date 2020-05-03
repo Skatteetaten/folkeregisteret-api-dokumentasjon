@@ -2,60 +2,47 @@
 title: Oppslag
 ---
 
-# Grensesnittbeskrivelse
-Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr to former for oppslag. 
+## Grensesnittbeskrivelse
+Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr flere former for oppslag. 
    * Siste versjonen av en person. Dette er til enhver tid oppdaterte data om personen i henhold til Folkeregisteret. 
-   * En versjonert utgave av en person som har vært eller er gyldig. 
+   * En versjonert utgave av en person som har vært eller er gyldig.
+   * Entydig søk 
+   * Søk med treffliste 
 
-For å nå tjenestene bygges URL opp slik:
-{miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}(? part = {entitet} & part = {entitet} ...)
+Endepunkter bygges opp i henhold til beskrivelse [her.](../endepunkter) 
 
 Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om [dataminimering](../dataminimering)
 
 
 ### Entydig søk
 
-For å benytte tjenesten må et av disse kriteriene være oppfylt: 
-* Ett identifiserende og ett ikke-identifiserende informasjonselement er oppgitt
-* Alle ikke-identifiserende elementene er oppgitt.  
+Entydig søk tillater konsumenter å søke opp personer med forskjellige opplysninger og motta et mer komplett og oppdatert persondokument. <br>
 
-Identifiserende element:
-* identifikasjonsnummer
-* utenlandskpersonidentifikasjon
-* legitimasjonsdokument
-* utlendingsmyndighetenesIdentifikasjonsnummer
+Det er en forutsetning at opplysningene det søkes etter er entydig identifiserende. Søk med opplysninger som matcher flere enn en person vil resultere i feilmelding. <br> 
 
- 
-Ikke-identifiserende element:
-* foedselsdato (gjelder ikke dersom identifikasjonsnummer (fnr/dnr) er oppgitt)
-* navn
-* adressenavn
-* husnummer
-* postnummer
+Tjenesten støtter fonetiske søk og oppslag på historiske navn og adresser.
+  
+**Minimumsinformasjon i søket:**
+  * Fødselsdato og navn (fornavn og etternavn)
+  *	Fødselsdato og navn (fornavn og etternavn) 
+  * Navn (fornavn og etternavn) og adresse (adressenavn eller postnummer) 
 
-Hvis søket returnerer flere enn ett treff vil innsender motta feilmelding om at søket ikke er entydig. 
+Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer i kombinasjon med fornavn og etternavn. 
 
-Det er støtte for fonetisk søk på navn.
+Eksempel på entydig søk på gitte kriterier: 
+$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"
 
 
-## Rettighetspakker
+### Søk med treffliste
 
-| Rettighetspakke|Beskrivelse|
-|----------------|-----------|
-|offentlig-med-hjemmel/api/v1/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata. |
-|offentlig-uten-hjemmel/api/v1/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
-|finans-og-begrenset/api/v1/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger.|
+Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. 
 
-## Miljøer
-
-| Miljø | URL | 
-|-------|-----|
-| Produsenttest| https://folkeregisteret-api-ekstern.sits.no/ |
-| Konsumenttest | https://folkeregisteret-api-konsument.sits.no/ |
-| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |
-| Playground | https://folkeregisteret-api-konsument-playground.sits.no/  | 
+Eksempel på søk med treffliste på gitte kriterie
+$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"
 
 
+
+### Curl eksempler på de øvrige tjenestene:  
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer"`
@@ -76,18 +63,9 @@ Eksempel på bulkoppslag på gitte versjoner av persondokumenter:
 
 `$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d '{"dokumentidentifikator": ["8446cf3bb867bfdb6de9cc9c17f6adf2","8446cf3bb867bfdb6de9cc9c17f6adf2"]}' -H "Content-Type: application/json" "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/arkiv/"`
 
-Eksempel på entydig søk på gitte kriterier: 
-
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"`
 
 
-Eksempel på søk på gitte kriterier:
-
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"`
-
-
-
-## Headere
+### Headere
 
 **Accept**
 
@@ -97,275 +75,3 @@ Verdien i denne headeren angir ønsket dataformat. Det er støtte for applicatio
 
 For bulkoppslag gjøres det POST-requester, disse forventer at headeren Content-Type er satt. Det er støtte for application/json og application/xml (default).
 
-## Eksempler på respons fra tjenesten
-
-### Statuskode 200
-Eksempel på svar ved oppslag på en person (GET .../personer/09052400284):
-```json
-
-{
-    "identifikasjonsnummer": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "dsf-folkeregister-synkronisering",
-            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
-            "status": "iBruk",
-            "foedselsEllerDNummer": "09052400284",
-            "identifikatortype": "foedselsnummer"
-        }
-    ],
-    "status": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-06-05T09:33:23+02:00",
-            "status": "bosatt"
-        }
-    ],
-    "kjoenn": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
-            "kjoenn": "kvinne"
-        }
-    ],
-    "foedsel": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
-            "foedselsdato": "1924-05-09",
-            "foedselsaar": "1924",
-            "foedested": "",
-            "foedeland": "CAN"
-        }
-    ],
-    "sivilstand": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
-            "sivilstand": "gjenlevendePartner"
-        }
-    ],
-    "navn": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
-            "fornavn": "FORSTÅELSESFULL",
-            "etternavn": "RULLETRAPP"
-        }
-    ],
-    "bostedsadresse": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-05-31T00:00:00+02:00",
-            "matrikkeladresse": {
-                "bruksenhetsnummer": "",
-                "matrikkelnummer": {
-                    "kommunenummer": "0301",
-                    "gaardsnummer": 0,
-                    "bruksnummer": 27,
-                    "festenummer": 0
-                },
-                "undernummer": 0,
-                "poststed": {
-                    "poststedsnavn": "OSLO",
-                    "postnummer": "1163"
-                },
-                "coAdressenavn": ""
-            },
-            "adressegradering": "ugradert",
-            "flyttedato": "2019-05-31"
-        }
-    ],
-    "postadresse": [
-      {
-      "hendelsedataId": "445668dc-8aa5-49c6-ad06-8bd2755df897",
-      "kilde": "KILDE_DSF",
-      "saksreferanse": "SAKSREFERANSE_MIGRERING",
-      "erGjeldende": true,
-      "gyldighetstidspunkt": "2008-08-08T00:00:00+02:00",
-      "postadresseIFrittFormat": {
-        "adresselinje": [
-          "GATE 22255"
-        ],
-        "postnummer": "9170",
-        "poststed": "LONGYEARBYEN"
-       },
-       "adressegradering": "UGRADERT"
-     }
-    ],
-    "preferertKontaktadresse": [
-    {
-      "kilde": "",
-      "saksreferanse": "",
-      "erGjeldende": true,
-      "valg": "POSTADRESSE",
-      "adressegradering": "UGRADERT",
-      "kontaktadresseIFrittFormat": {
-        "adresselinje": [
-          "GATE 22255",
-          "9170 LONGYEARBYEN"}
-        ],
-      "vergemaalEllerFremtidsfullmakt": [
-    {
-      "ajourholdstidspunkt": "2020-01-13T09:22:47.106+01:00",
-      "erGjeldende": false,
-      "kilde": "Statens Sivilrettsforvaltning",
-      "gyldighetstidspunkt": "2001-11-03T00:00:00+01:00",
-      "opphoerstidspunkt": "2007-01-08T08:00:20+01:00",
-      "vergemaaltype": "voksen",
-      "embete": "fylkesmannenIVestfoldOgTelemark",
-      "verge": {
-        "navn": {
-          "fornavn": "TOM",
-          "etternavn": "GREVLING"
-        },
-        "foedselsEllerDNummer": "01010096894",
-        "omfang": "oekonomiskeInteresser",
-        "omfangetErInnenPersonligOmraade": false
-      }
-    }
-  ]
-}
-```
-
-Eksempel på dataminimering ved oppslag på en person (GET .../personer/01104200113?part=status):
-```json
-
-{
-    "identifikasjonsnummer": [
-        {
-            "ajourholdstidspunkt": "2019-02-07T16:03:19+01:00",
-            "erGjeldende": true,
-            "kilde": "dsf-folkeregister-synkronisering",
-            "gyldighetstidspunkt": "2019-02-07T00:00:00+01:00",
-            "status": "iBruk",
-            "foedselsEllerDNummer": "01104200113",
-            "identifikatortype": "foedselsnummer"
-        }
-    ],
-    "status": [
-        {
-            "ajourholdstidspunkt": "2019-02-07T16:03:19+01:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Uregistrert person",
-            "gyldighetstidspunkt": "2019-02-07T16:03:19+01:00",
-            "status": "ikkeBosatt"
-        }
-    ]
-}
-```
-
-Eksempel på bulkoppslag med dataminimering (POST .../personer/bulkoppslag/?part=status):
-```json
-
-{
-  "foedselsEllerDNummer": [
-    "29084902258"
-  ]
-}
-```
-
-Svar:
-
-```json
-
-{
-    "oppslag": [
-        {
-            "foedselsEllerDNummer": "29084902258",
-            "folkeregisterperson": {
-                "identifikasjonsnummer": [
-                    {
-                        "ajourholdstidspunkt": "2019-04-16T14:38:41.098+02:00",
-                        "erGjeldende": true,
-                        "kilde": "KILDE_DSF",
-                        "status": "iBruk",
-                        "foedselsEllerDNummer": "29084902258",
-                        "identifikatortype": "foedselsnummer"
-                    }
-                ],
-                "status": [
-                    {
-                        "ajourholdstidspunkt": "2019-04-16T14:38:41.098+02:00",
-                        "erGjeldende": true,
-                        "kilde": "KILDE_DSF",
-                        "gyldighetstidspunkt": "2019-04-16T14:38:41.098+02:00",
-                        "status": "bosatt"
-                    }
-                ]
-            }
-        }
-    ]
-}
-```
-
-Eksempel på entydig søk med dataminimering (GET .../personer/entydigsoek?identifikasjonsnummer=09052400284&navn=RULLETRAPP&part=navn):
-
-```json
-
-{
-    "identifikasjonsnummer": [
-        {
-            "ajourholdstidspunkt": "2019-02-07T16:03:19+01:00",
-            "erGjeldende": true,
-            "kilde": "dsf-folkeregister-synkronisering",
-            "gyldighetstidspunkt": "2019-02-07T00:00:00+01:00",
-            "status": "iBruk",
-            "foedselsEllerDNummer": "09052400284",
-            "identifikatortype": "foedselsnummer"
-        }
-    ],
-    "navn": [
-        {
-            "ajourholdstidspunkt": "2019-06-05T09:33:23+02:00",
-            "erGjeldende": true,
-            "kilde": "",
-            "aarsak": "Innvandring",
-            "gyldighetstidspunkt": "2019-06-05T00:00:00+02:00",
-            "fornavn": "FORSTÅELSESFULL",
-            "etternavn": "RULLETRAPP"
-        }
-    ]
-}
-
-```
-
-### Feilkoder
-Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, så returneres en datastruktur som ser slik ut
-
-```json
-
-{
-  "kode": "FREG-001",
-  "melding": "Feil i tjenesten. Vennligst prøv igjen seinere."
-}
-```
-
-| HTTP Statuskode |  Forklaring |
-|----------|-------|
-| 401 | Autentiseringsinformasjon mangler |
-| 403 | Virksomheten er autentisert men mangler autorisasjon for den angitte tjenesten |
-| 404 | Feil uri brukt. |
-| 406 | Oppgitt Accept-header inneholder ikke 'application/xml' eller 'application/json', dersom Content-Type er satt ved bulkoppslag så vil returen være lik Content-Type dersom Accept-headeren er tom og returkoden vil da bli 200. |
-| 429 | For mange kall er gjort på for kort tid. Vent i minimum antall ms. angitt i Retry-After-header før neste request utføres |
-| 500 | Feil i tjenesten. Vennligst prøv igjen seinere. |
