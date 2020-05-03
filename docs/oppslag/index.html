@@ -82,7 +82,9 @@
     <li>Søk med treffliste </li>
     </ul>
     <p>Endepunkter bygges opp i henhold til beskrivelse <a href="../endepunkter">her.</a> </p>
-    <p>Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om <a href="../dataminimering">dataminimering</a></p>
+    <p>Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om <a href="../dataminimering">dataminimering</a>
+    <br>
+    <br></p>
     <h2 id="entydig-s-k">Entydig søk</h2>
     <p>Entydig søk tillater konsumenter å søke opp personer med forskjellige opplysninger og motta et mer komplett og oppdatert persondokument. <br></p>
     <p>Det er en forutsetning at opplysningene det søkes etter er entydig identifiserende. Søk med opplysninger som matcher flere enn en person vil resultere i feilmelding. <br> </p>
@@ -95,11 +97,15 @@
     </ul>
     <p>Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer i kombinasjon med fornavn og etternavn. </p>
     <p>Eksempel på entydig søk på gitte kriterier: 
-    $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;<a href="https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;">https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</a></p>
+    $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;<a href="https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;">https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</a>
+    <br>
+    <br></p>
     <h2 id="s-k-med-treffliste">Søk med treffliste</h2>
     <p>Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. </p>
     <p>Eksempel på søk med treffliste på gitte kriterie
     $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;<a href="https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&amp;kjoenn=kvinne&amp;foedselsaarFraOgMed=1950&amp;adressenavn=Langgata&amp;kommunenummer=0301&amp;inkluderOppholdsadresse=true&amp;inkluderDoede=true&quot;">https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&amp;kjoenn=kvinne&amp;foedselsaarFraOgMed=1950&amp;adressenavn=Langgata&amp;kommunenummer=0301&amp;inkluderOppholdsadresse=true&amp;inkluderDoede=true&quot;</a></p>
+    <p><br>
+    <br></p>
     <h2 id="curl-eksempler-p-de-vrige-tjenestene-">Curl eksempler på de øvrige tjenestene:</h2>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
     <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
