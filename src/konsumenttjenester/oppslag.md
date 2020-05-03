@@ -12,7 +12,8 @@ Oppslagstjenesten gir tilgang til data om en person. Tjenesten tilbyr flere form
 Endepunkter bygges opp i henhold til beskrivelse [her.](../endepunkter) 
 
 Det er mulig å spesifisere hvilke data en ønsker returnert fra oppslaget, dette er nærmere beskrevet på siden om [dataminimering](../dataminimering)
-
+<br>
+<br>
 
 ## Entydig søk
 
@@ -31,7 +32,8 @@ Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte ut
 
 Eksempel på entydig søk på gitte kriterier: 
 $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"
-
+<br>
+<br>
 
 ## Søk med treffliste
 
@@ -40,7 +42,8 @@ Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsum
 Eksempel på søk med treffliste på gitte kriterie
 $ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&kjoenn=kvinne&foedselsaarFraOgMed=1950&adressenavn=Langgata&kommunenummer=0301&inkluderOppholdsadresse=true&inkluderDoede=true"
 
-
+<br>
+<br>
 
 ## Curl eksempler på de øvrige tjenestene:  
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
