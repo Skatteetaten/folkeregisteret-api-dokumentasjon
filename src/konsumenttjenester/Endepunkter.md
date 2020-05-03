@@ -8,7 +8,7 @@ For å nå de forskjellige rettighetspakkene bygges URL opp slik:
 
 
 
-##Tilgjengelige miljøer
+## Tilgjengelige miljøer
 
 
 | Miljø | URL | 
@@ -17,7 +17,7 @@ For å nå de forskjellige rettighetspakkene bygges URL opp slik:
 |Konsumenttest| https://folkeregisteret-api-konsument-playground.sits.no/ |
 |Produksjon| https://folkeregisteret-api-konsument-playground.sits.no/ |
 
-##Tilgjengelige  rettighetspakker
+## Tilgjengelige  rettighetspakker
 
 Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og hvilke url'er som må benyttes for de ulike pakkene.
 
@@ -30,7 +30,7 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 |Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|
 |Privat|folkeregisteret/api/privat/|
 
-##Ressurser
+## Ressurser
 For ressurser som er tilgjengelig i de ulike rettighetspakkene se den tekniske dokumentasjonen på swagger cloud: 
 
 Offentlig med hjemmel: 
