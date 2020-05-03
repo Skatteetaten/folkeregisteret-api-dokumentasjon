@@ -99,67 +99,24 @@
     </thead>
     <tbody>
     <tr>
-    <td>person/hent <br> bulk/person/hent</td>
-    <td>Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer. <br> Tjenesten returnerer siste persondokument for individene som er forespurt.</td>
-    <td>Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Bank-og-Finans, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>person/søk</td>
-    <td>Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten reurnerer max 10 000 treff. Tjenesten returnerer fødsels- eller D-nummer</td>
-    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>person/entydigSøk</td>
-    <td>Hensikten med tjenesten er å tillate søk på personer ved hjelp av et entyidge opplysninger som identifikasjonsnummer, utenlandskpersonidentifikasjon, legitimasjonsdokument eller utlendingsmyndighetenesIdentifikasjonsnummer. Tjenesten returnerer siste persondokument for en gitt person.</td>
-    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br> Privat uten hjemmel, <br>Private</td>
-    </tr>
-    <tr>
-    <td>online/oppslag</td>
-    <td>online webtjeneste som erstatter dagens søk på personer via infotorg.</td>
-    <td>Ikke utviklet/tilgjengelig</td>
-    </tr>
-    <tr>
-    <td>person/xsd</td>
-    <td></td>
-    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>uttrekk/komplett/bestill <br> uttrekk/hent</td>
-    <td>Innput til tjenetsten er et sekvensnummer og tjenesten returnerer persondokumenter. Ved å hente opp disse dokumentene gjennom bulkoppslag arkvi kan konsumentene hente ut hele eller deler av bestanden i folkeregisteret. Hvis input er siste sekvensnummer vil konsumentene hente de persondokumentene som pt er gjeldene.  Velges et lavere sekvensnummer vil tjenesten hente alle persondokument som var gjeldende på dette tidspunktet og se bort fra alle persondokument som er kommet etterpå. Tjenesten er asynkron og benyttes sammen med bulkoppslag og uttrekk uttrekk/hent</td>
-    <td>Offentlig med hjemmel</td>
-    </tr>
-    <tr>
-    <td>uttrekk/tilpasset/bestill <br> uttrekk/hent</td>
-    <td>Hensikten med tjenesten er å tillate søk på grupper av personer. Personstaustyper er eneste obligatoriske felt. Det kan også søke på kommunenummer fødselsår, dødsår, kjønn, statsborgerskap og sivilstandstype.  Tjenesten er asynkron og benyttes sammen med bulkoppslag og uttrekk/hent</td>
-    <td>Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>hendelse/feed</td>
-    <td>Hensikten med feed er å varsle om de hendelsene som skjer på de forskjellige personene i registeret . Konsumentene sender inn et sekvensnummer og får returnert alle hendelsene som har skjedd i registeret fra og med innsendte sekvensnummer.</td>
-    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>hendelse/hentSisteSekvensnummer</td>
-    <td>Hensikten med tjenesten er å gjøre det mulig for konsumentene å finne hvor langt hendelsesessekvensen er kommet slik at de kan lytte fra feeden fra en ønsket tidspunkt. Tjenesten benyttes mest sammen med  komplett uttrekk for å identifisere starttidspunkt for henting av samtlige personer i et testmiljø.</td>
-    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>hendelser/xsd</td>
-    <td></td>
-    <td>Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Bank og Finans, <br>Presse, <br>Private, <br> Privat uten hjemmel</td>
-    </tr>
-    <tr>
-    <td>arkiv/person/dokument <br> bulk/arkiv/person/dokument</td>
-    <td>Hensikten med tjenesten er å tillate konsumentene med tilgang til tjenesten søke på en tidligere eller nåværende tilstand for en gitt person. Persondokumentet inneholder komplette opplysninger på personer på et tidspunkt, men dette trenger ikke være det siste persondokumentet vedkommende har. Fra hendelsesfeed returneres persondokumentet og tjenesten gjør det mulig å søke opp persondokumentet som medførte hendelsen.</td>
-    <td>Offentlig med hjemmel</td>
-    </tr>
-    <tr>
-    <td>arkiv/hendelse/dokument <br> bulk/arkiv/hendelse/dokument</td>
-    <td>Mens hendelsesfeeden returnerer en tynn beskrivelse av en hendelse returnerer oppslag på den, eller de, spesifikke hendelsen en mer innholdsrik beskrivelse av hendelsen. Tillater søk på en eller flere hendelsesdokument.</td>
-    <td>Offentlig med hjemmel</td>
+    <td>personer/{personidentifikator} <br> personer/bulkoppslag</td>
+    <td>Hensikten med tjenesten er å tillate at konsumenter kan ajourholde sitt kunderegister eller hente ut en gitt mengde med personer. Ved å oppgi opp mot 1 000 fødsels- eller D-nummer.</td>
     </tr>
     </tbody>
     </table>
+    <p>Tjenesten returnerer siste persondokument for individene som er forespurt. | Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Finans, <br> Privat uten hjemmel     |
+    |personer/soek | Hensikten med tjenesten er å tillate konsumentene å søke opp grupper av personer som tilfredsstiller gitte kriterier. Kriteriene er for eksempel kjønn, fødselsår, navn, adresse. I tillegg kan det filtreres på om man skal inkludere døde, gjeldende eller historiske opplysninger, fylkesnummer eller kommunenummer. Tjenesten returnerer max 10 000 treff. Tjenesten returnerer fødsels- eller D-nummer |Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br> Privat uten hjemmel |
+    |personer/entydigsoek|Hensikten med tjenesten er å tillate søk på personer ved hjelp av entydige opplysninger. Tjenesten returnerer siste persondokument for en gitt person. |Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br> Privat uten hjemmel, <br>Privat |
+    |online/oppslag|online webtjeneste som erstatter dagens søk på personer via infotorg.| Ikke utviklet/tilgjengelig |
+    |personer/xsd | Beskrivelse av persondokumentet  | Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel |
+    |uttrekk/komplett  <br> uttrekk/{jobbid}/batch/{batchnr} |Input til tjenesten er et sekvensnummer. Tjenesten returnerer persondokumenter. Ved å hente opp disse dokumentene gjennom bulkoppslag arkiv kan konsumentene hente ut hele eller deler av bestanden i folkeregisteret. Hvis input er siste sekvensnummer vil konsumentene hente de persondokumentene som pt er gjeldene.  Tjenesten er asynkron og benyttes sammen med bulkoppslag og uttrekk uttrekk/{jobbid}/batch/{batchnr}| Offentlig med hjemmel |
+    |uttrekk/tilpasset <br> uttrekk/{jobbid}/batch/{batchnr} |Hensikten med tjenesten er å tillate søk på grupper av personer. Personstaustyper er eneste obligatoriske felt. Det kan også søke på kommunenummer fødselsår, dødsår, kjønn, statsborgerskap og sivilstandstype. Tjenesten er asynkron og benyttes sammen med bulkoppslag og uttrekk/{jobbid}/batch/{batchnr}| Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Privat uten hjemmel |
+    |hendelser/feed|Hensikten med feed er å varsle om de hendelsene som skjer på de forskjellige personene i registeret . Konsumentene sender inn et sekvensnummer og får returnert alle hendelsene som har skjedd i registeret fra og med innsendte sekvensnummer.| Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel |
+    |hendelser/siste/sekvensnummer|Hensikten med tjenesten er å gjøre det mulig for konsumentene å finne hvor langt sekvensnummeret er kommet slik at de kan lytte fra feeden til et ønsket tidspunkt. Tjenesten benyttes for ajourhold.| Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel |
+    |hendelser/xsd|Beskrivelse av Hendelsesdokument|Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel|
+    |hendelser/feedxsd|Beskrivelse av hendelsesfeed|Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel|
+    |personer/bulkoppslag/arkiv <br> personer/arkiv/{dokumentidentifikator} |Hensikten med tjenesten er å tillate konsumentene med tilgang til tjenesten søke på en tidligere eller nåværende tilstand for en gitt person. Persondokumentet inneholder komplette opplysninger på personer på et tidspunkt, men dette trenger ikke være det siste persondokumentet vedkommende har. Fra hendelsesfeed returneres persondokumentet og tjenesten gjør det mulig å søke opp persondokumentet som medførte hendelsen.|Offentlig med hjemmel|
+    |hendelser/{hendelsesidentifikator} <br> hendelser/bulkoppslag|Mens hendelsesfeeden returnerer en tynn beskrivelse av en hendelse returnerer oppslag på den, eller de, spesifikke hendelsen en mer innholdsrik beskrivelse av hendelsen. Tillater søk på en eller flere hendelsesdokument.|Offentlig med hjemmel|</p>
     
         </div>
       </div>
