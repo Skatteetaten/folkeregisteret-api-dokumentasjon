@@ -30,7 +30,8 @@ Tjenestenes endepunkt: <br>
 | separasjon_v1                     | [xsd](../kontrakter/MeldingOmSeparasjon_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
 | skilsmisse_v1                     | [xsd](../kontrakter/MeldingOmSkilsmisse_v1.0.xsd)                    | | test | HendelserISakOmFolkeregistrering_v1 |
 | innflytting_v1                    | [xsd](../kontrakter/MeldingOmInnflytting_v1.0.xsd)                   | | test | HendelserISakOmFolkeregistrering_v1 |
-| flyttemelding_fra_posten_v1       | [xsd](../kontrakter/MeldingOmFlyttingFraPosten_v1.0.xsd)             | | test | Ingen tilbakemelding               |                                
+| flyttemelding_fra_posten_v1       | [xsd](../kontrakter/MeldingOmFlyttingFraPosten_v1.0.xsd)             | | test | Ingen tilbakemelding               |
+| fnr_endring_v1                    | [xsd](../kontrakter/MeldingOmEndringAvPersonMedFoedselsnummer_v1.0.xsd) | | test | HendelserISakOmFolkeregistrering_v1 |
 
 Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignatur.xsd) av meldingene.
 
@@ -79,10 +80,10 @@ Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en 
 
 ## Miljøer
 
-| Miljø | URL | 
+| Miljø | URL |
 |-------|-----|
-| Test| https://folkeregisteret-api-ekstern.sits.no/ | 
-| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
+| Test| https://folkeregisteret-api-ekstern.sits.no/ |
+| Produksjon | https://folkeregisteret.api.skatteetaten.no/ |
 
 ## Multipart
 Innsending av Dnr-rekvisisjon med vedlegg på endepunktene ".vedlegg" må gjøres som en multipart-request.
@@ -111,4 +112,4 @@ Content-Disposition: form-data; name="vedlegg1"; filename="pass2.pdf"<br/>
 Content-Type: text/plain; charset=ISO-8859-1<br/>
 Content-Transfer-Encoding: binary<br/>
 her kommer pdf'en<br/>
- 
+
