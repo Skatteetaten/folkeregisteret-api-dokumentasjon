@@ -2,12 +2,7 @@
 title: Uttrekk
 ---
 
-Teksnisk dokumentasjon er tilgjengelig på swaggerhub. 
- - offentlig med hjemmel
- - Finans
- - Offentlig uten hjemmel
- - Privat uten hjemmel
- - Privat
+
 
 ## Grensesnittbeskrivelse
 Uttrekktjenesten gir tilgang til å hente ut et utvalg med personer basert på én eller flere kriterier, som for eksempel sekvensnummer, fødselsår, gatenavn, og kommune. Tjenestene er delt i 3 deler som utføres i rekkefølge:
