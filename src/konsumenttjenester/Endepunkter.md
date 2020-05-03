@@ -3,10 +3,11 @@ title: Endepunkter
 ---
 
 ## Oppbygging av endepunkter
-For å nå de forskjellige rettighetspakkene bygges URL opp slik: 
+URL til tjenestene bygges opp på følgende måte: 
 {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}
 
-
+Eksempelvis i konsumenttest for offentlig hjemmel og tjenesten personer/xsd:
+`https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd `
 
 ## Tilgjengelige miljøer
 
