@@ -34,9 +34,9 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 For ressurser som er tilgjengelig i de ulike rettighetspakkene se den tekniske dokumentasjonen på swagger cloud: 
 
 Offentlig med hjemmel: 
-Finans:
-Offentlig uten hjemmel: 
-Privat virksomhet uten hjemmel:
-Privat:
+<br> Finans:
+<br> Offentlig uten hjemmel: 
+<br> Privat virksomhet uten hjemmel:
+<br> Privat:
 
 
