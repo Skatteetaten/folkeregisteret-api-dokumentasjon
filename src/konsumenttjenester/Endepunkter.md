@@ -15,8 +15,8 @@ Eksempelvis i konsumenttest for offentlig hjemmel og tjenesten personer/xsd:
 | Miljø | URL | 
 |----------|-----------------------------------------------------------|
 |Playground| https://folkeregisteret-api-konsument-playground.sits.no/ |
-|Konsumenttest| https://folkeregisteret-api-konsument-playground.sits.no/ |
-|Produksjon| https://folkeregisteret-api-konsument-playground.sits.no/ |
+|Konsumenttest| https://folkeregisteret-api-konsument.sits.no/ |
+|Produksjon| https://folkeregisteret.api.skatteetaten.no/ |
 
 ## Tilgjengelige  rettighetspakker
 
