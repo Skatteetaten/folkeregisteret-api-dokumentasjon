@@ -1,5 +1,5 @@
 ---
-title: OBS! Tilbakerulling: Endring i utlevering av persondata
+title: OBS Tilbakerulling: Endring i utlevering av persondata
 date: 2020-05-06
 ---
 
