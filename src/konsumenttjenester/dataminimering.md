@@ -19,5 +19,3 @@ Parameteret *part* benyttes til å spesifisere hvilken informasjon, om en person
 | relasjon-utvidet | Gir: <ul><li>familierelasjon</li><li>foreldreansvar</li><li>vergemålEllerFremtidsfullmakt</ul></li> | Ja | Ja | Nei |
 | <egenskapsnavn\> | I tillegg er det mulig å spesifisere hvert enkelt egenskapsnavn: <ul><li>utlendingsmyndighetenesIdentifikasjonsnummer</li><li>innflytting</li><li>utflytting</li><li>fødselINorge</li><li>opphold</li><li>forholdTilSametingetsValgmanntall</li><li>samiskSpråk</ul></li> Det er også mulig å spesifisere enkeltopplysningene fra "person-basis", "identitetsgrunnlag-utvidet" og "relasjon-utvidet" hvis det er behov for å redusere resultatet nærmere. Merk at egenskapsnavnene må angis slik de er definert i den til enhver tid gjeldende skjemadefinisjonen for persondokumentet (eks: fødsel = foedsel). | Ja | Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken. | Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken. |
 
-Merk at identifikasjonsnummer alltid vil inngå i resultatsettet, uavhengig av hva som spesifiseres (gjelder offentlig med hjemmel, finans og offentlig uten hjemmel).
-
