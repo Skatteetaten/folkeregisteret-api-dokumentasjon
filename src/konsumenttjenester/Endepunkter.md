@@ -32,12 +32,25 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 |Privat|folkeregisteret/api/privat/|
 
 ## Ressurser
-For ressurser som er tilgjengelig i de ulike rettighetspakkene se den tekniske dokumentasjonen på swagger cloud: 
+## Tilgjengelige tjenester
+| Tjeneste | Tilgjengelig i rettighetspakker | 
+|------------------|----------------|
+| v1/personer/{personidentifikator} <br> v1/personer/bulkoppslag | Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Finans, <br> Privat uten hjemmel |
+|v1/personer/soek | Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br> Privat uten hjemmel |
+|v1/personer/entydigsoek|Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br> Privat uten hjemmel, <br>Privat |
+|v1/personer/xsd | Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel |
+|v1/uttrekk/komplett  <br> v1/uttrekk/{jobbid}/batch/{batchnr} | Offentlig med hjemmel |
+|v1/uttrekk/tilpasset <br> v1/uttrekk/{jobbid}/batch/{batchnr} |Offentlig med hjemmel, <br> Offentlig uten hjemmel, <br> Privat uten hjemmel |
+|v1/hendelser/feed| Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel |
+|v1/hendelser/siste/sekvensnummer| Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel |
+|v1/hendelser/xsd|Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel|
+|v1/hendelser/feedxsd|Offentlig med hjemmel, <br>Offentlig uten hjemmel, <br>Finans, <br>Privat, <br> Privat uten hjemmel|
+|v1/personer/bulkoppslag/arkiv <br> personer/arkiv/{dokumentidentifikator} |Offentlig med hjemmel|
+|v1/hendelser/{hendelsesidentifikator} <br> hendelser/bulkoppslag|Offentlig med hjemmel|
 
-Offentlig med hjemmel: 
-<br> Finans:
-<br> Offentlig uten hjemmel: 
-<br> Privat virksomhet uten hjemmel:
-<br> Privat:
+
+
+
+
 
 
