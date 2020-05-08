@@ -85,21 +85,24 @@
     <th>Beskrivelse</th>
     <th>RP Offentlig med hjemmel</th>
     <th>RP Finans og begrenset</th>
-    <th>Offentlig uten hjemmel / Presse / Privat</th>
+    <th>Offentlig uten hjemmel / Privat uten hjemmel</th>
+    <th>Presse/ Privat</th>
     </tr>
     </thead>
     <tbody>
     <tr>
     <td>person-basis</td>
-    <td>Standardsett av gjeldende og ikke-taushetsbelagte opplysninger: <ul><li>identitetsgrunnlag</li><li>status</li><li>dødsfall</li><li>sivilstand</li><li>fødsel</li><li>statsborgerskap</li><li>kjønn</li><li>navn</li><li>preferertKontaktadresse</li><li>bostedsadresse</li><li>oppholdsadresse</li><li>deltBosted</li><li>postadresse</li><li>postadresseIUtlandet</li><li>adressebeskyttelse</li><li>kontaktinformasjonForDødsbo</li></ul></td>
+    <td>Standardsett av gjeldende og ikke-taushetsbelagte opplysninger: <ul><li>Identifikasjonsnummer</li><li>identitetsgrunnlag</li><li>status</li><li>dødsfall</li><li>sivilstand</li><li>fødsel</li><li>statsborgerskap</li><li>kjønn</li><li>navn</li><li>preferertKontaktadresse</li><li>bostedsadresse</li><li>oppholdsadresse</li><li>deltBosted</li><li>postadresse</li><li>postadresseIUtlandet</li><li>adressebeskyttelse</li><li>kontaktinformasjonForDødsbo</li></ul></td>
     <td>Ja</td>
     <td>Ja, men uten opplysninger om kontaktopplysninger før dødsbo.</td>
-    <td>Ja, men uten opplysninger om kontaktopplysninger før dødsbo</td>
+    <td>Ja, men ikke kontaktopplysninger før dødsbo</td>
+    <td>Ja, men ikke  kontaktopplysninger før dødsbo <br> Ikke identifikasjonsnummer</td>
     </tr>
     <tr>
     <td>historikk</td>
     <td>Gir gjeldende og historiske verdier for alle personopplysningene som returneres.</td>
     <td>Ja</td>
+    <td>Ja, for navn og adresser</td>
     <td>Ja, for navn og adresser</td>
     <td>Ja, for navn og adresser</td>
     </tr>
@@ -109,6 +112,7 @@
     <td>Ja</td>
     <td>Nei</td>
     <td>Nei</td>
+    <td>Nei</td>
     </tr>
     <tr>
     <td>relasjon-utvidet</td>
@@ -116,11 +120,13 @@
     <td>Ja</td>
     <td>Ja</td>
     <td>Nei</td>
+    <td>Nei</td>
     </tr>
     <tr>
     <td>&lt;egenskapsnavn></td>
-    <td>I tillegg er det mulig å spesifisere hvert enkelt egenskapsnavn: <ul><li>utlendingsmyndighetenesIdentifikasjonsnummer</li><li>Identifikasjonsnummer</li><li>innflytting</li><li>utflytting</li><li>fødselINorge</li><li>opphold</li><li>forholdTilSametingetsValgmanntall</li><li>samiskSpråk</ul></li> Det er også mulig å spesifisere enkeltopplysningene fra &quot;person-basis&quot;, &quot;identitetsgrunnlag-utvidet&quot; og &quot;relasjon-utvidet&quot; hvis det er behov for å redusere resultatet nærmere. Merk at egenskapsnavnene må angis slik de er definert i den til enhver tid gjeldende skjemadefinisjonen for persondokumentet (eks: fødsel = foedsel).</td>
+    <td>I tillegg er det mulig å spesifisere hvert enkelt egenskapsnavn: <ul><li>utlendingsmyndighetenesIdentifikasjonsnummer</li><li>innflytting</li><li>utflytting</li><li>fødselINorge</li><li>opphold</li><li>forholdTilSametingetsValgmanntall</li><li>samiskSpråk</ul></li> Det er også mulig å spesifisere enkeltopplysningene fra &quot;person-basis&quot;, &quot;identitetsgrunnlag-utvidet&quot; og &quot;relasjon-utvidet&quot; hvis det er behov for å redusere resultatet nærmere. Merk at egenskapsnavnene må angis slik de er definert i den til enhver tid gjeldende skjemadefinisjonen for persondokumentet (eks: fødsel = foedsel).</td>
     <td>Ja</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken.</td>
     <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken.</td>
     <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken.</td>
     </tr>
