@@ -24,7 +24,7 @@ Det er en forutsetning at opplysningene det søkes etter er entydig identifisere
 Tjenesten støtter fonetisk søk og oppslag på historiske navn og adresser.
   
 **Minimumsinformasjon i søket:**
-  * Fødselsdato og navn (fornavn og etternavn)
+  * Fødselsnummer og navn (fornavn og etternavn)
   *	Fødselsdato og navn (fornavn og etternavn) 
   * Navn (fornavn og etternavn) og adresse (adressenavn eller postnummer) 
 
