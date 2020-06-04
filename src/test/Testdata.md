@@ -3,10 +3,12 @@ title: Testdata
 ---
 
 # Syntetiske testpersoner og hendelser
-I parallell med at Folkeregisteret moderniseres, jobber prosjektet med å etablere et testfolkeregister med syntetiske testpersoner. En syntetiske testbefolkningen er tilgjengelig fra august 2019 for virksomheter som har tilgang til tjenestene. 
+I parallell med at Folkeregisteret moderniseres, jobber prosjektet med å etablere et testfolkeregister med syntetiske testpersoner. Tenor testdatasøk er et arbeidsverktøy for alle som driver systemutvikling og som trenger testdata. Løsningen gir deg enkel tilgang til testpersoner fra det syntetiske folkeregisteret.
 
 Testbefolkningen lages basert på et representativt utvalg av Norges befolkning, og vil bestå av konstruerte data som ikke har rot i virkeligheten. Testpersonene navngis ikke med ekte navn, men med navn som er satt sammen av adjektiv og substantiv – f.eks «Vakker blomst». Testpersonene skal bo på ekte gateadresser og med reelle postnummer og kommunenummer.
- 
+
+Tenor testdatasøk finnes her: https://www.digdir.no/digitale-felleslosninger/tenor-testdatasok/1284. Bruk krever pålogging via ID-porten. 
+
 I arbeidet med å etablere testbefolkningen jobber vi iterativt, og basert på tilbakemeldinger eller funn fra konsumentene.  Testdataene vil resettes med jevne mellomrom. Dette vil bli varslet i forkant.
 
 
