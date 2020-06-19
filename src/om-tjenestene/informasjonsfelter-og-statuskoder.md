@@ -118,7 +118,7 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
         <td> -</td>
     </tr>
     <tr>
-        <td> 3 - Inaktiv</td>
+        <td> 4 - Inaktiv</td>
         <td> Inaktiv</td>
         <td> -</td>
     </tr>
