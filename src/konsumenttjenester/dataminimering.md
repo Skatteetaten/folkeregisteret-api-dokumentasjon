@@ -11,7 +11,7 @@ Dersom part ikke oppgis vil retur innholde samme informasjon som finnes i "perso
 
 Parameteret *part* benyttes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet (egenskapsnavn) på toppnivå i modellen for persondokument. I tillegg til å kunne be om eksplisitte entiteter er det lagt opp til samlende resultatsett i henhold til tabellen under:
 
-Eksempelvis kan part benyttes slik: /v1/personer/12345612345?part=historikk&part=navn&part=bostedsadresse <br>  Dette vil returnere gjeldende og historiske oppføringer på entitentene navn og bostedsadresse. I tillegg vil identifikasjonsnummer returneres for alle andre rettighetspakker enn privat.  
+Eksempelvis kan part benyttes slik: /v1/personer/12345612345?part=historikk&part=navn&part=bostedsadresse <br>  Dette vil returnere gjeldende og historiske oppføringer på entitentene navn og bostedsadresse. Med unntak av for rettighetspakken privat vil også identifikasjonsnummer returneres.  
 
 
 | <part\> | Beskrivelse | RP Offentlig med hjemmel | RP Finans og begrenset | Offentlig uten hjemmel / Privat uten hjemmel | Presse/ Privat|
