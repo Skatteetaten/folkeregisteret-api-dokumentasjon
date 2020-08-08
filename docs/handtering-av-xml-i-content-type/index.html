@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width">
-  <title>Ytelsestest i konsumenttest onsdag 20. mai.</title>
+  <title>Håndtering av xml i content-type</title>
 </head>
 <body>
 <div>
@@ -36,7 +36,7 @@
   
     <div class="header-sidetittel">
       <h1>
-        <span class="header-undertittel">Ytelsestest i konsumenttest onsdag 20. mai.</span>
+        <span class="header-undertittel">Håndtering av xml i content-type</span>
       </h1>
     </div>
   </header>
@@ -73,9 +73,9 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <p>Prosjektet planlegger å kjøre ytelsestest i konsumenttestmiljøet i dag fra kl. 12. Anslagsvis vil testen var i tre timer.
-    Det skal ikke medføre utfordringer for konsumenter, men dersom noen skulle oppleve noen utfordringer er det interessant for oss å få informasjon om dette.
-    Ta i så fall kontakt på Folkeregister Operasjonssenter <a href="mailto:&#x46;&#111;&#108;&#107;&#101;&#x72;&#x65;&#103;&#105;&#x73;&#116;&#101;&#x72;&#45;&#x4f;&#x70;&#x65;&#x72;&#97;&#x73;&#106;&#x6f;&#x6e;&#115;&#x73;&#101;&#110;&#x74;&#101;&#x72;&#x40;&#115;&#107;&#97;&#x74;&#116;&#x65;&#x65;&#x74;&#97;&#x74;&#101;&#110;&#46;&#110;&#111;">&#x46;&#111;&#108;&#107;&#101;&#x72;&#x65;&#103;&#105;&#x73;&#116;&#101;&#x72;&#45;&#x4f;&#x70;&#x65;&#x72;&#97;&#x73;&#106;&#x6f;&#x6e;&#115;&#x73;&#101;&#110;&#x74;&#101;&#x72;&#x40;&#115;&#107;&#97;&#x74;&#116;&#x65;&#x65;&#x74;&#97;&#x74;&#101;&#110;&#46;&#110;&#111;</a> </p>
+          <p>Trisdag 11. august prodsetter vi noen endringer på konsumenttjenestene våre. Håndteringen av content-type har vært noe mangelfull i alle rettighetspakkene bortsett fra offentlig med hjemmel. Dette er nå utbedret slik at hvis konsumenten oppgir at de ønsker å motta responsen i  xml-format så vil de få det også. 
+    I tillegg er det rettet en feil der vi oppga responsen til å være i Json, mens svaret var i xml-format. Feilen inntraff kun når requesten ble sendt inn uten accept-header. Til slutt er det også lagt til rette for at tjenesten /v1/personer/soek nå også kan levere svar i xlm-format.  </p>
+    <p>For konsumenter som har spesifisert ønsket format i accept-header og mottatt svar på samme format er oppførselen uendret. </p>
     
         </div>
       </div>
