@@ -74,7 +74,7 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
     </tr>
     <tr>
         <td> 4 - Forsvunnet</td>
-        <td> Forsvunnet</td>
+        <td> Forsvunnet (aktiv)*</td>
         <td> I bruk</td>
     </tr>
     <tr>
@@ -89,17 +89,17 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
     </tr>
     <tr>
         <td> 7 - Fødselsregistrert</td>
-        <td> Fødselsregistrert</td>
+        <td> Fødselsregistrert (aktiv)*</td>
         <td> I bruk</td>
     </tr>
     <tr>
         <td> 8 - Annulert tilgang</td>
-        <td> Ikke bosatt</td>
+        <td> Ikke bosatt (aktiv)*</td>
         <td> I bruk</td>
     </tr>
     <tr>
         <td> 9 - Uregistrert person</td>
-        <td> Ikke bosatt</td>
+        <td> Ikke bosatt (aktiv)*</td>
         <td> I bruk</td>
     </tr>
     <tr>
@@ -153,6 +153,8 @@ Ny lov og forskrift om folkeregistrering trådte i kraft i oktober 2017. Det nye
         <td> Opphørt</td>
     </tr>
 </table>
+* Personstatusen aktiv er en status som ikke finnes lagret i Registeret, men som gis til konsumenter uten rettighet til taushetsbelagt personstatus. 
+
 
 ## Personstatus - Bosatt
 
@@ -172,7 +174,7 @@ Personer som skal ha personstatus "Utflyttet":
 * Personer som har ukjent oppholdssted i 2 år, og det blir truffet vedtak om utflytting
   
 ## Personstatus - Forsvunnet
-Personstatusen "Forsvunnet" benyttes om personer som er blitt borte i forbindelse med ulykker, naturkatastrofer, forbrytelser eller er savnet på sjøen, i fjellet eller liknende.
+Personstatusen "Forsvunnet" benyttes om personer som er blitt borte i forbindelse med ulykker, naturkatastrofer, forbrytelser eller er savnet på sjøen, i fjellet eller liknende. Konsumenter uten hjemmel til å motta taushetsbelagte personstatuskoder vil motta aktiv for personer med denne personstatuskoden. 
 
 Personer som vil få personstatus "Forsvunnet":
 * Personer med fødsels- eller d-nummer som meldes til Folkeregisteret som forsvunnet av politi eller påtalemyndighet.
@@ -199,7 +201,7 @@ Personer som vil få personstatus "Opphørt":
 * Hemmelig adopsjon
   
 ## Personstatus - Fødselsregistrert
-Personstatusen "Fødselsregistrert" benyttes om personer som er født i Norge, og oppfyller kravet til tildeling av fødselsnummer, men som ikke skal bostedsregistreres.
+Personstatusen "Fødselsregistrert" benyttes om personer som er født i Norge, og oppfyller kravet til tildeling av fødselsnummer, men som ikke skal bostedsregistreres. Konsumenter uten hjemmel til å motta taushetsbelagte personstatuskoder vil motta aktiv for personer med denne personstatuskoden.
 
 Denne statuskoden bygger på at Folkeregisteret er det offisielle fødselsregister i Norge og derfor kan utstede fødselsattester med sikker notoritet for denne gruppen
 
@@ -207,14 +209,14 @@ Personer som vil få personstatus "Fødselsregistrert":
 * Personer født på norsk sykehus som ikke skal registreres som bosatt
   
 ## Personstatus - Midlertidig
-Personstatusen "Midlertidig" benyttes for personer som er tildelt d-nummer, og som er å regne som aktive i det norske samfunnet. 
+Personstatusen "Midlertidig" benyttes for personer som er tildelt d-nummer, og som er å regne som aktive i det norske samfunnet. Konsumenter uten hjemmel til å motta taushetsbelagte personstatuskoder vil motta aktiv for personer med denne personstatuskoden. 
 
 Personer som vil få personstatus "Midlertidig":
 * Person som er tildelt d-nummer frem til gyldighetsperioden på 5 år utløper
 * Personer med reaktivert d-nummer som følge av forespørsel fra rekvirent
 
 ## Personstatus – Ikke bosatt
-Personstatusen "Ikke bosatt" benyttes for norske statsborgere som har behov for fødselsnummer, men som ikke er bosatt i Norge.
+Personstatusen "Ikke bosatt" benyttes for norske statsborgere som har behov for fødselsnummer, men som ikke er bosatt i Norge. Konsumenter uten hjemmel til å motta taushetsbelagte personstatuskoder vil motta aktiv for personer med denne personstatuskoden.
 
 Person som vil få personstatus "Ikke bosatt":
 * Annullert innflytting
