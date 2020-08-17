@@ -15,6 +15,9 @@ Henvendelser om DSF-tjenester skal fremdeles rettes til EVRY på onlineservice@e
 
 For generelle henvendelser til folkeregisteret ta kontakt med brukerdialog på telefon 800 80 000, tastevalg 3.
 
+Ved kritiske feil eller nedetid utenfor ordinær arbeidstid (15:00 – 08:00) ber vi deg kontakte oss på 22 07 80 00.
+ 
+
 
 ## Spørsmål og svar er kategorisert etter område under:
 
