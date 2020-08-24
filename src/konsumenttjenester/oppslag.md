@@ -23,16 +23,42 @@ Det er en forutsetning at opplysningene det søkes etter er entydig identifisere
 
 Tjenesten støtter fonetisk søk og oppslag på historiske navn og adresser.
   
+**Definisjoner**
+Rett til treff: betyr at dersom denne kombinasjonen av søkekriterier er angitt så har du retten til å få utlevert et treff tilbake
+Entydig: betyr at søkekriteriene kun skal matche én person i hele registeret
+Treff: betyr at dersom søkekriteriene som er angitt finner kun én person (entydig) og kombinasjonen av kriterier gir rett til treff, så får du utlevert resultatet. Det er fullt mulig å angi flere søkekriterier enn de kriteriene som gir rett til treff for å snevre inn søket. 
+
 **Minimumsinformasjon i søket:**
   * Fødselsnummer og navn (fornavn og etternavn)
   *	Fødselsdato og navn (fornavn og etternavn) 
-  * Navn (fornavn og etternavn) og adresse (adressenavn eller postnummer) 
+  * Navn (fornavn og etternavn) og adresse (Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer dersom adressen har husnummer og/eller bokstav, og teller som én uavhengig opplysning til sammen.
+  * Navn (fornavn og etternavn) og postnummer
 
 Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon eller legitimasjonsdokument i kombinasjon med fornavn og etternavn. Offentlig med hjemmel kan også benytte  utlendingsmyndighetenesIdentifikasjonsnummer  i kombinasjon med fornavn og etternavn som et entydig søk.
 
 Eksempel på entydig søk på gitte kriterier: 
 `$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"`
 <br>
+**Eksempler på kombinasjoner som gir rett til treff:**
+| Opplysning	| Beskrivelse	| Eksempel |
+|------------|--------------------------------------|--------------------------------------|
+|Navn og identifikasjonsnummer	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt	| ?navn=Arne%20Hansen&identifikasjonsnummer=13108138812
+ 
+|Navn og fødselsdato	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt |	?navn=Arne%20Hansen&foedselsdato=19811013
+ 
+|Navn og gateadresse	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt
+Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer og teller som én uavhengig opplysning til sammen
+Parameteren husnummer kan utelates dersom adressen ikke har noe husnummer. Ellers påkrevd for rett til treff	| ?navn=Arne%20Hansen&adressenavn=Økernveien&husnummer=10B
+ 
+|Navn og postnummer	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt | ?navn=Arne%20Hansen&postnummer=1251 |
+| Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Finans		|
+|Navn og utenlandskpersonidentifikasjon	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt
+Inkludert landkode i utenlandskpersonidentifikasjon slik: <landkode>- <personnummer>	| ?navn=Arne%20Hansen&utenlandskpersonidentifikasjon=ARG-8766523769
+|Navn og legitimasjonsdokument	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt 
+Inkludert landkode i legitimasjonsdokument slik: <landkode>-<dokumentnummer> |  ?navn=Arne%20Hansen&legitimasjonsdokument=DNK-7545367
+|Navn og utlendingsmyndighetenesIdentifikasjonsnummer	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt |	?navn=Arne%20Hansen&utlendingsmyndighetenesIdentifikasjonsnummer=87676437682
+
+
 <br>
 
 ## Søk med treffliste
