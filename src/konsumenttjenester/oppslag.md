@@ -40,8 +40,9 @@ Eksempel på entydig søk på gitte kriterier:
 `$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true"`
 <br>
 **Eksempler på kombinasjoner som gir rett til treff:**
+
 | Opplysning	| Beskrivelse	| Eksempel |
-|------------|--------------------------------------|--------------------------------------|
+|-------------|--------------------------------------|--------------------------------------|
 |Navn og identifikasjonsnummer	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt	| ?navn=Arne%20Hansen&identifikasjonsnummer=13108138812 |
 |Navn og fødselsdato	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt |	?navn=Arne%20Hansen&foedselsdato=19811013
 |Navn og gateadresse	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer og teller som én uavhengig opplysning til sammen. Parameteren husnummer kan utelates dersom adressen ikke har noe husnummer. Ellers påkrevd for rett til treff	| ?navn=Arne%20Hansen&adressenavn=Økernveien&husnummer=10B
