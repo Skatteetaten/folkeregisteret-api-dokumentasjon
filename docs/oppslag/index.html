@@ -104,17 +104,58 @@
     <p>Eksempel på entydig søk på gitte kriterier: 
     <code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</code>
     <br>
-    <strong>Eksempler på kombinasjoner som gir rett til treff:</strong>
-    | Opplysning    | Beskrivelse    | Eksempel |
-    |------------|--------------------------------------|--------------------------------------|
-    |Navn og identifikasjonsnummer    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt    | ?navn=Arne%20Hansen&amp;identifikasjonsnummer=13108138812 |
-    |Navn og fødselsdato    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt |    ?navn=Arne%20Hansen&amp;foedselsdato=19811013
-    |Navn og gateadresse    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer og teller som én uavhengig opplysning til sammen. Parameteren husnummer kan utelates dersom adressen ikke har noe husnummer. Ellers påkrevd for rett til treff    | ?navn=Arne%20Hansen&amp;adressenavn=Økernveien&amp;husnummer=10B
-    |Navn og postnummer    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt | ?navn=Arne%20Hansen&amp;postnummer=1251 |
-    | <em>Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Finans</em>        |
-    |Navn og utenlandskpersonidentifikasjon    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i utenlandskpersonidentifikasjon slik: <landkode>- <personnummer>    | ?navn=Arne%20Hansen&amp;utenlandskpersonidentifikasjon=ARG-8766523769 |
-    |Navn og legitimasjonsdokument    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i legitimasjonsdokument slik: <landkode>-<dokumentnummer> |  ?navn=Arne%20Hansen&amp;legitimasjonsdokument=DNK-7545367 |
-    |Navn og utlendingsmyndighetenesIdentifikasjonsnummer    | Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. | ?navn=Arne%20Hansen&amp;utlendingsmyndighetenesIdentifikasjonsnummer=87676437682 |</p>
+    <strong>Eksempler på kombinasjoner som gir rett til treff:</strong></p>
+    <table>
+    <thead>
+    <tr>
+    <th>Opplysning</th>
+    <th>Beskrivelse</th>
+    <th>Eksempel</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Navn og identifikasjonsnummer</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt</td>
+    <td>?navn=Arne%20Hansen&amp;identifikasjonsnummer=13108138812</td>
+    </tr>
+    <tr>
+    <td>Navn og fødselsdato</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt</td>
+    <td>?navn=Arne%20Hansen&amp;foedselsdato=19811013</td>
+    </tr>
+    <tr>
+    <td>Navn og gateadresse</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer og teller som én uavhengig opplysning til sammen. Parameteren husnummer kan utelates dersom adressen ikke har noe husnummer. Ellers påkrevd for rett til treff</td>
+    <td>?navn=Arne%20Hansen&amp;adressenavn=Økernveien&amp;husnummer=10B</td>
+    </tr>
+    <tr>
+    <td>Navn og postnummer</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt</td>
+    <td>?navn=Arne%20Hansen&amp;postnummer=1251</td>
+    </tr>
+    <tr>
+    <td><em>Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Finans</em></td>
+    <td>-</td>
+    <td>-</td>
+    </tr>
+    <tr>
+    <td>Navn og utenlandskpersonidentifikasjon</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i utenlandskpersonidentifikasjon slik: <landkode>- <personnummer></td>
+    <td>?navn=Arne%20Hansen&amp;utenlandskpersonidentifikasjon=ARG-8766523769</td>
+    </tr>
+    <tr>
+    <td>Navn og legitimasjonsdokument</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i legitimasjonsdokument slik: <landkode>-<dokumentnummer></td>
+    <td>?navn=Arne%20Hansen&amp;legitimasjonsdokument=DNK-7545367</td>
+    </tr>
+    <tr>
+    <td>Navn og utlendingsmyndighetenesIdentifikasjonsnummer</td>
+    <td>Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt.</td>
+    <td>?navn=Arne%20Hansen&amp;utlendingsmyndighetenesIdentifikasjonsnummer=87676437682</td>
+    </tr>
+    </tbody>
+    </table>
     <p><br></p>
     <h2 id="s-k-med-treffliste">Søk med treffliste</h2>
     <p>Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. </p>
