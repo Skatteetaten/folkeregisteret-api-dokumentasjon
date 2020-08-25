@@ -74,11 +74,12 @@
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <p><strong>NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.</strong></p>
-    <h1 id="punktene-under-er-n-v-rende-l-sning-ny-l-sning-under-arbeid-">Punktene under er nåværende løsning - Ny løsning under arbeid:</h1>
+    <h1 id="for-konsumenter">For Konsumenter</h1>
     <p>Ny løsning ved bruk av maskinporten er angitt her: <a href="../maskinporten">Oppkobling ved bruk av maskinporten</a> </p>
-    <h1 id="transportsikring">Transportsikring</h1>
-    <p>Kommunikasjonen mellom konsumenten/produsenten og Skatteetaten skal foregå på kryptert kanal over internett, dvs. bruk av 2-veis SSL. Det er ikke ønskelig at det etableres fast/leid-linje for kommunikasjonen. Transporten sikres gjennom bruk av virksomhetssertifikater og asymmetrisk kryptering før felles symmetrisk nøkkel avtales for 2-veis SSL.</p>
-    <h1 id="autentisering-og-autorisering">Autentisering og autorisering</h1>
+    <h1 id="for-produsenter">For Produsenter</h1>
+    <h2 id="transportsikring">Transportsikring</h2>
+    <p>Kommunikasjonen mellom produsenten og Skatteetaten skal foregå på kryptert kanal over internett, dvs. bruk av 2-veis SSL. Det er ikke ønskelig at det etableres fast/leid-linje for kommunikasjonen. Transporten sikres gjennom bruk av virksomhetssertifikater og asymmetrisk kryptering før felles symmetrisk nøkkel avtales for 2-veis SSL.</p>
+    <h2 id="autentisering-og-autorisering">Autentisering og autorisering</h2>
     <p>For å benytte Skatteetatens API trenger du et kvalifisert <a href="https://en.wikipedia.org/wiki/X.509">X.509</a> virksomhetssertifikat for kryptering/autentisering. Nasjonal kommunikasjonsmyndighet har <a href="https://www.nkom.no/internett/elektronisk-id-og-tillitstjenester/tillitsliste-trusted-list#norges_tillitsliste">oversikt over godkjente tilbydere av kvalifiserte sertifikater</a>. I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. </p>
     <p>Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virksomhetens <em>organisasjonsnummer</em>. <strong>Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.</strong></p>
     <p>Det finnes virksomhetssertifikater for forskjellige formål. <em>Hvis verdien for &#39;Key Usage&#39; er non-repudiation er det feil type sertifikat</em>.</p>
