@@ -4,14 +4,14 @@ title: Sikkerhet
 
 **NB! Modernisering av folkeregisteret er i en pilotfase. Kun inviterte produsenter og konsumenter har mulighet til å benytte seg av API-ene frem til pilotperioden er over.**
 
-# Punktene under er nåværende løsning - Ny løsning under arbeid: 
+# For Konsumenter 
 Ny løsning ved bruk av maskinporten er angitt her: [Oppkobling ved bruk av maskinporten](../maskinporten) 
  
-
-# Transportsikring
+# For Produsenter
+## Transportsikring
 Kommunikasjonen mellom konsumenten/produsenten og Skatteetaten skal foregå på kryptert kanal over internett, dvs. bruk av 2-veis SSL. Det er ikke ønskelig at det etableres fast/leid-linje for kommunikasjonen. Transporten sikres gjennom bruk av virksomhetssertifikater og asymmetrisk kryptering før felles symmetrisk nøkkel avtales for 2-veis SSL.
 
-# Autentisering og autorisering
+## Autentisering og autorisering
 For å benytte Skatteetatens API trenger du et kvalifisert [X.509]( https://en.wikipedia.org/wiki/X.509) virksomhetssertifikat for kryptering/autentisering. Nasjonal kommunikasjonsmyndighet har [oversikt over godkjente tilbydere av kvalifiserte sertifikater](https://www.nkom.no/internett/elektronisk-id-og-tillitstjenester/tillitsliste-trusted-list#norges_tillitsliste). I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. 
 
 Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virksomhetens *organisasjonsnummer*. **Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.**
