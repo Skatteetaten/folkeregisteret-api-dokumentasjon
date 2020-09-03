@@ -10,7 +10,7 @@ Prosjektet vil arbeide videre med ytterligere testing av responstider og ytelse 
 
 PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks ved fullast, skal dette avtales med Freg forvaltning (avtales ved epost til freg.produksjon@skatteetaten.no).
 
-### Tjenestenivå(SLA) for FREG test
+### Tjenestenivå(SLA) for FREG
 For FREG test gjelder følgende tjenestenivå:
 
 |              |               |
@@ -20,7 +20,7 @@ For FREG test gjelder følgende tjenestenivå:
 |Testdata|I testmiljøet skal relevante, syntetisk genererte testdata være tilgjengelig. Det er forventet at spesifikke egenskaper som gjelder den enkelte kunde tilrettelegges for test på kundens side.|
 |Komponentversjoner|Versjoner av komponenter i testmiljøet skal normalt være samme versjoner som i produksjonsmiljøet.|
 
-## Responstider
+## Responstider og bruksmønster i produksjon
 
 ### Oppslag
 | Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
