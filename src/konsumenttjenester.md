@@ -2,8 +2,7 @@
 title: Konsumenttjenester
 ---
 
-## Konsumenttjenester
-
+## Standardtjenester
 Denne siden beskriver tjenestene i det nye Folkeregisteret. 
 Rettighetspakker og teknisk beskrivelse av tjenestene finnes på siden for hver enkelt tjeneste. Tjenestene som er beskrevet på denne siden er under utvikling, og det kan komme endringer i tjenestetilbudet, nye tjenester og endring i tjenesteinnholdet. Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG) 
 
