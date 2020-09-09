@@ -50,6 +50,7 @@ Eksempel på entydig søk på gitte kriterier:
 | *Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Finans*		| - | - |
 |Navn og utenlandskpersonidentifikasjon	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i utenlandskpersonidentifikasjon slik: <landkode>- <personnummer>	| ?navn=Arne%20Hansen&utenlandskpersonidentifikasjon=ARG-8766523769 |
 |Navn og legitimasjonsdokument	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i legitimasjonsdokument slik: <landkode>-<dokumentnummer> |  ?navn=Arne%20Hansen&legitimasjonsdokument=DNK-7545367 |
+| *Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel* | - | - |
 |Navn og utlendingsmyndighetenesIdentifikasjonsnummer	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. | ?navn=Arne%20Hansen&utlendingsmyndighetenesIdentifikasjonsnummer=87676437682 |
 
 
