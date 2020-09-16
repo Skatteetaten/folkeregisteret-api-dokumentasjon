@@ -3,45 +3,23 @@ title: Hendelsesliste
 ---
 
 # Grensesnittbeskrivelse
-Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Det eneste konsumentene selv MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.
+Tjenesten tilgjengeliggjør endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Konsumentene selv MÅ holde orden på en intern feed-peker som viser hvor langt man har lest i feeden.
 
 I rettighetspakken "offentlig med hjemmel" kan man i tillegg til å lese feeden, også lese innhold i en enkelt hendelse.
 
 Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.
 
-Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
-Man kan også slå opp personen basert på fødsels- eller d-nummer.
+Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. Man kan også slå opp personen basert på fødsels- eller d-nummer. I enkelte rettighetspakker vil hendelsen kun inneholde en folkeregisteridentifikator. 
 
-For å nå tjenestene bygges URL opp slik:
-{miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}
-
-## Ressurser
-|Ressurs|Beskrivelse|
-|-------|-----------|
-|hendelser/siste/sekvensnummer|Siste sekvensnummer|
-|hendelser/feed?seq={startsekvensnummer}|Liste med hendelser fra angitt startpunkt|
-|hendelser/{hendelsesidentifikator}|Datainnhold i en angitt hendelse|
-|hendelser/bulk/hendelser|Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)|
-|hendelser/xsd| Xsd (kontrakt) for hendelse|
+De ulike tjenestene er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG)
 
 Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Her er [Xsd for innhold i content](../kontrakter/Hendelsedokument_v1.4.xsd).
 
-## Rettighetspakker
 
-| Rettighetspakke|Beskrivelse|
-|----------------|-----------|
-|offentlig-med-hjemmel/api/v1/| Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.|
-|offentlig-uten-hjemmel/api/v1/| Rettighetspakke for offentlige aktører uten hjemmel i egen lov.|
-|finans-og-begrenset/api/v1/| Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)|
+## Endepunkter
+For oppbygging av endepunkter se [her.](../endepunkter)
 
-## Miljøer
 
-|Miljø|URL|
-|-----|---|
-| Produsenttest| https://folkeregisteret-api-ekstern.sits.no/ |
-| Konsumenttest | https://folkeregisteret-api-konsument.sits.no/ |
-| Produksjon | https://folkeregisteret.api.skatteetaten.no/ | 
-| Playground | https://folkeregisteret-api-konsument-playground.sits.no/  | 
 
 ## Eksempler 
 Oppslag i hendelsesliste: <br>
