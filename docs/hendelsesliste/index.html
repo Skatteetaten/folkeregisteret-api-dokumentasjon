@@ -74,95 +74,14 @@
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <h1 id="grensesnittbeskrivelse">Grensesnittbeskrivelse</h1>
-    <p>Tjenesten tilgjengeliggjør relevante endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Det eneste konsumentene selv MÅ holde orden på er en intern feed-peker som viser hvor langt man har lest i feeden.</p>
+    <p>Tjenesten tilgjengeliggjør endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Konsumentene selv MÅ holde orden på en intern feed-peker som viser hvor langt man har lest i feeden.</p>
     <p>I rettighetspakken &quot;offentlig med hjemmel&quot; kan man i tillegg til å lese feeden, også lese innhold i en enkelt hendelse.</p>
     <p>Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returneres er fast satt til 1000.</p>
-    <p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. 
-    Man kan også slå opp personen basert på fødsels- eller d-nummer.</p>
-    <p>For å nå tjenestene bygges URL opp slik:
-    {miljø}/folkeregisteret/{rettighetspakke}/{versjon}/{ressurs}</p>
-    <h2 id="ressurser">Ressurser</h2>
-    <table>
-    <thead>
-    <tr>
-    <th>Ressurs</th>
-    <th>Beskrivelse</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>hendelser/siste/sekvensnummer</td>
-    <td>Siste sekvensnummer</td>
-    </tr>
-    <tr>
-    <td>hendelser/feed?seq={startsekvensnummer}</td>
-    <td>Liste med hendelser fra angitt startpunkt</td>
-    </tr>
-    <tr>
-    <td>hendelser/{hendelsesidentifikator}</td>
-    <td>Datainnhold i en angitt hendelse</td>
-    </tr>
-    <tr>
-    <td>hendelser/bulk/hendelser</td>
-    <td>Datainnhold i et sett med hendelser (gjelder kun rettighetspakke offentlig-med-hjemmel)</td>
-    </tr>
-    <tr>
-    <td>hendelser/xsd</td>
-    <td>Xsd (kontrakt) for hendelse</td>
-    </tr>
-    </tbody>
-    </table>
+    <p>Tjenesten er naturlig å se i sammenheng med tjenesten <a href="../oppslag">oppslag</a>. I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. Man kan også slå opp personen basert på fødsels- eller d-nummer. I enkelte rettighetspakker vil hendelsen kun inneholde en folkeregisteridentifikator. </p>
+    <p>De ulike tjenestene er dokumentert på <a href="https://app.swaggerhub.com/organizations/Skatteetaten_FREG">swaggerhub.</a></p>
     <p>Feed er i henhold til <a href="http://www.ietf.org/rfc/rfc4287.txt">Atom spesifikasjonen</a>. Her er <a href="../kontrakter/Hendelsedokument_v1.4.xsd">Xsd for innhold i content</a>.</p>
-    <h2 id="rettighetspakker">Rettighetspakker</h2>
-    <table>
-    <thead>
-    <tr>
-    <th>Rettighetspakke</th>
-    <th>Beskrivelse</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>offentlig-med-hjemmel/api/v1/</td>
-    <td>Rettighetspakke for offentlige aktører med hjemmel i egen lov som gir rett til folkeregisterdata.</td>
-    </tr>
-    <tr>
-    <td>offentlig-uten-hjemmel/api/v1/</td>
-    <td>Rettighetspakke for offentlige aktører uten hjemmel i egen lov.</td>
-    </tr>
-    <tr>
-    <td>finans-og-begrenset/api/v1/</td>
-    <td>Rettighetspakke for virksomheter i finansbransjen samt virksomheter med tilgang til enkelte taushetsbelagte opplysninger. (Har ikke bulkoppslag)</td>
-    </tr>
-    </tbody>
-    </table>
-    <h2 id="milj-er">Miljøer</h2>
-    <table>
-    <thead>
-    <tr>
-    <th>Miljø</th>
-    <th>URL</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>Produsenttest</td>
-    <td><a href="https://folkeregisteret-api-ekstern.sits.no/">https://folkeregisteret-api-ekstern.sits.no/</a></td>
-    </tr>
-    <tr>
-    <td>Konsumenttest</td>
-    <td><a href="https://folkeregisteret-api-konsument.sits.no/">https://folkeregisteret-api-konsument.sits.no/</a></td>
-    </tr>
-    <tr>
-    <td>Produksjon</td>
-    <td><a href="https://folkeregisteret.api.skatteetaten.no/">https://folkeregisteret.api.skatteetaten.no/</a></td>
-    </tr>
-    <tr>
-    <td>Playground</td>
-    <td><a href="https://folkeregisteret-api-konsument-playground.sits.no/">https://folkeregisteret-api-konsument-playground.sits.no/</a></td>
-    </tr>
-    </tbody>
-    </table>
+    <h2 id="endepunkter">Endepunkter</h2>
+    <p>For oppbygging av endepunkter se <a href="../endepunkter">her.</a></p>
     <h2 id="eksempler">Eksempler</h2>
     <p>Oppslag i hendelsesliste: <br>
     <code>https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/?seq=1</code></p>
