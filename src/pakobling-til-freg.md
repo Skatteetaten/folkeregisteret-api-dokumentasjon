@@ -1,10 +1,14 @@
 ---
 title: Påkobling til FREG
 ---
-Fra 4. mai vil systemleverandører kunne koble seg opp mot FREGs testmiljøer. Dette gjelder i første omgang de leverandørene som på på vegne av konsumentene skal hente ut oppdatert folkeregisteropplysninger direkte fra modernisert løsning(FREG). Det vil bli gitt tilgang til test for alle tilgjengelige [rettighetspakker](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/).         
+Alle virksomheter med behov for folkeregisterdata kan koble seg til folkeregisterets konsumenttjenester og oppdatere sine kundedata eller foreta søk og oppslag.
+
+For å dekke ulike behov til tjenester og ulik tilgang til taushetsbelagt informasjon er det satt opp flere rettighetspakker som gir ulik tilgang til data og tjenester. Du kan lese mer om de ulike rettighetspakkene og søke om tilgang til folkeregisteret fra skatteetaten [nettsider](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/)
+
+
 
 ### Påkobling i utvalgte segmenter
-Når det gjelder systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner, eller til Bank- og finanssektoren så ber vi om at dere leser informasjon på segmentenes respektive sider før dere starter arbeidet med oppkobling og integrasjon mot modernisert folkeregister(FREG). 
+Systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner, eller til Bank- og finanssektoren bes lese informasjon på segmentenes respektive sider før dere starter arbeidet med oppkobling og integrasjon mot modernisert folkeregister(FREG). 
 
 * Norsk Helsenett etablerer ny Persontjeneste for oppslag i folkeregisteret, og alle aktører i helse- og omsorgstjenesten skal benytte denne. https://www.nhn.no/persontjenesten/
 
@@ -12,14 +16,18 @@ Når det gjelder systemleverandører som leverer tjenester til Helse- og omsorgs
 
 * KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Les mer her: https://ks-no.github.io/fiks-plattform/modernisert-folkeregister/
 
-### Systemleverandører
-Vi vil sende ut en epost til systemleverandører som blant annet inneholder søknadsskjema for oppkobling til FREG test i uke 17. Dersom du ønsker å motta denne eposten kan du sende – en epost med kontaktinformasjon til Folkeregister-Operasjonssenter@skatteetaten.no. Bruk følgende tittel: Vi vil teste mot FREG fra 4 mai. 
+Informasjon fra folkeregisteret er tilgjengelig enten via konsumenttjenester eller via en onlineportal. Portalen vil også bli modernisert, men fortsatt kan https://www.infotorg.no/ som kan benyttes.
 
-### Overordnet informasjon om påkobling
-Fra Q3 2020 vil vi gi tilgang til alle konsumenter som ønsker å koble seg opp mot FREG for å hente Folkeregisteropplysninger til egne systemer, eller via nye webgrensesnitt (tilsvarende Infotorget).
-Under finner du litt mer informasjon fra Prosjekt for modernisert folkeregister om oppkobling og test.  
 
-[Informasjonsvideo om påkobling til FREG](../dokumenter/01 Konsumenter.mp4)
+### Kom igang med maskin-til-maskin-integrasjon 
+For Autorisasjon og autentisering av konsumenter benyttes maskinporten. Dere kan lese mer om dette [her:](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/)
+
+De tjenestene som tilbys i de ulike rettighetspakkene er beskrevet på [swaggerhub:](https://app.swaggerhub.com/organizations/Skatteetaten_FREG). Her vil du også finne eksempler på hvordan tjenestene svarer. 
+
+Hvordan endepunkter skal bygges opp er dokumentert [her.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/)
+
+Det anbefales å begynne å sette opp integrasjon mot de tjenestene med enklest grensesnitt. Gjerne xsd-tjenestene eller tjenesten siste/sekvensnummer. 
+
 
 ### FREG tjenester
 [Presentasjon av FREG tjenestene](../dokumenter/Folkeregisterets tjenester.pptx)
