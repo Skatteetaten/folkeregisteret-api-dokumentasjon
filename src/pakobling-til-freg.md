@@ -3,7 +3,7 @@ title: Påkobling til FREG
 ---
 Alle virksomheter med behov for folkeregisterdata kan koble seg til folkeregisterets konsumenttjenester og oppdatere sine kundedata eller foreta søk og oppslag.
 
-For å dekke ulike behov til tjenester og ulik tilgang til taushetsbelagt informasjon er det satt opp flere rettighetspakker som gir ulik tilgang til data og tjenester. Du kan lese mer om de ulike rettighetspakkene og søke om tilgang til folkeregisteret fra skatteetaten [nettsider](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/)
+For å dekke ulike behov til tjenester og ulik tilgang til taushetsbelagt informasjon er det satt opp flere rettighetspakker som gir ulik tilgang til data og tjenester. Du kan lese mer om de ulike rettighetspakkene og søke om tilgang til folkeregisteret fra skatteetaten [nettsider](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/). Det er også laget en veileder for valg av rettighetspakke. Veiledern ligger [her.] (https://www.skatteetaten.no/person/folkeregister/om/modernisering/rettighetspakker/)
 
 
 
