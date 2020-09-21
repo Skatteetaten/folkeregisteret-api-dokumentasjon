@@ -66,7 +66,6 @@
         <div><a class="index" href="../test">Test</a></div>
           <a href="../test-for-konsumenter">Test for konsumenter</a>
           <a href="../test-for-produsenter">Test for produsenter</a>
-          <a href="../testdata">Testdata</a>
         <div><a class="index" href="../sporsmal-og-svar">Spørsmål og svar</a></div>
       </div>
     </div>
@@ -74,19 +73,13 @@
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <h1 id="test-i-modernisert-folkeregister">Test i modernisert Folkeregister</h1>
-    <p>Eksterne som skal sende inn opplysninger til folkeregisteret (produsenter), og hente data fra Folkeregisteret skal gjennomføre test før oppstart i produksjon.</p>
-    <p>Det er etablert to testmiljø for test av integrasjon mot modernisert folkeregister:</p>
+    <h2 id="krav-til-testdata-og-testmilj-">Krav til testdata og testmiljø</h2>
+    <p>Eksterne som skal teste mot modernisert folkeregister må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø må etablere dette. De som er både produsenter og konsumenter anbefales å teste produsentrollen og konsumentrollen fra separate testmiljø.</p>
+    <p>Du finner mer om test her: </p>
     <ul>
-    <li>Produsenttest: Testmiljø for aktører som produserer opplysninger inn til Folkeregisteret. Produsentene sender inn meldinger og verifiserer tilbakemelding.</li>
-    <li>Konsumenttest: Testmiljø for de som skal hente data fra Folkeregisteret.</li>
+    <li><a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/test-for-konsumenter/">Test for konsumenter</a></li>
+    <li><a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/test-for-produsenter/">Test for produsenter</a></li>
     </ul>
-    <p>Testmiljøene skal kun benyttes etter avtale med prosjektet
-    Frem til sommeren 2020 vil prosjektet fokusere på de som er produsenter, samt et utvalg av prioriterte konsumenter. </p>
-    <h1 id="oppkobling">Oppkobling</h1>
-    <p>Oppkobling mot testmiljøet krever virksomhetssertifikat. Les mer om sikkerhet og virksomhetssertifikater her: <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/</a>
-    Vi anbefaler etablere grensesnitt mot testmiljø og produksjonsmiljø tidlig. Erfaringer tilsier at dette ofte kan ta noe kalendertid å få på plass. 
-    Pass på at på at du har et gyldig testsertifikat, da testsertifikatene som regel har en dato for hvor lenge de er gyldige.</p>
-    <p>Les mer om test for konsumenter og produsenter på undersidene.</p>
     
         </div>
       </div>
