@@ -17,6 +17,8 @@ Uttrekk kan brukes til å opprette eller supplere et kunderegister eller en saks
 
 Tjenestene er tilgjengelig for maskin-maskin-integrasjon for prioriterte konsumenter etter avtale med prosjekt MF. For å kunne koble seg opp til tjenestene ovenfor, må integrasjon gjøres i henhold til [beskrivelsen under Sikkerhet](../sikkerhet).
 
+### Logging Rettighetspakke Privat
+Den enkelte registrerte person har rett til opplysninger om søk foretatt på seg selv. Dette innebærer at alle søk foretatt i rettighetspakke Privat blir logget og tilgjengeliggjort, og den enkelte vil få vite hvem som har gjort oppslag. Den enkelte vil få opplysninger om navn, organisasjonsnummer, adresse, postnummer og eventuelt land på den virksomheten som har søkt og tidspunkt for søket. 
 
 
 
