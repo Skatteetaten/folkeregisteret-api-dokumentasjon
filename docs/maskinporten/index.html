@@ -110,7 +110,7 @@
     <h4 id="klargj-ring-fra-virksomheten-">Klargjøring fra Virksomheten:</h4>
     <p>Når virksomheten har fått beskjed at tilgangen er opprettet i maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data.
     Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via <a href="https://difi.github.io/felleslosninger/oidc_api_admin_maskinporten.html">ID-porten sitt API for selvbetjening av integrasjoner</a> eller via et brukergrensenitt i samarbeidsportalen.
-    All kommunikasjon mot Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen &#39;signering&#39;. Når dette er gjort kan man begynne å bruke folkeregister-api&#39;ene.</p>
+    All kommunikasjon mot Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen &#39;signering&#39;. Når dette er gjort kan man begynne å bruke folkeregister-api&#39;ene. Det er viktig at man bruker et sertifikat utstedt av TEST CA hos sertifikattilbyder.</p>
     <h3 id="4-bruke-folkeregister-api-ene-med-token-fra-maskinporten">4. Bruke folkeregister-api&#39;ene med token fra maskinporten</h3>
     <p>Overordnet gjøres følgende:</p>
     <ol>
