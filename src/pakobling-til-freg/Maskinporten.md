@@ -54,7 +54,7 @@ Dette gir virksomheten (med org.nummer 999888999) tilgang til å få tokens fra 
 #### Klargjøring fra Virksomheten:
 Når virksomheten har fått beskjed at tilgangen er opprettet i maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data.
 Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://difi.github.io/felleslosninger/oidc_api_admin_maskinporten.html) eller via et brukergrensenitt i samarbeidsportalen.
-All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke folkeregister-api'ene.
+All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke folkeregister-api'ene. Det er viktig at man bruker et sertifikat utstedt av TEST CA hos sertifikattilbyder.
 
 
 ### 4. Bruke folkeregister-api'ene med token fra maskinporten
