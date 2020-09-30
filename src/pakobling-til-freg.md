@@ -3,7 +3,7 @@ title: Påkobling til FREG
 ---
 Alle virksomheter med behov for folkeregisterdata kan koble seg til folkeregisterets konsumenttjenester og oppdatere sine kundedata eller foreta søk og oppslag.
 
-For å dekke ulike behov til tjenester og ulik tilgang til taushetsbelagt informasjon er det satt opp flere rettighetspakker som gir ulik tilgang til data og tjenester. Du kan lese mer om de ulike rettighetspakkene og søke om tilgang til folkeregisteret fra skatteetaten [nettsider](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/). Det er også laget en veileder for valg av rettighetspakke. Veiledern ligger [her.] (https://www.skatteetaten.no/person/folkeregister/om/modernisering/rettighetspakker/)
+For å dekke ulike behov til tjenester og ulik tilgang til taushetsbelagt informasjon er det satt opp flere rettighetspakker som gir ulik tilgang til data og tjenester. Du kan lese mer om de ulike rettighetspakkene og søke om tilgang til folkeregisteret fra skatteetaten [nettsider](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/). Det er også laget en veileder for valg av rettighetspakke som finnes [her.](https://www.skatteetaten.no/person/folkeregister/om/modernisering/rettighetspakker/)
 
 
 
@@ -20,7 +20,7 @@ Informasjon fra folkeregisteret er tilgjengelig enten via konsumenttjenester ell
 
 
 ### Kom igang med maskin-til-maskin-integrasjon 
-For Autorisasjon og autentisering av konsumenter benyttes maskinporten. Dere kan lese mer om dette [her:](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/)
+For Autorisasjon og autentisering av konsumenter benyttes maskinporten. Dere kan lese mer om dette [her.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/)
 
 De tjenestene som tilbys i de ulike rettighetspakkene er beskrevet på [swaggerhub:](https://app.swaggerhub.com/organizations/Skatteetaten_FREG). Her vil du også finne eksempler på hvordan tjenestene svarer. 
 
