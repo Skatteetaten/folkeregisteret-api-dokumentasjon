@@ -54,7 +54,11 @@ b)	Følge Fregs dokumentasjon for oppkobling og tilgang til Fregs konsumenttestm
 c)	Utvikle og teste oppkobling og integrasjon
 
 Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/.
-Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttestmiljø og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Fregs konsumenttestmiljø skal rettes til Folkeregister-Operasjonssenter@skatteetaten.no.
-Andre nyttige lenker
+
+Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttest og/eller produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av Fregs konsumenttestmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/
+
+### Andre nyttige lenker
+
 Generell informasjon om Maskinporten finner du her: https://samarbeid.difi.no/felleslosninger/maskinporten
+
 Driftsmeldinger fra Digdir finner du her: https://samarbeid.difi.no/driftsmeldinger
