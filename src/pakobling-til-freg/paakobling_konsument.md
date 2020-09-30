@@ -18,7 +18,7 @@ For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysn
 
 5.	Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø
 
-Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av din virksomhet skal koble seg mot Freg skal du benytte veileder for konsumenter med systemleverandør:  
+Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av din virksomhet skal koble seg mot Freg skal du benytte veileder for konsumenter - på vegne av:  https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-konsumenter-pa-vegne-av/
 
 ### Slik går du fram:
 
@@ -37,7 +37,7 @@ Følg Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporte
 
 For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. 
 
-Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/konsument-0 .
+Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/konsument-0.
 
 Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.difi.no/bruksvilkar. 
 
