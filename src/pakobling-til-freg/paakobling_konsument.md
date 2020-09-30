@@ -33,8 +33,12 @@ Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bru
 Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i Altinn om at søknaden er godkjent. 
 
 #### 4. Tilgang til Maskinporten (forutsetter at du har et virksomhetssertifikat for test og produksjon)
-Følg Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporten 
-For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor .
+Følg Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporten.
+
+For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. 
+
+Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor .
+
 Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer. 
 
 •	Etabler en tilgang til Maskinporten
@@ -42,6 +46,7 @@ Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederl
 •	Gjennomfører test av tilgang mot Maskinporten
 
 Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen.
+
 Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til servicedesk@digdir.no.
 
 #### 5. Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø
