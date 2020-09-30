@@ -13,6 +13,8 @@ Freg er basert på at systemleverandøren integrerer sine systemer mot delingstj
 4.	Tilgang til Maskinporten 
 5.	Tilgang til Freg 
 
+### Slik går du fram:
+
 #### 1.	Avtale med konsument 
 Det må inngås en avtale mellom konsumenten og systemleverandøren.  Dersom konsumentens systemleverandør behandler personopplysninger på vegne av konsumenten, skal det i tillegg inngås databehandleravtale i tråd med gjeldende regler i personvernregelverket.
 
