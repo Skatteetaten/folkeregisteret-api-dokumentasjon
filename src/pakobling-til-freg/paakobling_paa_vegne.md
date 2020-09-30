@@ -16,7 +16,7 @@ For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysn
 
 4.	Tilgang til Altinn for å delegere rettigheter til Freg videre til din systemleverandør 
 
-Slik går du fram:
+### Slik går du fram:
 
 #### 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke 
 Du finner nødvendig informasjon om Freg og valg av rettighetspakke her.  
