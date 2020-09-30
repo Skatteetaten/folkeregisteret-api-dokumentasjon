@@ -39,7 +39,7 @@ For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirekto
 
 Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/konsument-0 .
 
-Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer. 
+Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.difi.no/bruksvilkar. 
 
 •	Etabler en tilgang til Maskinporten
 
