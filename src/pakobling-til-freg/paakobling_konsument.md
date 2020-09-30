@@ -20,7 +20,7 @@ For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysn
 
 Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av din virksomhet skal koble seg mot Freg skal du benytte veileder for konsumenter med systemleverandør:  
 
-Slik går du fram:
+### Slik går du fram:
 
 #### 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke   
 Her finner du informasjon om Freg og valg av rettighetspakke.  
