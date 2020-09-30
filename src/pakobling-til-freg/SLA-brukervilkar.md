@@ -7,7 +7,7 @@ title: Ytelse og responstider
 I tabellen under er det inkludert en oversikt over responstid og ytelse per tjeneste (API). Videre er det dokumentert et sett med anbefalte bruksmønstre per tjeneste. Det er viktig at anbefalte bruksmønstre legges til grunn når det utvikles integrasjoner mot FREG. Dette gjelder blant annet ved bruk av hendelsesliste til ajourhold med etterfølgende behov for bulkoppslag.      
 Prosjektet vil arbeide videre med ytterligere testing av responstider og ytelse i Q2. Det vil derfor i perioden fram mot generell åpning for konsumenter Q3 2020 komme oppdateringer til denne tabellen basert på resultatene. 
 
-PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks ved fullast, skal dette avtales med Freg forvaltning (avtales ved epost til freg.produksjon@skatteetaten.no).
+PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks ved fullast, skal dette avtales med Freg forvaltning (avtales via kontaktskjema: https://www.skatteetaten.no/deling/kontakt/
 
 ## Responstider og bruksmønster i produksjon
 
