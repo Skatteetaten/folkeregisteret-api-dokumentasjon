@@ -27,7 +27,7 @@ Her finner du informasjon om Freg og valg av rettighetspakke.
 
 #### 2. Tilgang til Altinn for å sende inn Søknad om tilgang til Folkeregisteret (RF-1514) 
 Du må Fylle ut og sende inn søknadsskjema i  Altinn. Husk og lese og akseptere bruksvilkår (kryss av i det elektroniske søknadskjema).
-Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bruksvilkår skal rettes skriftlig via e-post til Folkeregister-Operasjonssenter@skatteetaten.no.
+Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bruksvilkår skal rettes skriftlig via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/
 
 #### 3. Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)
 Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i Altinn om at søknaden er godkjent. 
