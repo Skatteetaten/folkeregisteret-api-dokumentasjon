@@ -13,7 +13,7 @@ Oppkobling og delegering av tilgang til systemleverandører gjøres ved hjelp av
 
 **Generelle henvendelser til prosjektet kan rettes til [Veiledningsenteret](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/).**
 
-Mer informasjon om moderniseringen av folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/person/folkeregister/om/modernisering)
+Mer informasjon om Folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/deling)
 
 <br> 
 <br> 
