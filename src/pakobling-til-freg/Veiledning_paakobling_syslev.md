@@ -7,10 +7,14 @@ For systemleverandører som har behov for løpende å hente oppdateringer av fol
 Freg er basert på at systemleverandøren integrerer sine systemer mot delingstjenestene ved bruk av Fregs selvbetjeningsfunksjonalitet. I tillegg må systemleverandøren ha etablert en integrasjon mot Maskinporten for autorisasjon mot Freg. Tilganger til Freg tildeles ikke ved manuelle prosedyrer.   
 
 ### Dette trenger du:
-1.	Avtale med Konsument   
+1.	Avtale med Konsument
+
 2.	Bekreftelse på at Konsumenten har søkt om og fått tilgang til Folkeregisteropplysninger (Freg) 
+
 3.	Bekreftelse på at Konsumenten har vært innen i Altinn og delegert rettigheter til Freg videre til din virksomhet  
+
 4.	Tilgang til Maskinporten 
+
 5.	Tilgang til Freg 
 
 ### Slik går du fram:
