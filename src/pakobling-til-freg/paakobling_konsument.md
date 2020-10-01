@@ -23,7 +23,7 @@ Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av
 ### Slik går du fram:
 
 #### 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke   
-Her finner du informasjon om Freg og valg av rettighetspakke.  
+Her finner du informasjon om Freg og valg av rettighetspakke: https://www.skatteetaten.no/deling/tilgang/folkeregisteret/rettighetspakker/
 
 #### 2. Tilgang til Altinn for å sende inn Søknad om tilgang til Folkeregisteret (RF-1514) 
 Du må Fylle ut og sende inn søknadsskjema i  Altinn. Husk og lese og akseptere bruksvilkår (kryss av i det elektroniske søknadskjema).
