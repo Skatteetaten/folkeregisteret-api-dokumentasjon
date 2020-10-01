@@ -23,7 +23,7 @@ Freg er basert på at systemleverandøren integrerer sine systemer mot delingstj
 Det må inngås en avtale mellom konsumenten og systemleverandøren.  Dersom konsumentens systemleverandør behandler personopplysninger på vegne av konsumenten, skal det i tillegg inngås databehandleravtale i tråd med gjeldende regler i personvernregelverket.
 
 #### 2.	Bekreftelse på at Konsumenten har søkt om og fått tilgang til Folkeregisteropplysninger (Freg) 
-Systemleverandøren bør innhente bekreftelse på at Konsument har søkt om tilgang ved bruk av Søknadsskjema for tilgang for å sikre seg at konsumenten har fått tilgang til Freg.
+Systemleverandøren bør innhente bekreftelse på at Konsument har søkt om tilgang ved bruk av [Søknadsskjema](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/) for tilgang for å sikre seg at konsumenten har fått tilgang til Freg.
 
 #### 3.	Bekreftelse på at Konsumenten har vært innen i Altinn og delegert rettigheter til Freg videre til din virksomhet  
 Systemleverandøren bør innhente bekreftelse på at konsumenten har vært inne i Altinn og delegert tilgang til systemleverandøren gjennom Altinn Autorisasjon. 
