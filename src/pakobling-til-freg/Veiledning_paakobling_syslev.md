@@ -3,7 +3,7 @@ title: Veileder for systemleverandører
 ---
 
 ## Veileder for systemleverandører, oppkobling til Freg på vegne av en konsument
-For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten fra 1. oktober generell tilgang til Konsumenttjenestene i Freg. 
+For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten fra 1. oktober generell tilgang til [Konsumenttjenestene i Freg](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). 
 Freg er basert på at systemleverandøren integrerer sine systemer mot delingstjenestene ved bruk av Fregs selvbetjeningsfunksjonalitet. I tillegg må systemleverandøren ha etablert en integrasjon mot Maskinporten for autorisasjon mot Freg. Tilganger til Freg tildeles ikke ved manuelle prosedyrer.   
 
 ### Dette trenger du:
