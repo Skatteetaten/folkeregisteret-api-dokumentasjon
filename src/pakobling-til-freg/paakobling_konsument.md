@@ -14,7 +14,7 @@ For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysn
 
 3.	Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)
 
-4.	Tilgang til Maskinporten (forutsetter at du har et virksomhetssertifikat for test og produksjon)
+4.	Tilgang til Maskinporten (forutsetter at du har virksomhetssertifikat - et for test og et for produksjon)
 
 5.	Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø
 
@@ -32,7 +32,7 @@ Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bru
 #### 3. Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)
 Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i Altinn om at søknaden er godkjent. 
 
-#### 4. Tilgang til Maskinporten (forutsetter at du har et virksomhetssertifikat for test og produksjon)
+#### 4. Tilgang til Maskinporten (forutsetter at du har virksomhetssertifikat - et for test og et for produksjon)
 Følg Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporten.
 
 For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. 
