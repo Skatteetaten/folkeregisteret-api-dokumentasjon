@@ -12,7 +12,7 @@ Systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner
 
 * Norsk Helsenett etablerer ny Persontjeneste for oppslag i folkeregisteret, og alle aktører i helse- og omsorgstjenesten skal benytte denne. https://www.nhn.no/persontjenesten/
 
-* Bits tar segmentansvaret på vegne av finansnæringen for Modernisert Folkeregister, og Finans Norge Forsikringsdrift og Trafikkforsikringsforeningen etablerer, drifter og forvalter den tekniske fellesløsningen for finansbransjen. Les mer her:  https://www.bits.no/project/modernisert-folkeregister/
+* Bits tar segmentansvaret på vegne av finansnæringen for Modernisert Folkeregister, og Finans Norge Forsikringsdrift og Trafikkforsikringsforeningen etablerer, drifter og forvalter den tekniske fellesløsningen for finansbransjen. Les mer her:  https://www.finansnorge.no/freg
 
 * KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Les mer her: https://ks-no.github.io/fiks-plattform/modernisert-folkeregister/
 
