@@ -12,7 +12,7 @@ Uttrekktjenesten gir tilgang til å hente ut et utvalg med personer basert på �
 
 Merk at JobbID returneres umiddelbart, men batchen er ikke nødvendigvis ferdig umiddelbart. Feilmelding 404 indikerer at jobbID ikke er ferdig. Det anbefales å bygge inn en retry-mekanisme med en delay mellom hvert forsøk.   
 
-Første batch har nummer 0, Komplett uttrekk vil dele batchene i 100 000 treff, mens tilpasset uttrekk deler batcher i 10 000 treff. Den siste batchen vil returnere svaret {}. Dette indikerer at det ikke er flere treff å hente.
+Første batch har nummer 0, Komplett uttrekk og tilpasset uttrekk deler batcher i et gitt antall. Den siste batchen vil returnere svaret {}. Dette indikerer at det ikke er flere treff å hente.
 
 Følgende algoritme beskriver flyten for de tre tjenestene:
 ```
