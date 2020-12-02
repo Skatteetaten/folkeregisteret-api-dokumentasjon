@@ -21,11 +21,11 @@ For å vise at det er en syntetisk personidentifikator plusser vi på +80 på m�
 Kontrollberegningen (modulus11) beholdes uendret slik den foreligger nå.
  	
 Foreslått tidsplan:
-•	Ny versjon etableres i løpet av desember 2020 i et eget (internt) testmiljø.
-•	Test av ny testbefolkning i januar 2021.
-•	Tilgjengelig fra konsumenttestmiljøet i slutten av januar 2021. Dato kommuniseres ut i forkant.
+* Ny versjon etableres i løpet av desember 2020 i et eget (internt) testmiljø.
+* Test av ny testbefolkning i januar 2021.
+* Tilgjengelig fra konsumenttestmiljøet i slutten av januar 2021. Dato kommuniseres ut i forkant.
  	
 Hva må konsumentene gjøre i forkant av dette?
-•	Gjøre seg klar til å hente ny versjon av testbefolkningen, og slette den gamle.
-•	Gjøre det mulig å motta fnr og dnr med +80 på måned.
-•	Hente fødselsdato fra eget felt i modernisert folkeregister.
+* Gjøre seg klar til å hente ny versjon av testbefolkningen, og slette den gamle.
+* Gjøre det mulig å motta fnr og dnr med +80 på måned.
+* Hente fødselsdato fra eget felt i modernisert folkeregister.
