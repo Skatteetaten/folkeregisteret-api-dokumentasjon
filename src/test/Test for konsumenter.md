@@ -29,3 +29,15 @@ Hva må konsumentene gjøre i forkant av dette?
 * Gjøre seg klar til å hente ny versjon av testbefolkningen, og slette den gamle.
 * Gjøre det mulig å motta fnr og dnr med +80 på måned.
 * Hente fødselsdato fra eget felt i modernisert folkeregister.
+
+Under følger noen eksempler på syntetiske fnr og dnr. (Fnr teller ned på individsifrene, mens dnr teller opp.)
+Eksemplene er laget direkte i en generator, og det er derfor ikke mulig å slå de opp i noe system.
+ 
+Fødselsdato	Kjønn	Fødselsnummer	D-nummer
+17.11.2020	Mann	17912099997	57912075186
+29.02.2020	Kvinne	29822099635	69822075096
+05.04.2003	Kvinne	05840399895	45840375084
+12.02.1994	Mann	12829499914	52829400197
+12.10.1952	Mann	12905299938	52905200100
+21.08.1936	Kvinne	21883649874	61883600222
+21.12.1897	Kvinne	21929774873	61929750062
