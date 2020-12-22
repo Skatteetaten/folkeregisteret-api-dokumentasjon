@@ -26,6 +26,10 @@ Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med
 * [Folkeregisterperson med innflytting](../modeller/1455623625.png)
 * [Folkeregisterperson med identitetsgrunnlag](../modeller/1455629020.png)
 * [Folkeregisterperson med folkeregisteridentifikator](../modeller/1455631901.png)
+* [Folkeregisterperson med postadresse i utlandet](../modeller/1455631902.png)
+* [Folkeregisterperson med beskyttelse](../modeller/1455631903.png)
+* [Folkeregisterperson med preferert kontaktadresse](../modeller/1455631904.png)
+* [Folkeregisterperson med kontaktinformasjon for dødsbo](../modeller/1455631905.png)
 
 
 
@@ -48,6 +52,8 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 * [Folkeregisterperson med verge fullmektig og representant](../modeller/1538033146.png)
 * [Folkeregisterperson med falsk identitet](../modeller/1543845073.png)
 * [Folkeregisterperson med sametingets valgmantall](../modeller/1549296236.png)
+* [Folkeregisterperson med samisk språk](../modeller/1549296237.png)
+* [Folkeregisterperson med opphold](../modeller/1549296238.png)
 
 
 
