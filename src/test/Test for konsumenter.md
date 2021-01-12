@@ -20,10 +20,10 @@ Vi jobber nå med å lage en ny versjon av testbefolkningen, som vil bestå av t
 For å vise at det er en syntetisk personidentifikator plusser vi på +80 på måned for både fødsels- og d-numre, og beregner deretter individsiffere.
 Kontrollberegningen (modulus11) beholdes uendret slik den foreligger nå.
  	
-Foreslått tidsplan:
-* Ny versjon etableres i løpet av desember 2020 i et eget (internt) testmiljø.
+Tidsplan:
+* 19. januar: Ny testbefolkning er tilgjengelig i Folkeregisterets testmiljø "playground" og i Tenor testdatasøk sitt testmiljø "utv1".
 * Test av ny testbefolkning i januar 2021.
-* Tilgjengelig fra konsumenttestmiljøet i slutten av januar 2021. Dato kommuniseres ut i forkant.
+* 1. februar: Ny testbefolkning er tilgjengelig i konsumenttest og i Tenor testdatasøk.
  	
 Hva må konsumentene gjøre i forkant av dette?
 * Gjøre seg klar til å hente ny versjon av testbefolkningen, og slette den gamle.
