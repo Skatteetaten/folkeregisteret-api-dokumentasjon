@@ -19,6 +19,9 @@ Tenor testdatasøk gir deg muligheten til å søke i testpersonene fra syntetisk
 Vi jobber nå med å lage en ny versjon av testbefolkningen, som vil bestå av testpersoner med syntetiske personidentifikatorer. 
 For å vise at det er en syntetisk personidentifikator plusser vi på +80 på måned for både fødsels- og d-numre, og beregner deretter individsiffere.
 Kontrollberegningen (modulus11) beholdes uendret slik den foreligger nå.
+
+Merk at den nye testbefolkningen vil erstatte den gamle, dvs. de testpersonene som finnes per i dag vil bli slettet i forbindelse med innføring av syntetiske personidentifikatorer.
+
  	
 Tidsplan:
 * 19. januar: Ny testbefolkning er tilgjengelig i Folkeregisterets testmiljø "playground" og i Tenor testdatasøk sitt testmiljø "utv1".
