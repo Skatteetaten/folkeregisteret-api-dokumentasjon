@@ -25,7 +25,6 @@ Merk at den nye testbefolkningen vil erstatte den gamle, dvs. de testpersonene s
  	
 Tidsplan:
 * 19. januar: Ny testbefolkning er tilgjengelig i Folkeregisterets testmiljø "playground" og i Tenor testdatasøk sitt testmiljø "utv1".
-* Test av ny testbefolkning i januar 2021.
 * 1. februar: Ny testbefolkning er tilgjengelig i konsumenttest og i Tenor testdatasøk.
  	
 Hva må konsumentene gjøre i forkant av dette?
