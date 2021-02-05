@@ -13,7 +13,6 @@ I siste halvdel av 2019 vil alle personopplysningne fra DSF være migrert over t
 
 | dokument | beskrivelse |
 |----------|-------------|
-| [Tilgjengeliggjøring av opplysninger fra Folkeregisteret - v1.10 2020-01-13](../dokumenter/Tilgjengeliggjøring av opplysninger fra Freg - v1.10 2020-01-13.pdf) | Beskrivelse av personopplysningene på feltnivå, og beskrivelse av tjenestene hendelsesliste og oppslag. Kap 4.2  hvilke personopplysninger som kan finnes på en person i Freg idag. Folkeregisteret. Kap 4.3 beskriver personopplysninger som kommer til å bli tilgjengeliggjort som del av moderniseringen av Folkeregisteret. Kap 4.3 er ikke komplett på alle områder.   |
 | [Hendelser fra Folkeregisteret - v1.3 2020-01-23](../dokumenter/Hendelser_fra_Folkeregisteret_v1_3_2020_01_23.pdf)                                                      | Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret |
 | [PersondokumentMedHistorikk_v1BETA2.xsd](../kontrakter/PersondokumentMedHistorikk_v1BETA2.xsd)                                                      | Persondokumentet i BETA, inneholder fremtidig målbilde for persondokumentet. Sist oppdatert i mars 2019. |
 | [PersondokumentMedHistorikk_v1BETA3.jpg](../modeller/Persondokument med historikk versjon 1 Beta 3 Offentlig med hjemmel .jpg)                                                        | Illustrasjon av persondokumentet, oppdatert i november 2019. |
