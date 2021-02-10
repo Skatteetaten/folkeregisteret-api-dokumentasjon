@@ -10,6 +10,8 @@ Siste versjon av informasjonsmodellen er nå tilgjengelig. Informasjonsmodellen 
 
 [Informasjonsmodell - Modernisering av Folkeregisteret](../dokumenter/20210125_Informasjonsmodell_Modernisering_av_Folkeregisteret_v3.1.pdf)
 
+## Hendelsesbeskrivelser
+[Hendelser fra Folkeregisteret - v1.3 2020-01-23](../dokumenter/Hendelser_fra_Folkeregisteret_v1_3_2020_01_23.pdf)                                                      
 
 ## Begrepsmodeller
 
