@@ -13,7 +13,7 @@ Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I 
 
 De ulike tjenestene er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG)
 
-Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). Her er [Xsd for innhold i content](../kontrakter/Hendelsedokument_v1.4.xsd).
+Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). 
 
 
 ## Endepunkter
