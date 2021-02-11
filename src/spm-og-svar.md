@@ -3,7 +3,7 @@ layout: spm_og_svar.hbs
 title: Spørsmål og svar
 ---
 
-Deling i Skatteetatenhar etablert kundestøtte i modernisert Folkeregister (Freg) for å sikre mer effektiv behandling av henvendelser og kortere svartider. 
+Deling i Skatteetaten har etablert kundestøtte i modernisert Folkeregister (Freg) for å sikre mer effektiv behandling av henvendelser og kortere svartider. 
 
 Henvendelser om feil i produksjon, forespørsel om full last-kjøringer og spørsmål som du ikke finner svaret på i oversikten under kan sendes til prosjektet via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/
 
