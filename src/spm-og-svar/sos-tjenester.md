@@ -26,8 +26,7 @@ Planen er at øvrige konsumenter skal få tilgang fra 2020.
 
 **Hvordan melder vi feil i tjenestene til Folkeregisteret?**
 
-Ved varsling om problemer med teknisk drift og forvaltning kan MF Produksjonsenter kontaktes på freg.produksjon@skatteetaten.no
-eller på telefon 40 80 93 72 mellom klokken 08:00 - 15:00 på sommertid (15/5 til 15/9), og frem til 15:45 resten av året.
+Ved varsling om problemer med teknisk drift og forvaltning kan IT Folkeregisteret kontaktes via skjema https://www.skatteetaten.no/deling/kontakt/.
 
 Borgere, eksterne saksbehandlere og konsumenter med spørsmål om saksbehandling kan kontakte
 Skatteopplysningen på tlf 800 80 000 Tastevalg 3 eller på e-kontaktskjema.
