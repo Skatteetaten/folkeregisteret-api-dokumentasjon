@@ -1,5 +1,6 @@
 ---
 title: Tilpasning på rettighetspakken Offentlig uten hjemmel 
+date: 2021-03-12
 
 ---
 
