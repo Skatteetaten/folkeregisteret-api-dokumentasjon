@@ -68,7 +68,8 @@ const smith = (clean = false) => {
             'driftsstatus': {
                 pattern: 'driftsstatus/*',
                 sortBy: 'datetime',
-                reverse: true
+                reverse: true,
+                limit: 10
             }
         }))
         .use(markdown({}))
