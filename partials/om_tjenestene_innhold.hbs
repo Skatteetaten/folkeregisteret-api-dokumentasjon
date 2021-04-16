@@ -15,7 +15,7 @@
 
       <h2>Driftsvarsler</h2>
       <table>
-        {{#each driftsstatus}}
+        {{#each (limit driftsstatus 10)}}
           <tr>
             <td>{{this.datetime}}</td>
             <td>{{{this.contents}}}</td>
