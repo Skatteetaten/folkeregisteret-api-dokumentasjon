@@ -16,12 +16,10 @@
       <h2>Driftsvarsler</h2>
       <table>
         {{#each driftsstatus}}
-          {{#if @index < 10}}
           <tr>
             <td>{{this.datetime}}</td>
             <td>{{{this.contents}}}</td>
           </tr>
-          {{/if}}
         {{/each}}
       </table>
     </div>
