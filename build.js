@@ -63,7 +63,8 @@ const smith = (clean = false) => {
             'nyheter': {
                 pattern: 'nyheter/*',
                 sortBy: 'date',
-                reverse: true
+                reverse: true,
+                limit: 10
             },
             'driftsstatus': {
                 pattern: 'driftsstatus/*',
