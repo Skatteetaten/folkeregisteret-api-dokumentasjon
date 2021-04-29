@@ -1,0 +1,17 @@
+<div class="data">
+  <div class="innhold-blokk">
+    <div class="innhold-blokk-innhold">
+      {{{contents}}}
+
+      <h2>Nyheter</h2>
+      <div class="nyhetscontainer">
+        {{#each allenyheter}}
+          <div class="nyhet">
+            <h3>{{{this.date}}} - {{this.title}}  </h3>
+            {{{this.contents}}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

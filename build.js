@@ -8,6 +8,7 @@ const redirect = require('metalsmith-redirect');
 const changed = require('metalsmith-changed');
 const feed = require('metalsmith-feed');
 const dateFormatter = require('metalsmith-date-formatter');
+const defaultValues = require('@metalsmith/default-values');
 const metadata = require('./metadata');
 
 const smith = (clean = false) => {
@@ -18,18 +19,32 @@ const smith = (clean = false) => {
         .destination('docs')
         .clean(clean)
         .use(changed())
-        // .use(dateFormatter({
-        //     dates: [
-        //         {
-        //             key: 'date',
-        //             format: 'YYYY-MM-DD'
-        //         },
-        //         {
-        //             key: 'datetime',
-        //             format: 'YYYY-MM-DDThh:mm:ss'
-        //         }
-        //     ]
-        // }))
+        .use(defaultValues([
+            {
+                pattern: '{nyheter/*,driftsstatus/*}',
+                defaults: {
+                    dateTime: function (post) {
+                        return post.datetime || post.date;
+                    },
+                    date: function (post) {
+                        return post.date || post.dateTime;
+                    }
+                }
+            }
+
+        ]))
+        .use(dateFormatter({
+            dates: [
+                {
+                    key: 'date',
+                    format: 'YYYY-MM-DD'
+                },
+                {
+                    key: 'datetime',
+                    format: 'YYYY-MM-DDThh:mm:ss'
+                }
+            ]
+        }))
         .use(rootPath())
         .use(collections({
             'om-tjenestene': {
@@ -58,13 +73,14 @@ const smith = (clean = false) => {
             },
             'driftsstatus-og-nyheter': {
                 pattern: '{nyheter/*,driftsstatus/*}',
-                sortBy: function(a, b) {
-                    // Legger til sortering for både datetime og date
-                    // Alt uten dato kommer sist
-                    const aSort = a.datetime || a.date || '1000';
-                    const bSort = b.datetime || b.date || '1000';
-                    return aSort.localeCompare(bSort)
-                },
+                sortBy: 'date',
+                // sortBy: function(a, b) {
+                //     // Legger til sortering for både datetime og date
+                //     // Alt uten dato kommer sist
+                //     const aSort = a.datetime || a.date || '1000';
+                //     const bSort = b.datetime || b.date || '1000';
+                //     return aSort.localeCompare(bSort)
+                // },
                 reverse: true
             },
             'nyheter': {
@@ -72,6 +88,11 @@ const smith = (clean = false) => {
                 sortBy: 'date',
                 reverse: true,
                 limit: 10
+            },
+            'allenyheter': {
+                pattern: 'nyheter/*',
+                sortBy: 'date',
+                reverse: true
             },
             'driftsstatus': {
                 pattern: 'driftsstatus/*',
