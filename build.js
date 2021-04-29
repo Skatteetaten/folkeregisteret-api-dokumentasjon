@@ -23,11 +23,11 @@ const smith = (clean = false) => {
             {
                 pattern: '{nyheter/*,driftsstatus/*}',
                 defaults: {
-                    dateTime: function (post) {
-                        return post.datetime || post.date;
+                    datetime: function (post) {
+                        return post.date;
                     },
-                    date: function (post) {
-                        return post.date || post.dateTime;
+                    formattedDate: function (post) {
+                        return post.date;
                     }
                 }
             }
@@ -36,7 +36,7 @@ const smith = (clean = false) => {
         .use(dateFormatter({
             dates: [
                 {
-                    key: 'date',
+                    key: 'formattedDate',
                     format: 'YYYY-MM-DD'
                 },
                 {

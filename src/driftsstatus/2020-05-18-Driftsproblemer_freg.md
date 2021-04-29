@@ -1,6 +1,6 @@
 ---
 title: Varsling mandag 18.05.2020
-datetime: 2020-05-18T09:00:00
+date: 2020-05-18T09:00:00
 ---
 LØST.
 

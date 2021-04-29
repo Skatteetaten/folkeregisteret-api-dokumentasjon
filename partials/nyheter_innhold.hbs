@@ -7,7 +7,7 @@
       <div class="nyhetscontainer">
         {{#each allenyheter}}
           <div class="nyhet">
-            <h3>{{{this.date}}} - {{this.title}}  </h3>
+            <h3>{{{this.formattedDate}}} - {{this.title}}  </h3>
             {{{this.contents}}}
           </div>
         {{/each}}
