@@ -18,18 +18,18 @@ const smith = (clean = false) => {
         .destination('docs')
         .clean(clean)
         .use(changed())
-        .use(dateFormatter({
-            dates: [
-                {
-                    key: 'date',
-                    format: 'YYYY-MM-DD'
-                },
-                {
-                    key: 'datetime',
-                    format: 'YYYY-MM-DDThh:mm:ss'
-                }
-            ]
-        }))
+        // .use(dateFormatter({
+        //     dates: [
+        //         {
+        //             key: 'date',
+        //             format: 'YYYY-MM-DD'
+        //         },
+        //         {
+        //             key: 'datetime',
+        //             format: 'YYYY-MM-DDThh:mm:ss'
+        //         }
+        //     ]
+        // }))
         .use(rootPath())
         .use(collections({
             'om-tjenestene': {
@@ -58,7 +58,14 @@ const smith = (clean = false) => {
             },
             'driftsstatus-og-nyheter': {
                 pattern: '{nyheter/*,driftsstatus/*}',
-                sortBy: 'title'
+                sortBy: function(a, b) {
+                    // Legger til sortering for både datetime og date
+                    // Alt uten dato kommer sist
+                    const aSort = a.datetime || a.date || '1000';
+                    const bSort = b.datetime || b.date || '1000';
+                    return aSort.localeCompare(bSort)
+                },
+                reverse: true
             },
             'nyheter': {
                 pattern: 'nyheter/*',
