@@ -19,7 +19,8 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^2.2.0",
     "metalsmith-redirect": "^2.1.0",
-    "metalsmith-rootpath": "^1.0.4"
+    "metalsmith-rootpath": "^1.0.4",
+    "metalsmith-validate": "^0.1.5"
   },
   "scripts": {
     "start": "node start.js",

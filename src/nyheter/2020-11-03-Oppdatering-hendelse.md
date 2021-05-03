@@ -1,5 +1,5 @@
 ---
-title: Oppdatering: Person er oppdatert – ny hendelse
+title: Oppdatering - Person er oppdatert – ny hendelse
 date: 2020-11-03
 ---
 
