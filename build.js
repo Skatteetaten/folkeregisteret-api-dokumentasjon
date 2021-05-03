@@ -9,6 +9,7 @@ const changed = require('metalsmith-changed');
 const feed = require('metalsmith-feed');
 const dateFormatter = require('metalsmith-date-formatter');
 const defaultValues = require('@metalsmith/default-values');
+const validate = require('metalsmith-validate');
 const metadata = require('./metadata');
 
 const smith = (clean = false) => {
@@ -31,7 +32,18 @@ const smith = (clean = false) => {
                     }
                 }
             }
-
+        ]))
+        .use(validate([
+            {
+                pattern: '{nyheter/*,driftsstatus/*}',
+                metadata: {
+                    title: true,
+                    date: {
+                        exists: true,
+                        type: 'Date'
+                    }
+                }
+            }
         ]))
         .use(dateFormatter({
             dates: [
