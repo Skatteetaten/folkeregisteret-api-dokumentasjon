@@ -1,6 +1,6 @@
 ---
 title: Driftsproblemer FREG
-datetime: 2018-10-31T15:10:00
+date: 2018-10-31T15:10:00
 ---
 Det er oppdaget en utfordring i en komponent i FREG. Konsekvens er at man kan oppleve forsinkelse i tilbakemelding på innsendte meldinger.
 Tilgjengeliggjøring er oppe og fungerer, men data kan være noe forsinkelt. Det jobbes med å løse feilen.

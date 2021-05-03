@@ -4,6 +4,7 @@
   "main": "build.js",
   "license": "MIT",
   "dependencies": {
+    "@metalsmith/default-values": "^3.0.2",
     "express": "^4.16.4",
     "glob-watcher": "^5.0.3",
     "handlebars": "^4.1.1",
@@ -18,7 +19,8 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^2.2.0",
     "metalsmith-redirect": "^2.1.0",
-    "metalsmith-rootpath": "^1.0.4"
+    "metalsmith-rootpath": "^1.0.4",
+    "metalsmith-validate": "^0.1.5"
   },
   "scripts": {
     "start": "node start.js",

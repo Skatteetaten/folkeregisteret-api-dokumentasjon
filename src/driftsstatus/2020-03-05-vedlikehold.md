@@ -1,6 +1,6 @@
 ---
 title: Varsling vedlikehold fredag 20.03.2020
-datetime: 2020-03-05T08:55:00
+date: 2020-03-05T08:55:00
 ---
 Fredag 20.03.2020 vil det gjøres en større jobb for å avstemme informasjon mot Kartverket/matrikkel.
 Dette medfører en opprydding av avvik knyttet til kretser (skole-, kirke-).Videre medfører det oppdatering av adresseinfo på anslagvis 500.000 personer i registeret.

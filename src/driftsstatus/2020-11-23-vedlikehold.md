@@ -1,6 +1,6 @@
 ---
 title: Vedlikehold id-porten og maskinporten
-datetime: 2020-11-23T08:13:00
+date: 2020-11-23T08:13:00
 ---
 Vedlikehold maskinporten og id-porten, ref https://samarbeid.difi.no/driftsmeldinger/id-porten-krr-maskinporten-elma-eformidling-og-einnsyn-0.
 Påvirker brukere av konsumenttjenester og brukere av minside-tjeneste.

@@ -8,6 +8,8 @@ const redirect = require('metalsmith-redirect');
 const changed = require('metalsmith-changed');
 const feed = require('metalsmith-feed');
 const dateFormatter = require('metalsmith-date-formatter');
+const defaultValues = require('@metalsmith/default-values');
+const validate = require('metalsmith-validate');
 const metadata = require('./metadata');
 
 const smith = (clean = false) => {
@@ -18,15 +20,40 @@ const smith = (clean = false) => {
         .destination('docs')
         .clean(clean)
         .use(changed())
+        .use(defaultValues([
+            {
+                pattern: '{nyheter/*,driftsstatus/*}',
+                defaults: {
+                    datetime: function (post) {
+                        return post.date;
+                    },
+                    formattedDate: function (post) {
+                        return post.date;
+                    }
+                }
+            }
+        ]))
+        .use(validate([
+            {
+                pattern: '{nyheter/*,driftsstatus/*}',
+                metadata: {
+                    title: true,
+                    date: {
+                        exists: true,
+                        type: 'Date'
+                    }
+                }
+            }
+        ]))
         .use(dateFormatter({
             dates: [
                 {
-                    key: 'date',
+                    key: 'formattedDate',
                     format: 'YYYY-MM-DD'
                 },
                 {
                     key: 'datetime',
-                    format: 'YYYY-MM-DDThh:mm:ss'
+                    format: 'YYYY-MM-DDTHH:mm:ss'
                 }
             ]
         }))
@@ -58,13 +85,19 @@ const smith = (clean = false) => {
             },
             'driftsstatus-og-nyheter': {
                 pattern: '{nyheter/*,driftsstatus/*}',
-                sortBy: 'title'
+                sortBy: 'date',
+                reverse: true
             },
             'nyheter': {
                 pattern: 'nyheter/*',
                 sortBy: 'date',
                 reverse: true,
                 limit: 10
+            },
+            'allenyheter': {
+                pattern: 'nyheter/*',
+                sortBy: 'date',
+                reverse: true
             },
             'driftsstatus': {
                 pattern: 'driftsstatus/*',
