@@ -4,3 +4,5 @@ date: 2021-05-12T13:32:00
 ---
 Vi har for tiden en feil som påvirker Produsenttjenester.
 Feil Oppstod: 13:00 
+
+LØST: 14:30
