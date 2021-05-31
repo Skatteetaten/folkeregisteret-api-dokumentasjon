@@ -4,7 +4,7 @@ title: Veileder for konsumenter - på vegne av
 
 ## Veileder for konsumenter som benytter systemleverandør (på vegne av) 
 
-For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger, tilbyr vi fra 1. oktober 2020 generell mulighet for oppkobling mot Fregs [konsumenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). Konsumenten kan benytte systemleverandør (underleverandør) til å utføre oppgaver i forbindelse med bruk av og integrasjon mot tjenestene. Konsumenten og underleverandør må ha avtaler som regulerer forholdet mellom dem.
+For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger tilbyr Skatteetaten generell mulighet for oppkobling mot Fregs [konsumenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). Konsumenten kan benytte systemleverandør (underleverandør) til å utføre oppgaver i forbindelse med bruk av og integrasjon mot tjenestene. Konsumenten og underleverandør må ha avtaler som regulerer forholdet mellom dem.
 
 ### Dette trenger du:
 
