@@ -4,7 +4,7 @@ title: Veileder for konsumenter
 
 ## Veileder for virksomheter som vil koble seg opp mot Freg
 
-For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger, tilbyr vi fra 1. oktober 2020 direkte oppkobling mot Fregs konsumenttest- og produksjonsmiljø. 
+For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger tilbyr Skatteetaten direkte oppkobling mot Fregs konsumenttest- og produksjonsmiljø. 
 
 ### Dette trenger du:
 
