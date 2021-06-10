@@ -14,7 +14,7 @@ Bestill tilknytning til maskinporten via [DIFIs samarbeidsportal](https://difi.g
 
 
 ### 2. Opprettelse av bruker hos Folkeregisteret.
-Dette gjøres hos Folkeregisteret etter at søknad om tilgang er sendt inn og godkjent. Se [veiledning for konsument](paakobling_konsument.md) for nærmere informasjon om utfylling og innsending av søknad. Der skal det blant annet angis hvilken rettighetspakke virksomheten søker tilgang til. Rettighetspakke tilsvarer 'scope' på maskinporten-språk.
+Dette gjøres hos Folkeregisteret etter at søknad om tilgang er sendt inn og godkjent. Se [veiledning for konsument](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-konsumenter/) for nærmere informasjon om utfylling og innsending av søknad. Der skal det blant annet angis hvilken rettighetspakke virksomheten søker tilgang til. Rettighetspakke tilsvarer 'scope' på maskinporten-språk.
 
 All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS.
 Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat
