@@ -16,7 +16,7 @@ Systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner
 
 * KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Les mer her: https://ks-no.github.io/fiks-plattform/modernisert-folkeregister/
 
-Informasjon fra folkeregisteret er tilgjengelig enten via konsumenttjenester eller via en onlineportal. Portalen vil også bli modernisert, men fortsatt kan https://www.infotorg.no/ som kan benyttes.
+Informasjon fra folkeregisteret er tilgjengelig enten via konsumenttjenester eller via en onlineportal. Portalen vil også bli modernisert, men fortsatt kan https://www.infotorg.no/ benyttes frem til 31.12.2021.
 
 
 ### Kom igang med maskin-til-maskin-integrasjon 
