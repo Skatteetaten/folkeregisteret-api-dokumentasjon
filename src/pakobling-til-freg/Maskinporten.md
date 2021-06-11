@@ -29,12 +29,14 @@ Så snart søknad er innvilget, vil Folkeregisteret melde inn virksomhetens orga
 
 Følgende scopes er opprettet for å dekke de rettighetspakkene Folkeregisteret tilbyr:
 * folkeregister:deling/offentligmedhjemmel
-* folkeregister:deling/finans
-* folkeregister:deling/offentligutenhjemmel
-* folkeregister:deling/privat
 * folkeregister:deling/offentligmedhjemmel.segmentansvarlig
+* folkeregister:deling/finans
 * folkeregister:deling/finans.segmentansvarlig
+* folkeregister:deling/offentligutenhjemmel
 * folkeregister:deling/offentligutenhjemmel.segmentansvarlig
+* folkeregister:deling/privatutenhjemmel
+* folkeregister:deling/presse
+* folkeregister:deling/privat
 
 
 Folkeregisteret vil derfor melde inn virksomheten omtrent slik:
