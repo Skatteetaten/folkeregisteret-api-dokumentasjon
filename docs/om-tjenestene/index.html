@@ -168,6 +168,28 @@
           <h2>Nyheter</h2>
           <div class="nyhetscontainer">
             <div class="nyhet">
+            <h3>2022-03-08 - Endringer av konsumenttjenester 16. oktober 2021 - 20210611  </h3>
+            <h3 id="produksjonssetting">Produksjonssetting</h3>
+    <p>Endringene i dataene slik de er beskrevet nedenfor vil blir satt i produksjon 16. oktober 2021. Endringene som implementeres vil validere mot historiske persondokument.
+    Vi vil gjøre tilgjengelig den nye spesifikasjonen i Swaggerhub i god tid før 16 oktober 2021, den nye spesifikasjonen er kompatibel med eksisterende data og kan derfor benyttes før vi sender dataene i henhold til endringene beskrevet nedenfor.</p>
+    <p>Endringene slik de er beskrevet nedenfor vil være tilgjengelig i konsument playground 17. juni 2021. Det vil bli varslet som en nyhet.</p>
+    <h3 id="1-preferertkontaktadresse">1. preferertKontaktadresse</h3>
+    <p>Entiteten PreferertKontaktadresse vil alltid være tom. Entiteten vil angis som utgått/deprecated. 
+    Feltet vil aldri inneholde noen verdi for gjeldende persondokument. Dersom man gjør oppslag mot et historisk persondokument fra før endringen, vil dokumentet kunne ha preferertKontaktadresse</p>
+    <h3 id="2-vergem-l-omfangeterinnenpersonligomr-de">2. Vergemål - omfangetErInnenPersonligOmråde</h3>
+    <p>Attributtet omfangetErInnenPersonligOmråde som ligger under Entiteten VergeRepresentantEllerFullmektig er i dag påkrevd/required (omfangetErInnenPersonligOmråde Boolsk[1]) dette feltet endres til valgfritt/optional (omfangetErInnenPersonligOmråde Boolsk[0]). 
+    Vi vil altså etter endringen levere entiteten VergeRepresentantEllerFullmektig både med og uten innhold i attributtet omfangetErInnenPersonligOmråde</p>
+    <h3 id="3-opphold-p-svalbard-antalltidligereopphold">3. Opphold på svalbard - antallTidligereOpphold</h3>
+    <p>Attributtet antallTidligereOpphold som ligger under Entiteten OppholdPåSvalbard er i dag påkrevd/required (antallTidligereOpphold  Heltall[1]) dette feltet endres til valgfritt/optional (antallTidligereOpphold Heltall [0]).
+    AntallTidligereOpphold vil angis som utgått/deprecated og , feltet vil aldri inneholde noen verdi for gjeldende persondokument. Dersom man gjør oppslag mot et historisk persondokument fra før endringen, vil dokumentet kunne ha antallTidligereOpphold.</p>
+    <h3 id="4-api-spesifikasjon">4. API-spesifikasjon</h3>
+    <p>Frem til nå har har Folkeregisteret dokumentert konsument API både med XSD og Open API Specification (swaggerhub). 
+    Vi ønsker på sikt fjerne tjenestene som returnerer XSD, og dermed kun tilby den dokumentasjonen som ligger i swaggerhub. </p>
+    <p>Spørsmål sendes til: <a href="mailto:freg.produksjon@skatteetaten.no">freg.produksjon@skatteetaten.no</a>
+    Emne: &quot;Endringer konsument-API 16. oktober 2021&quot;</p>
+    
+            </div>
+            <div class="nyhet">
             <h3>2021-06-08 - Vedlikehold registeret  </h3>
             <p>Torsdag 10.juni klokken 18:00 vil vi utføre nødvendig vedlikehold i registeret. Dette medfører at konsumenttjenestene vil være nede.</p>
     <p>Tjenestene vil være midlertidig tilgjenglige, men vil ikke få nye data før arbeidet er ferdig utført. </p>
@@ -229,12 +251,6 @@
             <h3>2021-03-08 - Migrering av navn  </h3>
             <p>Mandag 8. mars klokken 18:00 migreres det data til FREG. I denne forbindelse tas saksflytene ned og dette medfører at ny informasjon ikke vil være tilgjengelig i rettighetspakkene når dataen lastes inn. </p>
     <p>Arbeidet forventes å ta ca 4 timer.  </p>
-    
-            </div>
-            <div class="nyhet">
-            <h3>2021-03-01 - Vedlikehold av rettighetspakkene Finans, Offentlig uten hjemmel, privat med oppgaver og privat  </h3>
-            <p>Tirsdag 1. mars klokken 18:00 migreres det data til FREG. I denne forbindelse tas saksflytene ned og dette medfører at ny informasjon ikke vil være tilgjengelig i rettighetspakkene når dataen lastes inn. </p>
-    <p>Arbeidet forventes å ta ca 3 timer.  </p>
     
             </div>
           </div>
