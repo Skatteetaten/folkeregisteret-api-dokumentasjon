@@ -1,6 +1,6 @@
 ---
 title: Endringer av konsumenttjenester 16. oktober 2021 - 20210611
-date: 2021-15-06T08:41:00+02
+date: 2021-06-10T08:41:00+02
 
 ---
 
