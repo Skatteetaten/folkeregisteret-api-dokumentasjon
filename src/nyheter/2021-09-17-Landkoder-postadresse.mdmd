@@ -1,0 +1,8 @@
+---
+title: Landkoder
+date: 2021-09-17T10:00:00+02
+---
+
+17. august korrigerte vi alle landkoder med verdien XX til YY. XX representerte feilaktig 'Ukjent', den korrekte kodeverdien for 'Ukjent' i Folkeregisteret er 'YY'. 
+
+Folkeregisteret bruker 'XUK' Alfa 3 og 'YY' Alfa 2 til representere verdien 'Ukjent'. Beklageligvis var ikke 'YY' dokumentert i informasjonsmodellen på tidspunktet for endringen, dette er nå rettet opp.
