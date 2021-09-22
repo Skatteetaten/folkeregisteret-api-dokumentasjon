@@ -212,6 +212,7 @@ Denne verdien skal settes lik **ETag**-header fra siste respons fra tjenesten. S
 ```
 
 ### Hendelsesdokument for en korrigering av historisk informasjon - format JSON
+NB: Denne entitetsendringen er ikke benyttet. Det er pt ikke støtte for å sette en entitetsendring til "korrigereHistorisk".  
 ```json
 
 {
