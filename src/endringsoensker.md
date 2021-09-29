@@ -13,3 +13,4 @@ I oversikten under vises mottatte endringsønsker fra eksterne samarbeidspartner
 |Brønnøysundregistrene|02.07.21|Digitalisering av rekvisisjon av d-nummer|Skal utvikles|
 |Data Factory|25.08.21|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Under behandling |
 |Maestro Soft|06.09.21|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Under behandling|
+|Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling|
