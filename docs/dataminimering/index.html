@@ -153,16 +153,18 @@
     <p>Ved oppslag mot Folkeregisteret skal konsumentene kunne begrense oppslaget til de personopplysninger som er nødvendige i ulike brukstilfeller. Vi ønsker å legge tilrette for at konsumentene kan ta bevisste valg i forhold til databehov og vil derfor begrense opplysningene som utleveres dersom ønskede personopplysninger ikke er oppgitt.</p>
     <p>Dersom part ikke oppgis vil retur innholde samme informasjon som finnes i &quot;person-basis&quot;.</p>
     <p>Parameteret <em>part</em> benyttes til å spesifisere hvilken informasjon, om en person, man ønsker å ha med i oppslaget. Som entitet kan man peke på hvilken som helst entitet (egenskapsnavn) på toppnivå i modellen for persondokument. I tillegg til å kunne be om eksplisitte entiteter er det lagt opp til samlende resultatsett i henhold til tabellen under:</p>
-    <p>Eksempelvis kan part benyttes slik: /v1/personer/12345612345?part=historikk&amp;part=navn&amp;part=bostedsadresse <br>  Dette vil returnere gjeldende og historiske oppføringer på entitentene navn og bostedsadresse. Med unntak av for rettighetspakken privat vil også identifikasjonsnummer returneres.  </p>
+    <p>Eksempelvis kan part benyttes slik: /v1/personer/12345612345?part=historikk&amp;part=navn&amp;part=bostedsadresse <br>  Dette vil returnere gjeldende og historiske oppføringer på entitentene navn og bostedsadresse. Med unntak av for rettighetspakken privat og presse vil også identifikasjonsnummer returneres.  </p>
     <table>
     <thead>
     <tr>
     <th>&lt;part></th>
     <th>Beskrivelse</th>
-    <th>RP Offentlig med hjemmel</th>
-    <th>RP Finans og begrenset</th>
-    <th>Offentlig uten hjemmel / Privat uten hjemmel</th>
-    <th>Presse/ Privat</th>
+    <th>Offentlig og privat virksomhet med hjemmel</th>
+    <th>Offentlig virksomhet uten hjemmel</th>
+    <th>Privat virksomhet uten hjemmel</th>
+    <th>Privat virksomhet</th>
+    <th>Finans</th>
+    <th>Presse</th>
     </tr>
     </thead>
     <tbody>
@@ -171,46 +173,53 @@
     <td>Standardsett av gjeldende og ikke-taushetsbelagte opplysninger: <ul><li>Identifikasjonsnummer</li><li>identitetsgrunnlag</li><li>status</li><li>dødsfall</li><li>sivilstand</li><li>fødsel</li><li>statsborgerskap</li><li>kjønn</li><li>navn</li><li>preferertKontaktadresse</li><li>bostedsadresse</li><li>oppholdsadresse</li><li>deltBosted</li><li>postadresse</li><li>postadresseIUtlandet</li><li>adressebeskyttelse</li><li>kontaktinformasjonForDødsbo</li></ul></td>
     <td>Ja</td>
     <td>Ja</td>
-    <td>Ja*</td>
-    <td>Ja*</td>
+    <td>Ja</td>
+    <td>Ja Bortsett fra Identifikasjonsnummer - denne må eksplisitt defineres (se <egenskapsnavn> nedfor)</td>
+    <td>Ja</td>
+    <td>Ja Bortsett fra Identifikasjonsnummer - denne må eksplisitt defineres (se <egenskapsnavn> nedfor)</td>
     </tr>
     <tr>
     <td>historikk</td>
     <td>Gir gjeldende og historiske verdier for alle personopplysningene som returneres.</td>
     <td>Ja</td>
-    <td>Ja, for navn, adresser og sivilstand</td>
-    <td>Ja, for navn og adresser</td>
-    <td>Ja, for navn og adresser</td>
+    <td>Ja, for identifikasjonsnummer, adresser og navn</td>
+    <td>Ja, for identifikasjonsnummer, adresser og navn</td>
+    <td>Ja, for identifikasjonsnummer, adresser og navn</td>
+    <td>Ja, for identifikasjonsnummer, adresser, navn og sivilstand</td>
+    <td>Ja, for identifikasjonsnummer, adresser og navn</td>
     </tr>
     <tr>
     <td>identitetsgrunnlag-utvidet</td>
     <td>Gir: <ul><li>falskIdentitet</li><li>legitimasjonsdokument</li><li>utenlandskPersonidentifikasjon</ul></li></td>
     <td>Ja</td>
-    <td>Ja</td>
     <td>Nei</td>
+    <td>Nei</td>
+    <td>Nei</td>
+    <td>Ja</td>
     <td>Nei</td>
     </tr>
     <tr>
     <td>relasjon-utvidet</td>
     <td>Gir: <ul><li>familierelasjon</li><li>foreldreansvar</li><li>vergemålEllerFremtidsfullmakt</ul></li></td>
     <td>Ja</td>
+    <td>Kun vergemålEllerFremtidsfullmakt</td>
+    <td>Kun vergemålEllerFremtidsfullmakt</td>
+    <td>Kun vergemålEllerFremtidsfullmakt</td>
     <td>Ja</td>
-    <td>Ja</td>
-    <td>Ja</td>
+    <td>Kun vergemålEllerFremtidsfullmakt</td>
     </tr>
     <tr>
     <td>&lt;egenskapsnavn></td>
-    <td>I tillegg er det mulig å spesifisere hvert enkelt egenskapsnavn: <ul><li>utlendingsmyndighetenesIdentifikasjonsnummer</li><li>innflytting</li><li>utflytting</li><li>fødselINorge</li><li>opphold</li><li>forholdTilSametingetsValgmanntall</li><li>brukAvSamiskSpråk</ul></li> Det er også mulig å spesifisere enkeltopplysningene fra &quot;person-basis&quot;, &quot;identitetsgrunnlag-utvidet&quot; og &quot;relasjon-utvidet&quot; hvis det er behov for å redusere resultatet nærmere. Merk at egenskapsnavnene må angis slik de er definert i den til enhver tid gjeldende skjemadefinisjonen for persondokumentet (eks: fødsel = foedsel).</td>
+    <td>I tillegg er det mulig å spesifisere hvert enkelt egenskapsnavn f.eks.: <ul><li>identifikasjonsnummer</li><li>utlendingsmyndighetenesIdentifikasjonsnummer</li><li>innflytting</li><li>utflytting</li><li>fødselINorge</li><li>opphold</li><li>forholdTilSametingetsValgmanntall</li><li>brukAvSamiskSpråk</ul></li> Det er også mulig å spesifisere enkeltopplysningene fra &quot;person-basis&quot;, &quot;identitetsgrunnlag-utvidet&quot; og &quot;relasjon-utvidet&quot; hvis det er behov for å redusere resultatet nærmere. Merk at egenskapsnavnene må angis slik de er definert i den til enhver tid gjeldende skjemadefinisjonen for persondokumentet (eks: fødsel = foedsel).</td>
     <td>Ja</td>
-    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken.</td>
-    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken.</td>
-    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken.</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
     </tr>
     </tbody>
     </table>
-    <ul>
-    <li>kontaktinformasjonForDødsbo gjøres tilgjenglig for rettighetspakkene Privat uten hjemmel, og Presse/ Privat 23. september. </li>
-    </ul>
     
         </div>
       </div>
