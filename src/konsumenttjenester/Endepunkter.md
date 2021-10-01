@@ -23,13 +23,14 @@ Eksempelvis i konsumenttest for offentlig hjemmel og tjenesten personer/xsd:
 Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og hvilke url'er som må benyttes for de ulike pakkene.
 
 
-| Rettighetspakker | URL | 
-|----------|---------------------------------------------------------|
-|Offentlig med hjemmel|folkeregisteret/offentlig-med-hjemmel/api/|
-|Finans|folkeregisteret/api/finans/|
-|Offentlig uten hjemmel|folkeregisteret/api/offentligutenhjemmel/|
-|Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|
-|Privat|folkeregisteret/api/privat/|
+| Rettighetspakker | URL | Scope |
+|------------------------------------------|------------------------------------------|---------------------------------------------------------|
+|Offentlig og privat virksomhet med hjemmel|folkeregisteret/offentlig-med-hjemmel/api/|folkeregister:deling/offentligmedhjemmel|
+|Offentlig virksomhet uten hjemmel|folkeregisteret/api/offentligutenhjemmel/|folkeregister:deling/offentligutenhjemmel|
+|Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|folkeregister:deling/privatutenhjemmel|
+|Privat virksomhet|folkeregisteret/api/privat/|folkeregister:deling/privat|
+|Finans|folkeregisteret/api/finans/|folkeregister:deling/finans|
+|Presse|folkeregisteret/api/presse/|folkeregister:deling/presse|
 
 ## Ressurser
 
