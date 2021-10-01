@@ -6,7 +6,6 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 
 # Taushetsbelagte opplysninger
 
-* Kontaktopplysninger for dødsbo
 * Foreldre
 * Ektefelle/registrert partner
 * Barn
@@ -37,3 +36,4 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Vergemål
 * Stadfestet fremtidsfullmakt
 * Dødsfall
+* Kontaktopplysninger for dødsbo
