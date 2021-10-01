@@ -25,7 +25,7 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 
 | Rettighetspakker | URL | Scope | Swaggerhub |
 |--------------------------------------|------------------------------------------|---------------------------------------------------------|-----------------------------------------|
-|Offentlig og privat virksomhet med hjemmel|folkeregisteret/offentlig-med-hjemmel/api/|folkeregister:deling/offentligmedhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-med-taushetsbelagt/)|
+|Offentlig og privat virksomhet med hjemmel|folkeregisteret/offentlig-med-hjemmel/api/|folkeregister:deling/offentligmedhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Offentlig-med-hjemmel/)|
 |Offentlig virksomhet uten hjemmel|folkeregisteret/api/offentligutenhjemmel/|folkeregister:deling/offentligutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-offentlig-uten-taushetsbelagt/)|
 |Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|folkeregister:deling/privatutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
 |Privat virksomhet|folkeregisteret/api/privat/|folkeregister:deling/privat|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
