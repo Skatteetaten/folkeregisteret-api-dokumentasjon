@@ -1,7 +1,7 @@
 ---
 title: Innsending av endringsønsker til Folkeregisteret
 ---
-Dersom du har endringsønsker til Folkeregisteret, fyll ut <dette skjemaet> og send det til Frstab@skatteetaten.no
+Dersom du har endringsønsker til Folkeregisteret, fyll ut [dette skjemaet](./Innspillskjema_FREG_v5_1.pdf) og send det til Frstab@skatteetaten.no
   
 I oversikten under vises mottatte endringsønsker fra eksterne samarbeidspartnere:
   
