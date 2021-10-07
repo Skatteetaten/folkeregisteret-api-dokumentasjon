@@ -1,5 +1,5 @@
 ---
-title: Innsending av endringsønsker til Folkeregisteret
+title: Endringsønsker til Folkeregisteret
 date: 2021-10-07T10:27:00+02
 ---
 
