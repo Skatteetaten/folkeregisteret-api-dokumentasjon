@@ -8,8 +8,8 @@ I oversikten under vises mottatte endringsønsker fra eksterne samarbeidspartner
 | Fra | Dato | Beskrivelse |Status | 
 |------------|-------------------------------------|----------------|----------------|
 |Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling|
-|Maestro Soft|06.09.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avvist. Den som søker må informere om dette på egne sider |
-|Data Factory|25.08.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avvist. Den som søker må informere om dette på egne sider |
+|Maestro Soft|06.09.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avvist. Den som søker kan informere om dette på egne sider |
+|Data Factory|25.08.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avvist. Den som søker kan informere om dette på egne sider |
 |Brønnøysundregistrene|02.07.2021|Digitalisering av rekvisisjon av d-nummer|Skal utvikles|
 |NAV|21.06.2021|Oppdatere FREG med kontaktadresse fra NAV|Avvist. Ikke hjemmel til å motta adresseinformasjon fra andre enn personen selv|
 |Statens sivilrettsforvaltning||Mer detaljert informasjon om vergemål|Under juridisk avklaring|
