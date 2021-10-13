@@ -15,5 +15,6 @@ I oversikten under vises mottatte endringsønsker fra eksterne samarbeidspartner
 |Statens sivilrettsforvaltning||Mer detaljert informasjon om vergemål|Under juridisk avklaring|
 |KS|mars 2021|Funksjon som lar konsumenten velge at adresser som er gradert ikke skal returneres ved kall mot delings-API-ene.|Avvist. Ønskelig at dette håndteres på KS-siden.|
 |SSB||Innhente oppholdsadresse for studenter hos tredjeparter| |
-|||||
+
+
 
