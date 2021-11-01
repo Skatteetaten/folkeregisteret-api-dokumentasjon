@@ -14,7 +14,7 @@ Data Factory|25.08.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnel
 Brønnøysundregistrene|02.07.2021|Digitalisering av rekvisisjon av d-nummer|Skal utvikles
 NAV|21.06.2021|Oppdatere FREG med kontaktadresse fra NAV|Avvist. Ikke hjemmel til å motta adresseinformasjon fra andre enn personen selv
 Statens sivilrettsforvaltning||Mer detaljert informasjon om vergemål|Under juridisk avklaring
-KS|mars 2021|Funksjon som lar konsumenten velge at adresser som er gradert ikke skal returneres ved kall mot delings-API-ene.|Avvist. Ønskelig at dette håndteres på KS-siden.
+KS|mars 2021|Funksjon som lar konsumenten velge at adresser som er gradert ikke skal returneres ved kall mot delings-API-ene.|Under behandling
 SSB||Innhente oppholdsadresse for studenter hos tredjeparter|
 
 
