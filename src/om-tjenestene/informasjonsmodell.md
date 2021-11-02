@@ -14,7 +14,7 @@ Siste versjon av informasjonsmodellen er nå tilgjengelig. Informasjonsmodellen 
 ## Hendelsesbeskrivelser
 Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret.
 
-[Hendelser fra Folkeregisteret](../dokumenter/Hendelser_fra_Folkeregisteret_v1_4_2021_02_11.pdf)                                                      
+[Hendelser fra Folkeregisteret](../dokumenter/Hendelser fra Folkeregisteret_v1_5_2021_11_02.pdf)                                                      
 
 
 ## Begrepsmodeller
