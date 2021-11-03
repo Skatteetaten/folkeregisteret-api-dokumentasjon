@@ -29,5 +29,5 @@ Født 2000:
 * 41810034422
 
 
-Endringen er planlagt lagt ut i konsumenttestmiljøet 20.oktober 2021, og i produksjon 16. november 2021.
+Endringen ble lagt ut i konsumenttestmiljøet 20.oktober 2021, og er planlagt lagt ut i produksjon 16. november 2021.
 
