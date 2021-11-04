@@ -32,6 +32,6 @@ Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i A
 Konsument som bruker underleverandør/databehandler for å få tilgang til tjenester må delegere tilgang til underleverandøren/databehandleren gjennom Altinn Autorisasjon. 
 
 ##### Guide til delegering
-[Delegere rettighet til Systemleverandør - På vegne av Offentlig med eller uten hjemmel](../dokumenter/Hvordan delegere rettighet til Systemleverandør - På vegne av Offentlig med eller uten hjemmel.pdf)
+[Delegere rettighet til Systemleverandør - På vegne av Offentlig med eller uten hjemmel](../dokumenter/211104 Hvordan delegere rettighet til Systemleverandør - På vegne av Offentlig med eller uten hjemmel.pdf)
 
 [Delegere rettighet til Systemleverandør - På vegne av Privat virksomhet](../dokumenter/Hvordan delegere rettighet til Systemleverandør - På vegne av Privat virksomhet.pdf)
