@@ -11,7 +11,7 @@ Tabellen under viser endringen:
 | :--- | :--- | :--- | :--- | :--- |
 |5 | 1858-1899 | 500-599 | 82 | Svært få d-numre – serien 600-999 flyttes til 1900-tallet. |
 | 0,1 | 1900-1939 | 000-199 | 164 | Få d-numre, serien 200-499 flyttes til 2000-tallet. |
-| 0,1,2,3,4,5,6,7,8,9 | 1940-1999 | 000-499, 600-999 | 738 | Fortsatt mange tildelinger – utvider med serien 600-999 fra 1800-tallet. |
+| 0,1,2,3,4,6,7,8,9 | 1940-1999 | 000-499, 600-999 | 738 | Fortsatt mange tildelinger – utvider med serien 600-999 fra 1800-tallet. |
 | 2,3,4,5,6,7,8,9 | 2000-2039 | 200-999 | 656 | Mange tildelinger – utvider med serien 200-499 fra 1900-tallet. |
 
 Konsumenter som benytter individnummeret til å utlede korrekt fødselsår for D-nummerpersoner må endre sine systemløsninger. 
