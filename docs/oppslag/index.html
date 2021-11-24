@@ -239,21 +239,8 @@
     <p><br></p>
     <h2 id="s-k-med-treffliste">Søk med treffliste</h2>
     <p>Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. </p>
-    <p>Eksempel på søk med treffliste på gitte kriterie
-    <code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/soek?navn=hansen&amp;kjoenn=kvinne&amp;foedselsaarFraOgMed=1950&amp;adressenavn=Langgata&amp;kommunenummer=0301&amp;inkluderOppholdsadresse=true&amp;inkluderDoede=true&quot;</code></p>
-    <p><br>
-    <br></p>
-    <h2 id="curl-eksempler-p-de-vrige-tjenestene-">Curl eksempler på de øvrige tjenestene:</h2>
-    <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten:</p>
-    <p><code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer&quot;</code></p>
-    <p>Oppslag på xsd:</p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/xsd&quot;</code></p>
-    <p>Eksempel på uthenting av folkeregisteridentifikator (fødselsnummer og dnummer) med historikk og gjeldende identitetsgrunnlag for en gitt person identifisert med folkeregisteridentifikatoren som settes i URL: </p>
-    <p><code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/{folkeregiseridentifikator}?part=historikk&amp;part=identitetsgrunnlag&quot;</code></p>
-    <p>Eksempel på bulkoppslag på gitte folkeregisteridentifikatorer:</p>
-    <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;foedselsEllerDNummer&quot;: [&quot;{folkeregiseridentifikator}&quot;,&quot;{folkeregiseridentifikator}&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/&quot;</code></p>
-    <p>Eksempel på bulkoppslag på gitte versjoner av persondokumenter:</p>
-    <p><code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;,&quot;8446cf3bb867bfdb6de9cc9c17f6adf2&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/bulkoppslag/arkiv/&quot;</code></p>
+    <h2 id="curl-requester">Curl requester</h2>
+    <p>Eksempler på requester med curl kan genereres i swaggerhub for de ulike <a href="https://app.swaggerhub.com/organizations/Skatteetaten_FREG">rettighetspakkene</a>.  </p>
     <h3 id="headere">Headere</h3>
     <p><strong>Accept</strong></p>
     <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml.</p>
