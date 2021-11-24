@@ -7,7 +7,7 @@ I oversikten under vises mottatte endringsønsker fra eksterne samarbeidspartner
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
-Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?)|Under behandling
+Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Under behandling
 Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adressetilleggsnavn fra DSF til FREG|Under behandling
 Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling
 Maestro Soft|06.09.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avvist. Den som søker kan informere om dette på egne sider
