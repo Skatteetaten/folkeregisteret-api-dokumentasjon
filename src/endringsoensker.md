@@ -16,7 +16,7 @@ Brønnøysundregistrene|02.07.2021|Digitalisering av rekvisisjon av d-nummer|Ska
 NAV|21.06.2021|Oppdatere FREG med kontaktadresse fra NAV|Avvist. Ikke hjemmel til å motta adresseinformasjon fra andre enn personen selv
 Statens sivilrettsforvaltning||Mer detaljert informasjon om vergemål|Under juridisk avklaring
 KS|mars 2021|Funksjon som lar konsumenten velge at adresser som er gradert ikke skal returneres ved kall mot delings-API-ene.|Under behandling
-SSB||Innhente oppholdsadresse for studenter hos tredjeparter|
+SSB||Innhente oppholdsadresse for studenter hos tredjeparter|Vurderes utviklet i 2022 / 2023
 
 
 
