@@ -101,7 +101,7 @@ Proxy-Connection: Keep-Alive<br/>
 <br/>
 --ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
 Content-Disposition: form-data; name="rekvisisjon"; filename="et-eller-annet-dnr_rekv.xml"<br/>
-Content-Type: application/xml; charset=ISO-8859-1<br/>
+Content-Type: application/xml; charset=UTF-8<br/>
 Content-Transfer-Encoding: binary<br/>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><br/>
 osv. her kommer XML-meldingen
@@ -109,7 +109,7 @@ osv. her kommer XML-meldingen
 <br/>
 --ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
 Content-Disposition: form-data; name="vedlegg1"; filename="pass2.pdf"<br/>
-Content-Type: text/plain; charset=ISO-8859-1<br/>
+Content-Type: text/plain; charset=UTF-8<br/>
 Content-Transfer-Encoding: binary<br/>
 her kommer pdf'en<br/>
 
