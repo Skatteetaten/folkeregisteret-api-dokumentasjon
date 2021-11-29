@@ -7,8 +7,6 @@ I oversikten under vises mottatte endringsønsker fra eksterne samarbeidspartner
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
-Bisnode|11.11.2021|Historisk navn på personer som har endret identifikator / kjønn|Under behandling
-Bisnode|11.11.2021|Åpne endepunkter for privat rettighetspakke|Avslått
 Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Under behandling
 Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adressetilleggsnavn fra DSF til FREG|Under behandling
 Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling
