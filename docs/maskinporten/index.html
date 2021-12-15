@@ -150,16 +150,16 @@
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <h2 id="komme-i-gang-med-maskinporten">Komme i gang med Maskinporten</h2>
-    <p>Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Digitaliseringsdirektoratet har beskrevet overordenet hvordan <a href="https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html">API-sikring med maskinporten</a> gjøres.
+    <p>Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Digitaliseringsdirektoratet har beskrevet overordenet hvordan <a href="https://docs.digdir.no/maskinporten_guide_apikonsument.html">API-sikring med maskinporten</a> gjøres.
     Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket.</p>
     <p>For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten:</p>
     <h3 id="1-ta-kontakt-med-digitaliseringsdirektoratet-for-f-tilgang-til-maskinporten">1. Ta kontakt med Digitaliseringsdirektoratet for å få tilgang til Maskinporten</h3>
-    <p>Bestill tilknytning til maskinporten via <a href="https://difi.github.io/felleslosninger/maskinporten_overordnet.html">DIFIs samarbeidsportal</a></p>
+    <p>Bestill tilknytning til maskinporten via <a href="https://docs.digdir.no/maskinporten_overordnet.html">DIFIs samarbeidsportal</a></p>
     <h3 id="2-opprettelse-av-bruker-hos-folkeregisteret-">2. Opprettelse av bruker hos Folkeregisteret.</h3>
     <p>Dette gjøres hos Folkeregisteret etter at søknad om tilgang er sendt inn og godkjent. Se <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-konsumenter/">veiledning for konsument</a> for nærmere informasjon om utfylling og innsending av søknad. Der skal det blant annet angis hvilken rettighetspakke virksomheten søker tilgang til. Rettighetspakke tilsvarer &#39;scope&#39; på maskinporten-språk.</p>
     <p>All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS.
     Bruk av REST-api&#39;er hos Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetssertifikat</p>
-    <p>Se mer informasjon om dette her: <a href="https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html">https://difi.github.io/felleslosninger/oidc_auth_server-to-server-oauth2.html</a></p>
+    <p>Se mer informasjon om dette her: <a href="https://docs.digdir.no/maskinporten_auth_server-to-server-oauth2.html">https://docs.digdir.no/maskinporten_auth_server-to-server-oauth2.html</a></p>
     <h3 id="3-systemmessige-klargj-ringer">3. Systemmessige klargjøringer</h3>
     <h4 id="klargj-ring-fra-folkeregisteret-">Klargjøring fra Folkeregisteret:</h4>
     <p>Så snart søknad er innvilget, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og scope (rettighetspakke) til Digitaliseringsdirektoratet.</p>
@@ -184,12 +184,12 @@
     </code></pre><p>Dette gir virksomheten (med org.nummer 999888999) tilgang til å få tokens fra maskinporten for scopet &quot;folkeregister:deling/offentligmedhjemmel    &quot;</p>
     <h4 id="klargj-ring-fra-virksomheten-">Klargjøring fra Virksomheten:</h4>
     <p>Når virksomheten har fått beskjed at tilgangen er opprettet i maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data.
-    Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via <a href="https://difi.github.io/felleslosninger/oidc_api_admin_maskinporten.html">ID-porten sitt API for selvbetjening av integrasjoner</a> eller via et brukergrensenitt i samarbeidsportalen.
+    Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via <a href="https://docs.digdir.no/maskinporten_sjolvbetjening_api.html">ID-porten sitt API for selvbetjening av integrasjoner</a> eller via et brukergrensenitt i samarbeidsportalen.
     All kommunikasjon mot Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen &#39;signering&#39;. Når dette er gjort kan man begynne å bruke folkeregister-api&#39;ene. Det er viktig at man bruker et sertifikat utstedt av TEST CA hos sertifikattilbyder.</p>
     <h3 id="4-bruke-folkeregister-api-ene-med-token-fra-maskinporten">4. Bruke folkeregister-api-ene med token fra maskinporten</h3>
     <p>Overordnet gjøres følgende:</p>
     <ol>
-    <li><p>Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på <a href="https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html">Difi sine side for hvordan bruke maskinporten som konsument</a>. Merk at &quot;Resource&quot; er valgfri og skal ikke settes for Folkeregisterets API. Dette medfører at audience blir &quot;unspecified&quot; som Folkeregisteret forventer.</p>
+    <li><p>Først gjøre et kall til maskinporten for å få et token som kan brukes mot folkeregisteret. Fremgangsmåte er beskrevet på <a href="https://docs.digdir.no/maskinporten_guide_apikonsument.html">Difi sine side for hvordan bruke maskinporten som konsument</a>. Merk at &quot;Resource&quot; er valgfri og skal ikke settes for Folkeregisterets API. Dette medfører at audience blir &quot;unspecified&quot; som Folkeregisteret forventer.</p>
     </li>
     <li><p>Tokenet legges ved kallet til folkeregisteret i Authorization header. Tokenet legges ved slik:</p>
     <pre><code>&#39;Authorization: Bearer &lt;token&gt;&#39;
@@ -202,7 +202,7 @@
     </ol>
     <h3 id="5-hvordan-opptre-p-vegne-av-en-annen-virksomhet">5. Hvordan opptre på vegne av en annen virksomhet</h3>
     <p>Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter ved oppkobling mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har
-    en nærmere beskrivelse av hvordan dette gjøres. <a href="https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#bruke-delegering-via-altinn-autorisasjon">Delegere rettigheter via Altinn</a>.
+    en nærmere beskrivelse av hvordan dette gjøres. <a href="https://docs.digdir.no/maskinporten_guide_apikonsument.html#bruke-delegering-via-altinn-autorisasjon">Delegere rettigheter via Altinn</a>.
     Selve kallene mot Folkeregisteret vil skje på vanlig måte men tokenet vil inneholde informasjon både om konsument og systemleverandør.</p>
     
         </div>
