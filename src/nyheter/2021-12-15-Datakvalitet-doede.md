@@ -1,5 +1,5 @@
 ---
-title: Korrigeringer på døde personer i konsumenttest
+title: Endringer på døde personer i konsumenttest
 date: 2021-12-03T09:30:00+01
 ---
 
