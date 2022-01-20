@@ -29,9 +29,5 @@ Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bru
 Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i Altinn om at søknaden er godkjent.
 
 #### 4.	Tilgang til Altinn for å delegere rettigheter til Freg videre til din systemleverandør
-Konsument som bruker underleverandør/databehandler for å få tilgang til tjenester må delegere tilgang til underleverandøren/databehandleren gjennom Altinn Autorisasjon. 
+Konsument som bruker underleverandør/databehandler for å få tilgang til tjenester må delegere tilgang til underleverandøren/databehandleren gjennom Altinn Autorisasjon. Se her informasjon om guide til delegering.
 
-##### Guide til delegering
-[Delegere rettighet til Systemleverandør - På vegne av Offentlig med eller uten hjemmel](../dokumenter/211104 Hvordan delegere rettighet til Systemleverandør - På vegne av Offentlig med eller uten hjemmel.pdf)
-
-[Delegere rettighet til Systemleverandør - På vegne av Privat virksomhet](../dokumenter/Hvordan delegere rettighet til Systemleverandør - På vegne av Privat virksomhet.pdf)
