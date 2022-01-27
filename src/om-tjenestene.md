@@ -2,6 +2,17 @@
 layout: om_tjenestene.hbs
 title: Om tjenestene
 ---
+## Henvendelser
+Henvendelser rundt tjenestene skal sendes inn via korrekt kanal
+* Kontaktskjema på [Skatteetaten.no](https://www.skatteetaten.no/deling/kontakt/)
+* Saks- og serviceverktøy for de med allerede etablert avtale [Skatteetaten.no](https://www.skatteetaten.no/deling/kontakt/). Velg her at man har tilgang.
+* Kritiske feil eller nedetid utenfor ordinær arbeidstid (15:00 – 08:00): Kontakte oss på 22 07 80 00.
+
+Under siden [spørsmål og svar](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/) vil man finne generell kontaktinformasjon.
+
+Mer informasjon om Folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/deling)
+
+## Tjenester
 
 Folkeregisteret tilbyr en rekke API-er som kan benyttes av virksomheter som produserer eller bruker folkeregisterdata. Dokumentasjon av API-ene er samlet på denne nettsiden.
 
@@ -10,16 +21,6 @@ Tjenestene er delt inn i [produsenttjenester](https://skatteetaten.github.io/fol
 Konsumenter som skal ha tilgang til Folkeregisteret for egen organisasjon, samt systemleverandører som skal ha tilgang til Folkeregisteret på vegne av konsumenter, kan koble seg opp mot aktuelle API-er. Informasjon om hvordan man kommer i gang med Folkeregisteret finnes på finnes her. For å få tilgang til tjenestene må man søke tilgang og godta bruksvilkår via Altinn. For å få tilgang til taushetsbelagt informasjon må man ha hjemmel i eget lovverk. 
 
 Oppkobling og delegering av tilgang til systemleverandører gjøres ved hjelp av Maskinporten. Les mer om folkeregisterets bruk av maskinporten [her.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/) 
-
-**Generelle henvendelser til prosjektet kan rettes til [Veiledningsenteret](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/).**
-
-Mer informasjon om Folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/deling)
-
-<br> 
-<br> 
-<br> 
-<br> 
-
 
 ## Nyheter og driftsvarsel
 
