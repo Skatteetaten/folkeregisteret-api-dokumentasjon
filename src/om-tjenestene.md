@@ -5,7 +5,7 @@ title: Om tjenestene
 ## Henvendelser
 Henvendelser rundt tjenestene skal sendes inn via korrekt kanal
 * Kontaktskjema på [Skatteetaten.no](https://www.skatteetaten.no/deling/kontakt/)
-* Saks- og serviceverktøy for de med allerede etablert avtale [Skatteetaten.no](https://www.skatteetaten.no/deling/kontakt/). Velg her at man har tilgang.
+* Saks- og serviceverktøy for de med allerede etablert avtale [Skatteetaten.no](https://www.skatteetaten.no/deling/kontakt/). Velg her at man har tilgang. Informasjon om [hvordan få tilgang til saks- og serviceverktøy](https://www.skatteetaten.no/deling/kontakt/brukeradministrasjon/)
 * Kritiske feil eller nedetid utenfor ordinær arbeidstid (15:00 – 08:00): Kontakte oss på 22 07 80 00.
 
 Under siden [spørsmål og svar](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/) vil man finne generell kontaktinformasjon.
