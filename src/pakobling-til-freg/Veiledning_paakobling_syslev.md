@@ -39,7 +39,7 @@ b)	Inngå avtale med DigDir om bruk av Maskinporten (Er vederlagsfritt for syste
 c)	Etabler en tilgang til Maskinporten 
 
 d)	Gjennomfører test av tilgang mot Maskinporten  
-Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen
+Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her,https://docs.digdir.no/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen
 
 Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til  servicedesk@digdir.no
 
