@@ -11,6 +11,7 @@ Du finner mer om test her:
  
 * [Test for konsumenter](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/test-for-konsumenter/)
 * [Test for produsenter](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/test-for-produsenter/)
+* [Test for leverandør].(https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/test-for-leverandor/)
  
 
  
