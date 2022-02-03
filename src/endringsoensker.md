@@ -7,6 +7,9 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under behandling
+NAV|27.01.22|Digitalt varsel om Dublett|Under behandling
+NAV|27.01.22|Annullering av d-nr-rekvisisjon|Under behandling
 Skatteetaten / Skatteplikt|17.12.2021|Ikrafttredelsesdato ved kommuneendringer (dvs. endringer i matrikkel-adresse)|Under behandling
 Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Under behandling
 Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adressetilleggsnavn fra DSF til FREG|Avslått. 
