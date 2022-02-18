@@ -1,41 +1,21 @@
 ---
 title: Påkobling til FREG
 ---
-Alle virksomheter med behov for folkeregisterdata kan koble seg til folkeregisterets konsumenttjenester og oppdatere sine kundedata eller foreta søk og oppslag.
+Virksomheter med behov for folkeregisterdata, som har søkt og fått tilgang, må ta stilling til valg av distribusjonsmodell. Det finnes følgende modeller - nærmere beskrevet under [skatteetaten.no](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/distribusjonsmodell/):<br/>
+* På skatteetaten.no via nettleser - [beskrivelse finnes her](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/oppslag-i-folkeregisteret/)
+* Segmentsamarbeid - [les mer om segmentsamarbeid](https://www.skatteetaten.no/deling/segmenter/)
+* Via en systemleverandør - [veiledning systemleverandør](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-systemleverandorer/)
+* Direkte oppkobling - [les om maskinporten](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/)
+<br/>
+Presentasjon av delingstjenester finnes under. Teknisk beskrivelse av de ulike tjenestene finnes man under [konsumenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/)
 
-For å dekke ulike behov til tjenester og ulik tilgang til taushetsbelagt informasjon er det satt opp flere rettighetspakker som gir ulik tilgang til data og tjenester. Du kan lese mer om de ulike rettighetspakkene og søke om tilgang til folkeregisteret fra skatteetaten [nettsider](https://www.skatteetaten.no/person/folkeregister/attester-og-opplysninger/folkeregisteropplysninger/). Det er også laget en veileder for valg av rettighetspakke som finnes [her.](https://www.skatteetaten.no/person/folkeregister/om/modernisering/rettighetspakker/)
-
-
-
-### Påkobling i utvalgte segmenter
-Systemleverandører som leverer tjenester til Helse- og omsorgsektoren, kommuner, eller til Bank- og finanssektoren bes lese informasjon på segmentenes respektive sider før dere starter arbeidet med oppkobling og integrasjon mot modernisert folkeregister(FREG). 
-
-* Norsk Helsenett etablerer ny Persontjeneste for oppslag i folkeregisteret, og alle aktører i helse- og omsorgstjenesten skal benytte denne. https://www.nhn.no/persontjenesten/
-
-* For folkeregisteret er Finans Norge Forsikringsdrift segmentansvarlig for finansforetak. Les mer her https://www.finansnorge.no/freg
-
-* KS tar segmentansvaret for kommunal sektor, og etablerer tjenester for kommunene. Les mer her: https://ks-no.github.io/fiks-plattform/modernisert-folkeregister/
-
-Informasjon fra folkeregisteret er tilgjengelig enten via konsumenttjenester eller via en [onlineportal](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/oppslag-i-folkeregisteret/). Merk at https://www.infotorg.no/ kun kan benyttes frem til 31.12.2021.
-
-
-### Kom igang med maskin-til-maskin-integrasjon 
-For Autorisasjon og autentisering av konsumenter benyttes maskinporten. Dere kan lese mer om dette [her.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/)
-
-De tjenestene som tilbys i de ulike rettighetspakkene er beskrevet på [swaggerhub:](https://app.swaggerhub.com/organizations/Skatteetaten_FREG). Her vil du også finne eksempler på hvordan tjenestene svarer. 
-
-Hvordan endepunkter skal bygges opp er dokumentert [her.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/)
-
-Det anbefales å begynne å sette opp integrasjon mot de tjenestene med enklest grensesnitt. Gjerne xsd-tjenestene eller tjenesten siste/sekvensnummer. 
-
-
-### FREG tjenester
+### Presentasjon av delingstjenester
 [Presentasjon av FREG tjenestene](../dokumenter/Folkeregisterets tjenester.pptx)
 
-### Test og testdata
+### Informasjopn om test og testdata
 [Informasjonsvideo om testing og testdata](../dokumenter/04 - Test mot Folkeregisteret.mp4)
 
 [Informasjonsvideo om Tenor](../dokumenter/Informasjonsfilm Tenor.mp4)
 
-### Mer informasjon
+### Ytterligere informasjon
 For å få informasjon om oppdateringer på våre githubsider følg gjerne denne [RSS-feeden](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml) 
