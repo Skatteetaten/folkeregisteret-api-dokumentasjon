@@ -26,5 +26,5 @@ Skatteetaten tilbyr ulike former for påkobling til delingstjenestene. Her må v
 Mer informasjon finnes under [påkobling](../pakobling-til-freg)
 
 ## Benytte dataene i produksjon
-Det tilbys et sett med standardiserte tjenester og videre vil neste fase være å etablere en hensiktsmessig bruk av tjenestene.<br/<br/>
-Mer informasjon finnes under [benytte data i produksjon](../test)
+Det tilbys et sett med standardiserte tjenester og videre vil neste fase være å etablere en hensiktsmessig bruk av tjenestene.<br/><br/>
+Mer informasjon finnes under [benytte data i produksjon](../konsumenttjenester)
