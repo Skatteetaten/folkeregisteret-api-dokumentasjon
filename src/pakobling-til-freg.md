@@ -1,7 +1,10 @@
 ---
 title: Påkobling til FREG
 ---
-Virksomheter med behov for folkeregisterdata, som har søkt og fått tilgang, må ta stilling til valg av distribusjonsmodell. Det finnes følgende modeller - nærmere beskrevet under [skatteetaten.no](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/distribusjonsmodell/):<br/>
+### Overordnet
+Virksomheter med behov for folkeregisterdata, som har søkt og fått tilgang, må ta stilling til valg av distribusjonsmodell.<br/><br/>
+
+Det finnes følgende modeller - nærmere beskrevet på [skatteetaten.no](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/distribusjonsmodell/):<br/>
 * På skatteetaten.no via nettleser - [beskrivelse finnes her](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/oppslag-i-folkeregisteret/)
 * Segmentsamarbeid - [les mer om segmentsamarbeid](https://www.skatteetaten.no/deling/segmenter/)
 * Via en systemleverandør - [veiledning systemleverandør](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-systemleverandorer/)
