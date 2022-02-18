@@ -6,7 +6,9 @@ Virksomheter med behov for folkeregisterdata, som har søkt og fått tilgang, m�
 * Segmentsamarbeid - [les mer om segmentsamarbeid](https://www.skatteetaten.no/deling/segmenter/)
 * Via en systemleverandør - [veiledning systemleverandør](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-systemleverandorer/)
 * Direkte oppkobling - [les om maskinporten](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/maskinporten/)
-<br/>
+<br/><br/>
+
+
 Presentasjon av delingstjenester finnes under. Teknisk beskrivelse av de ulike tjenestene finnes man under [konsumenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/)
 
 ### Presentasjon av delingstjenester
