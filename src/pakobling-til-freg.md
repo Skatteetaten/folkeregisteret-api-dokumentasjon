@@ -17,7 +17,7 @@ Presentasjon av delingstjenester finnes under. Teknisk beskrivelse av de ulike t
 ### Presentasjon av delingstjenester
 [Presentasjon av FREG tjenestene](../dokumenter/Folkeregisterets tjenester.pptx)
 
-### Informasjopn om test og testdata
+### Test og testdata
 [Informasjonsvideo om testing og testdata](../dokumenter/04 - Test mot Folkeregisteret.mp4)
 
 [Informasjonsvideo om Tenor](../dokumenter/Informasjonsfilm Tenor.mp4)
