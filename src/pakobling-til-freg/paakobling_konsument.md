@@ -37,15 +37,15 @@ Følg Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporte
 
 For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. 
 
-Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/konsument-0.
+Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.digdir.no/maskinporten/maskinporten/25.
 
-Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.difi.no/bruksvilkar. 
+Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.digdir.no/digital-postkasse/bruksvilkar/69. 
 
 •	Etabler en tilgang til Maskinporten
 
 •	Gjennomfører test av tilgang mot Maskinporten
 
-Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://difi.github.io/felleslosninger/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen.
+Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://docs.digdir.no/docs/Maskinporten/maskinporten_summary.html.
 
 Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til servicedesk@digdir.no.
 
@@ -66,4 +66,4 @@ Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttes
 
 Generell informasjon om Maskinporten finner du her: https://samarbeid.difi.no/felleslosninger/maskinporten
 
-Driftsmeldinger fra Digdir finner du her: https://samarbeid.difi.no/driftsmeldinger
+Driftsmeldinger fra Digdir finner du her: https://status.digdir.no/
