@@ -4,7 +4,7 @@ title: Maskinporten
 
 ## Komme i gang med Maskinporten
 Folkeregisteret benytter maskinporten som autentiserings- og autorisasjonstjener for maskin-til-maskin grensesnitt. Digitaliseringsdirektoratet har beskrevet overordenet hvordan [API-sikring med maskinporten](https://docs.digdir.no/maskinporten_guide_apikonsument.html) gjøres.
-Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket.
+Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. Beskrivelser finnes her: https://samarbeid.digdir.no/maskinporten/ta-i-bruk-maskinporten/97
 
 For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten:
 
