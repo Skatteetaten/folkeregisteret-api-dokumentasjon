@@ -2,6 +2,8 @@
 title: Vedlikehold FREG perioder mars 2022
 date: 2022-03-03T10:15:00
 ---
+<b>ENDRET</b> -  se driftsvarsel fra 09.03.2022<br/><br/>
+
 Det skal utføres vedlikehold av FREG der man flytter komponenter over til ny kjøretidsplattform. De fleste endringer vil ikke medføre nedetid, men det er noen unntak:<br/>
 * <b>Lørdag 12.03.2022 fra kl 08 og utover dagen.</b> Her vil <b>konsumentene</b> kunne oppleve at konsumenttjenestene er utilgjengelig i en kortere periode eller er ustabile.
 * <b>Onsdag 16.03.2022 til fredag 18.03.2022.</b>. For <b>produsenter</b> vil det oppleves som treghet/forsinkelse av tilbakemelding. Mottak av meldinger vil være tilgjengelig som vanlig.
