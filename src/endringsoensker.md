@@ -7,7 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
-Finans Norge|24.03.22|Digital kontakinformasjon|Under behandling|
+Finans Norge|24.03.22|Digital kontaktinformasjon|Under behandling|
 NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under behandling
 NAV|27.01.22|Digitalt varsel om dublett|Under behandling
 NAV|27.01.22|Annullering av d-nr-rekvisisjon|Under behandling
