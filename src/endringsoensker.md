@@ -17,7 +17,7 @@ Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adre
 Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling
 Maestro Soft|06.09.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avslått. Den som søker kan informere om dette på egne sider
 Data Factory|25.08.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avslått. Den som søker kan informere om dette på egne sider
-Brønnøysundregistrene|02.07.2021|Digitalisering av rekvisisjon av d-nummer|Skal utvikles våren 2022
+Brønnøysundregistrene|02.07.2021|Digitalisering av rekvisisjon av d-nummer|Ligger på utviklingsplanen for 2022
 NAV|21.06.2021|Oppdatere FREG med kontaktadresse fra NAV|Avvist. Ikke hjemmel til å motta adresseinformasjon fra andre enn personen selv
 Statens sivilrettsforvaltning||Mer detaljert informasjon om vergemål|Skal utvikles i 2022
 KS|mars 2021|Funksjon som lar konsumenten velge at adresser som er gradert ikke skal returneres ved kall mot delings-API-ene.|Under behandling
