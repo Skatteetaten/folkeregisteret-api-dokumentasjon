@@ -175,6 +175,20 @@
           <h2>Nyheter</h2>
           <div class="nyhetscontainer">
             <div class="nyhet">
+            <h3>2022-04-06 - Endringer på tjenesten &quot;Hent siste sekvensnummer&quot;  </h3>
+            <ol start="29">
+    <li>april prodsettes en feilretting på tjenesten hendelser/siste/sekvensnummer. </li>
+    </ol>
+    <p>Hvis konsumentene av tjenesten angir i header at de ønsker svar i application/json returnerer idag tjenesten kun siste sekvensnummer som et tall. Dette tilfredstiller ikke json-format. </p>
+    <p>Etter endringen vil tjenesten returnere svaret i korrekt format. For eksempel: </p>
+    <p>{
+      &quot;sekvensnummer&quot;: 40241
+    }</p>
+    <p>Teknisk dokumentasjonen er oppdatert på <a href="https://app.swaggerhub.com/home?owner=Skatteetaten_FREG">swaggerhub.</a> </p>
+    <p>Hvis konsumenten oppgir at de ønsker responsen i plain text eller xml vil dette fungere som før. </p>
+    
+            </div>
+            <div class="nyhet">
             <h3>2022-04-04 - Syntetisk folkeregister - status og videre plan for utbedringer  </h3>
             <p>De fleste personene med personstatus bosatt og med alder under 100 år er nå utbedret.</p>
     <p>Vi vil i april og mai jobbe videre med utbedring av testpersoner med:</p>
@@ -247,11 +261,6 @@
             <div class="nyhet">
             <h3>2022-01-25 - Ustabil Konsumenttest i Folkeregisteret  </h3>
             <p>Konsumenttest miljø vil være Ustabil/Utilgjengelig 27.01.2022 mellom kl 1600-1800 pga vedlikehold.</p>
-    
-            </div>
-            <div class="nyhet">
-            <h3>2022-01-19 - Ustabil Konsumenttest i Folkeregisteret  </h3>
-            <p>Konsumenttest miljø vil være Ustabil/Utilgjengelig 20.01.2022 mellom kl 1600-1800 pga vedlikehold.</p>
     
             </div>
           </div>
