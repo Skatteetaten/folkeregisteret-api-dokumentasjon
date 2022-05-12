@@ -7,6 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Under behandling
 Norsk Tipping|28.04.22|Politisk eksponert person som attributt i Folkeregisteret|Under behandling
 Finans Norge|24.03.22|Digital kontaktinformasjon|Under behandling|
 NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under behandling
