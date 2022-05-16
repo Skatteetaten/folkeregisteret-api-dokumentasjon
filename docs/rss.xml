@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 16 May 2022 05:58:52 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Brukerundersøkelse]]></title><description><![CDATA[<p>Formålet med undersøkelsen er å kartlegge hvor din virksomhet er i prosessen for å hente opplysninger fra modernisert folkeregister. Svarene fra undersøkelsen vil gi verdifull innsikt slik at Skatteetaten kan tilrettelegge for at flest mulig tar i bruk de nye tjenestene før fristen. </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Folkeregisteret]]></title><description><![CDATA[Folkeregisteret]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 16 May 2022 06:08:12 GMT</lastBuildDate><atom:link href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Digitale møter]]></title><description><![CDATA[<p>I mai og juni arrangerer Skatteetaten digitale møter via Microsoft Teams der du kan stille dine spørsmål om å hente opplysninger fra modernisert folkeregister. Vi arrangerer fire digitale møter med ulike temaer.</p>
+<p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=tdOwyTXACEyBNnYK6MKGACgpdnicLilKnHyhy-SgDppUMzYxWVlXNTZMTUxMNVhCQlZVRDUwSlpYRS4u">Meld deg på her!</a></p>
+<table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Tid</th>
+<th>Tema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Torsdag 19. mai</td>
+<td>Kl 14:00-15:00</td>
+<td>Tjenester i modernisert folkeregister og Delegering i Altinn</td>
+</tr>
+<tr>
+<td>Tirsdag 31. mai</td>
+<td>Kl 10:00-11:00</td>
+<td>Hente folkeregisteropplysninger gjennom API og Bruk av maskinporten</td>
+</tr>
+<tr>
+<td>Torsdag 09. juni</td>
+<td>Kl 14:00-15:00</td>
+<td>Bruk av direkte oppslag på Skatteetatens nettsider</td>
+</tr>
+<tr>
+<td>Torsdag 16. juni</td>
+<td>Kl 14:00-15:00</td>
+<td>Åpen agenda</td>
+</tr>
+</tbody>
+</table>
+]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/digitale-moter</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/digitale-moter</guid><pubDate>Mon, 16 May 2022 06:00:00 GMT</pubDate></item><item><title><![CDATA[Brukerundersøkelse]]></title><description><![CDATA[<p>Formålet med undersøkelsen er å kartlegge hvor din virksomhet er i prosessen for å hente opplysninger fra modernisert folkeregister. Svarene fra undersøkelsen vil gi verdifull innsikt slik at Skatteetaten kan tilrettelegge for at flest mulig tar i bruk de nye tjenestene før fristen. </p>
 <p>Brukerundersøkelsen er frivillig og tar omtrent tre minutter å svare på. Undersøkelsen er ikke anonym, men besvarelsene behandles konfidensielt. Vi sletter besvarelsene før 01. november 2022. </p>
 <p>Svar på undersøkelsen <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=tdOwyTXACEyBNnYK6MKGACgpdnicLilKnHyhy-SgDppUNjU4Q0xSUDZLWDIwRFpYM0gzWUs2S1JNRC4u">her</a>. </p>
 <p>Svarfrist er 24. mai.</p>
@@ -609,7 +642,7 @@ I tillegg endres logikken for navn slik at fornavn og etternavn må oppgis. </p>
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/feilretting-entydig-sok</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/feilretting-entydig-sok</guid><pubDate>Tue, 02 Jun 2020 00:00:00 GMT</pubDate></item><item><title><![CDATA[Vedlikehold brannmur 27. mai]]></title><description><![CDATA[Onsdag 27.05 mellom kl.20 og 22 vil det være vedlikehold av brannmur. Dette kan medføre noe ustabilitet.
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2020-05-26-Vedlikehold%20brannmur</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/driftsstatus/2020-05-26-Vedlikehold%20brannmur</guid><pubDate>Tue, 26 May 2020 14:30:00 GMT</pubDate></item><item><title><![CDATA[Ytelsestest i konsumenttest onsdag 20. mai.]]></title><description><![CDATA[<p>Prosjektet planlegger å kjøre ytelsestest i konsumenttestmiljøet i dag fra kl. 12. Anslagsvis vil testen var i tre timer.
 Det skal ikke medføre utfordringer for konsumenter, men dersom noen skulle oppleve noen utfordringer er det interessant for oss å få informasjon om dette.
-Ta i så fall kontakt på Folkeregister Operasjonssenter <a href="mailto:&#70;&#111;&#108;&#107;&#x65;&#x72;&#x65;&#x67;&#x69;&#x73;&#x74;&#101;&#114;&#45;&#79;&#112;&#x65;&#x72;&#x61;&#115;&#x6a;&#111;&#110;&#115;&#x73;&#101;&#110;&#x74;&#x65;&#x72;&#x40;&#x73;&#107;&#x61;&#x74;&#116;&#101;&#101;&#116;&#97;&#116;&#x65;&#110;&#x2e;&#110;&#x6f;">&#70;&#111;&#108;&#107;&#x65;&#x72;&#x65;&#x67;&#x69;&#x73;&#x74;&#101;&#114;&#45;&#79;&#112;&#x65;&#x72;&#x61;&#115;&#x6a;&#111;&#110;&#115;&#x73;&#101;&#110;&#x74;&#x65;&#x72;&#x40;&#x73;&#107;&#x61;&#x74;&#116;&#101;&#101;&#116;&#97;&#116;&#x65;&#110;&#x2e;&#110;&#x6f;</a> </p>
+Ta i så fall kontakt på Folkeregister Operasjonssenter <a href="mailto:&#x46;&#x6f;&#x6c;&#x6b;&#101;&#x72;&#x65;&#103;&#x69;&#x73;&#116;&#x65;&#114;&#45;&#x4f;&#x70;&#101;&#x72;&#97;&#x73;&#x6a;&#111;&#x6e;&#x73;&#115;&#x65;&#110;&#116;&#101;&#x72;&#x40;&#x73;&#x6b;&#97;&#x74;&#x74;&#101;&#x65;&#116;&#97;&#x74;&#x65;&#x6e;&#x2e;&#x6e;&#111;">&#x46;&#x6f;&#x6c;&#x6b;&#101;&#x72;&#x65;&#103;&#x69;&#x73;&#116;&#x65;&#114;&#45;&#x4f;&#x70;&#101;&#x72;&#97;&#x73;&#x6a;&#111;&#x6e;&#x73;&#115;&#x65;&#110;&#116;&#101;&#x72;&#x40;&#x73;&#x6b;&#97;&#x74;&#x74;&#101;&#x65;&#116;&#97;&#x74;&#x65;&#x6e;&#x2e;&#x6e;&#111;</a> </p>
 ]]></description><link>https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/ytelsestest-i-konsumenttest-onsdag-20.-mai.</link><guid isPermaLink="true">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/ytelsestest-i-konsumenttest-onsdag-20.-mai.</guid><pubDate>Wed, 20 May 2020 00:00:00 GMT</pubDate></item><item><title><![CDATA[Varsling mandag 18.05.2020]]></title><description><![CDATA[<p>LØST.</p>
 <p>Skatteetaten har utfordringer med FREG. Vi jobber med saken og oppdaterer med informasjon.
 Påvirker produsent-tjenester direkte. Medfører at man ikke får tilbakemeldinger på innsendte meldinger. Det er fortsatt mulig å sende inn meldinger.
