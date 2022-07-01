@@ -1,5 +1,5 @@
 ---
-title: Opprydding - DUF-nummer
+title: Informasjon - Vergemål
 date: 2022-06-30T17:00:00+02
 ---
 
