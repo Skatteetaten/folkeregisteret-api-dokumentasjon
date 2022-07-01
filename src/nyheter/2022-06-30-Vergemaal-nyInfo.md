@@ -13,6 +13,6 @@ XSD for personer og hendelser er også oppdatert. Endringene i XSD er bakoverkom
 
 For vergemål er ny informasjon en detaljering av dagens vergemålsomfang. Vi vil i en periode i parallell, dele både ny og gammel overlappende informasjon. På lengre sikt, og med fire måneders varsel, vil vergemålsomfang fases ut. 
 
-Vi vil komme med tilbake med funksjonell beskrivelse av den nye informasjonen som tilgjengeliggjøres.
+Vi vil komme tilbake med funksjonell beskrivelse av den nye informasjonen som tilgjengeliggjøres.
 
 Swaggerhub reflekterer foreløpig ikke endringene. Vi jobber med å rette andre innmeldte feil på swaggerhub som vil lanseres samtidig.
