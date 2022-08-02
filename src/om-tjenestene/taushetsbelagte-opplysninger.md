@@ -17,7 +17,6 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Utenlandsk identifikasjonsnummer
 * Utlendingsmyndighetenes identifikasjonsnummer
 * Falsk identitet
-* Inn- og Utflytting
 * Bibehold av statsborgerskap
 * Familierelasjon
 * Registreringsstatus med unntak av statusene "bosatt", "utflyttet", "død", "opphørt" og "inaktiv" - som er untatt fra taushetsplikt i forskrift
@@ -37,3 +36,4 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Stadfestet fremtidsfullmakt
 * Dødsfall
 * Kontaktopplysninger for dødsbo
+* Inn- og Utflytting
