@@ -1,6 +1,6 @@
 ---
 title: Utflytting og innflytting blir Ikke-taushetsbelagte opplysninger - Oppdatering
-date: 2022-08-02T15:10:00+02
+date: 2022-08-05T12:40:00+02
 ---
 
 Viser til gårsdagens melding om at inn- og utflytting blir tilgjengelig for rettighetspakkene privat, privat uten hjemmel, presse, offentlig-uten-hjemmel og [finans.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/utflytting-og-innflytting-blir-ikke-taushetsbelagte-opplysninger/) 
