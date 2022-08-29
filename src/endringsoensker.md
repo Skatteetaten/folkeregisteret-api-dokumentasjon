@@ -7,6 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+NAV|26.08.22|Tillate opphør og maskinell korreksjon av utdaterte personopplysninger ved melding fra NAV|Under behandling
 Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Under behandling
 Norsk Tipping|28.04.22|Politisk eksponert person som attributt i Folkeregisteret|Under behandling
 Finans Norge|24.03.22|Digital kontaktinformasjon|Under behandling|
