@@ -32,10 +32,10 @@ Oppslag på xsd: <br>
 `https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/xsd`
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
-`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/"`
+`curl -v -k -X HEAD 'https://folkeregisteret-api-konsument.sits.no/folkeregisteret/api/privat/v1/hendelser/feed' -H 'accept: application/json' -H 'Content-Type: application/json' -H "Authorization: Bearer $(ditt_token)"`
 
 Eksempel på bulkoppslag på hendelsesdokumenter:
-`$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d '{"dokumentidentifikator": ["f5446d4445738d5a3dad02276daf8a1f","f5446d4445738d5a3dad02276daf8a1f"]}' -H "Content-Type: application/json" "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/bulkoppslag/"`
+`$ curl -k -v -X POST -d '{"dokumentidentifikator": ["f5446d4445738d5a3dad02276daf8a1f","f5446d4445738d5a3dad02276daf8a1f"]}' -H "Content-Type: application/json" "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/bulkoppslag/" -H "Authorization: Bearer $(ditt_token)"`
 
 ## Headere
 
