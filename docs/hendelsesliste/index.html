@@ -168,9 +168,9 @@
     <p>Oppslag på xsd: <br>
     <code>https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/xsd</code></p>
     <p>Eksempel på curl-kommando som kan benyttes for å teste tjenesten: <br>
-    <code>$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/feed/&quot;</code></p>
+    <code>curl -v -k -X HEAD &#39;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/api/privat/v1/hendelser/feed&#39; -H &#39;accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -H &quot;Authorization: Bearer $(ditt_token)&quot;</code></p>
     <p>Eksempel på bulkoppslag på hendelsesdokumenter:
-    <code>$ curl -k -v -X POST --cert datakonsument.cer --key datakonsument.key -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;f5446d4445738d5a3dad02276daf8a1f&quot;,&quot;f5446d4445738d5a3dad02276daf8a1f&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/bulkoppslag/&quot;</code></p>
+    <code>$ curl -k -v -X POST -d &#39;{&quot;dokumentidentifikator&quot;: [&quot;f5446d4445738d5a3dad02276daf8a1f&quot;,&quot;f5446d4445738d5a3dad02276daf8a1f&quot;]}&#39; -H &quot;Content-Type: application/json&quot; &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/hendelser/bulkoppslag/&quot; -H &quot;Authorization: Bearer $(ditt_token)&quot;</code></p>
     <h2 id="headere">Headere</h2>
     <p><strong>Accept</strong></p>
     <p>Verdien i denne headeren angir ønsket dataformat. Det er støtte for application/json (default) og application/xml</p>

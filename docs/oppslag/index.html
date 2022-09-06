@@ -180,7 +180,7 @@
     </ul>
     <p>Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon eller legitimasjonsdokument i kombinasjon med fornavn og etternavn. Offentlig med hjemmel kan også benytte  utlendingsmyndighetenesIdentifikasjonsnummer  i kombinasjon med fornavn og etternavn som et entydig søk.</p>
     <p>Eksempel på entydig søk på gitte kriterier: 
-    <code>$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot;</code>
+    <code>$ curl -k -v -X GET &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot; -H &#39;Content-Type: application/json&#39; -H &quot;Authorization: Bearer $(ditt_token)&quot;</code>
     <br>
     <strong>Eksempler på kombinasjoner som gir rett til treff:</strong></p>
     <table>
