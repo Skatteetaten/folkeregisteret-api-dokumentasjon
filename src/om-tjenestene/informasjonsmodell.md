@@ -9,7 +9,7 @@ Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og 
 ## Informasjonsmodell
 Siste versjon av informasjonsmodellen er nå tilgjengelig. Informasjonsmodellen beskriver både eksisterende og fremtidige informasjonselementer. Det kan oppstå behov for å endre modellen da prosjektet ikke ferdigstilles før utgangen av 2020.
 
-[Informasjonsmodell - Modernisering av Folkeregisteret](../dokumenter/20220630_Informasjonsmodell-Modernisering av folkeregisteret v3.9.pdf)
+[Informasjonsmodell - Modernisering av Folkeregisteret](../dokumenter/20220916_Informasjonsmodell-Modernisering av folkeregisteret v4.0.pdf)
 
 ## Hendelsesbeskrivelser
 Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret.
