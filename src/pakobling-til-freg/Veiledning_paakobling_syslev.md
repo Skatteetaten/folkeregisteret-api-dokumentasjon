@@ -32,9 +32,9 @@ Systemleverandøren bør innhente bekreftelse på at konsumenten har vært inne 
 Følgende må utføres;
 
 a)	Følge DigDir veiledning for å få tilgang til Maskinporten
-For å få tilgang til Freg så må det på plass en avtale med DigDir om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/leverandor
+For å få tilgang til FREG så må leverandør gjøre avtale med DigDir om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.digdir.no/maskinporten/ta-i-bruk-maskinporten/97 og videre beskrivelse https://samarbeid.digdir.no/maskinporten/konsument-delegert-til-leverandor/120 
 
-b)	Inngå avtale med DigDir om bruk av Maskinporten (Er vederlagsfritt for systemleverandøren). https://samarbeid.difi.no/bruksvilkar/bruksvilkar-leverandorer
+b)	Inngå avtale med DigDir om bruk av Maskinporten (Er vederlagsfritt for systemleverandøren).  
 
 c)	Etabler en tilgang til Maskinporten 
 
