@@ -11,7 +11,7 @@ Tjenestenes endepunkt:
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
-`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/tilbakemelding/api/v2/hendelser/"`
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/tilbakemelding/api/v2/hendelser?seq=1&direction=nyere&pageSize=100"`
 
 ## Headere
 
