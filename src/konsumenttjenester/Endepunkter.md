@@ -29,7 +29,7 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 |Offentlig virksomhet uten hjemmel|folkeregisteret/api/offentligutenhjemmel/|folkeregister:deling/offentligutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/RettighetspakkerUtenTaushetsbelagtOff)|
 |Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|folkeregister:deling/privatutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
 |Privat virksomhet|folkeregisteret/api/privat/|folkeregister:deling/privat|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
-|Finans|folkeregisteret/api/finans/|folkeregister:deling/finans|[OpenAPI Specification swaggerhub]([https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-begrenset-taushetsbelagt/](https://app.swaggerhub.com/apis/Skatteetaten_FREG/LesemodellBegrensetTaushetsbelagt/)|
+|Finans|folkeregisteret/api/finans/|folkeregister:deling/finans|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/LesemodellBegrensetTaushetsbelagt/)|
 |Presse|folkeregisteret/api/presse/|folkeregister:deling/presse|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
 
 ## Ressurser
