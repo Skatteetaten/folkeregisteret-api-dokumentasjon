@@ -1,5 +1,5 @@
 ---
-title: Spørsmål til konsumenter: trenger dere ikrafttredelsesdato for grensejusteringer?
+title: Spørsmål til konsumenter - trenger dere ikrafttredelsesdato for grensejusteringer?
 date: 2022-10-18T16:45:00+02
 ---
 Folkeregisteret lagrer i dag grensejusteringer i Folkeregisteret, men vi lagrer ikke nøyaktig ikrafttredelsesdato.
