@@ -1,6 +1,6 @@
 ---
 title: Vedlikehold konsumenttest
-date: 2022-11-14T15:30:00+01
+date: 2022-11-14T15:50:00+01
 ---
 
 Mandag kl 16:00 vil det utføres nødvendig vedlikehold på rettighetspakkene i Konsumenttestmiljø. Alle rettighetspakker bortsett fra Offentlig-med-hjemmel vil være berørt av arbeidet. 
