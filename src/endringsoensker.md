@@ -15,7 +15,7 @@ NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|U
 NAV|27.01.22|Digitalt varsel om dublett|Under behandling
 NAV|27.01.22|Annullering av d-nr-rekvisisjon|Under behandling
 Skatteetaten / Skatteplikt|17.12.2021|Ikrafttredelsesdato ved kommuneendringer (dvs. endringer i matrikkel-adresse)|Under behandling
-Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Under behandling
+Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Utenfor dagens regelverk. Tas inn i arbeidet med fremtidens Folkeregister
 Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adressetilleggsnavn fra DSF til FREG|Avslått. 
 Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling
 Maestro Soft|06.09.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avslått. Den som søker kan informere om dette på egne sider
