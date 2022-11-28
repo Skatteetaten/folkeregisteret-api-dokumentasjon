@@ -17,17 +17,15 @@ Når avtale med Digdir er opprettet og tilgang er på plass i Altinn, kan du log
 * Trykk på “Registrer deg” i påloggingsvinduet
 * Registrer bruker med din jobbadresse
 * Bekreft brukeren ved å trykke på lenken som kommer på epost. (NB! Sjekk søppelpost om ikke eposten kommer frem).
-<br/><br/><br/>
-NB! Digir har egne sider som kan benyttes ved feilsøking der man ikke får generert token, feks [feilsøking](https://docs.digdir.no/docs/Maskinporten/maskinporten_feilsoking). Hvis man fortsatt har problemer ber man at Servicedesk servicedesk@digdir.no kontaktes.
+
+NB! Digdir har egne sider som kan benyttes ved feilsøking der man ikke får generert token, feks [feilsøking](https://docs.digdir.no/docs/Maskinporten/maskinporten_feilsoking). Hvis man fortsatt har problemer ber man at Servicedesk servicedesk@digdir.no kontaktes.
 
 ### 3. Opprettelse av bruker hos Folkeregisteret.
-Dette gjøres hos Folkeregisteret etter at søknad om tilgang er sendt inn og godkjent. Som konsument trenger du IKKE å gjøre noe her.<br/><br/>
+Dette gjøres hos Folkeregisteret etter at søknad om tilgang er sendt inn og godkjent. Som konsument trenger du IKKE å gjøre noe her. <br/><br/>
 Se [veiledning for konsument](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-konsumenter/) for nærmere informasjon om utfylling og innsending av søknad. Der skal det blant annet angis hvilken rettighetspakke virksomheten søker tilgang til. Rettighetspakke tilsvarer 'scope' på maskinporten-språk.
 
 All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS.
-Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat
-
-Se mer informasjon om dette her: https://docs.digdir.no/maskinporten_auth_server-to-server-oauth2.html
+Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat. Se mer informasjon om dette her: https://docs.digdir.no/maskinporten_auth_server-to-server-oauth2.html
 
 
 ### 4. Systemmessige klargjøringer
