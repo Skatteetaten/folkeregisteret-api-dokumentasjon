@@ -2,7 +2,6 @@
 title: Brukerreisen
 ---
 # Faser
-![test](../dokumenter/brukerreise3.png)<br/>
 Fasene man gjennomfører ved oppkobling mot tjenestene kan beskrives som:
 * Finne informasjon og muligheter
 * Søknad og inngå avtale
