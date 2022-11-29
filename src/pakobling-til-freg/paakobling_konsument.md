@@ -10,7 +10,7 @@ For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysn
 
 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke
 
-2.	Tilgang til Altinn  for å sende inn Søknad om tilgang til Folkeregisteret (RF-1514)
+2.	Tilgang til Altinn  for å sende inn søknad om tilgang til Folkeregisteret (RF-1514)
 
 3.	Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)
 
@@ -40,9 +40,9 @@ For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirekto
 
 Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederlagsfritt for konsumenter). https://samarbeid.digdir.no/digital-postkasse/bruksvilkar/69. 
 
-•	Etabler en tilgang til Maskinporten
+*	Etabler en tilgang til Maskinporten
 
-•	Gjennomfører test av tilgang mot Maskinporten
+*	Gjennomfører test av tilgang mot Maskinporten
 
 Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://docs.digdir.no/docs/Maskinporten/maskinporten_summary.html.
 
@@ -51,11 +51,11 @@ Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/el
 #### 5. Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø
 Følgende må utføres av konsumenten;
 
-a)	Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg
+1.	Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg
 
-b)	Følge Fregs dokumentasjon for oppkobling og tilgang til Fregs konsumenttestmiljø og eller produksjonsmiljø.
+2.	Følge Fregs dokumentasjon for oppkobling og tilgang til Fregs konsumenttestmiljø og eller produksjonsmiljø.
 
-c)	Utvikle og teste oppkobling og integrasjon
+3.	Utvikle og teste oppkobling og integrasjon
 
 Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/.
 
