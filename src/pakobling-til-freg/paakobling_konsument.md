@@ -6,7 +6,7 @@ title: Veileder for konsumenter
 
 For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger tilbyr Skatteetaten direkte oppkobling mot Fregs konsumenttest- og produksjonsmiljø.<br/><br/> 
 
-<b> Dette trenger du:</b>
+ ### Dette trenger du:
 
 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke
 
@@ -27,7 +27,7 @@ Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av
 Her finner du informasjon om Freg og valg av rettighetspakke: https://www.skatteetaten.no/deling/folkeregisteret/intro/finne-data/. <br/><br/>
 
 <b> 2. Tilgang til Altinn for å sende inn Søknad om tilgang til Folkeregisteret (RF-1514) </b><br>
-Du må [Fylle ut og sende inn søknadsskjema](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/) i  Altinn. Husk og lese og akseptere [bruksvilkår](https://www.skatteetaten.no/person/folkeregister/om/modernisering/bruksvilkar/) (kryss av i det elektroniske søknadskjema).
+Du må [fylle ut og sende inn søknadsskjema](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/) i  Altinn. Husk og lese og akseptere [bruksvilkår](https://www.skatteetaten.no/person/folkeregister/om/modernisering/bruksvilkar/) (kryss av i det elektroniske søknadskjema).
 Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bruksvilkår skal rettes skriftlig via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
 
 <b> 3. Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)</b><br>
@@ -44,9 +44,7 @@ Inngå avtale med Digitaliseringsdirektoratet om bruk av Maskinporten (Er vederl
 
 *	Gjennomfører test av tilgang mot Maskinporten
 
-Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://docs.digdir.no/docs/Maskinporten/maskinporten_summary.html.
-
-Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til servicedesk@digdir.no. <br/><br/>
+Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her, https://docs.digdir.no/docs/Maskinporten/maskinporten_summary.html. Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til servicedesk@digdir.no. <br/><br/>
 
 <b> 5. Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø</b><br>
 Følgende må utføres av konsumenten;
@@ -57,9 +55,7 @@ Følgende må utføres av konsumenten;
 
 3.	Utvikle og teste oppkobling og integrasjon
 
-Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/.
-
-Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttest og/eller produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av Fregs konsumenttestmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
+Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/. Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttest og/eller produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av Fregs konsumenttestmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
 
 ### Andre nyttige lenker
 
