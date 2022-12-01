@@ -28,9 +28,7 @@ Mer informasjon om Folkeregisteret finner du på [Skattetaten.no](https://www.sk
 
 Vi vil gi beskjed om viktige endringer som kommer i Folkeregisteret og driftsstatus for våre tjenester her. Du kan følge med på det som skjer gjennom en RSS-leser. Du kan abonnere på hva som skjer gjennom for eksempel RSS-funksjonen i Outlook, eller din favoritt RSS-leser. 
 
-Hvis du ønsker å bruke Outlook, høyreklikk på RSS-feeder folderen og velg legg til ny RSS-feed.
-
-I "ny RSS-feed" dialogboksen legg til adressen  https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml og trykk "Legg til"
+Hvis du ønsker å bruke Outlook, høyreklikk på RSS-feeder folderen og velg legg til ny RSS-feed. I "ny RSS-feed" dialogboksen legg til adressen  https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml og trykk "Legg til"
 
 **Vi publiserer [nyheter og driftsvarsler her](../rss.xml). **
 
