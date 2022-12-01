@@ -4,7 +4,7 @@ title: Taushetsbelagte opplysninger
 
 Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017, fikk vi en tydeligere kategorisering av opplysninger som enten taushetsbelagt eller ikke-taushetsbelagt. Flere opplysninger er nå ikke-taushetsbelagte:
 
-# Taushetsbelagte opplysninger
+## Taushetsbelagte opplysninger
 
 * Foreldre
 * Ektefelle/registrert partner
@@ -22,7 +22,7 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Registreringsstatus med unntak av statusene "bosatt", "utflyttet", "død", "opphørt" og "inaktiv" - som er untatt fra taushetsplikt i forskrift
 <br/><br/>
 
-# Ikke-taushetsbelagte opplysninger
+## Ikke-taushetsbelagte opplysninger
 
 * Fullt navn med historikk
 * Fødselsdato
