@@ -4,6 +4,7 @@ title: Sikkerhet
 
 # For Konsumenter 
 Ny løsning ved bruk av maskinporten er angitt her: [Oppkobling ved bruk av maskinporten](../maskinporten) 
+<br/><br/> 
  
 # For Produsenter
 ## Transportsikring
