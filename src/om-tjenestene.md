@@ -17,7 +17,7 @@ Konsumenter som skal ha tilgang til konsumenttjenester fra Folkeregisteret for e
 Henvendelser rundt tjenestene skal sendes inn via korrekt kanal
 * [Saks- og serviceverktøy](https://www.skatteetaten.no/deling/kontakt/) for de med allerede etablert avtale
 * Kontaktskjema på [Skatteetaten.no](https://www.skatteetaten.no/deling/folkeregisteret-sporsmal/)
-* Kritiske feil eller nedetid utenfor ordinær arbeidstid (15:00 – 08:00): Kontakte oss på 22 07 80 00
+* Kritiske feil eller nedetid utenfor ordinær arbeidstid (15:00 – 08:00): Kontakt oss på 22 07 80 00
 
 Under siden [spørsmål og svar](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/) vil du finne generell kontaktinformasjon. Mer informasjon om Folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/deling/folkeregisteret/intro/)
 <br/><br/>
@@ -28,7 +28,7 @@ Vi vil gi beskjed om viktige endringer som kommer i Folkeregisteret og driftssta
 
 Hvis du ønsker å bruke Outlook, høyreklikk på RSS-feeder folderen og velg legg til ny RSS-feed. I "ny RSS-feed" dialogboksen legg til adressen  https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml og trykk "Legg til"
 
-**Vi publiserer [nyheter og driftsvarsler her](../rss.xml). **
+**Vi publiserer [nyheter og driftsvarsler her](../rss.xml). **<br/><br/>
 
 
 
