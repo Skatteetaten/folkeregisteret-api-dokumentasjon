@@ -6,7 +6,7 @@ title: Veileder for konsumenter
 
 For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger tilbyr Skatteetaten direkte oppkobling mot Fregs konsumenttest- og produksjonsmiljø.<br/><br/> 
 
-### Dette trenger du:
+<b> Dette trenger du:</b>
 
 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke
 
@@ -23,17 +23,17 @@ Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av
 
 ### Slik går du fram:
 
-#### 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke   
+<b> 1.	Informasjon om Folkeregisteret (Freg) og valg av riktig rettighetspakke </b>  
 Her finner du informasjon om Freg og valg av rettighetspakke: https://www.skatteetaten.no/deling/folkeregisteret/intro/finne-data/. <br/><br/>
 
-#### 2. Tilgang til Altinn for å sende inn Søknad om tilgang til Folkeregisteret (RF-1514) 
+<b> 2. Tilgang til Altinn for å sende inn Søknad om tilgang til Folkeregisteret (RF-1514) </b><br>
 Du må [Fylle ut og sende inn søknadsskjema](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/) i  Altinn. Husk og lese og akseptere [bruksvilkår](https://www.skatteetaten.no/person/folkeregister/om/modernisering/bruksvilkar/) (kryss av i det elektroniske søknadskjema).
 Eventuelle spørsmål om utfylling av søknadsskjema og/eller godkjenning av bruksvilkår skal rettes skriftlig via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
 
-#### 3. Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)
+<b> 3. Godkjent søknad om tilgang til Freg (Sendes til konsumenten dersom søknad blir godkjent)</b><br>
 Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i Altinn om at søknaden er godkjent. <br/><br/>
 
-#### 4. Tilgang til Maskinporten (forutsetter at du har virksomhetssertifikat - et for test og et for produksjon)
+<b> 4. Tilgang til Maskinporten (forutsetter at du har virksomhetssertifikat - et for test og et for produksjon)</b><br>
 Følg Digitaliseringsdirektoratets veiledning for å få tilgang til Maskinporten.
 
 For å få tilgang til Freg så må inngås en avtale med Digitaliseringsdirektoratet om bruk av Maskinporten. Gå inn på følgende lenke og følg de beskrevne stegene for å få tilgang til Maskinporten https://samarbeid.digdir.no/maskinporten/maskinporten/25.
@@ -48,7 +48,7 @@ Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten fi
 
 Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til servicedesk@digdir.no. <br/><br/>
 
-#### 5. Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø
+<b> 5. Tilgang til Fregs konsumenttestmiljø og/eller produksjonsmiljø</b><br>
 Følgende må utføres av konsumenten;
 
 1.	Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg
