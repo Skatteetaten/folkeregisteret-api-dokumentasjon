@@ -16,11 +16,5 @@ Presentasjon av delingstjenester finne du nedenfor. Teknisk beskrivelse av de ul
 [Presentasjon av FREG tjenestene](../dokumenter/Folkeregisterets tjenester.pptx)
 <br/><br/>
 
-## Test og testdata
-[Informasjonsvideo om testing og testdata](../dokumenter/04 - Test mot Folkeregisteret.mp4)
-
-[Informasjonsvideo om Tenor](../dokumenter/Informasjonsfilm Tenor.mp4)
-<br/><br/>
-
 ## Ytterligere informasjon
 For å få informasjon om oppdateringer på våre githubsider følg gjerne denne [RSS-feeden](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/rss.xml) 
