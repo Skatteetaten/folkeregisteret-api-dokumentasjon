@@ -7,7 +7,7 @@ Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og 
 
 
 ## Informasjonsmodell
-Siste versjon av informasjonsmodellen er nå tilgjengelig. Informasjonsmodellen beskriver både eksisterende og fremtidige informasjonselementer. [Informasjonsmodell - Modernisering av Folkeregisteret](../dokumenter/20221018_Informasjonsmodell-Modernisering av folkeregisteret v4.1.pdf)
+[Informasjonsmodellen](../dokumenter/20221018_Informasjonsmodell-Modernisering av folkeregisteret v4.1.pdf) beskriver informasjonselementene i Folkeregisteret.
 
 
 ## Hendelsesbeskrivelser
