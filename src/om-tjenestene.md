@@ -10,7 +10,7 @@ Folkeregisteret tilbyr en rekke API-er som kan benyttes av virksomheter som prod
 
 Tjenestene er delt inn i [produsenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/produsenttjenester/) og [konsumenttjenester.](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/) Produsenttjenester er tjenester som benyttes av de som er produsenter av data for Folkeregisteret. Konsumenttjenester er tjenester for å hente data fra registeret, rettet mot alle brukerne av folkeregisterdata.
 
-Konsumenter som skal ha tilgang til konsumenttjenester fra Folkeregisteret for egen organisasjon, samt systemleverandører som skal ha tilgang til Folkeregisteret på vegne av konsumenter, kan koble seg opp mot aktuelle API-er. Informasjon om hvordan man kommer i gang med Folkeregisteret er beskrevet i [brukerreisen](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/brukerreisen/). <br/><br/>For å få tilgang til tjenestene må man søke tilgang og godta bruksvilkår via Altinn. For å få tilgang til taushetsbelagt informasjon må man ha hjemmel i eget lovverk. 
+Konsumenter som skal ha tilgang til konsumenttjenester fra Folkeregisteret for egen organisasjon, samt systemleverandører som skal ha tilgang til Folkeregisteret på vegne av konsumenter, kan koble seg opp mot aktuelle API-er. Informasjon om hvordan man kommer i gang med Folkeregisteret er beskrevet i [brukerreisen](https://www.skatteetaten.no/deling/folkeregisteret/intro/) på Skatteetatens nettside. 
 <br/><br/>
 
 ## Henvendelser
