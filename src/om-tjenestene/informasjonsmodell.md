@@ -4,15 +4,15 @@ title: Informasjonsmodell
 
 # Modeller
 Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og funksjonell forståelse. Utvikling av integrasjon mot folkeregisterets er anbefalt gjort mot den api-spesifikasjonen som er tilgjengelig på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG) 
-
+<br/><br/>
 
 ## Informasjonsmodell
 [Informasjonsmodellen](../dokumenter/20221018_Informasjonsmodell-Modernisering av folkeregisteret v4.1.pdf) beskriver informasjonselementene i Folkeregisteret.
-
+<br/><br/>
 
 ## Hendelsesbeskrivelser
 Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret. [Hendelser fra Folkeregisteret](../dokumenter/Hendelser fra Folkeregisteret_v1_6_2022_06_30.pdf)                                                      
-
+<br/><br/>
 
 ## Begrepsmodeller
 
@@ -33,7 +33,7 @@ Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med
 * [Folkeregisterperson med beskyttelse](../modeller/1455631903.png)
 * [Folkeregisterperson med preferert kontaktadresse](../modeller/1455631904.png)
 * [Folkeregisterperson med kontaktinformasjon for dødsbo](../modeller/1455631905.png)
-
+<br/><br/>
 
 
 ## Strukturmodeller
@@ -57,7 +57,7 @@ Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodell
 * [Folkeregisterperson med sametingets valgmantall](../modeller/1549296236.png)
 * [Folkeregisterperson med samisk språk](../modeller/1549296237.png)
 * [Folkeregisterperson med opphold](../modeller/1549296238.png)
-
+<br/><br/>
 
 ## Historiske kommunenummer - Kommuner før 1988
 Folkeregisteret deler historiske adresser f.eks. historisk Bostedsadresse. 
