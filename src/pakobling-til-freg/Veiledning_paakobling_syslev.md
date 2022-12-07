@@ -3,19 +3,19 @@ title: Veileder for systemleverandører
 ---
 
 ## Veileder for systemleverandører, oppkobling til Freg på vegne av en konsument
-For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten generell tilgang til [Konsumenttjenestene i Freg](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). 
+For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten generell tilgang til [konsumenttjenestene i Freg](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). 
 Freg er basert på at systemleverandøren integrerer sine systemer mot delingstjenestene ved bruk av Fregs selvbetjeningsfunksjonalitet. I tillegg må systemleverandøren ha etablert en integrasjon mot Maskinporten for autorisasjon mot Freg. Tilganger til Freg tildeles ikke ved manuelle prosedyrer. <br/><br/>  
 
 ### Dette trenger du:
 1.	Avtale med konsument
 
-2.	Bekreftelse på at konsumenten har søkt og fått tilgang til folkeregisteropplysninger (Freg) 
+2.	Bekreftelse på at konsumenten har fått tilgang til folkeregisteropplysninger 
 
-3.	Bekreftelse på at konsumenten har delegert rettigheter til Freg i Altinn til din virksomhet
+3.	Bekreftelse på at konsumenten har delegert rettighet i Altinn til din virksomhet
 
 4.	Tilgang til Maskinporten 
 
-5.	Tilgang til Freg 
+5.	Tilgang til Folkeregisteret 
 <br/><br/>
 
 ### Slik går du fram:
@@ -23,11 +23,11 @@ Freg er basert på at systemleverandøren integrerer sine systemer mot delingstj
 #### 1.	Avtale med konsument 
 Det må inngås en avtale mellom konsumenten og systemleverandøren. Dersom konsumentens systemleverandør behandler personopplysninger på vegne av konsumenten, skal det i tillegg inngås databehandleravtale i tråd med gjeldende regler i personvernregelverket.<br/><br/>
 
-#### 2.	Bekreftelse på at konsumenten har søkt og fått tilgang til folkeregisteropplysninger (Freg) 
-Systemleverandøren bør innhente bekreftelse på at konsument har [søkt](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/) og fått innvilget tilgang til Folkeregisteret. <br/><br/>
+#### 2.	Bekreftelse på at konsumenten har fått tilgang til folkeregisteropplysninger 
+Systemleverandøren bør innhente bekreftelse på at konsument har [søkt](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/) og fått innvilget tilgang til Folkeregisteret. Det inkluderer å vite hvilke [rettighetspakker](https://www.skatteetaten.no/deling/folkeregisteret/intro/finne-data/) konsumenten har fått tilgang til.  <br/><br/>
 
-#### 3.	Bekreftelse på at konsumenten har delegert rettigheter til Freg i Altinn til din virksomhet  
-Systemleverandøren bør innhente bekreftelse på at konsumenten har delegert tilgang til systemleverandøren gjennom Altinn. <br/><br/> 
+#### 3.	Bekreftelse på at konsumenten har delegert rettighet i Altinn til din virksomhet  
+Systemleverandøren bør innhente bekreftelse på at konsumenten har [delegert rettighet](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/guide-til-delegering/) til systemleverandøren gjennom Altinn. Det er viktig at konsumenten delegerer rettighet til de rettighetspakkene som konsumenten har fått tilgang til. <br/><br/> 
 
 #### 4.	Tilgang til Maskinporten
 Følgende må utføres;
@@ -44,7 +44,7 @@ Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten fi
 
 Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til  servicedesk@digdir.no. <br/><br/>
 
-#### 5.	Tilgang til Freg
+#### 5.	Tilgang til Folkeregisteret
 Følgende må utføres av systemleverandøren;
 
 a)	Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg 
