@@ -149,29 +149,29 @@
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
           <h2 id="veileder-for-systemleverand-rer-oppkobling-til-freg-p-vegne-av-en-konsument">Veileder for systemleverandører, oppkobling til Freg på vegne av en konsument</h2>
-    <p>For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten generell tilgang til <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/">Konsumenttjenestene i Freg</a>. 
+    <p>For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten generell tilgang til <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/">konsumenttjenestene i Freg</a>. 
     Freg er basert på at systemleverandøren integrerer sine systemer mot delingstjenestene ved bruk av Fregs selvbetjeningsfunksjonalitet. I tillegg må systemleverandøren ha etablert en integrasjon mot Maskinporten for autorisasjon mot Freg. Tilganger til Freg tildeles ikke ved manuelle prosedyrer. <br/><br/>  </p>
     <h3 id="dette-trenger-du-">Dette trenger du:</h3>
     <ol>
     <li><p>Avtale med konsument</p>
     </li>
-    <li><p>Bekreftelse på at konsumenten har søkt og fått tilgang til folkeregisteropplysninger (Freg) </p>
+    <li><p>Bekreftelse på at konsumenten har fått tilgang til folkeregisteropplysninger </p>
     </li>
-    <li><p>Bekreftelse på at konsumenten har delegert rettigheter til Freg i Altinn til din virksomhet</p>
+    <li><p>Bekreftelse på at konsumenten har delegert rettighet i Altinn til din virksomhet</p>
     </li>
     <li><p>Tilgang til Maskinporten </p>
     </li>
-    <li><p>Tilgang til Freg 
+    <li><p>Tilgang til Folkeregisteret 
     <br/><br/></p>
     </li>
     </ol>
     <h3 id="slik-g-r-du-fram-">Slik går du fram:</h3>
     <h4 id="1-avtale-med-konsument">1.    Avtale med konsument</h4>
     <p>Det må inngås en avtale mellom konsumenten og systemleverandøren. Dersom konsumentens systemleverandør behandler personopplysninger på vegne av konsumenten, skal det i tillegg inngås databehandleravtale i tråd med gjeldende regler i personvernregelverket.<br/><br/></p>
-    <h4 id="2-bekreftelse-p-at-konsumenten-har-s-kt-og-f-tt-tilgang-til-folkeregisteropplysninger-freg-">2.    Bekreftelse på at konsumenten har søkt og fått tilgang til folkeregisteropplysninger (Freg)</h4>
-    <p>Systemleverandøren bør innhente bekreftelse på at konsument har <a href="https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/">søkt</a> og fått innvilget tilgang til Folkeregisteret. <br/><br/></p>
-    <h4 id="3-bekreftelse-p-at-konsumenten-har-delegert-rettigheter-til-freg-i-altinn-til-din-virksomhet">3.    Bekreftelse på at konsumenten har delegert rettigheter til Freg i Altinn til din virksomhet</h4>
-    <p>Systemleverandøren bør innhente bekreftelse på at konsumenten har delegert tilgang til systemleverandøren gjennom Altinn. <br/><br/> </p>
+    <h4 id="2-bekreftelse-p-at-konsumenten-har-f-tt-tilgang-til-folkeregisteropplysninger">2.    Bekreftelse på at konsumenten har fått tilgang til folkeregisteropplysninger</h4>
+    <p>Systemleverandøren bør innhente bekreftelse på at konsument har <a href="https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/">søkt</a> og fått innvilget tilgang til Folkeregisteret. Det inkluderer å vite hvilke <a href="https://www.skatteetaten.no/deling/folkeregisteret/intro/finne-data/">rettighetspakker</a> konsumenten har fått tilgang til.  <br/><br/></p>
+    <h4 id="3-bekreftelse-p-at-konsumenten-har-delegert-rettighet-i-altinn-til-din-virksomhet">3.    Bekreftelse på at konsumenten har delegert rettighet i Altinn til din virksomhet</h4>
+    <p>Systemleverandøren bør innhente bekreftelse på at konsumenten har <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/guide-til-delegering/">delegert rettighet</a> til systemleverandøren gjennom Altinn. Det er viktig at konsumenten delegerer rettighet til de rettighetspakkene som konsumenten har fått tilgang til. <br/><br/> </p>
     <h4 id="4-tilgang-til-maskinporten">4.    Tilgang til Maskinporten</h4>
     <p>Følgende må utføres;</p>
     <p>a)    Følge DigDir veiledning for å få tilgang til Maskinporten. 
@@ -180,7 +180,7 @@
     <p>c)    Etabler en tilgang til Maskinporten </p>
     <p>d)    Gjennomfører test av tilgang mot Maskinporten.<br>Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten finner du her,<a href="https://docs.digdir.no/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen">https://docs.digdir.no/maskinporten_guide_apikonsument.html#registrering-via-samarbeidsportalen</a></p>
     <p>Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/eller feil eller avviksmeldinger knyttet til oppkobling og bruk av Maskinporten skal rettes til  <a href="mailto:servicedesk@digdir.no">servicedesk@digdir.no</a>. <br/><br/></p>
-    <h4 id="5-tilgang-til-freg">5.    Tilgang til Freg</h4>
+    <h4 id="5-tilgang-til-folkeregisteret">5.    Tilgang til Folkeregisteret</h4>
     <p>Følgende må utføres av systemleverandøren;</p>
     <p>a)    Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg </p>
     <p>b)    Følge Fregs dokumentasjon for oppkobling og tilgang til Fregs konsumenttestmiljø</p>
