@@ -2,9 +2,9 @@
 title: Veileder for systemleverandører
 ---
 
-## Veileder for systemleverandører, oppkobling til Freg på vegne av en konsument
-For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten generell tilgang til [konsumenttjenestene i Freg](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). 
-Freg er basert på at systemleverandøren integrerer sine systemer mot delingstjenestene ved bruk av Fregs selvbetjeningsfunksjonalitet. I tillegg må systemleverandøren ha etablert en integrasjon mot Maskinporten for autorisasjon mot Freg. Tilganger til Freg tildeles ikke ved manuelle prosedyrer. <br/><br/>  
+## Veileder for systemleverandører, oppkobling til FREG på vegne av en konsument
+For systemleverandører som har behov for løpende å hente oppdateringer av folkeregisteropplysninger på vegne av sine kunder (konsument), tilbyr Skatteetaten generell tilgang til [konsumenttjenestene i Folkeregisteret (FREG)](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/). 
+FREG er basert på at systemleverandøren integrerer sine systemer mot delingstjenestene ved bruk av FREGs selvbetjeningsfunksjonalitet. I tillegg må systemleverandøren ha etablert en integrasjon mot Maskinporten for autorisasjon mot FREG. Tilganger til FREG tildeles ikke ved manuelle prosedyrer. <br/><br/>  
 
 ### Dette trenger du:
 1.	Avtale med konsument
@@ -47,15 +47,15 @@ Eventuelle spørsmål til hvordan du etablerer oppkobling til Maskinporten og/el
 #### 5.	Tilgang til Folkeregisteret
 Følgende må utføres av systemleverandøren;
 
-a)	Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg 
+a)	Lese og sette seg inn i teknisk dokumentasjon og oppkobling mot Folkeregisteret 
    
-b)	Følge Fregs dokumentasjon for oppkobling og tilgang til Fregs konsumenttestmiljø
+b)	Følge Fregs dokumentasjon for oppkobling og tilgang til testmiljø
 
 c)	Utvikle og teste oppkobling og integrasjon 
 
 Informasjon for alle ovennevnte punkter a til c finner du under siden [konsumenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/)
 
-Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttest og/eller produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av Fregs konsumenttestmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
+Eventuelle spørsmål til hvordan du etablerer oppkobling til test- og produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av testmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
 
 ### Andre nyttige lenker  
 
