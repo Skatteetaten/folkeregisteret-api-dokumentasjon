@@ -49,7 +49,7 @@ Følgende må utføres av systemleverandøren;
 
 a)	Lese og sette seg inn i teknisk dokumentasjon og oppkobling mot Folkeregisteret 
    
-b)	Følge Fregs dokumentasjon for oppkobling og tilgang til testmiljø
+b)	Følge dokumentasjon for oppkobling og tilgang til testmiljø
 
 c)	Utvikle og teste oppkobling og integrasjon 
 
