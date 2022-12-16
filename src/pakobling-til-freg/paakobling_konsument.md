@@ -2,9 +2,9 @@
 title: Veileder for konsumenter
 ---
 
-## Veileder for virksomheter som vil koble seg opp mot Freg
+## Veileder for virksomheter som vil koble seg opp mot Folkeregisteret
 
-For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger tilbyr Skatteetaten direkte oppkobling mot Fregs konsumenttest- og produksjonsmiljø.<br/><br/> 
+For konsumenter som har behov for løpende oppdateringer av folkeregisteropplysninger tilbyr Skatteetaten direkte oppkobling mot Folkeregisterets test- og produksjonsmiljø.<br/><br/> 
 
  ### Dette må du gjøre:
 
@@ -51,13 +51,13 @@ Nærmere informasjon om hvordan du teknisk kan koble deg opp mot Maskinporten fi
 <b> 5. Etabler tilgang til test- og produksjonsmiljø</b><br>
 Følgende må utføres av konsumenten;
 
-1.	Lese og sette seg inn i teknisk dokumentasjon om Freg og oppkobling mot Freg
+1.	Lese og sette seg inn i teknisk dokumentasjon og oppkobling mot Folkeregisteret
 
-2.	Følge Fregs dokumentasjon for oppkobling og tilgang til Fregs konsumenttestmiljø og eller produksjonsmiljø.
+2.	Følge dokumentasjon for oppkobling og tilgang til test- og produksjonsmiljø.
 
 3.	Utvikle og teste oppkobling og integrasjon
 
-Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/. Eventuelle spørsmål til hvordan du etablerer oppkobling til Fregs konsumenttest og/eller produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av Fregs konsumenttestmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
+Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider for konsumenter: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/. Eventuelle spørsmål til hvordan du etablerer oppkobling til test- og produksjonsmiljø, feil eller avviksmeldinger knyttet til oppkobling og bruk av Folkeregisterets testmiljø skal sendes inn via kontaktskjema her: https://www.skatteetaten.no/deling/kontakt/. <br/><br/>
 
 ### Andre nyttige lenker
 
