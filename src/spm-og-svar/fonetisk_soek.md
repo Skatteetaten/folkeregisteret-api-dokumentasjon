@@ -1,7 +1,7 @@
 ---
 title: Fonetisk søk
 ---
-Skatteetaten anbefaler å gjøre entydig søk ved hjelp av ulike søkekombinasjoner med og uten historikk (i den rekkefølgen):
+Skatteetaten anbefaler å gjøre entydig søk ved hjelp av ulike søkekombinasjoner uten og med historikk (i den rekkefølgen):
 * Oppslag på navn (fornavn og etternavn) og fødselsdato
 * Oppslag på navn og adresseinformasjon
 * Oppslag på navn, fødselsdato og adresseinformasjon
