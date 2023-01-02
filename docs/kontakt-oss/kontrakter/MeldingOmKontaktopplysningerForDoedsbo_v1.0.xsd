@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="folkeregisteret:melding:endringavkontaktopplysningerfordoedsbo:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="folkeregisteret:melding:endringavkontaktopplysningerfordoedsbo:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2017-09-15T09:18:59.230+0200" name="generertDato"/>
+            <xsd:attribute fixed="1.0" name="versjon"/>
+            <xsd:attribute fixed="" name="beskrivelse"/>
+            <xsd:attribute fixed="KontaktopplysningerForDoedsbo" name="modellnavn"/>
+            <xsd:attribute fixed="folkeregisteret:melding:endringavkontaktopplysningerfordoedsbo:v1" name="navnerom"/>
+            <xsd:attribute fixed="false" name="begrepsreferanse"/>
+            <xsd:attribute fixed="false" name="dokumentasjon"/>
+            <xsd:attribute fixed="false" name="nillable"/>
+            <xsd:attribute fixed="false" name="modellelement"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="meldingOmKontakopplysningerForDoedsbo" type="MeldingOmKontakopplysningerForDoedsbo"/>
+    <xsd:complexType name="MeldingOmKontakopplysningerForDoedsbo">
+        <xsd:sequence>
+            <xsd:element name="innsending" type="Innsending"/>
+            <xsd:element name="forespoersel" type="ForespoerselOmRegistreringAvKontaktopplysningerForDoedsbo"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AdvokatSomKontakt">
+        <xsd:sequence>
+            <xsd:element name="personnavn" type="Personnavn"/>
+            <xsd:element minOccurs="0" name="organisasjonsnavn" type="Organisasjonsnavn"/>
+            <xsd:element minOccurs="0" name="organisasjonsnummer" type="Organisasjonsnummer"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DoedPerson">
+        <xsd:sequence>
+            <xsd:element name="foedselsEllerDNummer" type="Foedselsnummer"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ForespoerselOmRegistreringAvKontaktopplysningerForDoedsbo">
+        <xsd:sequence>
+            <xsd:element name="avdoed" type="DoedPerson"/>
+            <xsd:element name="kontaktinformasjon" type="KontaktinformasjonForDoedsbo"/>
+            <xsd:element name="avsender" type="Kilde"/>
+            <xsd:element name="skifteform" type="Skifteform"/>
+            <xsd:element name="attestutstedelsesdato" type="Dato"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Innsending">
+        <xsd:sequence>
+            <xsd:element name="avsendersMeldingsidentifikator" type="Tekst"/>
+            <xsd:element name="avsendersInnsendingstidspunkt" type="DatoKlokkeslett"/>
+            <xsd:element minOccurs="0" name="kildesystem" type="Tekst"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Kilde">
+        <xsd:sequence>
+            <xsd:element name="virksomhetsnavn" type="Navn"/>
+            <xsd:element minOccurs="0" name="avsendersSaksreferanse" type="Tekst"/>
+            <xsd:element name="saksbehandler" type="Personnavn"/>
+            <xsd:element minOccurs="0" name="ePostTilSaksbehandler" type="Epostadresse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="KontaktadresseForDoedsbo">
+        <xsd:sequence>
+            <xsd:element maxOccurs="2" name="adresselinje" type="TekstMedInnhold"/>
+            <xsd:element name="poststedsnavn" type="TekstMedInnhold"/>
+            <xsd:element name="postnummer" type="TekstMedInnhold"/>
+            <xsd:element minOccurs="0" name="landkode" type="LandkodeIsoAlfa3"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="KontaktinformasjonForDoedsbo">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:element name="person" type="PersonSomKontakt"/>
+                <xsd:element name="advokat" type="AdvokatSomKontakt"/>
+                <xsd:element name="organisasjon" type="OrganisasjonSomKontakt"/>
+            </xsd:choice>
+            <xsd:element name="adresse" type="KontaktadresseForDoedsbo"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="OrganisasjonSomKontakt">
+        <xsd:sequence>
+            <xsd:element name="organisasjonsnavn" type="Organisasjonsnavn"/>
+            <xsd:element minOccurs="0" name="organisasjonsnummer" type="Organisasjonsnummer"/>
+            <xsd:element minOccurs="0" name="kontaktpersonnavn" type="Personnavn"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PersonSomKontakt">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="foedselsdato" type="Dato"/>
+                    <xsd:element name="personnavn" type="Personnavn"/>
+                </xsd:sequence>
+                <xsd:sequence>
+                    <xsd:element name="foedselsEllerDNummer" type="Foedselsnummer"/>
+                </xsd:sequence>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Skifteform">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="offentlig"/>
+            <xsd:enumeration value="annet"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="Personnavn">
+        <xsd:sequence>
+            <xsd:element name="fornavn" type="NavnMedInnhold"/>
+            <xsd:element minOccurs="0" name="mellomnavn" type="NavnMedInnhold"/>
+            <xsd:element name="etternavn" type="NavnMedInnhold"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Organisasjonsnavn">
+        <xsd:restriction base="Tekst">
+            <xsd:maxLength value="175"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Organisasjonsnummer">
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="9"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Foedselsnummer">
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="11"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Dato">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tekst">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="DatoKlokkeslett">
+        <xsd:restriction base="xsd:dateTime"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Navn">
+        <xsd:restriction base="Tekst">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="200"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Epostadresse">
+        <xsd:restriction base="Tekst">
+            <xsd:maxLength value="254"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="TekstMedInnhold">
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="\s*\S.*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LandkodeIsoAlfa3">
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="([A-Z]){3}"/>
+            <xsd:length value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="NavnMedInnhold">
+        <xsd:restriction base="TekstMedInnhold">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="200"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
