@@ -13,15 +13,6 @@ Tjenestene er delt inn i [produsenttjenester](https://skatteetaten.github.io/fol
 Konsumenter som skal ha tilgang til konsumenttjenester fra Folkeregisteret for egen organisasjon, samt systemleverandører som skal ha tilgang til Folkeregisteret på vegne av konsumenter, kan koble seg opp mot aktuelle API-er. Informasjon om hvordan du som konsument kommer i gang med Folkeregisteret, er beskrevet i [brukerreisen](https://www.skatteetaten.no/deling/folkeregisteret/intro/) på Skatteetatens nettside. 
 <br/><br/>
 
-## Henvendelser
-Henvendelser rundt tjenestene skal sendes inn via korrekt kanal
-* [Saks- og serviceverktøy](https://www.skatteetaten.no/deling/kontakt/) for de med allerede etablert avtale
-* Kontaktskjema på [Skatteetaten.no](https://www.skatteetaten.no/deling/folkeregisteret-sporsmal/)
-* Kritiske feil eller nedetid utenfor ordinær arbeidstid (15:00 – 08:00): Kontakt oss på 22 07 80 00
-
-Under siden [spørsmål og svar](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/) vil du finne generell kontaktinformasjon. Mer informasjon om Folkeregisteret finner du på [Skattetaten.no](https://www.skatteetaten.no/deling/folkeregisteret/intro/)
-<br/><br/>
-
 ## Nyheter og driftsvarsel
 
 Vi vil gi beskjed om viktige endringer som kommer i Folkeregisteret og driftsstatus for våre tjenester her. Du kan følge med på det som skjer gjennom en RSS-leser. Du kan abonnere på hva som skjer gjennom for eksempel RSS-funksjonen i Outlook, eller din favoritt RSS-leser. 
