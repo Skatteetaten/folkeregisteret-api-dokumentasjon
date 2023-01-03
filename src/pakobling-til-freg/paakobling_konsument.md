@@ -23,7 +23,7 @@ Dersom du som konsument ønsker å benytte en systemleverandør som på vegne av
 
 ### Slik går du fram:
 
-<b> Kartlegge virksomhetens behov for data fra Folkeregisteret </b>  
+<b> 1. Kartlegge virksomhetens behov for data fra Folkeregisteret </b>  
 Du må kartlegge behovet til virksomheten din for å forstå hva du behøver av data. Virksomheten din må gjøre en del forberedelser før dere kan motta data fra Skatteetaten. Les mer på våre [nettsider](https://www.skatteetaten.no/deling/folkeregisteret/intro/kartlegg/) <br/><br/>
 
 <b> 2. Finne og vurdere riktig rettighetspakke </b><br>
