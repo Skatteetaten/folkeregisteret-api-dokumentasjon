@@ -1,5 +1,5 @@
 ---
-title: Brukerveiledning for systemleverandører
+title: Brukerveileder for systemleverandører
 ---
 
 ## Veileder for systemleverandører, oppkobling til FREG på vegne av en konsument
