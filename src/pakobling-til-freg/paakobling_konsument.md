@@ -1,5 +1,5 @@
 ---
-title: Veileder for konsumenter
+title: Brukerveileder for konsumenter
 ---
 
 ## Veileder for virksomheter som vil koble seg opp mot Folkeregisteret
