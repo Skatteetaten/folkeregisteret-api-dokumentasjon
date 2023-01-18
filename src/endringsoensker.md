@@ -12,7 +12,7 @@ Norges Døveforbund|13.12.22|Registrering av tegnspråk-kompetanse|Avslått, ute
 NAV|26.08.22|Tillate opphør og maskinell korreksjon av utdaterte personopplysninger ved melding fra NAV|Under behandling
 Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Under behandling, mulig utviklingstiltak 2023
 Norsk Tipping|28.04.22|Politisk eksponert person som attributt i Folkeregisteret|Under behandling
-Finans Norge|24.03.22|Digital kontaktinformasjon|Avvist
+Finans Norge|24.03.22|Digital kontaktinformasjon|Avslått
 NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under behandling
 NAV|27.01.22|Digitalt varsel om dublett|Under behandling
 NAV|27.01.22|Annullering av d-nr-rekvisisjon|Under behandling
