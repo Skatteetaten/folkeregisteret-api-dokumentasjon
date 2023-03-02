@@ -12,11 +12,11 @@ Stavanger kommune|02.01.23|Forkortelse av adressenavn|Under behandling
 Norges Døveforbund|13.12.22|Registrering av tegnspråk-kompetanse|Avslått, utenfor gjeldende regelverk. Dersom NDF ønsker å jobbe videre med forslag om registrering i Folkeregisteret, må det igangsettes et arbeid for å få på plass et rettslig grunnlag for registrering
 NAV|26.08.22|Tillate opphør og maskinell korreksjon av utdaterte personopplysninger ved melding fra NAV|Under behandling
 Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Mulig utviklingstiltak 2024
-Norsk Tipping|28.04.22|Politisk eksponert person som attributt i Folkeregisteret|Under behandling
+Norsk Tipping|28.04.22|Politisk eksponert person som attributt i Folkeregisteret|Avslått
 Finans Norge|24.03.22|Digital kontaktinformasjon|Avslått
-NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under behandling
-NAV|27.01.22|Digitalt varsel om dublett|Under behandling
-NAV|27.01.22|Annullering av d-nr-rekvisisjon|Under behandling
+NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under arbeid, vi avklarer juridisk handlingsrom
+NAV|27.01.22|Digitalt varsel om dublett|Avslått, kan bruke tipskanal
+NAV|27.01.22|Annullering av d-nr-rekvisisjon|Avslått, kan bruke tipskanal
 Skatteetaten / Skatteplikt|17.12.2021|Ikrafttredelsesdato ved kommuneendringer (dvs. endringer i matrikkel-adresse)|Avslått
 Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Utenfor dagens regelverk. Tas inn i arbeidet med fremtidens Folkeregister
 Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adressetilleggsnavn fra DSF til FREG|Avslått. 
