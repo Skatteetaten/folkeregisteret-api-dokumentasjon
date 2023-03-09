@@ -7,6 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+Brønnøysundregistrene|03.03.22|Internasjonal addr. Ønsker strukturert informasjon om landnavn|FF-1379 Under arbeid
 Helsenett|31.01.23|Grunnkrets - også på oppholdsadresser|Under behandling
 Stavanger kommune|02.01.23|Forkortelse av adressenavn|Under behandling
 Norges Døveforbund|13.12.22|Registrering av tegnspråk-kompetanse|Avslått, utenfor gjeldende regelverk. Dersom NDF ønsker å jobbe videre med forslag om registrering i Folkeregisteret, må det igangsettes et arbeid for å få på plass et rettslig grunnlag for registrering
