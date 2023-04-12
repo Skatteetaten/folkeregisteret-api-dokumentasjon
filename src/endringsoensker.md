@@ -7,6 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+Brønnøysundregistrene| 11.04.23|Behov for ny funksjonalitet i digital løsning for rekvirering av d-nummer|Under behandling (FF-1392)
 Brønnøysundregistrene|03.03.23|Internasjonal addresse: Ønsker strukturert informasjon om landnavn| Under behandling (FF-1379)
 Helsenett|31.01.23|Grunnkrets - også på oppholdsadresser|Under behandling
 Stavanger kommune|02.01.23|Forkortelse av adressenavn|Under behandling
