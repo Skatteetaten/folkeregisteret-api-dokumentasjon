@@ -1,5 +1,5 @@
 ---
-title: Endringer på hendelsestypen Endring i Adressebeskyttelse
+title: Endringer på hendelsestypen Endring i Adressebeskyttelse 20230508
 date: 2023-05-08T10:45:00+02
 ---
 
