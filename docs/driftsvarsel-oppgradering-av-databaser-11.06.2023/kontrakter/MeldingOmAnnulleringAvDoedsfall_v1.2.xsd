@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="folkeregisteret:melding:annulleringavdoedsfall:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="folkeregisteret:melding:annulleringavdoedsfall:v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation>
+			<xsd:attribute fixed="2019-08-20T13:49:28.567+0200" name="generertDato"/>
+			<xsd:attribute fixed="1.2" name="versjon"/>
+			<xsd:attribute fixed="" name="beskrivelse"/>
+			<xsd:attribute fixed="MeldingOmAnnulleringAvDoedsfall 1.1" name="modellnavn"/>
+			<xsd:attribute fixed="folkeregisteret:melding:annulleringavdoedsfall:v1" name="navnerom"/>
+			<xsd:attribute fixed="false" name="begrepsreferanse"/>
+			<xsd:attribute fixed="false" name="dokumentasjon"/>
+			<xsd:attribute fixed="false" name="nillable"/>
+			<xsd:attribute fixed="false" name="modellelement"/>
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="meldingOmAnnulleringAvDoedsfall" type="MeldingOmAnnulleringAvDoedsfall"/>
+	<xsd:complexType name="MeldingOmAnnulleringAvDoedsfall">
+		<xsd:sequence>
+			<xsd:element name="innsending" type="Innsending"/>
+			<xsd:element name="forespoersel" type="ForespoerselOmAnnulleringAvDoedsfall"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ForespoerselOmAnnulleringAvDoedsfall">
+		<xsd:sequence>
+			<xsd:element name="forespoerselssdato" type="Dato"/>
+			<xsd:element name="kilde" type="InnsendertypeForMeldingOmDoedsfall"/>
+			<xsd:element name="avsendersSaksreferanse" type="Tekst" minOccurs="0"/>
+			<xsd:element name="avsendersSaksbehandler" type="Tekst"/>
+			<xsd:element name="levendePerson" type="Person"/>
+			<xsd:element name="innsender" type="Innsender" minOccurs="0"/>
+			<xsd:element name="mottak" type="Informasjonsmottak" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Helseinstitusjon">
+		<xsd:sequence>
+			<xsd:element name="virksomhet" type="Navn"/>
+			<xsd:element name="avdeling" type="Navn" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Informasjonsmottak">
+		<xsd:sequence>
+			<xsd:element name="informasjonskanal" type="KanalForAnnulleringAvDoedsfall"/>
+			<xsd:element name="puncher" type="Identifikator" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Innsender">
+		<xsd:sequence>
+			<xsd:element name="identifikasjon" type="Foedselsnummer" minOccurs="0"/>
+			<xsd:element name="institusjon" type="Helseinstitusjon" minOccurs="0"/>
+			<xsd:element name="kontaktinformasjon" type="Kontaktinformasjon" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Kontaktinformasjon">
+		<xsd:sequence>
+			<xsd:element name="ePostadresse" type="Epostadresse" minOccurs="0"/>
+			<xsd:element name="telefonnummer" type="Telefonnummer" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Person">
+		<xsd:sequence>
+			<xsd:element name="foedselsnummer" type="Foedselsnummer"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="KanalForAnnulleringAvDoedsfall">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="papirmelding"/>
+			<xsd:enumeration value="manuellRegistrering"/>
+			<xsd:enumeration value="annet"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Innsending">
+		<xsd:sequence>
+			<xsd:element name="avsendersMeldingsidentifikator" type="Tekst"/>
+			<xsd:element name="avsendersInnsendingstidspunkt" type="DatoKlokkeslett"/>
+			<xsd:element name="kildesystem" type="Tekst" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="Dato">
+		<xsd:restriction base="xsd:date"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="InnsendertypeForMeldingOmDoedsfall">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="tingretten"/>
+			<xsd:enumeration value="helse"/>
+			<xsd:enumeration value="utenriksstasjon"/>
+			<xsd:enumeration value="lensmannskontor"/>
+			<xsd:enumeration value="nav"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Tekst">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="4000"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Navn">
+		<xsd:restriction base="Tekst">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="200"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Identifikator">
+		<xsd:restriction base="Tekst"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="Foedselsnummer">
+		<xsd:restriction base="Tekst">
+			<xsd:length value="11"/>
+			<xsd:pattern value="[0-9]+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Epostadresse">
+		<xsd:restriction base="Tekst">
+			<xsd:maxLength value="254"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Telefonnummer">
+		<xsd:restriction base="Tekst">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DatoKlokkeslett">
+		<xsd:restriction base="xsd:dateTime"/>
+	</xsd:simpleType>
+</xsd:schema>
