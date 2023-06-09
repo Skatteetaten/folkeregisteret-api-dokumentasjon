@@ -1,4 +1,4 @@
 ---
-title: Reversering av kommune og fylkesstruktur 2024
+title: Fylkes- og kommuneendringer 2024
 ---
 Mer informasjon kommer
