@@ -11,7 +11,7 @@ Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og 
 <br/><br/>
 
 ## Hendelsesbeskrivelser
-Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret. [Hendelser fra Folkeregisteret](../dokumenter/Hendelser fra Folkeregisteret_v1_6_2022_06_30.pdf).                                                      
+Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret. [Hendelser fra Folkeregisteret](../dokumenter/Hendelser fra Folkeregisteret_v1_6_2023_06_30.pdf).                                                      
 <br/><br/>
 
 ## Begrepsmodeller
