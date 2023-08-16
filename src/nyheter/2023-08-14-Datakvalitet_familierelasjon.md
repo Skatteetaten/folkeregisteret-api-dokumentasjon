@@ -1,5 +1,5 @@
 ---
-title: Utbedring av datakvalitet - familierelasjon 20230814
+title: Utbedring av datakvalitet for familierelasjon 20230814
 date: 2023-08-14T08:30:00+02
 ---
 
