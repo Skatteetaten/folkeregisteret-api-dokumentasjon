@@ -39,6 +39,7 @@ Skal du være redaktør på siden og leser dette har du allerede ordnet med nød
 9. Skriv et filnavn der det står "Name your file...". Filnavnet må være på formen år-måned-dag, mer presist yyyy-mm-dd.
 10. Klikk på "Commit changes". Endringen din vil da bli lagret. 
 11. Det neste som skjer er at endringen plukkes opp av en jobb som kjører hvert 2. minutt, sidene bygges på nytt dersom det finnes endringer. Kontroller at endringen din ble riktig!
+12. Sjekk at feed validerer https://validator.w3.org/feed/check.cgi
 
 ## Utviklere
 
