@@ -1,5 +1,5 @@
 ---
-title: Oppdatering vedlikehold FREG perioder mars 2022
+title: Oppdatering av 090322 vedlikehold FREG perioder mars 2022
 date: 2022-03-09T08:45:00
 ---
 Viser til meldt sak vedr vedlikehold i perioden mars (varsling av 3/3-2022). Etter flere innspill velger man å skyve vedlikeholdet 1 uke. Det medfører følgende endringer i planverket:<br/>
