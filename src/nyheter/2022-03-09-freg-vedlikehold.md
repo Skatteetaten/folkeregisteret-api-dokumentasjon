@@ -1,5 +1,5 @@
 ---
-title: Oppdatering vedlikehold FREG perioder mars 2022
+title: Oppdatering av tidligere melding om vedlikehold FREG mars 2022
 date: 2022-03-09T09:00:00+01
 ---
 Meldingen er lagt ut som driftsvarsel, men repeteres som nyhet.<br/><br/>
