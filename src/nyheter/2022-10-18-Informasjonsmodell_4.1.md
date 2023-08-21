@@ -1,5 +1,5 @@
 ---
-title: Informasjonsmodell dokument oppdatert
+title: Informasjonsmodell dokument oppdatert 181022
 date: 2022-10-18T17:00:00+02
 ---
 
