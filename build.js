@@ -115,7 +115,7 @@ const smith = (clean = false) => {
         }))
         .use(feed({
             collection: 'driftsstatus-og-nyheter',
-            limit: 100
+            limit: false
         }))
         .use(layouts({
             default: 'layout.hbs',
