@@ -1,5 +1,5 @@
 ---
-title: Rettighetspakke offentlig med hjemmel er ikke oppdatert 22.08.2021
+title: Rettighetspakken offentlig med hjemmel er ikke oppdatert 22.08.2021
 date: 2021-08-22T12:12:00
 ---
 Rettighetspakke offentlig med hjemmel er dessverre ikke oppdatert siden i går kl.16:25. 
