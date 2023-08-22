@@ -1,5 +1,5 @@
 ---
-title: Ny versjon av syntetisk folkeregister
+title: Ny versjon av syntetisk folkeregister playground
 date: 2021-01-12
 ---
 
