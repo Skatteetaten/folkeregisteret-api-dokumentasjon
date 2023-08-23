@@ -7,11 +7,11 @@ Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og 
 <br/><br/>
 
 ## Informasjonsmodell
-[Informasjonsmodellen](../dokumenter/20230731_Informasjonsmodell-Modernisering av folkeregisteret v4.31.pdf) beskriver informasjonselementene i Folkeregisteret.
+[Informasjonsmodellen](../dokumenter/20230731_Informasjonsmodell-Modernisering av folkeregisteret v4.32.pdf) beskriver informasjonselementene i Folkeregisteret.
 <br/><br/>
 
 ## Hendelsesbeskrivelser
-Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret. [Hendelser fra Folkeregisteret](../dokumenter/Hendelser fra Folkeregisteret_v1_6_2023_06_30.pdf).                                                      
+Beskriver alle hendelsestypene som vil tilgjengeliggjøres fra Folkeregisteret. [Hendelser fra Folkeregisteret](../dokumenter/Hendelser fra Folkeregisteret_v1_6_2023_08_23.pdf).                                                      
 <br/><br/>
 
 ## Begrepsmodeller
