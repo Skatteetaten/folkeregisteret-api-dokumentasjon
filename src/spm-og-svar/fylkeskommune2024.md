@@ -14,7 +14,7 @@ Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er pr
 | ------------- | ------------- | ------------- | ------------- |
 | Troms og Finnmark | 243462 | 6987 | 183 |
 | Vestfold og Telemark | 429775 | 7133 | 267 |
-| Viken | 1 296491 | 29974 | 804 |
+| Viken | 1296491 | 29974 | 804 |
 | Ålesund | 67647 | 1094 | 29 |
 | Totalt | 2037375 | 45188 | 1283 |
 
