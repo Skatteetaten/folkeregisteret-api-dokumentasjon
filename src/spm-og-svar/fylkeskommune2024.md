@@ -7,7 +7,8 @@ Følgende områder skal splittes opp med gjeldende fra 01.01.2024:
 * Troms og Finnmark deles i to nye fylker: Troms og Finnmark
 * Ålesund kommune deles i to kommuner: Ålesund og Haram
 
-<b>Omfang av endringer i Folkeregisteret:</b><br/>
+<b>Omfang av endringer i Folkeregisteret:</b>
+
 Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er primært kommunenummer som endres. Endringene kommer fra Kartverket, matrikkelen.
 | Område | Bostedsadresse | Oppholdsadresse | Delt bosted |
 |:---|:--- |:--- |:--- |
@@ -21,7 +22,8 @@ Endringene bør være oppdatert i registeret i løpet av 32 timer, anslagsvis ti
 
 Utvalgte tidskritiske produsent-tjenester skal ikke være nede mer enn 30 minutter. Det kan blant annet gjelde tildeling av fødselsnr, dnr-rekvisisjon, annullere dødsfall, adressegradering. Andre produsent-tjenester kan være utilgjengelig inntil registeret er oppdatert.
 
-Det er 2 løsningsalternativer for Folkeregisteret:<br/>
+Det er 2 løsningsalternativer for Folkeregisteret.
+
 Lese inn fra matrikkel og behandle det som matrikkelendring
 * Fordel: Prinsipielt riktig metode, ytelsesforbedring
 * Ulempe: tid, avhengighet
@@ -32,22 +34,26 @@ Endre kommunenummer selv
 
 Alternativ 2 er det Skatteetaten foreløpig har landet på, men det gjenstår mer ytelsestesting før vi er sikre.
 
-<b>Konsumenter av Folkeregisteret:</b><br/>
+<b>Konsumenter av Folkeregisteret:</b>
+
+
 Skatteetaten forventer at konsumenter kan lese endringer og gjøre oppslag fra FREG som normaltog vil tilpasse kapasitet til å håndtere ekstra trafikk samt sikre overvåkning og beredskap. 
 Anbefaling for de første dagene i januar 2024:<br/>
 * Ikke gjør unødvendige kall. 
 * Periodisk vask og store uttrekk kan gjerne vente
 
-<b>Testing :</b><br/>
+<b>Testing:</b>
+
+
 Skatteetaten skal kjøre intern ytelsestest i august og september. Test av endringene vil fra oktober kunne benyttes av konsumentene:<br/>
 * Eget miljø med ca 1 mill berørte personer (Playground Endepunkter ) 
 * Autentisering via maskinporten 
 * Sekvensnr for kommunenrendringshendelser
 
-<b>Lenker:</b><br/>
-https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701/
+[Lenke til mer informasjon](https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701)
 
-<b>Spørsmål og svar:</b><br/>
+<b>Spørsmål og svar:</b>
+
 | Nummer | Spørsmål | Svar |
 |:---|:--- |:--- |
 | 1 | Vi mottar oppdateringer ved hjelp av hendelseslisten. Hvordan vil dette løses? | Det sendes fortløpende hendelser om dette fra kl 00.05 den 1. januer 24 og utover til det er ferdig, antar ca 32 timer |
