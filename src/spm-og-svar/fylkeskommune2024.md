@@ -8,16 +8,15 @@ Følgende områder skal splittes opp:
 * Troms og Finnmark deles i to nye fylker: Troms og Finnmark
 * Ålesund kommune deles i to kommuner: Ålesund og Haram
 
-
 <b>Omfang av endringer i Folkeregisteret:</b><br/>
 Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er primært kommunenummer som endres. Endringene kommer fra Kartverket, matrikkelen.
 | Område | Bostedsadresse | Oppholdsadresse | Delt bosted |
 |:---|:--- |:--- |:--- |
-| Troms og Finnmark | 243 462 | 6 987 | 183 |
-| Vestfold og Telemark | 429 775 | 7 133 | 267 |
-| Viken | 1 296 491 | 29 974 | 804 |
-| Ålesund | 67 647 | 1 094 | 29 |
-| Totalt | 2 037 375 | 45 188 | 1 283 |
+| Troms og Finnmark | 243462 | 6987 | 183 |
+| Vestfold og Telemark | 429775 | 7133 | 267 |
+| Viken | 1 296491 | 29974 | 804 |
+| Ålesund | 67647 | 1094 | 29 |
+| Totalt | 2037375 | 45188 | 1283 |
 
 Endringene bør være oppdatert i registeret i løpet av 32 timer, anslagsvis til den 2.januar 24 kl 08.00.
 
@@ -47,11 +46,11 @@ Skatteetaten skal kjøre intern ytelsestest i august og september. Test av endri
 * Sekvensnr for kommunenrendringshendelser
 
 <b>Lenker:</b><br/>
-https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701/
+[Ny struktur](https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701/)
 
 <b>Spørsmål og svar:</b><br/>
 | Nummer | Spørsmål | Svar |
-|:---|:--- |:---|
+|:---|:--- |:--- |
 | 1 | Vi mottar oppdateringer ved hjelp av hendelseslisten. Hvordan vil dette løses? | Det sendes fortløpende hendelser om dette fra kl 00.05 den 1. januer 24 og utover til det er ferdig, antar ca 32 timer |
 | 2 | Når vil Folkeregisteret være oppdatert med nye kommunenummer for adressene som endres? | Det er fortsatt noe usikkerhet knyttet til dette, men målet er å få oppdatert registeret i løpet av 32 timer  |
 | 3 | Vi bruker ikke hendelseslisten, blir vi påvirket da? | Oppslagstjenesten vil være tilgjengelige både via nettleser og maskin-til-maskin. Men periodisk vask kan medføre flere endringer enn normalt  |
