@@ -10,13 +10,11 @@ Følgende områder skal splittes opp med gjeldende fra 01.01.2024:
 <b>Omfang av endringer i Folkeregisteret:</b>
 
 Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er primært kommunenummer som endres. Endringene kommer fra Kartverket, matrikkelen.
-| Område | Bostedsadresse | Oppholdsadresse | Delt bosted |
-| ------------- | ------------- | ------------- | ------------- |
-| Troms og Finmark | dsfsd | dsfsd | dsfsd |
-| Vestfold og Telemark | dsf  | dsf  | dsf  |
-| Viken | dfs | dfs | dfs |
-| Ålesund | dfs | dfs | dfs |
-| Totalt | dfs | dfs | dfs |
+* Troms og Finmark - Bostedsadresse:243462, Oppholdsadresse:6987, Delt bosted:183
+* Vestfold og Telemark - Bostedsadresse:429775, Oppholdsadresse:7133, Delt bosted:267
+* Viken - Bostedsadresse:1296491, Oppholdsadresse:29974, Delt bosted:804
+* Ålesund - Bostedsadresse:67647, Oppholdsadresse:1094, Delt bosted:29
+* Totalt - Bostedsadresse:2037375, Oppholdsadresse:45188, Delt bosted:1283
 
 Endringene bør være oppdatert i registeret i løpet av 32 timer, anslagsvis til den 2.januar 24 kl 08.00.
 
