@@ -1,8 +1,7 @@
 ---
 title: Fylkes og kommuneendringer 2024
 ---
-Gjelder fra 01.01.2024.<br/><br/>
-Følgende områder skal splittes opp:
+Følgende områder skal splittes opp med gjeldende fra 01.01.2024:
 * Viken deles i tre nye fylker: Østfold, Akershus og Buskerud.
 * Vestfold og Telemark deles i to nye fylker: Vestfold og Telemark.
 * Troms og Finnmark deles i to nye fylker: Troms og Finnmark
