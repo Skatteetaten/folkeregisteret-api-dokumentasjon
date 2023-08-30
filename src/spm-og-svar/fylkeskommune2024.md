@@ -45,7 +45,7 @@ Skatteetaten skal kjøre intern ytelsestest i august og september. Test av endri
 * Sekvensnr for kommunenrendringshendelser
 
 <b>Lenker:</b><br/>
-[Ny struktur](https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701/)
+https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701/
 
 <b>Spørsmål og svar:</b><br/>
 | Nummer | Spørsmål | Svar |
