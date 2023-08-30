@@ -11,7 +11,7 @@ Følgende områder skal splittes opp med gjeldende fra 01.01.2024:
 
 Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er primært kommunenummer som endres. Endringene kommer fra Kartverket, matrikkelen.
 | Område | Bostedsadresse | Oppholdsadresse | Delt bosted |
-|:---|:--- |:--- |:--- |
+| --- | --- |--- | --- |
 | Troms og Finnmark | 243462 | 6987 | 183 |
 | Vestfold og Telemark | 429775 | 7133 | 267 |
 | Viken | 1 296491 | 29974 | 804 |
@@ -55,7 +55,7 @@ Skatteetaten skal kjøre intern ytelsestest i august og september. Test av endri
 <b>Spørsmål og svar:</b>
 
 | Nummer | Spørsmål | Svar |
-|:---|:--- |:--- |
+| --- | --- | --- |
 | 1 | Vi mottar oppdateringer ved hjelp av hendelseslisten. Hvordan vil dette løses? | Det sendes fortløpende hendelser om dette fra kl 00.05 den 1. januer 24 og utover til det er ferdig, antar ca 32 timer |
 | 2 | Når vil Folkeregisteret være oppdatert med nye kommunenummer for adressene som endres? | Det er fortsatt noe usikkerhet knyttet til dette, men målet er å få oppdatert registeret i løpet av 32 timer  |
 | 3 | Vi bruker ikke hendelseslisten, blir vi påvirket da? | Oppslagstjenesten vil være tilgjengelige både via nettleser og maskin-til-maskin. Men periodisk vask kan medføre flere endringer enn normalt  |
