@@ -1,5 +1,5 @@
 ---
-title: Nye opplysninger i rettighetspakker
+title: Nye opplysninger i rettighetspakker 28092020
 date: 2020-09-28
 ---
 
