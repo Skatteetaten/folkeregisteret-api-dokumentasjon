@@ -8,6 +8,8 @@ Konsumenten har ansvar for egen testgjennomføring. Test for konsumenter må fok
 ## Krav til testmiljø og testdata
 Konsumenter som skal integrasjonsteste mot modernisert folkeregister må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø må etablere dette. Oppkobling mot testmiljøet skjer via maskinporten, og krever virksomhetssertifikat, pass på at på at du har et gyldig testsertfikat, les mer om sikkerhet og virksomhetssertifikater her: https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/
 
+Oversikt over testmiljøer og produksjon finnes [her](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/). Legg merke til at for konsumenter finnes det to testmiljøer. Playground er primært rettet mot test av framtidig funksjonalitet, mens konsumenttest er primært test av funksjonalitet dagens produksjon besitter.
+
 ## Avslutning av test og oppstart i produksjon
 Konsumenter skal etter avsluttet testperiode, og i forkant av oppstart produksjon oppsummere integrasjonstesten. Konsumenten kan bli forespurt om å fremlegge dokumentasjon på hvordan integrasjonen er testet. 
 
