@@ -171,6 +171,12 @@
     
             </div>
             <div class="nyhet">
+            <h3>2023-09-27 - Utbedring av datakvalitet for personstatus 20230927  </h3>
+            <h3 id="utbedring-av-datakvalitet">Utbedring av datakvalitet</h3>
+    <p>Onsdag 27. september vil personstatus på ca 66 000 personer endres. Arbeidet gjøres for å bedre datakvaliteten. Endringene distribueres ut på hendelsesfeeden.  </p>
+    
+            </div>
+            <div class="nyhet">
             <h3>2023-09-21 - Testdata for vergemål og rettslig hadleevne i konsument-playground - 20230921  </h3>
             <p>Testdata for nytt vergemål og begrenset rettslig handleevne er tilgjengelig i konsument playground. </p>
     <p>Testdata tilgjengelig for de to rettighetspakkene offentlig med hjemmel og finans. Det er oppdaget en feil som rammer de øvrige rettighetspakkene. Det jobbes med å rette opp i dette nå. </p>
@@ -232,23 +238,6 @@
             <h3 id="informasjonsmodell-dokumentet-er-oppdatert">Informasjonsmodell dokumentet er oppdatert</h3>
     <p>Heading manglet i tabell i kapittel 7.1.4, det er nå korrigert.
     Du finner det <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsmodell/">her</a>.</p>
-    
-            </div>
-            <div class="nyhet">
-            <h3>2023-06-29 - Informasjon - Vergemål - BegrensningIRettsligHandleevne  </h3>
-            <h3 id="ny-informasjon-om-vergem-l-og-begrensning-i-rettslig-handleevne">Ny informasjon om vergemål og Begrensning i rettslig handleevne</h3>
-    <p>Vi går i produksjon med endringene nedenfor 1. november 2023.</p>
-    <p>I samarbeid med Statens sivilrettsforvaltning arbeider vi med å utvide registeret med mer detaljert informasjon om Vergemål, samt  innføre «Begrensning i rettslig handleevne» som en ny entitet.</p>
-    <p>Vi lanserte endringer allerede tilbake i 2022-06-30. Det er en justering siden dette. Det vi tidligere kalte &#39;Fratatt rettslig handleevne&#39; er nå døpt om til &#39;Begrensning i rettslig handleevne&#39;. Fratatt ligger i modellen, men vil aldri inneholde data.</p>
-    <p>Hendelsesbeskrivelser og informasjonsmodell er <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsmodell/">oppdatert</a></p>
-    <p>Swaggerhub for personer og hendelser er oppdatert. Endringene i Swagger er bakoverkompatibel, så den kan taes i bruk allerede nå. Gammel OpenAPISpec vil fungere inntil vi deler data i de nye informasjonselementene.
-    XSD endepunktene til de forskjellige rettighetspakkene vil fortsatt gi eksisterende modell (v.1.5), den blir oppdatert i løpet av august når sommerfrys er over.</p>
-    <p>Det vil komme data i de nye feltene 1.november. Hvilke rettighetspakker som får tilgang til hvilken informasjon er beskrevet i Informasjonsmodell dokumentet. </p>
-    <p>For vergemål er ny informasjon en detaljering av dagens vergemålsomfang (&#39;vergemålEllerFremtidsfullmakt.verge.omfang&#39;), denne informasjonen vil fra produksjonsdato ligge på entiteten &#39;vergemålEllerFremtidsfullmakt.verge.tjenesteområde&#39;.
-    Vi flytter også vergens navn til &#39;vergemålEllerFremtidsfullmakt.verge.navnFødselsdato&#39;, som også har støtte for mer identifiserende informasjon.
-    &#39;omfang og &#39;navn&#39; blir altså erstattet fra og med produksjonsdato og vi slutter da å levere data i de feltene. </p>
-    <p>Begrensning i rettslig handleevne er et nytt informasjonselement som kun har metadata. Dersom en Begrensning i rettslig handleevne er gjeldende har personen en begrensning.</p>
-    <p>Testdata blir tilgjenegelig i august.</p>
     
             </div>
           </div>
