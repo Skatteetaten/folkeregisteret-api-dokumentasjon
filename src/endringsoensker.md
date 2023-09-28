@@ -7,6 +7,9 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+KS|22.09.23|Søk på bruksenhetsnummer|Under behandling (FF-1500)
+KS|22.09.23|Utrekk på flere kommunenummer|Under behandling (FF-1499)
+KS|22.09.23|Søk på DUF-nummer|Under behandling(FF-1498)
 Brønnøysundregistrene| 11.04.23|Behov for ny funksjonalitet i digital løsning for rekvirering av d-nummer|Bestilt utvikling (FF-1392)
 Brønnøysundregistrene|03.03.23|Internasjonal addresse: Ønsker strukturert informasjon om landnavn| Under behandling (FF-1379)
 Helsenett|31.01.23|Grunnkrets - også på oppholdsadresser|Under behandling
