@@ -12,11 +12,11 @@ Eksempelvis i konsumenttest for offentlig hjemmel og tjenesten personer/xsd:
 ## Tilgjengelige miljøer
 
 
-| Miljø | URL | 
-|----------|-----------------------------------------------------------|
-|Playground| https://folkeregisteret-api-konsument-playground.sits.no/ |
-|Konsumenttest| https://folkeregisteret-api-konsument.sits.no/ |
-|Produksjon| https://folkeregisteret.api.skatteetaten.no/ |
+| Miljø | URL | Beskrivelse |
+|----------|-----------------------------------------------------------|----------|
+|Playground| https://folkeregisteret-api-konsument-playground.sits.no/ | Framtidig funksjonalitet |
+|Konsumenttest| https://folkeregisteret-api-konsument.sits.no/ | Testversjon av funksjonalitet i produksjon |
+|Produksjon| https://folkeregisteret.api.skatteetaten.no/ | Live produksjon av Folkeregisteret |
 
 ## Tilgjengelige  rettighetspakker
 
