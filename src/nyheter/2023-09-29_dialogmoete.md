@@ -13,9 +13,7 @@ Det vil informeres om hvordan endringene vil utføres og hvordan dette vil innvi
 
 Tidspunkt (det er likt innhold i begge møter):
 
-18. okt  kl 13-14
-
-25. okt  kl 13-14       
+18. okt  kl 13-14 og 25. okt  kl 13-14       
 
 Meld deg på og still gjerne spørsmål i forkant av møtet.
 
