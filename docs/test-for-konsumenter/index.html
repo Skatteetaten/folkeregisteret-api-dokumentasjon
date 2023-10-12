@@ -154,21 +154,27 @@
           <h2 id="krav-til-testgjennomf-ring">Krav til testgjennomføring</h2>
     <p>Konsumenten har ansvar for egen testgjennomføring. Test for konsumenter må fokusere på å avdekke at forventede forretningsregler trigges korrekt basert på aktuelle hendelser.</p>
     <h2 id="krav-til-testmilj-og-testdata">Krav til testmiljø og testdata</h2>
-    <p>Konsumenter som skal integrasjonsteste mot modernisert folkeregister må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø må etablere dette. Oppkobling mot testmiljøet skjer via maskinporten, og krever virksomhetssertifikat, pass på at på at du har et gyldig testsertfikat, les mer om sikkerhet og virksomhetssertifikater her: <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/">https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/</a></p>
-    <p>Oversikt over testmiljøer og produksjon finnes <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/">her</a>. Legg merke til at for konsumenter finnes det to testmiljøer. Playground er primært rettet mot test av framtidig funksjonalitet, mens konsumenttest er primært test av funksjonalitet dagens produksjon besitter.</p>
-    <h2 id="avslutning-av-test-og-oppstart-i-produksjon">Avslutning av test og oppstart i produksjon</h2>
-    <p>Konsumenter skal etter avsluttet testperiode, og i forkant av oppstart produksjon oppsummere integrasjonstesten. Konsumenten kan bli forespurt om å fremlegge dokumentasjon på hvordan integrasjonen er testet. </p>
-    <h2 id="s-k-i-testdata-tenor-testdatas-k">Søk i testdata: Tenor testdatasøk</h2>
-    <p>Tenor testdatasøk gir deg muligheten til å søke i testpersonene fra syntetisk folkeregister, og er et nyttig verktøy i arbeidet med å lage integrasjon mot Folkeregisteret. Testpersonene henter du ved å integrere mot konsumenttestmiljøet til folkeregisteret. Testdatasøket lar deg søke på ulike egenskaper ved testpersonene enten via et webgrensesnitt med enkelt eller avansert søk, eller via et API. Se mer informasjon på <a href="https://www.skatteetaten.no/skjema/testdata/">https://www.skatteetaten.no/skjema/testdata/</a></p>
-    <h2 id="folkeregisteret-tilbyr-syntetiske-testdata-fra-et-eget-testmilj-for-konsumenter">Folkeregisteret tilbyr syntetiske testdata fra et eget testmiljø for konsumenter</h2>
-    <p>Formålet med det syntetiske Folkeregisteret er å understøtte integrasjonstest for konsumenter av data fra Folkeregisteret.
-    De syntetiske testpersonene tilbys fra et eget testmiljø for konsumenter, der vi tilbyr simulering av hendelser via Folkeregisterets konsumenttjenester.
+    <p>Konsumenter som skal integrasjonsteste mot modernisert folkeregister må teste fra testmiljø som utelukkende har syntetiske testdata. De som per i dag ikke har syntetiske testmiljø må etablere dette. </p>
+    <p>Oversikt over testmiljøer og produksjon finnes <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/">her</a>. Legg merke til at for konsumenter finnes det to testmiljøer. Playground er primært rettet mot test av framtidig funksjonalitet, mens konsumenttest er primært test av produksjonslik funksjonalitet.</p>
+    <p>Oppkobling mot testmiljøet skjer via maskinporten, og krever virksomhetssertifikat, pass på at på at du har et gyldig testsertfikat, les mer om sikkerhet og virksomhetssertifikater <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sikkerhet/">her</a>.</p>
+    <h2 id="test-av-fremtidig-funksjonalitet">Test av fremtidig funksjonalitet</h2>
+    <p>Playground er et testmiljø der vi tilbyr test av fremtidig funksjonalitet: <a href="https://folkeregisteret-api-konsument-playground.sits.no/">https://folkeregisteret-api-konsument-playground.sits.no/</a>
+    Testpersonene i playground er basert på en kopi av syntetisk folkeregister, men det vil ikke være synkronisert med testpersonene i konsumenttestmiljøet. Det finnes per nå ikke en egen søkeløsning for playground. Dette er noe vi vurderer å tilby på sikt.
+    Vi publiserer lister med testdata som kan brukes i de aktuelle scenariene og informerer om endringene i forkant via <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/">Nyheter</a></p>
+    <h2 id="syntetisk-folkeregister-og-integrasjonstest">Syntetisk folkeregister og integrasjonstest</h2>
+    <p>Det syntetiske folkeregisteret er tilgjengelig via testmiljøet konsumenttest, som er det primære testmiljøet for integrasjonstest: <a href="https://folkeregisteret-api-konsument.sits.no/">https://folkeregisteret-api-konsument.sits.no/</a></p>
+    <p>Konsumenttest er et testmiljø med produksjonslike API og funksjonalitet.
+    Her tilbyr vi simulering av hendelser via Folkeregisterets konsumenttjenester. I noen tilfeller legger vi ut endringer og ny funksjonalitet i konsumenttestmiljøet ca. to uker før endringen inntreffer i produksjon. Vi varsler i så fall om dette via <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/">Nyheter</a>.</p>
+    <p>Formålet med det syntetiske Folkeregisteret er å understøtte integrasjonstest for konsumenter av data fra Folkeregisteret.  Det syntetiske Folkeregisteret består av i overkant av 1 million syntetiske testpersoner med syntetiske fødsels- og d-nummer, der vi har plusset på +80 på måneden. Testpersonene er navngitt med adjektiv og substantiv – f.eks. &quot;Vakker blomst&quot;.
     Tenor testdatasøk er integrert mot rettighetspakken offentlig-med-hjemmel, og har tilgang til alle testpersonene fra syntetisk Folkeregister.</p>
-    <p>Det syntetiske Folkeregisteret består av i overkant av 1 million syntetiske testpersoner med syntetiske fødsels- og d-nummer, der vi har plusset på +80 på måneden.
-    Testpersonene er navngitt med adjektiv og substantiv – f.eks. &quot;Vakker blomst&quot;. </p>
+    <h2 id="s-k-i-testdata-tenor-testdatas-k">Søk i testdata: Tenor testdatasøk</h2>
+    <p>Tenor testdatasøk gir deg muligheten til å søke i testpersonene fra syntetisk folkeregister, og er et nyttig verktøy i arbeidet med å lage integrasjon mot Folkeregisteret. Testpersonene henter du ved å integrere mot konsumenttestmiljøet til folkeregisteret. Testdatasøket lar deg søke på ulike egenskaper ved testpersonene enten via et webgrensesnitt med enkelt eller avansert søk, eller via et API. Se mer informasjon på  <a href="https://www.skatteetaten.no/skjema/testdata/">https://www.skatteetaten.no/skjema/testdata/</a></p>
+    <p>Se også tips til avansert søk for Folkeregisteret <a href="https://skatteetaten.github.io/testnorge-tenor-dokumentasjon/brukerveiledning/">på</a>. </p>
     <h2 id="behov-og-innspill">Behov og innspill</h2>
     <p>Har du behov og innspill til syntetisk folkeregister og utvidede søkemuligheter i Tenor testdatasøk?
     Send dette inn via <a href="https://www.skatteetaten.no/deling/kontakt/">Kontakt oss om deling av data - Skatteetaten</a></p>
+    <h2 id="avslutning-av-test-og-oppstart-i-produksjon">Avslutning av test og oppstart i produksjon</h2>
+    <p>Konsumenter skal etter avsluttet testperiode, og i forkant av oppstart produksjon oppsummere integrasjonstesten. Konsumenten kan bli forespurt om å fremlegge dokumentasjon på hvordan integrasjonen er testet. </p>
     
         </div>
       </div>
