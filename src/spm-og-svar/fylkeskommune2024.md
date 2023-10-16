@@ -13,11 +13,11 @@ Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er pr
 
 | Område | Bostedsadresse | Oppholdsadresse | Delt bosted |
 | ------------- | ------------- | ------------- | ------------- |
-| Troms og Finmark | 234 462 | 6987 | 183 |
+| Troms og Finmark | 243 462 | 6 987 | 183 |
 | Vestfold og Telemark | 429 775 | 7 133  | 267  |
 | Viken | 1 296 491 | 29 974  | 804  |
-| Ålesund | 1 296 491 | 29 974  | 804  |
-| Totalt | 2 037 491 | 45 188  | 1 283  |
+| Ålesund | 67 647 | 1 094  | 29  |
+| Totalt | 2 037 375 | 45 188  | 1 283  |
 
 Ved endringen kommer man til å oppdatere endringer direkte noe som medfører at registeret er utført i løpet av 10 timer. Det er innkommet ett spesifikt krav fra NAV. Det medfører at de er ferdig med innlesing av endringen innen 2.januar 24 kl 08.00. Ved endringen kommer man til å etterstrebe innmeldte krav til at informasjon er lest inn. Det håndteres ved at de ulike rettighetspakke får oppdatert informasjon i rekkefølge der de prioriterte får informasjon først. 
 
