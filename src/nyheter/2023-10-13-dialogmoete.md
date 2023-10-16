@@ -3,7 +3,7 @@ title: Påminnelse dialogmøte oktober 2023
 date: 2023-10-13T16:35:00+02
 ---
 
-### Påmninnelse om ååmelding til dialogmøte om endringer i fylker og kommuner fra 1.1.24
+### Påminnelse om påmelding til dialogmøte om endringer i fylker og kommuner fra 1.1.24
 
 Det vil bli endringer i fylkes-og kommunestrukturen fra 1.1.24. Dette vil medføre at over 2 mill adresser blir endret i Folkeregisteret, hovedsakelig er det kommunenummer som endres. 
 
