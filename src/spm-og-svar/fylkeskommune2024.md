@@ -24,6 +24,7 @@ Ved endringen kommer man til å oppdatere endringer direkte noe som medfører at
 Kritiske produsent-tjenester skal stort sett være kjørende. Det kan blant annet gjelde tildeling av fødselsnr, dnr-rekvisisjon, annullere dødsfall, adressegradering. Andre produsent-tjenester kan være utilgjengelig inntil registeret er oppdatert.
 
 <b>Konsumenter av Folkeregisteret:</b>
+
 Endringen kan medfører ekstraordinær trafikk mot delingstjenestene gitt at man gjør oppslag basert på hendelser. I tillegg er det viktig at normale oppslag fungerer som normalt, dvs som ikke gjøres basert på endringen. Derfor er det viktig at hver konsument vurderer følgende:
 * Periodisk vask og store uttrekk bør vente hvis de ikke er kritiske
 * Konsument må kunne håndtere feilsituasjoner og prøve på nytt, det innebære aktiv backoff-strategi der man ikke spamer tjenestene automatisk
@@ -35,7 +36,7 @@ Folkeregisteret vil gjøre tilpasninger for å håndtere økende trafikk, men op
 
 Ekstern test for konsumeter er tilgjengelig fra midten av oktober 2023
 * Eget miljø, dvs konsument playground, se [her](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/)
-* Testbestand på ca 1 million berørte persober
+* Testbestand på ca 1 million berørte personer
 * Autentisering skjer som normalt vha maskinporten
 * Sekvensnummer for endringen blir publisert på [nyheter](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/)
 
