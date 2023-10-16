@@ -160,42 +160,67 @@
     </ul>
     <p><b>Omfang av endringer i Folkeregisteret:</b></p>
     <p>Det er minimum 2,1 millioner endringer på adresser i Folkeregisteret. Det er primært kommunenummer som endres. Endringene kommer fra Kartverket, matrikkelen.</p>
+    <table>
+    <thead>
+    <tr>
+    <th>Område</th>
+    <th>Bostedsadresse</th>
+    <th>Oppholdsadresse</th>
+    <th>Delt bosted</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Troms og Finmark</td>
+    <td>234 462</td>
+    <td>6987</td>
+    <td>183</td>
+    </tr>
+    <tr>
+    <td>Vestfold og Telemark</td>
+    <td>429 775</td>
+    <td>7 133</td>
+    <td>267</td>
+    </tr>
+    <tr>
+    <td>Viken</td>
+    <td>1 296 491</td>
+    <td>29 974</td>
+    <td>804</td>
+    </tr>
+    <tr>
+    <td>Ålesund</td>
+    <td>1 296 491</td>
+    <td>29 974</td>
+    <td>804</td>
+    </tr>
+    <tr>
+    <td>Totalt</td>
+    <td>2 037 491</td>
+    <td>45 188</td>
+    <td>1 283</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Ved endringen kommer man til å oppdatere endringer direkte noe som medfører at registeret er utført i løpet av 10 timer. Det er innkommet ett spesifikt krav fra NAV. Det medfører at de er ferdig med innlesing av endringen innen 2.januar 24 kl 08.00. Ved endringen kommer man til å etterstrebe innmeldte krav til at informasjon er lest inn. Det håndteres ved at de ulike rettighetspakke får oppdatert informasjon i rekkefølge der de prioriterte får informasjon først. </p>
+    <p>Kritiske produsent-tjenester skal stort sett være kjørende. Det kan blant annet gjelde tildeling av fødselsnr, dnr-rekvisisjon, annullere dødsfall, adressegradering. Andre produsent-tjenester kan være utilgjengelig inntil registeret er oppdatert.</p>
+    <p><b>Konsumenter av Folkeregisteret:</b>
+    Endringen kan medfører ekstraordinær trafikk mot delingstjenestene gitt at man gjør oppslag basert på hendelser. I tillegg er det viktig at normale oppslag fungerer som normalt, dvs som ikke gjøres basert på endringen. Derfor er det viktig at hver konsument vurderer følgende:</p>
     <ul>
-    <li>Troms og Finmark - Bostedsadresse:243462, Oppholdsadresse:6987, Delt bosted:183</li>
-    <li>Vestfold og Telemark - Bostedsadresse:429775, Oppholdsadresse:7133, Delt bosted:267</li>
-    <li>Viken - Bostedsadresse:1296491, Oppholdsadresse:29974, Delt bosted:804</li>
-    <li>Ålesund - Bostedsadresse:67647, Oppholdsadresse:1094, Delt bosted:29</li>
-    <li>Totalt - Bostedsadresse:2037375, Oppholdsadresse:45188, Delt bosted:1283</li>
+    <li>Periodisk vask og store uttrekk bør vente hvis de ikke er kritiske</li>
+    <li>Konsument må kunne håndtere feilsituasjoner og prøve på nytt, det innebære aktiv backoff-strategi der man ikke spamer tjenestene automatisk</li>
+    <li>Spre lasten, ikke gjør mange parallelle kall. Å spre lasten og antall kall vil bidra til en vellykket gjennomføring</li>
     </ul>
-    <p>Endringene bør være oppdatert i registeret i løpet av 32 timer, anslagsvis til den 2.januar 24 kl 08.00.</p>
-    <p>Utvalgte tidskritiske produsent-tjenester skal ikke være nede mer enn 30 minutter. Det kan blant annet gjelde tildeling av fødselsnr, dnr-rekvisisjon, annullere dødsfall, adressegradering. Andre produsent-tjenester kan være utilgjengelig inntil registeret er oppdatert.</p>
-    <p>Det er 2 løsningsalternativer for Folkeregisteret.</p>
-    <p>Lese inn fra matrikkel og behandle det som matrikkelendring</p>
-    <ul>
-    <li>Fordel: Prinsipielt riktig metode, ytelsesforbedring</li>
-    <li>Ulempe: tid, avhengighet</li>
-    </ul>
-    <p>Endre kommunenummer selv</p>
-    <ul>
-    <li>Fordel: enkelt, raskt, uavhengig</li>
-    <li>Ulempe: nytt mønster, ikke fra kilde</li>
-    </ul>
-    <p>Alternativ 2 er det Skatteetaten foreløpig har landet på, men det gjenstår mer ytelsestesting før vi er sikre.</p>
-    <p><b>Konsumenter av Folkeregisteret:</b></p>
-    <p>Skatteetaten forventer at konsumenter kan lese endringer og gjøre oppslag fra FREG som normaltog vil tilpasse kapasitet til å håndtere ekstra trafikk samt sikre overvåkning og beredskap. 
-    Anbefaling for de første dagene i januar 2024:<br/></p>
-    <ul>
-    <li>Ikke gjør unødvendige kall. </li>
-    <li>Periodisk vask og store uttrekk kan gjerne vente</li>
-    </ul>
+    <p>Folkeregisteret vil gjøre tilpasninger for å håndtere økende trafikk, men oppfordrer til å gjennomføre tiltak som beskrevet over. Man kommer til å utføre aktiv trafikkstyring for å sikre at tjenestene er tilgjengelig.</p>
     <p><b>Testing:</b></p>
-    <p>Skatteetaten skal kjøre intern ytelsestest i august og september. Test av endringene vil fra oktober kunne benyttes av konsumentene:<br/></p>
+    <p>Ekstern test for konsumeter er tilgjengelig fra midten av oktober 2023</p>
     <ul>
-    <li>Eget miljø med ca 1 mill berørte personer (Playground Endepunkter ) </li>
-    <li>Autentisering via maskinporten </li>
-    <li>Sekvensnr for kommunenrendringshendelser</li>
+    <li>Eget miljø, dvs konsument playground, se <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/endepunkter/">her</a></li>
+    <li>Testbestand på ca 1 million berørte persober</li>
+    <li>Autentisering skjer som normalt vha maskinporten</li>
+    <li>Sekvensnummer for endringen blir publisert på <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/">nyheter</a></li>
     </ul>
-    <p><a href="https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701">Lenke til mer informasjon</a></p>
+    <p><a href="https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701">Lenke til mer informasjon fra regjeringen</a></p>
     <p><b>Spørsmål og svar:</b></p>
     <table>
     <thead>
@@ -214,12 +239,12 @@
     <tr>
     <td>2</td>
     <td>Når vil Folkeregisteret være oppdatert med nye kommunenummer for adressene som endres?</td>
-    <td>Det er fortsatt noe usikkerhet knyttet til dette, men målet er å få oppdatert registeret i løpet av 32 timer</td>
+    <td>Rettighetspakkene oppdateres i rekkefølge innenfor innmeldte krav og behov</td>
     </tr>
     <tr>
     <td>3</td>
     <td>Vi bruker ikke hendelseslisten, blir vi påvirket da?</td>
-    <td>Oppslagstjenesten vil være tilgjengelige både via nettleser og maskin-til-maskin. Men periodisk vask kan medføre flere endringer enn normalt</td>
+    <td>Oppslagstjenestene vil være tilgjengelige både via nettleser og maskin-til-maskin. Man anbefaler å utsette periodisk vask til noen dager etter endringen</td>
     </tr>
     </tbody>
     </table>
