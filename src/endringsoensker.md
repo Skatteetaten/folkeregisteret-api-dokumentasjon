@@ -25,7 +25,6 @@ NAV|27.01.22|Annullering av d-nr-rekvisisjon|Avslått, kan bruke tipskanal
 Skatteetaten / Skatteplikt|17.12.2021|Ikrafttredelsesdato ved kommuneendringer (dvs. endringer i matrikkel-adresse)|Avslått
 Finans Norge / NAV|25.10.2021|Folkeregisteret som leveattest-register?|Utenfor dagens regelverk. Tas inn i arbeidet med fremtidens Folkeregister
 Kartverket|20.10.2021|Manglende oppdatering av hendelser for overføring av adressetilleggsnavn fra DSF til FREG|Avslått. 
-Kripos||Deling av flytte- og registreringsdato for personer med strengt fortrolig adresse|Under behandling, vi avventer avklaring fra Kripos
 Maestro Soft|06.09.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avslått. Den som søker kan informere om dette på egne sider
 Data Factory|25.08.2021|Kontrainnsyn: Mulighet til å se informasjon / begrunnelse for søk som er foretatt på seg |Avslått. Den som søker kan informere om dette på egne sider
 Brønnøysundregistrene|02.07.2021|Digitalisering av rekvisisjon av d-nummer|Utviklet og levert i 2022
