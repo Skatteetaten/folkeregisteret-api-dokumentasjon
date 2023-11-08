@@ -1,0 +1,24 @@
+Testdata 2023-10-19, konsumenttest
+
+Vergemål:
+06916396390 - voksen - ugradert - verge biperson
+31856397214 - voksen - ugradert - verge biperson
+18888297827 - voksen - ugradert - verge fnr
+04909596934 - voksen - fortrolig - verge fnr
+29878897771 - voksen - strengt fortrolig - verge fnr
+28866399974 - voksen - ugradert - verge ektefelle
+24886399584 - voksen - ugradert - verge biperson
+14884697760 - stadfestet fremtidsfullmakt - ugradert - verge biperson
+08926397819 - stadfestet fremtidsfullmakt - ugradert - verge biperson
+07908298629 - stadfestet fremtidsfullmakt - ugradert - verge fnr
+04896195307 - stadfestet fremtidsfullmakt - fortrolig - verge fnr
+20899096402 - stadfestet fremtidsfullmakt - strengt fortrolig - verge fnr
+24838196744 - stadfestet fremtidsfullmakt - ugradert - verge ektefelle
+
+
+Rettslig handleevne:
+25925598227
+09848599546
+14820099703
+11839897695
+13884898557
