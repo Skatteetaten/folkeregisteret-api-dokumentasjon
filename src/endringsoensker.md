@@ -7,6 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
+Domstoladministrasjonen|26.09.23|Utvide skifteform med flere verdier|Under behandlig (FF-1501)
 DnB|30.11.23|Adressehistorikk med datoer i rettighetspakken Finans|Under behandling (FF-1532)
 KS|22.09.23|Søk på bruksenhetsnummer|Under behandling (FF-1500)
 KS|22.09.23|Utrekk på flere kommunenummer|Under behandling (FF-1499)
