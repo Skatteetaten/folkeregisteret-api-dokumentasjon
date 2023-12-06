@@ -18,7 +18,7 @@ Helsenett|31.01.23|Grunnkrets - også på oppholdsadresser|Under behandling
 Stavanger kommune|02.01.23|Forkortelse av adressenavn|Under behandling
 Norges Døveforbund|13.12.22|Registrering av tegnspråk-kompetanse|Avslått, utenfor gjeldende regelverk. Dersom NDF ønsker å jobbe videre med forslag om registrering i Folkeregisteret, må det igangsettes et arbeid for å få på plass et rettslig grunnlag for registrering
 NAV|26.08.22|Tillate opphør og maskinell korreksjon av utdaterte personopplysninger ved melding fra NAV|Under behandling
-Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Mulig utviklingstiltak 2024
+Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Mulig utviklingstiltak 2025
 Norsk Tipping|28.04.22|Politisk eksponert person som attributt i Folkeregisteret|Avslått
 Finans Norge|24.03.22|Digital kontaktinformasjon|Avslått
 NAV|27.01.22|Sjekk med NAV før person med ukjent bosted får status utflyttet|Under arbeid, vi avklarer juridisk handlingsrom
