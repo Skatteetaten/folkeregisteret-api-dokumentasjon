@@ -6,7 +6,7 @@ Virksomheter med behov for folkeregisterdata, som har søkt og fått tilgang, m�
 
 * [Oppslag på Skatteetatens nettside](https://www.skatteetaten.no/deling/opplysninger/folkeregisteropplysninger/oppslag-i-folkeregisteret/)
 * [Via en systemleverandør](https://www.skatteetaten.no/deling/folkeregisteret/intro/fa-tilgang/)
-* [Via Skatteetatens APIer (maskin-til-maskin)](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-konsumenter/)
+* [Via Skatteetatens APIer (maskin-til-maskin)](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/brukerveileder-for-konsumenter/)
 * [Via segmentsamarbeid](https://www.skatteetaten.no/deling/segmenter/)
 
 Presentasjon av delingstjenester finne du nedenfor. Teknisk beskrivelse av de ulike tjenestene finner du under [konsumenttjenester](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/konsumenttjenester/)
