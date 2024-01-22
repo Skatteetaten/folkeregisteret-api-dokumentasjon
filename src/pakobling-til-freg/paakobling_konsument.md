@@ -61,6 +61,6 @@ Informasjon for alle ovennevnte punkter a til c finner du på våre githubsider 
 
 ### Andre nyttige lenker
 
-Generell informasjon om Maskinporten finner du her: https://samarbeid.difi.no/felleslosninger/maskinporten
+Generell informasjon om Maskinporten finner du her: https://www.digdir.no/felleslosninger/maskinporten/869
 
-Driftsmeldinger fra Digdir finner du her: https://status.digdir.no/.
+Driftsmeldinger fra Digdir finner du her: https://status.digdir.no/
