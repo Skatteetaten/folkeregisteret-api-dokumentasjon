@@ -37,3 +37,4 @@ Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017,
 * Dødsfall
 * Kontaktopplysninger for dødsbo
 * Inn- og Utflytting
+* Rettslig Handleevne
