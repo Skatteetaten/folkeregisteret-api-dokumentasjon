@@ -1,6 +1,6 @@
 ---
 title: Utbedring av datakvalitet på postadresseIUtlandet - 20240321
-date: 2024-03-21T10:00:00+01
+date: 2024-03-21T10:10:00+01
 ---
 Hva: Setter opphørstidspunkt på 25000 postadresseIUtlandet 
 Hvorfor: Døde skal ikke ha en gjeldende adresse
