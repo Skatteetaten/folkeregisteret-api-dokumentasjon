@@ -23,8 +23,12 @@ Det syntetiske folkeregisteret er tilgjengelig via testmiljøet konsumenttest, s
 Konsumenttest er et testmiljø med produksjonslike API og funksjonalitet.
 Her tilbyr vi simulering av hendelser via Folkeregisterets konsumenttjenester. I noen tilfeller legger vi ut endringer og ny funksjonalitet i konsumenttestmiljøet ca. to uker før endringen inntreffer i produksjon. Vi varsler i så fall om dette via [Nyheter](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/nyheter/).
  
-Formålet med det syntetiske Folkeregisteret er å understøtte integrasjonstest for konsumenter av data fra Folkeregisteret.  Det syntetiske Folkeregisteret består av i overkant av 1 million syntetiske testpersoner med syntetiske fødsels- og d-nummer, der vi har plusset på +80 på måneden. Testpersonene er navngitt med adjektiv og substantiv – f.eks. "Vakker blomst".
-Tenor testdatasøk er integrert mot rettighetspakken offentlig-med-hjemmel, og har tilgang til alle testpersonene fra syntetisk Folkeregister.
+Formålet med det syntetiske Folkeregisteret er å understøtte integrasjonstest for konsumenter av data fra Folkeregisteret. Det syntetiske Folkeregisteret består av i overkant av 1 million syntetiske testpersoner. Testpersonene er navngitt med adjektiv og substantiv – f.eks. "Vakker blomst". Tenor testdatasøk er integrert mot rettighetspakken offentlig-med-hjemmel, og har tilgang til alle testpersonene fra syntetisk Folkeregister.
+
+#### Syntetiske fødsels- og d-nummer
+Personene har syntetiske fødsels- og d-nummer, der vi har plusset på +80 på måneden.
+En syntetisk testperson "født" 01.11.2024 vil få 019124 som fødselsdato.
+Kontrollsifferene er beregnet etter at +80 er lagt til måneden, slik at de syntetiske fødsels- og d-numrene oppfyller krav til modulus11.
 
 ## Søk i testdata: Tenor testdatasøk
 Tenor testdatasøk gir deg muligheten til å søke i testpersonene fra syntetisk folkeregister, og er et nyttig verktøy i arbeidet med å lage integrasjon mot Folkeregisteret. Testpersonene henter du ved å integrere mot konsumenttestmiljøet til folkeregisteret. Testdatasøket lar deg søke på ulike egenskaper ved testpersonene enten via et webgrensesnitt med enkelt eller avansert søk, eller via et API. Se mer informasjon på  https://www.skatteetaten.no/skjema/testdata/
