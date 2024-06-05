@@ -25,17 +25,16 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 
 | Rettighetspakker | URL | Scope | Swaggerhub |
 |--------------------------------------|------------------------------------------|---------------------------------------------------------|-----------------------------------------|
-|Offentlig og privat virksomhet med hjemmel|folkeregisteret/offentlig-med-hjemmel/api/|folkeregister:deling/offentligmedhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Offentlig-med-hjemmel/)|
-|Offentlig virksomhet uten hjemmel|folkeregisteret/api/offentligutenhjemmel/|folkeregister:deling/offentligutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/RettighetspakkerUtenTaushetsbelagtOff)|
-|Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|folkeregister:deling/privatutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
-|Privat virksomhet|folkeregisteret/api/privat/|folkeregister:deling/privat|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
-|Privat virksomhet uten folkeregisteridentifikator| folkeregisteret/api/privatutenfolkeregisteridentifikator/| folkeregister:deling/privatutenfolkeregisteridentifikator| [OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
-|Finans|folkeregisteret/api/finans/|folkeregister:deling/finans|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/LesemodellBegrensetTaushetsbelagt/)|
-|Presse|folkeregisteret/api/presse/|folkeregister:deling/presse|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
-|Presse uten folkeregisteridentifikator|folkeregisteret/api/presseutenfolkeregisteridentifikator/|folkeregister:deling/presseutenfolkeregisteridentifikator|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/Skatteetaten_FREG/Lesemodell-uten-taushetsbelagt/)|
-
+|Offentlig og privat virksomhet med hjemmel|folkeregisteret/offentlig-med-hjemmel/api/|folkeregister:deling/offentligmedhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_Offentlig_med_hjemmel/)|
+|Offentlig virksomhet uten hjemmel|folkeregisteret/api/offentligutenhjemmel/|folkeregister:deling/offentligutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt-off/)|
+|Privat virksomhet uten hjemmel| folkeregisteret/api/privatutenhjemmel/|folkeregister:deling/privatutenhjemmel|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
+|Privat virksomhet|folkeregisteret/api/privat/|folkeregister:deling/privat|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
+|Privat virksomhet uten folkeregisteridentifikator| folkeregisteret/api/privatutenfolkeregisteridentifikator/| folkeregister:deling/privatutenfolkeregisteridentifikator| [OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
+|Finans|folkeregisteret/api/finans/|folkeregister:deling/finans|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_begrenset_taushetsbelagt/)|
+|Presse|folkeregisteret/api/presse/|folkeregister:deling/presse|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
+|Presse uten folkeregisteridentifikator|folkeregisteret/api/presseutenfolkeregisteridentifikator/|folkeregister:deling/presseutenfolkeregisteridentifikator|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
 
 ## Ressurser
 
-Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG) 
+Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten) 
 
