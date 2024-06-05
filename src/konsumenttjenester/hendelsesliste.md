@@ -11,7 +11,7 @@ Hendelseslisten kan navigeres gjennom sekvensnummer. Sidestørrelsen som returne
 
 Tjenesten er naturlig å se i sammenheng med tjenesten [oppslag](../oppslag). I feeden gis en peker til et persondokument. Dette er en nøkkel man kan bruke til å slå opp personen slik han så ut etter at hendelsen inntraff. Man kan også slå opp personen basert på fødsels- eller d-nummer. I enkelte rettighetspakker vil hendelsen kun inneholde en folkeregisteridentifikator. 
 
-De ulike tjenestene er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG)
+De ulike tjenestene er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten)
 
 Feed er i henhold til [Atom spesifikasjonen](http://www.ietf.org/rfc/rfc4287.txt). 
 
