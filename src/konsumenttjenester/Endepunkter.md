@@ -36,5 +36,5 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 
 ## Ressurser
 
-Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten) 
+Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/skatteetaten) 
 
