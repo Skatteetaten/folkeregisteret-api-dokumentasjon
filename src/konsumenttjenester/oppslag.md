@@ -61,7 +61,7 @@ Eksempel på entydig søk på gitte kriterier:
 Søk med treffliste lister opp personer som tilfredsstiller de kriteriene konsumenten har oppgitt. Det er ingen minimumskombinasjoner eller obligatoriske felter i tjenesten, men hvis kriteriene treffer mer enn 10 000 personer vil tjenesten returner feilmelding om at søket må konkretiseres. Hvis søket ikke kan konkretiseres må det vurderes om konsumenten kan benytte uttrekk/tilpasset. 
 
 ## Curl requester
-Eksempler på requester med curl kan genereres i swaggerhub for de ulike [rettighetspakkene](https://app.swaggerhub.com/organizations/Skatteetaten).  
+Eksempler på requester med curl kan genereres i swaggerhub for de ulike [rettighetspakkene](https://app.swaggerhub.com/organizations/skatteetaten).  
 
 
 ### Headere
