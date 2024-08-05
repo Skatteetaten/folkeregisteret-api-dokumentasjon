@@ -13,7 +13,7 @@ Ingen personer skifter fødselsnummer eller d-nummer. Ny beregning gjelder kun f
 Dagens beregning bruker et predefinert sett av ulike sifre som ganges med hvert enkelt tall i fødselsdatoen og individnummeret (9 tall).<br />
 Oppbygging av fødselsnummer<br />
 Sifrene for k1 benyttes i denne rekkefølgen: 3, 7, 6, 1, 8, 9, 4, 5, 2<br />
-Sifrene for k2 benyttes i denne rekkefølgen: 5, 4, 3, 2, 7, 6, 5, 4, 2<br />
+Sifrene for k2 benyttes i denne rekkefølgen: 5, 4, 3, 2, 7, 6, 5, 4, 3, 2<br />
 ## Beregning k1
 Utregning gammel løsning: k1 = 11 - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 x 8 + å2 x 9 + i1 x 4 + i2 x 5 +  i3 x 2) MOD 11)\
 Dette gir maksimalt 1 gyldig tall for k1. I ny beregning vil man derimot godta:\
@@ -24,5 +24,16 @@ k2 beregnes likt som før med kun 1 - ett - gyldig siffer:\
 k2 = 11 - ((d1 x 5 + d2 x 4 +  m1 x 3 + m2 x 2 + å1 x 7 + å2 x 6 + i1 x 5 + i2 x 4 +  i3 x 3 + k1 x 2) MOD 11)\
 På samme måte forkastes fødselsnummeret hvis k2 = 10.
 # Eksempler
-
+## Person født 02.01.2032 får fødselsnummer
+Fødselsdato='020132'
+Individnummer = '999'  - Planen er å begynne på 999 og telle nedover sånn som vi gjør for serien 2000-2032 i dag.
+k1 = 11 - ((0x3 + 2x7 + 0x6 + 1x1 + 3x8 + 2x9 + 9x4 + 9x5 + 9x2) MOD 11) = 11 - (156 MOD 11) = 11 - 2 = 9
+k1 = 9
+k2 = 11 - ((0x5 + 2x4 + 0x3 + 1x2 + 3x7 + 2x6 + 9x5 + 9x4 + 9x3 + 9x2) MOD 11= = 11 - (169 MOD 11) = 11 - 4 = 7
+k2 = 7
+Fødselsnummer = '02013299997'
+Det er ikke besluttet om neste person vil få '02013299903' dvs. neste ledige nummer med '999' som individsiffer eller neste blir '02013299806' før man går opp igjen. Det antas at hvert indivisiffer vil "fylles opp" med alle mulige k1 før man går til neste individsiffer.
+## Person født 30.10.1982 får fødselsnummer i 2032
+Fødselsdato = '301082'
+Sist brukte individnummer på den dateo
 
