@@ -48,4 +48,4 @@ Individsiffer = '999'<br />
 k1 = 12 - ((3x3 + 0x7 + 1x6 + 0x1 + 8x8 + 2x9 + 9x4 + 9x5 + 9x2) MOD 11) = 12 - (196 MOD 11) = 12 - 9 = 3<br />
 k1 = 3<br />
 k2 = 9  (viser ikke utregning her)<br />
-Fødselsnummer = ''30108299939'<br />
+Fødselsnummer = '30108299939'<br />
