@@ -11,9 +11,11 @@ Nytt fødselsnummer er besluttet innført fra 01.01.2032 for å kunne tildele fl
 Ingen personer skifter fødselsnummer eller d-nummer. Ny beregning gjelder kun for nye fødselsnummer og d-nummer utstedt etter 1. januar 2032, men vil gjelde for alle nye tildelinger, dvs. også de som er født FØR 01.01.2032. Nytt fødselsnummer og d-nummer vil fremdeles ha elleve sifre. 
 # Hvordan beregnes kontrollsifre etter 01.01.2032?
 Dagens beregning bruker et predefinert sett av ulike sifre som ganges med hvert enkelt tall i fødselsdatoen og individnummeret (9 tall).
-Oppbygging av fødselsnummer
+## Oppbygging av fødselsnummer
 Sifrene for k1 benyttes i denne rekkefølgen: 3, 7, 6, 1, 8, 9, 4, 5, 2
+
 Sifrene for k2 benyttes i denne rekkefølgen: 5, 4, 3, 2, 7, 6, 5, 4, 3, 2
+
 ## Beregning k1
 Utregning gammel løsning: k1 = 11 - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 x 8 + å2 x 9 + i1 x 4 + i2 x 5 +  i3 x 2) MOD 11)
 Dette gir maksimalt 1 gyldig tall for k1. I ny beregning vil man derimot godta:
