@@ -120,6 +120,7 @@
       <div class="sideblokk-seksjon navig">
         <div><a class="index" href="../om-tjenestene">Om tjenestene</a></div>
           <a href="../informasjonsmodell">Informasjonsmodell</a>
+          <a href="../om-tjenestene/NyttFnr">Nytt fødselsnummer</a>
           <a href="../nytt-fodselsnummer-2032">Nytt fødselsnummer 2032</a>
           <a href="../sikkerhet">Sikkerhet</a>
           <a href="../taushetsbelagte-opplysninger">Taushetsbelagte opplysninger</a>
@@ -152,7 +153,8 @@
     <div class="data">
       <div class="innhold-blokk">
         <div class="innhold-blokk-innhold">
-          <p>Skatteetaten har i forbindelse med KVU for ny personidentifikator besluttet å øke kapasiteten på individnumrene for D-nummerpopulasjonen. Årsaken er at man ikke skal gå tom for D-numre i 2029. Serien vil holde fram til ny identifikator kommer i 2032, samt at færre personer vil få avvikende fødselsdato i D-nummeret med reell fødselsdato. For å øke kapasiteten vil Skatteetaten ved tildeling av nye D-numre benytte ubenyttede nummerserier fra perioden 1859-1899 og 1900-1939.</p>
+          <p><strong>Behov for å utvide D-nummerserien</strong>
+    Skatteetaten har i forbindelse med KVU for ny personidentifikator besluttet å øke kapasiteten på individnumrene for D-nummerpopulasjonen. Årsaken er at man ikke skal gå tom for D-numre i 2029. Serien vil holde fram til ny identifikator kommer i 2032, samt at færre personer vil få avvikende fødselsdato i D-nummeret med reell fødselsdato. For å øke kapasiteten vil Skatteetaten ved tildeling av nye D-numre benytte ubenyttede nummerserier fra perioden 1859-1899 og 1900-1939.</p>
     <p>Tabellen under viser endringen:</p>
     <table>
     <thead>
@@ -195,8 +197,22 @@
     </tr>
     </tbody>
     </table>
-    <p>Konsumenter som benytter individnummeret til å utlede korrekt fødselsår for D-nummerpersoner må endre sine systemløsninger.
-    Endringen vil produksjonssettes medio august 2021 og det vil kunne tildeles D-numre med nye nummerserier umiddelbart.</p>
+    <p>Konsumenter som benytter individnummeret til å utlede korrekt fødselsår for D-nummerpersoner må endre sine systemløsninger. 
+    Endringen er lagt ut i testmiljøet konsument-playground.
+    I playground finner du testpersoner med dnr som er generert med utvidelsen (NB! husk at det i testmiljøene er lagt til +80 på måned, det vil det ikke være i produksjon):</p>
+    <p>Født 1940:</p>
+    <ul>
+    <li>41814061033 </li>
+    <li>41814065640</li>
+    <li>41814075603</li>
+    </ul>
+    <p>Født 2000:</p>
+    <ul>
+    <li>41810021827</li>
+    <li>41810025091</li>
+    <li>41810034422</li>
+    </ul>
+    <p>Endringen ble lagt ut i konsumenttestmiljøet 20.oktober 2021, og er planlagt lagt ut i produksjon 16. november 2021.</p>
     
         </div>
       </div>
