@@ -1,5 +1,5 @@
 ---
-title: Nytt fødselsnummer 2032
+title: Nytt fødselsnummer fra 2032
 ---
 
 # Hva er nytt? 
