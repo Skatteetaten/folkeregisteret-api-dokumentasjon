@@ -9,6 +9,7 @@ Nytt fødselsnummer er besluttet innført fra 01.01.2032 for å kunne tildele fl
 - Opplysning om kjønn må hentes i et eget felt i Folkeregisteret. Nye fødselsnumre og d-numre blir kjønnsnøytrale, og systemene skal ikke lenger utlede kjønn fra numrene.
 - For å være sikker på riktig fødselsdato, må også dette hentes fra eget felt i Folkeregisteret. Individnummeret vil ikke lenger angi århundre.
 Ingen personer skifter fødselsnummer eller d-nummer. Ny beregning gjelder kun for nye fødselsnummer og d-nummer utstedt etter 1. januar 2032, men vil gjelde for alle nye tildelinger, dvs. også de som er født FØR 01.01.2032. Nytt fødselsnummer og d-nummer vil fremdeles ha elleve sifre. 
+
 # Hvordan beregnes kontrollsifre etter 01.01.2032?
 Dagens beregning bruker et predefinert sett av ulike sifre som ganges med hvert enkelt tall i fødselsdatoen og individnummeret (9 tall).
 ## Oppbygging av fødselsnummer
