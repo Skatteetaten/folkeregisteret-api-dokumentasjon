@@ -159,10 +159,12 @@
     <li>For fødselsnumre og d-numre utstedt etter 1. januar 2032 endres kontrollberegningen. Det betyr at systemer som bruker kontrollberegning må kunne lese både dagens og ny kontrollberegning parallelt. Den nye kontrollberegningen vil godta flere gyldige verdier for det første kontrollsifferet enn dagens kontrollberegning.  I dagens kontrollberegning må rest etter moduluskontrollen være lik 0. I ny kontrollberegning vil rest etter moduluskontrollen tillate 0, 1, 2 og 3 som gyldige verdier.</li>
     <li>Opplysning om kjønn må hentes i et eget felt i Folkeregisteret. Nye fødselsnumre og d-numre blir kjønnsnøytrale, og systemene skal ikke lenger utlede kjønn fra numrene.</li>
     <li>For å være sikker på riktig fødselsdato, må også dette hentes fra eget felt i Folkeregisteret. Individnummeret vil ikke lenger angi århundre.
-    Ingen personer skifter fødselsnummer eller d-nummer. Ny beregning gjelder kun for nye fødselsnummer og d-nummer utstedt etter 1. januar 2032, men vil gjelde for alle nye tildelinger, dvs. også de som er født FØR 01.01.2032. Nytt fødselsnummer og d-nummer vil fremdeles ha elleve sifre. <h1 id="hvordan-beregnes-kontrollsifre-etter-01-01-2032-">Hvordan beregnes kontrollsifre etter 01.01.2032?</h1>
-    Dagens beregning bruker et predefinert sett av ulike sifre som ganges med hvert enkelt tall i fødselsdatoen og individnummeret (9 tall).<h2 id="oppbygging-av-f-dselsnummer">Oppbygging av fødselsnummer</h2>
-    Sifrene for k1 benyttes i denne rekkefølgen: 3, 7, 6, 1, 8, 9, 4, 5, 2</li>
+    Ingen personer skifter fødselsnummer eller d-nummer. Ny beregning gjelder kun for nye fødselsnummer og d-nummer utstedt etter 1. januar 2032, men vil gjelde for alle nye tildelinger, dvs. også de som er født FØR 01.01.2032. Nytt fødselsnummer og d-nummer vil fremdeles ha elleve sifre. </li>
     </ul>
+    <h1 id="hvordan-beregnes-kontrollsifre-etter-01-01-2032-">Hvordan beregnes kontrollsifre etter 01.01.2032?</h1>
+    <p>Dagens beregning bruker et predefinert sett av ulike sifre som ganges med hvert enkelt tall i fødselsdatoen og individnummeret (9 tall).</p>
+    <h2 id="oppbygging-av-f-dselsnummer">Oppbygging av fødselsnummer</h2>
+    <p>Sifrene for k1 benyttes i denne rekkefølgen: 3, 7, 6, 1, 8, 9, 4, 5, 2</p>
     <p>Sifrene for k2 benyttes i denne rekkefølgen: 5, 4, 3, 2, 7, 6, 5, 4, 3, 2</p>
     <h2 id="beregning-k1">Beregning k1</h2>
     <p>Utregning gammel løsning: k1 = 11 - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 x 8 + å2 x 9 + i1 x 4 + i2 x 5 +  i3 x 2) MOD 11)</p>
