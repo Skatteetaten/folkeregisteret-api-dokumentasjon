@@ -33,6 +33,7 @@ Tjenestenes endepunkt: <br>
 | flyttemelding_fra_posten_v1       | [xsd](../kontrakter/MeldingOmFlyttingFraPosten_v1.0.xsd)             | | test | Ingen tilbakemelding               |
 | fnr_endring_v1                    | [xsd](../kontrakter/MeldingOmEndringAvPersonMedFoedselsnummer_v1.0.xsd) | | test | HendelserISakOmFolkeregistrering_v1 |
 | farskap_v1                        | [xsd](../kontrakter/MeldingOmRegistreringAvFarskap_v1.0.xsd)         | | produksjon | HendelserISakOmFolkeregistrering_v1 |
+| vigsel_v1                        | [xsd](../kontrakter/MeldingOmVigsel_v1.0.xsd)         | | produksjon | HendelserISakOmFolkeregistrering_v1 |
 Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignatur.xsd) av meldingene.
 
 ## Eksempler
