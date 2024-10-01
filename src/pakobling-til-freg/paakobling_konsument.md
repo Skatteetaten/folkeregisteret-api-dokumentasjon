@@ -32,7 +32,7 @@ Les mer om de ulike [rettighetspakkene på våre nettsider](https://www.skatteet
 <br/><br/>
 
 <b> 3. Be om tilgang </b><br>
-Både offentlige og private virksomheter kan be om å få data fra Folkeregisterets delingstjenester. Du må [fylle ut og sende inn søknadsskjema](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/). Husk og lese og akseptere [bruksvilkår](https://www.skatteetaten.no/person/folkeregister/om/modernisering/bruksvilkar/).
+Både offentlige og private virksomheter kan be om å få data fra Folkeregisterets delingstjenester. Du må [fylle ut og sende inn søknadsskjema](https://www.altinn.no/skjemaoversikt/skatteetaten/soknad-om-tilgang-til-folkeregisteropplysninger/). Husk og lese og akseptere [bruksvilkår](https://www.skatteetaten.no/deling/folkeregisteret/bruksvilkar/).
 Når søknaden er behandlet og godkjent, vil din virksomhet motta en melding i Altinn om at søknaden er godkjent. <br/><br/>
 
 <b> 4. Etabler tilgang til Maskinporten </b><br>
