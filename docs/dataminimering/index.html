@@ -171,12 +171,13 @@
     <th>Presse</th>
     <th>Privat virksomhet uten folkeregisteridentifikator</th>
     <th>Privat uten <br> folkeregisteridentifikator</th>
+    <th>Utsteder eID</th>
     </tr>
     </thead>
     <tbody>
     <tr>
     <td>person-basis</td>
-    <td>Standardsett av gjeldende og ikke-taushetsbelagte opplysninger: <ul><li>Identifikasjonsnummer</li><li>identitetsgrunnlag</li><li>status</li><li>dødsfall</li><li>sivilstand</li><li>fødsel</li><li>statsborgerskap</li><li>kjønn</li><li>navn</li><li>bostedsadresse</li><li>oppholdsadresse</li><li>deltBosted</li><li>postadresse</li><li>postadresseIUtlandet</li><li>adressebeskyttelse</li><li>kontaktinformasjonForDødsbo</li></ul></td>
+    <td>Standardsett av gjeldende og ikke-taushetsbelagte opplysninger: <ul><li>Identifikasjonsnummer</li><li>identitetsgrunnlag</li><li>status</li><li>dødsfall</li><li>sivilstand</li><li>fødsel</li><li>statsborgerskap</li><li>kjønn</li><li>navn</li><li>bostedsadresse</li><li>oppholdsadresse</li><li>deltBosted</li><li>postadresse</li><li>postadresseIUtlandet</li><li>adressebeskyttelse</li><li>kontaktinformasjonForDødsbo</li></ul>  For rettighetsakken Utsteder eID er også følgende endel av person-basis <ul><li>Utenlandsk Personidentifikator</li><li>legitimasjonsdokument</li></td>
     <td>Ja</td>
     <td>Ja</td>
     <td>Ja</td>
@@ -185,6 +186,7 @@
     <td>Ja Bortsett fra Identifikasjonsnummer - denne må eksplisitt defineres (&quot;part=identifikasjonsnummer&quot;, se <egenskapsnavn> nedenfor)</td>
     <td>Ja Bortsett fra Identifikasjonsnummer</td>
     <td>Ja Bortsett fra Identifikasjonsnummer</td>
+    <td>Ja</td>
     </tr>
     <tr>
     <td>historikk</td>
@@ -194,6 +196,7 @@
     <td>Ja, for identifikasjonsnummer, adresser og navn</td>
     <td>Ja, for identifikasjonsnummer, adresser og navn</td>
     <td>Ja, for identifikasjonsnummer, adresser, navn og sivilstand</td>
+    <td>Ja, for identifikasjonsnummer, adresser og navn</td>
     <td>Ja, for identifikasjonsnummer, adresser og navn</td>
     <td>Ja, for identifikasjonsnummer, adresser og navn</td>
     <td>Ja, for identifikasjonsnummer, adresser og navn</td>
@@ -209,6 +212,7 @@
     <td>Nei</td>
     <td>Nei</td>
     <td>Nei</td>
+    <td>Ja</td>
     </tr>
     <tr>
     <td>relasjon-utvidet</td>
@@ -221,13 +225,15 @@
     <td>Kun vergemålEllerFremtidsfullmakt</td>
     <td>Kun vergemålEllerFremtidsfullmakt</td>
     <td>Kun vergemålEllerFremtidsfullmakt</td>
+    <td>Kun vergemålEllerFremtidsfullmakt</td>
     </tr>
     <tr>
     <td>&lt;egenskapsnavn></td>
     <td>I tillegg er det mulig å spesifisere hvert enkelt egenskapsnavn f.eks.: <ul><li>identifikasjonsnummer</li><li>utlendingsmyndighetenesIdentifikasjonsnummer</li><li>innflytting</li><li>utflytting</li><li>foedselINorge</li><li>opphold</li><li>RettsligHandleevne</li><li>bibehold</li><li>brukAvSamiskSpraak</ul></li> Det er også mulig å spesifisere enkeltopplysningene fra &quot;person-basis&quot;, &quot;identitetsgrunnlag-utvidet&quot; og &quot;relasjon-utvidet&quot; hvis det er behov for å redusere resultatet nærmere. Merk at egenskapsnavnene må angis slik de er definert i den til enhver tid gjeldende skjemadefinisjonen for persondokumentet (eks: fødsel = foedsel).</td>
     <td>Ja</td>
     <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
-    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken/</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i</td>
+    <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
     <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
     <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
     <td>Ja, men avhengig av at opplysningen er tilgjengelig i rettighetspakken</td>
