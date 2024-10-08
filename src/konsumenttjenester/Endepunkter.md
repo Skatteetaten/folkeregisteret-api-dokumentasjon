@@ -33,7 +33,7 @@ Under finner du en oversikt over hvilke rettighetspakker som er tilgjengelig og 
 |Finans|folkeregisteret/api/finans/|folkeregister:deling/finans|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_begrenset_taushetsbelagt/)|
 |Presse|folkeregisteret/api/presse/|folkeregister:deling/presse|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
 |Presse uten folkeregisteridentifikator|folkeregisteret/api/presseutenfolkeregisteridentifikator/|folkeregister:deling/presseutenfolkeregisteridentifikator|[OpenAPI Specification swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/Folkeregisteret_lesemodell_uten_taushetsbelagt/)|
-
+|Utsteder eID | /folkeregisteret/api/eid/|folkeregister:deling/utstedereid| |
 ## Ressurser
 
 Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/skatteetaten) 
