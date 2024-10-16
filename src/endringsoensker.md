@@ -8,11 +8,11 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
 Domstoladministrasjonen|26.09.23|Utvide skifteform med flere verdier|Avslått, lav gevinst grunnet taushetsbelagt opplysning (FF-1501)
-DnB|30.11.23|Adressehistorikk med datoer i rettighetspakken Finans|Under behandling (FF-1532)
-KS|22.09.23|Søk på bruksenhetsnummer|Under behandling (FF-1500)
-KS|22.09.23|Utrekk på flere kommunenummer|Under behandling (FF-1499)
-KS|22.09.23|Søk på DUF-nummer|Under behandling(FF-1498)
-Brønnøysundregistrene| 11.04.23|Behov for ny funksjonalitet i digital løsning for rekvirering av d-nummer|Bestilt utvikling (FF-1392)
+DnB|30.11.23|Adressehistorikk med datoer i rettighetspakken Finans|Utsatt i påvente av regelverksendring som drives av Finans Norge (FF-1532) 
+KS|22.09.23|Søk på bruksenhetsnummer|Avslått i produktleders team. Kan løses ved å ta uttrekk og sortere på bruksenhetsnr (FF-1500)
+KS|22.09.23|Utrekk på flere kommunenummer|Avslått i produktleders team. Kan løses ved å ta ett og ett uttrekk ved bruk av standardtjenesten. (FF-1499)
+KS|22.09.23|Søk på DUF-nummer|Avslått, DUFnummer skal ikke benyttes som en ID som Skatteetaten skal bygge betydelig funksjonalitet rundt. KS må avdekke bruk av DUFnummer i kommunesektoren og i IT-sytemene til kommunene(FF-1498)
+Brønnøysundregistrene| 11.04.23|Behov for ny funksjonalitet i digital løsning for rekvirering av d-nummer|Utviklet (FF-1392)
 Brønnøysundregistrene|03.03.23|Internasjonal addresse: Ønsker strukturert informasjon om landnavn| Under behandling (FF-1379)
 Helsenett|31.01.23|Grunnkrets - også på oppholdsadresser|Under behandling
 Stavanger kommune|02.01.23|Forkortelse av adressenavn|Under behandling
