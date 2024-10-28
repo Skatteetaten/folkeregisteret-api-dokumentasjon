@@ -3,7 +3,9 @@ title: Hendelsesliste
 ---
 
 # Grensesnittbeskrivelse
-Tjenesten tilgjengeliggjør endringer i registeret. Den tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for konsumentenebrukerne av Folkeregisterets opplysninger. Konsumentene selv MÅ holde orden på en intern feed-peker som viser hvor langt man har lest i feeden.
+Hensikten med hendelseslisten er å tillate konsumenter med å holde sitt kunderegister ajour med folkeregisteret og reagere raskt på endringer i registeret. Annullering av dødsfall, registrering av falsk identitet eller tildeling av adressebeskyttelse kan være tidskritisk. 
+
+Tjenesten tilgjengeliggjør endringer i registeretog tilbyr en feed med hendelser. Det er konsumentene som selv styrer sekvens på lesing og hvor mange hendelser man skal lese. Samme hendelser kan leses av flere systemer hos konsumentene og man kan lese hendelser så mange ganger man ønsker. Hendelseslista tilbyr en løs kobling mellom produsent og konsument. Målet er å ha et fleksibelt API for brukerne av Folkeregisterets opplysninger. Konsumentene selv MÅ holde orden på en intern feed-peker som viser hvor langt man har lest i feeden. Hvis konsument har kopier av folkeregisteret er det anbefalt å lese hendelseslisten hyppig med påfølgende oppslag. Dette hindrer opplevde avvik mellom folkeregisteret og eventuelle kunderegister. 
 
 I rettighetspakken "offentlig med hjemmel" kan man i tillegg til å lese feeden, også lese innhold i en enkelt hendelse.
 
