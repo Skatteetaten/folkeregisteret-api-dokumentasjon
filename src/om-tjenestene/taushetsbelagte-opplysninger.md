@@ -2,7 +2,7 @@
 title: Taushetsbelagte opplysninger
 ---
 
-Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017, fikk vi en tydeligere kategorisering av opplysninger som enten taushetsbelagt eller ikke-taushetsbelagt. Flere opplysninger er nå ikke-taushetsbelagte:
+Med ny lov og forskrift om folkeregistrering som trådte i kraft i oktober 2017, fikk vi en tydeligere kategorisering av opplysninger som enten taushetsbelagt eller ikke-taushetsbelagt. Flere opplysninger er nå ikke-taushetsbelagte. Se ellers https://www.skatteetaten.no/deling/folkeregisteret/intro/finne-data/rettighetspakker/ for hva som deles i rettighetspakkene. Under vises den generelle oppdelingen:
 
 ## Taushetsbelagte opplysninger
 
