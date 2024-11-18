@@ -179,7 +179,7 @@
     <li>Navn (fornavn og etternavn) og adresse (Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer dersom adressen har husnummer og/eller bokstav, og teller som én uavhengig opplysning til sammen.</li>
     <li>Navn (fornavn og etternavn) og postnummer</li>
     </ul>
-    <p>Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon eller legitimasjonsdokument i kombinasjon med fornavn og etternavn. Offentlig med hjemmel kan også benytte  utlendingsmyndighetenesIdentifikasjonsnummer  i kombinasjon med fornavn og etternavn som et entydig søk.</p>
+    <p>Rettighetspakkene Offentlig med hjemmel og Utsteder av elektronisk identitetsbevis kan benytte utenlandskpersonidentifikasjon eller legitimasjonsdokument i kombinasjon med fornavn og etternavn. Offentlig med hjemmel kan også benytte utlendingsmyndighetenesIdentifikasjonsnummer  i kombinasjon med fornavn og etternavn som et entydig søk.</p>
     <p>Eksempel på entydig søk på gitte kriterier: 
     <code>$ curl -k -v -X GET &quot;https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&amp;navn=Arne%20gran&amp;postnummer=5089&amp;adressenavn=adolph%20bergs%20vei&amp;husnummer=14&amp;soekFonetisk=true&quot; -H &#39;Content-Type: application/json&#39; -H &quot;Authorization: Bearer $(ditt_token)&quot;</code>
     <br>
@@ -214,7 +214,7 @@
     <td>?navn=Arne%20Hansen&amp;postnummer=1251</td>
     </tr>
     <tr>
-    <td><em>Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Finans</em></td>
+    <td><em>Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Utsteder av elektronisk identitetsbevis</em></td>
     <td>-</td>
     <td>-</td>
     </tr>
