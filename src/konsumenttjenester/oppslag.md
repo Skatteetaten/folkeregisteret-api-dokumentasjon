@@ -34,7 +34,7 @@ Treff: betyr at dersom søkekriteriene som er angitt finner kun én person (enty
   * Navn (fornavn og etternavn) og adresse (Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer dersom adressen har husnummer og/eller bokstav, og teller som én uavhengig opplysning til sammen.
   * Navn (fornavn og etternavn) og postnummer
 
-Rettighetspakkene Offentlig med hjemmel og Finans vil i tillegg kunne benytte utenlandskpersonidentifikasjon eller legitimasjonsdokument i kombinasjon med fornavn og etternavn. Offentlig med hjemmel kan også benytte  utlendingsmyndighetenesIdentifikasjonsnummer  i kombinasjon med fornavn og etternavn som et entydig søk.
+Rettighetspakkene Offentlig med hjemmel og Utsteder av elektronisk identitetsbevis kan benytte utenlandskpersonidentifikasjon eller legitimasjonsdokument i kombinasjon med fornavn og etternavn. Offentlig med hjemmel kan også benytte utlendingsmyndighetenesIdentifikasjonsnummer  i kombinasjon med fornavn og etternavn som et entydig søk.
 
 Eksempel på entydig søk på gitte kriterier: 
 `$ curl -k -v -X GET "https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/entydigsoek?foedselsdato=19551228&navn=Arne%20gran&postnummer=5089&adressenavn=adolph%20bergs%20vei&husnummer=14&soekFonetisk=true" -H 'Content-Type: application/json' -H "Authorization: Bearer $(ditt_token)"`
