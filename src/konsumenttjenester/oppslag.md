@@ -47,7 +47,7 @@ Eksempel på entydig søk på gitte kriterier:
 |Navn og fødselsdato	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt |	?navn=Arne%20Hansen&foedselsdato=19811013
 |Navn og gateadresse	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Gatenavnet, eller minst 3 tegn fra begynnelsen av det. Kombineres med husnummer og teller som én uavhengig opplysning til sammen. Parameteren husnummer kan utelates dersom adressen ikke har noe husnummer. Ellers påkrevd for rett til treff	| ?navn=Arne%20Hansen&adressenavn=Økernveien&husnummer=10B
 |Navn og postnummer	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt | ?navn=Arne%20Hansen&postnummer=1251 |
-| *Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Finans*		| - | - |
+| *Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel og Utsteder av elektronisk identitetsbevis*		| - | - |
 |Navn og utenlandskpersonidentifikasjon	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i utenlandskpersonidentifikasjon slik: <landkode>- <personnummer>	| ?navn=Arne%20Hansen&utenlandskpersonidentifikasjon=ARG-8766523769 |
 |Navn og legitimasjonsdokument	| Må være minst ett fornavn og ett etternavn. Fonetisk eller eksakt. Inkludert landkode i legitimasjonsdokument slik: <landkode>-<dokumentnummer> |  ?navn=Arne%20Hansen&legitimasjonsdokument=DNK-7545367 |
 | *Følgende gjelder kun for rettighetspakkene Offentlig med hjemmel* | - | - |
