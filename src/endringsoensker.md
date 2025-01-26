@@ -15,7 +15,7 @@ KS|22.09.23|Søk på DUF-nummer|Avslått, DUFnummer skal ikke benyttes som en ID
 Brønnøysundregistrene| 11.04.23|Behov for ny funksjonalitet i digital løsning for rekvirering av d-nummer|Utviklet (FF-1392)
 Brønnøysundregistrene|03.03.23|Internasjonal addresse: Ønsker strukturert informasjon om landnavn| Under behandling (FF-1379)
 Helsenett|31.01.23|Grunnkrets - også på oppholdsadresser|Under behandling
-Stavanger kommune|02.01.23|Forkortelse av adressenavn|Under behandling
+Stavanger kommune|02.01.23|Forkortelse av adressenavn|Avslått
 Norges Døveforbund|13.12.22|Registrering av tegnspråk-kompetanse|Avslått, utenfor gjeldende regelverk. Dersom NDF ønsker å jobbe videre med forslag om registrering i Folkeregisteret, må det igangsettes et arbeid for å få på plass et rettslig grunnlag for registrering
 NAV|26.08.22|Tillate opphør og maskinell korreksjon av utdaterte personopplysninger ved melding fra NAV|Under behandling
 Rådhusets forvaltningstjeneste|09.05.22|Digital innhenting av prøvingsattest|Mulig utviklingstiltak 2025
