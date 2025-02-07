@@ -22,7 +22,7 @@ Utregning gammel løsning: k1 = 11 - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 
 
 Dette gir maksimalt 1 gyldig tall for k1. I ny beregning vil man derimot godta:
 
-k1 = {11,12,13,14} - ((d1 x 3 + d2 x 7 +  m1 x 3 + m2 x 7 + å1 x 3 + å2 x 7 + i1 x 4 + i2 x 5 +  i3 x 3) MOD 11)
+k1 = {11,12,13,14} - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 x 8 + å2 x 9 + i1 x 4 + i2 x 5 +  i3 x 2) MOD 11)
 
 Det betyr at k1 kan være 4 ulike sifre. Som tidligere forkastes fødselsnummeret hvis kontrollsiffer  k1 blir 10.
 
