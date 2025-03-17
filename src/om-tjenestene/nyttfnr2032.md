@@ -1,5 +1,5 @@
 ---
-title: Nytt fødselsnummer fra 2032 (k)
+title: Nytt fødselsnummer fra 2032
 ---
 
 # Hva er nytt? 
@@ -23,6 +23,7 @@ Utregning gammel løsning: k1 = 11 - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 
 Dette gir maksimalt 1 gyldig tall for k1. I ny beregning vil man derimot godta:
 
 k1 = {11,12,13,14} - ((d1 x 3 + d2 x 7 +  m1 x 6 + m2 x 1 + å1 x 8 + å2 x 9 + i1 x 4 + i2 x 5 +  i3 x 2) MOD 11)
+
 Hvis k1 > 10 så blir k1 = k1 - 11, dvs man må trekke fra 11 en gang til
 
 Hvis k1 = 10 så forkastes k1
