@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="folkeregisteret:melding:farskap:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="folkeregisteret:melding:farskap:v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xsd:annotation>
+    <xsd:documentation>
+      <xsd:attribute fixed="2020-01-28T09:44:51.223+0100" name="generertDato"/>
+      <xsd:attribute fixed="1.0" name="versjon" />
+      <xsd:attribute fixed="" name="beskrivelse" />
+      <xsd:attribute fixed="Farskap" name="modellnavn" />
+      <xsd:attribute fixed="folkeregisteret:melding:farskap:v1" name="navnerom" />
+      <xsd:attribute fixed="false" name="begrepsreferanse" />
+      <xsd:attribute fixed="false" name="dokumentasjon" />
+      <xsd:attribute fixed="false" name="nillable" />
+      <xsd:attribute fixed="false" name="modellelement" />
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="meldingOmRegistreringAvFarskap" type="MeldingOmRegistreringAvFarskap" />
+  <xsd:complexType name="MeldingOmRegistreringAvFarskap">
+    <xsd:sequence>
+      <xsd:element name="innsending" type="Innsending" minOccurs="0" />
+      <xsd:element name="forespoersel" type="ForespoerselOmRegistreringAvFarskap" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Barn">
+    <xsd:sequence>
+      <xsd:element name="foedselsEllerDNummer" type="Foedselsnummer" minOccurs="0" />
+      <xsd:element name="erFoedt" type="Boolsk" />
+      <xsd:element name="termindato" type="Dato" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Far">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:sequence>
+          <xsd:element name="foedselsEllerDNummer" type="Foedselsnummer" />
+        </xsd:sequence>
+        <xsd:sequence>
+          <xsd:element name="foedselsdato" type="Dato" />
+          <xsd:element name="navn" type="Personnavn" />
+        </xsd:sequence>
+      </xsd:choice>
+      <xsd:element name="datoForErklaeringen" type="Dato" />
+      <xsd:element name="harSignert" type="Boolsk" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ForeldreansvarUtenFellesBosted">
+    <xsd:sequence>
+      <xsd:element name="datoForAvtalen" type="Dato" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ForespoerselOmRegistreringAvFarskap">
+    <xsd:sequence>
+      <xsd:element name="registreringsdato" type="Dato" />
+      <xsd:element name="avsendersSaksreferanse" type="Tekst" minOccurs="0" />
+      <xsd:element name="innsender" type="Innsender" maxOccurs="unbounded" />
+      <xsd:element name="mottak" type="Informasjonsmottak" minOccurs="0" />
+      <xsd:element name="saksbehandlersVurdering" type="SaksbehandlersVurdering" />
+      <xsd:element name="vedlegg" type="Vedlegg" minOccurs="0" maxOccurs="unbounded" />
+      <xsd:element name="barnet" type="Barn" />
+      <xsd:element name="far" type="Far" />
+      <xsd:element name="mor" type="Mor" minOccurs="0" />
+      <xsd:element name="foreldreBorSammen" type="Boolsk" minOccurs="0"/>
+      <xsd:element name="foreldreansvar" type="ForeldreansvarUtenFellesBosted" minOccurs="0" />
+      <xsd:element name="farskapSattAvFoedsel" type="Boolsk"  minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Identifikasjonsdokument">
+    <xsd:sequence>
+      <xsd:element name="identifikasjonsdokumenttype" type="Tekst" />
+      <xsd:element name="utstederland" type="LandkodeIsoAlfa3" minOccurs="0" />
+      <xsd:element name="utstedernavn" type="Tekst" minOccurs="0" />
+      <xsd:element name="gyldigFra" type="Dato" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Innsender">
+    <xsd:sequence>
+      <xsd:element name="innsendertype" type="InnsendertypeForRegistreringAvFarskap" />
+      <xsd:element name="navn" type="Navn" minOccurs="0" />
+      <xsd:element name="identitet" type="NorskIdentifikator" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Innsending">
+    <xsd:sequence>
+      <xsd:element name="avsendersMeldingsidentifikator" type="Tekst" />
+      <xsd:element name="avsendersInnsendingstidspunkt" type="DatoKlokkeslett" />
+      <xsd:element name="kildesystem" type="Tekst" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Mor">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:sequence>
+          <xsd:element name="foedselsEllerDNummer" type="Foedselsnummer" />
+        </xsd:sequence>
+        <xsd:sequence>
+          <xsd:element name="foedselsdato" type="Dato" />
+          <xsd:element name="navn" type="Personnavn" />
+        </xsd:sequence>
+      </xsd:choice>
+      <xsd:element name="harSignert" type="Boolsk" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NorskIdentifikator">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:element name="person" type="Foedselsnummer" />
+        <xsd:element name="organisasjon" type="Organisasjonsnummer" />
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SaksbehandlersVurdering">
+    <xsd:sequence>
+      <xsd:element name="farsForeldreHarSignert" type="Boolsk" minOccurs="0" />
+      <xsd:element name="skjemaErAttestert" type="Boolsk" />
+      <xsd:element name="vedlagtFarskapsskjemaErOriginalt" type="Boolsk"/>
+      <xsd:element name="manuellBehandlingErOensket" type="Boolsk" minOccurs="0"/>
+      <xsd:element name="kommentarForManuellBehandling" type="Tekst" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Vedlegg">
+    <xsd:sequence>
+      <xsd:element name="dokumenttype" type="Tekst" minOccurs="0" maxOccurs="unbounded" />
+      <xsd:element name="multipartnavn" type="Tekst" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="InnsendertypeForRegistreringAvFarskap">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="nav" />
+      <xsd:enumeration value="helseaktoer" />
+      <xsd:enumeration value="utenriksstasjon" />
+      <xsd:enumeration value="folkeregistermyndigheten" />
+      <xsd:enumeration value="annet"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="KanalForRegistreringAvFarskap">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="innloggetTjeneste" />
+      <xsd:enumeration value="papirmelding" />
+      <xsd:enumeration value="manuellRegistrering" />
+      <xsd:enumeration value="elektroniskMelding" />
+      <xsd:enumeration value="annet" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Tekst">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="4000" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Foedselsnummer">
+    <xsd:restriction base="Tekst">
+      <xsd:length value="11" />
+      <xsd:pattern value="[0-9]+" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Boolsk">
+    <xsd:restriction base="xsd:boolean" />
+  </xsd:simpleType>
+  <xsd:simpleType name="Dato">
+    <xsd:restriction base="xsd:date" />
+  </xsd:simpleType>
+  <xsd:complexType name="Personnavn">
+    <xsd:sequence>
+      <xsd:element name="fornavn" type="TekstIPersonnavn" />
+      <xsd:element name="mellomnavn" type="TekstIPersonnavn" minOccurs="0" />
+      <xsd:element name="etternavn" type="TekstIPersonnavn" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Informasjonsmottak">
+    <xsd:sequence>
+      <xsd:element name="informasjonskanal" type="KanalForRegistreringAvFarskap" />
+      <xsd:element name="mottakstidspunktFraOpprinneligkanal" type="Dato" />
+      <xsd:element name="puncher" type="Identifikator" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="LandkodeIsoAlfa3">
+    <xsd:restriction base="Tekst">
+      <xsd:length value="3" />
+      <xsd:pattern value="([A-Z]){3}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Navn">
+    <xsd:restriction base="Tekst">
+      <xsd:minLength value="1" />
+      <xsd:maxLength value="200" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DatoKlokkeslett">
+    <xsd:restriction base="xsd:dateTime" />
+  </xsd:simpleType>
+  <xsd:simpleType name="Organisasjonsnummer">
+    <xsd:restriction base="Tekst">
+      <xsd:length value="9" />
+      <xsd:pattern value="[0-9]+" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="TekstMedInnhold">
+    <xsd:restriction base="Tekst">
+      <xsd:pattern value="\s*\S.*" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="TekstIPersonnavn">
+    <xsd:restriction base="TekstMedInnhold">
+      <xsd:minLength value="1" />
+      <xsd:maxLength value="200" />
+      <xsd:pattern value="[a-zA-ZæøåÆØÅÁÀÂÃÄČÇÐĐÉÈÊËÍÌÎÏÑŊÓÒÔÕÖÞÚÙÛÜÝŸŠŦŽáàâãäçčðđéèêëíìîïñŋóòôõößþšŧúùûüýÿž \*\-'`´‘’‛′‵]+"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Identifikator">
+    <xsd:restriction base="Tekst" />
+  </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="folkeregisteret:melding:separasjon:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="folkeregisteret:melding:separasjon:v1">
+  <xsd:annotation>
+    <xsd:documentation>
+      <xsd:attribute fixed="2018-02-07T14:52:53.936+0100" name="generertDato"/>
+      <xsd:attribute fixed="1.0" name="versjon"/>
+      <xsd:attribute fixed="" name="beskrivelse"/>
+      <xsd:attribute fixed="Melding om separasjon" name="modellnavn"/>
+      <xsd:attribute fixed="folkeregisteret:melding:separasjon:v1" name="navnerom"/>
+      <xsd:attribute fixed="false" name="begrepsreferanse"/>
+      <xsd:attribute fixed="true" name="dokumentasjon"/>
+      <xsd:attribute fixed="false" name="nillable"/>
+      <xsd:attribute fixed="false" name="modellelement"/>
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="meldingOmSeparasjon" type="MeldingOmSeparasjon"/>
+  <xsd:complexType name="MeldingOmSeparasjon">
+    <xsd:sequence>
+      <xsd:element name="innsending" type="Innsending"/>
+      <xsd:element name="forespoersel" type="ForespoerselOmRegistreringAvSeparasjon"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EktefelleEllerPartner">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="foedselsdato" type="Dato"/>
+          <xsd:element name="personnavn" type="Personnavn"/>
+        </xsd:sequence>
+        <xsd:sequence>
+          <xsd:element name="foedselsEllerDNummer" type="Foedselsnummer"/>
+        </xsd:sequence>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ForespoerselOmRegistreringAvSeparasjon">
+    <xsd:sequence>
+      <xsd:element name="kilde" type="Tekst"/>
+      <xsd:element minOccurs="2" maxOccurs="2" name="ektefelleEllerPartner" type="EktefelleEllerPartner"/>
+      <xsd:element minOccurs="0" name="avsendersSaksreferanse" type="Tekst"/>
+      <xsd:element minOccurs="0" name="avsendersSaksbehandler" type="Tekst"/>
+      <xsd:element name="separasjon" type="Separasjon"/>
+      <xsd:element name="vigselsEllerPartnerskapsdato" type="Dato" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Innsending">
+    <xsd:sequence>
+      <xsd:element name="avsendersMeldingsidentifikator" type="Tekst">
+        <xsd:annotation>
+          <xsd:documentation>Avsenders identifikator for meldingen som benyttes for referanse mot Folkeregisterets tilbakesendte meldingsidentifikator for samme melding (vårMeldingsidentifikator)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="avsendersInnsendingstidspunkt" type="DatoKlokkeslett"/>
+      <xsd:element minOccurs="0" name="kildesystem" type="Tekst"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Separasjon">
+    <xsd:sequence>
+      <xsd:element name="separasjonsdato" type="Dato"/>
+      <xsd:element name="hjemmel" type="Separasjonshjemmel"/>
+      <xsd:element name="sivilstandsmyndighet" type="MyndighetForSivilstand"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="MyndighetForSivilstand">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="domstolen"/>
+      <xsd:enumeration value="fylkesmannen"/>
+      <xsd:enumeration value="utenlandskMyndighetUtenomNorden"/>
+      <xsd:enumeration value="nordiskMyndighet"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Separasjonshjemmel">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="enEktefelleKreverSeparasjon"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Dato">
+    <xsd:annotation>
+      <xsd:documentation>gir verdier for år, måned og dag. Kodes som en tekststreng etter datoformatering spesifisert i  ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times).
+        Eksempel : 1998-12-21 eller 19981221. </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:date"/>
+  </xsd:simpleType>
+  <xsd:complexType name="Personnavn">
+    <xsd:annotation>
+      <xsd:documentation>navn på person</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="fornavn" type="NavnMedInnhold">
+        <xsd:annotation>
+          <xsd:documentation>fornavn på person</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="mellomnavn" type="NavnMedInnhold">
+        <xsd:annotation>
+          <xsd:documentation>mellomnavn på person
+
+
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="etternavn" type="NavnMedInnhold">
+        <xsd:annotation>
+          <xsd:documentation>etternavn på person</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="Tekst">
+    <xsd:annotation>
+      <xsd:documentation>vilkårlig lang sekvens av tegn inkludert aksenter og spesielle tegn fra standardiserte tegnsett
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="4000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Foedselsnummer">
+    <xsd:annotation>
+      <xsd:documentation>ellevesifret identifikasjonsnummer for personer bosatt i Norge, der de seks første sifrene angir fødselsdato og de fem siste personnummer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="Tekst">
+      <xsd:pattern value="[0-9]+"/>
+      <xsd:length value="11"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DatoKlokkeslett">
+    <xsd:annotation>
+      <xsd:documentation>en kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="TekstMedInnhold">
+    <xsd:restriction base="Tekst">
+      <xsd:pattern value="\s*\S.*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="NavnMedInnhold">
+    <xsd:restriction base="TekstMedInnhold">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="200"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
