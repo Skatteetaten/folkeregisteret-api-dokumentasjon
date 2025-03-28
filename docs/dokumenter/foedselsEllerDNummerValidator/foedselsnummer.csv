@@ -1,0 +1,11 @@
+fødselsnummer;erSyntetisk;erGyldig;beskrivelse
+30108299939;false;true;reelt 2032-nummer
+30908299902;true;true;syntetisk 2032-nummer
+20036914700;false;true;reelt 1964-nummer
+03851598730;true;true;syntetisk 1964-nummer
+20036914712;false;false;reelt 1964-nummer
+29020073150;false;true;reelt 1964-nummer(Skuddag i skuddår)
+29020105729;false;false;reelt 1964-nummer(Skuddag i ikke-skuddår)
+55102499947;false;true;reelt 2032-D-nummer
+41819077906;true;true;syntetisk 2032-D-nummer
+41819077302;true;true;syntetisk 1964-D-nummer
