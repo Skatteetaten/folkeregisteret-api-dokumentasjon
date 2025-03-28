@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fødselsnummervalidator</title>
+  <script src="foedselsEllerDNummerValidator.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <h1>Fødselsnummervalidator</h1>
+  <label for="brukerInput"></label>
+  <input type="text" id="brukerInput" placeholder="Skriv inn fødselsnummer" size="22">
+  <div>
+    <input type="checkbox" id="syntetisk" name="syntetisk">
+    <label for="syntetisk">Valider som syntetisk nummer (for testformål)</label>
+  </div>
+  <button onclick="validerIdFrontend()">Valider</button>
+  <p id="resultat"></p>
+</div>
+</body>
+</html>
