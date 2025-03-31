@@ -94,6 +94,6 @@ Hvis du har behov for å sjekke om et fødsels- eller d-nummer vil være gyldig 
 Koden lar deg validere både relle og syntetiske numre, for å teste ut om de er i samsvar med nye regler som trer i kraft fra 2032.  Syntetiske numre brukes til testformål, og oppbygningen av disse skiller seg fra de reelle numrene.
 
 Denne løsningen utfører en kontrollberegning for å se om nummeret er gyldig bygget opp. Kontrollberegningen svarer ikke på om det er et nummer som faktisk eksisterer i Folkeregisteret.
-[Kildekode i Java](../dokumenter/foedselsEllerDNummerValidator.java) <br>
-[Kildekode i javascript](../dokumenter/foedselsEllerDNummerValidator.js)
+<br>[Kildekode i Java](../dokumenter/foedselsEllerDNummerValidator.java) 
+<br>[Kildekode i javascript](../dokumenter/foedselsEllerDNummerValidator.js)
 
