@@ -88,3 +88,12 @@ k2 = 9  (viser ikke utregning her)
 
 Fødselsnummer = '30108299939'
 
+# Validering av fødselsnummer og d-nummer (personidentifikator)
+Hvis du har behov for å sjekke om et fødsels- eller d-nummer vil være gyldig i henhold til ny kontrollberegning i 2032, så kan du bruke vår kildekode for dette.
+
+Koden lar deg validere både relle og syntetiske numre, for å teste ut om de er i samsvar med nye regler som trer i kraft fra 2032.  Syntetiske numre brukes til testformål, og oppbygningen av disse skiller seg fra de reelle numrene.
+
+Denne løsningen utfører en kontrollberegning for å se om nummeret er gyldig bygget opp. Kontrollberegningen svarer ikke på om det er et nummer som faktisk eksisterer i Folkeregisteret.
+[Kildekode i Java](../dokumenter/foedselsEllerDNummerValidator.java)
+[Kildekode i javascript](../dokumenter/foedselsEllerDNummerValidator.js)
+
