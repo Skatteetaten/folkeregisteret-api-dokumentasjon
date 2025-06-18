@@ -95,5 +95,4 @@ Koden lar deg validere både relle og syntetiske numre, for å teste ut om de er
 
 Denne løsningen utfører en kontrollberegning for å se om nummeret er gyldig bygget opp. Kontrollberegningen svarer ikke på om det er et nummer som faktisk eksisterer i Folkeregisteret.
 <br>[Kildekode i Java](../dokumenter/foedselsEllerDNummerValidator.java) 
-<br>[Kildekode i javascript](../dokumenter/foedselsEllerDNummerValidator.js) Eksempel på bruk [her](../dokumenter/foedselsEllerDNummerValidator.html) 
-
+<br>[Kildekode i javascript](../dokumenter/foedselsEllerDNummerValidator.js) 
