@@ -7,7 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
-Husbanken|10.03.25|Folkeregisteret bør dele hvem en person er verge for, i tillegg til hvem som er en persons verge|Under behandling (FF-1820)
+Husbanken|10.03.25|Folkeregisteret bør dele hvem en person er verge for, i tillegg til hvem som er en persons verge|prioritert og venter på utvikling  (FF-1820)
 Domstoladministrasjonen|26.09.23|Utvide skifteform med flere verdier|Avslått, lav gevinst grunnet taushetsbelagt opplysning (FF-1501)
 DnB|30.11.23|Adressehistorikk med datoer i rettighetspakken Finans|Utsatt i påvente av regelverksendring som drives av Finans Norge (FF-1532) 
 KS|22.09.23|Søk på bruksenhetsnummer|Avslått i produktleders team. Kan løses ved å ta uttrekk og sortere på bruksenhetsnr (FF-1500)
