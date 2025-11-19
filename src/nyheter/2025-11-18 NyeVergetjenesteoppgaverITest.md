@@ -1,6 +1,6 @@
 ---
 title: Nye vergetjenesteoppgaver i test fra 20.11.2025 - 20251118
-date: 2025-11-18T15:30:00+01
+date: 2025-11-19T09:20:00+01
 ---
 
 Etter innspill fra konsumenter vil vi den 20 november lage noen testdata på nye oppgaver for vergemål i konsumenttest-miljøet. Endringene vil medføre at dere som lytter på hendelser i dette miljøet vil kunne motta de to nye vergeoppgavene. 
