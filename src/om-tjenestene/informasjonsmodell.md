@@ -3,7 +3,7 @@ title: Informasjonsmodell
 ---
 
 # Modeller
-Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og funksjonell forståelse. Utvikling av integrasjon mot folkeregisterets er anbefalt gjort mot den api-spesifikasjonen som er tilgjengelig på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten_FREG) 
+Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og funksjonell forståelse. Utvikling av integrasjon mot folkeregisterets er anbefalt gjort mot den api-spesifikasjonen som er tilgjengelig på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten?query=folkeregisteret&sort=BEST_MATCH&order=DESC)) 
 <br/><br/>
 
 ## Informasjonsmodell
