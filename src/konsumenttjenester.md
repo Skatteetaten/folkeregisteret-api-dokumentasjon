@@ -4,7 +4,7 @@ title: Konsumenttjenester
 
 ## Standardtjenester
 Denne siden beskriver tjenestene i det nye Folkeregisteret. 
-Rettighetspakker og teknisk beskrivelse av tjenestene finnes på siden for hver enkelt tjeneste. Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/skatteetaten) 
+Rettighetspakker og teknisk beskrivelse av tjenestene finnes på siden for hver enkelt tjeneste. Folkeregisterets tjenester er dokumentert på [swaggerhub.](https://app.swaggerhub.com/organizations/Skatteetaten?query=folkeregisteret&sort=BEST_MATCH&order=DESC) 
 
 * [Hendelsesliste](../hendelsesliste) er løpende varsling om endringer i Folkeregisteret. Hendelsesliste gir konsumenter mulighet til å oppdatere opplysninger om personer i sitt kunderegister eller sin sakspopulasjon fortløpende, og hindrer at konsumenter gjør unødvendige oppslag på personer som ikke er endret. Det vil også være mulig for konsumentene å lage automatisert saksbehandling som initieres av hendelser fra Folkeregisteret, for eksempel avslutning av kundeforhold eller tjeneste ved hendelsen "melding om dødsfall". 
 Med tjenesten hendelsesliste får konsumenter varsel hver gang noe endres i Folkeregisteret, hvem det gjelder og hva endringen består i. Konsumenten får tilgang til informasjon de har hjemmel til, må selv avgjøre om hendelsen er relevant for dem, og gjøre oppslag for å hente mer informasjon om endringen. Tjenesten leveres ved maskin-til-maskin tilkobling.
