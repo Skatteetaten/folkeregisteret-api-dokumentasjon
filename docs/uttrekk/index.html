@@ -181,6 +181,9 @@
     <h2 id="tilpasset-uttrekk">Tilpasset uttrekk</h2>
     <p>Hensikten med denne POST-tjenesten er å tillate søk på grupper av personer. 
     Hvilke rettighetspakker som tjenesten er tilgjengelig for er beskrevet <a href="../konsumenttjenester">her.</a></p>
+    <p>For uttrekk kan hver virksomhet ha maksimalt 10 uttrekksjobber som kjører samtidig.
+    Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).
+    Dette gjelder uavhengig av hvor mange øvrige kall som gjøres mot API-et.</p>
     <p>tabellen under beskriver hvilke muligheter for tilpassing av uttrekket som støttes.</p>
     <table>
     <thead>
