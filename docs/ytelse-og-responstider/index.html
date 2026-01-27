@@ -217,11 +217,34 @@
     </table>
     <h3 id="uttrekk">Uttrekk</h3>
     <p>For uttrekk kan hver virksomhet ha maksimalt 10 uttrekksjobber som kjører samtidig.
-    Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).
-    | Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
-    | -------------- | --- | ---------------- | -------------------- | ------------ |
-    | Uttrekk komplett <br><br>Hent uttrekk | v1/uttrekk/komplett <br><br><br> 1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel | Sammensatt: <br> -Hent, batch <br> -Bulkoppslag <br><br> &lt; 10 s bulkoppslag | Bestilling av komplett uttrekk fra Folkeregisteret med angitt sekvensnummer (fra hendelseslisten).|
-    | Bestill tilpasset uttrekk <br><br> Hent uttrekk <br> | v1/uttrekk/tilpasset <br><br><br> v1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel| Sammensatt: <br>  -Hent, batch <br> -Bulkoppslag <br><br> &lt; 10 s bulkoppslag | Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).|</p>
+    Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).</p>
+    <table>
+    <thead>
+    <tr>
+    <th>Tjeneste (API)</th>
+    <th>url</th>
+    <th>Rettighetspakker</th>
+    <th>Forventet responstid</th>
+    <th>Bruksmønster</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Uttrekk komplett <br><br>Hent uttrekk</td>
+    <td>v1/uttrekk/komplett <br><br><br> 1/uttrekk/{jobbid}/batch/{batchnr}</td>
+    <td>OffentligMedHjemmel</td>
+    <td>Sammensatt: <br> -Hent, batch <br> -Bulkoppslag <br><br> &lt; 10 s bulkoppslag</td>
+    <td>Bestilling av komplett uttrekk fra Folkeregisteret med angitt sekvensnummer (fra hendelseslisten).</td>
+    </tr>
+    <tr>
+    <td>Bestill tilpasset uttrekk <br><br> Hent uttrekk <br></td>
+    <td>v1/uttrekk/tilpasset <br><br><br> v1/uttrekk/{jobbid}/batch/{batchnr}</td>
+    <td>OffentligMedHjemmel<br> OffentligUtenHjemmel<br> PrivatUtenHjemmel</td>
+    <td>Sammensatt: <br>  -Hent, batch <br> -Bulkoppslag <br><br> &lt; 10 s bulkoppslag</td>
+    <td>Bestilling av uttrekk på personer som møter angitte kriterier (f.eks. bostedskommune, fødselsår, personstatus, statsborgerskap, sivilstand, o.l.).</td>
+    </tr>
+    </tbody>
+    </table>
     <h3 id="hendelser">Hendelser</h3>
     <table>
     <thead>
