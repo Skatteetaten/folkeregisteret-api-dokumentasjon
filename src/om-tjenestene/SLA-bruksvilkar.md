@@ -8,6 +8,10 @@ I tabellen under er det inkludert en oversikt over responstid og ytelse per tjen
 
 PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks ved fullast, skal dette avtales med Freg forvaltning (avtales via kontaktskjema: https://www.skatteetaten.no/deling/kontakt/)
 
+### Throttling (begrensning av forespørsler)
+For å sikre stabil drift og redusere risikoen for overbelastning av tjenestene, er det innført throttling på Folkeregisterets API-er.
+Det tillates inntil 60 000 forespørsler per minutt per internettadresse. Dersom denne grensen overskrides, vil tjenesten returnere HTTP-statuskode 429 – Too Many Requests.
+
 ## Responstider og bruksmønster i produksjon
 
 ### Oppslag
@@ -21,7 +25,8 @@ PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks v
 | Personer xsd | v1/personer/xsd|   | < 500 ms| Gir gjeldende XSD-dokument for personopplysninger.|
 
 ### Uttrekk
-
+For uttrekk kan hver virksomhet ha maksimalt 10 uttrekksjobber som kjører samtidig.
+Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).
 | Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
 | -------------- | --- | ---------------- | -------------------- | ------------ |
 | Uttrekk komplett <br><br>Hent uttrekk | v1/uttrekk/komplett <br><br><br> 1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel | Sammensatt: <br> -Hent, batch <br> -Bulkoppslag <br><br> < 10 s bulkoppslag | Bestilling av komplett uttrekk fra Folkeregisteret med angitt sekvensnummer (fra hendelseslisten).|
