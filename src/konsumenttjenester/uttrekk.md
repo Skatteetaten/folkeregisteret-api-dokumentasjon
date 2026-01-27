@@ -39,6 +39,10 @@ Tjenesten vil aldri benyttes til daglig vedlikehold av et register, men vil vær
 Hensikten med denne POST-tjenesten er å tillate søk på grupper av personer. 
 Hvilke rettighetspakker som tjenesten er tilgjengelig for er beskrevet [her.](../konsumenttjenester)
 
+For uttrekk kan hver virksomhet ha maksimalt 10 uttrekksjobber som kjører samtidig.
+Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).
+Dette gjelder uavhengig av hvor mange øvrige kall som gjøres mot API-et.
+
 tabellen under beskriver hvilke muligheter for tilpassing av uttrekket som støttes.
 
 |Felt|Beskrivelse av input|
