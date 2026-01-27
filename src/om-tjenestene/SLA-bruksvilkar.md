@@ -27,6 +27,7 @@ Det tillates inntil 60 000 forespørsler per minutt per internettadresse. Ders
 ### Uttrekk
 For uttrekk kan hver virksomhet ha maksimalt 10 uttrekksjobber som kjører samtidig.
 Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).
+
 | Tjeneste (API) | url | Rettighetspakker | Forventet responstid | Bruksmønster |
 | -------------- | --- | ---------------- | -------------------- | ------------ |
 | Uttrekk komplett <br><br>Hent uttrekk | v1/uttrekk/komplett <br><br><br> 1/uttrekk/{jobbid}/batch/{batchnr} | OffentligMedHjemmel | Sammensatt: <br> -Hent, batch <br> -Bulkoppslag <br><br> < 10 s bulkoppslag | Bestilling av komplett uttrekk fra Folkeregisteret med angitt sekvensnummer (fra hendelseslisten).|
