@@ -155,13 +155,6 @@
           <p><strong>(ref. Bruksvilkår for utlevering av folkeregisteropplysninger fra Freg tabell i pkt. 4.3)</strong></p>
     <p>I tabellen under er det inkludert en oversikt over responstid og ytelse per tjeneste (API). Videre er det dokumentert et sett med anbefalte bruksmønstre per tjeneste. Det er viktig at anbefalte bruksmønstre legges til grunn når det utvikles integrasjoner mot FREG. Dette gjelder blant annet ved bruk av hendelsesliste til ajourhold med etterfølgende behov for bulkoppslag.</p>
     <p>PS! Ved behov for høyvolum og ekstraordinære kall til enkelttjenester, f.eks ved fullast, skal dette avtales med Freg forvaltning (avtales via kontaktskjema: <a href="https://www.skatteetaten.no/deling/kontakt/">https://www.skatteetaten.no/deling/kontakt/</a>)</p>
-    
-            <h3 id="Throttling">Throttling (begrensning av forespørsler)</h3>
-    <p>
-      For å sikre stabil drift og redusere risikoen for overbelastning av tjenestene, er det innført throttling på Folkeregisterets API-er.<br>
-    Det tillates inntil 60 000 forespørsler per minutt per internettadresse. Dersom denne grensen overskrides, vil tjenesten returnere HTTP-statuskode 429 – Too Many Requests.
-      
-    </p>        
     <h2 id="responstider-og-bruksm-nster-i-produksjon">Responstider og bruksmønster i produksjon</h2>
     <h3 id="oppslag">Oppslag</h3>
     <table>
@@ -220,11 +213,6 @@
     </tbody>
     </table>
     <h3 id="uttrekk">Uttrekk</h3>
-    <p>
-      For uttrekk kan hver virksomhet ha maksimalt 10 uttrekksjobber som kjører samtidig.
-        <br>
-    Hvis denne grensen overskrides, vil nye uttrekk bli avvist med HTTP 429 (Too Many Requests).
-    </p>
     <table>
     <thead>
     <tr>
