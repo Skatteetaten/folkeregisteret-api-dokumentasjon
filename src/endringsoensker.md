@@ -7,7 +7,7 @@ I oversikten under vises mottatte endringsønsker fra våre samarbeidspartnere:
   
  Fra | Dato | Beskrivelse |Status | 
 ------------|-------------------------------------|----------------|----------------
-Folkehelseinstituttet|18.11.25|Folkeregisteret bør dele metadata slik at konsumenter som bruker adressehistorikk kan få korrekt rekkefølge på adresser fra folkeregisteret og ikke må konstruere historikk selv|Avvist (FF-1945)
+Folkehelseinstituttet|18.11.25|Folkeregisteret bør dele metadata slik at konsumenter som bruker adressehistorikk kan få korrekt rekkefølge på adresser fra folkeregisteret og ikke må konstruere historikk selv|Avvist (FF-1945) En slik løsning vil kunne avsløre personer med fortrolig og trengt fortrolig adresse
 Husbanken|10.03.25|Folkeregisteret bør dele hvem en person er verge for, i tillegg til hvem som er en persons verge|prioritert og venter på utvikling  (FF-1820)
 Domstoladministrasjonen|26.09.23|Utvide skifteform med flere verdier|Avslått, lav gevinst grunnet taushetsbelagt opplysning (FF-1501)
 DnB|30.11.23|Adressehistorikk med datoer i rettighetspakken Finans|Utsatt i påvente av regelverksendring som drives av Finans Norge (FF-1532) 
