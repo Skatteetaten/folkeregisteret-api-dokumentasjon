@@ -7,7 +7,7 @@ Dokumentasjonen nedenfor er manuelt generert og er tiltenkt å gi utfyllende og 
 <br/><br/>
 
 ## Informasjonsmodell
-[Informasjonsmodellen](../dokumenter/Informasjonsmodell-Modernisering av folkeregisteret.pdf) beskriver informasjonselementene i Folkeregisteret.
+[Informasjonsmodellen](../dokumenter/Informasjonsmodell-Modernisering av folkeregisteret v4.6.pdf) beskriver informasjonselementene i Folkeregisteret.
 <br/><br/>
 
 ## Hendelsesbeskrivelser
