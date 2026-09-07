@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="folkeregisteret:melding:meldingomunik:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="folkeregisteret:melding:meldingomunik:v1">
+  <xsd:annotation>
+    <xsd:documentation>
+      <xsd:attribute fixed="2026-06-04T10:49:50.971+0200" name="generertDato" />
+      <xsd:attribute fixed="1.0" name="versjon" />
+      <xsd:attribute fixed="" name="beskrivelse" />
+      <xsd:attribute fixed="MeldingOmUnik" name="modellnavn" />
+      <xsd:attribute fixed="folkeregisteret:melding:meldingomunik:v1" name="navnerom" />
+      <xsd:attribute fixed="false" name="begrepsreferanse" />
+      <xsd:attribute fixed="false" name="dokumentasjon" />
+      <xsd:attribute fixed="false" name="nillable" />
+      <xsd:attribute fixed="false" name="modellelement" />
+      <xsd:attribute fixed="false" name="norskeTegn" />
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="meldingOmUnik" type="MeldingOmUnik" />
+  <xsd:complexType name="MeldingOmUnik">
+    <xsd:sequence>
+      <xsd:element name="innsending" type="Innsending" />
+      <xsd:element name="forespoersel" type="ForespoerselOmUnik" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Folkeregisteridentifikator">
+    <xsd:sequence>
+      <xsd:element name="foedselsEllerDnummer" type="Foedselsnummer" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ForespoerselOmUnik">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="avsendersSaksreferanse" type="Tekst" />
+      <xsd:element name="innsender" type="Innsender" />
+      <xsd:element name="mottak" type="Informasjonsmottak" />
+      <xsd:element name="forespoerseltype" type="Forespoerseltype" />
+      <xsd:element name="folkeregisteridentifikator" type="Folkeregisteridentifikator" />
+      <xsd:element minOccurs="0" name="vedtak" type="Vedtak" />
+      <xsd:element minOccurs="0" name="korrigering" type="Korrigering" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Informasjonsmottak">
+    <xsd:sequence>
+      <xsd:element name="informasjonskanal" type="KanalForMeldingOmUnik" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Innsender">
+    <xsd:sequence>
+      <xsd:element name="innsendertype" type="InnsendertypeForUnik" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Innsending">
+    <xsd:sequence>
+      <xsd:element name="avsendersMeldingsidentifikator" type="Tekst" />
+      <xsd:element name="avsendersInnsendingstidspunkt" type="DatoKlokkeslett" />
+      <xsd:element minOccurs="0" name="kildesystem" type="Tekst" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Korrigering">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="foersteVedtakstidspunkt" type="DatoKlokkeslett" />
+      <xsd:element minOccurs="0" name="sisteVedtakstidspunkt" type="DatoKlokkeslett" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Vedtak">
+    <xsd:sequence>
+      <xsd:element name="vedtakstidspunkt" type="DatoKlokkeslett" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="Forespoerseltype">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="endre" />
+      <xsd:enumeration value="korrigere" />
+      <xsd:enumeration value="annullere" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="InnsendertypeForUnik">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="politiet" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="KanalForMeldingOmUnik">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="elektroniskMelding" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Tekst">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="4000" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Foedselsnummer">
+    <xsd:restriction base="Tekst">
+      <xsd:pattern value="[0-9]+" />
+      <xsd:length value="11" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DatoKlokkeslett">
+    <xsd:restriction base="xsd:dateTime" />
+  </xsd:simpleType>
+</xsd:schema>
