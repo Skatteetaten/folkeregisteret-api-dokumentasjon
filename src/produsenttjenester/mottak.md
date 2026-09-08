@@ -41,7 +41,11 @@ Her finner du egen  [xsd for kryptografisk signatur](../kontrakter/DigitalSignat
 
 Curl-kommando som kan benyttes for å teste tjenesten:
 
-`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v4"`
+### virksomhetssertifikat
+`$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-produsent.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v4"`
+
+### token fra maskinporten
+`$ curl -k -v -X HEAD 'https://folkeregisteret-api-produsent.sits.no/folkeregisteret/mottak/api/melding_om_unik_v1' -H"Authorization: Bearer $(ditt_token)"`
 
 ### Statuskode 202
 Sammen med statuskode 202 kommer en datastruktur som ser slik ut:
@@ -84,7 +88,7 @@ Hvis statuskode ikke 202 men man får svar fra applikasjonen, så returneres en 
 
 | Miljø | URL |
 |-------|-----|
-| Test| https://folkeregisteret-api-ekstern.sits.no/ |
+| Test| https://folkeregisteret-api-produsent.sits.no/ |
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ |
 
 ## Multipart
@@ -94,7 +98,7 @@ I all hovedsak er det en ordinær multipart med xml og vedlegg som hver sine del
 2) "Filename" i Content-disposition for vedlegg må matche filnavnet som er angitt i xml i feltet 'multipartnavn' for identifikasjonsdokumentet.<br/>
 
 Eks:
-POST http://folkeregisteret-api-ekstern.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg HTTP/1.1<br/>
+POST http://folkeregisteret-api-produsent.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v5.vedlegg HTTP/1.1<br/>
 Content-Type: multipart/form-data; boundary=ahmbD7nC0ZRm0ME0uKQXJKQHDWASO_Ur<br/>
 Host: folkeregisteret-api-ekstern.sits.no<br/>
 Expect: 100-continue<br/>
