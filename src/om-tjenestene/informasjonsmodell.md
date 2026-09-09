@@ -37,28 +37,6 @@ Begrepsmodeller er konseptuelle modeller som beskriver begrepenes sammenheng med
 <br/><br/>
 
 
-## Strukturmodeller
-
-Strukturmodellen er en logisk modell som benyttes som mal for kontruksjonsmodeller og har derfor ofte mer generaliserte entiteter enn konstruksjonsmodellene.
-
-* [Folkeregisterperson med adresse](../modeller/1450278727.png)
-* [Adressetyper](../modeller/1515074003.png)
-* [Folkeregisterperson med personrelasjon](../modeller/1457707670.png)
-* [Folkeregisterperson med dødsfall](../modeller/1434703879.png)
-* [Folkeregisterperson med fødsel](../modeller/1461333199.png)
-* [Folkeregisterperson med innflytting](../modeller/1461334707.png)
-* [Folkeregisterperson med kjerneinformasjon](../modeller/1461335462.png)
-* [Folkeregisterperson med sivilstand](../modeller/1486742267.png)
-* [Folkeregisterperson med kontaktopplysninger for dødsbo](../modeller/1486990410.png)
-* [Folkeregisterperson med identitet](../modeller/1486995006.png)
-* [Folkeregisterperson med utflytting](../modeller/1487338698.png)
-* [Folkeregisterperson med navn](../modeller/1487778967.png)
-* [Folkeregisterperson med verge fullmektig og representant](../modeller/1538033146.png)
-* [Folkeregisterperson med falsk identitet](../modeller/1543845073.png)
-* [Folkeregisterperson med sametingets valgmantall](../modeller/1549296236.png)
-* [Folkeregisterperson med samisk språk](../modeller/1549296237.png)
-* [Folkeregisterperson med opphold](../modeller/1549296238.png)
-<br/><br/>
 
 ## Historiske kommunenummer - Kommuner før 1988
 Folkeregisteret deler historiske adresser f.eks. historisk Bostedsadresse. 
