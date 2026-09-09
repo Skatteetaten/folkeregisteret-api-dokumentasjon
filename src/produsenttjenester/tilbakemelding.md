@@ -11,7 +11,7 @@ Tjenestenes endepunkt:
 
 Eksempel på curl-kommando som kan benyttes for å teste tjenesten:
 
-`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-ekstern.sits.no/folkeregisteret/tilbakemelding/api/v2/hendelser?seq=1&direction=nyere&pageSize=100"`
+`$ curl -k -v -X GET --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-produsent.sits.no/folkeregisteret/tilbakemelding/api/v2/hendelser?seq=1&direction=nyere&pageSize=100"`
 
 ## Headere
 
@@ -136,5 +136,5 @@ Hvis statuskode hverken er 200 eller 304, men man får svar fra applikasjonen, s
 
 | Miljø | URL | 
 |-------|-----|
-| Test | https://folkeregisteret-api-ekstern.sits.no/ | 
+| Test | https://folkeregisteret-api-produsent.sits.no/folkeregisteret/ | 
 | Produksjon | https://folkeregisteret.api.skatteetaten.no/ |  
