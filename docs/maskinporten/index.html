@@ -167,13 +167,13 @@
     <li>Bekreft brukeren ved å trykke på lenken som kommer på epost. (NB! Sjekk søppelpost om ikke eposten kommer frem).</li>
     </ul>
     <p>NB! Digdir har egne sider som kan benyttes ved feilsøking der man ikke får generert token, feks <a href="https://docs.digdir.no/docs/Maskinporten/maskinporten_feilsoking">feilsøking</a>. Hvis man fortsatt har problemer ber man at Servicedesk <a href="mailto:servicedesk@digdir.no">servicedesk@digdir.no</a> kontaktes.<br/><br/></p>
-    <h3 id="3-opprettelse-av-bruker-hos-folkeregisteret">3. Opprettelse av bruker hos Folkeregisteret</h3>
+    <h3 id="3-opprettelse-av-bruker-hos-folkeregisteret-kun-konsumenter-">3. Opprettelse av bruker hos Folkeregisteret (kun konsumenter)</h3>
     <p>Dette gjøres hos Folkeregisteret etter at søknad om tilgang er sendt inn og godkjent. Som konsument trenger du IKKE å gjøre noe her. <br/><br/>
     Se <a href="https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/veileder-for-konsumenter/">veiledning for konsument</a> for nærmere informasjon om utfylling og innsending av søknad. Der skal det blant annet angis hvilken rettighetspakke virksomheten søker tilgang til. Rettighetspakke tilsvarer &#39;scope&#39; på maskinporten-språk.</p>
     <p>All kommunikasjon mellom Virksomheten, Maskinporten og Folkeregisteret går over https med TLS.
     Bruk av REST-api&#39;er hos Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetssertifikat. Se mer informasjon om dette her: <a href="https://docs.digdir.no/maskinporten_auth_server-to-server-oauth2.html">https://docs.digdir.no/maskinporten_auth_server-to-server-oauth2.html</a> <br/><br/></p>
     <h3 id="4-systemmessige-klargj-ringer">4. Systemmessige klargjøringer</h3>
-    <h4 id="klargj-ring-fra-folkeregisteret-">Klargjøring fra Folkeregisteret:</h4>
+    <h4 id="for-konsumenter-">For konsumenter:</h4>
     <p>Så snart søknad er innvilget, vil Folkeregisteret melde inn virksomhetens organisasjonsnummer og scope (rettighetspakke) til Digdir.</p>
     <p>Følgende scopes er opprettet for å dekke de rettighetspakkene Folkeregisteret tilbyr:</p>
     <ul>
@@ -194,11 +194,23 @@
       &quot;consumer_orgno&quot;: &quot;999888999&quot;
     }
     </code></pre><p>Dette gir virksomheten (med org.nummer 999888999) tilgang til å få tokens fra maskinporten for scopet &quot;folkeregister:deling/offentligmedhjemmel    &quot;</p>
-    <h4 id="klargj-ring-fra-virksomheten-">Klargjøring fra Virksomheten:</h4>
+    <h5 id="klargj-ring-fra-virksomheten-">Klargjøring fra Virksomheten:</h5>
     <p>Når virksomheten har fått beskjed at tilgangen er opprettet i maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data.
     Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via <a href="https://docs.digdir.no/maskinporten_sjolvbetjening_api.html">ID-porten sitt API for selvbetjening av integrasjoner</a> eller via et brukergrensenitt i samarbeidsportalen, ref punkt 2 over.
     All kommunikasjon mot Maskinporten er sikret med &quot;server-to-server oauth2&quot; med bruk av virksomhetsertifikat. For test trenger man et testsertifikat av typen &#39;signering&#39;. Når dette er gjort kan man begynne å bruke folkeregister-api&#39;ene. Det er viktig at man bruker et sertifikat utstedt av TEST CA hos sertifikattilbyder.
     <br/><br/></p>
+    <h4 id="for-produsenter-">For Produsenter:</h4>
+    <p>For innsending av meldinger til folkeregisteret skal følgede scope benyttes:</p>
+    <ul>
+    <li>folkeregister:mottak/meldinger
+    <br/><br/></li>
+    </ul>
+    <p>For å benyttes tilbakemeldingstjenesten skal følgende scope benyttes:</p>
+    <ul>
+    <li>folkeregister:tilbakemelding/hendelser
+    <br/><br/></li>
+    </ul>
+    <p>De eksisterende produsentene har tilgang til begge scopene i Maskinporten. </p>
     <h3 id="5-bruke-folkeregister-api-ene-med-token-fra-maskinporten">5. Bruke folkeregister-api-ene med token fra maskinporten</h3>
     <p>Overordnet gjøres følgende:</p>
     <ol>
@@ -213,7 +225,7 @@
     <li><p>Hvis alt er OK returneres data iht. forespørselen. <br/><br/></p>
     </li>
     </ol>
-    <h3 id="6-hvordan-opptre-p-vegne-av-en-annen-virksomhet">6. Hvordan opptre på vegne av en annen virksomhet</h3>
+    <h3 id="6-hvordan-opptre-p-vegne-av-en-annen-virksomhet-kun-konsumenter-">6. Hvordan opptre på vegne av en annen virksomhet (kun konsumenter)</h3>
     <p>Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter ved oppkobling mot folkeregisteret. Dette innebærer bl.a. at virksomheten må delegere en rettighet til systemleverandøren i Altinn. Difi har en nærmere beskrivelse av hvordan dette gjøres. <a href="https://docs.digdir.no/maskinporten_guide_apikonsument.html#bruke-delegering-via-altinn-autorisasjon">Delegere rettigheter via Altinn</a>.
     Selve kallene mot Folkeregisteret vil skje på vanlig måte men tokenet vil inneholde informasjon både om konsument og systemleverandør.</p>
     
