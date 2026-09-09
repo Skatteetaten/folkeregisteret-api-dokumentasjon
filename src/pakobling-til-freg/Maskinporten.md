@@ -70,7 +70,9 @@ For å benyttes tilbakemeldingstjenesten skal følgende scope benyttes:
 * folkeregister:tilbakemelding/hendelser
 <br/><br/>
 
-De eksisterende produsentene har tilgang til begge scopene i Maskinporten. 
+De eksisterende produsentene har tilgang til begge scopene i Maskinporten. Token legges til i requesten som en egen header:  -H"Authorization: Bearer $(ditt_token)"
+
+
 
 ### 5. Bruke folkeregister-api-ene med token fra maskinporten
 Overordnet gjøres følgende:
