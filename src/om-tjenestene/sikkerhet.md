@@ -3,14 +3,23 @@ title: Sikkerhet
 ---
 
 # For Konsumenter 
-Ny løsning ved bruk av maskinporten er angitt her: [Oppkobling ved bruk av maskinporten](../maskinporten) 
+Bruk av Maskinporten er angitt her: [Oppkobling ved bruk av maskinporten](../maskinporten) 
 <br/><br/> 
  
 # For Produsenter
+
+Fra september 2026 er det mulig å ta i bruk Maskinporten for autentisering og autorisering. På sikt vil bruk av virsomhetssertifikat fases ut.  I en overgangsfase vil vi støtte både virksomhetssertifikat og Maskinporten. Produsenter som ønsker å skifte fra virksomhetssertifikat til token fra Maskinporten kan kontakte Folkeregisteret.
+
+
+## Maskinporten
+Autentisering og autorisering av produsenten og foregår med bruk av token fra maskinporten. 
+Bruk av Maskinporten er angitt her: [Oppkobling ved bruk av maskinporten](../maskinporten) 
+
+
 ## Transportsikring
 Kommunikasjonen mellom produsenten og Skatteetaten skal foregå på kryptert kanal over internett, dvs. bruk av 2-veis SSL. Det er ikke ønskelig at det etableres fast/leid-linje for kommunikasjonen. Transporten sikres gjennom bruk av virksomhetssertifikater og asymmetrisk kryptering før felles symmetrisk nøkkel avtales for 2-veis SSL.
 
-## Autentisering og autorisering
+## Autentisering og autorisering av virksomhetssertifikat
 For å benytte Skatteetatens API trenger du et kvalifisert [X.509]( https://en.wikipedia.org/wiki/X.509) virksomhetssertifikat for kryptering/autentisering. Nasjonal kommunikasjonsmyndighet har [oversikt over godkjente tilbydere av kvalifiserte sertifikater](https://www.nkom.no/internett/elektronisk-id-og-tillitstjenester/tillitsliste-trusted-list#norges_tillitsliste). I dag er det kun kvalifiserte sertifikater fra Buypass og Commfides som kan benyttes. 
 
 Skatteetaten autoriserer og autentiserer organisasjonen basert på det kvalifiserte virksomhetssertifikatet. Det er virksomhetens organisasjonsnummer som er nøkkelen Skatteetaten forholder seg til. Virksomhetssertifikatet inneholder virksomhetens *organisasjonsnummer*. **Bruk derfor et virksomhetssertifikat som tilhører samme organisasjon som den som har det avtalemessige forholdet med Skatteetaten.**
