@@ -45,7 +45,7 @@ Curl-kommando som kan benyttes for å teste tjenesten:
 `$ curl -k -v -X HEAD --cert datakonsument.cer --key datakonsument.key "https://folkeregisteret-api-produsent.sits.no/folkeregisteret/mottak/api/rekvisisjon_av_dnummer_v4"`
 
 ### Maskinporten
-`$ curl -k -v -X HEAD 'https://folkeregisteret-api-produsent.sits.no/folkeregisteret/mottak/api/melding_om_unik_v1' -H"Authorization: Bearer $(ditt_token)"`
+'curl -X POST 'https://folkeregisteret-api-produsent.sits.no/folkeregisteret/mottak/api/melding_om_unik_v1'  -H"Authorization: Bearer $(ditt_token)" -d "$(xml_melding)"'
 
 ### Statuskode 202
 Sammen med statuskode 202 kommer en datastruktur som ser slik ut:
