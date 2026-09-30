@@ -1,6 +1,6 @@
 ---
-title: Identitetsgrunnlag Unik - Testdata og dokumentasjon - 20260929
-date: 2026-09-29T23:00:00+02
+title: Identitetsgrunnlag Unik - Testdata og dokumentasjon - 20260930
+date: 2026-09-30T09:00:00+02
 ---
 
 Fra 01.02.2027 vil Folkeregisteret motta meldinger fra Politiet som fører til registrering av identitetsgrunnlagstatus **unik**.
