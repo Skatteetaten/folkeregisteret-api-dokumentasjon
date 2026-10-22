@@ -98,7 +98,19 @@ function erDatoGyldig(dato) {
     if (erSkuddag && !erSkuddaar(aar)) {
         return false;
     }
-    return !isNaN(new Date(`${aarhundre}${aar}/${maaned}/${dag}`).getDate());
+
+    const heltAar = parseInt(`${aarhundre}${aar}`, 10);
+    const maanedIndeks = parseInt(maaned, 10) - 1; // Date bruker 0-indeks på måned
+    const dagTall = parseInt(dag, 10);
+
+    // Date-konstruktøren "ruller over" ugyldige datoer (f.eks. 31.04 -> 01.05)
+    // så vi sjekker at datoen som faktisk ble konstruert samsvarer med det vi ba om.
+    const date = new Date(heltAar, maanedIndeks, dagTall);
+    return (
+        date.getFullYear() === heltAar &&
+        date.getMonth() === maanedIndeks &&
+        date.getDate() === dagTall
+    );
 }
 
 /**
@@ -129,4 +141,3 @@ function validerIdFrontend() {
 
     }
 }
-
