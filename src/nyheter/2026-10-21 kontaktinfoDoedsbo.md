@@ -1,6 +1,6 @@
 ---
 title: opphoer av kontaktinformasjonForDoedsbo - 20261021
-date: 2026-10-21T12:00:00+02
+date: 2026-10-22T12:45:00+02
 ---
 
 Kontaktinformasjon for dødsbo har til nå blitt opphørt ved henvendelse fra dødsboet. Fra idag har vi begynt å opphøre kontaktinformasjon som er gjeldende, og er eldre enn fem år. 
