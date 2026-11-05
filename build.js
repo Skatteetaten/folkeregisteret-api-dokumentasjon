@@ -1,7 +1,7 @@
 const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
-const permalinks = require('metalsmith-permalinks');
+const permalinks = require('@metalsmith/permalinks');
 const rootPath = require('metalsmith-rootpath');
 const collections = require('metalsmith-collections');
 const redirect = require('metalsmith-redirect');
@@ -10,7 +10,36 @@ const feed = require('metalsmith-feed');
 const dateFormatter = require('metalsmith-date-formatter');
 const defaultValues = require('@metalsmith/default-values');
 const validate = require('metalsmith-validate');
+const slugify = require('slugify');
 const metadata = require('./metadata');
+
+const PLACEHOLDERS = { colon: '~c~', quote: '~q~' };
+const restore = text => text.split(PLACEHOLDERS.colon).join(':').split(PLACEHOLDERS.quote).join('"');
+
+// Den gamle pakken satte `path` til sidens endelige adresse. Layoutene bruker `path` i lenker.
+const restoreLegacyPermalinks = files => {
+    Object.keys(files).forEach(file => {
+        const data = files[file];
+        if (typeof data.permalink !== 'string') return;
+        data.permalink = restore(data.permalink);
+        data.path = data.permalink;
+        // Toppsidene fant css/ via kopier som den gamle pakken laget. Nå peker de til riktig mappe.
+        if (data.rootPath === '' && data.permalink) data.rootPath = '../';
+        const restored = restore(file);
+        if (restored !== file) {
+            files[restored] = data;
+            delete files[file];
+        }
+    });
+};
+
+// Validator-siden henter skriptet fra sin egen mappe, så filene må kopieres dit.
+const keepValidatorAssets = files => {
+    ['js', 'java'].forEach(ext => {
+        const from = `dokumenter/foedselsEllerDNummerValidator.${ext}`;
+        if (files[from]) files[`dokumenter/foedselsEllerDNummerValidator/foedselsEllerDNummerValidator.${ext}`] = files[from];
+    });
+};
 
 const smith = (clean = false) => {
 
@@ -30,6 +59,12 @@ const smith = (clean = false) => {
                     formattedDate: function (post) {
                         return post.date;
                     }
+                }
+            },
+            {
+                pattern: 'dokumenter/foedselsEllerDNummerValidator.html',
+                defaults: {
+                    permalink: 'dokumenter/foedselsEllerDNummerValidator'
                 }
             }
         ]))
@@ -108,8 +143,19 @@ const smith = (clean = false) => {
         }))
         .use(markdown({}))
         .use(permalinks({
-            pattern: ':title'
+            pattern: ':title',
+            // Den gamle pakken lot siste fil vinne når to sider fikk samme adresse. Det skjer i dag, så vi beholder det.
+            duplicates: 'overwrite',
+            // Lager adressene på samme måte som før, slik at eksisterende URL-er ikke endres.
+            // Den nye pakken nekter ':' og '"' i adresser, så de byttes midlertidig ut
+            // og settes tilbake av restoreLegacyPermalinks.
+            slug: text => slugify(text, {
+                lower: true,
+                remove: /[^\w\s$*_+~.()'"!\-:@]+/g
+            }).replace(/:/g, PLACEHOLDERS.colon).replace(/"/g, PLACEHOLDERS.quote)
         }))
+        .use(restoreLegacyPermalinks)
+        .use(keepValidatorAssets)
         .use(redirect({
             '/': 'folkeregisteret-api-dokumentasjon/om-tjenestene'
         }))
