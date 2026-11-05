@@ -1,7 +1,7 @@
 const Metalsmith = require('metalsmith');
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
-const permalinks = require('metalsmith-permalinks');
+const permalinks = require('@metalsmith/permalinks');
 const rootPath = require('metalsmith-rootpath');
 const collections = require('metalsmith-collections');
 const redirect = require('metalsmith-redirect');
@@ -108,8 +108,16 @@ const smith = (clean = false) => {
         }))
         .use(markdown({}))
         .use(permalinks({
-            pattern: ':title'
+            pattern: ':title?',
+            duplicates: 'overwrite'
         }))
+        .use((files, metalsmith, done) => {
+            // v2 exposed the permalink as `path`, which navigation and the feed rely on
+            Object.values(files).forEach(file => {
+                if (file.permalink) file.path = file.permalink;
+            });
+            done();
+        })
         .use(redirect({
             '/': 'folkeregisteret-api-dokumentasjon/om-tjenestene'
         }))
