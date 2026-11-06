@@ -57,7 +57,6 @@ const smith = (clean = false) => {
                 }
             ]
         }))
-        .use(rootPath())
         .use(collections({
             'om-tjenestene': {
                 pattern: 'om-tjenestene/**/*',
@@ -118,6 +117,7 @@ const smith = (clean = false) => {
             });
             done();
         })
+        .use(rootPath())
         .use(redirect({
             '/': 'folkeregisteret-api-dokumentasjon/om-tjenestene'
         }))
