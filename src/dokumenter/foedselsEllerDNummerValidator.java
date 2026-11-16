@@ -3,6 +3,7 @@ import static java.lang.Integer.parseInt;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.time.format.ResolverStyle;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
@@ -131,7 +132,8 @@ public class foedselsEllerDNummerValidator {
             return false;
         }
         try {
-            LocalDate.parse(dag + maaned + aarhundre + aar, DateTimeFormatter.ofPattern("ddMMyyyy"));
+            LocalDate.parse(dag + maaned + aarhundre + aar,
+                DateTimeFormatter.ofPattern("ddMMuuuu").withResolverStyle(ResolverStyle.STRICT));
             return true;
         } catch (DateTimeParseException e) {
             return false;
